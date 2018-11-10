@@ -22,7 +22,7 @@
 	</div>
 	<div id="login">
 		<a href="loginPage">로그인</a> | 
-		<a href="joinPage">회원가입</a> |
+		<a href="lpginPage">회원가입</a> |
 		<a href="forget">아이디 및 비밀번호 찾기</a>
 	</div>
 </header>
