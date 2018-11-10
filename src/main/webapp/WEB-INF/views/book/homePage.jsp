@@ -5,6 +5,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>스프링테스트</title>
+	<link rel="stylesheet" type="text/css" href="${rootPath}/resources/css/homeCss.css">
 </head>
 
 <body>
