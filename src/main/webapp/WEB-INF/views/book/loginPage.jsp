@@ -32,8 +32,16 @@
 	var join = document.getElementById("userjoin");
 	var btn = document.getElementById("loginbtn");
 	var signup = document.getElementById("signup");
-
-	function check() {
+	alert("A");
+	
+	var loge1 = document.getElementById("loge1");
+	var loge0 = document.getElementById("loge0");
+	/* var loge = Request.getAttribute("loge"); */
+	
+	/* alert(loge); */
+	alert(loge1);
+	alert(loge0);
+	function colorCheck() {
 		if (btn.textContent == "Create account") {
 			if (id.value != "" && pwd.value != "" && join.value != "") {
 				if (pwd.value == join.value) {
@@ -88,9 +96,9 @@
 		}
 	}
 
-	id.addEventListener("keyup", check);
-	pwd.addEventListener("keyup", check);
-	join.addEventListener("keyup", check);
+	id.addEventListener("keyup", colorCheck);
+	pwd.addEventListener("keyup", colorCheck);
+	join.addEventListener("keyup", colorCheck);
 	btn.addEventListener("click", login);
 	signup.addEventListener("click", sign);
 </script>
