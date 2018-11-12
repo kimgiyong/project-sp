@@ -1,12 +1,80 @@
 @charset "UTF-8";
+header{
+	margin: 0 auto;
+}
 #logoBox{
-	width:200px;
-	height:100px;
-	background-image: url("../img/logo2.jpg");	  
+	border:solid 1px red;
+	width:300px; 
+	height:130px; 
+	float:left;
+} 
+#searchBox{  	
+	border:solid 1px blue;
+	width:700px;
+	height:70px;
+	margin-left:15%; 
+	margin-top:30px;   
+	float:left;
+	padding:2px;   
+}
+#searchBox #selection{
+	width:120px;
+	height:50px;
+	font-size:20px;
+	border:none;
+}
+#searchBox input{
+	width:500px;
+	height:40px;
+}
+#searchBox button{
+	width:50px;
+	height:40px; 
+}
+#login{
+	float:right;
+}
+#login a{
+	color:gray;
+	text-decoration: none;
+}
+.clear{
+	clear: both;
+}
+#menuBox>.mainMenu{
+	float:left; 
+	text-align:center;
+	margin:0px;
+	list-style-type:none;
 }
 #AdImg1{	
 	width:300px;
 	height:100px;
 	background-color:blue;   
 	background-image: url("../img/event1.jpg");	
+}
+
+#menuBox{	
+	margin:0 11%;
+	text-align:center;
+	width:1400px; 
+	height:100px; 
+}
+
+.mainMenu{
+	list-style-type: none;
+	font-size: 22px;
+	margin:0 10px; 
+}
+.subMenu{ 
+	list-style-type: none;
+	margin-left:-40px;  
+	font-size: 18px;
+	display: none;
+}
+#bodyHead{
+	border:solid 1px blue;
+	width:1400px;
+	margin:0 11%;
+	text-align:center;
 }
