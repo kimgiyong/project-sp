@@ -21,7 +21,7 @@
 			<span id="zz">/</span>
 			<button id="signup">sign up</button>
 		</div>
-
+		<button></button>
 		<p id="foo">ⓒ UDP Technology</p>
 	</div>
 </body>
@@ -32,7 +32,6 @@
 	var join = document.getElementById("userjoin");
 	var btn = document.getElementById("loginbtn");
 	var signup = document.getElementById("signup");
-	alert("A");
 	
 	var loge1 = document.getElementById("loge1");
 	var loge0 = document.getElementById("loge0");
@@ -85,15 +84,15 @@
 	}
 
 	function sign() {
-		if (signup.textContent == "sign up") {
-			btn.textContent = "Create account";
-			join.type = "password";
-			signup.textContent = "sign in";
-		} else {
-			btn.textContent = "Login";
-			join.type = "hidden";
-			signup.textContent = "sign up";
-		}
+			if (signup.textContent == "sign up") {
+				btn.textContent = "Create account";
+				join.type = "password";
+				signup.textContent = "sign in";
+			} else {
+				btn.textContent = "Login";
+				join.type = "hidden";
+				signup.textContent = "sign up";
+			}
 	}
 
 	id.addEventListener("keyup", colorCheck);

@@ -95,3 +95,8 @@ a {
 #userjoin {
 	border-top: dotted 1px white;
 }
+
+button{
+	background-color:white;
+	border:0;
+}
