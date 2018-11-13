@@ -59,22 +59,29 @@ header{
 	text-align:center;
 	width:1400px; 
 	height:100px; 
+	background-color: #663344;
 }
 
 .mainMenu{
 	list-style-type: none;
 	font-size: 22px;
-	margin:0 10px; 
+	margin:0 10px;
+	bakground-color:#663344; 
 }
 .subMenu{ 
 	list-style-type: none;
 	margin-left:-40px;  
 	font-size: 18px;
 	display: none;
+	bakground-color:#884264; 
 }
 #bodyHead{
 	border:solid 1px blue;
 	width:1400px;
 	margin:0 11%;
 	text-align:center;
+}
+a{
+	color:white;
+	text-decoration: none;
 }

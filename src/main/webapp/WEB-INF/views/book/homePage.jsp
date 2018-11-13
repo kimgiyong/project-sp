@@ -26,28 +26,28 @@
 		<!-- <button><a href="forget">아이디 및 비밀번호 찾기</a></button> -->
 	</div>
 </header>
-
+<div class="clear"></div>
 <section id="headBody">
 	<ul id="menuBox">
-		<li class="mainMenu">메인메뉴 목록1
+		<li class="mainMenu"><a href="#">메인메뉴 목록1</a>
 			<ul class="subMenuBox">
-				<li class="subMenu">서브메뉴 목록1</li>
-				<li class="subMenu">서브메뉴 목록2</li>
-				<li class="subMenu">서브메뉴 목록3</li>
+				<li class="subMenu"><a href="#">서브메뉴 목록1</a></li>
+				<li class="subMenu"><a href="#">서브메뉴 목록2</a></li>
+				<li class="subMenu"><a href="#">서브메뉴 목록3</a></li>
 			</ul>
 		</li>
-		<li class="mainMenu">메인메뉴 목록1
+		<li class="mainMenu"><a href="#">메인메뉴 목록2</a>
 			<ul class="subMenuBox">
-				<li class="subMenu">서브메뉴 목록1</li>
-				<li class="subMenu">서브메뉴 목록2</li>
-				<li class="subMenu">서브메뉴 목록3</li>
+				<li class="subMenu"><a href="#">서브메뉴 목록1</a></li>
+				<li class="subMenu"><a href="#">서브메뉴 목록2</a></li>
+				<li class="subMenu"><a href="#">서브메뉴 목록3</a></li>
 			</ul>
 		</li>
-		<li class="mainMenu">메인메뉴 목록1
+		<li class="mainMenu"><a href="#">메인메뉴 목록3</a>
 			<ul class="subMenuBox">
-				<li class="subMenu">서브메뉴 목록1</li>
-				<li class="subMenu">서브메뉴 목록2</li>
-				<li class="subMenu">서브메뉴 목록3</li>
+				<li class="subMenu"><a href="#">서브메뉴 목록1</a></li>
+				<li class="subMenu"><a href="#">서브메뉴 목록2</a></li>
+				<li class="subMenu"><a href="#">서브메뉴 목록3</a></li>
 			</ul>
 		</li>
 	</ul>
