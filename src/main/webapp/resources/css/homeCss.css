@@ -2,23 +2,20 @@
 header{
 	margin: 0 auto;
 }
-
 a{
 	text-decoration: none;
 	color:white;
 	margin:0 37px;  
 }
-
 .clear{
 	clear: both;
 }
-
 #logoBox{
 	border:solid 1px red;
 	width:300px; 
 	height:130px; 
 	float:left;
-} 
+}  
 #searchBox{  	
 	border:solid 1px blue;
 	width:700px;
@@ -43,9 +40,6 @@ a{
 	width:50px;
 	height:40px; 
 }
-
-
-
 #login{
 	float:right;
 }
@@ -53,8 +47,6 @@ a{
 	color:gray;
 	text-decoration: none;
 }
-
-
 #menuBox>.mainMenu{
 	float:left; 
 	text-align:center;
