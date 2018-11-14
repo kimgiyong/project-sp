@@ -27,7 +27,7 @@
 	</div>
 </header>
 <div class="clear"></div>
-<section id="headBody">
+<section id="bodyHead">
 	<ul id="menuBox">
 		<li class="mainMenu"><a href="#">메인메뉴 목록1</a>
 			<ul class="subMenuBox">
