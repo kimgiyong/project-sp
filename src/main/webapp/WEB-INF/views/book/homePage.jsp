@@ -6,7 +6,6 @@
 	<meta charset="utf-8">
 	<title>스프링테스트</title>
 	<link rel="stylesheet" type="text/css" href="${rootPath}/resources/css/homeCss.css">
-	<link rel="stylesheet" type="text/css" href="${rootPath}/resources/css/homemenu.css">
 </head>
 
 <body>
@@ -38,6 +37,27 @@
 			</ul>
 		</li>
 		<li class="mainMenu"><a href="#">메인메뉴 목록2</a>
+			<ul class="subMenuBox">
+				<li class="subMenu"><a href="#">서브메뉴 목록1</a></li>
+				<li class="subMenu"><a href="#">서브메뉴 목록2</a></li>
+				<li class="subMenu"><a href="#">서브메뉴 목록3</a></li>
+			</ul>
+		</li>
+		<li class="mainMenu"><a href="#">메인메뉴 목록3</a>
+			<ul class="subMenuBox">
+				<li class="subMenu"><a href="#">서브메뉴 목록1</a></li>
+				<li class="subMenu"><a href="#">서브메뉴 목록2</a></li>
+				<li class="subMenu"><a href="#">서브메뉴 목록3</a></li>
+			</ul>
+		</li>
+		<li class="mainMenu"><a href="#">메인메뉴 목록3</a>
+			<ul class="subMenuBox">
+				<li class="subMenu"><a href="#">서브메뉴 목록1</a></li>
+				<li class="subMenu"><a href="#">서브메뉴 목록2</a></li>
+				<li class="subMenu"><a href="#">서브메뉴 목록3</a></li>
+			</ul>
+		</li>
+		<li class="mainMenu"><a href="#">메인메뉴 목록3</a>
 			<ul class="subMenuBox">
 				<li class="subMenu"><a href="#">서브메뉴 목록1</a></li>
 				<li class="subMenu"><a href="#">서브메뉴 목록2</a></li>
