@@ -8,6 +8,7 @@
 <link rel="stylesheet" type="text/css" href="${rootPath}/resources/css/loginPage.css" />
 </head>
 <body>
+<% String loge = (String)request.getParameter("loge"); %>
 	<div id="container">
 		<div id="back">
 			<h1 id="logo">좋은향 도서관</h1>
@@ -21,25 +22,28 @@
 			<span id="zz">/</span>
 			<button id="signup">sign up</button>
 		</div>
-		<button></button>
 		<p id="foo">ⓒ UDP Technology</p>
 	</div>
 </body>
 
-<script>
+<script>	
 	var id = document.getElementById("userId");
 	var pwd = document.getElementById("userPwd");
 	var join = document.getElementById("userjoin");
 	var btn = document.getElementById("loginbtn");
 	var signup = document.getElementById("signup");
 	
-	var loge1 = document.getElementById("loge1");
-	var loge0 = document.getElementById("loge0");
-	/* var loge = Request.getAttribute("loge"); */
+	var loge = <%=loge%>;
 	
-	/* alert(loge); */
-	alert(loge1.value);
-	alert(loge0.value);
+	if(loge==0){
+		addEventListener("load", joinPage);
+	}
+	function joinPage(){
+		btn.textContent = "Login";
+		join.type = "hidden";
+		signup.textContent = "sign up";
+	}
+	
 	function colorCheck() {
 		if (btn.textContent == "Create account") {
 			if (id.value != "" && pwd.value != "" && join.value != "") {
@@ -73,7 +77,7 @@
 			passwordcheck : join.value
 		});
 		var backToObj = JSON.parse(json);
-		console.log(backToObj);
+		/* console.log(backToObj); */
 		if (btn.textContent == "Create account") {
 			if (pwd.value != join.value) {
 				alert("삐! 비밀번호가 다릅니다. 다시입력해주세요.");
@@ -84,21 +88,22 @@
 	}
 
 	function sign() {
-			if (signup.textContent == "sign up") {
-				btn.textContent = "Create account";
-				join.type = "password";
-				signup.textContent = "sign in";
-			} else {
-				btn.textContent = "Login";
-				join.type = "hidden";
-				signup.textContent = "sign up";
-			}
+		if (signup.textContent == "sign up") {
+			btn.textContent = "Create account";
+			join.type = "password";
+			signup.textContent = "sign in";
+		} else {
+			btn.textContent = "Login";
+			join.type = "hidden";
+			signup.textContent = "sign up";
+		}
 	}
-
+	
 	id.addEventListener("keyup", colorCheck);
 	pwd.addEventListener("keyup", colorCheck);
 	join.addEventListener("keyup", colorCheck);
 	btn.addEventListener("click", login);
 	signup.addEventListener("click", sign);
+	
 </script>
 </html>

@@ -21,8 +21,8 @@
 		<button id="searchBtn">검색</button>
 	</div>
 	<div id="login">
-		<a href="loginPage"><button id="loge1" value="loge1">로그인 </button></a> |
-		<a href="loginPage"><button id="loge0" value="loge0">회원가입<!--  |  --></button></a>
+		<a href="loginPage?loge=1"><button id="loge1" value="loge1">로그인 </button></a> |
+		<a href="loginPage?loge=0"><button id="loge0" value="loge0">회원가입<!--  |  --></button></a>
 		<!-- <button><a href="forget">아이디 및 비밀번호 찾기</a></button> -->
 	</div>
 </header>
