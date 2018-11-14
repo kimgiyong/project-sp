@@ -50,21 +50,21 @@
 				<li class="subMenu"><a href="#">서브메뉴 목록3</a></li>
 			</ul>
 		</li>
-		<li class="mainMenu"><a href="#">메인메뉴 목록3</a>
+		<li class="mainMenu"><a href="#">메인메뉴 목록4</a>
 			<ul class="subMenuBox">
 				<li class="subMenu"><a href="#">서브메뉴 목록1</a></li>
 				<li class="subMenu"><a href="#">서브메뉴 목록2</a></li>
 				<li class="subMenu"><a href="#">서브메뉴 목록3</a></li>
 			</ul>
 		</li>
-		<li class="mainMenu"><a href="#">메인메뉴 목록3</a>
+		<li class="mainMenu"><a href="#">메인메뉴 목록5</a>
 			<ul class="subMenuBox">
 				<li class="subMenu"><a href="#">서브메뉴 목록1</a></li>
 				<li class="subMenu"><a href="#">서브메뉴 목록2</a></li>
 				<li class="subMenu"><a href="#">서브메뉴 목록3</a></li>
 			</ul>
 		</li>
-		<li class="mainMenu"><a href="#">메인메뉴 목록3</a>
+		<li class="mainMenu"><a href="#">메인메뉴 목록6</a>
 			<ul class="subMenuBox">
 				<li class="subMenu"><a href="#">서브메뉴 목록1</a></li>
 				<li class="subMenu"><a href="#">서브메뉴 목록2</a></li>
@@ -72,13 +72,14 @@
 			</ul>
 		</li>
 	</ul>
+<div class="clear"></div>
 	<div id="AdWin">
 		<div class="AdImg">img left
 			<button id="MoveLeftBtn">왼쪽 이미지</button>
 		</div>
 		<div class="AdImg">img center</div>
 		<div class="AdImg">img right
-			<button id="MoveLeftBtn">왼쪽 이미지</button>
+			<button id="MoverightBtn">왼쪽 이미지</button>
 		</div>
 	</div>
 </section>
