@@ -38,8 +38,8 @@
 	/* var loge = Request.getAttribute("loge"); */
 	
 	/* alert(loge); */
-	alert(loge1);
-	alert(loge0);
+	alert(loge1.value);
+	alert(loge0.value);
 	function colorCheck() {
 		if (btn.textContent == "Create account") {
 			if (id.value != "" && pwd.value != "" && join.value != "") {
