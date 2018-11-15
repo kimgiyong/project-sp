@@ -36,12 +36,12 @@
 	var loge = <%=loge%>;
 	
 	if(loge==0){
-		addEventListener("load", joinPage);
+		window.addEventListener("load", joinPage);
 	}
 	function joinPage(){
-		btn.textContent = "Login";
-		join.type = "hidden";
-		signup.textContent = "sign up";
+		btn.textContent = "Create account";
+		join.type = "password";
+		signup.textContent = "sign in";
 	}
 	
 	function colorCheck() {
