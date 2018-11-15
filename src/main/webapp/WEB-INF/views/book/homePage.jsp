@@ -74,12 +74,12 @@
 	</ul>
 <div class="clear"></div>
 	<div id="AdWin">
-		<div class="AdImg">img left
+		<div class="AdImg">.
 			<button id="MoveLeftBtn">왼쪽 이미지</button>
 		</div>
-		<div class="AdImg">img center</div>
-		<div class="AdImg">img right
-			<button id="MoverightBtn">왼쪽 이미지</button>
+		<div class="AdImg">.</div>
+		<div class="AdImg">. 
+			<button id="MoverightBtn">오른쪽 이미지</button>
 		</div>
 	</div>
 </section>

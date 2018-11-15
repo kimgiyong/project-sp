@@ -48,6 +48,7 @@ header{border:solid 1px red; margin-bottom:30px;}
 	text-align:center;
 	height:40px;
 	position:relative;
+	z-index:2;
 }
 #menuBox .mainMenu{
 	float:left;
@@ -84,18 +85,30 @@ header{border:solid 1px red; margin-bottom:30px;}
 #menuBox .subMenu:hover{
 	background-color: #ffe;
 }
-
-
-#AdWin .AdImg{
+#AdWin{
 	position:relative;
+	z-index:1;
+}
+.AdImg:first-child, .AdImg:last-child{
+	display: inline-block;
 	width:300px;
-	height:345px; 
+	height:345px;
+	text-align:center;
+	line-height:345px;
+	background-color:black;
+	opacity:0.5;
+}
+.AdImg:nth-child(2){
+	display: inline-block;
+	text-align:center;
+	line-height:345px;
+	width:596px; 
+	height:345px;
 	border:1px solid green;
-	float:left;
-}
-#AdWin .AdImg:nth-child(2){
-	width:600px;
-}
-#AdWin button{
-	position:absolute; 
+	margin:0px -5px;
+	
+}  
+.AdImg button{
+	width:80px;
+	height:80px;
 }
