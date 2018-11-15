@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<select id="find_id" parameterType="String" resultType="String">
+		<!-- select id from member where id = #{id} --> <!-- <==고치는거 잊지말고 바꿔서 복붙하기 -->
+</select> 
