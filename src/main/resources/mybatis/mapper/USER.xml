@@ -4,12 +4,33 @@
 <mapper namespace="com.project.sp.USER">
 	<select id="userSelectList" resultType="user" parameterType="user">	
 		select * from usertbl
+		<where>
+			<if test="userNum!=null">and userNum = #{userNum}</if>
+			<if test="userName!=null">and userName = #{userName}</if>
+		</where>
 	</select>
 	<select id="userSelect" resultType="user" parameterType="user">
 		select * from usertbl
 		where userNum = #{userNum}
 	</select>
+	<select id="userLogin" resultType="user" parameterType="user">
+		select * from usertbl
+		where userId = #{userId} and userPwd = #{userPwd}
+	</select>
 	<insert id="userInsert" parameterType="user">
-	
+		insert into usertbl(userName, userId, userPwd, userBirth, userMobile, userScore, userLevel)
+		values(#{userName},#{userId},#{userPwd},#{userBirth},#{userMobile},0,1)
 	</insert>
+	<update id="userUpdate" parameterType="user">
+		update usertbl
+		<set>
+			<if test="userPwd!=null">userPwd = #{userPwd},</if>
+			<if test="userAddr!=null">userAddr = #{userAddr},</if>
+			<if test="userMobile!=null">userPwd = #{userMobile},</if>
+		</set>
+		where userNum = #{userNum}
+	</update>
+	<delete id="userDelete" parameterType="user">
+		delete from usertbl where userNum = #{userNum}
+	</delete>
 </mapper>
