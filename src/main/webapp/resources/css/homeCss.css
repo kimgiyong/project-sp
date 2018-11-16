@@ -48,7 +48,7 @@ header{border:solid 1px red; margin-bottom:30px;}
 	text-align:center;
 	height:40px;
 	position:relative;
-	z-index:2;
+	z-index:10;
 }
 #menuBox .mainMenu{
 	float:left;
@@ -87,9 +87,9 @@ header{border:solid 1px red; margin-bottom:30px;}
 }
 #AdWin{
 	position:relative;
-	z-index:1;
+	z-index:8;
 }
-.AdImg:first-child, .AdImg:last-child{
+/* .AdImg:first-child, .AdImg:last-child{
 	display: inline-block;
 	width:300px;
 	height:345px;
@@ -97,8 +97,8 @@ header{border:solid 1px red; margin-bottom:30px;}
 	line-height:345px;
 	background-color:black;
 	opacity:0.5;
-}
-.AdImg:nth-child(2){
+} */
+/* .AdImg:nth-child(2){
 	display: inline-block;
 	text-align:center;
 	line-height:345px;
@@ -107,8 +107,50 @@ header{border:solid 1px red; margin-bottom:30px;}
 	border:1px solid green;
 	margin:0px -5px;
 	
-}  
-.AdImg button{
-	width:80px;
-	height:80px;
+}   */
+/* .AdImg{
+	width:100%;
+	height:100%;
+	border: 0px;
+	outline:0px;
+	cursor:pointer;
+	background-color: transparent !important;
+}  */
+
+.loge{
+	border: 0px;
+	outline:0px;
+	cursor:pointer;
+	background-color: transparent !important;
+}
+
+#leftbtn, #rightbtn{
+	background-color: rgba(0,0,0,0.4);
+	width:10%;
+	height:100%;
+	text-align: center;
+	cursor:pointer;
+}
+
+#leftbtn{
+	float:left;
+}
+#rightbtn{
+	float:rigth;
+}
+
+#Adwin{
+	position:relative;
+	z-index:7;
+	height:400px; width:1200px;
+}
+
+#centerimge{
+	background-image: url("../img/bookgmm.jpg");
+	background-repeat:no-repeat;
+	width:100%;
+	height:100%;
+	background-size: cover;
+	background-position: center center;
+	margin-top:-30px;
 }

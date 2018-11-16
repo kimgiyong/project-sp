@@ -11,15 +11,16 @@
 <% String loge = (String)request.getParameter("loge"); %>
 
 	<div id="container">
-	<h1 id="logo">좋은향 도서관</h1>
+	<a href="../book/homePage"><h1 id="logo">좋은<span id="hyang">향</span> 도서관</h1></a>
 		<div id="back">
 			<h1 id="log">LOGIN</h1>
 
 			<input id="userId" type="text" placeholder="Account Id" /><br>
 			<input id="userPwd" type="password" placeholder="password" /><br>
-			<input id="userJoin" type="hidden" placeholder="retype password" /><br>
-			<input id="userEmail" type="hidden" placeholder="Account Email" /><br>
-			<input id="user" type="hidden" placeholder="" /><br>
+			<input id="userPwdchk" type="hidden" placeholder="retype password" /><br>
+			<input id="userName" type="hidden" placeholder="name" /><br>
+			<input id="userBir" type="hidden" placeholder="Birthday" /><br>
+			<input id="userNumber" type="hidden" placeholder="Phone number" /><br>
 
 			<button disabled="true" id="loginbtn">LOGIN</button>
 			<br> <a id="forgot" href="forgetIP">Forgot your ID or Password?</a> 
@@ -33,28 +34,34 @@
 <script>	
 	var id = document.getElementById("userId");
 	var pwd = document.getElementById("userPwd");
-	var join = document.getElementById("userJoin");
+	var pwdchk = document.getElementById("userPwdchk");
+	
+	var name = document.getElementById("userName");
+	var birthday = document.getElementById("userBir");
+	var number = document.getElementById("userNumber");
+	
 	var btn = document.getElementById("loginbtn");
 	var signup = document.getElementById("signup");
-	var log = document.getElementById("log");
-	var email = document.getElementById("userEmail");
-	var useraa = document.getElementById("user");
+	var log = document.getElementById("log");	
 	
 	var loge = <%=loge%>;
 	
 	if(loge==0){
 		window.addEventListener("load", function(){
 			btn.textContent = "Create account";
-			join.type = "password";
+			pwdchk.type = "password";
+			name.type = "text";
+			birthday.type = "date";
+			number.type = "text";
 			signup.textContent = "sign in";
 			log.textContent = "JOIN"
 		});
-	}
+	};/* 여기가 들어갈때 확인해서 join쪽이면 바꿔줌 */
 	
-	function colorCheck() {
-		if (btn.textContent == "Create account") {
-			if (id.value != "" && pwd.value != "" && join.value != "") {
-				if (pwd.value == join.value) {
+	function colorCheck() { /* not null 같은 코드  */
+		if (btn.textContent == "Create account") { /* 회원가입 할때 not null 안쓰면 회원가입 안됨 */
+			if (id.value != "" && pwd.value != "" && pwdchk.value != "" && name.value != "" && birthday.value != "" && number.value != "") {
+				if (pwd.value == pwdchk.value) {
 					btn.disabled = false;
 					btn.style.backgroundColor = "lightsteelblue";
 				}
@@ -62,7 +69,7 @@
 				btn.disabled = true;
 				btn.style.backgroundColor = "lightslategray";
 			}
-		} else {
+		} else { /* 로그인할때 아이디나 패스워드 중에 안쓰면 로그인 안됨 */
 			if (id.value != "" && pwd.value != "") {
 				btn.disabled = false;
 				btn.style.backgroundColor = "lightsteelblue";
@@ -73,7 +80,7 @@
 		}
 	}
 
-	function login() {
+	function login() { /* 회원가입할때 비밀번호가 다르면 alert창에 띄어줌 밖에 없어 */
 		var data = {
 			id : id.value,
 			password : pwd.value
@@ -81,12 +88,12 @@
 		var json = JSON.stringify({
 			id : id.value,
 			password : pwd.value,
-			passwordcheck : join.value
+			passwordcheck : pwdchk.value
 		});
 		var backToObj = JSON.parse(json);
 		/* console.log(backToObj); */
 		if (btn.textContent == "Create account") {
-			if (pwd.value != join.value) {
+			if (pwd.value != pwdchk.value) {
 				alert("삐! 비밀번호가 다릅니다. 다시입력해주세요.");
 			} else {
 				alert("회원가입에 성공하셨습니다.");
@@ -97,22 +104,26 @@
 	function sign() {
 		if (signup.textContent == "sign up") {
 			btn.textContent = "Create account";
-			join.type = "password";
-			email.type = "email";
-			user.type = "text";
+			log.textContent = "JOIN";
+			pwdchk.type = "password";
+			name.type = "text";
+			birthday.type = "date";
+			number.type = "text";
 			signup.textContent = "sign in";
 		} else {
 			btn.textContent = "Login";
-			join.type = "hidden";
-			email.type = "hidden";
-			useraa.type = "hidden";
+			log.textContent = "LOGIN"
+			pwdchk.type = "hidden";
+			name.type = "hidden";
+			birthday.type = "hidden";
+			number.type = "hidden";
 			signup.textContent = "sign up";
 		}
 	}
 	
 	id.addEventListener("keyup", colorCheck);
 	pwd.addEventListener("keyup", colorCheck);
-	join.addEventListener("keyup", colorCheck);
+	pwdchk.addEventListener("keyup", colorCheck);
 	btn.addEventListener("click", login);
 	signup.addEventListener("click", sign);
 	
