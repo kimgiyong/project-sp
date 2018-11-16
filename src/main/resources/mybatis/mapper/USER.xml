@@ -1,33 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper
-  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
-  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
 <mapper namespace="com.project.sp.USER">
 	<select id="userSelectList" resultType="user" parameterType="user">	
 		select * from usertbl
-		<where>
-			<if test="userNum!=null">and userNum = #{userNum}</if>
-			<if test="userNum!=null">and userName = #{userNum}</if>
-			<if test="userNum!=null">and userId = #{userNum}</if>
-		</where>
 	</select>
 	<select id="userSelect" resultType="user" parameterType="user">
 		select * from usertbl
 		where userNum = #{userNum}
 	</select>
-	<insert id="userInsertD" parameterType="user">
-		insert into usertbl(userName, userId, userPwd, userBirth, userMobile, userScore, userLevel);
-		values(#{userName},#{userId},#{userPwd},#{userBirth},#{userMobile},0,1)
+	<insert id="userInsert" parameterType="user">
+	
 	</insert>
-	<update id="userUpdate" parameterType="user">
-		update usertbl
-		<set>
-			<if test="userPwd!=Null">userPwd = #{userPwd},</if>
-			<if test="userAddr!=null">userAddr = #{userAddr},</if>
-			<if test="userMobile!=null">userMobile = #{userMobile},</if>
-		</set>
-	</update>
-	<delete id="userDelete" parameterType="int">
-		delete from usertbl where userNum = #{userNum}
-	</delete>
 </mapper>

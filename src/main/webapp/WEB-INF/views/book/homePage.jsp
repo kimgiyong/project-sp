@@ -25,7 +25,7 @@
 		<a href="loginPage?loge=0"><button id="loge0" value="loge0">회원가입<!--  |  --></button></a>
 		<!-- <button><a href="forget">아이디 및 비밀번호 찾기</a></button> -->
 	</div>
-</header>
+</header> 
 <div class="clear"></div>
 <section id="bodyHead">
 	<ul id="menuBox">
@@ -50,21 +50,21 @@
 				<li class="subMenu"><a href="#">서브메뉴 목록3</a></li>
 			</ul>
 		</li>
-		<li class="mainMenu"><a href="#">메인메뉴 목록3</a>
+		<li class="mainMenu"><a href="#">메인메뉴 목록4</a>
 			<ul class="subMenuBox">
 				<li class="subMenu"><a href="#">서브메뉴 목록1</a></li>
 				<li class="subMenu"><a href="#">서브메뉴 목록2</a></li>
 				<li class="subMenu"><a href="#">서브메뉴 목록3</a></li>
 			</ul>
 		</li>
-		<li class="mainMenu"><a href="#">메인메뉴 목록3</a>
+		<li class="mainMenu"><a href="#">메인메뉴 목록5</a>
 			<ul class="subMenuBox">
 				<li class="subMenu"><a href="#">서브메뉴 목록1</a></li>
 				<li class="subMenu"><a href="#">서브메뉴 목록2</a></li>
 				<li class="subMenu"><a href="#">서브메뉴 목록3</a></li>
 			</ul>
 		</li>
-		<li class="mainMenu"><a href="#">메인메뉴 목록3</a>
+		<li class="mainMenu"><a href="#">메인메뉴 목록6</a>
 			<ul class="subMenuBox">
 				<li class="subMenu"><a href="#">서브메뉴 목록1</a></li>
 				<li class="subMenu"><a href="#">서브메뉴 목록2</a></li>
@@ -72,13 +72,14 @@
 			</ul>
 		</li>
 	</ul>
+<div class="clear"></div>
 	<div id="AdWin">
-		<div class="AdImg">img left
+		<div class="AdImg">.
 			<button id="MoveLeftBtn">왼쪽 이미지</button>
 		</div>
-		<div class="AdImg">img center</div>
-		<div class="AdImg">img right
-			<button id="MoveLeftBtn">왼쪽 이미지</button>
+		<div class="AdImg">.</div>
+		<div class="AdImg">. 
+			<button id="MoverightBtn">오른쪽 이미지</button>
 		</div>
 	</div>
 </section>

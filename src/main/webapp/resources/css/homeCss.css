@@ -1,104 +1,114 @@
-@charset "UTF-8";
-header{
-	margin: 0 auto;
-}
-a{
-	text-decoration: none;
-	color:white;
-	margin:0 37px;  
-}
-.clear{
-	clear: both;
-}
-#logoBox{
-	border:solid 1px red;
-	width:300px; 
-	height:130px; 
+*{margin:0 auto; padding:0px;} 
+li{list-style-type:none;}
+a{text-decoration:none; color:#000;}
+body{width:1400px; border:1px solid green;}
+.clear{clear:both;}
+header{border:solid 1px red; margin-bottom:30px;}
+
+#logoBox{ 
+	width:200px;
+	height:100px;
+	display:inline-block;
 	float:left;
-}  
-#searchBox{  	
-	border:solid 1px blue;
+} 
+
+#searchBox{
 	width:700px;
-	height:70px;
-	margin-left:300px;  
-	margin-top:30px;   
-	float:left;
-	padding:2px;
-	line-height:70px;
-}
+	display:inline-block; 
+	margin-left:200px; 
+	text-align:center;
+	margin-top:70px;
+} 
 #searchBox #selection{
-	width:120px;
-	height:50px;
-	font-size:20px;
-	border:none;
+	padding:5px;
+	font-size:15px;
 }
 #searchBox input{
+	padding:5px;
+	font-size:15px;
 	width:500px;
-	height:40px;
 }
 #searchBox button{
-	width:50px;
-	height:40px; 
+	padding:5px;
+	font-size:15px;
 }
+
 #login{
 	float:right;
+	margin-right:50px;
+	margin-top:10px; 
 }
-#login a{
-	color:gray;
-	text-decoration: none;
-}
-#menuBox>.mainMenu{
-	float:left; 
+ 
+
+
+#bodyHead{border:1px solid blue; height:400px; width:1200px;}
+
+#menuBox{
+	color:white;
 	text-align:center;
-	margin:0px;
-	list-style-type:none;
+	height:40px;
+	position:relative;
+	z-index:2;
 }
-#AdImg1{	
+#menuBox .mainMenu{
+	float:left;
+	background-color:#442200; 
+	display: inline-block;
+	height:40px; 
+	width:200px;
+	padding-top:15px;  
+}
+#menuBox .mainMenu a{ 
+	color:white;
+	font-size:18px; 
+	margin:5px 20px;
+}
+#menuBox .mainMenu:hover{
+	background-color:#886644;
+}
+
+#menuBox .subMenu{
+	display:none;   
+	background-color: #edb;	
+	padding:15px 0px;
+	width:200px;
+}
+#menuBox .subMenu a{
+	color:black; 
+} 
+.subMenu:first-child{
+	margin-top:15px;
+}
+#menuBox .mainMenu:hover .subMenu{
+	display:block;
+}
+#menuBox .subMenu:hover{
+	background-color: #ffe;
+}
+#AdWin{
+	position:relative;
+	z-index:1;
+}
+.AdImg:first-child, .AdImg:last-child{
+	display: inline-block;
 	width:300px;
-	height:100px;
-	background-color:blue;   
-	background-image: url("../img/event1.jpg");	
-}
-
-#menuBox{	
-	margin:0 11%;
+	height:345px;
 	text-align:center;
-	width:1400px; 
-	height:50px; 
-	background-color: #663344;
+	line-height:345px;
+	background-color:black;
+	opacity:0.5;
 }
-
-.mainMenu{
-	margin-top:100px;
-	list-style-type: none;
-	font-size: 22px;
-	margin:0 10px;
-	line-height:45px;
-	bakground-color:#663344; 
-}
-
-.mainMenu:hover{
-	background-color:#885566; 
-}
-
-.mainMenu:hover .subMenu{
-	display: block;
-	background-color:#663355; 
-}
-
-.subMenu{ 
-	list-style-type: none;
-	margin-left:-40px;  
-	font-size: 18px;
-	display: none;
-	background-color:#884264;
-}
-.subMenu:hover{
-	background-color:#aa5588;
-}
-#bodyHead{
-	border:solid 1px blue;
-	width:1400px;
-	margin:0 11%;
+.AdImg:nth-child(2){
+	display: inline-block;
 	text-align:center;
+	line-height:345px;
+	width:596px; 
+	height:345px;
+	border:1px solid green;
+	margin:0px -5px;
+	
+}  
+.AdImg button{
+	width:80px;
+	height:80px;
 }
