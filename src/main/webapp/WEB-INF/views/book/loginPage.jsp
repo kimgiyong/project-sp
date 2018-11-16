@@ -9,13 +9,17 @@
 </head>
 <body>
 <% String loge = (String)request.getParameter("loge"); %>
-	<div id="container">
-		<div id="back">
-			<h1 id="logo">좋은향 도서관</h1>
 
-			<input id="userId" type="text" placeholder="Account Email" /><br>
+	<div id="container">
+	<h1 id="logo">좋은향 도서관</h1>
+		<div id="back">
+			<h1 id="log">LOGIN</h1>
+
+			<input id="userId" type="text" placeholder="Account Id" /><br>
 			<input id="userPwd" type="password" placeholder="password" /><br>
-			<input id="userjoin" type="hidden" placeholder="retype password" /><br>
+			<input id="userJoin" type="hidden" placeholder="retype password" /><br>
+			<input id="userEmail" type="hidden" placeholder="Account Email" /><br>
+			<input id="user" type="hidden" placeholder="" /><br>
 
 			<button disabled="true" id="loginbtn">LOGIN</button>
 			<br> <a id="forgot" href="forgetIP">Forgot your ID or Password?</a> 
@@ -29,19 +33,22 @@
 <script>	
 	var id = document.getElementById("userId");
 	var pwd = document.getElementById("userPwd");
-	var join = document.getElementById("userjoin");
+	var join = document.getElementById("userJoin");
 	var btn = document.getElementById("loginbtn");
 	var signup = document.getElementById("signup");
+	var log = document.getElementById("log");
+	var email = document.getElementById("userEmail");
+	var useraa = document.getElementById("user");
 	
 	var loge = <%=loge%>;
 	
 	if(loge==0){
-		window.addEventListener("load", joinPage);
-	}
-	function joinPage(){
-		btn.textContent = "Create account";
-		join.type = "password";
-		signup.textContent = "sign in";
+		window.addEventListener("load", function(){
+			btn.textContent = "Create account";
+			join.type = "password";
+			signup.textContent = "sign in";
+			log.textContent = "JOIN"
+		});
 	}
 	
 	function colorCheck() {
@@ -91,10 +98,14 @@
 		if (signup.textContent == "sign up") {
 			btn.textContent = "Create account";
 			join.type = "password";
+			email.type = "email";
+			user.type = "text";
 			signup.textContent = "sign in";
 		} else {
 			btn.textContent = "Login";
 			join.type = "hidden";
+			email.type = "hidden";
+			useraa.type = "hidden";
 			signup.textContent = "sign up";
 		}
 	}
