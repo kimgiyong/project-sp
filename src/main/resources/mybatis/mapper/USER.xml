@@ -5,4 +5,11 @@
 	<select id="userSelectList" resultType="user" parameterType="user">	
 		select * from usertbl
 	</select>
+	<select id="userSelect" resultType="user" parameterType="user">
+		select * from usertbl
+		where userNum = #{userNum}
+	</select>
+	<insert id="userInsert" parameterType="user">
+	
+	</insert>
 </mapper>
