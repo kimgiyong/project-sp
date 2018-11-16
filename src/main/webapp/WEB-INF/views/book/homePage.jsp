@@ -25,7 +25,7 @@
 		<a href="loginPage?loge=0"><button id="loge0" value="loge0">회원가입<!--  |  --></button></a>
 		<!-- <button><a href="forget">아이디 및 비밀번호 찾기</a></button> -->
 	</div>
-</header>
+</header> 
 <div class="clear"></div>
 <section id="bodyHead">
 	<ul id="menuBox">
