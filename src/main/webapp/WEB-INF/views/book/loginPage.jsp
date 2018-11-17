@@ -114,13 +114,15 @@
 			}else if(number.value.length != 11){
 				alert('휴대폰번호를 다시 입력해주세요');
 			}else {
-				alert("회원가입에 성공하셨습니다.");
 				var conf = {
 					url:'/libuser',
-					method:'GET',
+					method:'POST',
+					param:JSON.stringify({
+						userName:username.value, userId:id.value,
+						userPwd:pwd.value, userBirth:birthday.value,
+						userMobile:number.value
+					}),
 					success:function(res){
-						res = JSON.parse(res);
-						alert(res[0].userId);
 						if(res=="1"){
 							alert('가입에 성공하였습니다.');
 							location.href='/uri/book/homePage';
@@ -133,6 +135,18 @@
 				}
 				au.send(conf);
 			}
+		}else if(btn.textContent == "LOGIN"){
+			var conf = {
+					url:'/liblogin',
+					method:'POST',
+					param:JSON.stringify({
+						userId:id.value, userPwd:pwd.value
+					}),
+					success:function(res){
+						alert('sss');
+					}
+			}
+			au.send(conf);
 		}
 	}
 

@@ -2,6 +2,11 @@ package com.project.sp.controller;
 
 import java.util.List;
 
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -12,6 +17,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.context.request.RequestAttributes;
 
 import com.project.sp.service.LibService;
 import com.project.sp.vo.userVO;
@@ -28,8 +34,18 @@ public class LibController {
 	}
 	
 	@PostMapping(value="/liblogin")
-	public @ResponseBody userVO userLogin(@RequestBody userVO user) {
-		return ls.userLogin(user);
+	public int userLogin(@RequestBody userVO user, HttpServletRequest request, HttpServletResponse response) {
+		userVO userL = ls.userLogin(user);
+		if(userL != null) {
+//			HttpSession session = request.getSession();
+//			session.setAttribute("user", ls.userLogin(user));
+//			response.setContentType("text/html; charset=UTF-8");
+			request.setAttribute("login", "로그인하였습니다.");
+			return 1;
+		}else {
+			request.setAttribute("login", "로그인에 실패하였습니다.");
+			return 2;
+		}
 	}
 	
 	@PutMapping(value="/libuser")

@@ -1,6 +1,10 @@
 package com.project.sp.dao.impl;
 
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.request;
+
 import java.util.List;
+
+import javax.servlet.http.HttpSession;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,8 +21,13 @@ public class LibDAOImpl implements LibDAO {
 	
 	@Override
 	public int userInsert(userVO user) {
-		
-		return ss.insert("com.project.sp.USER.userInsert",user);
+		String userId = user.getUserId();
+		String userId2 = ss.selectOne("com.project.sp.USER.userCheck",userId);
+		if(userId2 == null) {
+			return ss.insert("com.project.sp.USER.userInsert",user);
+		}else {
+			return 2;
+		}
 	}
 
 	@Override

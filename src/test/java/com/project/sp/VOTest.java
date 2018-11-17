@@ -33,7 +33,7 @@ public class VOTest {
 		try {
 			Connection con = ds.getConnection();
 			assertNotNull(con);
-			con.createStatement().execute("select * from usertbl");
+			con.createStatement().execute("select * from usertbl where userId = 'xxzcsv'");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

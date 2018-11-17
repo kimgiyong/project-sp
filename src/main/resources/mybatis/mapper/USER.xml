@@ -20,8 +20,8 @@
 		select * from usertbl
 		where userId = #{userId} and userPwd = #{userPwd}
 	</select>
-	<select id="userCheck" resultType="user" parameterType="user">
-	 	select * from usertbl
+	<select id="userCheck" resultType="String" parameterType="String">
+	 	select userId from usertbl
 	 	where userId = #{userId}
 	</select>
 	<insert id="userInsert" parameterType="user">
