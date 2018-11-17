@@ -14,13 +14,19 @@
 <body>
 	<div id="total">
 		<header>
+			<div id="login">
+				<a href="loginPage?loge=1"><button id="loge1" value="loge1"
+						class="loge">로그인</button></a> | <a href="loginPage?loge=0"><button
+						id="loge0" value="loge0" class="loge">
+						회원가입
+						<!--  |  -->
+					</button></a>
+				<!-- <button><a href="forget">아이디 및 비밀번호 찾기</a></button> -->
+			</div>
 
 			<div id="logoBox">
-				<span id="logof1">좋은</span>
-				<span id="logof2">향</span>
-				 <br> &emsp;
-				<span id="logof3">도서</span>
-				<span id="logof4">관</span>
+				<span id="logof1">좋은</span> <span id="logof2">향</span> <br>
+				&emsp; <span id="logof3">도서</span> <span id="logof4">관</span>
 				<!-- <img src="../img/logo4jpg3.jpg" alt="logoimge"> -->
 			</div>
 
@@ -31,16 +37,6 @@
 					<option value="witer">작가</option>
 				</select> <input type="text" name="search">
 				<button id="searchBtn">검색</button>
-			</div>
-
-			<div id="login">
-				<a href="loginPage?loge=1"><button id="loge1" value="loge1"
-						class="loge">로그인</button></a> | <a href="loginPage?loge=0"><button
-						id="loge0" value="loge0" class="loge">
-						회원가입
-						<!--  |  -->
-					</button></a>
-				<!-- <button><a href="forget">아이디 및 비밀번호 찾기</a></button> -->
 			</div>
 
 		</header>
@@ -85,7 +81,7 @@
 					</ul></li>
 			</ul>
 			<div class="clear"></div>
-			
+
 			<div id="AdWin">
 				<div id="centerimge">
 
@@ -100,9 +96,16 @@
 			</div>
 		</section>
 		<div class="clear"></div>
-		<div>
-		
-		</div>
+		<section>
+			<div id="fooleftbtn">
+				<button id="fooleftBtn">&lt;</button>
+			</div>
+			<div></div>
+			<div></div>
+			<div id="foorightbtn">
+				<button id="foorightBtn">&gt;</button>
+			</div>
+		</section>
 	</div>
 </body>
 </html>
