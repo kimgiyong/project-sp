@@ -12,7 +12,6 @@ html, body {
 
 #container {
 	text-align: center;
-	background-color: skyblue;
 	height: 100%;
 	background-image:
 		url("../img/500509906_banner.jpg");
@@ -20,6 +19,7 @@ html, body {
 	background-position: center -160px;
 	background-repeat: no-repeat;
 	padding: 10% 0;
+	
 }
 
 h1 {
@@ -91,6 +91,9 @@ input {
 	color: navy;
 	text-shadow:gray 3px 3px 3px;
 	font-weight: bold;
+}
+#lodiv{
+	width:500px;
 }
 
 #logo , #hyang{

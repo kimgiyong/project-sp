@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -36,17 +38,17 @@ public class LibController {
 	}
 	
 	@DeleteMapping(value="/libuser")
-	public @ResponseBody int userDelete(@RequestBody int userNum) {
+	public @ResponseBody int userDelete(@PathVariable int userNum) {
 		return ls.userDelete(userNum);
 	}
 	
 	@GetMapping(value="/libuser")
-	public @ResponseBody List<userVO> userSelectList(@RequestBody userVO user){
+	public @ResponseBody List<userVO> userSelectList(@ModelAttribute userVO user){
 		return ls.userSelectList(user);
 	}
 	
 	@GetMapping(value="/libuser/{userNum}")
-	public @ResponseBody userVO userSelect(@RequestBody int userNum) {
+	public @ResponseBody userVO userSelect(@PathVariable int userNum) {
 		return ls.userSelect(userNum);
 	}
 }

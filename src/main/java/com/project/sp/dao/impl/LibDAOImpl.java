@@ -17,6 +17,7 @@ public class LibDAOImpl implements LibDAO {
 	
 	@Override
 	public int userInsert(userVO user) {
+		
 		return ss.insert("com.project.sp.USER.userInsert",user);
 	}
 

@@ -7,6 +7,9 @@
 		<where>
 			<if test="userNum!=null">and userNum = #{userNum}</if>
 			<if test="userName!=null">and userName = #{userName}</if>
+			<if test="userId!=null">and userId = #{userId}</if>
+			<if test="userBirth!=null">and userBirth = #{userBirth}</if>
+			<if test="userMobile!=null">and userMobile = #{userMobile}</if>
 		</where>
 	</select>
 	<select id="userSelect" resultType="user" parameterType="user">
@@ -16,6 +19,10 @@
 	<select id="userLogin" resultType="user" parameterType="user">
 		select * from usertbl
 		where userId = #{userId} and userPwd = #{userPwd}
+	</select>
+	<select id="userCheck" resultType="user" parameterType="user">
+	 	select * from usertbl
+	 	where userId = #{userId}
 	</select>
 	<insert id="userInsert" parameterType="user">
 		insert into usertbl(userName, userId, userPwd, userBirth, userMobile, userScore, userLevel)
