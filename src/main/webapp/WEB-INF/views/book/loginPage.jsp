@@ -23,7 +23,7 @@
 			<input id="userNumber" type="hidden" placeholder="Phone number" /><br>
 
 			<button disabled="true" id="loginbtn">LOGIN</button>
-			<br> <a id="forgot" href="forget">Forgot your ID or Password?</a> 
+			<br> <!-- <a id="forgot" href="forget"> -->Forgot your <a id="forgetid" href="forgetID">ID</a> or <a id="forgetpwd" href="forgetPwd">Password</a>?<!-- </a> --> 
 			<span id="zz">/</span>
 			<button id="signup">sign up</button>
 		</div>
@@ -32,6 +32,7 @@
 </body>
 
 <script>	
+
 	var id = document.getElementById("userId");
 	var pwd = document.getElementById("userPwd");
 	var pwdchk = document.getElementById("userPwdchk");
@@ -44,8 +45,20 @@
 	var signup = document.getElementById("signup");
 	var log = document.getElementById("log");	
 	
-	var date = new Date();
 	var loge = <%=loge%>;
+	
+	var date = new Date();
+	
+	var year = date.getFullYear(); //년도
+	var month = date.getMonth()+1; //월
+	var day = date.getDate(); //일
+
+	if ((day+"").length < 2) {       // 일이 한자리 수인 경우 앞에 0을 붙여주기 위해
+	    day = "0" + day;
+	}
+
+	var getToday = year+"-"+month+"-"+day; // 오늘 날짜 
+
 	
 	if(loge==0){
 		window.addEventListener("load", function(){
@@ -74,7 +87,9 @@
 			if (id.value != "" && pwd.value != "") {
 				btn.disabled = false;
 				btn.style.backgroundColor = "lightsteelblue";
-			} else {
+			}/*  else if(birthday.value < getToday){
+				alert("생일을 다시 확인해주세요.")
+			} */ else {
 				btn.disabled = true;
 				btn.style.backgroundColor = "lightslategray";
 			}

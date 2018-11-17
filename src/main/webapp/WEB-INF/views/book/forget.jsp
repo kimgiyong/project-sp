@@ -38,7 +38,7 @@ button {
 </style>
 </head>
 <body>
-	<!-- <div id="add"><img alt="#" src="#"></div> -->
+	<!-- <div id="addEvent"><img alt="#" src="#"></div> -->
 	<div id="cent">
 		<a id="forgetid" href="forgetID"><button>아이디 찾기</button></a> 
 		<a id="forgetpwd" href="forgetPwd"><button>비밀번호 찾기</button></a>
