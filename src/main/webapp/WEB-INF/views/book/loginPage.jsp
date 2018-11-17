@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>스프링테스트</title>
+<title>로그인/회원가입페이지</title>
 <link rel="stylesheet" type="text/css" href="${rootPath}/resources/css/loginPage.css" />
 </head>
 <body>
@@ -18,7 +18,7 @@
 			<input id="userId" type="text" placeholder="Account Id" /><br>
 			<input id="userPwd" type="password" placeholder="password" /><br>
 			<input id="userPwdchk" type="hidden" placeholder="retype password" /><br>
-			<input id="userName" type="hidden" placeholder="name" /><br>
+			<input id="userName" type="hidden" placeholder="user name" maxlength="5" min="2"/><br>
 			<input id="userBir" type="hidden" placeholder="Birthday" /><br>
 			<input id="userNumber" type="hidden" placeholder="Phone number" /><br>
 
@@ -36,7 +36,7 @@
 	var pwd = document.getElementById("userPwd");
 	var pwdchk = document.getElementById("userPwdchk");
 	
-	var name = document.getElementById("userName");
+	var username = document.getElementById("userName");
 	var birthday = document.getElementById("userBir");
 	var number = document.getElementById("userNumber");
 	
@@ -44,13 +44,14 @@
 	var signup = document.getElementById("signup");
 	var log = document.getElementById("log");	
 	
+	var date = new Date();
 	var loge = <%=loge%>;
 	
 	if(loge==0){
 		window.addEventListener("load", function(){
 			btn.textContent = "Create account";
 			pwdchk.type = "password";
-			name.type = "text";
+			username.type = "text";
 			birthday.type = "date";
 			number.type = "text";
 			signup.textContent = "sign in";
@@ -60,7 +61,7 @@
 	
 	function colorCheck() { /* not null 같은 코드  */
 		if (btn.textContent == "Create account") { /* 회원가입 할때 not null 안쓰면 회원가입 안됨 */
-			if (id.value != "" && pwd.value != "" && pwdchk.value != "" && name.value != "" && birthday.value != "" && number.value != "") {
+			if (id.value != "" && pwd.value != "" && pwdchk.value != "" && username.value != "" && birthday.value != "" && number.value != "") {
 				if (pwd.value == pwdchk.value) {
 					btn.disabled = false;
 					btn.style.backgroundColor = "lightsteelblue";
@@ -95,6 +96,8 @@
 		if (btn.textContent == "Create account") {
 			if (pwd.value != pwdchk.value) {
 				alert("삐! 비밀번호가 다릅니다. 다시입력해주세요.");
+			} else if (birthday.value < date){
+				alert("이름을 다시 확인해주세요");
 			} else {
 				alert("회원가입에 성공하셨습니다.");
 			}
@@ -106,7 +109,7 @@
 			btn.textContent = "Create account";
 			log.textContent = "JOIN";
 			pwdchk.type = "password";
-			name.type = "text";
+			username.type = "text";
 			birthday.type = "date";
 			number.type = "text";
 			signup.textContent = "sign in";
@@ -114,7 +117,7 @@
 			btn.textContent = "Login";
 			log.textContent = "LOGIN"
 			pwdchk.type = "hidden";
-			name.type = "hidden";
+			username.type = "hidden";
 			birthday.type = "hidden";
 			number.type = "hidden";
 			signup.textContent = "sign up";
