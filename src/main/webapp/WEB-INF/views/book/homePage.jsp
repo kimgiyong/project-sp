@@ -73,12 +73,14 @@
 		<div class="clear"></div>
 		<div id="AdWin">
 			<div id="centerimge">
+			
 				<div id="leftbtn">
 					<button id="MoveLeftBtn">&lt;</button>
 				</div>
 				<div id="rightbtn">
 					<button id="MoverightBtn">&gt;</button>
 				</div>
+				
 			</div>
 		</div>
 	</section>

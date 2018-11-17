@@ -23,7 +23,7 @@
 			<input id="userNumber" type="hidden" placeholder="Phone number" /><br>
 
 			<button disabled="true" id="loginbtn">LOGIN</button>
-			<br> <!-- <a id="forgot" href="forget"> -->Forgot your <a id="forgetid" href="forgetID">ID</a> or <a id="forgetpwd" href="forgetPwd">Password</a>?<!-- </a> --> 
+			<br> <!-- <a id="forgot" href="forget"> --><span id="forgot">Forgot your <a id="forgetid" href="forgetID">ID</a> or <a id="forgetpwd" href="forgetPwd">Password</a>?</span><!-- </a> --> 
 			<span id="zz">/</span>
 			<button id="signup">sign up</button>
 		</div>

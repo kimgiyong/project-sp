@@ -44,9 +44,10 @@ h1 {
 	font-size: 140%;
 }
 
-#forgot {
+#forgot, #forgot a{
 	/*   color:royalblue; */
 	color: navy;
+	font-size: 80%;
 }
 
 
@@ -59,10 +60,6 @@ input {
 	margin: 10px;
 	padding: 10px;
 	color: navy;
-}
-
-#forgot{
-	font-size: 80%;
 }
 
 #foo {
