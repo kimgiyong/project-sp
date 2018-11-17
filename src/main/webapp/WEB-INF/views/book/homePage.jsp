@@ -99,7 +99,7 @@
 		<div class="clear"></div>
 		
 		<section id="cuchen">
-			<div id="cu">오늘의 추천 도서  | 오늘의 신간 도서</div>
+			<div id="cus">오늘의 추천 도서  | 오늘의 신간 도서</div>
 			<div id="fooleftbtn">
 				<button id="fooleftBtn"> &lt; </button>
 			</div>
