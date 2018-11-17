@@ -1,5 +1,7 @@
 package com.project.sp.dao.impl;
 
+import java.util.List;
+
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -20,32 +22,27 @@ public class LibDAOImpl implements LibDAO {
 
 	@Override
 	public userVO userLogin(userVO user) {
-		// TODO Auto-generated method stub
-		return null;
+		return ss.selectOne("com.project.sp.USER.userLogin",user);
 	}
 
 	@Override
 	public int userUpdate(userVO user) {
-		// TODO Auto-generated method stub
-		return 0;
+		return ss.update("com.project.sp.USER.userUpdate",user);
 	}
 
 	@Override
 	public int userDelete(int userNum) {
-		// TODO Auto-generated method stub
-		return 0;
+		return ss.delete("com.project.sp.USER.userDelete",userNum);
 	}
 
 	@Override
-	public userVO userSelectList(userVO user) {
-		// TODO Auto-generated method stub
-		return null;
+	public List<userVO> userSelectList(userVO user) {
+		return ss.selectList("com.project.sp.USER.userSelectList",user);
 	}
 
 	@Override
 	public userVO userSelect(int userNum) {
-		// TODO Auto-generated method stub
-		return null;
+		return ss.selectOne("com.project.sp.USER.userSelect",userNum);
 	}
 
 }

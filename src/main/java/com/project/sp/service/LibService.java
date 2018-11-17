@@ -1,5 +1,7 @@
 package com.project.sp.service;
 
+import java.util.List;
+
 import com.project.sp.vo.userVO;
 
 public interface LibService {
@@ -8,6 +10,6 @@ public interface LibService {
 	public userVO userLogin(userVO user);
 	public int userUpdate(userVO user);
 	public int userDelete(int userNum);
-	public userVO userSelectList(userVO user);
+	public List<userVO> userSelectList(userVO user);
 	public userVO userSelect(int userNum);
 }

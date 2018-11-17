@@ -18,7 +18,7 @@
 			<input id="userId" type="text" placeholder="Account Id" /><br>
 			<input id="userPwd" type="password" placeholder="password" /><br>
 			<input id="userPwdchk" type="hidden" placeholder="retype password" /><br>
-			<input id="userName" type="hidden" placeholder="user name" maxlength="5" min="2"/><br>
+			<input id="userName" type="hidden" placeholder="user name" maxlength="5"/><br>
 			<input id="userBir" type="hidden" placeholder="Birthday" /><br>
 			<input id="userNumber" type="hidden" placeholder="Phone number" /><br>
 
@@ -44,7 +44,6 @@
 	var btn = document.getElementById("loginbtn");
 	var signup = document.getElementById("signup");
 	var log = document.getElementById("log");	
-	
 	var loge = <%=loge%>;
 	
 	var date = new Date();
@@ -97,25 +96,38 @@
 	}
 
 	function login() { /* 회원가입할때 비밀번호가 다르면 alert창에 띄어줌 밖에 없어 */
-		var data = {
-			id : id.value,
-			password : pwd.value
-		};
-		var json = JSON.stringify({
-			id : id.value,
-			password : pwd.value,
-			passwordcheck : pwdchk.value
-		});
-		var backToObj = JSON.parse(json);
 		/* console.log(backToObj); */
 		if (btn.textContent == "Create account") {
 			if (pwd.value != pwdchk.value) {
 				alert("삐! 비밀번호가 다릅니다. 다시입력해주세요.");
-			} else if (birthday.value < date){
-				alert("이름을 다시 확인해주세요");
-			} else {
+			}else {
 				alert("회원가입에 성공하셨습니다.");
 			}
+		}
+		var json = JSON.stringify({
+				id : id.value,
+				password : pwd.value,
+				passwordcheck : pwdchk.value
+			});
+		var backToObj = JSON.parse(json);
+		var conf = {
+				url:'/libuser',
+				method:'POST',
+				param:JSON.springify({
+					userName:username.value, userId:id.value,
+					userPwd:pwd.value, userBirth:birthday.value,
+					userMobile:number.value
+				}),
+				success:function(res){
+					if(res=="1"){
+						alert('가입에 성공하였습니다.');
+						location.href='/uri/book/homePage';
+					}else if(res=="2"){
+						alert('아이디가 중복되었습니다.');
+					}else{
+						alert('가입에 실패하였습니다.');
+					}
+				}
 		}
 	}
 
