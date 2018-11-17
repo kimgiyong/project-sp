@@ -11,7 +11,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center -500px;
-	width: auto;
+	width: 1500px;
 }
 
 #total {
@@ -61,6 +61,8 @@ body {
 	background-color: #ddc49d;
 	border-radius: 5px;
 	margin-left: 20px;
+	position:absolute;
+  	left:40%;
 }
 
 #searchBox #selection {
@@ -104,6 +106,8 @@ body {
 }
 
 #bodyHead {
+	position:absolute;
+  	left:38%;
 	height: 400px;
 	width: 1200px;
 }
@@ -195,6 +199,7 @@ body {
 	background-color: transparent !important;
 }
 
+
 #leftbtn, #rightbtn {
 	background-color: rgba(0, 0, 0, 0.4);
 	text-align: center;
@@ -203,6 +208,7 @@ body {
 	height: 92%;
 	margin-top:30px;
 	margin-bottom:-30px;
+	width: 10%;
 }
 
 #leftbtn {
@@ -211,14 +217,15 @@ body {
 
 #rightbtn {
 	float: rigth;
+	margin-left:1080px;
 }
 
-/* #Adwin {
+#Adwin {
 	position: relative;
 	z-index: 7;
 	height: 400px;
-	width: 1200px;
-} */
+	width: 100%;
+} 
 #centerimge {
 	float: left;
 	background-image: url("../img/bookgmm.jpg");
@@ -234,5 +241,22 @@ body {
 
 #MoveLeftBtn, #MoverightBtn {
 	font-size: 50px;
-	text-align: center;
+	border:0;
+	background-color: rgba(200,200,200,0.6);
+	border-radius:100%;
+	color:white;
+	width:80px;
+	height:80px;
+	margin-top:150px;
+}
+
+
+#cuchen{
+	float: left;
+	display:inline-block;
+	position: absolute;
+}
+
+#cuchen #cu{
+	font-weight: bold;
 }

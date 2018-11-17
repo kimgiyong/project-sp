@@ -95,15 +95,18 @@
 				</div>
 			</div>
 		</section>
+		
 		<div class="clear"></div>
-		<section>
+		
+		<section id="cuchen">
+			<div id="cu">오늘의 추천 도서  | 오늘의 신간 도서</div>
 			<div id="fooleftbtn">
-				<button id="fooleftBtn">&lt;</button>
+				<button id="fooleftBtn"> &lt; </button>
 			</div>
-			<div></div>
-			<div></div>
+			<div id="cuchen1"><img alt="1위"></div>
+			<div id="cuchen1"><img alt="2위"></div>
 			<div id="foorightbtn">
-				<button id="foorightBtn">&gt;</button>
+				<button id="foorightBtn"> &gt; </button>
 			</div>
 		</section>
 	</div>
