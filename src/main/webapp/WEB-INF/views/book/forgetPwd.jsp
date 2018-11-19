@@ -12,11 +12,13 @@
 	$(function() {
 		$("#findBtn").click(function() {
 			$.ajax({
-				url : "../book/find_pw.do",
+				url : "/find_pwd",
 				type : "POST",
 				data : {
-					id : $("#id").val(),
-					email : $("#email").val()
+					id : $("#findId").val(),
+					username : $("#username").val(),
+					mobile : $("#findMobile").val(),
+					birthday : $("#findBir").val()
 				},
 				success : function(result) {
 					alert(result);

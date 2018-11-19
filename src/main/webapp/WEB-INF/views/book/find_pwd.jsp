@@ -2,6 +2,7 @@
 	pageEncoding="UTF-8"%>
 <!doctype html>
 <html>
+
 <head>
 <meta charset="utf-8">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -17,13 +18,13 @@
 			})
 		})/* 이거 필요 없을꺼 같다 */
 	</script>
-	<title>아이디 찾기</title>
+	<title>패스워드 찾기</title>
 </head>
 <body>
 	<div class="w3-content w3-container w3-margin-top">
 		<div class="w3-container w3-card-4">
 			<div class="w3-center w3-large w3-margin-top">
-				<h3>아이디 찾기 검색결과</h3>
+				<h3>패스워드 찾기 검색결과</h3>
 			</div>
 			<div>
 				<h5>${ id }</h5>

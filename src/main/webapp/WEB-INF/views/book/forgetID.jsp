@@ -31,7 +31,7 @@
 
 	<div class="w3-content w3-container w3-margin-top">
 		<div class="w3-container w3-card-4">
-			<form action="../book/find_id" method="post">
+			<form action="/find_id" method="post">
 				<div class="w3-center w3-large w3-margin-top">
 					<h3>아이디 찾기</h3>
 				</div>
