@@ -28,7 +28,7 @@
 
 .container .menu-left li img {
 	width: 175px;
-	height: 135px;
+	height: 135px; 
 }
 </style>
 <link href="common/base.css" rel="stylesheet" type="text/css" />
