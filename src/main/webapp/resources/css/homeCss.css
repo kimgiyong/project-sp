@@ -1,4 +1,4 @@
-* {
+* {	/* 기본값 */
 	margin: 0 auto;
 	padding: 0px;
 	list-style-type: none;
@@ -11,10 +11,6 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center -500px;
-	width: auto	;
-}
-
-#total {
 	width: 90%;
 }
 
@@ -23,65 +19,46 @@ body {
 }
 
 
+/* home.jsp */
+
+/* 상단 logo부분 */
 #logoBox {
 	width: auto;
-	height: 200px;
+	height: 190px;
 	display: inline-block;
 	float: left;
-	/* background-image:url("../img/logo2.png");
-	background-repeat: no-repeat;
-	background-size: cover; */
 	font-family: Jeju Hallasan;
-	font-size: 65px;
-	margin-top: 20px;
+	font-size: 62px;
+	margin-top: 30px;
 }
 
-#logof{
-	color:black;
-	cursor: pointer;
-}	
-
-#logof1 {
-	color: brown;
-}
-
-#logof2 {
-	color: green;
-}
-
-#logof3 {
-	color: orange;
-}
-
-#logof4 {
-	color: brown;
-}
-
+/* 검색창 */
 #searchBox {
 	width: 1100px;
 	display: inline-block;
 	text-align: center;
-	margin-top: 70px;
+	margin-top: 83px;
 	padding: 5px;
 	background-color: #ddc49d;
-	border-radius: 5px;
-	margin-left: 20px;	
+	border-radius: 10px;
+	margin-left: 50px;	
 }
 
 #searchBox #selection {
 	margin-right:30px;
 	font-size: 20px;
-	border-radius:10px;
+	border-radius:20px;
 	background-color: rgba(255,255,255,0.7);
 	height: 50px;
 	margin-top: 5px;
+	padding: auto 10px;
 	border: 0;
 }
 
 #searchBox input {
 	padding: 5px;
 	font-size: 20px;
-	width: 750px;
+	width: 800px;
 	background-color: rgba(255,255,255,0.4);
 	height:50px;
 }
@@ -92,22 +69,40 @@ body {
 	border-radius:100%;
 	border: 0;
 	font-weight: bold;
-	width:50px; 
-	height:50px;
-	margin-left:20px;
+	width:55px; 
+	height:55px;
+ 	cursor: pointer;
+ 	margin-left:30px;
+ 	padding:3px;
 }
 
+/* 로그인/회원가입 */
 #login {
 	float: right;
-	margin-right: 50px;
-	margin-top: 10px;
-	font-size: 150%;
+	margin-right: 100px;
+	margin-top: 30px;
+	font-size: 115%;
+	font-weight: bold;
+	font-family: fantasy;
 }
 
 #login a button {
-	font-size: 100%;
+	font-size: 90%;
+	font-weight: bold;
 }
 
+.loge {
+	border: 0px;
+	outline: 0px;
+	cursor: pointer;
+	background-color: transparent !important;
+}
+
+.loge:hover{
+	color: #a92940;
+}
+
+/* menu부분 */
 #bodyHead {	
 	height: 400px;
 	width: 1200px;
@@ -161,45 +156,10 @@ body {
 
 #menuBox .subMenu:hover {
 	background-color: #ffe;
-} /* 
-#AdWin{
-	position:relative;
-	z-index:8;
-} */
-/* .AdImg:first-child, .AdImg:last-child{
-	display: inline-block;
-	width:300px;
-	height:345px;
-	text-align:center;
-	line-height:345px;
-	background-color:black;
-	opacity:0.5;
-} */
-/* .AdImg:nth-child(2){
-	display: inline-block;
-	text-align:center;
-	line-height:345px;
-	width:596px; 
-	height:345px;
-	border:1px solid green;
-	margin:0px -5px;
-	
-}   */
-/* .AdImg{
-	width:100%;
-	height:100%;
-	border: 0px;
-	outline:0px;
-	cursor:pointer;
-	background-color: transparent !important;
-}  */
-.loge {
-	border: 0px;
-	outline: 0px;
-	cursor: pointer;
-	background-color: transparent !important;
 }
 
+
+/* homePage.jsp */
 
 #leftbtn, #rightbtn {
 	background-color: rgba(0, 0, 0, 0.4);
@@ -257,4 +217,28 @@ body {
 
 #cuchen #cu{
 	font-weight: bold;
+}
+
+/* footer부분 */
+/* 하단 logo부분 */
+
+#logof{
+	color:black;
+	cursor: pointer;
+}	
+
+#logof1 {
+	color: brown;
+}
+
+#logof2 {
+	color: green;
+}
+
+#logof3 {
+	color: orange;
+}
+
+#logof4 {
+	color: brown;
 }

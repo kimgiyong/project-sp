@@ -1,0 +1,28 @@
+* {	/* 기본값 */
+	margin: 0 auto;
+	padding: 0px;
+	list-style-type: none;
+	text-decoration: none;
+	color: #000;
+}
+
+body{
+	margin-top: 220px;
+	margin-left:-700px;
+	background:url("../img/book2.jpg") no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+.back{
+	background-color: rgba(255,255,255,0.54);
+	padding: 20px;
+	border-radius: 20px;
+	font-weight: bold;
+	line-height: 150%;
+}
+.back a{
+	font-weight: bold;
+}
+p{
+	margin-bottom:25px; 
+}
