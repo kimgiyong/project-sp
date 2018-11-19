@@ -37,8 +37,12 @@
 				</div>
 				<div>
 					<p>
-						<label>Email</label>
-						<input class="w3-input" type="text" id="email" name="email" required>
+						<label>Name(이름)</label>
+						<input class="w3-input" type="text" id="username" name="username" required>
+					</p>
+					<p>
+					<label>Mobile(휴대폰번호)</label> <input class="w3-input" type="text" id="findMobile"
+						name="findMobile" required>
 					</p>
 					<p class="w3-center">
 						<button type="submit" id=findBtn class="w3-button w3-block w3-black w3-ripple w3-margin-top w3-round">find</button>

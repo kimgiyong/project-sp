@@ -35,12 +35,20 @@
 			</div>
 			<div>
 				<p>
-					<label>ID</label> <input class="w3-input" type="text" id="id"
-						name="id" required>
+					<label>ID(아이디)</label> <input class="w3-input" type="text" id="findId"
+						name="findId" required>
 				</p>
 				<p>
-					<label>Email</label> <input class="w3-input" type="text" id="email"
-						name="email" required>
+					<label>Name(이름)</label>
+					<input class="w3-input" type="text" id="username" name="username" required>
+				</p>
+				<p>
+					<label>Mobile(휴대폰번호)</label> <input class="w3-input" type="text" id="findMobile"
+						name="findMobile" required>
+				</p>
+				<p>
+					<label>Birthday(생일)</label> <input class="w3-input" type="date" id="findBir"
+						name="findBir" required>
 				</p>
 				<p class="w3-center">
 					<button type="button" id=findBtn
