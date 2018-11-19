@@ -200,9 +200,11 @@
 	</div>
 </body>
 <script>
+$(function(){
+	<% Object a = session.getAttribute("user");
+	%>
 	var $careNum = 0;
 	var $theSize = 2;
-
 	$(".menu-left ul").hide();
 	$(".menu-left ul").eq(0).show();
 	window.setInterval(function() {
@@ -224,6 +226,7 @@
 		$(".menu-left ul").hide();
 		$(".menu-left ul").eq($careNum).show();
 	});
+});
 </script>
 <!-- <script>
 	var $careNum = 0;
