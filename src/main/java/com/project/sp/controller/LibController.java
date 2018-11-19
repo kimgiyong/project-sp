@@ -22,7 +22,10 @@ import org.springframework.web.context.request.RequestAttributes;
 import com.project.sp.service.LibService;
 import com.project.sp.vo.userVO;
 
+import lombok.extern.slf4j.Slf4j;
+
 @Controller
+@Slf4j
 public class LibController {
 	
 	@Autowired
@@ -34,18 +37,12 @@ public class LibController {
 	}
 	
 	@PostMapping(value="/liblogin")
-	public int userLogin(@RequestBody userVO user, HttpServletRequest request, HttpServletResponse response) {
+	public @ResponseBody userVO userLogin(@RequestBody userVO user,HttpSession hs) {
+		log.info("HttpSession => {}", hs);
 		userVO userL = ls.userLogin(user);
-		if(userL != null) {
-//			HttpSession session = request.getSession();
-//			session.setAttribute("user", ls.userLogin(user));
-//			response.setContentType("text/html; charset=UTF-8");
-			request.setAttribute("login", "로그인하였습니다.");
-			return 1;
-		}else {
-			request.setAttribute("login", "로그인에 실패하였습니다.");
-			return 2;
-		}
+		hs.setAttribute("user", userL);
+		log.info("user =>{}" + userL);
+		return userL;
 	}
 	
 	@PutMapping(value="/libuser")

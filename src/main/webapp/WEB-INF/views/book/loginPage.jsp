@@ -140,10 +140,17 @@
 					url:'/liblogin',
 					method:'POST',
 					param:JSON.stringify({
-						userId:id.value, userPwd:pwd.value
+						userId:id.value,
+						userPwd:pwd.value
 					}),
 					success:function(res){
-						alert('sss');
+						if(res!=''){
+							alert('로그인하였습니다.');
+							alert('<%=session.getAttribute("user")%>');
+							location.href="/uri/book/homePage";
+						}else{
+							alert('아이디 혹은 비밀번호가 잘못되었습니다.');
+						}
 					}
 			}
 			au.send(conf);
