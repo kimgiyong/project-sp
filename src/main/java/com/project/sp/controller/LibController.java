@@ -37,12 +37,16 @@ public class LibController {
 	}
 	
 	@PostMapping(value="/liblogin")
-	public @ResponseBody userVO userLogin(@RequestBody userVO user,HttpSession hs) {
-		log.info("HttpSession => {}", hs);
+	public @ResponseBody userVO userLogin(@RequestBody userVO user,HttpSession hs, HttpServletRequest request) {
 		userVO userL = ls.userLogin(user);
-		hs.setAttribute("user", userL);
 		log.info("user =>{}" + userL);
-		return userL;
+		if(userL+"" == "") {
+			return userL;
+		}else {
+			hs.setAttribute("user", userL);
+			log.info("HttpSession => {}", hs);
+			return userL;
+		}
 	}
 	
 	@PutMapping(value="/libuser")
@@ -63,5 +67,15 @@ public class LibController {
 	@GetMapping(value="/libuser/{userNum}")
 	public @ResponseBody userVO userSelect(@PathVariable int userNum) {
 		return ls.userSelect(userNum);
+	}
+	@PostMapping(value="/liblogout")
+	public @ResponseBody int userLogout(HttpSession hs, HttpServletRequest request) {
+		hs = request.getSession(false);
+		if(hs != null) {
+			hs.invalidate();
+			return 1;
+		}else {
+			return 2;
+		}
 	}
 }
