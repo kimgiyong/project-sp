@@ -30,10 +30,9 @@
 			</ul>
 			<ul class="imgeul">
 				<li class="imgeli"><img
-					src="${resPath}/img/loginimg/book2.jpg"
+					src="${resPath}/img/homeimg/back3.jpg"
 					alt="mainimge" /></li>
 			</ul>
-			
 		</div>
 	</section>
 
