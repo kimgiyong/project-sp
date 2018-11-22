@@ -19,6 +19,9 @@
 			<div id="leftbtn">
 				<button id="MoveLeftBtn">&lt;</button>
 			</div>
+			<div id="rightbtn">
+				<button id="MoverightBtn">&gt;</button>
+			</div>
 			<ul>
 				<li><img
 					src="http://blog.fujixerox.co.kr/wp-content/uploads/2017/10/FUJI%EB%B8%94%EB%A1%9C%EA%B7%B8_1023_%EB%94%94%EC%9E%90%EC%9D%B8%EC%9A%94%EC%B2%AD_%EA%B0%80%EC%9D%84-%ED%95%84%EB%8F%85%EB%8F%84%EC%84%9C.png"
@@ -34,9 +37,7 @@
 					src="http://203.241.185.12/asd/print.cgi?board=News&img=1505976251.jpg"
 					alt="mainimge" /></li>
 			</ul>
-			<div id="rightbtn">
-				<button id="MoverightBtn">&gt;</button>
-			</div>
+			
 		</div>
 	</section>
 

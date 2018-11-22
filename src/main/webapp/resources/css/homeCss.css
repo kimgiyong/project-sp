@@ -161,9 +161,6 @@ body {
 
 
 /* homePage.jsp */
-body{
-	border:solid 1px red;
-}
 #slideimge{
 	height:400px;
 	width:1200px;
@@ -179,8 +176,9 @@ body{
 	background-color: rgba(0, 0, 0, 0.4);
 	text-align: center;
 	cursor: pointer;
-	height: 92%;
+	height: 100%;
 	width: 10%;
+	position:absolute;
 }
 
 #leftbtn {
@@ -223,6 +221,7 @@ body{
 
 /* footer부분 */
 /* 하단 logo부분 */
+/* footer가 아니라 그냥 logo였다!!! */
 
 #logof{
 	color:black;
