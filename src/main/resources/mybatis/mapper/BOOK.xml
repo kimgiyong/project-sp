@@ -3,5 +3,39 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.project.sp.BOOK">
-
+	<select id="bookSelectList" resultType="book">
+		select * from booktbl
+		<where>
+			<if test="bookName!=null">or bookName = #{bookName}</if>
+			<if test="bookWriter!=null">or bookWriter = #{bookWriter}</if>
+		</where>
+	</select>
+	<select id="bookSelect" resultType="book" parameterType="int">
+		select * from booktbl
+		where bookCode = #{bookCode}
+	</select>
+	<insert id="bookInsert" parameterType="book">
+		insert into booktbl
+		values(#{userNum},null,#{bookName},#{bookPub},#{bookWriter},#{bookYear},
+		#{bookAmount},#{bookImg},#{bookLike},now(),now(),#{bookDesc})
+	</insert>
+	<update id="bookUpdate" parameterType="book">
+		update booktbl
+		<set>
+			<if test="userNum!=null">userNum = #{userNum}</if>
+			<if test="bookName!=null">bookName = #{bookName},</if>
+			<if test="bookPub!=null">bookPub = #{bookPub},</if>
+			<if test="bookWriter!=null">bookWriter = #{bookWriter},</if>
+			<if test="bookYear!=null">booYear = #{bookYear},</if>
+			<if test="bookAmount!=null">bookAmount = #{bookAmount},</if>
+			<if test="bookImg!=null">bookImg = #{bookImg},</if>
+			<if test="1==1">moddat = now(),</if>
+			<if test="bookDesc!=null">bookDesc = #{bookDesc},</if>
+		</set>
+		where bookCode = #{bookCode}
+	</update>
+	<delete id="bookDelete" parameterType="book">
+		delete from booktbl
+		where bookCode = #{bookCode}
+	</delete>
 </mapper>
