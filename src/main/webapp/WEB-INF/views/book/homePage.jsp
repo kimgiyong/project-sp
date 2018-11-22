@@ -6,9 +6,6 @@
 <meta charset="utf-8">
 <title>좋은향 도서관</title>
 <link rel="stylesheet" type="text/css" href="${resPath}/css/homePageCss.css">
-<!-- <link href="http://fonts.googleapis.com/earlyaccess/jejuhallasan.css" rel="stylesheet">
-<link href="common/base.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
 </head>
 
 <body>
@@ -23,7 +20,7 @@
 			</div>
 			<ul class="imgeul">
 				<li class="imgeli"><img
-					src="${rootPath}/resources/img/loginimg/bookerber.jpg"	
+					src="${resPath}/img/loginimg/bookerber.jpg"	
 					alt="mainimge" /></li>
 			</ul>
 			<ul class="imgeul">
@@ -102,26 +99,26 @@
 <%Object a = session.getAttribute("user");%>
 	var $careNum = 0;
 		var $theSize = 2;
-		$(".menu-left ul").hide();
-		$(".menu-left ul").eq(0).show();
+		$("#btnmenu ul").hide();
+		$("#btnmenu ul").eq(0).show();
 		window.setInterval(function() {
 			$("#rightbtn").click();
 		}, 4000);
-		$(".menu-left #leftbtn").click(function() {
+		$("#btnmenu #leftbtn").click(function() {
 			$careNum--;
 			if ($careNum < 0)
 				$careNum = $theSize - 1;
-			$(".menu-left ul").hide();
-			$(".menu-left ul").eq($careNum).show();
+			$("#btnmenu ul").hide();
+			$("#btnmenu ul").eq($careNum).show();
 		});
 
-		$(".control #rightbtn").click(function() {
+		$("#rightbtn").click(function() {
 			$careNum++;
 			if ($careNum >= $theSize)
 				$careNum = 0;
 			$(this).parent().children("ul");
-			$(".menu-left ul").hide();
-			$(".menu-left ul").eq($careNum).show();
+			$("#btnmenu ul").hide();
+			$("#btnmenu ul").eq($careNum).show();
 		});
 	});
 </script>
