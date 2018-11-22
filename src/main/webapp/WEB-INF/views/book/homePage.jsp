@@ -25,7 +25,7 @@
 			</ul>
 			<ul class="imgeul">
 				<li class="imgeli"><img
-					src="${resPath}/img/loginimg/book1.jpg""
+					src="${resPath}/img/loginimg/book1.jpg"
 					alt="mainimge" /></li>
 			</ul>
 			<ul class="imgeul">
