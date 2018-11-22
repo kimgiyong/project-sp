@@ -5,35 +5,34 @@
 <head>
 <meta charset="utf-8">
 <title>좋은향 도서관</title>
-<link rel="stylesheet" type="text/css"
-	href="${rootPath}/resources/css/homeCss.css">
-<link href="http://fonts.googleapis.com/earlyaccess/jejuhallasan.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="${resPath}/css/homePageCss.css">
+<!-- <link href="http://fonts.googleapis.com/earlyaccess/jejuhallasan.css" rel="stylesheet">
 <link href="common/base.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
 </head>
 
 <body>
 	<%@ include file="home.jsp"%>
 	<section id="slideimge">
-		<div id="menu">
+		<div id="btnmenu">
 			<div id="leftbtn">
 				<button id="MoveLeftBtn">&lt;</button>
 			</div>
 			<div id="rightbtn">
 				<button id="MoverightBtn">&gt;</button>
 			</div>
-			<ul>
-				<li><img
-					src="http://blog.fujixerox.co.kr/wp-content/uploads/2017/10/FUJI%EB%B8%94%EB%A1%9C%EA%B7%B8_1023_%EB%94%94%EC%9E%90%EC%9D%B8%EC%9A%94%EC%B2%AD_%EA%B0%80%EC%9D%84-%ED%95%84%EB%8F%85%EB%8F%84%EC%84%9C.png"
+			<ul class="imgeul">
+				<li class="imgeli"><img
+					src="${rootPath}/resources/img/loginimg/bookerber.jpg"	
 					alt="mainimge" /></li>
 			</ul>
-			<ul>
-				<li><img
+			<ul class="imgeul">
+				<li class="imgeli"><img
 					src="https://t1.daumcdn.net/cfile/tistory/26065733597029C81E"
 					alt="mainimge" /></li>
 			</ul>
-			<ul>
-				<li><img
+			<ul class="imgeul">
+				<li class="imgeli"><img
 					src="http://203.241.185.12/asd/print.cgi?board=News&img=1505976251.jpg"
 					alt="mainimge" /></li>
 			</ul>
@@ -58,9 +57,9 @@
 		<div id="foorightbtn">
 			<button id="foorightBtn">&gt;</button>
 		</div>
-	</section> -->
+	</section>
 
-	<!-- <section> // 원본파일
+	<section> // 원본파일
 
 				<div class="menu-left">
 					<ul>
@@ -85,9 +84,9 @@
 						<button class="right">right</button>
 					</div>
 				</div>
-			</section> -->
+			</section>
 
-	<!-- 
+	
 	<div class="clear"></div>
 	<footer>
 		<div id="logoBox">
