@@ -53,7 +53,6 @@ body {
 #btnmenu .imgeul{
 	width: 1200px; height: 400px;
 	overflow:hidden;
-	z-index: 4;
 }
 
 .imgeli img{
