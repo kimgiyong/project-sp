@@ -7,7 +7,7 @@
 }
 
 body {
-	background-image: url("../img/back1.jpg");
+	background-image: url("../img/homeimg/back1.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center -500px;
@@ -63,7 +63,7 @@ body {
  #search-box #selection {
 	margin-right:30px;
 	font-size: 20px;
-	border-radius:20px;
+	border-radius:40px;
 	background-color: white;
 	height: 50px;
 	padding: auto 10px;
@@ -139,7 +139,7 @@ body {
 #menuBox {
 	color: white;
 	text-align: center;
-	height: 40px;
+	height: 40px; 
 	z-index: 10;
 	margin-top:18px;   
 }
@@ -160,18 +160,18 @@ body {
 }
 
 #menuBox .mainMenu:hover {
-	background-color: #886644;
+	background-color: #482609;
 }
 
 #menuBox .subMenu {
 	display: none;
-	background-color: #edb;
+	background-color: #795022;
 	padding: 15px 0px;
 	width: 200px;
 }
 
 #menuBox .subMenu a {
-	color: black;
+	color: white;
 }
 
 .subMenu:first-child {
@@ -183,7 +183,7 @@ body {
 }
 
 #menuBox .subMenu:hover {
-	background-color: #ffe;
+	background-color: #866529;
 }
 
 

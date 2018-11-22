@@ -6,7 +6,7 @@
 <head>
 <meta charset="utf-8">
 <title>로그인/회원가입페이지</title>
-<link rel="stylesheet" type="text/css" href="${rootPath}/resources/css/loginPage.css" />
+<link rel="stylesheet" type="text/css" href="${rootPath}/resources/css/loginCss/loginPage.css" />
 </head>
 <body>
 <% String loge = (String)request.getParameter("loge"); %>
