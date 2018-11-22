@@ -54,7 +54,11 @@ body {
 }
 
 #imgeli img{
-	width: 1200px; height: 400px;overflow:hidden;
+	width: 1200px; height: 400px;
+}
+
+img{
+	width: 1200px; height: 400px;
 }
 
 

@@ -25,12 +25,12 @@
 			</ul>
 			<ul class="imgeul">
 				<li class="imgeli"><img
-					src="https://t1.daumcdn.net/cfile/tistory/26065733597029C81E"
+					src="${resPath}/img/loginimg/book1.jpg""
 					alt="mainimge" /></li>
 			</ul>
 			<ul class="imgeul">
 				<li class="imgeli"><img
-					src="http://203.241.185.12/asd/print.cgi?board=News&img=1505976251.jpg"
+					src="${resPath}/img/loginimg/book2.jpg"
 					alt="mainimge" /></li>
 			</ul>
 			
