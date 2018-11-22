@@ -26,13 +26,16 @@
 			<span id="logof4">관</span></a>
 		</div>
 
-		<div id="searchBox">
+		<div id="search-box">
 			<select id="selection">
 				<option value="none">검색 방식</option>
 				<option value="title">제목</option>
 				<option value="witer">작가</option>
-			</select> <input type="text" name="search">
-			<button id="searchBtn">검색</button>
+			</select> 
+			<input type="text" name="search" placeholder="검색어를 입력하세요">
+			<button class="search-btn" href="#">
+					<i class="fas fa-search"></i>
+			</button>
 		</div>
 	</header>
 	
