@@ -5,18 +5,16 @@
 <head>
 <meta charset="utf-8">
 <title>좋은향 도서관</title>
-<link rel="stylesheet" type="text/css"
-	href="${rootPath}/resources/css/homeCss.css">
-<link href="http://fonts.googleapis.com/earlyaccess/jejuhallasan.css"
-	rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="${rootPath}/resources/css/homeCss.css">
+<link href="http://fonts.googleapis.com/earlyaccess/jejuhallasan.css" rel="stylesheet">
 <link href="common/base.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body>
 	<header>
 		<div id="login">
-			<a href="loginPage?loge=1"><button id="loge1" value="loge1"	class="loge">LOGIN &emsp; </button></a> | 
-			<a href="loginPage?loge=0"><button id="loge0" value="loge0" class="loge"> &emsp; JOIN</button></a>
+			<a href="login/loginPage?loge=1"><button id="loge1" value="loge1"	class="loge">LOGIN &emsp; </button></a> | 
+			<a href="login/loginPage?loge=0"><button id="loge0" value="loge0" class="loge"> &emsp; JOIN</button></a>
 		</div>
 
 		<div id="logoBox">

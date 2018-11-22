@@ -12,7 +12,7 @@
 <% String loge = (String)request.getParameter("loge"); %>
 
 	<div id="container">
-	<div id="lodiv"><a href="../book/homePage"><h1 id="logo">좋은<span id="hyang">향</span> 도서관</h1></a></div>
+	<div id="lodiv"><a href="../homePage"><h1 id="logo">좋은<span id="hyang">향</span> 도서관</h1></a></div>
 		<div id="back">
 			<h1 id="log">LOGIN</h1>
 
