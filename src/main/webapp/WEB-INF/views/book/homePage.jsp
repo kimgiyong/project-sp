@@ -37,8 +37,8 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 
-
 <body>
+<%@ include file="home.jsp" %>
 	<div id="AdWin">
 		<div id="centerimge">
 			<div class="menu-left">
