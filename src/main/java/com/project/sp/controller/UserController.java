@@ -19,24 +19,24 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.context.request.RequestAttributes;
 
-import com.project.sp.service.LibService;
+import com.project.sp.service.UserService;
 import com.project.sp.vo.userVO;
 
 import lombok.extern.slf4j.Slf4j;
 
 @Controller
 @Slf4j
-public class LibController {
+public class UserController {
 	
 	@Autowired
-	private LibService ls;
+	private UserService ls;
 	
-	@PostMapping(value="/libuser")
+	@PostMapping(value="/user")
 	public @ResponseBody int userInsert(@RequestBody userVO user) {
 		return ls.userInsert(user);
 	}
 	
-	@PostMapping(value="/liblogin")
+	@PostMapping(value="/login")
 	public @ResponseBody userVO userLogin(@RequestBody userVO user,HttpSession hs, HttpServletRequest request) {
 		userVO userL = ls.userLogin(user);
 		log.info("userL ==>{}",userL);
@@ -49,26 +49,26 @@ public class LibController {
 		}
 	}
 	
-	@PutMapping(value="/libuser")
+	@PutMapping(value="/user")
 	public @ResponseBody int userUpdate(@RequestBody userVO user) {
 		return ls.userUpdate(user);
 	}
 	
-	@DeleteMapping(value="/libuser")
+	@DeleteMapping(value="/user")
 	public @ResponseBody int userDelete(@PathVariable int userNum) {
 		return ls.userDelete(userNum);
 	}
 	
-	@GetMapping(value="/libuser")
+	@GetMapping(value="/user")
 	public @ResponseBody List<userVO> userSelectList(@ModelAttribute userVO user){
 		return ls.userSelectList(user);
 	}
 	
-	@GetMapping(value="/libuser/{userNum}")
+	@GetMapping(value="/user/{userNum}")
 	public @ResponseBody userVO userSelect(@PathVariable int userNum) {
 		return ls.userSelect(userNum);
 	}
-	@PostMapping(value="/liblogout")
+	@PostMapping(value="/logout")
 	public @ResponseBody int userLogout(HttpSession hs, HttpServletRequest request) {
 		hs = request.getSession(false);
 		if(hs != null) {

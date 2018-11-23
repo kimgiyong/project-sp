@@ -1,4 +1,4 @@
-package com.project.sp.service;
+package com.project.sp.dao;
 
 import java.util.List;
 
@@ -6,8 +6,8 @@ import javax.servlet.http.HttpSession;
 
 import com.project.sp.vo.userVO;
 
-public interface LibService {
-	
+public interface UserDAO {
+
 	public int userInsert(userVO user);
 	public userVO userLogin(userVO user);
 	public int userUpdate(userVO user);

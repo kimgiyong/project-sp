@@ -116,7 +116,7 @@
 				alert('휴대폰번호를 다시 입력해주세요');
 			}else {
 				var conf = {
-					url:'/libuser',
+					url:'/user',
 					method:'POST',
 					param:JSON.stringify({
 						userName:username.value, userId:id.value,
@@ -138,7 +138,7 @@
 			}
 		}else if(btn.textContent == "LOGIN"){
 			var conf = {
-					url:'/liblogin',
+					url:'/login',
 					method:'POST',
 					param:JSON.stringify({
 						userId:id.value,

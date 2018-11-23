@@ -95,7 +95,6 @@
 </body>
 <script>
 	$(function() {
-<%Object a = session.getAttribute("user");%>
 	var $careNum = 0;
 		var $theSize = 2;
 		$("#btnmenu ul").hide();

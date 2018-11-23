@@ -14,8 +14,8 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.project.sp.controller.LibController;
-import com.project.sp.service.LibService;
+import com.project.sp.controller.UserController;
+import com.project.sp.service.UserService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("file:src/main/webapp/WEB-INF/spring/root-context.xml")
@@ -26,7 +26,7 @@ public class VOTest {
 	private DataSource ds;
 	
 	@Autowired
-	private LibService ls;
+	private UserService ls;
 	
 	@Test
 	public void test() {

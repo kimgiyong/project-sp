@@ -6,11 +6,11 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.project.sp.dao.LibDAO;
+import com.project.sp.dao.UserDAO;
 import com.project.sp.vo.userVO;
 
 @Repository
-public class LibDAOImpl implements LibDAO {
+public class UserDAOImpl implements UserDAO {
 
 	@Autowired
 	private SqlSession ss;

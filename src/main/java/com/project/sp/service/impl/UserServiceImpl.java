@@ -7,15 +7,15 @@ import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.project.sp.dao.LibDAO;
-import com.project.sp.service.LibService;
+import com.project.sp.dao.UserDAO;
+import com.project.sp.service.UserService;
 import com.project.sp.vo.userVO;
 
 @Service
-public class LibServiceImpl implements LibService {
+public class UserServiceImpl implements UserService {
 
 	@Autowired
-	private LibDAO ld;
+	private UserDAO ld;
 	
 	@Override
 	public int userInsert(userVO user) {
