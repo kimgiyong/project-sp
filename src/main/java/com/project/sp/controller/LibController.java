@@ -39,12 +39,12 @@ public class LibController {
 	@PostMapping(value="/liblogin")
 	public @ResponseBody userVO userLogin(@RequestBody userVO user,HttpSession hs, HttpServletRequest request) {
 		userVO userL = ls.userLogin(user);
-		log.info("user =>{}" + userL);
+		log.info("userL ==>{}",userL);
 		if(userL+"" == "") {
 			return userL;
 		}else {
 			hs.setAttribute("user", userL);
-			log.info("HttpSession => {}", hs);
+			log.info("hs ==>{}",hs);
 			return userL;
 		}
 	}
