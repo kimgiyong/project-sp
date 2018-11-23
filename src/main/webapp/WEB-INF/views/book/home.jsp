@@ -80,4 +80,14 @@
 				</ul></li>
 		</ul>
 	</section>
+	<script>
+		$(function(){
+			$('.mainMenu').mouseover(function(){
+				$(this).children().stop().slideDown();
+			})
+			$('.mainMenu').mouseleave(function(){
+				$('.subMenuBox').stop().slideUp();
+			})
+		});
+	</script>
 	<div class="clear"></div>

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-*{margin:0 auto; padding:0px;}
+*{margin:0 auto; padding:0px;box-sizing: border-box;}
 a {text-decoration: none;}
 header section{display:inline-block;}
 body{width:1500px; border:1px solid red;}

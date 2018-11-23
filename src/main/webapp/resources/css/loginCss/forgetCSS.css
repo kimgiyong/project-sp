@@ -1,5 +1,7 @@
+@charset "utf-8";
 *{
 	margin: 0 auto; padding:0 auto; list-style-type: none;
+	box-sizing: border-box;
 }
 #bodymodo { border: solid 1px red;
 	width: 1000px; height: 1000px;

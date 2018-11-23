@@ -1,9 +1,11 @@
+@charset "utf-8";
 * {	/* 기본값 */
 	margin: 0 auto;
 	padding: 0px;
 	list-style-type: none;
 	text-decoration: none;
 	color: #000;
+	box-sizing: border-box;
 }
 
 body {
@@ -18,7 +20,13 @@ body {
 #slideimge{
 	height:400px;
 	width:1200px;
-	
+	postion:relative;
+	z-index:3;
+}
+#btn{
+	width:1200px; height:400px;
+	position:relative;
+	border:1px solid black;
 }
 
 #leftbtn, #rightbtn {
@@ -27,8 +35,6 @@ body {
 	cursor: pointer;
 	height: 100%;
 	width: 10%;
-	margin-top: -600px;
-	z-index: 7;
 }
 
 #leftbtn {
@@ -37,7 +43,7 @@ body {
 
 #rightbtn {
 	float: rigth;
-	margin-left: 1080px;
+	margin-right:0px;
 }
 
 #MoveLeftBtn, #MoverightBtn {
@@ -50,7 +56,7 @@ body {
 	height:80px;
 }
 
-#btnmenu .imgeul{
+#slideimge .imgeul{
 	width: 1200px; height: 400px;
 	overflow:hidden;
 }

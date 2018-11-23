@@ -24,6 +24,10 @@
 	 	select userId from usertbl
 	 	where userId = #{userId}
 	</select>
+	<select id="userSearch" resultType="String" parameterType="user">
+		select userId from usertbl
+		where userName = #{userName}, userMobile = #{userMobile}
+	</select>
 	<insert id="userInsert" parameterType="user">
 		insert into usertbl(userName, userId, userPwd, userBirth, userMobile, userScore, userLevel)
 		values(#{userName},#{userId},#{userPwd},#{userBirth},#{userMobile},0,1)

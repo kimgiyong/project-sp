@@ -1,9 +1,11 @@
+@charset "utf-8";
 * {	/* 기본값 */
 	margin: 0 auto;
 	padding: 0px;
 	list-style-type: none;
 	text-decoration: none;
 	color: #000;
+	box-sizing: border-box;
 }
 
 body {
@@ -132,8 +134,10 @@ body {
 
 /* menu부분 */
 #bodyHead {	
-	height:	200px;
+	height:	auto;
 	width: 1200px;
+	position:relative;
+	z-index:5;
 } 
 
 #menuBox {
@@ -141,16 +145,16 @@ body {
 	text-align: center;
 	height: 40px; 
 	z-index: 10;
-	margin-top:18px;   
 }
 
 #menuBox .mainMenu {
 	float: left;
 	background-color: #442200;
 	display: inline-block;
-	height: 40px;
+	height: 51px;
 	width: 200px;
-	padding-top: 15px;
+	padding-top: 12px;
+	
 }
 
 #menuBox .mainMenu a {
@@ -163,8 +167,10 @@ body {
 	background-color: #482609;
 }
 
-#menuBox .subMenu {
+#menuBox .subMenuBox {
 	display: none;
+}
+#menuBox .subMenu{
 	background-color: #795022;
 	padding: 15px 0px;
 	width: 200px;
@@ -178,10 +184,11 @@ body {
 	margin-top: 15px;
 }
 
-#menuBox .mainMenu:hover .subMenu {
+/*  #menuBox .mainMenu:hover .subMenuBox {
 	display: block;
-}
-
+	transition:all 0.3s;
+	}
+*/
 #menuBox .subMenu:hover {
 	background-color: #866529;
 }

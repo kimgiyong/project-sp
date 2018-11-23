@@ -10,30 +10,30 @@
 
 <body>
 	<%@ include file="home.jsp"%>
-	<section id="slideimge">
-		<div id="btnmenu">
-			<div id="leftbtn">
-				<button id="MoveLeftBtn">&lt;</button>
-			</div>
-			<div id="rightbtn">
-				<button id="MoverightBtn">&gt;</button>
-			</div>
-			<ul class="imgeul">
-				<li class="imgeli"><img
-					src="${resPath}/img/loginimg/bookerber.jpg"	
-					alt="mainimge" /></li>
-			</ul>
-			<ul class="imgeul">
-				<li class="imgeli"><img
-					src="${resPath}/img/loginimg/book1.jpg"
-					alt="mainimge" /></li>
-			</ul>
-			<ul class="imgeul">
-				<li class="imgeli"><img
-					src="${resPath}/img/homeimg/back3.jpg"
-					alt="mainimge" /></li>
-			</ul>
+	<div id="btn">
+		<div id="leftbtn">
+			<button id="MoveLeftBtn">&lt;</button>
 		</div>
+		<div id="rightbtn">
+			<button id="MoverightBtn">&gt;</button>
+		</div>
+	</div>
+	<section id="slideimge">
+		<ul class="imgeul">
+			<li class="imgeli"><img
+				src="${resPath}/img/loginimg/bookerber.jpg"	
+				alt="mainimge" /></li>
+		</ul>
+		<ul class="imgeul">
+			<li class="imgeli"><img
+				src="${resPath}/img/loginimg/book1.jpg"
+				alt="mainimge" /></li>
+		</ul>
+		<ul class="imgeul">
+			<li class="imgeli"><img
+				src="${resPath}/img/homeimg/back3.jpg"
+				alt="mainimge" /></li>
+		</ul>
 	</section>
 
 
@@ -97,17 +97,17 @@
 	$(function() {
 	var $careNum = 0;
 		var $theSize = 2;
-		$("#btnmenu ul").hide();
-		$("#btnmenu ul").eq(0).show();
+		$("#slideimge ul").hide();
+		$("#slideimge ul").eq(0).show();
 		window.setInterval(function() {
 			$("#rightbtn").click();
 		}, 4000);
-		$("#btnmenu #leftbtn").click(function() {
+		$("#leftbtn").click(function() {
 			$careNum--;
 			if ($careNum < 0)
 				$careNum = $theSize - 1;
-			$("#btnmenu ul").hide();
-			$("#btnmenu ul").eq($careNum).show();
+			$("#slideimge ul").hide();
+			$("#slideimge ul").eq($careNum).show();
 		});
 
 		$("#rightbtn").click(function() {
@@ -115,8 +115,8 @@
 			if ($careNum >= $theSize)
 				$careNum = 0;
 			$(this).parent().children("ul");
-			$("#btnmenu ul").hide();
-			$("#btnmenu ul").eq($careNum).show();
+			$("#slideimge ul").hide();
+			$("#slideimge ul").eq($careNum).show();
 		});
 	});
 </script>
