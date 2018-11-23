@@ -9,7 +9,7 @@
 body{
 	margin-top: 220px;
 	margin-left:-700px;
-	background:url("../../img/book2.jpg") no-repeat;
+	background:url("${resPath}/img/loginimg/book2.jpg") no-repeat;
 	background-position: center center;
 	background-size: cover;
 }
