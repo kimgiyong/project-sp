@@ -78,4 +78,12 @@ public class UserController {
 			return 2;
 		}
 	}
+	@PostMapping(value="/searchId")
+	public @ResponseBody String userSearchId(@RequestBody UserVO user) {
+		return ls.userSearchId(user);
+	}
+	@PostMapping(value="/searchPwd")
+	public @ResponseBody String userSearchPwd(@RequestBody UserVO user) {
+		return ls.userSearchPwd(user);
+	}
 }

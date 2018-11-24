@@ -26,7 +26,11 @@
 	</select>
 	<select id="userSearchId" resultType="String" parameterType="user">
 		select userId from usertbl
-		where userName = #{userName}, userMobile = #{userMobile}
+		where userName = #{userName} and userMobile = #{userMobile}
+	</select>
+	<select id="userSearchPassword" resultType="String" parameterType="user">
+		select userPwd from usertbl
+		where userId = #{userId} and userName = #{userName} and userMobile = #{userMobile} and userBitrh = #{userBirth}
 	</select>
 	<insert id="userInsert" parameterType="user">
 		insert into usertbl(userName, userId, userPwd, userBirth, userMobile, userScore, userLevel)

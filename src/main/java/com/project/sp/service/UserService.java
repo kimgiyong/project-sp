@@ -14,4 +14,6 @@ public interface UserService {
 	public int userDelete(int userNum);
 	public List<UserVO> userSelectList(UserVO user);
 	public UserVO userSelect(int userNum);
+	public String userSearchId(UserVO user);
+	public String userSearchPwd(UserVO user);
 }

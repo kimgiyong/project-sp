@@ -35,6 +35,7 @@
 	<div class="w3-content w3-container w3-margin-top">
 		<div class="w3-container w3-card-4">
 			<div class="back">
+			<div id="box">
 				<div class="w3-center w3-large w3-margin-top">
 					<h3>아이디 찾기</h3>
 				</div>
@@ -46,10 +47,11 @@
 				<label>Mobile(휴대폰번호)</label> <input class="w3-input" type="text"
 							id="findMobile" name="findMobile" required>
 				</p>
+			</div>
 				<p class="w3-center">
-					<button type="submit" id=findBtn
+					<button type="submit" id="findBtn"
 						class="w3-button w3-block w3-black w3-ripple w3-margin-top w3-round">find</button>
-					<button type="button" onclick="history.go(-1);"
+					<button type="button" onclick="history.go(-1);" id="cancleBtn"
 						class="w3-button w3-block w3-black w3-ripple w3-margin-top w3-margin-bottom w3-round">Cancel</button>
 				</p>
 			</div>
@@ -63,8 +65,28 @@
 		var username = document.querySelector('#username').value;
 		var mobile = document.querySelector('#findMobile').value;
 		var conf = {
-				
+				url:'/searchId',
+				method:'POST',
+				param:JSON.stringify({
+					userName:username, userMobile:mobile
+				}),
+				success:function(res){
+					var box = document.querySelector('#box');
+					var back = document.querySelector('.back');
+					var fbtn = document.querySelector('#findBtn');
+					var cbtn = document.querySelector('#cancleBtn');
+					box.style.display='none';
+					fbtn.style.display='none';
+					cbtn.textContent='Back';
+					cbtn.style.display='inline-block';
+					cbtn.style.width='200px';
+					cbtn.style.margin='0 0 0 400px';
+					back.textContent = '당신의 아이디는 ' + res + '입니다.';
+					back.style.margin='200px 0 0 0';
+					back.appendChild(cbtn);
+				}
 		}
+		au.send(conf);
 	}
 	findBtn.addEventListener('click',search);
 </script>

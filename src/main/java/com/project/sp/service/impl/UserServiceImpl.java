@@ -47,4 +47,14 @@ public class UserServiceImpl implements UserService {
 		return ld.userSelect(userNum);
 	}
 
+	@Override
+	public String userSearchId(UserVO user) {
+		return ld.userSearchId(user);
+	}
+
+	@Override
+	public String userSearchPwd(UserVO user) {
+		return ld.userSearchPwd(user);
+	}
+
 }
