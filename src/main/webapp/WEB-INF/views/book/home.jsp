@@ -6,14 +6,20 @@
 <% UserVO user = (UserVO)session.getAttribute("user"); %>
 <script>
 	function doInit(){
-		alert('<%=user%>');
+		var user = '<%=user%>';
+		var btn1 = document.getElementById('loge1');
+		var btn0 = document.getElementById('loge0');
+		if(user!='null'){
+			btn1.textContent = "LOGOUT";
+			btn0.textContent = "My Page";
+		}
 	}
 	window.addEventListener('load',doInit);
 </script>
 	<header>
 		<div id="login">
-			<a href="login/loginPage?loge=1"><button id="loge1" value="loge1" class="loge">LOGIN</button></a><pre>  |  </pre> 
-			<a href="login/loginPage?loge=0"><button id="loge0" value="loge0" class="loge">JOIN</button></a>
+			<a><button id="loge1" value="loge1" class="loge" onclick="login(1)">LOGIN</button></a><pre>  |  </pre> 
+			<a><button id="loge0" value="loge0" class="loge" onclick="login(0)">JOIN</button></a>
 		</div>
 
 		<div id="logoBox">
@@ -89,22 +95,31 @@
 				$('.subMenuBox').stop().slideUp();
 			})
 		});
-		var user = <%=user%>;
-		var loginbtn = document.getElementById('loge1');
-		var joinbtn = document.getElementById('loge0');
-		
-		function userfun(){
-			
-			if(user==null){
-				loginbtn.textContent = "LOGIN";
-				joinbtn.textContent = "JOIN";
+		function login(loge){
+			var btn1 = document.getElementById('loge1');
+			var btn0 = document.getElementById('loge0');
+			alert(btn1.textContent);
+			if(loge==1){
+				if(btn1.textContent=='LOGIN'){
+					location.href='/uri/book/login/loginPage?loge=1';
+				}else{
+					au.send({url:'/logout',method:'POST',success:function(res){
+						if(res==1){
+							alert('로그아웃하였습니다.');
+							location.href='/uri/book/homePage';
+						}
+					}})
+				}
 			}else{
-				loginbtn.textContent = "LOGOUT";
-				joinbtn.textContent = "My Page";
+				if(btn0.textContent=='JOIN'){
+					location.href='/uri/book/login/loginPage?loge=0';
+				}else{
+					alert('됫다');
+					location.href='/uri/book/update/homeMypage';
+				}
 			}
 		}
-		window.addEventListener("load",userfun);
-		
+
 	</script>
 	
 	<div class="clear"></div>

@@ -157,7 +157,6 @@
 					success:function(res){
 						if(res!=''){
 							alert('로그인하였습니다.');
-							alert('<%=session.getAttribute("user")%>');
 							location.href="/uri/book/homePage";
 						}else{
 							alert('아이디 혹은 비밀번호가 잘못되었습니다.');
