@@ -25,11 +25,12 @@
 				 <option value="@gmail.com">gmail.com</option>
 			</select>--><br> 
 			<input id="userPwd" type="password" placeholder="password" /><br>
-			<input id="userPwdchk" type="hidden" placeholder="retype password" /><br>
-			<input id="userName" type="hidden" placeholder="user name" maxlength="5"/><br>
-			<input id="userBir" type="hidden" placeholder="Birthday" /><br>
-			<input id="userNumber" type="hidden" placeholder="Phone number('-'없이 써주세요)" maxlength="11" onkeypress="onlyNumber();"/><br>
-
+			<div id="joinhidden">
+				<input id="userPwdchk" type="password" placeholder="retype password" /><br>
+				<input id="userName" type="text" placeholder="user name" maxlength="5"/><br>
+				<input id="userBir" type="date" placeholder="Birthday" /><br>
+				<input id="userNumber" type="text" placeholder="Phone number('-'없이 써주세요)" maxlength="11" onkeypress="onlyNumber();"/><br>
+			</div>
 			<button disabled="true" id="loginbtn">LOGIN</button>
 			<br><span id="forgot">Forgot your <a id="forgetid" href="forgetID">ID</a> or <a id="forgetpwd" href="forgetPwd">Password</a>?</span><!-- </a> --> 
 			<span id="zz">/</span>
@@ -48,6 +49,7 @@
 	var username = document.getElementById("userName");
 	var birthday = document.getElementById("userBir");
 	var number = document.getElementById("userNumber");
+	var joinhidden = document.getElementById("joinhidden");
 	
 	var btn = document.getElementById("loginbtn");
 	var signup = document.getElementById("signup");
@@ -74,9 +76,7 @@
 		window.addEventListener("load", function(){
 			btn.textContent = "Create account";
 			pwdchk.type = "password";
-			username.type = "text";
-			birthday.type = "date";
-			number.type = "text";
+			joinhidden.style.display = "block";
 			signup.textContent = "sign in";
 			log.textContent = "JOIN"
 		});
@@ -171,18 +171,12 @@
 		if (signup.textContent == "sign up") {
 			btn.textContent = "Create account";
 			log.textContent = "JOIN";
-			pwdchk.type = "password";
-			username.type = "text";
-			birthday.type = "date";
-			number.type = "text";
+			joinhidden.style.display = "block";
 			signup.textContent = "sign in";
 		} else {
 			btn.textContent = "Login";
 			log.textContent = "LOGIN"
-			pwdchk.type = "hidden";
-			username.type = "hidden";
-			birthday.type = "hidden";
-			number.type = "hidden";
+				joinhidden.style.display = "none";
 			signup.textContent = "sign up";
 		}
 	}

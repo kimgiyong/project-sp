@@ -6,8 +6,8 @@
 <% userVO user = (userVO)session.getAttribute("user"); %>
 	<header>
 		<div id="login">
-			<a href="login/loginPage?loge=1"><button id="loge1" value="loge1" class="loge">LOGIN &emsp; </button></a> | 
-			<a href="login/loginPage?loge=0"><button id="loge0" value="loge0" class="loge"> &emsp; JOIN</button></a>
+			<a href="login/loginPage?loge=1"><button id="loge1" value="loge1" class="loge">LOGIN &nbsp; </button></a> | 
+			<a href="login/loginPage?loge=0"><button id="loge0" value="loge0" class="loge"> &nbsp; JOIN</button></a>
 		</div>
 
 		<div id="logoBox">
