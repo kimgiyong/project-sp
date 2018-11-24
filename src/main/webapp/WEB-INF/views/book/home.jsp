@@ -4,10 +4,16 @@
 <link href="http://fonts.googleapis.com/earlyaccess/jejuhallasan.css" rel="stylesheet">
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <% userVO user = (userVO)session.getAttribute("user"); %>
+<script>
+	function doInit(){
+		alert('<%=user%>');
+	}
+	window.addEventListener('load',doInit);
+</script>
 	<header>
 		<div id="login">
-			<a href="login/loginPage?loge=1"><button id="loge1" value="loge1" class="loge">LOGIN &nbsp; </button></a> | 
-			<a href="login/loginPage?loge=0"><button id="loge0" value="loge0" class="loge"> &nbsp; JOIN</button></a>
+			<a href="login/loginPage?loge=1"><button id="loge1" value="loge1" class="loge">LOGIN</button></a><pre>  |  </pre> 
+			<a href="login/loginPage?loge=0"><button id="loge0" value="loge0" class="loge">JOIN</button></a>
 		</div>
 
 		<div id="logoBox">
@@ -26,7 +32,7 @@
 				<option value="witer">작가</option>
 			</select> 
 			<input type="text" name="search" placeholder="검색어를 입력하세요">
-			<button class="search-btn" id="search-btn">
+			<button class="search-btn" href="#">
 					<i class="fas fa-search"></i>
 			</button>
 		</div>
@@ -86,7 +92,6 @@
 		var user = <%=user%>;
 		var loginbtn = document.getElementById('loge1');
 		var joinbtn = document.getElementById('loge0');
-		var search = document.getElementById('search-btn');
 		
 		function userfun(){
 			
@@ -98,7 +103,6 @@
 				joinbtn.textContent = "My Page";
 			}
 		}
-		search.addEventListener("click",function(){alert(user);});/* 이거 그냥 확인용 나중에 지울꺼 */
 		window.addEventListener("load",userfun);
 		
 	</script>

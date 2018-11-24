@@ -9,23 +9,31 @@
 }
 
 body {
-	width: 90%;
+	width: 1720px;
+	margin:0 auto;
 }
 
 .clear {
-	clear: both;
+	clear: both; 
 }
 
 /* homePage.jsp */
+#mainslide{
+	position: relative;	
+	margin: 0 auto;
+	left:15.1%; 
+}
 #slideimge{
 	height:400px;
 	width:1200px;
-	border:3px solid black;
 	position:absolute;
+	z-index: 1;
 }
 #btn{
 	width:1200px; height:400px;
-
+	position:absolute;
+	z-index: 2;
+	top:50%;
 }
 
 #leftbtn, #rightbtn {
@@ -34,15 +42,14 @@ body {
 	cursor: pointer;
 	height: 100%;
 	width: 10%;
-}
+} 
 
 #leftbtn {
-	float: left;
+	float:left;
 }
 
 #rightbtn {
-	float: rigth;
-	margin-right:0px;
+	float:right;
 }
 
 #MoveLeftBtn, #MoverightBtn {
@@ -53,8 +60,8 @@ body {
 	color:white;
 	width:80px;
 	height:80px;
+	margin-top:160px; 
 }
-
 #slideimge .imgeul{
 	width: 1200px; height: 400px;
 	overflow:hidden;

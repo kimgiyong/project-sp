@@ -10,52 +10,53 @@
 
 <body>
 	<%@ include file="home.jsp"%>
-	<div id="btn">
-		<div id="leftbtn">
-			<button id="MoveLeftBtn">&lt;</button>
+	<div id="mainslide">
+		<div id="btn">
+			<div id="leftbtn">
+				<button id="MoveLeftBtn">&lt;	</button>  
+			</div> 
+			<div id="rightbtn">
+				<button id="MoverightBtn">&gt;</button> 
+			</div>
 		</div>
-		<div id="rightbtn">
-			<button id="MoverightBtn">&gt;</button>
-		</div>
+		<section id="slideimge">
+			<ul class="imgeul">
+				<li class="imgeli"><img
+					src="${resPath}/img/loginimg/bookerber.jpg"	
+					alt="mainimge" /></li>
+			</ul>
+			<ul class="imgeul">
+				<li class="imgeli"><img
+					src="${resPath}/img/loginimg/book1.jpg"
+					alt="mainimge" /></li>
+			</ul>
+			<ul class="imgeul">
+				<li class="imgeli"><img
+					src="${resPath}/img/homeimg/back3.jpg"
+					alt="mainimge" /></li>
+			</ul>
+		</section>
 	</div>
-	<section id="slideimge">
-		<ul class="imgeul">
-			<li class="imgeli"><img
-				src="${resPath}/img/loginimg/bookerber.jpg"	
-				alt="mainimge" /></li>
-		</ul>
-		<ul class="imgeul">
-			<li class="imgeli"><img
-				src="${resPath}/img/loginimg/book1.jpg"
-				alt="mainimge" /></li>
-		</ul>
-		<ul class="imgeul">
-			<li class="imgeli"><img
-				src="${resPath}/img/homeimg/back3.jpg"
-				alt="mainimge" /></li>
-		</ul>
-	</section>
-
-
+	
 	<div class="clear"></div>
-
-	<!-- <section id="cuchen">
-		<div id="cus">오늘의 추천 도서 | 오늘의 신간 도서</div>
-		<div id="fooleftbtn">
-			<button id="fooleftBtn">&lt;</button>
-		</div>
-		<div id="cuchen1">
-			<img alt="1위" src="#">
-		</div>
-		<div id="cuchen1">
-			<img alt="2위" src="#">
-		</div>
-		<div id="foorightbtn">
-			<button id="foorightBtn">&gt;</button>
-		</div>
-	</section>
-
-	<section> // 원본파일
+	
+<!--		<section id="cuchen">
+			<div id="cus">오늘의 추천 도서 | 오늘의 신간 도서</div>
+			<div id="fooleftbtn">
+				<button id="fooleftBtn">&lt;</button>
+			</div>
+			<div id="cuchen1">
+				<img alt="1위" src="#">
+			</div>
+			<div id="cuchen2">
+				<img alt="2위" src="#">
+			</div>
+			<div id="foorightbtn">
+				<button id="foorightBtn">&gt;</button>
+			</div>
+		</section>
+		<div class="clear"></div>
+	 <section> // 원본파일
 
 				<div class="menu-left">
 					<ul>
