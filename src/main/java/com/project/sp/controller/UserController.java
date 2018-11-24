@@ -54,7 +54,7 @@ public class UserController {
 		return ls.userUpdate(user);
 	}
 	
-	@DeleteMapping(value="/user")
+	@DeleteMapping(value="/user/{userNum}")
 	public @ResponseBody int userDelete(@PathVariable int userNum) {
 		return ls.userDelete(userNum);
 	}
