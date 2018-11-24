@@ -16,7 +16,14 @@
 		<div id="back">
 			<h1 id="log">LOGIN</h1>
 
-			<input id="userId" type="text" placeholder="Account Id" /><br>
+			<input id="userId" type="email" placeholder="Account Email" />
+			<!-- <select id="emailjuso">
+				 <option>select me!</option>
+				 <option value="">직접 입력</option>
+				 <option value="@naver.com">naver.com</option>
+				 <option value="@daum.net">daum.net</option>
+				 <option value="@gmail.com">gmail.com</option>
+			</select>--><br> 
 			<input id="userPwd" type="password" placeholder="password" /><br>
 			<input id="userPwdchk" type="hidden" placeholder="retype password" /><br>
 			<input id="userName" type="hidden" placeholder="user name" maxlength="5"/><br>
@@ -24,11 +31,11 @@
 			<input id="userNumber" type="hidden" placeholder="Phone number('-'없이 써주세요)" maxlength="11" onkeypress="onlyNumber();"/><br>
 
 			<button disabled="true" id="loginbtn">LOGIN</button>
-			<br> <!-- <a id="forgot" href="forget"> --><span id="forgot">Forgot your <a id="forgetid" href="forgetID">ID</a> or <a id="forgetpwd" href="forgetPwd">Password</a>?</span><!-- </a> --> 
+			<br><span id="forgot">Forgot your <a id="forgetid" href="forgetID">ID</a> or <a id="forgetpwd" href="forgetPwd">Password</a>?</span><!-- </a> --> 
 			<span id="zz">/</span>
 			<button id="signup">sign up</button>
 		</div>
-		<p id="foo">ⓒ UDP Technology</p>
+		<p id="foo">A good incenseⓒ UDP Technology</p>
 	</div>
 </body>
 
@@ -59,6 +66,9 @@
 
 	var getToday = year+ '' +month+day; // 오늘 날짜 
 
+	var remail = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
+	/* var emailjuso = document.getElementById("emailjuso");
+	var index = $("#emailjuso option").index($("#emailjuso option:selected")); */
 	
 	if(loge==0){
 		window.addEventListener("load", function(){
@@ -71,7 +81,8 @@
 			log.textContent = "JOIN"
 		});
 	};/* 여기가 들어갈때 확인해서 join쪽이면 바꿔줌 */
-    function onlyNumber(){
+	
+    function onlyNumber(){ /* 숫자만 들어가 있는지 체크 */
         if((event.keyCode<48)||(event.keyCode>57)){
            event.returnValue=false;
         }
@@ -88,13 +99,11 @@
 				btn.disabled = true;
 				btn.style.backgroundColor = "lightslategray";
 			}
-		} else { /* 로그인할때 아이디나 패스워드 중에 안쓰면 로그인 안됨 */
+		} else { /* 로그인할때 아이디나 패스워드 중에 안쓰면 로그인 버튼못누름 */
 			if (id.value != "" && pwd.value != "") {
 				btn.disabled = false;
 				btn.style.backgroundColor = "lightsteelblue";
-			}/*  else if(birthday.value < getToday){
-				alert("생일을 다시 확인해주세요.")
-			} */ else {
+			}else {
 				btn.disabled = true;
 				btn.style.backgroundColor = "lightslategray";
 			}
@@ -104,8 +113,8 @@
 	function login() { /* 회원가입할때 비밀번호가 다르면 alert창에 띄어줌 밖에 없어 */
 		/* console.log(backToObj); */
 		if (btn.textContent == "Create account") {
-			if(id.value.length < 5){
-				alert('아이디는 최소 5글자 이상이어야합니다.');
+			if(!check(re, id, '적합하지 않은 이메일 형식입니다.')) {
+				alert('적합하지 않은 이메일 형식입니다.');
 			}else if(pwd.value.length < 8){
 				alert('비밀번호는 최소 8글자 이상이어야합니다.');
 			}else if (pwd.value != pwdchk.value) {

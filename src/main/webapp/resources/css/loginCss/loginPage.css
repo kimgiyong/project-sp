@@ -7,7 +7,7 @@
 }
 
 html, body {
-	height: 80%;
+	height: 100%;
 }
 
 #container {
@@ -43,8 +43,7 @@ h1 {
 	font-size: 140%;
 }
 
-#forgot, #forgot a{
-	/*   color:royalblue; */
+#forgot, #forgot a{ 
 	color: navy;
 	font-size: 80%;
 }
