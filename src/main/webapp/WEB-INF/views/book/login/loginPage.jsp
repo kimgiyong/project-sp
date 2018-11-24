@@ -41,7 +41,7 @@
 </body>
 
 <script>	
-
+/* 우리는 아이디가 이메일이다! */
 	var id = document.getElementById("userId");
 	var pwd = document.getElementById("userPwd");
 	var pwdchk = document.getElementById("userPwdchk");
@@ -68,7 +68,7 @@
 
 	var getToday = year+ '' +month+day; // 오늘 날짜 
 
-	var remail = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
+	var checkmail = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
 	/* var emailjuso = document.getElementById("emailjuso");
 	var index = $("#emailjuso option").index($("#emailjuso option:selected")); */
 	
@@ -113,8 +113,9 @@
 	function login() { /* 회원가입할때 비밀번호가 다르면 alert창에 띄어줌 밖에 없어 */
 		/* console.log(backToObj); */
 		if (btn.textContent == "Create account") {
-			if(!check(re, id, '적합하지 않은 이메일 형식입니다.')) {
-				alert('적합하지 않은 이메일 형식입니다.');
+			if(checkmail.test(id)==false) {
+				/* !check(checkmail, id, alert('적합하지 않은 이메일 형식입니다.')) */
+				alert('메일 형식이 틀리셨습니다.');
 			}else if(pwd.value.length < 8){
 				alert('비밀번호는 최소 8글자 이상이어야합니다.');
 			}else if (pwd.value != pwdchk.value) {
