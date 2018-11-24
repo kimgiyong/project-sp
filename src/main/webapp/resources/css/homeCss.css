@@ -142,12 +142,13 @@ body {
 	width: 1200px;
 	position:relative;
 	z-index:5;
+	background-color: #442200;
 } 
 
 #menuBox {
 	color: white;
 	text-align: center;
-	height: 40px; 
+	height: 31px; 
 	z-index: 10;
 }
 
@@ -156,9 +157,13 @@ body {
 	background-color: #442200;
 	display: inline-block;
 	height: 51px;
-	width: 200px;
+	width: 236px;
 	padding-top: 12px;
 	
+}
+
+#menuBox .mainMenu:last-child {
+	padding-right: 60px;
 }
 
 #menuBox .mainMenu a {
@@ -177,7 +182,7 @@ body {
 #menuBox .subMenu{
 	background-color: #795022;
 	padding: 15px 0px;
-	width: 200px;
+	width: 236px;
 }
 
 #menuBox .subMenu a {
@@ -195,6 +200,23 @@ body {
 */
 #menuBox .subMenu:hover {
 	background-color: #866529;
+}
+
+#allmenubtn{
+	width: 20px;
+	height: 20px;
+	border: 1px solid white;
+	background-color: rgba(0,0,0,0.4);
+	position: relative;
+	left: -10px;
+	top:-16px;
+	border-radius: 30%;
+	font-size: 15px;
+	color: white;
+}
+
+#allmenubtn:hover{
+	cursor: pointer;
 }
 
 

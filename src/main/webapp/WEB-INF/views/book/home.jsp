@@ -23,7 +23,7 @@
 		</div>
 
 		<div id="logoBox">
-			<a href="#" id="logof">
+			<a href="homePage" id="logof">
 			<span id="logof1">좋은</span> 
 			<span id="logof2">향</span> <br> &emsp; 
 			<span id="logof3">도서</span> 
@@ -78,22 +78,20 @@
 					<li class="subMenu"><a href="#">서브메뉴 목록2</a></li>
 					<li class="subMenu"><a href="#">서브메뉴 목록3</a></li>
 				</ul></li>
-			<li class="mainMenu"><a href="#">메인메뉴 목록6</a>
-				<ul class="subMenuBox">
-					<li class="subMenu"><a href="#">서브메뉴 목록1</a></li>
-					<li class="subMenu"><a href="#">서브메뉴 목록2</a></li>
-					<li class="subMenu"><a href="#">서브메뉴 목록3</a></li>
-				</ul></li>
 		</ul>
+		<button id="allmenubtn">=</button>
 	</section>
 	<script>
 		$(function(){
 			$('.mainMenu').mouseover(function(){
 				$(this).children().stop().slideDown();
-			})
+			});
 			$('.mainMenu').mouseleave(function(){
 				$('.subMenuBox').stop().slideUp();
-			})
+			});
+			$('#allmenubtn').click(function(){
+				$('.subMenuBox').stop().slideDown();
+			});
 		});
 		function login(loge){
 			var btn1 = document.getElementById('loge1');
@@ -119,7 +117,19 @@
 				}
 			}
 		}
-
+		
+		var logo = document.getElementById("logof");
+		logo.addEventListener("click",function(){
+			location.href='/uri/book/homePage';
+		});
+		/* 
+		var menubtn = document.getElementById("allmenubtn");
+		var submenu = document.getElementsByClassName("subMenu");
+		function menubtn(){
+			mainMenu.style.display = "block";
+		}
+		menubtn.addEventListener("click",menubtn);
+		 */
 	</script>
 	
 	<div class="clear"></div>
