@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 import com.project.sp.dao.UserDAO;
 import com.project.sp.service.UserService;
-import com.project.sp.vo.userVO;
+import com.project.sp.vo.UserVO;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -18,17 +18,17 @@ public class UserServiceImpl implements UserService {
 	private UserDAO ld;
 	
 	@Override
-	public int userInsert(userVO user) {
+	public int userInsert(UserVO user) {
 		return ld.userInsert(user);
 	}
 
 	@Override
-	public userVO userLogin(userVO user) {
+	public UserVO userLogin(UserVO user) {
 		return ld.userLogin(user);
 	}
 
 	@Override
-	public int userUpdate(userVO user) {
+	public int userUpdate(UserVO user) {
 		return ld.userUpdate(user);
 	}
 
@@ -38,12 +38,12 @@ public class UserServiceImpl implements UserService {
 	}
 
 	@Override
-	public List<userVO> userSelectList(userVO user) {
+	public List<UserVO> userSelectList(UserVO user) {
 		return ld.userSelectList(user);
 	}
 
 	@Override
-	public userVO userSelect(int userNum) {
+	public UserVO userSelect(int userNum) {
 		return ld.userSelect(userNum);
 	}
 

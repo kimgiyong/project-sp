@@ -3,5 +3,15 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.project.sp.BOOKCOMENT">
-
+	<select id="bookComentSelectList" resultType="bookComent">
+		select * from bookcomenttbl
+	</select>
+	<select id="bookComentSelect" resultType="bookComent">
+		select * from bookcomenttbl
+		where comentNum = #{comentNum}
+	</select>
+	<insert id="bookComent" parameterType="bookComent">
+		insert into bookcomenttbl
+		values()
+	</insert>
 </mapper>

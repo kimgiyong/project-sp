@@ -6,13 +6,11 @@ import lombok.Data;
 
 @Data
 @Component
-public class takeVO {
+public class BookComentVO {
 
 	private Integer userNum;
 	private String bookCode;
-	private String checkIn;
-	private String takeSDat;
-	private String takeEDat;
-	private String reDat;
-	private Integer checkRe;
+	private Integer comentNum;
+	private String comentText;
+	private String comentCreDat;
 }

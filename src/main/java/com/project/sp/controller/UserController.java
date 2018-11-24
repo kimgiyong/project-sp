@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.context.request.RequestAttributes;
 
 import com.project.sp.service.UserService;
-import com.project.sp.vo.userVO;
+import com.project.sp.vo.UserVO;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -32,13 +32,13 @@ public class UserController {
 	private UserService ls;
 	
 	@PostMapping(value="/user")
-	public @ResponseBody int userInsert(@RequestBody userVO user) {
+	public @ResponseBody int userInsert(@RequestBody UserVO user) {
 		return ls.userInsert(user);
 	}
 	
 	@PostMapping(value="/login")
-	public @ResponseBody userVO userLogin(@RequestBody userVO user,HttpSession hs, HttpServletRequest request) {
-		userVO userL = ls.userLogin(user);
+	public @ResponseBody UserVO userLogin(@RequestBody UserVO user,HttpSession hs, HttpServletRequest request) {
+		UserVO userL = ls.userLogin(user);
 		log.info("userL ==>{}",userL);
 		if(userL+"" == "") {
 			return userL;
@@ -50,7 +50,7 @@ public class UserController {
 	}
 	
 	@PutMapping(value="/user")
-	public @ResponseBody int userUpdate(@RequestBody userVO user) {
+	public @ResponseBody int userUpdate(@RequestBody UserVO user) {
 		return ls.userUpdate(user);
 	}
 	
@@ -60,12 +60,12 @@ public class UserController {
 	}
 	
 	@GetMapping(value="/user")
-	public @ResponseBody List<userVO> userSelectList(@ModelAttribute userVO user){
+	public @ResponseBody List<UserVO> userSelectList(@ModelAttribute UserVO user){
 		return ls.userSelectList(user);
 	}
 	
 	@GetMapping(value="/user/{userNum}")
-	public @ResponseBody userVO userSelect(@PathVariable int userNum) {
+	public @ResponseBody UserVO userSelect(@PathVariable int userNum) {
 		return ls.userSelect(userNum);
 	}
 	@PostMapping(value="/logout")

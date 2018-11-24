@@ -3,5 +3,22 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.project.sp.TAKE">
-
+	<select id="takeSelectList" resultType="take">
+		select * from taketbl
+	</select>
+	<insert id="takeInsert" parameterType="take">
+		insert into taketbl
+		values(#{userNum},#{bookCode},#{checkIn},#{takeSDat},#{takeEDat},#{reDat},0,null)
+	</insert>
+	<update id="takeUpdate" parameterType="take">
+		update taketbl
+		<set>
+			<if test="reDat!=null">reDat = #{reDat}</if>
+			<if test="checkRe!=null">checkRe = #{checkRe}</if>
+		</set>
+	</update>
+	<delete id="takeDelete" parameterType="int">
+		delete from taketbl
+		where takeNum = #{takeNum}
+	</delete>
 </mapper>

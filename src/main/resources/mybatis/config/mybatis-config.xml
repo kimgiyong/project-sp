@@ -2,12 +2,12 @@
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<typeAliases>
-	<typeAlias type="com.project.sp.vo.userVO" alias="user"></typeAlias>
-	<typeAlias type="com.project.sp.vo.bookVO" alias="book"></typeAlias>
-	<typeAlias type="com.project.sp.vo.takeVO" alias="take"></typeAlias>
-	<typeAlias type="com.project.sp.vo.postVO" alias="post"></typeAlias>
-	<typeAlias type="com.project.sp.vo.bookComentVO" alias="bookComent"></typeAlias>
-	<typeAlias type="com.project.sp.vo.postComentVO" alias="postComent"></typeAlias>
+	<typeAlias type="com.project.sp.vo.UserVO" alias="user"></typeAlias>
+	<typeAlias type="com.project.sp.vo.BookVO" alias="book"></typeAlias>
+	<typeAlias type="com.project.sp.vo.TakeVO" alias="take"></typeAlias>
+	<typeAlias type="com.project.sp.vo.PostVO" alias="post"></typeAlias>
+	<typeAlias type="com.project.sp.vo.BookComentVO" alias="bookComent"></typeAlias>
+	<typeAlias type="com.project.sp.vo.PostComentVO" alias="postComent"></typeAlias>
 	
 	</typeAliases>
 </configuration>

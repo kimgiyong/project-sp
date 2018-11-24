@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Data
 @Component
-public class bookVO {
+public class BookVO {
 
 	private Integer userNum;
 	private String bookCode;

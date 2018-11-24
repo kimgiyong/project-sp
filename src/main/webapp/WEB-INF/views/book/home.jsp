@@ -3,7 +3,7 @@
 <link rel="stylesheet" type="text/css" href="${rootPath}/resources/css/homeCss.css">
 <link href="http://fonts.googleapis.com/earlyaccess/jejuhallasan.css" rel="stylesheet">
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<% userVO user = (userVO)session.getAttribute("user"); %>
+<% UserVO user = (UserVO)session.getAttribute("user"); %>
 <script>
 	function doInit(){
 		alert('<%=user%>');

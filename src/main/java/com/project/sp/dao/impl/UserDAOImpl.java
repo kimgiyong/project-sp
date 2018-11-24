@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.project.sp.dao.UserDAO;
-import com.project.sp.vo.userVO;
+import com.project.sp.vo.UserVO;
 
 @Repository
 public class UserDAOImpl implements UserDAO {
@@ -16,7 +16,7 @@ public class UserDAOImpl implements UserDAO {
 	private SqlSession ss;
 	
 	@Override
-	public int userInsert(userVO user) {
+	public int userInsert(UserVO user) {
 		String userId = user.getUserId();
 		String userId2 = ss.selectOne("com.project.sp.USER.userCheck",userId);
 		if(userId2 == null) {
@@ -27,12 +27,12 @@ public class UserDAOImpl implements UserDAO {
 	}
 
 	@Override
-	public userVO userLogin(userVO user) {
+	public UserVO userLogin(UserVO user) {
 		return ss.selectOne("com.project.sp.USER.userLogin",user);
 	}
 
 	@Override
-	public int userUpdate(userVO user) {
+	public int userUpdate(UserVO user) {
 		return ss.update("com.project.sp.USER.userUpdate",user);
 	}
 
@@ -42,12 +42,12 @@ public class UserDAOImpl implements UserDAO {
 	}
 
 	@Override
-	public List<userVO> userSelectList(userVO user) {
+	public List<UserVO> userSelectList(UserVO user) {
 		return ss.selectList("com.project.sp.USER.userSelectList",user);
 	}
 
 	@Override
-	public userVO userSelect(int userNum) {
+	public UserVO userSelect(int userNum) {
 		return ss.selectOne("com.project.sp.USER.userSelect",userNum);
 	}
 

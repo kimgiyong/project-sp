@@ -6,11 +6,13 @@ import lombok.Data;
 
 @Data
 @Component
-public class postComentVO {
+public class PostVO {
 
 	private Integer userNum;
 	private String postCode;
-	private Integer comentNum;
-	private String comentText;
-	private String comentCreDat;
+	private String postTitle;
+	private String postText;
+	private String credat;
+	private String moddat;
+	private String postImg;
 }

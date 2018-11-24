@@ -7,7 +7,7 @@ import lombok.Data;
 
 @Data
 @Component
-public class userVO {
+public class UserVO {
 	
 	private Integer userNum;
 	private String userName;
