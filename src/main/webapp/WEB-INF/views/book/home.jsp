@@ -26,7 +26,7 @@
 				<option value="witer">작가</option>
 			</select> 
 			<input type="text" name="search" placeholder="검색어를 입력하세요">
-			<button class="search-btn" href="#">
+			<button class="search-btn" id="search-btn">
 					<i class="fas fa-search"></i>
 			</button>
 		</div>
@@ -83,5 +83,24 @@
 				$('.subMenuBox').stop().slideUp();
 			})
 		});
+		var user = <%=user%>;
+		var loginbtn = document.getElementById('loge1');
+		var joinbtn = document.getElementById('loge0');
+		var search = document.getElementById('search-btn');
+		
+		function userfun(){
+			
+			if(user==null){
+				loginbtn.textContent = "LOGIN";
+				joinbtn.textContent = "JOIN";
+			}else{
+				loginbtn.textContent = "LOGOUT";
+				joinbtn.textContent = "My Page";
+			}
+		}
+		search.addEventListener("click",function(){alert(user);});/* 이거 그냥 확인용 나중에 지울꺼 */
+		window.addEventListener("load",userfun);
+		
 	</script>
+	
 	<div class="clear"></div>

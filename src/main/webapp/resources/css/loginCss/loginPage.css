@@ -4,7 +4,6 @@
 	padding: 0px auto;
 	font-size: 17px;
 	text-decoration: none;
-	box-sizing: border-box;
 }
 
 html, body {
@@ -20,7 +19,6 @@ html, body {
 	background-position: center -160px;
 	background-repeat: no-repeat;
 	padding: 10% 0;
-	
 }
 
 h1 {
