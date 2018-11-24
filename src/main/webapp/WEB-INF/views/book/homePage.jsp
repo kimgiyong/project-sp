@@ -19,70 +19,68 @@
 				<button id="MoverightBtn">&gt;</button> 
 			</div>
 		</div>
+		
 		<section id="slideimge">
 			<ul class="imgeul">
-				<li class="imgeli"><img
-					src="${resPath}/img/loginimg/bookerber.jpg"	
-					alt="mainimge" /></li>
+				<li class="imgeli">
+					<img src="${resPath}/img/loginimg/bookerber.jpg"	
+						alt="mainimge" />
+				</li>
 			</ul>
 			<ul class="imgeul">
-				<li class="imgeli"><img
-					src="${resPath}/img/loginimg/book1.jpg"
-					alt="mainimge" /></li>
+				<li class="imgeli">
+					<img src="${resPath}/img/loginimg/book1.jpg"
+					alt="mainimge" />
+				</li>
 			</ul>
 			<ul class="imgeul">
-				<li class="imgeli"><img
-					src="${resPath}/img/homeimg/back3.jpg"
-					alt="mainimge" /></li>
+				<li class="imgeli">
+					<img src="${resPath}/img/homeimg/back3.jpg"
+					alt="mainimge" />
+				</li>
 			</ul>
 		</section>
 	</div>
 	
+	
+	
 	<div class="clear"></div>
 	
-<!--		<section id="cuchen">
-			<div id="cus">오늘의 추천 도서 | 오늘의 신간 도서</div>
-			<div id="fooleftbtn">
-				<button id="fooleftBtn">&lt;</button>
-			</div>
-			<div id="cuchen1">
-				<img alt="1위" src="#">
-			</div>
-			<div id="cuchen2">
-				<img alt="2위" src="#">
-			</div>
-			<div id="foorightbtn">
-				<button id="foorightBtn">&gt;</button>
+	
+	
+	<div id="content">
+		<section id="contentA">
+			<div id="cus"><a href="#">오늘의 추천 도서</a> | <a href="#">오늘의 신간 도서</a></div><br> 
+			
+			<div id="cuchen">
+				<div class="foobtn">
+					<button id="fooleftBtn">&lt;</button>
+				</div>
+				<div id="cuchen1" class="Cbook">
+					<img alt="1위" src="#"><br>
+					<span>제목1이다.</span>
+				</div>
+				<div id="cuchen2" class="Cbook">
+					<img alt="2위" src="#"><br>
+					<span>제목2이다.</span>
+				</div>
+				<div id="cuchen3" class="Cbook">
+					<img alt="3위" src="#"><br>
+					<span>제목3이다.</span>
+				</div>
+				<!-- 아이디 숫자 자동증가 & alt값 자동증가 필요 -->
+				<!-- 버튼클릭 시 해당 바향으로 순위가 바뀐다. (10에선 1위로) -->
+				<div class="foobtn">  
+					<button id="foorightBtn">&gt;</button>
+				</div>
 			</div>
 		</section>
-		<div class="clear"></div>
-	 <section> // 원본파일
-
-				<div class="menu-left">
-					<ul>
-						<li><a href="javascript:;">11<img
-								src="http://blog.fujixerox.co.kr/wp-content/uploads/2017/10/FUJI%EB%B8%94%EB%A1%9C%EA%B7%B8_1023_%EB%94%94%EC%9E%90%EC%9D%B8%EC%9A%94%EC%B2%AD_%EA%B0%80%EC%9D%84-%ED%95%84%EB%8F%85%EB%8F%84%EC%84%9C.png"
-								alt="" /></a></li>
-						<li><a href="javascript:;">33<img
-								src="https://t1.daumcdn.net/cfile/tistory/26065733597029C81E"
-								alt="" /></a></li>
-					</ul>
-					<ul>
-						<li><a href="javascript:;">22<img
-								src="https://t1.daumcdn.net/cfile/tistory/26065733597029C81E"
-								alt="" /></a></li>
-						<li><a href="javascript:;">44<img
-								src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfBZPemJhAIGX3V1FqIdiD5rP1Nu1UzdVhZMV1L8NG8jQReGYtSg"
-								alt="" /></a></li>
-					</ul>
-
-					<div class="control">
-						<button class="left">left</button>
-						<button class="right">right</button>
-					</div>
-				</div>
-			</section>
-
+		
+		 <section id="contentB">
+		 	<h1>공지사항</h1>
+		 		<!-- DB에서 받아올 것 --> 
+		</section>
+	</div>
 	
 	<div class="clear"></div>
 	<footer>
@@ -92,7 +90,7 @@
 				src="../img/logo4jpg3.jpg" alt="logoimge">
 		</div>
 		<p></p>
-	</footer> -->
+	</footer> 
 </body>
 <script>
 	$(function() {

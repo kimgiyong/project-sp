@@ -74,14 +74,50 @@ body {
 
 /* 슬라이드 밑에 부분 */
 /* 추천도서 */
-#cuchen{
-	float: left;
-	display:inline-block;
+#content{
+	width:1200px; 
+	margin:400px 0 0 15.1%;
+	background:white;
 }
-
-#cuchen #cu{
-	font-weight: bold;
+#contentA{
+	width:700px;
+	height:350px;
+	padding-top:20px;
+	border:solid 1px red;
+	margin:0 auto;
+	float:left;
+	padding-left:20px;
 }
+#cus{
+	margin:10px 0;
+}
+#contentA div{ 
+ 	display: inline-block;
+	text-align: center;
+}
+#contentA .foobtn{
+	background-color:red;
+	line-height:100px;
+	position: relative;
+}
+#contentA button{
+	width:30px; 
+	height:60px; 
+	font-size:25px;
+	top:10%;
+} 
 
+#contentA img{
+	width:130px;
+	height:160px;
+	border:solid 1px red;
+	margin:0 10px;
+}
+#contentB{
+	width:500px;
+	height:350px;
+	border:solid 1px blue;
+	float:right;
+}
 /* footer부분 */
 /* 하단 logo부분 */
