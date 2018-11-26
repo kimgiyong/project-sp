@@ -161,10 +161,10 @@ body {
 	width: 236px;
 	padding-top: 12px;
 }
-/* 
+
 #menuBox .mainMenu:last-child {
-	padding-right: 60px;
-} */
+	padding-right: 30px;
+}
 
 #menuBox .mainMenu a {
 	color: white;

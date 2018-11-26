@@ -11,8 +11,7 @@
 %>
 <script>
 	function doInit(){
-		var user = '<%=user%>
-	';
+		var user = '<%=user%>';
 		var btn1 = document.getElementById('loge1');
 		var btn0 = document.getElementById('loge0');
 		if (user != 'null') {
@@ -32,7 +31,7 @@
 	</div>
 
 	<div id="logoBox">
-		<a href="homePage" id="logof"> <span id="logof1">좋은</span> <span
+		<a href="/uri/book/homePage" id="logof"> <span id="logof1">좋은</span> <span
 			id="logof2">향</span> <br> &emsp; <span id="logof3">도서</span> <span
 			id="logof4">관</span>
 		</a>

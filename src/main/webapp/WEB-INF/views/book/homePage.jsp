@@ -47,7 +47,7 @@
 		<table class="contentAtbl">
 			<tr	class="contentAtr">
 				<th><a href="#">오늘의 추천 도서</a></th>
-				<th>|</th>
+				<th><pre>  |  </pre></th>
 				<th><a href="#">오늘의 신간 도서</a></th>
 			</tr>
 			<tr class="contentAtr" id="cuchenbook" colspan="3">
@@ -106,9 +106,9 @@
 		$("#slideimge ul").hide();
 		$("#slideimge ul").eq(0).show();
 		window.setInterval(function() {
-			$("#rightbtn").click();
+			$("#MoverightBtn").click();
 		}, 4000);
-		$("#leftbtn").click(function() {
+		$("#MoveLeftBtn").click(function() {
 			$careNum--;
 			if ($careNum < 0)
 				$careNum = $theSize - 1;
@@ -116,7 +116,7 @@
 			$("#slideimge ul").eq($careNum).show();
 		});
 
-		$("#rightbtn").click(function() {
+		$("#MoverightBtn").click(function() {
 			$careNum++;
 			if ($careNum >= $theSize)
 				$careNum = 0;
