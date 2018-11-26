@@ -11,25 +11,6 @@
 <link rel="stylesheet" type="text/css"
 	href="${rootPath}/resources/css/loginCss/findCss.css">
 <script src="http://code.jquery.com/jquery-latest.js"></script>
-<script>
-	$(function() {
-		$("#findBtn").click(function() {
-			$.ajax({
-				url : "/find_pwd",
-				type : "POST",
-				data : {
-					id : $("#findId").val(),
-					username : $("#username").val(),
-					mobile : $("#findMobile").val(),
-					birthday : $("#findBir").val()
-				},
-				success : function(result) {
-					alert(result);
-				},
-			})
-		});
-	})
-</script>
 <title>비밀번호 찾기</title>
 </head>
 <body>
@@ -66,5 +47,20 @@
 			</div>
 		</div>
 	</div>
+<script>
+	var fbtn = document.querySelector('#findBtn');
+	function find(){
+		var userEmail = document.querySelector('#userEmail');
+		var username = document.querySelector('#username');
+		var userMobile = document.querySelector('#findMobile');
+		var userBirth = document.querySelector('#findBir');
+		var conf = {
+				url:'/searchPwd',
+				
+		}
+	}
+	
+	fbtn.addEventListener('click',find);
+</script>
 </body>
 </html>

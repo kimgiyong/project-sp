@@ -33,7 +33,7 @@
 
 
 	<div class="w3-content w3-container w3-margin-top">
-		<div class="w3-container w3-card-4">
+		<div class="w3-container w3-card-4" id="firstBack">
 			<div class="back">
 			<div id="box">
 				<div class="w3-center w3-large w3-margin-top">
@@ -75,14 +75,18 @@
 					var back = document.querySelector('.back');
 					var fbtn = document.querySelector('#findBtn');
 					var cbtn = document.querySelector('#cancleBtn');
+					var fBack = document.querySelector('#firstBack');
+					fBack.style.height = '130px';
+					fBack.style.margin='200px 0 0 0';
 					box.style.display='none';
 					fbtn.style.display='none';
 					cbtn.textContent='Back';
 					cbtn.style.display='inline-block';
 					cbtn.style.width='200px';
-					cbtn.style.margin='0 0 0 400px';
+					cbtn.style.position = 'relative';
+					cbtn.style.left = '330px';
 					back.textContent = '당신의 아이디는 ' + res + '입니다.';
-					back.style.margin='200px 0 0 0';
+					back.style.margin = '10px 0 0 0';
 					back.appendChild(cbtn);
 				}
 		}
