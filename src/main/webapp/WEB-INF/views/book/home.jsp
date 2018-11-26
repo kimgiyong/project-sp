@@ -43,7 +43,7 @@
 			<option value="title">제목</option>
 			<option value="witer">작가</option>
 		</select> <input type="text" name="search" placeholder="검색어를 입력하세요">
-		<button class="search-btn" href="#">
+		<button class="search-btn">
 			<i class="fas fa-search"></i>
 		</button>
 	</div>

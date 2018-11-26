@@ -14,31 +14,34 @@
 		<table id="mypagetbl">
 			<tr class="mypagetr">
 				<td>이메일</td>
-				<td><input type="email" value=""></td>
+				<td><input type="email" value="<%=user.getUserId()%>"></td>
 			</tr>
 			<tr class="mypagetr">
 				<td>이름</td>
-				<td><input type="text" ></td>
+				<td><input type="text" value="<%=user.getUserName()%>"></td>
 			</tr>
 			<tr class="mypagetr">
 				<td>비밀번호</td>
-				<td><input type="password"></td>
+				<td><input type="password" value=""></td>
 			</tr>
 			<tr class="mypagetr">
 				<td>비밀번호확인</td>
-				<td><input type="password"></td>
+				<td><input type="password" value=""></td>
 			</tr>
 			<tr class="mypagetr">
 				<td>생년월일</td>
-				<td><input type="date"></td>
+				<td><input type="date" value="<%=user.getUserBirth()%>"></td>
 			</tr>
 			<tr class="mypagetr">
 				<td>전화번호</td>
-				<td><input type="text"></td>
+				<td><input type="text" value="<%=user.getUserMobile()%>"></td>
 			</tr>
 		</table>
 		<button>저장</button>
 		<button>취소</button>
 	</div>
 </body>
+<script>
+
+</script>
 </html>

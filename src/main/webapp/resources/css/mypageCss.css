@@ -21,21 +21,20 @@ table{
 }
 
 #mypagetbl{
-	border: solid 1px red;
-	font-size: 20px;
+	font-size: 22px;
 	padding: 20px;
 	margin:10px;
 	border-collapse: separate;
 	border-spacing: 50px;
+	font-weight: bold;
 }
 
 #mypagetbl input{
 	border: none;
-	font-size: 20px;
+	font-size: 22px;
 }
 
 #mypageBack button{
-	border: 1px red solid; 
 	outline: 0px;
 	cursor: pointer;
 	background-color: transparent !important;

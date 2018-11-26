@@ -121,7 +121,13 @@ body {
 }
 
 .contentAtbl{
-	border: 1px solid red;	
+	border: 1px solid lime;	
+}
+
+.bookbtn{
+	background-color: transparent !important;
+	border: 0;
+	width: 200px;
 }
 
 /* footer부분 */

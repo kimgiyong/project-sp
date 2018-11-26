@@ -46,20 +46,24 @@
 		<section id="contentA">
 		<table class="contentAtbl">
 			<tr	class="contentAtr">
-				<th><a href="#">오늘의 추천 도서</a></th>
+				<th><button class="bookbtn" id="bookcuchen">오늘의 추천 도서</button></th>
 				<th><pre>  |  </pre></th>
-				<th><a href="#">오늘의 신간 도서</a></th>
+				<th><button class="bookbtn" id="booknew">오늘의 신간 도서</button></th>
 			</tr>
-			<tr class="contentAtr" id="cuchenbook" colspan="3">
-				<td>ddd</td>
+			<tr class="contentAtr" id="cuchenbook">
+				<td colspan="3">
+					<!-- 여기에 오늘의 추천 도서부분 만들기 -->
+				</td>
 			</tr>
-			<tr class="contentAtr" id="newbook" colspan="3">
-				<td>ddd</td>
+			<tr class="contentAtr" id="newbook">
+				<td colspan="3">
+					<!-- 여기에 오늘의 신간 도서부분 만들기 **그냥 2줄로 만들면 됨 나중에 스크립트에서 디스플레이 none으로 바꾸면서 하면 됨.-->
+				</td>
 			</tr>
 		</table>
 		<!-- 	<div id="cus"><a href="#">오늘의 추천 도서</a> | <a href="#">오늘의 신간 도서</a></div><br>   --> 
 			
-			<div id="cuchen"><!-- 테이블 과  ul,li로 바꿔야 함 -->
+			<div id="cuchen"><!-- 테이블 과  ul,li로 바꿔야 함 이렇게 하면 움직이기 힘들다고 들음.  -->
 				<div class="foobtn">
 					<button id="fooleftBtn">&lt;</button>
 				</div>
