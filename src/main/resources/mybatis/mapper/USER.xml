@@ -28,8 +28,8 @@
 		select userId from usertbl
 		where userName = #{userName} and userMobile = #{userMobile}
 	</select>
-	<select id="userSearchPassword" resultType="String" parameterType="user">
-		select userPwd from usertbl
+	<select id="userSearchPassword" resultType="int" parameterType="user">
+		select userNum from usertbl
 		where userId = #{userId} and userName = #{userName} and userMobile = #{userMobile} and userBitrh = #{userBirth}
 	</select>
 	<insert id="userInsert" parameterType="user">
@@ -43,6 +43,10 @@
 			<if test="userAddr!=null">userAddr = #{userAddr},</if>
 			<if test="userMobile!=null">userPwd = #{userMobile},</if>
 		</set>
+		where userNum = #{userNum}
+	</update>
+	<update id="userPasswordChange" parameterType="user">
+		update usertbl set userPwd = #{userPwd}
 		where userNum = #{userNum}
 	</update>
 	<delete id="userDelete" parameterType="user">

@@ -1,5 +1,6 @@
 package com.project.sp.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.http.HttpServlet;
@@ -20,6 +21,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.context.request.RequestAttributes;
 
 import com.project.sp.service.UserService;
+import com.project.sp.util.SendMail;
 import com.project.sp.vo.UserVO;
 
 import lombok.extern.slf4j.Slf4j;
@@ -85,5 +87,16 @@ public class UserController {
 	@PostMapping(value="/searchPwd")
 	public @ResponseBody String userSearchPwd(@RequestBody UserVO user) {
 		return ls.userSearchPwd(user);
+	}
+	@GetMapping(value="/test")
+	public @ResponseBody String mailTest() {
+		SendMail sm = new SendMail();
+		try {
+			sm.send("xxzcsv@naver.com");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return "/uri/book/homePage";
 	}
 }
