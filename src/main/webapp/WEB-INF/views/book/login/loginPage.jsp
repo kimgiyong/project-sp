@@ -42,7 +42,7 @@
 				<input id="userPwdchk" type="password" placeholder="retype password" /><br>
 				<input id="userName" type="text" placeholder="user name" maxlength="5" /><br>
 				<input id="userBir" type="date" placeholder="Birthday" /><br> 
-				<input id="userNumber" type="text" placeholder="Phone number('-'없이 써주세요)" maxlength="11" onkeypress="onlyNumber();" /><br>
+				<!-- <input id="userNumber" type="text" placeholder="Phone number('-'없이 써주세요)" maxlength="11" onkeypress="onlyNumber();" /><br> -->
 				<div id="userMobile">
 					<select name="ddlMobileTel" id="ddlMobileTel">
 						<option selected="selected" value="010">010</option>
@@ -71,21 +71,21 @@
 
 <script>
 	/* 우리는 아이디가 이메일이다! */
-	var id = document.getElementById("userId");
 	var pwd = document.getElementById("userPwd");
 	var pwdchk = document.getElementById("userPwdchk");
-
 	var username = document.getElementById("userName");
+	
 	var birthday = document.getElementById("userBir");
 	var number = document.getElementById("userNumber");
 	var joinhidden = document.getElementById("joinhidden");
+	
+	var txtEmailDomain = document.getElementById("txtEmailDomain");
+	var ddlEmailDomain = document.getElementById("ddlEmailDomain");
 
 	var btn = document.getElementById("loginbtn");
 	var signup = document.getElementById("signup");
 	var log = document.getElementById("log");
-	var loge =
-<%=loge%>
-	;
+	var loge = <%=loge%>;
 
 	var date = new Date();
 
@@ -99,8 +99,11 @@
 
 	var getToday = year + '' + month + day; // 오늘 날짜 
 
+	var id = txtEmailDomain.value + '@' + ddlEmailDomain.value;
 	var checkmail = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
-	/* var emailjuso = document.getElementById("emailjuso");
+	var email = checkmail.test(id);
+	
+	/*var emailjuso = document.getElementById("emailjuso");
 	var index = $("#emailjuso option").index($("#emailjuso option:selected")); */
 
 	if (loge == 0) {
@@ -146,9 +149,8 @@
 	function login() { /* 회원가입할때 비밀번호가 다르면 alert창에 띄어줌 밖에 없어 */
 		/* console.log(backToObj); */
 		if (btn.textContent == "Create account") {
-			if (checkmail.test(id) == false) {
-				/* !check(checkmail, id, alert('적합하지 않은 이메일 형식입니다.')) */
-				alert('메일 형식이 틀리셨습니다.');
+			if (email == false) {
+				alert('메일을 다시 확인해주세요.');
 			} else if (pwd.value.length < 8) {
 				alert('비밀번호는 최소 8글자 이상이어야합니다.');
 			} else if (pwd.value != pwdchk.value) {
@@ -215,6 +217,12 @@
 			signup.textContent = "sign up";
 		}
 	}
+	
+	function checkEmail(){
+		if(ddlEmailDomain.value=='direct_input'){
+			txtEmailDomain.readOnly = false;
+		}
+	}
 
 	id.addEventListener("keyup", colorCheck);
 	pwd.addEventListener("keyup", colorCheck);
@@ -224,5 +232,7 @@
 	number.addEventListener("keyup", colorCheck);
 	btn.addEventListener("click", login);
 	signup.addEventListener("click", sign);
+	ddlEmailDomain.addEventListener("click", checkEmail);
+		
 </script>
 </html>
