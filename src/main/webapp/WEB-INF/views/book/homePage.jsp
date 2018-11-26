@@ -44,26 +44,60 @@
 	<div class="clear"></div>
 	<div id="content">
 		<section id="contentA">
-		<table class="contentAtbl">
-			<tr	class="contentAtr">
-				<th><button class="bookbtn" id="bookcuchen">오늘의 추천 도서</button></th>
-				<th><pre>  |  </pre></th>
-				<th><button class="bookbtn" id="booknew">오늘의 신간 도서</button></th>
-			</tr>
-			<tr class="contentAtr" id="cuchenbook">
-				<td colspan="3">
-					<!-- 여기에 오늘의 추천 도서부분 만들기 -->
-				</td>
-			</tr>
-			<tr class="contentAtr" id="newbook">
-				<td colspan="3">
-					<!-- 여기에 오늘의 신간 도서부분 만들기 **그냥 2줄로 만들면 됨 나중에 스크립트에서 디스플레이 none으로 바꾸면서 하면 됨.-->
-				</td>
-			</tr>
-		</table>
+			<table id="newBook">
+				<tr class="toptbl">
+					<td colspan="2"><a href="#">오늘의 추천 도서</a></td>
+					<td><pre>  |  </pre></td>
+					<td colspan="2"><a href="#">오늘의 신간 도서</a></td>
+				</tr>
+				<tr class="midtbl">
+					<td></td>
+					<td rowspan="2"><img alt="1위" src="#"></td>
+					<td rowspan="2"><img alt="2위" src="#"></td>
+					<td rowspan="2"><img alt="3위" src="#"></td>
+					<td></td>
+				</tr>
+				<tr class="foobtn">
+					<td><button class="fooleftBtn">&lt;</button></td>
+					<td><button class="foorightBtn">&gt;</button></td>
+				</tr>
+				<tr class="rowtbl">
+					<td></td>
+					<td>신간도서1편</td>
+					<td>신간도서2편</td>
+					<td>신간도서3편</td>
+					<td></td>
+				</tr>
+			</table>
+			<table id="newBook" hidden="true">
+				<tr class="toptbl">
+					<td colspan="2"><button class="newBtn">오늘의 추천 도서</button></td>
+					<td><pre>  |  </pre></td>
+					<td colspan="2"><<button class="bestBtn">오늘의 신간 도서</button></td>
+				</tr>
+				<tr class="midtbl">
+					<td></td>
+					<td rowspan="2"><img alt="1위" src="#"></td>
+					<td rowspan="2"><img alt="2위" src="#"></td>
+					<td rowspan="2"><img alt="3위" src="#"></td>
+					<td></td>
+				</tr>
+				<tr class="foobtn">
+					<td><button class="fooleftBtn">&lt;</button></td>
+					<td><button class="foorightBtn">&gt;</button></td>
+				</tr>
+				<tr class="rowtbl">
+					<td></td>
+					<td>베스트셀러1편</td>
+					<td>베스트셀러2편</td>
+					<td>베스트셀러3편</td>
+					<td></td>
+				</tr>
+			</table>
 		<!-- 	<div id="cus"><a href="#">오늘의 추천 도서</a> | <a href="#">오늘의 신간 도서</a></div><br>   --> 
 			
-			<div id="cuchen"><!-- 테이블 과  ul,li로 바꿔야 함 이렇게 하면 움직이기 힘들다고 들음.  -->
+			
+			<!-- <div id="cuchen">테이블 과  ul,li로 바꿔야 함 이렇게 하면 움직이기 힘들다고 들음. 
 				<div class="foobtn">
 					<button id="fooleftBtn">&lt;</button>
 				</div>
@@ -79,12 +113,12 @@
 					<img alt="3위" src="#"><br>
 					<span>제목3이다.</span>
 				</div>
-				<!-- 아이디 숫자 자동증가 & alt값 자동증가 필요 -->
-				<!-- 버튼클릭 시 해당 바향으로 순위가 바뀐다. (10에선 1위로) -->
+				아이디 숫자 자동증가 & alt값 자동증가 필요
+				버튼클릭 시 해당 바향으로 순위가 바뀐다. (10에선 1위로)
 				<div class="foobtn">  
 					<button id="foorightBtn">&gt;</button>
 				</div>
-			</div>
+			</div> -->
 		</section>
 		
 		 <section id="contentB">
@@ -106,6 +140,7 @@
 <script>
 	$(function() {
 	var $careNum = 0;
+	var $careNum2 = 0;
 		var $theSize = 3;
 		$("#slideimge ul").hide();
 		$("#slideimge ul").eq(0).show();

@@ -87,33 +87,38 @@ body {
 	margin:0 auto;
 	float:left;
 	padding-left:20px;
+	position:relative;
 }
 #cus{
 	margin:10px 0;
 }
-#contentA div{ 
- 	display: inline-block;
-	text-align: center;
+#contentA table{
+	width:550px;
+	height:230px;
+	text-align:center;
+	margin-top:4%;
 }
-#contentA .foobtn{
-	background-color:red;
-	line-height:100px;
-	position: relative;
+#contentA .toptbl,#contentA .rowtbl {
+	height:30px;
 }
-#contentA button{
-	width:30px; 
-	height:60px; 
-	font-size:25px;
-	top:10%;
+#contentA .midtbl td{
+	width:200px;
+}
+#contentA .midtbl td:first-child,#contentA .midtbl td:last-child{
+	width:50px;
 } 
 
-#contentA img{
-	width:130px;
-	height:160px;
-	border:solid 1px red;
-	margin:0 10px;
+#contentA .foobtn button{
+	margin-top:-50px;
+	width:40px;
+	height:60px;
+	background: #444;
+	border:none;
+	color:white;
+	border-radius:5%;
+	font-size:20px;
 }
-#contentB{
+#contentB{  
 	width:500px;
 	height:350px;
 	border:solid 1px blue;
