@@ -41,8 +41,8 @@
 				</div>
 				<div>
 					<p>
-						<label>ID(아이디)</label> <input class="w3-input" type="text"
-							id="findId" name="findId" required>
+						<label>Email(이메일)</label> <input class="w3-input" type="text"
+							id="userEmail" name="userEmail" required>
 					</p>
 					<p>
 						<label>Name(이름)</label> <input class="w3-input" type="text"

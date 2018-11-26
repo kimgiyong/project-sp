@@ -148,8 +148,9 @@ body {
 #menuBox {
 	color: white;
 	text-align: center;
-	height: 31px; 
+	height: 51px; 
 	z-index: 10;
+	width: 100%;
 }
 
 #menuBox .mainMenu {
@@ -159,12 +160,11 @@ body {
 	height: 51px;
 	width: 236px;
 	padding-top: 12px;
-	
 }
-
+/* 
 #menuBox .mainMenu:last-child {
 	padding-right: 60px;
-}
+} */
 
 #menuBox .mainMenu a {
 	color: white;
@@ -209,14 +209,16 @@ body {
 	background-color: rgba(0,0,0,0.4);
 	position: relative;
 	left: -10px;
-	top:-16px;
+	top:16px;
 	border-radius: 30%;
 	font-size: 15px;
 	color: white;
+	z-index: 11;
 }
 
 #allmenubtn:hover{
 	cursor: pointer;
+	background-color: rgba(255,255,255,0.2);
 }
 
 

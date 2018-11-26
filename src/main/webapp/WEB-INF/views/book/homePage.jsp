@@ -41,18 +41,25 @@
 			</ul>
 		</section>
 	</div>
-	
-	
-	
 	<div class="clear"></div>
-	
-	
-	
 	<div id="content">
 		<section id="contentA">
-			<div id="cus"><a href="#">오늘의 추천 도서</a> | <a href="#">오늘의 신간 도서</a></div><br> 
+		<table class="contentAtbl">
+			<tr	class="contentAtr">
+				<th><a href="#">오늘의 추천 도서</a></th>
+				<th>|</th>
+				<th><a href="#">오늘의 신간 도서</a></th>
+			</tr>
+			<tr class="contentAtr" id="cuchenbook" colspan="3">
+				<td>ddd</td>
+			</tr>
+			<tr class="contentAtr" id="newbook" colspan="3">
+				<td>ddd</td>
+			</tr>
+		</table>
+		<!-- 	<div id="cus"><a href="#">오늘의 추천 도서</a> | <a href="#">오늘의 신간 도서</a></div><br>   --> 
 			
-			<div id="cuchen">
+			<div id="cuchen"><!-- 테이블 과  ul,li로 바꿔야 함 -->
 				<div class="foobtn">
 					<button id="fooleftBtn">&lt;</button>
 				</div>
@@ -86,8 +93,8 @@
 	<footer>
 		<div id="logoBox">
 			<span id="logof1">좋은</span> <span id="logof2">향</span> <br>
-			&emsp; <span id="logof3">도서</span> <span id="logof4">관</span> <img
-				src="../img/logo4jpg3.jpg" alt="logoimge">
+			&emsp; <span id="logof3">도서</span> <span id="logof4">관</span> <!-- <img
+				src="../img/logo4jpg3.jpg" alt="logoimge"> -->
 		</div>
 		<p></p>
 	</footer> 
@@ -95,7 +102,7 @@
 <script>
 	$(function() {
 	var $careNum = 0;
-		var $theSize = 2;
+		var $theSize = 3;
 		$("#slideimge ul").hide();
 		$("#slideimge ul").eq(0).show();
 		window.setInterval(function() {
