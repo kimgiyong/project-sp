@@ -31,9 +31,9 @@
 	</div>
 
 	<div id="logoBox">
-		<a href="/uri/book/homePage" id="logof"> <span id="logof1">좋은</span> <span
-			id="logof2">향</span> <br> &emsp; <span id="logof3">도서</span> <span
-			id="logof4">관</span>
+		<a href="/uri/book/homePage" id="logof"> <span id="logof1">좋은</span>
+			<span id="logof2">향</span> <br> &emsp; <span id="logof3">&nbsp;도서</span>
+			<span id="logof4">관</span>
 		</a>
 	</div>
 
@@ -58,33 +58,39 @@
 				<li class="subMenu"><a href="#">도서관 이용시간</a></li>
 				<li class="subMenu"><a href="#">도서관 이용방법</a></li>
 				<li class="subMenu"><a href="#">도서관</a></li>
-			</ul></li>
+			</ul>
+		</li>
 		<li class="mainMenu"><a href="#">메인메뉴 목록2</a>
 			<ul class="subMenuBox">
 				<li class="subMenu"><a href="#">서브메뉴 목록1</a></li>
 				<li class="subMenu"><a href="#">서브메뉴 목록2</a></li>
 				<li class="subMenu"><a href="#">서브메뉴 목록3</a></li>
-			</ul></li>
+			</ul>
+		</li>
 		<li class="mainMenu"><a href="#">메인메뉴 목록3</a>
 			<ul class="subMenuBox">
 				<li class="subMenu"><a href="#">서브메뉴 목록1</a></li>
 				<li class="subMenu"><a href="#">서브메뉴 목록2</a></li>
 				<li class="subMenu"><a href="#">서브메뉴 목록3</a></li>
-			</ul></li>
+			</ul>
+		</li>
 		<li class="mainMenu"><a href="#">메인메뉴 목록4</a>
 			<ul class="subMenuBox">
 				<li class="subMenu"><a href="#">서브메뉴 목록1</a></li>
 				<li class="subMenu"><a href="#">서브메뉴 목록2</a></li>
 				<li class="subMenu"><a href="#">서브메뉴 목록3</a></li>
-			</ul></li>
+			</ul>
+		</li>
 		<li class="mainMenu"><a href="#">메인메뉴 목록5</a>
 			<ul class="subMenuBox">
 				<li class="subMenu"><a href="#">서브메뉴 목록1</a></li>
 				<li class="subMenu"><a href="#">서브메뉴 목록2</a></li>
 				<li class="subMenu"><a href="#">서브메뉴 목록3</a></li>
-			</ul></li>
+			</ul>
+		</li>
 		<button id="allmenubtn">=</button>
 	</ul>
+	
 </section>
 <script>
 	$(function() {

@@ -17,7 +17,8 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center -500px;
-	width: 1720px;  
+	width: 1500px;  
+	border: 1px solid lime;
 }
 
 .clear {
@@ -25,13 +26,14 @@ body {
 }
 /* 상단 logo부분 */
 #logoBox {
-	width: auto;
+	width: 280px;
 	height: auto;
 	display: inline-block;
 	float: left;
 	font-family: Jeju Gothic,fantasy,Hanna,Jeju Hallasan;
-	font-size: 62px;
+	font-size: 50px;
 	margin: 50px 0 30px 0;
+	line-height:80%;
 }
 
 #logof{
@@ -45,6 +47,7 @@ body {
 
 #logof2 {
 	color: green;
+	font-size: 130%;
 }
 
 #logof3 {
@@ -53,6 +56,7 @@ body {
 
 #logof4 {
 	color: brown;
+	font-size: 130%;
 }
 
 /* 검색창 */
@@ -139,7 +143,7 @@ body {
 /* menu부분 */
 #bodyHead {	
 	height:	auto;
-	width: 1200px;
+	width: 1500px;
 	position:relative;
 	z-index:5;
 	background-color: #442200;
@@ -160,7 +164,7 @@ body {
 	background-color: #442200;
 	display: inline-block;
 	height: 51px;
-	width: 240px;
+	width: 300px;
 	padding-top: 12px;
 }
 
@@ -184,7 +188,7 @@ body {
 #menuBox .subMenu{
 	background-color: #795022;
 	padding: 15px 0px;
-	width: 240px;
+	width: 300px;
 }
 
 #menuBox .subMenu a {
@@ -216,6 +220,11 @@ body {
 	font-size: 15px;
 	color: white;
 	z-index: 11;
+}
+
+#mainmenu{
+	margin: 0px;
+	padding: 0px;
 }
 
 #allmenubtn:hover{
