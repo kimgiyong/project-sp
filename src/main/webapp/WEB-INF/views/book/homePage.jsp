@@ -131,8 +131,8 @@
 	<footer>
 		<div id="logoBox">
 			<span id="logof1">좋은</span> <span id="logof2">향</span> <br>
-			&emsp; <span id="logof3">도서</span> <span id="logof4">관</span> <!-- <img
-				src="../img/logo4jpg3.jpg" alt="logoimge"> -->
+			&emsp; <span id="logof3">도서</span> <span id="logof4">관</span> 
+			<!-- <img src="../img/logo4jpg3.jpg" alt="logoimge"> -->
 		</div>
 		<p></p>
 	</footer> 
