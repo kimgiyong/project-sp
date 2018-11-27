@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.project.sp.dao.UserDAO;
+import com.project.sp.util.SendMail;
 import com.project.sp.vo.UserVO;
 
 @Repository
@@ -58,8 +59,9 @@ public class UserDAOImpl implements UserDAO {
 
 	@Override
 	public String userSearchPwd(UserVO user) {
-		int userNum = ss.selectOne("com.project.sp.USER.userSearchPassword",user);
-		UserVO us = new UserVO();
+		String userId = ss.selectOne("com.project.sp.USER.userSearchPassword",user);
+		SendMail sm = new SendMail();
+		sm.send(userId);
 		return "";
 	}
 

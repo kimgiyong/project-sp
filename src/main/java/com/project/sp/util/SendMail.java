@@ -23,7 +23,7 @@ public class SendMail {
 	
 	public static void send(String email) {
 
-		String msg = "sss";
+		String msg = "<div>";
 		Properties props = new Properties();
 		/*
 		 * props.put("mail.smtp.user",username); props.put("mail.smtp.password",
