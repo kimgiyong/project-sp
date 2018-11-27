@@ -42,7 +42,7 @@
 			<div id="joinhidden">
 				<input id="userPwdchk" type="password" placeholder="retype password" /><br>
 				<input id="userName" type="text" placeholder="user name" maxlength="5" /><br>
-				<input id="userBir" type="date" placeholder="Birthday" /><br> 
+				<label>생일 : </label><input id="userBir" type="date" placeholder="Birthday" /><br> 
 				<!-- <input id="userNumber" type="text" placeholder="Phone number('-'없이 써주세요)" maxlength="11" onkeypress="onlyNumber();" /><br> -->
 				<div id="userMobile">
 					<select name="ddlMobileTel" id="ddlMobileTel">
@@ -84,6 +84,9 @@
 	var txtEmailDomain = document.getElementById("txtEmailDomain");
 	var ddlEmailDomain = document.getElementById("ddlEmailDomain");
 	var ddlMobileTel = document.getElementById("ddlMobileTel");
+	
+	var txtEmail = txtEmailDomain.value;
+	var ddlEmail = ddlEmailDomain.value;
 	var ddlMobTel = ddlMobileTel.value;
 
 	var btn = document.getElementById("loginbtn");
@@ -103,7 +106,7 @@
 
 	var getToday = year + '' + month + day; // 오늘 날짜 
 
-	var id = txtEmailDomain.value + '@' + ddlEmailDomain.value;
+	var id = txtEmailDomain.value + '@' + ddlMobTel;
 	var checkmail = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
 	var email = checkmail.test(id);
 	
@@ -127,18 +130,17 @@
 	}
 	
 	function checkEmail(){
-		var ddled = ddlEmailDomain.value;
 		if(ddled=='direct_input'){
 			txtEmailDomain.readOnly = false;
 		}else{
 			txtEmailDomain.readOnly = true;
-			txtEmailDomain.textContent = ddled;
+			txtEmailDomain.textContent = ddlEmail;
 		}
 	}
 
 	function colorCheck() { /* not null 같은 코드  */
 		if (btn.textContent == "Create account") { /* 회원가입 할때 not null 안쓰면 회원가입 안됨 */
-			if (id != "" && pwd.value != "" && pwdchk.value != ""
+			if (txtEmail != "" && ddlEmail != "" && pwd.value != "" && pwdchk.value != ""
 					&& username.value != "" && birthday.value != ""
 					&& number.value != "") {
 				if (pwd.value == pwdchk.value) {
@@ -150,7 +152,7 @@
 				btn.style.backgroundColor = "lightslategray";
 			}
 		} else { /* 로그인할때 아이디나 패스워드 중에 안쓰면 로그인 버튼못누름 */
-			if (id != "" && pwd.value != "") {
+			if (txtEmail != "" && ddlEmail != "" && pwd.value != "") {
 				btn.disabled = false;
 				btn.style.backgroundColor = "lightsteelblue";
 			} else {
@@ -226,7 +228,7 @@
 			signup.textContent = "sign in";
 		} else {
 			btn.textContent = "Login";
-			log.textContent = "LOGIN"
+			log.textContent = "LOGIN";
 			joinhidden.style.display = "none";
 			signup.textContent = "sign up";
 		}
@@ -234,7 +236,7 @@
 
 	ddlEmailDomain.addEventListener("click", checkEmail);
 	txtEmailDomain.addEventListener("keyup", colorCheck);
-	ddlEmailDomain.addEventListener('keyup',colorCheck);
+	ddlEmailDomain.addEventListener("keyup", colorCheck);
 	pwd.addEventListener("keyup", colorCheck);
 	pwdchk.addEventListener("keyup", colorCheck);
 	username.addEventListener("keyup", colorCheck);
@@ -242,7 +244,5 @@
 	number.addEventListener("keyup", colorCheck);
 	btn.addEventListener("click", login);
 	signup.addEventListener("click", sign);
-	
-		
 </script>
 </html>

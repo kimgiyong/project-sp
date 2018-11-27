@@ -43,6 +43,7 @@ h1 {
 	font-size: 140%;
 }
 
+/* 비밀번호 아이디 찾기 부분 */
 #forgot, #forgot a {
 	color: navy;
 	font-size: 90%;
@@ -52,16 +53,19 @@ h1 {
 	font-size: 100%;
 }
 
+
+/* 회원가입 부분 */
 #joinhidden {
 	display: none;
 	width: 100%;
 }
 
+/* input box설정 */
 input {
 	border: 0px;
 	border-bottom: solid 1px darkblue;
 	background-color: rgba(255, 255, 255, 0.2);
-	width: 100%;
+	width: 90%;
 	margin: 10px;
 	padding: 10px;
 	color: navy;
@@ -70,12 +74,14 @@ input {
 	margin-right: -10px;
 }
 
+/* footer에 있는 글씨 */
 #foo {
 	font-size: 60%;
 	color: white;
 	margin-top: 2%;
 }
 
+/* signup join바뀌는 부분 */
 #signup {
 	background-color: transparent;
 	border: 0px;
@@ -84,15 +90,18 @@ input {
 	cursor: pointer;
 }
 
+/* 로그인 버튼 밑에 /슬러시 부분 */
 #zz {
 	color: navy;
-	font-size: 90%;
+	font-size: 100%;
 }
 
+/* 중간에 흰 줄 있는거 */
 #userPwdchk {
 	border-top: dotted 2px white;
 }
 
+/* 위에 로고 밑에 있는 LOGIN, JOIN인지 알려주는 부분 */
 #log {
 	font-family: serif;
 	color: navy;
@@ -102,8 +111,10 @@ input {
 
 #lodiv {
 	width: 500px;
+	border: 1px double red;
 }
 
+/* 로고 부분 (글씨) */
 #logo, #hyang {
 	text-shadow: 3px 3px 3px gray;
 	font-family: 'cursive';
@@ -117,22 +128,34 @@ input {
 	font-size: 118%;
 }
 
+/* 이메일이랑 전화번호 inline바꾸는거  */
 .input1, .select2, .at , .var, .input2{
 	display: inline-block;
 }
 
+/* 이메일 input박스*/
 .input1 {
 	padding-top: 1px;
 	width: 40%;
 }
 
+/* 전화번호 input박스 */
 .input2 {
 	padding-top: 1px;
 	width: 30%;
 }
 
+.var{
+	font-size: 40px;
+	font-weight: bold;
+}
+
 .input1 input{
 	width: 100%;
+}
+
+.input2 input{
+	width: 60%;
 }
 
 .select2 select{
@@ -155,7 +178,6 @@ div.at {
 }
 
 #sum{
-	width: 60%;
-	border: 1px yellow solid;
+	width: 50%;
 }
 
