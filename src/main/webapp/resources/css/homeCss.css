@@ -13,10 +13,11 @@ pre{
 }
 
 body {
-	background-image: url("../img/homeimg/lobepik.jpg");
+	background-image: url("../img/homeimg/back4.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center -500px;
+	background-position: center center;
+	margin-top:10px;
 	width: 1500px;  
 	border: 1px solid lime;
 }

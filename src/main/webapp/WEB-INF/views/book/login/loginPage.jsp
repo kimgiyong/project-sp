@@ -80,15 +80,17 @@
 	var birthday = document.getElementById("userBir");
 	var number = document.getElementById("userMobile");
 	var joinhidden = document.getElementById("joinhidden");
-	
+	/* Email */
 	var txtEmailDomain = document.getElementById("txtEmailDomain");
 	var ddlEmailDomain = document.getElementById("ddlEmailDomain");
-	var ddlMobileTel = document.getElementById("ddlMobileTel");
 	
 	var txtEmail = txtEmailDomain.value;
 	var ddlEmail = ddlEmailDomain.value;
+	
+	/* Mobile */
+	var ddlMobileTel = document.getElementById("ddlMobileTel");
 	var ddlMobTel = ddlMobileTel.value;
-
+	
 	var btn = document.getElementById("loginbtn");
 	var signup = document.getElementById("signup");
 	var log = document.getElementById("log");
