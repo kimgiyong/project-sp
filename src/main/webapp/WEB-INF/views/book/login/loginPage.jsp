@@ -22,7 +22,7 @@
 		</div>
 		<div id="back">
 			<h1 id="log">LOGIN</h1>
-			<div id=""></div>
+			<div id="sum">
 			<!-- <input id="userId" type="email" placeholder="Account Email" />  -->
 			<div class="input1"><input name="txtEmailId" type="text" value="" maxlength="35" id="txtEmailId" class="txt" onkeydown="if(event.keyCode==13){return false;}" placeholder="Account Email"></div>
 			<div class="at">@</div>
@@ -54,10 +54,11 @@
 						<option value="019">019</option>
 					</select>
 					<div class="var">-</div>
-					<div class="input1"><input name="txtMobileTel2" type="text" value="" maxlength="4" id="txtMobileTel2" class="txt" onblur="checkNumber(this);" onkeydown="if(event.keyCode==13){return false;}"></div>
+					<div class="input2"><input name="txtMobileTel2" type="text" value="" maxlength="4" id="txtMobileTel2" class="txt" onblur="checkNumber(this);" onkeydown="if(event.keyCode==13){return false;}"></div>
 					<div class="var">-</div>
-					<div class="input1"><input name="txtMobileTel3" type="text" value="" maxlength="4" id="txtMobileTel3" class="txt" onblur="checkNumber(this);" onkeydown="if(event.keyCode==13){return false;}"></div>
+					<div class="input2"><input name="txtMobileTel3" type="text" value="" maxlength="4" id="txtMobileTel3" class="txt" onblur="checkNumber(this);" onkeydown="if(event.keyCode==13){return false;}"></div>
 				</div>
+			</div>
 			</div>
 
 			<button disabled="true" id="loginbtn">LOGIN</button>

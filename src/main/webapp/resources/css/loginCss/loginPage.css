@@ -61,7 +61,7 @@ input {
 	border: 0px;
 	border-bottom: solid 1px darkblue;
 	background-color: rgba(255, 255, 255, 0.2);
-	width: 40%;
+	width: 100%;
 	margin: 10px;
 	padding: 10px;
 	color: navy;
@@ -117,13 +117,18 @@ input {
 	font-size: 118%;
 }
 
-.input1, .select2, .at , .var{
+.input1, .select2, .at , .var, .input2{
 	display: inline-block;
 }
 
 .input1 {
 	padding-top: 1px;
-	width: 13%;
+	width: 40%;
+}
+
+.input2 {
+	padding-top: 1px;
+	width: 30%;
 }
 
 .input1 input{
@@ -149,4 +154,8 @@ div.at {
 	font-size: 22px;
 }
 
+#sum{
+	width: 60%;
+	border: 1px yellow solid;
+}
 
