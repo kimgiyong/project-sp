@@ -27,7 +27,7 @@
 			<div class="input1"><input name="txtEmailId" type="text" value="" maxlength="35" id="txtEmailId" class="txt" onkeydown="if(event.keyCode==13){return false;}" placeholder="Account Email"></div>
 			<div class="at">@</div>
 			<div class="input1"><input name="txtEmailDomain" type="text" value="" maxlength="30" readonly="readonly" id="txtEmailDomain" class="txt" onkeydown="if(event.keyCode==13){return false;}"></div>
-			<select name="ddlEmailDomain" id="ddlEmailDomain" onchange="ChangeEmailDomain(this, txtEmailDomain);">
+			<select name="ddlEmailDomain" id="ddlEmailDomain">
 				<option selected="selected" value="">선택</option>
 				<option value="naver.com">naver.com</option>
 				<option value="hanmail.net">hanmail.net</option>
@@ -78,7 +78,7 @@
 	var username = document.getElementById("userName");
 	
 	var birthday = document.getElementById("userBir");
-	var number = document.getElementById("userNumber");
+	var number = document.getElementById("userMobile");
 	var joinhidden = document.getElementById("joinhidden");
 	
 	var txtEmailDomain = document.getElementById("txtEmailDomain");
@@ -138,7 +138,7 @@
 
 	function colorCheck() { /* not null 같은 코드  */
 		if (btn.textContent == "Create account") { /* 회원가입 할때 not null 안쓰면 회원가입 안됨 */
-			if (id.value != "" && pwd.value != "" && pwdchk.value != ""
+			if (id != "" && pwd.value != "" && pwdchk.value != ""
 					&& username.value != "" && birthday.value != ""
 					&& number.value != "") {
 				if (pwd.value == pwdchk.value) {
@@ -150,7 +150,7 @@
 				btn.style.backgroundColor = "lightslategray";
 			}
 		} else { /* 로그인할때 아이디나 패스워드 중에 안쓰면 로그인 버튼못누름 */
-			if (id.value != "" && pwd.value != "") {
+			if (id != "" && pwd.value != "") {
 				btn.disabled = false;
 				btn.style.backgroundColor = "lightsteelblue";
 			} else {
@@ -179,7 +179,7 @@
 					method : 'POST',
 					param : JSON.stringify({
 						userName : username.value,
-						userId : id.value,
+						userId : id,
 						userPwd : pwd.value,
 						userBirth : birthday.value,
 						userMobile : number.value
@@ -202,7 +202,7 @@
 				url : '/login',
 				method : 'POST',
 				param : JSON.stringify({
-					userId : id.value,
+					userId : id,
 					userPwd : pwd.value
 				}),
 				success : function(res) {
@@ -233,7 +233,8 @@
 	}
 
 	ddlEmailDomain.addEventListener("click", checkEmail);
-	id.addEventListener("keyup", colorCheck);
+	txtEmailDomain.addEventListener("keyup", colorCheck);
+	ddlEmailDomain.addEventListener('keyup',colorCheck);
 	pwd.addEventListener("keyup", colorCheck);
 	pwdchk.addEventListener("keyup", colorCheck);
 	username.addEventListener("keyup", colorCheck);
