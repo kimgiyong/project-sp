@@ -81,6 +81,8 @@
 	
 	var txtEmailDomain = document.getElementById("txtEmailDomain");
 	var ddlEmailDomain = document.getElementById("ddlEmailDomain");
+	var ddlMobileTel = document.getElementById("ddlMobileTel");
+	var ddlMobTel = ddlMobileTel.value;
 
 	var btn = document.getElementById("loginbtn");
 	var signup = document.getElementById("signup");
