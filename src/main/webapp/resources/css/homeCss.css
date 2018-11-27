@@ -117,11 +117,10 @@ body {
 /* 로그인/회원가입 */
 #login {
 	float: right;
-	margin-right: 100px;
-	margin-top: 30px;
 	font-size: 115%;
 	font-weight: bold;
 	font-family: fantasy;
+	color:#888; 
 }
 
 #login a button {

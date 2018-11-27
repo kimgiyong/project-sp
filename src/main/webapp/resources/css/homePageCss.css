@@ -2,7 +2,7 @@
 
 body {
 	margin:0 auto;
-}
+} 
 
 .clear {
 	clear: both; 
@@ -11,7 +11,7 @@ body {
 /* homePage.jsp */
 #mainslide{
 	position: relative;	
-	margin: 0 auto; 
+	margin: 0; 
 }
 #slideimge{
 	height:446px;
@@ -66,55 +66,48 @@ body {
 /* 추천도서 */
 #content{
 	width:1200px; 
-	margin:400px 0 0 15.1%;
+	margin:446px 0 0 0;
 	background:white;
+	position:relative;
 }
 #contentA{
-	width:700px;
+	width:900px;
 	height:350px;
 	padding-top:20px;
 	border:solid 1px red;
 	margin:0 auto;
 	float:left;
 	padding-left:20px;
-	position:relative;
+	position:absolute;
 }
 #cus{
 	margin:10px 0;
 }
-#contentA table{
-	width:550px;
-	height:230px;
-	text-align:center;
-	margin-top:4%;
-}
-#contentA .toptbl,#contentA .rowtbl {
-	height:30px;
-}
-#contentA .midtbl td{
-	width:200px;
-}
-#contentA .midtbl td:first-child,#contentA .midtbl td:last-child{
-	width:50px;
-} 
 
-#contentA .foobtn button{
-	margin-top:-50px;
-	width:40px;
-	height:60px;
-	background: #444;
-	border:none;
-	color:white;
-	border-radius:5%;
-	font-size:20px;
+#contentA button, #content li{
+	display: inline-block;
+}
+
+#contentA ul{
+	width:520px;
+}
+#contentA img{
+	width:160px;
+	height:216px;
+	margin:0 10px;
 }
 #contentB{  
-	width:500px;
+	width:478px;
 	height:350px;
 	border:solid 1px blue;
-	float:right;
+	position:absolute; 
+	margin-left:1022;
 }
 
+footer{
+	margin-top:350px;
+	border:1px solid red;
+}
 .contentAtbl{
 	border: 1px solid lime;	
 }

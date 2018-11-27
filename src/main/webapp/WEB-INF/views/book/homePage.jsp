@@ -44,56 +44,33 @@
 	<div class="clear"></div>
 	<div id="content">
 		<section id="contentA">
-			<table id="newBook">
-				<tr class="toptbl">
-					<td colspan="2"><a href="#">오늘의 추천 도서</a></td>
-					<td><pre>  |  </pre></td>
-					<td colspan="2"><a href="#">오늘의 신간 도서</a></td>
-				</tr>
-				<tr class="midtbl">
-					<td></td>
-					<td rowspan="2"><img alt="1위" src="#"></td>
-					<td rowspan="2"><img alt="2위" src="#"></td>
-					<td rowspan="2"><img alt="3위" src="#"></td>
-					<td></td>
-				</tr>
-				<tr class="foobtn">
-					<td><button class="fooleftBtn">&lt;</button></td>
-					<td><button class="foorightBtn">&gt;</button></td>
-				</tr>
-				<tr class="rowtbl">
-					<td></td>
-					<td>신간도서1편</td>
-					<td>신간도서2편</td>
-					<td>신간도서3편</td>
-					<td></td>
-				</tr>
-			</table>
-			<table id="newBook" hidden="true">
-				<tr class="toptbl">
-					<td colspan="2"><button class="newBtn">오늘의 추천 도서</button></td>
-					<td><pre>  |  </pre></td>
-					<td colspan="2"><<button class="bestBtn">오늘의 신간 도서</button></td>
-				</tr>
-				<tr class="midtbl">
-					<td></td>
-					<td rowspan="2"><img alt="1위" src="#"></td>
-					<td rowspan="2"><img alt="2위" src="#"></td>
-					<td rowspan="2"><img alt="3위" src="#"></td>
-					<td></td>
-				</tr>
-				<tr class="foobtn">
-					<td><button class="fooleftBtn">&lt;</button></td>
-					<td><button class="foorightBtn">&gt;</button></td>
-				</tr>
-				<tr class="rowtbl">
-					<td></td>
-					<td>베스트셀러1편</td>
-					<td>베스트셀러2편</td>
-					<td>베스트셀러3편</td>
-					<td></td>
-				</tr>
-			</table>
+			<div id="cus"><button id="goBest">오늘의 추천 도서</button><pre>  |  </pre><button id="goNew">오늘의 신간도서</button></div>
+			<button id="fooleftbtn"><</button>
+			<ul id="bestBook">
+				<li class="imgBook"><img src="#"></li>
+				<li class="imgBook"><img src="#"></li>
+				<li class="imgBook"><img src="#"></li>
+				<li class="imgBook"><img src="#"></li>
+				<li class="imgBook"><img src="#"></li>
+				<li class="imgBook"><img src="#"></li>
+				<li class="imgBook"><img src="#"></li>
+				<li class="imgBook"><img src="#"></li>
+				<li class="imgBook"><img src="#"></li>
+				<li class="imgBook"><img src="#"></li>
+			</ul>
+			<ul id="newBook">
+				<li class="imgBook"><img src="#"></li>
+				<li class="imgBook"><img src="#"></li>
+				<li class="imgBook"><img src="#"></li>
+				<li class="imgBook"><img src="#"></li>
+				<li class="imgBook"><img src="#"></li>
+				<li class="imgBook"><img src="#"></li>
+				<li class="imgBook"><img src="#"></li>
+				<li class="imgBook"><img src="#"></li>
+				<li class="imgBook"><img src="#"></li>
+				<li class="imgBook"><img src="#"></li>
+			</ul>
+			<button id="foorightbtn"><</button>
 		<!-- 	<div id="cus"><a href="#">오늘의 추천 도서</a> | <a href="#">오늘의 신간 도서</a></div><br>   --> 
 			
 			
