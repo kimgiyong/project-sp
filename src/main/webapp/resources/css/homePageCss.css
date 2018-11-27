@@ -65,7 +65,8 @@ body {
 /* 슬라이드 밑에 부분 */
 /* 추천도서 */
 #content{
-	width:1200px; 
+	width:1500px; 
+	height:1000px;
 	margin:446px 0 0 0;
 	background:white;
 	position:relative;
@@ -80,16 +81,42 @@ body {
 	padding-left:20px;
 	position:absolute;
 }
-#cus{
-	margin:10px 0;
+#cus button,#cus{
+	margin:4px 0;
+	font-size:18px;
 }
 
-#contentA button, #content li{
+#contentA li{
 	display: inline-block;
 }
-
+#fooleftbtn, #foorightbtn{
+	width:30px;
+	height:60px;
+	border:none;
+	border-radius:10%;
+	background:#666;
+	color:white;
+	
+}
+#fooleftbtn{
+	position:absolute;
+	margin-top:100px;
+	margin-left:100px;
+}
+#foorightbtn{
+	position:absolute;
+	margin-top:-160px;
+	margin-left:750px;
+}
 #contentA ul{
-	width:520px;
+	width:600px;
+	height:256px;
+	border:1px solid blue;
+	text-align:center;
+	overflow: hidden;
+}
+#contentA h2{
+	margin-top:10px;
 }
 #contentA img{
 	width:160px;

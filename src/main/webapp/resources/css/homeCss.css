@@ -13,12 +13,12 @@ pre{
 }
 
 body {
-	background-image: url("../img/homeimg/back4.jpg");
+	background-image: url("../img/homeimg/background.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center center;
 	margin-top:10px;
-	width: 1500px;  
+	width: 1500px; 
+	height:100%;
 	border: 1px solid lime;
 }
 
