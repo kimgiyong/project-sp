@@ -8,7 +8,7 @@
 }
 
 html, body {
-	height: 780px;
+	height: auto;
 }
 
 #container {
@@ -61,11 +61,13 @@ input {
 	border: 0px;
 	border-bottom: solid 1px darkblue;
 	background-color: rgba(255, 255, 255, 0.2);
-	width: 36%;
+	width: 40%;
 	margin: 10px;
 	padding: 10px;
 	color: navy;
 	margin-top: 20px;
+	margin-left: -10px;
+	margin-right: -10px;
 }
 
 #foo {
@@ -77,7 +79,6 @@ input {
 #signup {
 	background-color: transparent;
 	border: 0px;
-	/*   color:royalblue; */
 	color: navy;
 	font-size: 80%;
 	cursor: pointer;
@@ -116,7 +117,7 @@ input {
 	font-size: 118%;
 }
 
-.input1, .select2, .at{
+.input1, .select2, .at , .var{
 	display: inline-block;
 }
 
@@ -139,3 +140,13 @@ div.at {
 	padding: 0 5px 0 4px;
 	margin-top: 5px; 
 }
+
+
+#ddlEmailDomain, #ddlMobileTel{
+	height: 32px;
+	background-color: transparent;
+	border: 0px;
+	font-size: 22px;
+}
+
+

@@ -121,6 +121,16 @@
 			event.returnValue = false;
 		}
 	}
+	
+	function checkEmail(){
+		var ddled = ddlEmailDomain.value;
+		if(ddled=='direct_input'){
+			txtEmailDomain.readOnly = false;
+		}else{
+			txtEmailDomain.readOnly = true;
+			txtEmailDomain.textContent = ddled;
+		}
+	}
 
 	function colorCheck() { /* not null 같은 코드  */
 		if (btn.textContent == "Create account") { /* 회원가입 할때 not null 안쓰면 회원가입 안됨 */
@@ -217,13 +227,8 @@
 			signup.textContent = "sign up";
 		}
 	}
-	
-	function checkEmail(){
-		if(ddlEmailDomain.value=='direct_input'){
-			txtEmailDomain.readOnly = false;
-		}
-	}
 
+	ddlEmailDomain.addEventListener("click", checkEmail);
 	id.addEventListener("keyup", colorCheck);
 	pwd.addEventListener("keyup", colorCheck);
 	pwdchk.addEventListener("keyup", colorCheck);
@@ -232,7 +237,7 @@
 	number.addEventListener("keyup", colorCheck);
 	btn.addEventListener("click", login);
 	signup.addEventListener("click", sign);
-	ddlEmailDomain.addEventListener("click", checkEmail);
+	
 		
 </script>
 </html>
