@@ -188,17 +188,17 @@
 	$(function() {
 	var $careNum = 0;
 		var $theSize = 3;
-		$("#slideimge ul").hide();
-		$("#slideimge ul").eq(0).show();
+		$("#slideimge ul").css({'width':'0px'});
+		$("#slideimge ul").eq(0).css({'width':'1500px'});
 		window.setInterval(function() {
 			$("#MoverightBtn").click();
 		}, 2000);
 		$("#MoveLeftBtn").click(function() {
 			$careNum--;
 			if ($careNum < 0)
-				$careNum = $theSize - 1;	
-			$("#slideimge ul li").animate({'width':'100p'},500);
-			$("#slideimge ul li").eq($careNum).animate({'width':'1000px'},500);
+				$careNum = $theSize - 1;
+			$("#slideimge ul").animate({'width':'0px'},500);
+			$("#slideimge ul").eq($careNum).animate({'width':'1500px'},500);
 		});
 
 		$("#MoverightBtn").click(function() {
@@ -206,8 +206,12 @@
 			if ($careNum >= $theSize)
 				$careNum = 0;
 			$(this).parent().children("ul");
-			$("#slideimge ul").animate({'width':'1000px'},500);
-			$("#slideimge ul").eq($careNum).animate({'width':'100px'},500);
+			$("#slideimge ul").css({'float':'left'});
+			$("#slideimge ul").animate({'width':'0px'},function(){
+				$("#slideimge ul").css({'float':'right'});
+			});
+			$("#slideimge ul").eq($careNum).animate({'width':'1500px'});
+			
 		});
 	});
 	
