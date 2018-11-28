@@ -59,10 +59,9 @@ public class UserDAOImpl implements UserDAO {
 
 	@Override
 	public String userSearchPwd(UserVO user) {
-		String userId = ss.selectOne("com.project.sp.USER.userSearchPassword",user);
+		UserVO us = ss.selectOne("com.project.sp.USER.userSearchPassword",user);
 		SendMail sm = new SendMail();
-		sm.send(userId);
-		return "";
+		return sm.send(us.getUserId(),us.getUserName());
 	}
 
 }

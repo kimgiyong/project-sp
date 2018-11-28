@@ -92,7 +92,7 @@ public class UserController {
 	public @ResponseBody String mailTest() {
 		SendMail sm = new SendMail();
 		try {
-			sm.send("xxzcsv@naver.com");
+			sm.send("xxzcsv@naver.com","김기용");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

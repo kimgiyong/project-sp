@@ -6,12 +6,24 @@
 	<select id="bookComentSelectList" resultType="bookComent">
 		select * from bookcomenttbl
 	</select>
-	<select id="bookComentSelect" resultType="bookComent">
+	<select id="bookComentSelect" resultType="bookComent" parameterType="int">
 		select * from bookcomenttbl
 		where comentNum = #{comentNum}
 	</select>
-	<insert id="bookComent" parameterType="bookComent">
+	<select id="bookComentUser" resultType="bookComent" parameterType="int">
+		select * from bookcomenttbl
+		where userNum = #{userNum}
+	</select>
+	<select id="bookComentBook" resultType="bookComent" parameterType="String">
+		select * from bookcomenttbl
+		where bookCode = #{bookCode}
+	</select>
+	<insert id="bookComentInsert" parameterType="bookComent">
 		insert into bookcomenttbl
 		values()
 	</insert>
+	<delete id="bookComentDelete" parameterType="int">
+		delete from bookcomenttbl
+		where comentNum = #{comentNum}
+	</delete>
 </mapper>

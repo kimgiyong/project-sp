@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.project.sp.LIKE">
+	<select id="likeSelectList" resultType="like" parameterType="like">
+		select * from liketbl
+		where userNum = #{userNum} and bookCode = #{bookCode}
+	</select>
+	<select id="likeUserSelect" resultType="like" parameterType="int">
+		select * from liketbl
+		where userNum = #{userNum}
+	</select>
+	<select id="likeBookSelect" resultType="like" parameterType="String">
+		select * from liketbl
+		where bookCode = #{bookCode}
+	</select>
+	<insert id="likeInsert" parameterType="like">
+		insert into liketbl
+		values(#{userNum},#{bookCode})
+	</insert>
+	<delete id="likeDelete" parameterType="like">
+		delete from liketbl
+		where userNum = #{userNum} and bookCode = #{bookCode}
+	</delete>
+</mapper>

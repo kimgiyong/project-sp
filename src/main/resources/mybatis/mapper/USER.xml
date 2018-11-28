@@ -29,7 +29,7 @@
 		where userName = #{userName} and userMobile = #{userMobile}
 	</select>
 	<select id="userSearchPassword" resultType="String" parameterType="user">
-		select userId from usertbl
+		select userId,userName from usertbl
 		where userId = #{userId} and userName = #{userName} and userMobile = #{userMobile} and userBitrh = #{userBirth}
 	</select>
 	<insert id="userInsert" parameterType="user">

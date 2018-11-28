@@ -8,6 +8,6 @@
 	<typeAlias type="com.project.sp.vo.PostVO" alias="post"></typeAlias>
 	<typeAlias type="com.project.sp.vo.BookComentVO" alias="bookComent"></typeAlias>
 	<typeAlias type="com.project.sp.vo.PostComentVO" alias="postComent"></typeAlias>
-	
+	<typeAlias type="com.project.sp.vo.LikeVO" alias="like"></typeAlias>
 	</typeAliases>
 </configuration>

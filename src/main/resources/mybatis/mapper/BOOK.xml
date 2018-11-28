@@ -10,7 +10,7 @@
 			<if test="bookWriter!=null">or bookWriter = #{bookWriter}</if>
 		</where>
 	</select>
-	<select id="bookSelect" resultType="book" parameterType="int">
+	<select id="bookSelect" resultType="book" parameterType="String">
 		select * from booktbl
 		where bookCode = #{bookCode}
 	</select>
@@ -33,6 +33,12 @@
 			<if test="bookDesc!=null">bookDesc = #{bookDesc},</if>
 		</set>
 		where bookCode = #{bookCode}
+	</update>
+	<update id="bookLikeUp">
+		update booktbl set bookLike = (bookLike+1)
+	</update>
+	<update id="bookLikeDown">
+		update booktbl set bookLike = (bookLike-1)
 	</update>
 	<delete id="bookDelete" parameterType="book">
 		delete from booktbl
