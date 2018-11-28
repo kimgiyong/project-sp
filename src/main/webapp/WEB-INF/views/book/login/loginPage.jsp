@@ -230,7 +230,7 @@
 			signup.textContent = "sign in";
 		} else {
 			btn.textContent = "Login";
-			log.textContent = "LOGIN";
+			log.textContent = "LOGIN"; 
 			joinhidden.style.display = "none";
 			signup.textContent = "sign up";
 		}
