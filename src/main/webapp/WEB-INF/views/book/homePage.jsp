@@ -45,7 +45,7 @@
 	
 	<div id="content">
 		<section id="contentA">
-			<div id="cus"><button id="goBest">오늘의 추천 도서</button><pre>  |  </pre><button id="goNew">오늘의 신간도서</button></div>
+			<div id="cus"><button id="goBest" style="font-weight: ">오늘의 추천 도서</button><pre>  |  </pre><button id="goNew">오늘의 신간도서</button></div>
 			<button id="fooleftbtn">&lt;</button>
 			<ul id="bestBook">
 				<li class="imgBook">
