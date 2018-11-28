@@ -42,9 +42,10 @@
 		</section>
 	</div>
 	<div class="clear"></div>
+	
 	<div id="content">
 		<section id="contentA">
-			<div id="cus"><button id="goBest">오늘의 추천 도서</button><pre>  |  </pre><button id="goNew">오늘의 신간도서</button></div>
+			<div id="cus"><button id="goBest" style="font-weight: ">오늘의 추천 도서</button><pre>  |  </pre><button id="goNew">오늘의 신간도서</button></div>
 			<button id="fooleftbtn">&lt;</button>
 			<ul id="bestBook">
 				<li class="imgBook">
@@ -209,5 +210,24 @@
 			$("#slideimge ul").eq($careNum).animate({'width':'100px'},500);
 		});
 	});
+	
+	var bestBook = document.getElementById("bestBook");
+	var newBook = document.getElementById("newBook");
+	
+	var goBest = document.getElementById("goBest");
+	var goNew = document.getElementById("goNew");
+	
+	function changeBestNewBook(){
+		if(goNew.textContent == '오늘의 신간도서'){
+			goBest.style.display = 'none';
+			goNew.style.display = 'inline-block';
+		}else{
+			goNew.style.display = 'none';
+			goBest.style.display = 'inline-block';
+		}
+	}
+	
+	goBest.addEventListener("click", changeBestNewBook);
+	goNew.addEventListener("click", changeBestNewBook);
 </script>
 </html>
