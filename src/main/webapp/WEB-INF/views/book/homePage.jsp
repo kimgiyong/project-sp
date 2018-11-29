@@ -45,20 +45,20 @@
 	
 	<div id="content">
 		<section id="contentA">
-			<div id="cus"><button id="goBest" style="font-weight: ">오늘의 추천 도서</button><pre>  |  </pre><button id="goNew">오늘의 신간도서</button></div>
+			<div id="cus"><button id="goBest" class="gobtn" value="goBest">오늘의 추천 도서</button><pre>  |  </pre><button id="goNew" class="gobtn" value="goNew">오늘의 신간도서</button></div>
 			<button id="fooleftbtn">&lt;</button>
 			<ul id="bestBook">
 				<li class="imgBook">
 				<img src="#">
-				<h2>제목</h2>
+				<h2>제목a</h2>
 				</li>
 				<li class="imgBook">
 				<img src="#">
-				<h2>제목</h2>
+				<h2>제목b</h2>
 				</li>
 				<li class="imgBook">
 				<img src="#">
-				<h2>제목</h2>
+				<h2>제목c</h2>
 				</li>
 				<li class="imgBook">
 				<img src="#">
@@ -97,15 +97,15 @@
 			<ul id="newBook" hidden="ture">
 				<li class="imgBook">
 				<img src="#">
-				<h2>제목</h2>
+				<h2>제목d</h2>
 				</li>
 				<li class="imgBook">
 				<img src="#">
-				<h2>제목</h2>
+				<h2>제목e</h2>
 				</li>
 				<li class="imgBook">
 				<img src="#">
-				<h2>제목</h2>
+				<h2>제목f</h2>
 				</li>
 				<li class="imgBook">
 				<img src="#">
@@ -171,6 +171,20 @@
 		 <section id="contentB">
 		 	<h1>공지사항</h1>
 		 		<!-- DB에서 받아올 것 --> 
+		 		<table>
+		 			<tr>
+		 				<td>...</td>
+		 			</tr>
+		 			<tr>
+		 				<td>...</td>
+		 			</tr>
+		 			<tr>
+		 				<td>...</td>
+		 			</tr>
+		 			<tr>
+		 				<td>...</td>
+		 			</tr>
+		 		</table>
 		</section>
 	</div>
 	
@@ -185,7 +199,17 @@
 	</footer> 
 </body>
 <script>
-	$(function() {
+
+$(function(){
+	var careNum = 0;
+	var thesize = 3;
+	$('#slideimge ul').css({'width':'0px'});
+	$('#skudeimge ul').eq(0).css({'width':'1500px'});
+	window.setInterval(function(){
+		$('#MoverightBtn').click();
+	},5000);
+});
+	/* $(function() {
 	var $careNum = 0;
 		var $theSize = 3;
 		$("#slideimge ul").css({'width':'0px'});
@@ -207,27 +231,33 @@
 				$careNum = 0;
 			$(this).parent().children("ul");
 			$("#slideimge ul").css({'float':'left'});
-			$("#slideimge ul").animate({'width':'0px'},function(){
+			$("#slideimge ul").stop().animate({'width':'0px'},function(){
 				$("#slideimge ul").css({'float':'right'});
 			});
-			$("#slideimge ul").eq($careNum).animate({'width':'1500px'});
+			$("#slideimge ul").stop().eq($careNum).animate({'width':'1500px'});
 			
 		});
 	});
-	
+ */	
 	var bestBook = document.getElementById("bestBook");
 	var newBook = document.getElementById("newBook");
 	
 	var goBest = document.getElementById("goBest");
 	var goNew = document.getElementById("goNew");
 	
+	var gobtn = document.getElementsByClassName("gobtn");
+	
 	function changeBestNewBook(){
-		if(goNew.textContent == '오늘의 신간도서'){
-			goBest.style.display = 'none';
-			goNew.style.display = 'inline-block';
-		}else{
-			goNew.style.display = 'none';
-			goBest.style.display = 'inline-block';
+		if(gobtn.value == 'goNew'){
+			bestBook.style.display = 'none';
+			newBook.style.display = 'block';
+			bestBook.hidden = 'ture';
+			newBook.hidden = 'false';		
+		}else if(goNew.value == 'goBest'){
+			newBook.style.display = 'none';
+			bestBook.style.display = 'block';
+			/* bestBook.hidden = false;
+			newBook.hidden = true; */
 		}
 	}
 	
