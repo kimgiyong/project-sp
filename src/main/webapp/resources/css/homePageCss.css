@@ -145,5 +145,10 @@ footer{
 	width: 200px;
 }
 
+#newBook{
+	display: none;
+	border: 1px solid pink;
+}
+
 /* footer부분 */
 /* 하단 logo부분 */

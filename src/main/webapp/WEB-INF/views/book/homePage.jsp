@@ -50,6 +50,49 @@
 			<ul id="bestBook">
 				<li class="imgBook">
 				<img src="#">
+				<h2>제목1</h2>
+				</li>
+				<li class="imgBook">
+				<img src="#">
+				<h2>제목2</h2>
+				</li>
+				<li class="imgBook">
+				<img src="#">
+				<h2>제목3</h2>
+				</li>
+				<li class="imgBook">
+				<img src="#">
+				<h2>제목4</h2>
+				</li>
+				<li class="imgBook">
+				<img src="#">
+				<h2>제목5</h2>
+				</li>
+				<li class="imgBook">
+				<img src="#">
+				<h2>제목6</h2>
+				</li>
+				<li class="imgBook">
+				<img src="#">
+				<h2>제목7</h2>
+				</li>
+				<li class="imgBook">
+				<img src="#">
+				<h2>제목8</h2>
+				</li>
+				<li class="imgBook">
+				<img src="#">
+				<h2>제목9</h2>
+				</li>
+				<li class="imgBook">
+				<img src="#">
+				<h2>제목10</h2>
+				</li>
+				
+			</ul>
+			<ul id="newBook">
+				<li class="imgBook">
+				<img src="#">
 				<h2>제목a</h2>
 				</li>
 				<li class="imgBook">
@@ -60,41 +103,6 @@
 				<img src="#">
 				<h2>제목c</h2>
 				</li>
-				<li class="imgBook">
-				<img src="#">
-				<h2>제목</h2>
-				</li>
-				<li class="imgBook">
-				<img src="#">
-				<h2>제목</h2>
-				</li>
-				<li class="imgBook">
-				<img src="#">
-				<h2>제목</h2>
-				</li>
-				<li class="imgBook">
-				<img src="#">
-				<h2>제목</h2>
-				</li>
-				<li class="imgBook">
-				<img src="#">
-				<h2>제목</h2>
-				</li>
-				<li class="imgBook">
-				<img src="#">
-				<h2>제목</h2>
-				</li>
-				<li class="imgBook">
-				<img src="#">
-				<h2>제목</h2>
-				</li>
-				<li class="imgBook">
-				<img src="#">
-				<h2>제목</h2>
-				</li>
-				
-			</ul>
-			<ul id="newBook" hidden="ture">
 				<li class="imgBook">
 				<img src="#">
 				<h2>제목d</h2>
@@ -109,35 +117,19 @@
 				</li>
 				<li class="imgBook">
 				<img src="#">
-				<h2>제목</h2>
+				<h2>제목g</h2>
 				</li>
 				<li class="imgBook">
 				<img src="#">
-				<h2>제목</h2>
+				<h2>제목h</h2>
 				</li>
 				<li class="imgBook">
 				<img src="#">
-				<h2>제목</h2>
+				<h2>제목i</h2>
 				</li>
 				<li class="imgBook">
 				<img src="#">
-				<h2>제목</h2>
-				</li>
-				<li class="imgBook">
-				<img src="#">
-				<h2>제목</h2>
-				</li>
-				<li class="imgBook">
-				<img src="#">
-				<h2>제목</h2>
-				</li>
-				<li class="imgBook">
-				<img src="#">
-				<h2>제목</h2>
-				</li>
-				<li class="imgBook">
-				<img src="#">
-				<h2>제목</h2>
+				<h2>제목j</h2>
 				</li>
 			</ul>
 			<button id="foorightbtn">&gt;</button>
@@ -200,29 +192,20 @@
 </body>
 <script>
 
-$(function(){
-	var careNum = 0;
-	var thesize = 3;
-	$('#slideimge ul').css({'width':'0px'});
-	$('#skudeimge ul').eq(0).css({'width':'1500px'});
-	window.setInterval(function(){
-		$('#MoverightBtn').click();
-	},5000);
-});
-	/* $(function() {
+	$(function() {
 	var $careNum = 0;
 		var $theSize = 3;
-		$("#slideimge ul").css({'width':'0px'});
-		$("#slideimge ul").eq(0).css({'width':'1500px'});
+		$("#slideimge ul").hide();
+		$("#slideimge ul").eq(0).show();
 		window.setInterval(function() {
 			$("#MoverightBtn").click();
-		}, 2000);
+		}, 5000);
 		$("#MoveLeftBtn").click(function() {
 			$careNum--;
 			if ($careNum < 0)
 				$careNum = $theSize - 1;
-			$("#slideimge ul").animate({'width':'0px'},500);
-			$("#slideimge ul").eq($careNum).animate({'width':'1500px'},500);
+			$("#slideimge ul").hide();
+			$("#slideimge ul").eq($careNum).show();
 		});
 
 		$("#MoverightBtn").click(function() {
@@ -230,38 +213,75 @@ $(function(){
 			if ($careNum >= $theSize)
 				$careNum = 0;
 			$(this).parent().children("ul");
-			$("#slideimge ul").css({'float':'left'});
-			$("#slideimge ul").stop().animate({'width':'0px'},function(){
-				$("#slideimge ul").css({'float':'right'});
-			});
-			$("#slideimge ul").stop().eq($careNum).animate({'width':'1500px'});
+			$("#slideimge ul").hide();
+			$("#slideimge ul").eq($careNum).show();
 			
 		});
-	});
- */	
-	var bestBook = document.getElementById("bestBook");
-	var newBook = document.getElementById("newBook");
-	
-	var goBest = document.getElementById("goBest");
-	var goNew = document.getElementById("goNew");
-	
-	var gobtn = document.getElementsByClassName("gobtn");
-	
-	function changeBestNewBook(){
-		if(gobtn.value == 'goNew'){
-			bestBook.style.display = 'none';
-			newBook.style.display = 'block';
-			bestBook.hidden = 'ture';
-			newBook.hidden = 'false';		
-		}else if(goNew.value == 'goBest'){
-			newBook.style.display = 'none';
-			bestBook.style.display = 'block';
-			/* bestBook.hidden = false;
-			newBook.hidden = true; */
+		
+		
+		var bcareNum = 0;
+		var bcareSize = 9;
+		var btoggle = 0;
+		
+		function bestBookfun(){
+			$("#bestBook").children(bcareNum).show();
+			$("#bestBook").children(bcareNum+1).show();
+			$("#bestBook").children(bcareNum+2).show();
 		}
-	}
-	
-	goBest.addEventListener("click", changeBestNewBook);
-	goNew.addEventListener("click", changeBestNewBook);
+		function newBookfun(){
+			$("#newBook").children(bcareNum).show();
+			$("#newBook").children(bcareNum+1).show();
+			$("#newBook").children(bcareNum+2).show();
+		}
+		
+		$("#goBest").click(function(){
+			bcareNum = 0;
+			$("#bestBook").show();
+			bestBookfun();
+			$("#newBook").hide();
+			$("#bestBook li").hide();
+			btoggle = 0;
+		});
+		
+		$("#goNew").click(function(){
+			bcareNum = 0;
+			$("#newBook").show();
+			newBookfun();
+			$("#bestBook").hide();
+			$("#newBook li").hide();
+			btoggle = 1;
+		});
+		
+		$("#fooleftbtn").click(function(){
+			if(bcareNum <= 0){
+				alert("0");
+				return;
+			}
+			bcareNum--;
+			if(btoggle==0){
+				bestBookfun();
+				alert("1");
+			}else{
+				newBookfun();
+				alert("2");
+			}
+		});
+		
+		
+		$("#foorightbtn").click(function(){
+			if(bcareNum >= bcareSize){
+				alert("00");
+				return;
+			}
+			bcareNum++;
+			if(btoggle==0){
+				bestBookfun();
+				alert("11");
+			}else{
+				newBookfun();
+				alert("22");
+			}
+		});
+	});
 </script>
 </html>
