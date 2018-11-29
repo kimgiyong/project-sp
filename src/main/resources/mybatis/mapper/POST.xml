@@ -5,14 +5,27 @@
 <mapper namespace="com.project.sp.POST">
 	<select id="postSelectList" resultType="post">
 		select * from posttbl
+		<where>
+			<if test="userNum!=null">and userNum = #{userNum}</if>
+			<if test="postTitle!=null">and postTitle = #{postTitle}</if>
+			<if test="postText!=null">and postText = #{postText}</if>
+		</where>
+	</select>
+	<select id="postSelectListCode" resultType="post" parameterType="String">
+		select * from postgtbl
+		where postCode like %
 	</select>
 	<select id="postSelect" resultType="post" parameterType="String">
 		select * from posttbl
 		where postCode = #{postCode}
 	</select>
+	<select id="postSelectUser" resultType="post" parameterType="int">
+		select * from posttbl
+		where userNum = #{userNum}
+	</select>
 	<insert id="postInsert" parameterType="post">
 		insert into posttbl
-		values(#{userNum},null,#{postTitle},#{postText},now(),now(),#{postImg})
+		values(#{userNum},#{postCode},#{postTitle},#{postText},now(),now(),#{postImg})
 	</insert>
 	<update id="postUpdate" parameterType="post">
 		update posttbl
@@ -23,7 +36,7 @@
 			<if test="postImg!=null">postImg = #{postImg}</if>
 		</set>
 	</update>
-	<delete id="postDelete" parameterType="int">
+	<delete id="postDelete" parameterType="String">
 		delete from posttbl
 		where postCode = #{postCode}
 	</delete>
