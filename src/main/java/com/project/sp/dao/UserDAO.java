@@ -16,4 +16,5 @@ public interface UserDAO {
 	public UserVO userSelect(int userNum);
 	public String userSearchId(UserVO user);
 	public String userSearchPwd(UserVO user);
+	public int userUpdatePwd(UserVO user);
 }

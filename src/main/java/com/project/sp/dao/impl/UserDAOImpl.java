@@ -18,9 +18,8 @@ public class UserDAOImpl implements UserDAO {
 	
 	@Override
 	public int userInsert(UserVO user) {
-		String userId = user.getUserId();
-		String userId2 = ss.selectOne("com.project.sp.USER.userCheck",userId);
-		if(userId2 == null) {
+		String userId = ss.selectOne("com.project.sp.USER.userCheck",user.getUserId());
+		if(userId == null || userId == "") {
 			return ss.insert("com.project.sp.USER.userInsert",user);
 		}else {
 			return 2;
@@ -62,6 +61,11 @@ public class UserDAOImpl implements UserDAO {
 		UserVO us = ss.selectOne("com.project.sp.USER.userSearchPassword",user);
 		SendMail sm = new SendMail();
 		return sm.send(us.getUserId(),us.getUserName());
+	}
+
+	@Override
+	public int userUpdatePwd(UserVO user) {
+		return ss.update("com.project.sp.USER.userUpdatePassword",user);
 	}
 
 }

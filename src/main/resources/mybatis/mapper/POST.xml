@@ -6,9 +6,9 @@
 	<select id="postSelectList" resultType="post">
 		select * from posttbl
 		<where>
-			<if test="userNum!=null">and userNum = #{userNum}</if>
-			<if test="postTitle!=null">and postTitle = #{postTitle}</if>
-			<if test="postText!=null">and postText = #{postText}</if>
+			<if test="userNum!=null">or userNum =#{userNum}</if>
+			<if test="postTitle!=null">or postTitle = #{postTitle}</if>
+			<if test="postText!=null">or postText = #{postText}</if>
 		</where>
 	</select>
 	<select id="postSelectListCode" resultType="post" parameterType="String">

@@ -32,6 +32,10 @@
 		select userId,userName from usertbl
 		where userId = #{userId} and userName = #{userName} and userMobile = #{userMobile} and userBitrh = #{userBirth}
 	</select>
+	<select id="userSelectName" resultType="int" parameterType="String">
+		select userNum from usertbl
+		where userName = #{userName}
+	</select>
 	<insert id="userInsert" parameterType="user">
 		insert into usertbl(userName, userId, userPwd, userBirth, userMobile, userScore, userLevel)
 		values(#{userName},#{userId},#{userPwd},#{userBirth},#{userMobile},0,1)
@@ -45,7 +49,7 @@
 		</set>
 		where userNum = #{userNum}
 	</update>
-	<update id="userPasswordChange" parameterType="user">
+	<update id="userUpdatePassword" parameterType="user">
 		update usertbl set userPwd = #{userPwd}
 		where userNum = #{userNum}
 	</update>

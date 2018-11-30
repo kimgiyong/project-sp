@@ -6,6 +6,14 @@
 	<select id="takeSelectList" resultType="take">
 		select * from taketbl
 	</select>
+	<select id="takeSelectUser" resultType="take" parameterType="int">
+		select * from taketbl
+		where userNum = #{userNum}
+	</select>
+	<select id="takeSelect" resultType="take" parameterType="int">
+		select * from taketbl
+		where takeNum = #{takeNum}
+	</select>
 	<insert id="takeInsert" parameterType="take">
 		insert into taketbl
 		values(#{userNum},#{bookCode},#{checkIn},#{takeSDat},#{takeEDat},#{reDat},0,null)

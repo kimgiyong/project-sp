@@ -88,6 +88,10 @@ public class UserController {
 	public @ResponseBody String userSearchPwd(@RequestBody UserVO user) {
 		return ls.userSearchPwd(user);
 	}
+	@PutMapping(value="/userPwd")
+	public @ResponseBody int userUpdatePwd(@RequestBody UserVO user) {
+		return ls.userUpdatePwd(user);
+	}
 	@GetMapping(value="/test")
 	public @ResponseBody String mailTest() {
 		SendMail sm = new SendMail();

@@ -57,4 +57,9 @@ public class UserServiceImpl implements UserService {
 		return ld.userSearchPwd(user);
 	}
 
+	@Override
+	public int userUpdatePwd(UserVO user) {
+		return ld.userUpdatePwd(user);
+	}
+
 }

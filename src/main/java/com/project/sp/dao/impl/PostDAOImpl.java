@@ -17,6 +17,10 @@ public class PostDAOImpl implements PostDAO {
 	
 	@Override
 	public List<PostVO> postSelectList(PostVO post) {
+		if(post.getUserNum()!=null) {
+			int userNum = ss.selectOne("com.project.sp.USER.userSelectName",post.getUserNum());
+			post.setUserNum(userNum);
+		}
 		return ss.selectList("com.project.sp.POST.postSelectList",post);
 	}
 
