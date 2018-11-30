@@ -26,7 +26,7 @@
 			<!-- <input id="userId" type="email" placeholder="Account Email" />  -->
 			<div class="input1"><input name="txtEmailId" type="text" value="" maxlength="35" id="txtEmailId" class="txt" onkeydown="if(event.keyCode==13){return false;}" placeholder="Account Email"></div>
 			<div class="at">@</div>
-			<div class="input1"><input name="txtEmailDomain" type="text" value="" maxlength="30" readonly="readonly" id="txtEmailDomain" class="txt" onkeydown="if(event.keyCode==13){return false;}"></div>
+			<div class="input1"><input type="text" value="" readonly maxlength="30" id="txtEmailDomain" class="txt" onkeydown="if(event.keyCode==13){return false;}"></div>
 			<select name="ddlEmailDomain" id="ddlEmailDomain">
 				<option selected="selected" value="">선택</option>
 				<option value="naver.com">naver.com</option>
@@ -84,9 +84,6 @@
 	var txtEmailDomain = document.getElementById("txtEmailDomain");
 	var ddlEmailDomain = document.getElementById("ddlEmailDomain");
 	
-	var txtEmail = txtEmailDomain.value;
-	var ddlEmail = ddlEmailDomain.value;
-	
 	/* Mobile */
 	var ddlMobileTel = document.getElementById("ddlMobileTel");
 	var ddlMobTel = ddlMobileTel.value;
@@ -132,17 +129,18 @@
 	}
 	
 	function checkEmail(){
-		if(ddled=='direct_input'){
+		if(ddlEmailDomain.value=="direct_input"){
 			txtEmailDomain.readOnly = false;
+			txtEmailDomain.value = '';
 		}else{
 			txtEmailDomain.readOnly = true;
-			txtEmailDomain.textContent = ddlEmail;
+			txtEmailDomain.value = ddlEmailDomain.value;
 		}
 	}
 
 	function colorCheck() { /* not null 같은 코드  */
 		if (btn.textContent == "Create account") { /* 회원가입 할때 not null 안쓰면 회원가입 안됨 */
-			if (txtEmail != "" && ddlEmail != "" && pwd.value != "" && pwdchk.value != ""
+			if (txtEmailDomain.value != "" && ddlEmailDomain.value != "" && pwd.value != "" && pwdchk.value != ""
 					&& username.value != "" && birthday.value != ""
 					&& number.value != "") {
 				if (pwd.value == pwdchk.value) {
@@ -154,7 +152,7 @@
 				btn.style.backgroundColor = "lightslategray";
 			}
 		} else { /* 로그인할때 아이디나 패스워드 중에 안쓰면 로그인 버튼못누름 */
-			if (txtEmail != "" && ddlEmail != "" && pwd.value != "") {
+			if (txtEmailDomain.value != "" && ddlEmailDomain.value != "" && pwd.value != "") {
 				btn.disabled = false;
 				btn.style.backgroundColor = "lightsteelblue";
 			} else {
