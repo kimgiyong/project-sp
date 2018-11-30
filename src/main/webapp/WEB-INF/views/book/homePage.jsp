@@ -220,68 +220,61 @@
 		
 		
 		var bcareNum = 0;
-		var bcareSize = 9;
+		var bcareSize = 9; //0~9까지
 		var btoggle = 0;
 		
 		function bestBookfun(){
-			$("#bestBook").children(bcareNum).show();
-			$("#bestBook").children(bcareNum+1).show();
-			$("#bestBook").children(bcareNum+2).show();
+			$("#bestBook li").hide();
+			$("#bestBook li").eq(bcareNum++).show();
+			$("#bestBook li").eq(bcareNum++).show();
+			$("#bestBook li").eq(bcareNum).show();
 		}
 		function newBookfun(){
-			$("#newBook").children(bcareNum).show();
-			$("#newBook").children(bcareNum+1).show();
-			$("#newBook").children(bcareNum+2).show();
+			$("#newBook li").hide();
+			$("#newBook li").eq(bcareNum++).show();
+			$("#newBook li").eq(bcareNum++).show();
+			$("#newBook li").eq(bcareNum).show();
 		}
 		
 		$("#goBest").click(function(){
-			bcareNum = 0;
+			bcareNum=0;
 			$("#bestBook").show();
-			bestBookfun();
 			$("#newBook").hide();
-			$("#bestBook li").hide();
+			bestBookfun();
 			btoggle = 0;
 		});
 		
 		$("#goNew").click(function(){
 			bcareNum = 0;
 			$("#newBook").show();
-			newBookfun();
 			$("#bestBook").hide();
-			$("#newBook li").hide();
+			newBookfun();
 			btoggle = 1;
 		});
 		
 		$("#fooleftbtn").click(function(){
-			if(bcareNum <= 0){
-				alert("0");
-				return;
-			}
-			bcareNum--;
 			if(btoggle==0){
 				bestBookfun();
-				alert("1");
 			}else{
 				newBookfun();
-				alert("2");
 			}
+			bcareNum-=3;
+			if(bcareNum<0){
+				bcareNum=bcareSize-2;
+			}	
 		});
 		
 		
 		$("#foorightbtn").click(function(){
-			if(bcareNum >= bcareSize){
-				alert("00");
-				return;
-			}
-			bcareNum++;
 			if(btoggle==0){
 				bestBookfun();
-				alert("11");
 			}else{
 				newBookfun();
-				alert("22");
 			}
-		});
-	});
+			bcareNum-=1;
+			if(bcareNum>bcareSize-2){
+				bcareNum=0;
+			}	
+		});foo});
 </script>
 </html>
