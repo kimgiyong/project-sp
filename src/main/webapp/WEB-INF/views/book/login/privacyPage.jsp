@@ -14,7 +14,7 @@
 <ul id="privacyBox">
 	<li class="termBoxs">
 		<br><span class="text">서비스 이용약관</span><br>
-		<textarea id="serviceTerms">제1장 총칙 
+		<textarea id="serviceTerms" disabled="disabled">제1장 총칙 
 		제1조(목적)
 		이 약관은 좋은향도서관 홈페이지가 제공하는 회원 서비스를 이용함에 있어 이용자와 좋은향도서관간의 권리, 의무 및 책임사항과 기타 제반 사항을 규정함을 목적으로 합니다.
 		
@@ -191,7 +191,7 @@
 	</li>
 	<li class="termBoxs">
 		<br><span class="text">개인정보 수집 및 이용에 관한 안내</span><br>
-		<textarea id="collectionTerms">1. 수집하는 개인정보의 항목
+		<textarea id="collectionTerms" disabled="disabled">1. 수집하는 개인정보의 항목
 		
 		  가. 좋은향도서관은 아래와 같이 이용자가 도서관서비스를 이용할 때 반드시 필요한 최소한의 개인정보를 수집하고 있습니다.
 		    - 필수수집항목 
@@ -237,7 +237,7 @@
 	</li>
 	<li class="termBoxs">
 		<br><span class="text">개인정보 처리 및 위탁에 관한 안내</span><br>
-		<textarea id="processTerms">좋은향도서관은 가입자에게 보다 양질의 서비스 제공을 위하여 개인정보보호법 제26조에 의거 귀하의 개인정보를 외부에 위탁하여 처리하고자 합니다.
+		<textarea id="processTerms" disabled="disabled">좋은향도서관은 가입자에게 보다 양질의 서비스 제공을 위하여 개인정보보호법 제26조에 의거 귀하의 개인정보를 외부에 위탁하여 처리하고자 합니다.
 		
 		- 개인정보 취급 수탁자 : ㈜퓨쳐누리
 		- 위탁기간 : 유지보수 용역 기간
