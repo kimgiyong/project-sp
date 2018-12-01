@@ -107,7 +107,7 @@
 	function login(loge) {
 		var btn1 = document.getElementById('loge1');
 		var btn0 = document.getElementById('loge0');
-		alert(btn1.textContent);
+		/* alert(btn1.textContent); */
 		if (loge == 1) {
 			if (btn1.textContent == 'LOGIN') {
 				location.href = '/uri/book/login/loginPage?loge=1';
