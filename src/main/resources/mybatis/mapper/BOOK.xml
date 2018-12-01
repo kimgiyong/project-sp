@@ -12,7 +12,7 @@
 	</select>
 	<select id="bookSelectListCode" resultType="book" parameterType="String">
 		select * from booktbl
-		where
+		where bookCode like concat(#{bookCode},'%')
 	</select>
 	<select id="bookSelect" resultType="book" parameterType="String">
 		select * from booktbl

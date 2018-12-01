@@ -39,7 +39,7 @@ public class UserController {
 	}
 	
 	@PostMapping(value="/login")
-	public @ResponseBody UserVO userLogin(@RequestBody UserVO user,HttpSession hs, HttpServletRequest request) {
+	public @ResponseBody UserVO userLogin(@RequestBody UserVO user,HttpSession hs) {
 		UserVO userL = ls.userLogin(user);
 		log.info("userL ==>{}",userL);
 		if(userL+"" == "") {

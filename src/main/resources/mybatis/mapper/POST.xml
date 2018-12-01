@@ -13,7 +13,7 @@
 	</select>
 	<select id="postSelectListCode" resultType="post" parameterType="String">
 		select * from postgtbl
-		where postCode like %
+		where postCode like concat(#{postCode},'%')
 	</select>
 	<select id="postSelect" resultType="post" parameterType="String">
 		select * from posttbl
