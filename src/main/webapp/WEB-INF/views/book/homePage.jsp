@@ -39,6 +39,12 @@
 					alt="mainimge" />
 				</li>
 			</ul>
+			<ul class="imgeul">
+				<li class="imgeli">
+					<img src="${resPath}/img/homeimg/back4.jpg"
+					alt="mainimge" />
+				</li>
+			</ul>
 		</section>
 	</div>
 	<div class="clear"></div>
@@ -163,18 +169,24 @@
 		 <section id="contentB">
 		 	<h1>공지사항</h1>
 		 		<!-- DB에서 받아올 것 --> 
-		 		<table>
-		 			<tr>
-		 				<td>...</td>
+		 		<table id="contentBtbl">
+		 			<tr class="contentBtr">
+		 				<td><a href="#">나는 공지사항위치다</a></td>
 		 			</tr>
-		 			<tr>
-		 				<td>...</td>
+		 			<tr class="contentBtr">
+		 				<td><a href="#">나는 공지사항위치다</a></td>
 		 			</tr>
-		 			<tr>
-		 				<td>...</td>
+		 			<tr class="contentBtr">
+		 				<td><a href="#">나는 공지사항위치다</a></td>
 		 			</tr>
-		 			<tr>
-		 				<td>...</td>
+		 			<tr class="contentBtr">
+		 				<td><a href="#">나는 공지사항위치다</a></td>
+		 			</tr>
+		 			<tr class="contentBtr">
+		 				<td><a href="#">나는 공지사항위치다</a></td>
+		 			</tr>
+		 			<tr class="contentBtr">
+		 				<td><a href="#">나는 공지사항위치다</a></td>
 		 			</tr>
 		 		</table>
 		</section>
@@ -189,7 +201,6 @@
 		</div>
 		<p></p>
 	</footer> 
-</body>
 <script>
 
 	$(function() {
@@ -227,10 +238,12 @@
 			$("#bestBook li").hide();
 			$("#bestBook li").eq(bcareNum++).show();
 			$("#bestBook li").eq(bcareNum++).show();
+			$("#bestBook li").eq(bcareNum++).show();
 			$("#bestBook li").eq(bcareNum).show();
 		}
 		function newBookfun(){
 			$("#newBook li").hide();
+			$("#newBook li").eq(bcareNum++).show();
 			$("#newBook li").eq(bcareNum++).show();
 			$("#newBook li").eq(bcareNum++).show();
 			$("#newBook li").eq(bcareNum).show();
@@ -243,7 +256,6 @@
 			bestBookfun();
 			btoggle = 0;
 		});
-		
 		$("#goNew").click(function(){
 			bcareNum = 0;
 			$("#newBook").show();
@@ -253,28 +265,33 @@
 		});
 		
 		$("#fooleftbtn").click(function(){
-			if(btoggle==0){
-				bestBookfun();
-			}else{
-				newBookfun();
-			}
-			bcareNum-=3;
+			bcareNum-=4	;
 			if(bcareNum<0){
-				bcareNum=bcareSize-2;
+				bcareNum=bcareSize-3;
 			}	
+			if(btoggle==0){
+				bestBookfun(); //나는 빨리 바뀌기를 원한다
+			}else{
+				newBookfun(); // 나는 집에 가고 싶다
+			}
 		});
 		 
 		
 		$("#foorightbtn").click(function(){
+			bcareNum-=2;
+			if(bcareNum>bcareSize-3){
+				bcareNum=0;
+			}else if(bcareNum==-2){
+				bcareNum+=3;
+			}
 			if(btoggle==0){
 				bestBookfun();
 			}else{
 				newBookfun();
 			}
-			bcareNum-=1;
-			if(bcareNum>bcareSize-2){
-				bcareNum=0;
-			}	
-		});foo});
+				
+		});
+	}); 
 </script>
+</body>
 </html>

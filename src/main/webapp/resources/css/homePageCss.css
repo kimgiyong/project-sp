@@ -1,6 +1,4 @@
 @charset "utf-8";
-
-
 .clear {
 	clear: both; 
 }
@@ -9,7 +7,6 @@
 #mainslide{
 	position: relative;	
 	margin: 0; 
-	border:1px solid red;
 }
 #slideimge{
 	height:446px;
@@ -64,6 +61,18 @@
 
 /* 슬라이드 밑에 부분 */
 /* 추천도서 */
+#cus button{
+	background-color: transparent !important;
+	border:none;
+	font-weight: bold;
+	font-size: 150%;
+	cursor: pointer;
+}
+
+#cus{
+	padding-left:100px;
+}
+
 #content{
 	width:1500px; 
 	height:1000px;
@@ -75,7 +84,6 @@
 	width:900px;
 	height:350px;
 	padding-top:20px;
-	border:solid 1px red;
 	margin:0 auto;
 	float:left;
 	padding-left:20px;
@@ -96,22 +104,20 @@
 	border-radius:10%;
 	background:#666;
 	color:white;
-	
 }
 #fooleftbtn{
 	position:absolute;
 	margin-top:100px;
-	margin-left:100px;
+	margin-left:30px;
 }
 #foorightbtn{
 	position:absolute;
 	margin-top:-160px;
-	margin-left:750px;
+	margin-left:825px;
 }
 #contentA ul{
-	width:600px;
+	width:800px;
 	height:256px;
-	border:1px solid blue;
 	text-align:center;
 	overflow: hidden;
 }
@@ -123,20 +129,37 @@
 	height:216px;
 	margin:0 10px;
 }
+.contentAtbl{
+	border: 1px solid lime;	
+}
+
+/* 공지사항  */
 #contentB{  
 	width:478px;
 	height:350px;
-	border:solid 1px blue;
 	position:absolute; 
 	margin-left:1022;
 }
 
+#contentB h1{
+}
+
+#contentBtbl{
+	text-align: left;
+	border: 1px red solid;
+	float: left;
+	width: 100%;
+	height:80%; 
+}
+
+.contentBtr td a:hover{
+	color:#800040;	
+	font-weight: bold;	
+}
+/* footer */
 footer{
 	margin-top:350px;
 	border:1px solid red;
-}
-.contentAtbl{
-	border: 1px solid lime;	
 }
 
 .bookbtn{
@@ -147,7 +170,6 @@ footer{
 
 #newBook{
 	display: none;
-	border: 1px solid pink;
 }
 
 /* footer부분 */
