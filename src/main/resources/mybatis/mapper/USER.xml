@@ -28,9 +28,9 @@
 		select userId from usertbl
 		where userName = #{userName} and userMobile = #{userMobile}
 	</select>
-	<select id="userSearchPassword" resultType="String" parameterType="user">
+	<select id="userSearchPassword" resultType="user" parameterType="user">
 		select userId,userName from usertbl
-		where userId = #{userId} and userName = #{userName} and userMobile = #{userMobile} and userBitrh = #{userBirth}
+		where userId = #{userId} and userName = #{userName} and userMobile = #{userMobile} and userBirth = #{userBirth}
 	</select>
 	<select id="userSelectName" resultType="int" parameterType="String">
 		select userNum from usertbl
@@ -45,13 +45,13 @@
 		<set>
 			<if test="userPwd!=null">userPwd = #{userPwd},</if>
 			<if test="userAddr!=null">userAddr = #{userAddr},</if>
-			<if test="userMobile!=null">userPwd = #{userMobile},</if>
+			<if test="userMobile!=null">userMobile = #{userMobile},</if>
 		</set>
 		where userNum = #{userNum}
 	</update>
 	<update id="userUpdatePassword" parameterType="user">
 		update usertbl set userPwd = #{userPwd}
-		where userNum = #{userNum}
+		where userId = #{userId}
 	</update>
 	<delete id="userDelete" parameterType="user">
 		delete from usertbl where userNum = #{userNum}

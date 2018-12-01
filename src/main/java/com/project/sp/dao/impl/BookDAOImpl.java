@@ -24,6 +24,11 @@ public class BookDAOImpl implements BookDAO {
 	public List<BookVO> bookSelectList(BookVO book) {
 		return ss.selectList("com.project.sp.BOOK.bookSelectList",book);
 	}
+	
+	@Override
+	public List<BookVO> bookSelectListCode(String bookCode) {
+		return ss.selectList("com.project.sp.BOOK.bookSelectList",bookCode);
+	}
 
 	@Override
 	public BookVO bookSelect(String bookCode) {

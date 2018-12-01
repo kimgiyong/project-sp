@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.project.sp.service.BookService;
 import com.project.sp.vo.BookVO;
+import com.project.sp.vo.PostVO;
 
 @Controller
 public class BookController {
@@ -25,6 +26,10 @@ public class BookController {
 	@GetMapping(value="/bookList")
 	public @ResponseBody List<BookVO> bookSelectList(@ModelAttribute BookVO book){
 		return bs.bookSelectList(book);
+	}
+	@GetMapping(value="/postCode/{postCode}")
+	public @ResponseBody List<BookVO> bookSelectListCode(@PathVariable String bookCode) {
+		return bs.bookSelectListCode(bookCode);
 	}
 	@GetMapping(value="/book/{bookCode}")
 	public @ResponseBody BookVO bookSelect(@PathVariable String bookCode) {

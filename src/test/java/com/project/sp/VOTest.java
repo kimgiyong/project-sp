@@ -29,13 +29,12 @@ public class VOTest {
 	@Test
 	public void test() {
 		UserVO user = new UserVO();
-		// 이름 아이디 비밀번호 생일 전화번호
-		user.setUserName("홍길동");
-		user.setUserId("zxcvbn@naver.com");
-		user.setUserPwd("987654321");
-		user.setUserBirth("1976-07-25");
-		user.setUserMobile("01031642859");
-		assertEquals(1,us.userInsert(user));
+		// 번호 이름 아이디  생일 전화번호
+		user.setUserId("xxzcsv@naver.com");
+		user.setUserName("김기기");
+		user.setUserMobile("12345678912");
+		user.setUserBirth("2000-01-01");
+		assertNotNull(us.userSearchPwd(user));
+		
 	}
-	
 }

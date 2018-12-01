@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.remoting.httpinvoker.HttpInvokerServiceExporter;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -85,8 +86,14 @@ public class UserController {
 		return ls.userSearchId(user);
 	}
 	@PostMapping(value="/searchPwd")
-	public @ResponseBody String userSearchPwd(@RequestBody UserVO user) {
-		return ls.userSearchPwd(user);
+	public @ResponseBody String userSearchPwd(@RequestBody UserVO user, HttpServletRequest request) {
+		String key = ls.userSearchPwd(user);
+		if(key=="fail") {
+			return "입력된 정보가 잘못되었습니다.";
+		}else {
+			request.setAttribute("user", user);
+			return key;
+		}
 	}
 	@PutMapping(value="/userPwd")
 	public @ResponseBody int userUpdatePwd(@RequestBody UserVO user) {

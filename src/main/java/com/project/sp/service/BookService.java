@@ -7,6 +7,7 @@ import com.project.sp.vo.BookVO;
 public interface BookService {
 
 	public List<BookVO> bookSelectList(BookVO book);
+	public List<BookVO> bookSelectListCode(String bookCode);
 	public BookVO bookSelect(String bookCode);
 	public int bookInsert(BookVO book);
 	public int bookUpdate(BookVO book);

@@ -19,7 +19,12 @@ public class BookServiceImpl implements BookService {
 	public List<BookVO> bookSelectList(BookVO book) {
 		return bd.bookSelectList(book);
 	}
-
+	
+	@Override
+	public List<BookVO> bookSelectListCode(String bookCode) {
+		return bd.bookSelectListCode(bookCode);
+	}
+	
 	@Override
 	public BookVO bookSelect(String bookCode) {
 		return bd.bookSelect(bookCode);
