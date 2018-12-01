@@ -58,16 +58,21 @@
 					<div class="var">-</div>
 					<div class="input2"><input name="txtMobileTel3" type="text" value="" maxlength="4" id="txtMobileTel3" class="txt" onblur="checkNumber(this);" onkeydown="if(event.keyCode==13){return false;}"></div>
 				</div>
+				서비스 이용약관<a href="/uri/book/login/privacyPage?privacy=0" class="terms">약관 보기</a><br>
+				 <input type="checkbox" value="agree" id="serviceTerms" class="termsCkbox">위의 약관에 동의합니다.
+				 서비스 이용약관<a href="/uri/book/login/privacyPage?privacy=1" class="terms">약관 보기</a><br>
+				 <input type="checkbox" value="agree" id="collectionTerms" class="termsCkbox">위의 약관에 동의합니다.
+				 서비스 이용약관<a href="/uri/book/login/privacyPage?privacy=2" class="terms">약관 보기</a><br>
+				 <input type="checkbox" value="agree" id="processTerms" class="termsCkbox">위의 약관에 동의합니다.
 			</div>
 			</div>
-
 			<button disabled="true" id="loginbtn">LOGIN</button>
 			<br> <span id="forgot">Forgot your <a id="forgetid" href="forgetID">ID</a> or <a id="forgetpwd" href="forgetPwd">Password</a>?</span>
 			<!-- </a> -->
 			<span id="zz">/</span>
 			<button id="signup">sign up</button>
 		</div>
-		<p id="foo">A good incenseⓒ UDP Technology</p>
+		<p id="foo">A good incense ⓒ UDP Technology</p>
 	</div>
 </body>
 
@@ -108,7 +113,7 @@
 	var id = txtEmailDomain.value + '@' + ddlMobTel;
 	var checkmail = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
 	var email = checkmail.test(id);
-	
+	var privacy;
 	/*var emailjuso = document.getElementById("emailjuso");
 	var index = $("#emailjuso option").index($("#emailjuso option:selected")); */
 
@@ -118,7 +123,7 @@
 			pwdchk.type = "password";
 			joinhidden.style.display = "block";
 			signup.textContent = "sign in";
-			log.textContent = "JOIN"
+			log.textContent = "JOIN";
 		});
 	};/* 여기가 들어갈때 확인해서 join쪽이면 바꿔줌 */
 
