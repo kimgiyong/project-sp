@@ -263,7 +263,7 @@
 				bcareNum=bcareSize-2;
 			}	
 		});
-		
+		 
 		
 		$("#foorightbtn").click(function(){
 			if(btoggle==0){
