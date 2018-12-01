@@ -13,7 +13,7 @@
 	<%
 		String loge = (String) request.getParameter("loge");
 	%>
-
+ 
 	<div id="container">
 		<div id="lodiv">
 			<a href="../homePage"><h1 id="logo">
