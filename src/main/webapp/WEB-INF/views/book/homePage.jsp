@@ -194,7 +194,7 @@
 
 	$(function() {
 	var $careNum = 0;
-		var $theSize = 3;
+	var $theSize = 3;
 		$("#slideimge ul").hide();
 		$("#slideimge ul").eq(0).show();
 		window.setInterval(function() {
