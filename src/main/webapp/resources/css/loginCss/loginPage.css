@@ -20,10 +20,6 @@ html, body {
 	padding: 8%;
 }
 
-.clear {
-	clear: both; 
-	width:100%; 
-}
 h1 {
 	font-size: 250%;
 }
@@ -68,13 +64,14 @@ input {
 	border: 0px;
 	border-bottom: solid 1px darkblue;
 	background-color: rgba(255, 255, 255, 0.2);
-	width: 90%;
+	width: 400px;
 	margin: 10px;
 	padding: 10px;
 	color: navy;
 	margin-top: 20px;
 	margin-left: -10px;
 	margin-right: -10px;
+	border: 1px pink solid;
 }
 
 /* footer에 있는 글씨 */
@@ -114,8 +111,7 @@ input {
 
 #lodiv {
 	width: 500px;
-	margin-top:-100px;
-	border: 1px double yellow;
+	margin-top:-120px; 
 }
 
 /* 로고 부분 (글씨) */
@@ -140,7 +136,7 @@ input {
 /* 이메일 input박스*/
 .input1 {
 	padding-top: 1px;
-	width: 40%;
+	width: 30%;
 }
 
 /* 전화번호 input박스 */
@@ -152,6 +148,7 @@ input {
 .var{
 	font-size: 40px;
 	font-weight: bold;
+	margin:0 5px;
 }
 
 .input1 input{
@@ -187,4 +184,18 @@ div.at {
 
 .terms{
 	text-align:right;
+}
+
+.termsCkbox{
+	margin: 0;
+	padding: 0;	
+}
+	
+label {
+	text-align: left;
+}
+
+.clear{
+	clear: both;	
+}
 }
