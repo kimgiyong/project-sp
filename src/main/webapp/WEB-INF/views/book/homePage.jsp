@@ -139,32 +139,7 @@
 				</li>
 			</ul>
 			<button id="foorightbtn">&gt;</button>
-		<!-- 	<div id="cus"><a href="#">오늘의 추천 도서</a> | <a href="#">오늘의 신간 도서</a></div><br>   --> 
-			
-			
-			<!-- <div id="cuchen">테이블 과  ul,li로 바꿔야 함 이렇게 하면 움직이기 힘들다고 들음. 
-				<div class="foobtn">
-					<button id="fooleftBtn">&lt;</button>
-				</div>
-				<div id="cuchen1" class="Cbook">
-					<img alt="1위" src="#"><br>
-					<span>제목1이다.</span>
-				</div>
-				<div id="cuchen2" class="Cbook">
-					<img alt="2위" src="#"><br>
-					<span>제목2이다.</span>
-				</div>
-				<div id="cuchen3" class="Cbook">
-					<img alt="3위" src="#"><br>
-					<span>제목3이다.</span>
-				</div>
-				아이디 숫자 자동증가 & alt값 자동증가 필요
-				버튼클릭 시 해당 바향으로 순위가 바뀐다. (10에선 1위로)
-				<div class="foobtn">  
-					<button id="foorightBtn">&gt;</button>
-				</div>
-			</div> -->
-		</section>
+		</section>		
 		
 		 <section id="contentB">
 		 	<h1>공지사항</h1>
@@ -190,9 +165,44 @@
 		 			</tr>
 		 		</table>
 		</section>
-	</div>
-	
+		
+</div>
 	<div class="clear"></div>
+	<!-- 도서신청, 질의응답, 지도검색, 대여하기, 이용안내 -->
+<div id="iconContent">
+	<div id="iconContainer">
+		<div class="iconMenu">	
+			<div class="iconBox">	
+				<a href="#"><img src="#"></a>
+			</div>
+			<a href="#">도서 신청</a>
+		</div>
+		<div class="iconMenu">	
+			<div class="iconBox">	
+				<a href="#"><img src="#"></a>
+			</div>
+			<a href="#">질의 응답</a>
+		</div>
+		<div class="iconMenu">	
+			<div class="iconBox">	
+				<a href="#"><img src="#"></a>
+			</div>
+			<a href="#">지도 검색</a>
+		</div>
+		<div class="iconMenu">	
+			<div class="iconBox">	
+				<a href="#"><img src="#"></a>
+			</div>
+			<a href="#">대여하기</a>
+		</div>
+		<div class="iconMenu">	
+			<div class="iconBox">	
+				<a href="#"><img src="#"></a>
+			</div>
+			<a href="#">이용 안내</a>
+		</div>
+	</div>	
+</div>
 	<footer>
 		<div id="logoBox">
 			<span id="logof1">좋은</span> <span id="logof2">향</span> <br>
@@ -200,7 +210,9 @@
 			<!-- <img src="../img/logo4jpg3.jpg" alt="logoimge"> -->
 		</div>
 		<p></p>
-	</footer> 
+	</footer>
+	
+	 
 <script>
 
 	$(function() {

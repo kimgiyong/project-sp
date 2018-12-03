@@ -20,6 +20,10 @@ html, body {
 	padding: 8%;
 }
 
+.clear {
+	clear: both; 
+	width:100%; 
+}
 h1 {
 	font-size: 250%;
 }
