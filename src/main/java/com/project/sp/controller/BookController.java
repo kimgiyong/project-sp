@@ -27,7 +27,7 @@ public class BookController {
 	public @ResponseBody List<BookVO> bookSelectList(@ModelAttribute BookVO book){
 		return bs.bookSelectList(book);
 	}
-	@GetMapping(value="/postCode/{postCode}")
+	@GetMapping(value="/bookCode/{bookCode}")
 	public @ResponseBody List<BookVO> bookSelectListCode(@PathVariable String bookCode) {
 		return bs.bookSelectListCode(bookCode);
 	}
