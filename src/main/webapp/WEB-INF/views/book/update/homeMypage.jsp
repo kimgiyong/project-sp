@@ -9,30 +9,30 @@
 </head>
 <body>
 <%@ include file="../home.jsp"%>
-	<div id="mypageBack">
+	<div id="updateBack">
 		<h1>개인정보 수정 페이지</h1>
-		<table id="mypagetbl">
-			<tr class="mypagetr">
+		<table id="updatetbl">
+			<tr class="updatetr">
 				<td>이메일</td>
 				<td><input type="email" value="<%=user.getUserId()%>"></td>
 			</tr>
-			<tr class="mypagetr">
+			<tr class="updatetr">
 				<td>이름</td>
 				<td><input type="text" value="<%=user.getUserName()%>"></td>
 			</tr>
-			<tr class="mypagetr">
+			<tr class="updatetr">
 				<td>비밀번호</td>
 				<td><input type="password" value=""></td>
 			</tr>
-			<tr class="mypagetr">
+			<tr class="updatetr">
 				<td>비밀번호확인</td>
 				<td><input type="password" value=""></td>
 			</tr>
-			<tr class="mypagetr">
+			<tr class="updatetr">
 				<td>생년월일</td>
 				<td><input type="date" value="<%=user.getUserBirth()%>"></td>
 			</tr>
-			<tr class="mypagetr">
+			<tr class="updatetr">
 				<td>전화번호</td>
 				<td><input type="text" value="<%=user.getUserMobile()%>"></td>
 			</tr>

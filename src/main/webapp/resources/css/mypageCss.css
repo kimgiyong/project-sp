@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-#mypageBack{
+#updateBack{
 	background-color: rgba(245,245,245,0.9);
 	width: 1500px;
 	height: 900px;
@@ -20,7 +20,7 @@ table{
 	border: none;
 }
 
-#mypagetbl{
+#updatetbl{
 	font-size: 22px;
 	padding: 20px;
 	margin:10px;
@@ -29,12 +29,12 @@ table{
 	font-weight: bold;
 }
 
-#mypagetbl input{
+#updatetbl input{
 	border: none;
 	font-size: 22px;
 }
 
-#mypageBack button{
+#updateBack button{
 	outline: 0px;
 	cursor: pointer;
 	background-color: transparent !important;
