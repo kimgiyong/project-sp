@@ -86,7 +86,8 @@
 	var number = document.getElementById("userMobile");
 	var joinhidden = document.getElementById("joinhidden");
 	/* Email */
-	var txtEmailDomain = document.getElementById("txtEmailDomain");
+	var txtEmailId = document.getElementById("txtEmailId");
+	var txtEamilDoamin = document.getElementById("txtEmailDomain");
 	var ddlEmailDomain = document.getElementById("ddlEmailDomain");
 	
 	/* Mobile */
@@ -110,9 +111,7 @@
 
 	var getToday = year + '' + month + day; // 오늘 날짜 
 
-	var id = txtEmailDomain.value + '@' + ddlMobTel;
 	var checkmail = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
-	var email = checkmail.test(id);
 	var privacy;
 	/*var emailjuso = document.getElementById("emailjuso");
 	var index = $("#emailjuso option").index($("#emailjuso option:selected")); */
@@ -145,7 +144,7 @@
 
 	function colorCheck() { /* not null 같은 코드  */
 		if (btn.textContent == "Create account") { /* 회원가입 할때 not null 안쓰면 회원가입 안됨 */
-			if (txtEmailDomain.value != "" && ddlEmailDomain.value != "" && pwd.value != "" && pwdchk.value != ""
+			if (txtEmailId.value != '' && txtEmailDomain.value != "" && ddlEmailDomain.value != "" && pwd.value != "" && pwdchk.value != ""
 					&& username.value != "" && birthday.value != ""
 					&& number.value != "") {
 				if (pwd.value == pwdchk.value) {
@@ -157,7 +156,7 @@
 				btn.style.backgroundColor = "lightslategray";
 			}
 		} else { /* 로그인할때 아이디나 패스워드 중에 안쓰면 로그인 버튼못누름 */
-			if (txtEmailDomain.value != "" && ddlEmailDomain.value != "" && pwd.value != "") {
+			if (txtEmailId.value != '' && txtEmailDomain.value != "" && ddlEmailDomain.value != "" && pwd.value != "") {
 				btn.disabled = false;
 				btn.style.backgroundColor = "lightsteelblue";
 			} else {
@@ -169,6 +168,8 @@
 
 	function login() { /* 회원가입할때 비밀번호가 다르면 alert창에 띄어줌 밖에 없어 */
 		/* console.log(backToObj); */
+		var id = txtEmailId.value + '@' + ddlEmailDomain.value;
+		var email = checkmail.test(id);
 		if (btn.textContent == "Create account") {
 			if (email == false) {
 				alert('메일을 다시 확인해주세요.');
@@ -205,6 +206,7 @@
 				au.send(conf);
 			}
 		} else if (btn.textContent == "LOGIN") {
+			var id = txtEmailId.value + '@' + txtEmailDomain.value;
 			var conf = {
 				url : '/login',
 				method : 'POST',
