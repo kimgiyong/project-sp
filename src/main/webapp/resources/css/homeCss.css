@@ -164,10 +164,14 @@ body {
 	background-color: #442200;
 	display: inline-block;
 	height: 51px;
-	width: 300px;
+	width: 362.25px;
 	padding-top: 12px;
 }
 
+#menuBox #lastmainMenu{
+	width:51px;	
+	padding-top: 0px;
+}
 #menuBox .mainMenu:last-child {
 	padding-right: 30px;
 }
@@ -188,7 +192,7 @@ body {
 #menuBox .subMenu{
 	background-color: #795022;
 	padding: 15px 0px;
-	width: 300px;
+	width: 362.25px;
 }
 
 #menuBox .subMenu a {
@@ -199,9 +203,7 @@ body {
 	margin-top: 15px;
 }
 
-#lastmainMenu{
-	
-}
+
 
 /*  #menuBox .mainMenu:hover .subMenuBox { 
 	display: block;
@@ -212,20 +214,29 @@ body {
 	background-color: #866529;
 }
 
+
 #allmenubtn{
-	width: 20px;
-	height: 20px;
+	width: 51px;
+	height: 51px;
 	border: 1px solid white;
 	background-color: rgba(0,0,0,0.4);
-	position: relative;
-	left: 580px;
-	top: -35px;
-	border-radius: 30%;
-	font-size: 15px;
-	color: white;
+	border-radius: 30%;	
 	z-index: 11;
+	display:inline-block;
 }
 
+#menuBox #lastmainMenu>a{
+	font-size: 40px;
+	color: white;
+	margin: 0px;
+	line-height:41px;
+}
+#menuBox #lastmainMenu>a>ul{
+	margin-top:-10px;
+}
+#menuBox #d{
+	width:413.25px;
+}
 #mainmenu{
 	margin: 0px;
 	padding: 0px;

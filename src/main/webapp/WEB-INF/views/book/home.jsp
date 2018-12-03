@@ -81,14 +81,14 @@
 				<li class="subMenu"><a href="#">서브메뉴 목록3</a></li>
 			</ul>
 		</li>
-		<li class="mainMenu" id="lastmainMenu"><a href="#">자세히 보기</a>
+		<li class="mainMenu" id="lastmainMenu"><a href="#" id="allmenubtn">=</a>
 			<ul class="subMenuBox">
 				<li class="subMenu"><a href="#">서브메뉴 목록1</a></li>
 				<li class="subMenu"><a href="#">서브메뉴 목록2</a></li>
 				<li class="subMenu"><a href="#">서브메뉴 목록3</a></li>
 			</ul>
 		</li>
-		<button id="allmenubtn">=</button>
+		
 	</ul>
 	
 </section>
