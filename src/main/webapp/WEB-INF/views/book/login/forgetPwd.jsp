@@ -50,14 +50,29 @@
 <script>
 	var fbtn = document.querySelector('#findBtn');
 	function find(){
-		var userEmail = document.querySelector('#userEmail');
+		var userId = document.querySelector('#userEmail');
 		var username = document.querySelector('#username');
 		var userMobile = document.querySelector('#findMobile');
 		var userBirth = document.querySelector('#findBir');
 		var conf = {
 				url:'/searchPwd',
+				method:'POST',
+				param:JSON.stringify({
+					userId:userId.value, userName:username.value,
+					userMobile:userMobile.value, userBirth:userBirth.value
+				}),
+				success:function(res){
+					if(res=='fail'){
+						alert('일치하는 정보가 없습니다.');
+					}else{
+						alert('ddd');
+						window.open("pwdKeyPop.html", "pwdKey", "width=400, height=300, left=100, top=50");
+						alert('sss');
+					}
+				}
 				
 		}
+		au.send(conf);
 	}
 	
 	fbtn.addEventListener('click',find);

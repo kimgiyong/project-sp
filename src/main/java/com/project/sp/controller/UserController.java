@@ -89,7 +89,7 @@ public class UserController {
 	public @ResponseBody String userSearchPwd(@RequestBody UserVO user, HttpServletRequest request) {
 		String key = ls.userSearchPwd(user);
 		if(key=="fail") {
-			return "입력된 정보가 잘못되었습니다.";
+			return key;
 		}else {
 			request.setAttribute("user", user);
 			return key;
