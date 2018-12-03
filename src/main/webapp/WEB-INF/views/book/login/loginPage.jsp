@@ -24,7 +24,7 @@
 			<h1 id="log">LOGIN</h1>
 			<div id="sum">
 			<!-- <input id="userId" type="email" placeholder="Account Email" />  -->
-			<label>이메일 : </label><div class="input1"><input name="txtEmailId" type="text" value="" maxlength="35" id="txtEmailId" class="txt" onkeydown="if(event.keyCode==13){return false;}" placeholder="Account Email"></div>
+			<label>&nbsp; &nbsp;이 메 일  </label><div class="input1"><input name="txtEmailId" type="text" value="" maxlength="35" id="txtEmailId" class="txt" onkeydown="if(event.keyCode==13){return false;}" placeholder="Account Email"></div>
 			<div class="at">@</div>
 			<div class="input1"><input type="text" value="" readonly maxlength="30" id="txtEmailDomain" class="txt" onkeydown="if(event.keyCode==13){return false;}"></div>
 			<select name="ddlEmailDomain" id="ddlEmailDomain">
@@ -38,13 +38,15 @@
 				<option value="direct_input">직접입력</option>
 			</select> 
 			<br>
-			<label>패스워드 : </label><input id="userPwd" type="password" placeholder="password" /><br>
+			<label>&nbsp; &nbsp; 패 스 워 드  </label><input id="userPwd" type="password" placeholder="password" /><br>
 			<div id="joinhidden">
-				<label>패스워드 확인 : </label><input id="userPwdchk" type="password" placeholder="retype password" /><br>
-				<label>이름 : </label><input id="userName" type="text" placeholder="user name" maxlength="5" /><br>
-				<label>생일 : </label><input id="userBir" type="date" placeholder="Birthday" /><br> 
+			<hr>
+				<label id="pwcheck">패스워드 확인</label><input id="userPwdchk" type="password" placeholder="retype password" /><br>
+				<label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;이 름  </label><input id="userName" type="text" placeholder="user name" maxlength="5" /><br>
+				<label>생 년 월 일  </label><input id="userBir" type="date" placeholder="Birthday" /><br> 
 				<!-- <input id="userNumber" type="text" placeholder="Phone number('-'없이 써주세요)" maxlength="11" onkeypress="onlyNumber();" /><br> -->
-				<label>전화번호 : </label><div id="userMobile">
+				<div id="userMobile">
+				<label>전 화 번 호 </label>
 					<select name="ddlMobileTel" id="ddlMobileTel">
 						<option selected="selected" value="010">010</option>
 						<option value="011">011</option>
@@ -58,12 +60,13 @@
 					<div class="var">-</div>
 					<div class="input2"><input name="txtMobileTel3" type="text" value="" maxlength="4" id="txtMobileTel3" class="txt" onblur="checkNumber(this);" onkeydown="if(event.keyCode==13){return false;}"></div>
 				</div>
-				<a href="/uri/book/login/privacyPage?privacy=0" class="terms">서비스 이용약관</a> 약관에 동의합니다.
+				<a href="/uri/book/login/privacyPage?privacy=0" class="terms">서비스 이용약관</a>에 동의합니다.
 				 <input type="checkbox" value="agree" id="serviceTerms" class="termsCkbox"><br>
 				<a href="/uri/book/login/privacyPage?privacy=1" class="terms">개인정보 수집 및 이용</a>에 관한 안내 약관에 동의합니다.
 				 <input type="checkbox" value="agree" id="collectionTerms" class="termsCkbox"><br>
-				<a href="/uri/book/login/privacyPage?privacy=2" class="terms">개인정보 처리 및 위탁 </a>에 관한 안내 약관에 동의합니다.
+				<a href="/uri/book/login/privacyPage?privacy=2" class="terms">개인정보 처리 및 위탁</a>에 관한 안내 약관에 동의합니다.
 				 <input type="checkbox" value="agree" id="processTerms" class="termsCkbox"><br>
+				<p>모두동의<input type="checkbox" value="agree" id="allagree" class="termsCkbox"><br></p>
 			</div>
 			</div>
 			<button disabled="true" id="loginbtn">LOGIN</button>

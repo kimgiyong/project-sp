@@ -64,14 +64,10 @@ input {
 	border: 0px;
 	border-bottom: solid 1px darkblue;
 	background-color: rgba(255, 255, 255, 0.2);
-	width: 400px;
-	margin: 10px;
+	width: auto;	
 	padding: 10px;
 	color: navy;
 	margin-top: 20px;
-	margin-left: -10px;
-	margin-right: -10px;
-	border: 1px pink solid;
 }
 
 /* footer에 있는 글씨 */
@@ -97,8 +93,9 @@ input {
 }
 
 /* 중간에 흰 줄 있는거 */
-#userPwdchk {
+hr{
 	border-top: dotted 2px white;
+	margin-top: 20px; 
 }
 
 /* 위에 로고 밑에 있는 LOGIN, JOIN인지 알려주는 부분 */
@@ -134,29 +131,31 @@ input {
 }
 
 /* 이메일 input박스*/
-.input1 {
+.input1 , .input2{
 	padding-top: 1px;
-	width: 30%;
+	width: 25%;
 }
 
 /* 전화번호 input박스 */
 .input2 {
 	padding-top: 1px;
-	width: 30%;
 }
 
 .var{
 	font-size: 40px;
 	font-weight: bold;
-	margin:0 5px;
 }
 
 .input1 input{
 	width: 100%;
 }
 
+.input2{
+	width: 100px;
+}
+
 .input2 input{
-	width: 60%;
+	width: 100%;
 }
 
 .select2 select{
@@ -179,7 +178,9 @@ div.at {
 }
 
 #sum{
-	width: 60%;
+	width: 55%;
+	border: 1px pink solid;
+	text-align: left;
 }
 
 .terms{
@@ -187,15 +188,17 @@ div.at {
 }
 
 .termsCkbox{
-	margin: 0;
-	padding: 0;	
-}
-	
-label {
-	text-align: left;
+	width: 20px;
+	height: 20px;
+	background-color: rgba(255,255,255,0.9);
 }
 
 .clear{
 	clear: both;	
 }
+
+#pwcheck{
+	margin-left: -10px;
 }
+
+
