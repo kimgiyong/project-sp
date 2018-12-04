@@ -169,10 +169,15 @@
 	allagree.addEventListener("click", privacy);
 
 	function colorCheck() { /* not null 같은 코드  */
+		if(serviceTerms.checked == true && collectionTerms.checked == true && processTerms.checked == true){
+			allagree.checked = true;
+		}else{
+			allagree.checked = false;
+		}
 		if (btn.textContent == "Create account") { /* 회원가입 할때 not null 안쓰면 회원가입 안됨 */
 			if (txtEmailId.value != '' && txtEmailDomain.value != "" && ddlEmailDomain.value != "" && pwd.value != "" && pwdchk.value != ""
 					&& username.value != "" && birthday.value != "" && txtMobileTel2.value != "" && txtMobileTel3.value != ""
-					&& serviceTerms.checked != false && collectionTerms.checked != false && processTerms.checked != false) {
+					&& allagree.checked == true) {
 				if (pwd.value == pwdchk.value) {
 					btn.disabled = false;
 					btn.style.backgroundColor = "lightsteelblue";
@@ -197,7 +202,6 @@
 		var number = ddlMobileTel.value + txtMobileTel2.value + txtMobileTel3.value;
 		var id = txtEmailId.value + '@' + ddlEmailDomain.value;
 		var email = checkmail.test(id);
-		alert(number.length);
 		if (btn.textContent == "Create account") {
 			if (email == false) {
 				alert('메일을 다시 확인해주세요.');
@@ -223,7 +227,7 @@
 					success : function(res) {
 						if (res == "1") {
 							alert('가입에 성공하였습니다.');
-							location.href = '/uri/book/homePage';
+							location.href = '/uri/book/login/loginPage?loge=1';
 						} else if (res == "2") {
 							alert('아이디가 중복되었습니다.');
 						} else {
