@@ -56,9 +56,9 @@
 						<option value="019">019</option>
 					</select>
 					<div class="var">-</div>
-					<div class="input2"><input name="txtMobileTel2" type="text" value="" maxlength="4" id="txtMobileTel2" class="txt" onblur="checkNumber(this);" onkeydown="if(event.keyCode==13){return false;}"></div>
+					<div class="input2"><input name="txtMobileTel2" type="text" value="" maxlength="4" id="txtMobileTel2" class="txt" onkeydown="if(event.keyCode==13){return false;}"></div>
 					<div class="var">-</div>
-					<div class="input2"><input name="txtMobileTel3" type="text" value="" maxlength="4" id="txtMobileTel3" class="txt" onblur="checkNumber(this);" onkeydown="if(event.keyCode==13){return false;}"></div>
+					<div class="input2"><input name="txtMobileTel3" type="text" value="" maxlength="4" id="txtMobileTel3" class="txt" onkeydown="if(event.keyCode==13){return false;}"></div>
 				</div>
 				<a href="/uri/book/login/privacyPage?privacy=0" class="terms">서비스 이용약관</a>에 동의합니다.
 				 <input type="checkbox" value="agree" id="serviceTerms" class="termsCkbox"><br>
@@ -95,6 +95,14 @@
 	
 	/* Mobile */
 	var ddlMobileTel = document.getElementById("ddlMobileTel");
+	var txtMobileTel2 = document.getElementById('txtMobileTel2');
+	var txtMobileTel3 = document.getElementById('txtMobileTel3');
+	
+	/* Check */
+	var serviceTerms = document.getElementById("serviceTerms");
+	var collectionTerms = document.getElementById("collectionTerms");
+	var processTerms = document.getElementById("processTerms");
+	
 	/* 약정 */
 	var allagree = document.getElementById("allagree");
 	
@@ -147,14 +155,14 @@
 	}
 	
 	function privacy(){
-		var termsCkbox = document.getElementsByClassName("termsCkbox");
-			if(allagree.checked == false){
+		var termsCkbox = document.getElementsByClassName('termsCkbox');
+			if(allagree.checked != false){
 				for(i=0; i < 3; i++) {
-					termsCkbox.checked[i] = true;
+					termsCkbox[i].checked = true;
 				}
 			}else{
 				for(i=0; i < 3; i++) {
-					termsCkbox.checked[i] = false;
+					termsCkbox[i].checked = false;
 				}
 			}
 	}
@@ -163,8 +171,8 @@
 	function colorCheck() { /* not null 같은 코드  */
 		if (btn.textContent == "Create account") { /* 회원가입 할때 not null 안쓰면 회원가입 안됨 */
 			if (txtEmailId.value != '' && txtEmailDomain.value != "" && ddlEmailDomain.value != "" && pwd.value != "" && pwdchk.value != ""
-					&& username.value != "" && birthday.value != ""
-					&& number.value != "") {
+					&& username.value != "" && birthday.value != "" && txtMobileTel2.value != "" && txtMobileTel3.value != ""
+					&& serviceTerms.checked != false && collectionTerms.checked != false && processTerms.checked != false) {
 				if (pwd.value == pwdchk.value) {
 					btn.disabled = false;
 					btn.style.backgroundColor = "lightsteelblue";
@@ -186,8 +194,10 @@
 
 	function login() { /* 회원가입할때 비밀번호가 다르면 alert창에 띄어줌 밖에 없어 */
 		/* console.log(backToObj); */
+		var number = ddlMobileTel.value + txtMobileTel2.value + txtMobileTel3.value;
 		var id = txtEmailId.value + '@' + ddlEmailDomain.value;
 		var email = checkmail.test(id);
+		alert(number.length);
 		if (btn.textContent == "Create account") {
 			if (email == false) {
 				alert('메일을 다시 확인해주세요.');
@@ -197,7 +207,7 @@
 				alert("삐! 비밀번호가 다릅니다. 다시입력해주세요.");
 			} else if (birthday.value.replace(/-/gi, '') > getToday) {
 				alert('있을 수 없는 생일입니다.');
-			} else if (number.value.length != 11) {
+			} else if (number.length != 11) {
 				alert('휴대폰번호를 다시 입력해주세요');
 			} else {
 				var conf = {
@@ -208,7 +218,7 @@
 						userId : id,
 						userPwd : pwd.value,
 						userBirth : birthday.value,
-						userMobile : number.value
+						userMobile : number
 					}),
 					success : function(res) {
 						if (res == "1") {
@@ -266,7 +276,13 @@
 	pwdchk.addEventListener("keyup", colorCheck);
 	username.addEventListener("keyup", colorCheck);
 	birthday.addEventListener("keyup", colorCheck);
-	number.addEventListener("keyup", colorCheck);
+	ddlMobileTel.addEventListener("keyup", colorCheck);
+	txtMobileTel2.addEventListener("keyup", colorCheck);
+	txtMobileTel3.addEventListener("keyup", colorCheck);
+	serviceTerms.addEventListener("click", colorCheck);
+	collectionTerms.addEventListener("click", colorCheck);
+	processTerms.addEventListener("click", colorCheck);
+	allagree.addEventListener("click", colorCheck);
 	btn.addEventListener("click", login);
 	signup.addEventListener("click", sign);
 </script>

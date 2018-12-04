@@ -9,6 +9,14 @@
 </head>
 <body>
 <%@ include file="../home.jsp"%>
+	<div id="menu">
+		<ul>
+			<li class="subMenu">개인정보확인/수정</li>
+			<li class="subMenu">내가 쓴 글 보기</li>
+			<li class="subMenu">내가 쓴 댓글 보기</li>
+			<li class="subMenu">관심 책 보기</li>
+		</ul>
+	</div>
 	<div id="updateBack">
 		<h1>개인정보 수정 페이지</h1>
 		<table id="updatetbl">
