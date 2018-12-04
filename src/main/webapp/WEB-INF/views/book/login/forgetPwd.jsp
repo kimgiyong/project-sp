@@ -66,7 +66,6 @@
 						alert('일치하는 정보가 없습니다.');
 					}else{
 						var popup = window.open('../popup/pwdKeyPop', 'child01', 'top=100px, left=100px, height=500px, width=500px');
-						
 						if(popup == null){
 							alert('팝업이 차단되었습니다. 차단을 풀어주시길바랍니다.');
 						}
