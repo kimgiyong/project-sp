@@ -51,6 +51,8 @@
 
 <div class="clear"></div>
 
+<div class="mainMenu" id="lastmainMenu"><a href="#" id="allmenubtn">=</a>	
+</div>
 <section id="bodyHead">
 	<ul id="menuBox">
 		<li class="mainMenu"><a href="#">도서관 이용</a>
@@ -80,22 +82,14 @@
 				<li class="subMenu"><a href="#">서브메뉴 목록2</a></li>
 				<li class="subMenu"><a href="#">서브메뉴 목록3</a></li>
 			</ul>
-		</li>
-		<li class="mainMenu" id="lastmainMenu"><a href="#" id="allmenubtn">=</a>
-			<ul class="subMenuBox">
-				<li class="subMenu"><a href="#">서브메뉴 목록1</a></li>
-				<li class="subMenu"><a href="#">서브메뉴 목록2</a></li>
-				<li class="subMenu"><a href="#">서브메뉴 목록3</a></li>
-			</ul>
-		</li>
-		
-	</ul>
-	
+		</li>		
+	</ul>	
 </section>
 <script>
 	$(function() {
 		$('.mainMenu').mouseover(function() {
 			$(this).children().stop().slideDown();
+			$('.subMenuBox').eq(4).hide();
 		});
 		$('.mainMenu').mouseleave(function() {
 			$('.subMenuBox').stop().slideUp();
