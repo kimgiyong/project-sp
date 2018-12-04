@@ -1,37 +1,84 @@
 @charset "utf-8";
 
-#updateBack{
-	background-color: rgba(245,245,245,0.9);
+
+/* 전체 */
+#mytotal{
 	width: 1500px;
 	height: 900px;
-	margin-bottom: 100px;
-	padding-top: 50px;
-	margin-top: -20px;
-	padding-left: 50px;
+}
+
+/* 왼쪽 */
+#menu{
+	float: left;
+	width: 20%;
+	height: 100%;
+	background-color: #e3dbb0;
+}
+
+#menuul{
+	font-size: 22px;
+	margin-left: 30px;
+}
+
+.sub{
+	margin: 5px;
+	margin-bottom: 20px;
+}
+
+.sub:hover a{
+	color: #7d5c46;
+}
+
+#fh{
+	font-size: 20px;
+	margin-left: 25px;
+}
+
+/* 오른쪽 */
+#updateBack{
+	float: right;
+	width: 80%;
+	height: 100%;
+	background-color: rgb(245,245,245);	
 }
 
 h1{
 	font-family: sans-serif;
-	margin:30px;
+	margin-bottom:20px;
+	margin-left:30px;
 	margin-top: 50px;
 }
 
+#sh{
+	font-size: 150%;	
+}
+
 table{
+	float: left;
 	border: none;
 }
 
 #updatetbl{
-	font-size: 22px;
-	padding: 20px;
-	margin:10px;
 	border-collapse: separate;
-	border-spacing: 50px;
+	border-spacing: 40px;
 	font-weight: bold;
+	font-size: 20px;
 }
 
 #updatetbl input{
 	border: none;
-	font-size: 22px;
+	padding: 4px;
+	font-size: 20px;
+	width: 300px;
+}
+
+label{
+	font-size: 14px;
+	color: darkred;
+}
+
+#btn{
+	margin-left: 20px;
 }
 
 #updateBack button{
@@ -42,5 +89,15 @@ table{
 	width: 100px;
 	height: 100px;
 	font-size: 30px;
+	border-radius: 50px;
+	margin-left: 20px;
+}
+
+button:hover{
 	font-weight: bold;
+	color: darkblue;
+}
+
+#save:hover{
+	color:darkred;
 }
