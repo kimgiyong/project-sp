@@ -65,9 +65,13 @@
 					if(res=='fail'){
 						alert('일치하는 정보가 없습니다.');
 					}else{
-						var popup = window.open('../popup/pwdKeyPop', 'child01', 'top=100px, left=100px, height=500px, width=500px');
+						var popup = window.open('../popup/pwdKeyPop', 'child01', 'top=150px, left=700px, height=330px, width=520px');
 						if(popup == null){
 							alert('팝업이 차단되었습니다. 차단을 풀어주시길바랍니다.');
+						}else{
+							alert(res);
+							var key = res;
+							popup.document.querySelector('#keyValue').value = key;
 						}
 					}
 				}

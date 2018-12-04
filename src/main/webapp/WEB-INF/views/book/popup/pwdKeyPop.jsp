@@ -67,22 +67,36 @@ p{
 </head>
 
 <body>
-
+	<input type="hidden" id="keyValue">
 	<div id="backline">
 		<h1>비밀번호 인증페이지</h1>
 		<p>인증을 완료하고 비밀번호를 재설정해주세요.</p>
 		<label id="labelpopup">인증번호</label> <input type="text" id="popup"><br>
 		<div id="btnline">
-			<button onclick="moveClose()">인증번호 확인</button>		
+			<button onclick="check()">인증번호 확인</button>		
 			<button onclick="self.close();">취소</button>
 		</div>
 	</div>
 
-	<script>
-function moveClose() {
-	  opener.location.href="/uri/book/homePage";
-	  self.close();
+<script>
+var count = 0;
+function check() {
+	var key = document.querySelector('#keyValue').value;
+	var inkey = document.querySelector('#popup').value;
+	alert(key);
+	if(key == inkey){
+		alert('인증번호 인증에 성공하였습니다.');
+		self.close();
+	}else{
+		if(count==3){
+			alert('인증번호 인증을 3회 실패하였습니다. 로그인 페이지로 돌아갑니다.');
+			opener.location.href="/uri/book/login/loginPage";
+			self.close();
+		}
+		count++;
+		alert('인증번호가 틀렸습니다. 앞으로 입력할 기회가' + (3-count) + '회 남았습니다.');
 	}
+}
 </script>
 </body>
 </html>
