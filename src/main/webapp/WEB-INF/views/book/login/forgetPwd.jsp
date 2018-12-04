@@ -71,7 +71,7 @@
 						}else{
 							alert(res);
 							var key = res;
-							popup.document.querySelector('#keyValue').value = key;
+							popup.document.querySelector('#keyValue').value = request.getAttribute('key');
 						}
 					}
 				}

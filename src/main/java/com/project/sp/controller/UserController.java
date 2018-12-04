@@ -92,6 +92,7 @@ public class UserController {
 			return key;
 		}else {
 			request.setAttribute("user", user);
+			request.setAttribute("key", key);
 			return key;
 		}
 	}
