@@ -24,7 +24,7 @@
 			<h1 id="log">LOGIN</h1>
 			<div id="sum">
 			<!-- <input id="userId" type="email" placeholder="Account Email" />  -->
-			<label>&nbsp; &nbsp;이 메 일  </label><div class="input1"><input name="txtEmailId" type="text" value="" maxlength="35" id="txtEmailId" class="txt" onkeydown="if(event.keyCode==13){return false;}" placeholder="Account Email"></div>
+			<label>&nbsp; 이 메 일  </label><div class="input1"><input name="txtEmailId" type="text" value="" maxlength="35" id="txtEmailId" class="txt" onkeydown="if(event.keyCode==13){return false;}" placeholder="Account Email"></div>
 			<div class="at">@</div>
 			<div class="input1"><input type="text" value="" readonly maxlength="30" id="txtEmailDomain" class="txt" onkeydown="if(event.keyCode==13){return false;}"></div>
 			<select name="ddlEmailDomain" id="ddlEmailDomain">
@@ -38,11 +38,11 @@
 				<option value="direct_input">직접입력</option>
 			</select> 
 			<br>
-			<label>&nbsp; &nbsp; 패 스 워 드  </label><input id="userPwd" type="password" placeholder="password" /><br>
+			<label>패 스 워 드  </label><input id="userPwd" type="password" placeholder="password" /><br>
 			<div id="joinhidden">
 			<hr>
 				<label id="pwcheck">패스워드 확인</label><input id="userPwdchk" type="password" placeholder="retype password" /><br>
-				<label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;이 름  </label><input id="userName" type="text" placeholder="user name" maxlength="5" /><br>
+				<label>&nbsp; &nbsp; &nbsp; &nbsp;이 름  </label><input id="userName" type="text" placeholder="user name" maxlength="5" /><br>
 				<label>생 년 월 일  </label><input id="userBir" type="date" placeholder="Birthday" /><br> 
 				<!-- <input id="userNumber" type="text" placeholder="Phone number('-'없이 써주세요)" maxlength="11" onkeypress="onlyNumber();" /><br> -->
 				<div id="userMobile">
@@ -66,7 +66,7 @@
 				 <input type="checkbox" value="agree" id="collectionTerms" class="termsCkbox"><br>
 				<a href="/uri/book/login/privacyPage?privacy=2" class="terms">개인정보 처리 및 위탁</a>에 관한 안내 약관에 동의합니다.
 				 <input type="checkbox" value="agree" id="processTerms" class="termsCkbox"><br>
-				<p>모두동의<input type="checkbox" value="agree" id="allagree" class="termsCkbox"><br></p>
+				<p>모두동의<input type="checkbox" value="agree" id="allagree" class="termsCkbox"></p><br>
 			</div>
 			</div>
 			<button disabled="true" id="loginbtn">LOGIN</button>
@@ -95,7 +95,8 @@
 	
 	/* Mobile */
 	var ddlMobileTel = document.getElementById("ddlMobileTel");
-	var ddlMobTel = ddlMobileTel.value;
+	/* 약정 */
+	var allagree = document.getElementById("allagree");
 	
 	var btn = document.getElementById("loginbtn");
 	var signup = document.getElementById("signup");
@@ -144,6 +145,20 @@
 			txtEmailDomain.value = ddlEmailDomain.value;
 		}
 	}
+	
+	function privacy(){
+		var termsCkbox = document.getElementsByClassName("termsCkbox");
+			if(allagree.checked == false){
+				for(i=0; i < 3; i++) {
+					termsCkbox.checked[i] = true;
+				}
+			}else{
+				for(i=0; i < 3; i++) {
+					termsCkbox.checked[i] = false;
+				}
+			}
+	}
+	allagree.addEventListener("click", privacy);
 
 	function colorCheck() { /* not null 같은 코드  */
 		if (btn.textContent == "Create account") { /* 회원가입 할때 not null 안쓰면 회원가입 안됨 */
