@@ -7,7 +7,7 @@
 <meta charset="utf-8">
 <title>로그인/회원가입페이지</title>
 <link rel="stylesheet" type="text/css"
-	href="${rootPath}/resources/css/loginCss/loginPage.css" />
+	href="${resPath}/css/loginCss/loginPage.css" />
 </head>
 <body>
 	<%
@@ -16,9 +16,8 @@
  
 	<div id="container">
 		<div id="lodiv">
-			<a href="../homePage"><h1 id="logo">
-					좋은<span id="hyang">향</span> 도서관
-				</h1></a>
+			<a href="../homePage">
+			<h1 id="logo">좋은<span id="hyang">향</span> 도서관</h1></a>
 		</div>
 		<div id="back">
 			<h1 id="log">LOGIN</h1>

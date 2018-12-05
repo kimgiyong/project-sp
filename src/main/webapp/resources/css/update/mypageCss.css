@@ -2,7 +2,11 @@
 
 
 /* 전체 */
-#mytotal{
+#dif0, #dif1, #dif2, #dif3{
+	display: none;
+}
+
+#total{
 	width: 1500px;
 	height: 900px;
 }
