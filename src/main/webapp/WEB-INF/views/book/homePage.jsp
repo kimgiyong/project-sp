@@ -48,8 +48,9 @@
 		</section>
 	</div>
 	<div class="clear"></div>
-	
 	<div id="content">
+	<div id="wiseSaying"><a id="wisetrun">안녕 나는 명언이 나올 위치야 기용이가 명언을 넣어줄꺼야 하하하하</a></div>
+	<div class="clear"></div>
 		<section id="contentA">
 			<div id="cus"><button id="goBest" class="gobtn" value="goBest">오늘의 추천 도서</button><pre>  |  </pre><button id="goNew" class="gobtn" value="goNew">오늘의 신간도서</button></div>
 			<button id="fooleftbtn">&lt;</button>
