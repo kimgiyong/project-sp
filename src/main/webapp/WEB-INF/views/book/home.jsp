@@ -87,15 +87,30 @@
 </section>
 <script>
 	$(function() {
+		var a = 0;
+		var b = 0;
 		$('.mainMenu').mouseover(function() {
 			$(this).children().stop().slideDown();
 			$('.subMenuBox').eq(4).hide();
 		});
 		$('.mainMenu').mouseleave(function() {
-			$('.subMenuBox').stop().slideUp();
+			if(b==0){
+				$('.subMenuBox').stop().slideUp();
+				a=0;
+			}
 		});
+		
 		$('#allmenubtn').click(function() {
-			$('.subMenuBox').stop().slideDown();
+			if(a==0){
+				$('.subMenuBox').stop().slideDown();
+				a=1;
+				b=1;
+			}else{
+				$('.subMenuBox').stop().slideUp();
+				a=0;
+				b=0;
+			}
+			
 		});
 	});
 	function login(loge) {
@@ -131,14 +146,14 @@
 	logo.addEventListener("click", function() {
 		location.href = '/uri/book/homePage';
 	});
-	/* 
-	var menubtn = document.getElementById("allmenubtn");
+	
+	/* var menubtn = document.getElementById("lastmainMenu");
 	var submenu = document.getElementsByClassName("subMenu");
 	function menubtn(){
 		mainMenu.style.display = "block";
 	}
-	menubtn.addEventListener("click",menubtn);
-	 */
+	menubtn.addEventListener("click",menubtn); */
+	 
 </script>
 
 <div class="clear"></div>
