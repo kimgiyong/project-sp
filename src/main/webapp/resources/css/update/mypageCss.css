@@ -39,7 +39,7 @@
 }
 
 /* 오른쪽 */
-#updateBack{
+.updateBack{
 	float: right;
 	width: 80%;
 	height: 100%;

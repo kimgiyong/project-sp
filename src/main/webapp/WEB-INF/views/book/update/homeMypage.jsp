@@ -18,7 +18,7 @@
 	<div id="total">
 		<%@ include file="leftmenu.jsp"%>
 		<section id="dif0" class="total">
-			<div id="updateBack">
+			<div class="updateBack">
 				<h1 id="sh">개인정보확인 / 수정</h1>
 				<table id="updatetbl">
 					<tr class="updatetr">
@@ -70,15 +70,16 @@
 			</div>
 		</section>
 		<section id="dif1" class="total">
-			<div>안녕</div>
+			<div class="updateBack">안녕</div>
 		</section>
 		<section id="dif2" class="total">
-			<div>나는</div>
+			<div class="updateBack">나는</div>
 		</section>
 		<section id="dif3" class="total">
-			<div>조은향이다</div>
+			<div class="updateBack">조은향이다</div>
 		</section>
 	</div>
+	
 <script>
 	var total = document.getElementsByClassName("total");
 	var dif0 = document.getElementById("dif0");
