@@ -13,22 +13,22 @@
 		<div id="menu">
 		<h1 id="fh">My Page</h1>
 			<ul id="menuul">
-				<li class="sub"><a href="#">개인정보확인 / 수정</a></li>
+				<li class="sub"><a href="">개인정보확인 / 수정</a></li>
 				<li class="sub"><a href="#">내가 쓴 글 보기</a></li>
 				<li class="sub"><a href="#">내가 쓴 댓글 보기</a></li>
 				<li class="sub"><a href="#">관심 책 보기</a></li>
 			</ul>
 		</div>
 		<div id="updateBack">
-			<h1 id="sh">나만의 페이지</h1>
+			<h1 id="sh">개인정보확인 / 수정</h1>
 			<table id="updatetbl">
 				<tr class="updatetr">
 					<td>현재 나의 마일리지</td>
-					<td><input type="text" value="<%=user.getUserScore()%>"></td>
+					<td><input type="text" value="<%=user.getUserScore()%>" disabled="disabled"></td>
 				</tr>
 				<tr class="updatetr">
 					<td>이메일</td>
-					<td><input type="email" value="<%=user.getUserId()%>"></td>
+					<td><input type="email" value="<%=user.getUserId()%>" disabled="disabled"></td>
 				</tr>
 				<tr class="updatetr">
 					<td>이름</td>
@@ -48,7 +48,7 @@
 				</tr>
 				<tr class="updatetr">
 					<td>생년월일</td>
-					<td><input type="date" value="<%=user.getUserBirth()%>"></td>
+					<td><input type="date" value="<%=user.getUserBirth()%>" disabled="disabled"></td>
 				</tr>
 				<tr class="updatetr">
 					<td>전화번호</td>
@@ -57,11 +57,11 @@
 			</table>
 			<div class="clear"></div>
 			<div id="btn">
-				<button id="save">저장</button>
+				<button id="save">수정</button>
 				<button id="cancel">취소</button>
 			</div>
 			<div class="clear"></div>
-			<img src="${resPath}/img/mypage.jpg" alt="img" id="img">
+			<a href="https://www.privacy.go.kr/" target="_blank"><img src="${resPath}/img/mypage.jpg" alt="img" id="img"></a>
 		</div>
 	</section>
 </body>
