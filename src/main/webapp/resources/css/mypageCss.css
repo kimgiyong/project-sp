@@ -101,3 +101,12 @@ button:hover{
 #save:hover{
 	color:darkred;
 }
+
+/* 오른쪽 이미지 */
+#img{
+	width: 500px;
+	height: 750px;
+	margin-right: 100px;
+	float: right;
+	margin-top: -380px;
+}

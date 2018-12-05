@@ -56,10 +56,9 @@
 				<button id="save">저장</button>
 				<button id="cancel">취소</button>
 			</div>
+			<div class="clear"></div>
+			<img src="${resPath}/img/mypage.jpg" alt="img" id="img">
 		</div>
 	</section>
 </body>
-<script>
-
-</script>
 </html>
