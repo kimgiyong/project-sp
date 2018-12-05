@@ -26,7 +26,7 @@ body {
 	clear: both;
 }
 /* 상단 logo부분 */
-#logoBox {
+.logoBox {
 	width: 280px;
 	height: auto;
 	display: inline-block;

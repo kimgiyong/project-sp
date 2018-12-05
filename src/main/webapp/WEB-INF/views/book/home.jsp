@@ -30,7 +30,7 @@
 				onclick="login(0)">JOIN</button></a>
 	</div>
 
-	<div id="logoBox">
+	<div class="logoBox">
 		<a href="/uri/book/homePage" id="logof"> <span id="logof1">좋은</span>
 			<span id="logof2">향</span> <br> &emsp; <span id="logof3">&nbsp;도서</span>
 			<span id="logof4">관</span>
@@ -82,7 +82,7 @@
 				<li class="subMenu" style="width:378px"><a href="#">서브메뉴 목록2</a></li>
 				<li class="subMenu" style="width:378px"><a href="#">서브메뉴 목록3</a></li>
 			</ul>
-		</li>		
+		</li>
 	</ul>	
 </section>
 <script>

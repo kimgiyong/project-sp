@@ -197,6 +197,9 @@
 /* footer */
 footer{
 	border:1px solid red;
+	background: #fbfbff;
+	width:1500px;
+	height:200px;
 }
 
 .bookbtn{
@@ -207,6 +210,14 @@ footer{
 
 #newBook{
 	display: none;
+}
+
+
+#foologoBox{
+	margin:50px 100px;
+}
+#fooTextarea{
+	
 }
 
 /* footer부분 */
