@@ -70,9 +70,10 @@
 							alert('일치하는 정보가 없습니다.');
 						}else{
 							var key = '' + res;
-							alert(key);
 							var keySet = popup.document.querySelector('#keyValue');
+							var userId = popup.document.querySelector('#userId');
 							keySet.value = key;
+							userId.value = userId.value;
 						}
 					}
 			}

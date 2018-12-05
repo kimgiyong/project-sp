@@ -68,6 +68,7 @@ p{
 
 <body>
 	<input type="hidden" id="keyValue">
+	<input type="hidden" id="userId">
 	<div id="backline">
 		<h1>비밀번호 인증페이지</h1>
 		<p>인증을 완료하고 비밀번호를 재설정해주세요.</p>
@@ -83,9 +84,11 @@ var count = 0;
 function check() {
 	var key = document.querySelector('#keyValue').value;
 	var inkey = document.querySelector('#popup').value;
+	var userId = document.querySelector('#userId').value;
 	alert(key);
 	if(key == inkey){
 		alert('인증번호 인증에 성공하였습니다.');
+		opener.location.href="/uri/book/login/"+ userId;
 		self.close();
 	}else{
 		if(count==3){

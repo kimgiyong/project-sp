@@ -42,6 +42,7 @@
 			<option value="none">검색 방식</option>
 			<option value="title">제목</option>
 			<option value="witer">작가</option>
+			<option value="publisher">출판사</option>
 		</select> <input type="text" name="search" placeholder="검색어를 입력하세요">
 		<button class="search-btn">
 			<i class="fas fa-search"></i>
