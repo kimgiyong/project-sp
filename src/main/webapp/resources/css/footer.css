@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/* footer */
+footer{
+	background: #fbfbff;
+	width:1500px;
+	height:200px;
+}
+
+.bookbtn{
+	background-color: transparent !important;
+	border: 0;
+	width: 200px;
+}
+
+#newBook{
+	display: none;
+}
+
+
+#foologoBox{
+	margin:50px 100px;
+}
+
+/* footer부분 */

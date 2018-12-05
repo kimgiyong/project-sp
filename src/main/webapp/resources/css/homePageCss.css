@@ -152,10 +152,7 @@
 	height:80%; 
 }
 
-.contentBtr td a:hover{
-	color:#800040;	
-	font-weight: bold;	
-}
+
 
 #iconContent{
 	border-top:2px solid #333;
@@ -194,28 +191,5 @@
 	margin-bottom:20px;
 }
 
-/* footer */
-footer{
-	border:1px solid red;
-	background: #fbfbff;
-	width:1500px;
-	height:200px;
-}
 
-.bookbtn{
-	background-color: transparent !important;
-	border: 0;
-	width: 200px;
-}
-
-#newBook{
-	display: none;
-}
-
-
-#foologoBox{
-	margin:50px 100px;
-}
-
-/* footer부분 */
 /* 하단 logo부분 */

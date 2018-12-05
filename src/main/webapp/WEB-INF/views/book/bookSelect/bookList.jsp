@@ -5,32 +5,43 @@
 <head>
 	<meta charset="utf-8">
 	<title>스프링테스트</title>
+	<link rel="stylesheet" type="text/css"
+	href="${rootPath}/resources/css/bookSelectCss/bookList.css" />
 </head>
 <body>
 <%@ include file="../home.jsp"%>
 <hr>
 <div class="container">
-	<table id="listTable">
-		<thead>
-			<tr>
-				<th>정렬</th>
-				<th><a href="#">인기순</a></th>
-				<th><a href="#">최신순</a></th>
-				<th><a href="#">페이지순</a></th>
-			</tr>
+	<div id="listHead">
+		<span>통합검색</span>
+		<h3><a href="/uri/book/homePage">홈페이지</a></h3>
+	</div>
+	
+	<h2 id="tableTitle">자료 검색 결과</h2>
+	
+	<ul id="sortList">
+		<li>정렬</li>
+		<li><a href="#">인기순 ▼</a></li>
+		<li><a href="#">최신순 ▼</a></li>
+		<li><a href="#">페이지순 ▼</a></li>
+	</ul>
+	<table id="listTable">		
+		<tbody>
 			<tr>
 				<td>1</td>
 				<td><img src="#"><br><span class="bookTitle">제목</span></td>
 				<td>
 					저작자 : 김기용<br><br>
 					출판사 : 은향사<br><br>
+					좋아요 개수 : 0<br><br> 
 					출판일 : 2018.12.05
 				</td>
-				<td><a href="#">상세정보</a></td>
+				<td><a href="#" class="hover">상세정보</a></td>
 			</tr>
-			<tr><td colspan="4"><hr></td></tr>
-		</thead>
+		</tbody>
 	</table>
 </div>
+
+<%@ include file="../footer.jsp"%>
 </body>
 </html>

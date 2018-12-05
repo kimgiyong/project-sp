@@ -146,22 +146,22 @@
 		 		<!-- DB에서 받아올 것 --> 
 		 		<table id="contentBtbl">
 		 			<tr class="contentBtr">
-		 				<td><a href="#">나는 공지사항위치다</a></td>
+		 				<td><a href="#" class="hover">나는 공지사항위치다</a></td>
 		 			</tr>
 		 			<tr class="contentBtr">
-		 				<td><a href="#">나는 공지사항위치다</a></td>
+		 				<td><a href="#" class="hover">나는 공지사항위치다</a></td>
 		 			</tr>
 		 			<tr class="contentBtr">
-		 				<td><a href="#">나는 공지사항위치다</a></td>
+		 				<td><a href="#" class="hover">나는 공지사항위치다</a></td>
 		 			</tr>
 		 			<tr class="contentBtr">
-		 				<td><a href="#">나는 공지사항위치다</a></td>
+		 				<td><a href="#" class="hover">나는 공지사항위치다</a></td>
 		 			</tr>
 		 			<tr class="contentBtr">
-		 				<td><a href="#">나는 공지사항위치다</a></td>
+		 				<td><a href="#" class="hover">나는 공지사항위치다</a></td>
 		 			</tr>
 		 			<tr class="contentBtr">
-		 				<td><a href="#">나는 공지사항위치다</a></td>
+		 				<td><a href="#" class="hover">나는 공지사항위치다</a></td>
 		 			</tr>
 		 		</table>
 		</section>
@@ -173,13 +173,13 @@
 	<div id="iconContainer">
 		<div class="iconMenu">	
 			<div class="iconBox">	
-				<a href="#"><img src="#"></a>
+				<a href="#"><img src="${rootPath}/resources/img/homeimg/order-icon.png"></a>
 			</div>
 			<a href="#">도서 신청</a>
 		</div>
 		<div class="iconMenu">	
 			<div class="iconBox">	
-				<a href="#"><img src="#"></a>
+				<a href="#"><img src="${rootPath}/resources/img/homeimg/Q&A-icon.png"></a>
 			</div>
 			<a href="#">질의 응답</a>
 		</div>
@@ -191,39 +191,20 @@
 		</div>
 		<div class="iconMenu">	
 			<div class="iconBox">	
-				<a href="#"><img src="#"></a>
+				<a href="#"><img src="${rootPath}/resources/img/homeimg/rental-icon.png"></a>
 			</div>
 			<a href="#">대여하기</a>
 		</div>
 		<div class="iconMenu">	
 			<div class="iconBox">	
-				<a href="#"><img src="#"></a>
+				<a href="#"><img src="${rootPath}/resources/img/homeimg/info-icon.png"></a>
 			</div>
 			<a href="#">이용 안내</a>
 		</div>
 	</div>	
 </div>
-	<footer>
-		<div class="logoBox" id="foologoBox">
-			<span id="logof1">좋은</span> <span id="logof2">향</span> <br>
-			&emsp; <span id="logof3">도서</span> <span id="logof4">관</span> 
-			<!-- <img src="../img/logo4jpg3.jpg" alt="logoimge"> -->
-		</div>
-		<pre>
-		
-		
-		
-도서관명 : 좋은향 도서관  |  설립일 : 2018.12.05  |  대표 : 김기용,박경훈,한승우  |  이사장 : 조은향
-
-
-도서관 주소 : 서울시 금천구 가산디지털1로 186. (가산동. 제이플라츠 5F. 515,516호)
-
-
-연락처 : 02)653-1234,335-2523 fax.031-228-2252 / admin@agi.net
-		</pre>
-		<p></p>
-	</footer>
 	
+	<%@ include file="footer.jsp"%>
 	 
 <script>
 

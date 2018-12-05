@@ -255,5 +255,8 @@ body {
 .container{
 	background:white;
 	width:1500px;
-	height:500px;
+}
+.hover:hover{
+	color:#800040;	
+	font-weight: bold;	
 }
