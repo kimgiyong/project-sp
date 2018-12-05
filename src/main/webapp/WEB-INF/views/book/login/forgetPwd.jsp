@@ -69,11 +69,13 @@
 						if(res=='fail'){
 							alert('일치하는 정보가 없습니다.');
 						}else{
-							var key = '' + res;
+							var key = res.split('-');
 							var keySet = popup.document.querySelector('#keyValue');
-							var userId = popup.document.querySelector('#userId');
-							keySet.value = key;
-							userId.value = userId.value;
+							var userNum = popup.document.querySelector('#userNum');
+							keySet.value = key[0];
+							alert(key[0]);
+							alert(key[1]);
+							userNum.value = key[1];
 						}
 					}
 			}

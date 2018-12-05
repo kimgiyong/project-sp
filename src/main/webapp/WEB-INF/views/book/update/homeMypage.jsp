@@ -33,20 +33,20 @@
 					</tr>
 					<tr class="updatetr">
 						<td>이름</td>
-						<td><input type="text" value="<%=user.getUserName()%>"></td>
+						<td><input type="text" value="<%=user.getUserName()%>" disabled="disabled"></td>
 					</tr>
 					<tr class="updatetr">
 						<td>현재 비밀번호</td>
-						<td><input type="password" value=""></td>
+						<td><input id="pwd" type="password" value=""></td>
 					</tr>
 					<tr class="updatetr">
 						<td>바꿀 비밀번호</td>
-						<td><input type="password" value=""><br>
+						<td><input id="newPwd" type="password" value=""><br>
 						<label> * 비밀번호는 8자리 이상입니다.</label></td>
 					</tr>
 					<tr class="updatetr">
 						<td>비밀번호확인</td>
-						<td><input type="password" value=""></td>
+						<td><input id="newPwdCh" type="password" value=""></td>
 					</tr>
 					<tr class="updatetr">
 						<td>생년월일</td>
@@ -55,7 +55,7 @@
 					</tr>
 					<tr class="updatetr">
 						<td>전화번호</td>
-						<td><input type="text" value="<%=user.getUserMobile()%>"><br>
+						<td><input id="mobile" type="text" value="<%=user.getUserMobile()%>"><br>
 						<label> * 전화번호는 '-' 를 빼고 써주시기 바랍니다.</label></td>
 					</tr>
 				</table>
@@ -96,6 +96,30 @@
 	}else{
 		dif0.style.display = "block";
 	}
+	
+	var save = document.querySelector('#save');
+	function save(){
+		var pwd = document.querySelector('#pwd');
+		if(pwd=='<%=user.getUserPwd()%>'){
+			var newPwd = document.querySelector('#newPwd');
+			var mobile = document.querySelector('#mobile');
+			if(newPwd == null || newPwd == ''){
+				var conf = {
+						url:
+				}
+			}else{
+				var newPwdCh = document.querySelector('#newPwdCh');
+				if(newPwd != newPwdCh){
+					alert('바꿀비밀번호가 일치하지 않습니다. 다시 입력해 주십시오');
+				}else{
+					
+				}
+			}
+		}else{
+			alert('기존 비밀번호가 틀렸습니다. 다시 입력해주세요');
+		}
+	}
+	save.addEventListener('click',save);
 </script>
 </body>
 </html>

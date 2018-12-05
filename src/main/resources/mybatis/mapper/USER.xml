@@ -29,12 +29,16 @@
 		where userName = #{userName} and userMobile = #{userMobile}
 	</select>
 	<select id="userSearchPassword" resultType="user" parameterType="user">
-		select userId,userName from usertbl
+		select userNum,userId,userName from usertbl
 		where userId = #{userId} and userName = #{userName} and userMobile = #{userMobile} and userBirth = #{userBirth}
 	</select>
 	<select id="userSelectName" resultType="int" parameterType="String">
 		select userNum from usertbl
 		where userName = #{userName}
+	</select>
+	<select id="userSelectId" resultType="int" parameterType="String">
+		select userNum from usertbl
+		where userId = #{userId}
 	</select>
 	<insert id="userInsert" parameterType="user">
 		insert into usertbl(userName, userId, userPwd, userBirth, userMobile, userScore, userLevel)
@@ -51,7 +55,7 @@
 	</update>
 	<update id="userUpdatePassword" parameterType="user">
 		update usertbl set userPwd = #{userPwd}
-		where userId = #{userId}
+		where userNum = #{userNum}
 	</update>
 	<delete id="userDelete" parameterType="user">
 		delete from usertbl where userNum = #{userNum}

@@ -63,8 +63,7 @@ public class UserDAOImpl implements UserDAO {
 			return "fail";
 		}else {
 			SendMail sm = new SendMail();
-			return sm.send(us.getUserId(),us.getUserName());
-		//	return "sss";
+			return sm.send(us.getUserId(),us.getUserName()) + '-' + us.getUserNum();
 		}
 	}
 
