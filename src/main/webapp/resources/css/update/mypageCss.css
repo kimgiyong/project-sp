@@ -85,7 +85,7 @@ label{
 	margin-left: 20px;
 }
 
-#updateBack button{
+.updateBack button{
 	outline: 0px;
 	cursor: pointer;
 	background-color: transparent !important;
