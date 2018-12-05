@@ -1,0 +1,9 @@
+@charset "UTF-8";
+#listTable{
+	width:800px;
+	height:500px;
+}
+
+#listTable thead th{
+	width:195px;
+}
