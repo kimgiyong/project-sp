@@ -20,8 +20,12 @@
 			</ul>
 		</div>
 		<div id="updateBack">
-			<h1 id="sh">개인정보 수정 페이지</h1>
+			<h1 id="sh">나만의 페이지</h1>
 			<table id="updatetbl">
+				<tr class="updatetr">
+					<td>현재 나의 마일리지</td>
+					<td><input type="text" value="<%=user.getUserScore()%>"></td>
+				</tr>
 				<tr class="updatetr">
 					<td>이메일</td>
 					<td><input type="email" value="<%=user.getUserId()%>"></td>
