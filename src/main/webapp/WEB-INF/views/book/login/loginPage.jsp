@@ -260,6 +260,7 @@
 	}
 
 	function sign() {
+		logeChange();
 		if (signup.textContent == "sign up") {
 			btn.textContent = "Create account";
 			log.textContent = "JOIN";
@@ -271,6 +272,15 @@
 			joinhidden.style.display = "none";
 			signup.textContent = "sign up";
 		}
+	}
+	
+	function logeChange(){
+		if(signup.textContent == "sign up"){
+			location.href = "loginPage?loge=0";
+		}else{
+			location.href = "loginPage?loge=1";
+		}
+		
 	}
 
 	ddlEmailDomain.addEventListener("click", checkEmail);
