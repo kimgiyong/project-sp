@@ -105,14 +105,41 @@
 			var mobile = document.querySelector('#mobile');
 			if(newPwd == null || newPwd == ''){
 				var conf = {
-						url:
+						url:'/user',
+						method:'PUT',
+						param:JSON.stringify({
+							userNum:<%=user.getUserNum()%>, userMobile:mobile.value
+						}),
+						success:function(res){
+							if(res==1){
+								alert('수정이 완료되었습니다.');
+								location.href="/uri/book/update/homeMypage?dif=0";
+							}else{
+								alert('수정에 실패하였습니다.');
+							}
+						}
 				}
 			}else{
 				var newPwdCh = document.querySelector('#newPwdCh');
 				if(newPwd != newPwdCh){
 					alert('바꿀비밀번호가 일치하지 않습니다. 다시 입력해 주십시오');
 				}else{
-					
+					var conf = {
+							url:'/user',
+							method:'PUT',
+							param:JSON.stringify({
+								userNum:<%=user.getUserNum()%>, userPwd:newPwd.value,
+								userMobile:mobile.value
+							}),
+							success:function(res){
+								if(res==1){
+									alert('수정이 완료되었습니다.');
+									location.href="/uri/book/update/homeMypage?dif=0";
+								}else{
+									alert('수정에 실패하였습니다.');
+								}
+							}
+					}
 				}
 			}
 		}else{
