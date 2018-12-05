@@ -209,7 +209,7 @@
 			&emsp; <span id="logof3">도서</span> <span id="logof4">관</span> 
 			<!-- <img src="../img/logo4jpg3.jpg" alt="logoimge"> -->
 		</div>
-		<pre id="fooTextarea" >
+		<pre>
 		
 		
 		
