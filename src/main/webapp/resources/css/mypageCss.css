@@ -108,5 +108,7 @@ button:hover{
 	height: 750px;
 	margin-right: 100px;
 	float: right;
-	margin-top: -380px;
+	margin-top: -700px;
+	border:3px pink solid;
+	border-radius: 20px;
 }

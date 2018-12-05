@@ -11,7 +11,7 @@
 <%@ include file="../home.jsp"%>
 	<section id="mytotal">
 		<div id="menu">
-		<h1 id="fh">개인정보 수정 페이지</h1>
+		<h1 id="fh">My Page</h1>
 			<ul id="menuul">
 				<li class="sub"><a href="#">개인정보확인 / 수정</a></li>
 				<li class="sub"><a href="#">내가 쓴 글 보기</a></li>
