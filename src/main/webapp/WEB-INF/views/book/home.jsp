@@ -78,9 +78,9 @@
 		</li>
 		<li class="mainMenu"><a href="#">메인메뉴 목록4</a>
 			<ul class="subMenuBox" style="width:378px">
-				<li class="subMenu"><a href="#">서브메뉴 목록1</a></li>
-				<li class="subMenu"><a href="#">서브메뉴 목록2</a></li>
-				<li class="subMenu"><a href="#">서브메뉴 목록3</a></li>
+				<li class="subMenu" style="width:378px"><a href="#">서브메뉴 목록1</a></li>
+				<li class="subMenu" style="width:378px"><a href="#">서브메뉴 목록2</a></li>
+				<li class="subMenu" style="width:378px"><a href="#">서브메뉴 목록3</a></li>
 			</ul>
 		</li>		
 	</ul>	
