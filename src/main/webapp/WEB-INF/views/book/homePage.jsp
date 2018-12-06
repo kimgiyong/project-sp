@@ -174,31 +174,31 @@
 	<div id="iconContainer">
 		<div class="iconMenu">	
 			<div class="iconBox">	
-				<a href="#"><img src="${rootPath}/resources/img/homeimg/order-icon.png"></a>
+				<a href="#"><img src="${rootPath}/resources/img/homeimg/icon/order-icon1.png"></a>
 			</div>
 			<a href="#">도서 신청</a>
 		</div>
 		<div class="iconMenu">	
 			<div class="iconBox">	
-				<a href="#"><img src="${rootPath}/resources/img/homeimg/Q&A-icon.png"></a>
+				<a href="#"><img src="${rootPath}/resources/img/homeimg/icon/Q&A-icon1.png"></a>
 			</div>
 			<a href="#">질의 응답</a>
 		</div>
 		<div class="iconMenu">	
 			<div class="iconBox">	
-				<a href="#"><img src="${rootPath}/resources/img/homeimg/map-icon.png"></a>
+				<a href="#"><img src="${rootPath}/resources/img/homeimg/icon/map-icon1.png"></a>
 			</div>
 			<a href="#">지도 검색</a>
 		</div>
 		<div class="iconMenu">	
 			<div class="iconBox">	
-				<a href="#"><img src="${rootPath}/resources/img/homeimg/rental-icon.png"></a>
+				<a href="#"><img src="${rootPath}/resources/img/homeimg/icon/rental-icon1.png"></a>
 			</div>
 			<a href="#">대여하기</a>
 		</div>
 		<div class="iconMenu">	
 			<div class="iconBox">	
-				<a href="#"><img src="${rootPath}/resources/img/homeimg/info-icon.png"></a>
+				<a href="#"><img src="${rootPath}/resources/img/homeimg/icon/info-icon1.png"></a>
 			</div>
 			<a href="#">이용 안내</a>
 		</div>
