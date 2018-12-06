@@ -27,12 +27,12 @@
 							disabled="disabled"></td>
 					</tr>
 					<tr class="updatetr">
-						<td>이메일</td>
+						<td>이 메 일</td>
 						<td><input type="email" value="<%=user.getUserId()%>"
 							disabled="disabled"></td>
 					</tr>
 					<tr class="updatetr">
-						<td>이름</td>
+						<td>이   름</td>
 						<td><input type="text" value="<%=user.getUserName()%>" disabled="disabled"></td>
 					</tr>
 					<tr class="updatetr">
@@ -40,7 +40,7 @@
 						<td><input id="pwd" type="password" value=""></td>
 					</tr>
 					<tr class="updatetr">
-						<td>바꿀 비밀번호</td>
+						<td>비밀번호 재설정</td>
 						<td><input id="newPwd" type="password" value=""><br>
 						<label> * 비밀번호는 8자리 이상입니다.</label></td>
 					</tr>
@@ -49,14 +49,19 @@
 						<td><input id="newPwdCh" type="password" value=""></td>
 					</tr>
 					<tr class="updatetr">
-						<td>생년월일</td>
+						<td>생 년 월 일</td>
 						<td><input type="date" value="<%=user.getUserBirth()%>"
 							disabled="disabled"></td>
 					</tr>
 					<tr class="updatetr">
-						<td>전화번호</td>
+						<td>전 화 번 호</td>
 						<td><input id="mobile" type="text" value="<%=user.getUserMobile()%>"><br>
 						<label> * 전화번호는 '-' 를 빼고 써주시기 바랍니다.</label></td>
+					</tr>
+					<tr class="updatetr">
+						<td>주     소</td>
+						<td><input type="email" value="<%=user.getUserAddr()%>"><br>
+							<label> * 주소를 입력해주세요.</label></td>
 					</tr>
 				</table>
 				<div class="clear"></div>

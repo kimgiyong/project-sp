@@ -8,7 +8,7 @@
 
 #total{
 	width: 1500px;
-	height: 900px;
+	height: 1000px;
 }
 
 /* 왼쪽 */
@@ -112,7 +112,7 @@ button:hover{
 	height: 750px;
 	margin-right: 100px;
 	float: right;
-	margin-top: -780px;
+	margin-top: -850px;
 	border:3px pink solid;
 	border-radius: 20px;
 }
