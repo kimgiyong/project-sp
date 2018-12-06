@@ -41,8 +41,8 @@
 		where userId = #{userId}
 	</select>
 	<insert id="userInsert" parameterType="user">
-		insert into usertbl(userName, userId, userPwd, userBirth, userMobile, userScore, userLevel)
-		values(#{userName},#{userId},#{userPwd},#{userBirth},#{userMobile},0,1)
+		insert into usertbl(userName, userId, userPwd, userBirth, userMobile, userAddr,userScore, userLevel)
+		values(#{userName},#{userId},#{userPwd},#{userBirth},#{userMobile},'',0,1)
 	</insert>
 	<update id="userUpdate" parameterType="user">
 		update usertbl
