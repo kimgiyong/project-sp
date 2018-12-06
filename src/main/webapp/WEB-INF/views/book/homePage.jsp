@@ -186,7 +186,7 @@
 		</div>
 		<div class="iconMenu">	
 			<div class="iconBox">	
-				<a href="#"><img src="#"></a>
+				<a href="#"><img src="${rootPath}/resources/img/homeimg/map-icon.png"></a>
 			</div>
 			<a href="#">지도 검색</a>
 		</div>
