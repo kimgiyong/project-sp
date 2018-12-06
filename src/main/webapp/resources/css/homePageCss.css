@@ -79,21 +79,16 @@
 }
 
 /* 추천도서 */
-#cus{
-	padding-left:100px;
-}
-
 #cus button{
 	background-color: transparent !important;
 	border:none;
 	font-weight: bold;
 	font-size: 150%;
 	cursor: pointer;
-	color:gray;
 }
 
-#cus button:nth-child(1){
-	color:black;
+#cus{
+	padding-left:100px;
 }
 
 #content{
@@ -210,11 +205,9 @@
 	overflow:hidden;
 	width:150px;
 	height:150px; 
-	border:solid 2px white;
+	border:solid 2px black;
 	margin-bottom:20px;
 }
-
-
 
 
 /* 하단 logo부분 */
