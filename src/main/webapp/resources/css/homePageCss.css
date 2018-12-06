@@ -160,9 +160,6 @@
 	margin-top:85px;
 }
 
-#contentB h1{
-}
-
 #contentBtbl{
 	text-align: left;
 	float: left;
@@ -171,7 +168,7 @@
 }
 
 
-
+/* 아이콘 */
 #iconContent{
 	border-top:2px solid #333;
 	border-bottom:2px solid #333;
@@ -200,14 +197,12 @@
 	color:#224;
 	font-weight:bold;
 }
+
 #iconContainer .iconBox{
 	border-radius:100%;
 	overflow:hidden;
 	width:150px;
 	height:150px; 
-	border:solid 2px black;
+	border:solid 2px lightgray;
 	margin-bottom:20px;
 }
-
-
-/* 하단 logo부분 */
