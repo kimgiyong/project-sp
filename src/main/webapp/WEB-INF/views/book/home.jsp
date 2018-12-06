@@ -53,7 +53,7 @@
 
 <div class="clear"></div>
 
-<div class="mainMenu" id="lastmainMenu"><a href="#" id="allmenubtn">=</a>	
+<div class="mainMenu" id="lastmainMenu"><a href="#" id="allmenubtn" style="font-size: 300%;">=</a>	
 </div>
 <section id="bodyHead">
 	<ul id="menuBox">

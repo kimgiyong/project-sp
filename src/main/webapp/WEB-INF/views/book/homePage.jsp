@@ -52,7 +52,7 @@
 	<div id="wiseSaying"><a id="wisetrun">안녕 나는 명언이 나올 위치야 기용이가 명언을 넣어줄꺼야 하하하하</a></div>
 	<div class="clear"></div>
 		<section id="contentA">
-			<div id="cus"><button id="goBest" class="gobtn" value="goBest">오늘의 추천 도서</button><pre>  |  </pre><button id="goNew" class="gobtn" value="goNew">오늘의 신간도서</button></div>
+			<div id="cus"><button id="goBest" class="gobtn" value="goBest" onclick="cuscolorchange()">오늘의 추천 도서</button><pre>  |  </pre><button id="goNew" class="gobtn" value="goNew" onclick="cuscolorchange()">오늘의 신간도서</button></div>
 			<button id="fooleftbtn">&lt;</button>
 			<ul id="bestBook">
 				<li class="imgBook">
@@ -235,7 +235,24 @@
 			
 		});
 		
+		/* 추천도서 / 신간도서 부분 */
+		function cuscolorchange(){
+			var goBest = document.getElementById("goBest");
+			var goNew = document.getElementById("goNew");
+			var gobtn = document.getElementByClassName("gobtn");
+			if(gobtn.value == 'goBest'){
+				goBest.style.color = 'black';
+				goNew.style.color = 'gray';
+			}else{
+				goBest.style.color = 'gray';
+				goNew.style.color = 'black';
+			}
+		}
+		/* 
+		goBest.addEventListener('click',cuscolorchange);
+		goNew.addEventListener('click',cuscolorchange); */
 		
+		/* 추천도서 신간도서 슬라이드 부분 */
 		var bcareNum = 0;
 		var bcareSize = 9; //0~9까지
 		var btoggle = 0;
