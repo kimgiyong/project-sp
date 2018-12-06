@@ -241,7 +241,6 @@
 			var goNew = document.getElementById("goNew");
 			var gobtn = document.getElementsByClassName("gobtn");
 			if(gobtn.value == 'goBest'){
-				alert("b");
 				goBest.style.color = "black";
 				goNew.style.color = "gray";
 			}else{
