@@ -10,7 +10,6 @@
 <%
 	String dif = (String) request.getParameter("dif");
 %>
-
 </head>
 
 <body>
@@ -60,8 +59,9 @@
 					</tr>
 					<tr class="updatetr">
 						<td>주     소</td>
-						<td><input type="email" value="<%=user.getUserAddr()%>"><br>
-							<label> * 주소를 입력해주세요.</label></td>
+						<td>
+							<%@ include file="../jusoapi.jsp"%>
+						</td>
 					</tr>
 				</table>
 				<div class="clear"></div>
