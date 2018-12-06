@@ -116,3 +116,9 @@ button:hover{
 	border:3px pink solid;
 	border-radius: 20px;
 }
+hr{
+	border:1px solid #5d6f32;
+	margin-top:-12px;
+	width:220px;
+	margin-right:65px;
+}
