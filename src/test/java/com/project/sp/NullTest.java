@@ -1,13 +1,17 @@
 package com.project.sp;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public class NullTest {
 public static void main(String[] args) {
-	String test=null;
-	if(test.equals("test")) {
-		log.info("test => {}",test);
-	}
+	Map<String,String> tes = new HashMap<String,String>();
+	tes.put("test", "test");
+	System.out.println(tes);
+	tes = null;
+	System.out.println(tes);
 }
 }

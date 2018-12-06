@@ -5,6 +5,8 @@ import static org.junit.Assert.assertNotNull;
 
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.sql.DataSource;
 
@@ -23,18 +25,21 @@ import com.project.sp.vo.UserVO;
 @ContextConfiguration("file:src/main/webapp/WEB-INF/spring/root-context.xml")
 public class VOTest {
 
-	@Autowired
-	private UserService us;
+//	@Autowired
+//	private UserService us;
 	
+	public void setMap(Map<String,String> tes) {
+		tes.put("test", "test");
+	}
+	public void setMap2(Map<String,String> tes) {
+		tes = null;
+	}
 	@Test
 	public void test() {
-		UserVO user = new UserVO();
-		// 번호 이름 아이디  생일 전화번호
-		user.setUserId("xxzcsv@naver.com");
-		user.setUserName("김기기");
-		user.setUserMobile("12345678912");
-		user.setUserBirth("2000-01-01");
-		assertNotNull(us.userSearchPwd(user));
-		
+		Map<String,String> tes = new HashMap<String,String>();
+		setMap(tes);
+		System.out.println(tes);
+		setMap2(tes);
+		System.out.println(tes);
 	}
 }

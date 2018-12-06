@@ -138,7 +138,6 @@
 			if (btn0.textContent == 'JOIN') {
 				location.href = '/uri/book/login/loginPage?loge=0';
 			} else {
-				alert('됫다');
 				location.href = '/uri/book/update/homeMypage';
 			}
 		}
