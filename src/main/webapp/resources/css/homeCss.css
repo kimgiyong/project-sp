@@ -13,9 +13,11 @@ pre{
 }
 
 body {
-	background-image: url("../img/homeimg/background.jpg");
+	/* background-image: url("../img/homeimg/background.jpg"); */
+	/* background-image: url("https://i.pinimg.com/564x/2f/73/29/2f732971ec13546e2a20eb5de0c6aef8.jpg");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover; */
+	background-color:#EEE;
 	margin-top:10px;
 	width: 1500px; 
 	height:100%;
