@@ -167,6 +167,10 @@
 	height:80%; 
 }
 
+#contentBtr td{
+	border-bottom: 1px gray solid;
+}
+
 #goNew{
 	color:gray;
 }
