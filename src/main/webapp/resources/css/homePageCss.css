@@ -13,7 +13,7 @@
 	width:1500px;
 	position:absolute;
 	z-index: 1;
-/* 	background-image: url("../img/homeimg/imgback.jpg"); */
+/* 	background-image: url("../img/homeimg/imgback.jpg"); 이전 이미지*/
 	background-image: url("https://i.pinimg.com/564x/c8/66/46/c86646eed6013137a53961c88f2e871e.jpg"); 
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -64,7 +64,7 @@
 
 
 /* 슬라이드 밑에 부분 */
-/* 중간에 명언 */
+/* 명언부분 */
 #wiseSaying{
 	background-color: rgba(91,77,48,0.7);
 	width: 100%;
@@ -95,7 +95,7 @@
 	width:1500px; 
 	height:500px;
 	margin:446px 0 0 0;
-	background:white;
+	background-color:rgba(255,255,255,0.7);
 	position:relative;
 }
 #contentA{
