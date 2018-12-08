@@ -290,9 +290,9 @@
 				bcareNum=bcareSize-3;
 			}	
 			if(btoggle==0){
-				bestBookfun(); //나는 빨리 바뀌기를 원한다
+				bestBookfun();
 			}else{
-				newBookfun(); // 나는 집에 가고 싶다
+				newBookfun();
 			}
 		});
 		 
