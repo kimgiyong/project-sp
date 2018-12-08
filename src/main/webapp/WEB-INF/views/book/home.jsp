@@ -57,32 +57,32 @@
 </div>
 <section id="bodyHead">
 	<ul id="menuBox">
-		<li class="mainMenu"><a href="#">도서관 이용</a>
+		<li class="mainMenu"><a href="#">좋은 도서</a>
 			<ul class="subMenuBox">
-				<li class="subMenu"><a href="#">도서관 이용시간</a></li>
-				<li class="subMenu"><a href="#">도서관 이용방법</a></li>
-				<li class="subMenu"><a href="#">도서관</a></li>
+				<li class="subMenu"><a href="#">도서대출</a></li>
+				<li class="subMenu"><a href="#">도서반납</a></li>
+				<li class="subMenu"><a href="#">도서신청</a></li>
 			</ul>
 		</li>
-		<li class="mainMenu"><a href="#">메인메뉴 목록2</a>
+		<li class="mainMenu"><a href="#">좋은 소통</a>
 			<ul class="subMenuBox">
-				<li class="subMenu"><a href="#">서브메뉴 목록1</a></li>
-				<li class="subMenu"><a href="#">서브메뉴 목록2</a></li>
-				<li class="subMenu"><a href="#">서브메뉴 목록3</a></li>
+				<li class="subMenu"><a href="#">공지사항</a></li>
+				<li class="subMenu"><a href="#">Q & A</a></li>
+				<li class="subMenu"><a href="#">자유게시판</a></li>
 			</ul>
 		</li>
-		<li class="mainMenu"><a href="#">메인메뉴 목록3</a>
+		<li class="mainMenu"><a href="#">좋은 나눔</a>
 			<ul class="subMenuBox">
-				<li class="subMenu"><a href="#">서브메뉴 목록1</a></li>
-				<li class="subMenu"><a href="#">서브메뉴 목록2</a></li>
-				<li class="subMenu"><a href="#">서브메뉴 목록3</a></li>
+				<li class="subMenu"><a href="#">도서기부</a></li>
+				<li class="subMenu"><a href="#">기부천사</a></li>
+				<li class="subMenu"><a href="#">기부방법</a></li>
 			</ul>
 		</li>
-		<li class="mainMenu"><a href="#">메인메뉴 목록4</a>
-			<ul class="subMenuBox" style="width:378px">
-				<li class="subMenu" style="width:378px"><a href="#">서브메뉴 목록1</a></li>
-				<li class="subMenu" style="width:378px"><a href="#">서브메뉴 목록2</a></li>
-				<li class="subMenu" style="width:378px"><a href="#">서브메뉴 목록3</a></li>
+		<li class="mainMenu"><a href="#">좋은 소개</a>
+			<ul class="subMenuBox" style="width:376px">
+				<li class="subMenu" style="width:376px"><a href="#">도서관 이용시간</a></li>
+				<li class="subMenu" style="width:376px"><a href="#">도서관 이용방법</a></li>
+				<li class="subMenu" style="width:376px"><a href="#">도서관 연혁</a></li>
 			</ul>
 		</li>
 	</ul>	
@@ -95,7 +95,7 @@
 			$(this).children().stop().slideDown();
 			$('.subMenuBox').eq(4).hide();
 		});
-		$('.mainMenu').mouseleave(function() {
+		$('.mainMenu, .subMenuBox').mouseleave(function() {
 			if(b==0){
 				$('.subMenuBox').stop().slideUp();
 				a=0;

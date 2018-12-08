@@ -16,8 +16,8 @@ body {
 	/* background-image: url("../img/homeimg/background.jpg"); */
 	background-image: url("https://i.pinimg.com/564x/62/81/68/628168603156332c4329d1b17ab136b7.jpg");
 	background-repeat: no-repeat;
-	background-size: cover;
-	background-color:#EEE;
+	background-size: 100% 1000px;
+	background-color:#f5f5f5;
 	margin-top:10px;
 	width: 1500px; 
 	height:100%;
@@ -215,6 +215,7 @@ body {
 */
 #menuBox .subMenu:hover {
 	background-color: #866529;
+	color: #FFDDDD;
 }
 
 

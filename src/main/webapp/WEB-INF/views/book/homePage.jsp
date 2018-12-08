@@ -169,7 +169,7 @@
 		
 </div>
 	<div class="clear"></div>
-	<!-- 도서신청, 질의응답, 지도검색, 대여하기, 이용안내 -->
+	<!-- 도서신청, 질의응답, 지도검색, 대출하기, 이용안내 -->
 <div id="iconContent">
 	<div id="iconContainer">
 		<div class="iconMenu">	
@@ -194,7 +194,7 @@
 			<div class="iconBox">	
 				<a href="#"><img src="${rootPath}/resources/img/homeimg/icon/rental-icon1.png"></a>
 			</div>
-			<a href="#">대여하기</a>
+			<a href="#">대출하기</a>
 		</div>
 		<div class="iconMenu">	
 			<div class="iconBox">	
