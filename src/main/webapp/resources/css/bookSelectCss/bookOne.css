@@ -1,0 +1,76 @@
+@charset "UTF-8";
+#listHead{
+	width: 1500px;
+    height: 150px;
+    border-bottom: 2px solid #aaa;
+    line-height: 210px;
+    padding: 0 35px;
+    margin-bottom:100px;
+}
+#listHead span{
+	float:left;
+	font-size:50px;
+	font-weight:bold;
+	color:#444;  
+	margin-left:100px;
+}  
+#listHead h3>a{
+	float:right;
+	color:aaa;	
+}
+
+
+#listTable{
+	width:1200px;
+	border:1px solid #ccc;
+	text-align:center;
+	margin:0px;
+	border-collapse:collapse;
+	margin-left:150px;
+	font-size:20px;
+}
+#listTable td{
+	padding:20px;
+}
+
+#bookInfoTbl{
+	width:1000px;
+	text-align:center;
+	border:1px solid black; 
+	font-size:18px;
+	line-height:40px;
+	border-collapse: collapse;
+}
+
+#bookInfoTbl li{
+	height:50px;
+	margin-left:-20px; 
+	padding-left:40px;
+}
+#bookInfoTbl td:last-child{
+	text-align:left;
+	padding-left:20px;
+	border:1px solid black;
+}
+
+#likeToggle{
+	width:50px;
+	height:50px;
+	border:none;
+	background:none;
+	margin-left:20px;
+}
+#likeImg{
+	width:50px;
+	height:50px;
+}
+#bookImg{
+	border:1px solid black;
+	width:200px;
+	height:250px;
+}
+
+#like{
+	position: relative;
+	top:-20px;
+}
