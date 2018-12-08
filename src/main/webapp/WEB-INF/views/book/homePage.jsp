@@ -206,7 +206,6 @@
 </div>
 	
 	<%@ include file="footer.jsp"%>
-	 
 <script>
 
 	$(function() {
@@ -297,7 +296,6 @@
 			}
 		});
 		 
-		
 		$("#foorightbtn").click(function(){
 			bcareNum-=2;
 			if(bcareNum>bcareSize-3){
