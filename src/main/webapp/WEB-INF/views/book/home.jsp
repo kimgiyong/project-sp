@@ -82,7 +82,7 @@
 			<ul class="subMenuBox" style="width:376px">
 				<li class="subMenu" style="width:376px"><a href="#">도서관 이용방법</a></li>
 				<li class="subMenu" style="width:376px"><a href="#">도서관 연혁</a></li>
-				<li class="subMenu" style="width:376px"><a href="menu/menu4-3">도서관 위치</a></li>
+				<li class="subMenu" style="width:376px"><a href="/uri/book/menu/menu4-3">도서관 위치</a></li>
 			</ul>
 		</li>
 	</ul>	
@@ -147,13 +147,6 @@
 	logo.addEventListener("click", function() {
 		location.href = '/uri/book/homePage';
 	});
-	
-	/* var menubtn = document.getElementById("lastmainMenu");
-	var submenu = document.getElementsByClassName("subMenu");
-	function menubtn(){
-		mainMenu.style.display = "block";
-	}
-	menubtn.addEventListener("click",menubtn); */
 	 
 </script>
 
