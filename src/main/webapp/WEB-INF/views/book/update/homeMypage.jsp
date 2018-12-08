@@ -14,6 +14,7 @@
 
 <body>
 	<%@ include file="../home.jsp"%>
+	<script>var userAddr = '<%=user.getUserAddr()%>';</script>
 	<div id="total">
 		<%@ include file="leftmenu.jsp"%>
 		<section id="dif0" class="total">
@@ -60,7 +61,7 @@
 					<tr class="updatetr">
 						<td>주     소</td>
 						<td>
-							<%@ include file="../jusoapi.jsp"%>
+							<%@ include file="jusoapi.jsp"%>
 						</td>
 					</tr>
 				</table>
@@ -103,17 +104,23 @@
 	}
 	
 	var save = document.querySelector('#save');
-	function save(){
+	var cancel = document.querySelector('#cancel');
+	function saves(){
 		var pwd = document.querySelector('#pwd');
-		if(pwd=='<%=user.getUserPwd()%>'){
-			var newPwd = document.querySelector('#newPwd');
-			var mobile = document.querySelector('#mobile');
+		if(pwd.value=='<%=user.getUserPwd()%>'){
+			var address = '--';
+			if(postcode.value!='undefined'&&address.value!='undefined'&&address2.value!='undefined');{
+				var address = postcode.value + "-" + address.value + "-" + address2.value;
+			}
+			var newPwd = document.querySelector('#newPwd').value;
+			var mobile = document.querySelector('#mobile').value;
 			if(newPwd == null || newPwd == ''){
 				var conf = {
 						url:'/user',
 						method:'PUT',
 						param:JSON.stringify({
-							userNum:<%=user.getUserNum()%>, userMobile:mobile.value
+							userNum:<%=user.getUserNum()%>, userMobile:mobile,
+							userAddr:address
 						}),
 						success:function(res){
 							if(res==1){
@@ -124,8 +131,9 @@
 							}
 						}
 				}
+				au.send(conf);
 			}else{
-				var newPwdCh = document.querySelector('#newPwdCh');
+				var newPwdCh = document.querySelector('#newPwdCh').value;
 				if(newPwd != newPwdCh){
 					alert('바꿀비밀번호가 일치하지 않습니다. 다시 입력해 주십시오');
 				}else{
@@ -133,8 +141,8 @@
 							url:'/user',
 							method:'PUT',
 							param:JSON.stringify({
-								userNum:<%=user.getUserNum()%>, userPwd:newPwd.value,
-								userMobile:mobile.value
+								userNum:<%=user.getUserNum()%>, userPwd:newPwd,
+								userMobile:mobile, userAddr:address
 							}),
 							success:function(res){
 								if(res==1){
@@ -145,13 +153,18 @@
 								}
 							}
 					}
+					au.send(conf);
 				}
 			}
 		}else{
 			alert('기존 비밀번호가 틀렸습니다. 다시 입력해주세요');
 		}
 	}
-	save.addEventListener('click',save);
+	function back(){
+		location.href='/uri/book/homePage';
+	}
+	save.addEventListener('click',saves);
+	cancel.addEventListener('click',back);
 </script>
 </body>
 </html>

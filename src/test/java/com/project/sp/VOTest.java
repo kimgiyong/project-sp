@@ -18,28 +18,23 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.project.sp.controller.UserController;
+import com.project.sp.service.BookService;
 import com.project.sp.service.UserService;
+import com.project.sp.vo.BookVO;
 import com.project.sp.vo.UserVO;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("file:src/main/webapp/WEB-INF/spring/root-context.xml")
 public class VOTest {
 
-//	@Autowired
-//	private UserService us;
+	@Autowired
+	private BookService bs;
 	
-	public void setMap(Map<String,String> tes) {
-		tes.put("test", "test");
-	}
-	public void setMap2(Map<String,String> tes) {
-		tes = null;
-	}
 	@Test
 	public void test() {
-		Map<String,String> tes = new HashMap<String,String>();
-		setMap(tes);
-		System.out.println(tes);
-		setMap2(tes);
-		System.out.println(tes);
+		BookVO bv = new BookVO();
+		bv.setBookCode("s1");
+		bv.setUserNum(1);
+		System.out.println(bs.bookSelectLike(bv));
 	}
 }

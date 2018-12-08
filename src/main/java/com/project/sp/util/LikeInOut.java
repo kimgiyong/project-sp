@@ -12,8 +12,8 @@ public class LikeInOut {
 	@Autowired
 	private SqlSession ss;
 	
-	public List<LikeVO> likeSelectList(LikeVO like){
-		return ss.selectList("com.project.sp.LIKE.likeSelectList",like);
+	public LikeVO likeSelect(LikeVO like){
+		return ss.selectOne("com.project.sp.LIKE.likeSelect",like);
 	}
 	public List<LikeVO> likeUserSelect(int userNum){
 		return ss.selectList("com.project.sp.LIKE.likeUserSelect",userNum);

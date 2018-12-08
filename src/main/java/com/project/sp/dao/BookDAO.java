@@ -3,8 +3,6 @@ package com.project.sp.dao;
 import java.util.List;
 
 import com.project.sp.vo.BookVO;
-import com.project.sp.vo.PostVO;
-
 public interface BookDAO {
 
 	public List<BookVO> bookSelectList(BookVO book);
@@ -15,4 +13,5 @@ public interface BookDAO {
 	public int bookDelete(String bookCode);
 	public int bookLikeUp(BookVO book);
 	public int bookLikeDown(BookVO book);
+	public int bookSelectLike(BookVO book);
 }

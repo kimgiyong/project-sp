@@ -14,4 +14,5 @@ public interface BookService {
 	public int bookDelete(String bookCode);
 	public int bookLikeUp(BookVO book);
 	public int bookLikeDown(BookVO book);
+	public int bookSelectLike(BookVO book);
 }

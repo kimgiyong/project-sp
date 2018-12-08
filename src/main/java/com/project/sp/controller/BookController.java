@@ -55,4 +55,8 @@ public class BookController {
 	public @ResponseBody int bookLikeDown(@RequestBody BookVO book) {
 		return bs.bookLikeDown(book);
 	}
+	@GetMapping(value="/bookLike")
+	public @ResponseBody int bookSelectLike(@RequestBody BookVO book) {
+		return bs.bookSelectLike(book);
+	}
 }

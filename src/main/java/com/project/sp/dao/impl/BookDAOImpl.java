@@ -75,4 +75,16 @@ public class BookDAOImpl implements BookDAO {
 		
 	}
 
+	@Override
+	public int bookSelectLike(BookVO book) {
+		LikeVO lv = new LikeVO();
+		lv.setUserNum(book.getUserNum());
+		lv.setBookCode(book.getBookCode());
+		if(lio.likeSelect(lv)==null) {
+			return 1;
+		}else {
+			return 0;
+		}
+	}
+
 }

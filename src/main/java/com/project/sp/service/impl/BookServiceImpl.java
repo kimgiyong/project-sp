@@ -55,4 +55,9 @@ public class BookServiceImpl implements BookService {
 		return bd.bookLikeDown(book);
 	}
 
+	@Override
+	public int bookSelectLike(BookVO book) {
+		return bd.bookSelectLike(book);
+	}
+
 }

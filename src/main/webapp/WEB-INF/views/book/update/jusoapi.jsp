@@ -1,10 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
 <style>
 #addrbtn{
 	background-color:black;
@@ -19,8 +14,6 @@
 	margin-bottom:10px; 
 }
 </style>
-</head>
-<body>
 <input type="text" id="sample6_postcode" placeholder="우편번호" style="width: 100px;">
 <button id="addrbtn" onclick="sample6_execDaumPostcode()">우편번호 찾기</button><br>
 <input type="text" id="sample6_address" placeholder="주소"><br>
@@ -28,6 +21,15 @@
 
 <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
 <script>
+	var postcode = document.getElementById('sample6_postcode');
+	var address = document.getElementById('sample6_address');
+	var address2 = document.getElementById('sample6_address2');
+	if(userAddr!='--'){
+		userAddr = userAddr.split('-');
+		postcode.value = userAddr[0];
+		address.value = userAddr[1];
+		address2.value = userAddr[2];
+	}
     function sample6_execDaumPostcode() {
         new daum.Postcode({
             oncomplete: function(data) {
@@ -62,14 +64,12 @@
                 }
 
                 // 우편번호와 주소 정보를 해당 필드에 넣는다.
-                document.getElementById('sample6_postcode').value = data.zonecode; //5자리 새우편번호 사용
-                document.getElementById('sample6_address').value = fullAddr;
+                postcode.value = data.zonecode; //5자리 새우편번호 사용
+                address.value = fullAddr;
 
                 // 커서를 상세주소 필드로 이동한다.
-                document.getElementById('sample6_address2').focus();
+                address2.focus();
             }
         }).open();
     }
 </script>
-</body>
-</html>

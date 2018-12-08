@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<body>
 	<div id="menu">
 			<h1 id="fh">My Page</h1>
 			<ul id="menuul">
@@ -14,4 +13,3 @@
 				<li><hr></li>
 			</ul>
 		</div>
-</body>
