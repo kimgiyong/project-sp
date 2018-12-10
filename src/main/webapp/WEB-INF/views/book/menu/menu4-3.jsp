@@ -9,9 +9,6 @@
 	href="${resPath}/css/menuCss/menu4-3.css">
 <script type="text/javascript"
 	src="//dapi.kakao.com/v2/maps/sdk.js?appkey=52ed07a2a9a6bdc509cbde1cb8741f6b&libraries=services,clusterer,drawing"></script>
-<style type="text/css">
-
-</style>
 </head>
 <!-- https://developers.kakao.com/apps/253792/settings/general 나중에 이 곳에서 도메인 주소 바꾸기 -->
 <body>
@@ -19,7 +16,26 @@
 	<section id="menu4-3back">
 		<h2>* 좋은향 도서관</h2>
 		<div id="map"></div>
+		
 		<div id="mapinfo">
+			<div class="station_wayout">
+	            <h4 class="tit_findway">지하철역</h4>
+	            <ul class="list_wayout">
+	                    <li>
+	                        <em class="txt_station"><a href="http://map.daum.net?subwayId=SES1702" target="_blank" class="link_station" data-logtarget="" data-logevent="waytogo,subway">가산디지털단지역</a></em>
+	                            <span class="ico_traffic seoul_line1_small">1호선</span><!-- 호선별 대체 텍스트 부탁 드립니다. -->
+	                            <span class="ico_traffic seoul_line7_small">7호선</span><!-- 호선별 대체 텍스트 부탁 드립니다. -->
+	                        <span class="bg_bar">|</span>
+	                        <span class="txt_wayout"><span class="num_wayout">6</span>번 출구 <span class="num_wayout txt_walk">도보 3분</span></span>
+	                    </li>
+	                    <li>
+	                        <em class="txt_station"><a href="http://map.daum.net?subwayId=SES2747" target="_blank" class="link_station" data-logtarget="" data-logevent="waytogo,subway">남구로역</a></em>
+	                            <span class="ico_traffic seoul_line7_small">7호선</span><!-- 호선별 대체 텍스트 부탁 드립니다. -->
+	                        <span class="bg_bar">|</span>
+	                        <span class="txt_wayout"><span class="num_wayout">3</span>번 출구 <span class="num_wayout txt_walk">도보 15분</span></span>
+	                    </li>
+	            </ul>
+	        </div>
 			<div class="station_ride check_list">
             <h4 class="tit_findway">버스정류장</h4>
                 <div class="ride_wayout"><!-- 지도에서 일치하는 정류장에 마우스 오버 했을 때 클래스 ride_on 추가 -->
@@ -448,7 +464,9 @@
                 </div>
         </div>
 		</div>
+	<%@ include file="../footer.jsp" %>
 	</section>
+
 	<script>
 		var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
 		mapOption = {

@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+*{
+	padding:0;
+	margin:0;
+}
+
 #menu4-3back {
 	width: 100%;
 	height: 100%;
@@ -132,7 +137,7 @@
 }
 
 /* 정보 */
-#mapinfo .cont_findway .station_ride {
+#mapinfo .station_ride {
 	border-top: 1px solid #f2f2f2;
 }
 
@@ -140,7 +145,7 @@
 	display: block;
 }
 
-#mapinfo button, input, select, td, textarea, th {
+#mapinfo button,#mapinfo input,#mapinfo select,#mapinfo td,#mapinfo textarea,#mapinfo th {
     font-size: 14px;
     line-height: 1.5;
     font-family: "\B9D1\C740 \ACE0\B515",Malgun Gothic,sans-serif;
@@ -148,11 +153,11 @@
     letter-spacing: -1px;
 }
 
-#mapinfo .cont_findway .station_ride .tit_findway {
+#mapinfo .station_ride .tit_findway {
     padding-bottom: 1px;
 }
 
-#mapinfo .cont_findway .tit_findway {
+#mapinfo .tit_findway {
     padding: 13px 0 3px;
 }
 
@@ -165,7 +170,7 @@
     font-weight: bold;
 }
 
-#mapinfo .cont_findway .tit_wayout {
+#mapinfo .tit_wayout {
     overflow: hidden;
     float: left;
     width: 260px;
@@ -174,11 +179,11 @@
     font-size: 14px;
 }
 
-#mapinfo strong, b {
+#mapinfo strong,#mapinfo b {
     font-weight: bold;
 }
 
-#mapinfo .cont_findway .link_wayout {
+#mapinfo .link_wayout {
     display: inline-block;
     overflow: hidden;
     max-width: 100%;
@@ -196,12 +201,15 @@
     cursor: pointer;
     text-decoration: underline;
 }
-
-#mapinfo .cont_findway .ride_wayout .list_ride {
+/* #mapinfo .ride_wayout{
+	width:1000px;
+	height: 1000px;
+} */
+#mapinfo .ride_wayout .list_ride {
     padding: 0 0 9px 275px;
 }
 
-#mapinfo ul, menu, dir {
+#mapinfo ul,#mapinfo menu,#mapinfo dir {
     display: block;
     list-style-type: disc;
     margin-block-start: 1em;
@@ -211,7 +219,7 @@
     padding-inline-start: 40px;
 }
 
-#mapinfo .cont_findway .list_ride li {
+#mapinfo .list_ride li {
     overflow: hidden;
     position: relative;
     padding-top: 8px;
@@ -221,28 +229,31 @@
     text-align: -webkit-match-parent;
 }
 
-#mapinfo .cont_findway .list_ride .ico_traffic {
+#mapinfo .list_ride .ico_traffic {
     float: left;
     margin-right: 6px;
-}
-#mapinfo .bus_blue, .bus_circle {
-    width: 26px;
-    height: 16px;
 }
 
 #mapinfo .bus_blue {
     background-position: 0 -410px;
 }
+
+#mapinfo .bus_blue,#mapinfo  .bus_circle {
+    width: 26px;
+    height: 16px;
+}
+
 #mapinfo .ico_traffic {
     display: inline-block;
     overflow: hidden;
+    width:40px;
     font-size: 0;
     line-height: 0;
     background: url("//t1.daumcdn.net/localimg/localimages/07/2018/pc/ico_traffic_180531.png") no-repeat;
     line-height: 999px;
     vertical-align: top;
 }
-#mapinfo address, caption, cite, code, dfn, em, var {
+#mapinfo address,#mapinfo caption,#mapinfo cite,#mapinfo code,#mapinfo dfn,#mapinfo em,#mapinfo var {
     font-style: normal;
     font-weight: 400;
 }
@@ -250,15 +261,15 @@
 <!-- 버스 선별로 대체 텍스트 부탁 드립니다. --> 이거 있는 부분부터 추가
 /* https://place.map.daum.net/8067289 */
 
-#mapinfo .cont_findway .list_ride .bus_ride {
+#mapinfo .list_ride .bus_ride {
     overflow: hidden;
     position: relative;
 }
-#mapinfo .cont_findway .check_list .list_ride .num_ride {
+#mapinfo .check_list .list_ride .num_ride {
     height: 16px;
 }
-#mapinfo .cont_findway .list_ride .num_ride {
-    overflow: hidden;
+#mapinfo .list_ride .num_ride {
+    ove overflow: hidden;idden;
     float: left;
     width: 310px;
     height: auto;
@@ -272,7 +283,7 @@
 #mapinfo #kakaoContent .hide {
     display: none;
 }
-#mapinfo .cont_findway .list_ride .btn_more {
+#mapinfo .list_ride .btn_more {
     position: absolute;
     top: -5px;
     right: 3px;
@@ -282,10 +293,10 @@
 #mapinfo .hide {
     display: none;
 }
-#mapinfo .cont_findway .num_ride .bg_bar {
+#mapinfo .num_ride .bg_bar {
     margin: 3px 4px 0;
 }
-#mapinfo .cont_findway .station_ride .bg_bar {
+#mapinfo .station_ride .bg_bar {
     margin: 6px 2px 0;
     background: #ddd;
 }
@@ -312,4 +323,75 @@
     position: relative;
     background: #f3f3f3;
 }
-/* 중복 찾아서 제거 필요 */
+
+/* 지하철역 부분 */
+
+.station_wayout {
+    border-top: 1px solid #f2f2f2;
+    padding-bottom: 13px;
+}
+
+#mapinfo .list_wayout {
+    overflow: hidden;
+}
+
+.list_wayout {
+    overflow: hidden;
+}
+.list_wayout li {
+    float: left;
+    height: 24px;
+    padding: 3px 24px 0 0;
+}
+.list_wayout .txt_station {
+    float: left;
+    margin-right: 6px;
+}
+#mapinfoi,#mapinfo cite,#mapinfo em,#mapinfo var,#mapinfo address,#mapinfo dfn {
+    font-style: italic;
+}
+.list_wayout .ico_traffic {
+    float: left;
+    margin: 5px 4px 0 0;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5)S not all, only screen and (min-resolution: 1.5dppx)
+.ico_traffic {
+    background-image: url(//t1.daumcdn.net/localimg/localimages/07/2018/pc/rtn/ico_traffic_180531%402x.png);
+    -webkit-background-size: 420px 452px;
+    background-size: 420px 452px;
+}
+.seoul_line1_small {
+    width: 14px;
+    height: 14px;
+    background-position: 0 0;
+}
+.seoul_line7_small {
+    width: 14px;
+    height: 14px;
+    background-position: -120px 0;
+}
+.ico_traffic {
+    display: inline-block;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    background: url(//t1.daumcdn.net/localimg/localimages/07/2018/pc/ico_traffic_180531.png) no-repeat;
+    line-height: 999px;
+    vertical-align: top;
+}
+.list_wayout .bg_bar {
+    float: left;
+    margin: 6px 6px 0 4px;
+    background: #ddd;
+}
+.list_wayout .txt_wayout {
+    float: left;
+    color: #666;
+}
+.list_wayout .num_wayout {
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+}
+.list_wayout .txt_walk {
+    color: #fa5309;
+}
