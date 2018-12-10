@@ -10,11 +10,10 @@
 </head>
 
 <body>
-<hr>
-<div class="container">
 	<div id="listHead">
 		<span>상세 정보</span> 
 		<h3><a id="callback" onclick="go()">돌아가기</a></h3>
 	</div>
+	<div id="spaceDiv"></div>
 </body>
 </html>

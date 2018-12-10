@@ -10,8 +10,9 @@
 </head>
 <body>
 <%@ include file="../home.jsp"%>
+<hr>
+<div class="container">
 <%@ include file="../menuHead.jsp" %>
-	
 	<table id="bookInfoTbl" border="1">
 		<tr>
 			<td><img id="bookImg" src="#"></td>

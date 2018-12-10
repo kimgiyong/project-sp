@@ -8,6 +8,8 @@
 </head>
 <body>
 <%@ include file="../home.jsp" %>
+<%@ include file="../menuHead.jsp" %>
+<div></div>
 <%@ include file="../footer.jsp" %>
 </body>
 </html>
