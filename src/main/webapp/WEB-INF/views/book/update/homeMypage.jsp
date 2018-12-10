@@ -69,6 +69,7 @@
 				<div id="btn">
 					<button id="save">수정</button>
 					<button id="cancel">취소</button>
+					<button id="joinout">회원탈퇴</button>
 				</div>
 				<div class="clear"></div>
 				<a href="https://www.privacy.go.kr/" target="_blank"><img

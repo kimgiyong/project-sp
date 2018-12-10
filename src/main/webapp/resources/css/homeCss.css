@@ -34,7 +34,9 @@ body {
 	font-family: Jeju Gothic,fantasy,Hanna,Jeju Hallasan;
 	font-size: 50px;
 	margin: 50px 0 30px 0;
-	line-height:80%;
+	line-height:80%;/* 
+	background-color: #ffeeff;
+	border-radius: 10%; */
 }
 
 #logof{
@@ -52,7 +54,7 @@ body {
 }
 
 #logof3 {
-	color: orange;
+	color: darkblue;
 }
 
 #logof4 {
@@ -135,6 +137,7 @@ body {
 	outline: 0px;
 	cursor: pointer;
 	background-color: transparent !important;
+	font-size: 120%;
 }
 
 .loge:hover{
