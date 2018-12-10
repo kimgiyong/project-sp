@@ -6,13 +6,10 @@
 	<select id="bookSelectList" resultType="book">
 		select * from booktbl
 		<where>
-			<if test="bookName!=null">or bookName = #{bookName}</if>
-			<if test="bookWriter!=null">or bookWriter = #{bookWriter}</if>
+			<if test="bookName!=null">or bookName like concat('%',#{bookName},'%')</if>
+			<if test="bookWriter!=null">or bookWriter like concat('%',#{bookWriter},'%')</if>
+			<if test="bookPub!=null">or bookPub like concat('%',#{bookPub},'%')</if>
 		</where>
-	</select>
-	<select id="bookSelectListCode" resultType="book" parameterType="String">
-		select * from booktbl
-		where bookCode like concat(#{bookCode},'%')
 	</select>
 	<select id="bookSelect" resultType="book" parameterType="String">
 		select * from booktbl
@@ -20,7 +17,7 @@
 	</select>
 	<insert id="bookInsert" parameterType="book">
 		insert into booktbl
-		values(#{userNum},null,#{bookName},#{bookPub},#{bookWriter},#{bookYear},
+		values(#{userNum},#{bookCode},#{bookName},#{bookPub},#{bookWriter},#{bookYear},
 		#{bookAmount},#{bookImg},#{bookLike},now(),now(),#{bookDesc})
 	</insert>
 	<update id="bookUpdate" parameterType="book">

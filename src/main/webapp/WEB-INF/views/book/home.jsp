@@ -43,7 +43,7 @@
 			<option value="title">제목</option>
 			<option value="witer">작가</option>
 			<option value="publisher">출판사</option>
-		</select> <input type="text" name="search" placeholder="검색어를 입력하세요">
+		</select> <input type="text" name="search" id="searchBox" placeholder="검색어를 입력하세요">
 		<button class="search-btn">
 			<i class="fas fa-search"></i>
 		</button>
@@ -146,6 +146,16 @@
 	logo.addEventListener("click", function() {
 		location.href = '/uri/book/homePage';
 	});
+	var btn = document.querySelector('.search-btn');
+	
+	function search(){
+		var selection = document.querySelector('#selection');
+		var searchBox = document.querySelector('#searchBox');
+		alert(selection.value);
+		location.href="/uri/book/bookSelect/bookList?" + selection.value + "=" ;
+	}
+	
+	btn.addEventListener('click',search);
 	 
 </script>
 

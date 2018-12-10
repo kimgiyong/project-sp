@@ -23,7 +23,7 @@
 		<li>정렬</li>
 		<li><a href="#">인기순 ▼</a></li>
 		<li><a href="#">최신순 ▼</a></li>
-		<li><a href="#">페이지순 ▼</a></li>
+		<li><a href="#">글자순 ▼</a></li>
 	</ul>
 	<table id="listTable">		
 		<tbody>
