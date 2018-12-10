@@ -10,12 +10,7 @@
 </head>
 <body>
 <%@ include file="../home.jsp"%>
-<hr>
-<div class="container">
-	<div id="listHead">
-		<span>상세 정보</span> 
-		<h3><button>돌아기기</button></h3>
-	</div>
+<%@ include file="./bookhead.jsp" %>
 	
 	<table id="bookInfoTbl">
 		<tr>
@@ -31,6 +26,27 @@
 			</ul></td>
 		</tr>
 	</table>
+	
+	<div id="commentsContainer">
+		<table id="tableComment" border="1" style="border-collapse:collapse">
+			<thead>
+				<tr>
+					<td colspan="3"></td>
+				</tr>
+				<tr>
+					<td>댓글달기</td>
+					<td><textarea type="text" placeholder="내용을 입력하여 주십시오." id="comment"></textarea><br>
+						<button class="commentbtn">추가</button></td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>회원 이름님</td>
+					<td><input type="text" disabled="disabled" class="comments"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 </div>
 
 <%@ include file="../footer.jsp"%>
@@ -38,12 +54,25 @@
 <script>
 	var likeToggle = document.getElementById("likeToggle");
 	var likeImg = document.getElementById("likeImg");
-	
+	var callback =  document.getElementById("callback");
+		
 	likeToggle.addEventListener("click",function(){
+		if(likeImg.src.match("space") == null){
 			likeImg.src = "/resources/img/heart.gif";
-		window.setTimeout(function() {
-			likeImg.src = "/resources/img/heart.png";
-		}, 750);
+			window.setTimeout(function() {
+				likeImg.src = "/resources/img/spaceHeart.png";
+			}, 750);			
+		}else{				
+			likeImg.src = "/resources/img/heart.gif";
+			window.setTimeout(function() {
+				likeImg.src = "/resources/img/heart.png";
+			}, 750);
+		}
 	});
+	
+	function go(){
+		window.history.go(-1);
+	}
+	/* callback.addEventLitener("click",history.go(-1))  */
 </script>
 </html>

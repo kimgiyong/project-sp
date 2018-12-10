@@ -29,14 +29,14 @@
 		<tbody>
 			<tr>
 				<td>1</td>
-				<td><img src="#"><br><span class="bookTitle">제목</span></td>
+				<td><img id="bookImg" src="#"><br><span class="bookTitle">제목</span></td>
 				<td>
 					저작자 : 김기용<br><br>
 					출판사 : 은향사<br><br>
 					좋아요 개수 : 0<br><br> 
 					출판일 : 2018.12.05
 				</td>
-				<td><a href="#" class="hover">상세정보</a></td>
+				<td><a href="/uri/book/bookSelect/bookOne" class="hover">상세정보</a></td>
 			</tr>
 		</tbody>
 	</table>
