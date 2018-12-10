@@ -3,6 +3,30 @@
 *{
 	padding:0;
 	margin:0;
+	text-decoration: none;
+	color:#000;
+}
+
+/* 지도 */
+
+#mapinfotext #mapinfotexta{
+	color:#f00000;
+	font-weight: bold;
+	font-size: 150%;
+}
+
+#mapinfotext{
+	display: inline-block;
+}
+
+#mapinfotext #mapinfotextb{
+	color:#2b00bd;
+	font-size: 120%;
+}
+
+#mapinfo{
+	width: 1200px;
+	height: auto;
 }
 
 #menu4-3back {
@@ -15,6 +39,7 @@
 	width: 1200px;
 	height: 600px;
 	background-color: white;
+	border: 1px solid #b8b8b8;
 }
 
 #menu4-3back h2 {
@@ -97,6 +122,49 @@
 	height: 75px;
 }
 
+/* 지도 밑에 버튼 3개 */
+.desc {
+    width: 1200px;
+    height: 30px;
+}
+
+.desc .btns {
+    float: right;
+}
+
+.desc .btns button.big_map {
+    width: 82px;
+    background-position: 10px -35px;
+    padding-left: 28px;
+    border-left: #b8b8b8 1px solid;
+}
+
+.desc .btns button.route {
+    width: 69px;
+    background-position: 10px -79px;
+}
+
+.desc .btns button {
+    display: block;
+    float: left;
+    height: 30px;
+    padding: 0 0 2px 26px;
+    text-align: left;
+    letter-spacing: -1px;
+    font-size: 12px;
+    color: #313131;
+    border: 1px solid #b8b8b8;
+    border-width: 0 1px 1px 0;
+    background: url(//www.saraminimage.co.kr/ui/mapapi/ico_map_btn.png) no-repeat 10px 0;
+    box-sizing: border-box;
+}
+
+.desc button {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
 .desc .ellipsis {
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -153,14 +221,6 @@
     letter-spacing: -1px;
 }
 
-#mapinfo .station_ride .tit_findway {
-    padding-bottom: 1px;
-}
-
-#mapinfo .tit_findway {
-    padding: 13px 0 3px;
-}
-
 #mapinfo h4 {
     display: block;
     margin-block-start: 1.33em;
@@ -170,17 +230,34 @@
     font-weight: bold;
 }
 
+.screen_out {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
 #mapinfo .tit_wayout {
+	height:50px;
+	border:1px red solid; 
+
     overflow: hidden;
     float: left;
-    width: 260px;
+    width: 290px;
     padding-top: 6px;
     font-weight: 400;
     font-size: 14px;
 }
-
-#mapinfo strong,#mapinfo b {
-    font-weight: bold;
+#mapinfo .txt_number {
+    float: left;
+    padding-left: 4px;
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+    color: #666;
+    letter-spacing: 0;
+    vertical-align: top;
 }
 
 #mapinfo .link_wayout {
@@ -192,19 +269,26 @@
     vertical-align: top;
 }
 
+#mapinfo strong,#mapinfo b {
+    font-weight: bold;
+}
+
 #mapinfo a {
     color: #000;
     text-decoration: none;
 }
+
 #mapinfo a:-webkit-any-link {
     color: -webkit-link;
     cursor: pointer;
     text-decoration: underline;
 }
-/* #mapinfo .ride_wayout{
-	width:1000px;
-	height: 1000px;
-} */
+#mapinfo .ride_wayout{
+	
+	height: 50px;
+	border: 1px solid blue;
+}
+
 #mapinfo .ride_wayout .list_ride {
     padding: 0 0 9px 275px;
 }
@@ -229,11 +313,6 @@
     text-align: -webkit-match-parent;
 }
 
-#mapinfo .list_ride .ico_traffic {
-    float: left;
-    margin-right: 6px;
-}
-
 #mapinfo .bus_blue {
     background-position: 0 -410px;
 }
@@ -243,23 +322,10 @@
     height: 16px;
 }
 
-#mapinfo .ico_traffic {
-    display: inline-block;
-    overflow: hidden;
-    width:40px;
-    font-size: 0;
-    line-height: 0;
-    background: url("//t1.daumcdn.net/localimg/localimages/07/2018/pc/ico_traffic_180531.png") no-repeat;
-    line-height: 999px;
-    vertical-align: top;
-}
 #mapinfo address,#mapinfo caption,#mapinfo cite,#mapinfo code,#mapinfo dfn,#mapinfo em,#mapinfo var {
     font-style: normal;
     font-weight: 400;
 }
-
-<!-- 버스 선별로 대체 텍스트 부탁 드립니다. --> 이거 있는 부분부터 추가
-/* https://place.map.daum.net/8067289 */
 
 #mapinfo .list_ride .bus_ride {
     overflow: hidden;
@@ -326,72 +392,105 @@
 
 /* 지하철역 부분 */
 
-.station_wayout {
+#mapinfo .station_wayout {
     border-top: 1px solid #f2f2f2;
     padding-bottom: 13px;
 }
 
-#mapinfo .list_wayout {
-    overflow: hidden;
+#mapinfo .station_ride .tit_findway {
+    padding-bottom: 1px;
 }
 
-.list_wayout {
-    overflow: hidden;
+#mapinfo .tit_findway {
+    padding: 13px 0 3px;
 }
-.list_wayout li {
-    float: left;
-    height: 24px;
-    padding: 3px 24px 0 0;
-}
-.list_wayout .txt_station {
-    float: left;
-    margin-right: 6px;
-}
-#mapinfoi,#mapinfo cite,#mapinfo em,#mapinfo var,#mapinfo address,#mapinfo dfn {
-    font-style: italic;
-}
-.list_wayout .ico_traffic {
-    float: left;
-    margin: 5px 4px 0 0;
-}
+
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5)S not all, only screen and (min-resolution: 1.5dppx)
 .ico_traffic {
     background-image: url(//t1.daumcdn.net/localimg/localimages/07/2018/pc/rtn/ico_traffic_180531%402x.png);
     -webkit-background-size: 420px 452px;
     background-size: 420px 452px;
 }
-.seoul_line1_small {
-    width: 14px;
-    height: 14px;
-    background-position: 0 0;
+
+#mapinfo .list_wayout .ico_traffic {
+    float: left;
+    margin: 5px 4px 0 0;
 }
-.seoul_line7_small {
-    width: 14px;
-    height: 14px;
-    background-position: -120px 0;
+
+
+#mapinfo .list_ride .ico_traffic {
+    float: left;
+    margin-right: 6px;
 }
-.ico_traffic {
+
+#mapinfo .ico_traffic {
     display: inline-block;
     overflow: hidden;
     font-size: 0;
     line-height: 0;
-    background: url(//t1.daumcdn.net/localimg/localimages/07/2018/pc/ico_traffic_180531.png) no-repeat;
+    background: url("//t1.daumcdn.net/localimg/localimages/07/2018/pc/ico_traffic_180531.png") no-repeat;
     line-height: 999px;
     vertical-align: top;
 }
-.list_wayout .bg_bar {
+
+#mapinfo .bus_blue,#mapinfo  .bus_circle{
+	width: 26px;
+    height: 16px;
+}
+
+#mapinfo .bus_blue {
+    background-position: 0 -410px;
+}
+
+#mapinfo .seoul_line1_small {
+    height: 14px;
+    width:14px;
+    background-position: 0 0;
+}
+
+#mapinfo .seoul_line7_small {
+    height: 14px;
+    width:14px;
+    background-position: -120px 0;
+}
+
+#mapinfo .list_wayout {
+    overflow: hidden;
+}
+
+#mapinfo .list_wayout li {
+    float: left;
+    height: 24px;
+    padding: 3px 24px 0 0;
+}
+
+#mapinfo .list_wayout .txt_station {
+    float: left;
+    margin-right: 6px;
+}
+
+#mapinfo .list_wayout .txt_station a{
+	color:#000;
+	text-decoration: none;
+}
+#mapinfo .list_wayout .txt_station a:hover{
+	color:#999;
+	text-decoration:underline;
+}
+
+#mapinfo .list_wayout .bg_bar {
     float: left;
     margin: 6px 6px 0 4px;
     background: #ddd;
 }
-.list_wayout .txt_wayout {
+#mapinfo .list_wayout .txt_wayout {
     float: left;
     color: #666;
 }
-.list_wayout .num_wayout {
+#mapinfo .list_wayout .num_wayout {
     font-family: Arial,sans-serif;
     font-size: 14px;
 }
-.list_wayout .txt_walk {
+#mapinfo .list_wayout .txt_walk {
     color: #fa5309;
 }

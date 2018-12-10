@@ -13,11 +13,20 @@
 <!-- https://developers.kakao.com/apps/253792/settings/general 나중에 이 곳에서 도메인 주소 바꾸기 -->
 <body>
 	<%@ include file="../home.jsp"%>
+	<%-- <%@ include file="../menuHead.jsp" %> --%>
 	<section id="menu4-3back">
 		<h2>* 좋은향 도서관</h2>
 		<div id="map"></div>
 		
+		<div class="desc">
+			<div class="btns">
+				<button type="button" class="big_map" data-type="wideview" onclick="window.open('http://map.daum.net/?urlX=444554.0&urlY=1112844.0&name=%EC%A0%9C%EC%9D%B4%ED%94%8C%EB%9D%BC%EC%B8%A0')">크게보기</button>
+				<button type="button" class="route" data-type="findtheway" onclick="window.open('http://map.daum.net/?eX=444554&eY=1112844&eName=%EC%A0%9C%EC%9D%B4%ED%94%8C%EB%9D%BC%EC%B8%A0')">길찾기</button>
+			</div>
+		</div>
+		
 		<div id="mapinfo">
+		<div id="mapinfotext"> <span id="mapinfotexta">♠ 좋은향 도서관 오시는 교통편 </span><span id="mapinfotextb"> - 서울 금천구 가산디지털1로 186</span></div>
 			<div class="station_wayout">
 	            <h4 class="tit_findway">지하철역</h4>
 	            <ul class="list_wayout">
@@ -36,6 +45,7 @@
 	                    </li>
 	            </ul>
 	        </div>
+	        <hr>
 			<div class="station_ride check_list">
             <h4 class="tit_findway">버스정류장</h4>
                 <div class="ride_wayout"><!-- 지도에서 일치하는 정류장에 마우스 오버 했을 때 클래스 ride_on 추가 -->
@@ -499,7 +509,7 @@
 		// 마커를 지도에 표시합니다.
 		marker.setMap(map);
 
-		/*// 마커에 커서가 오버됐을 때 마커 위에 표시할 인포윈도우를 생성합니다
+		/* // 마커에 커서가 오버됐을 때 마커 위에 표시할 인포윈도우를 생성합니다
 		var iwContent = '<div style="padding:5px;">좋은향 도서관</div>'; // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
 
 		// 인포윈도우를 생성합니다
@@ -527,10 +537,13 @@
 							// 인포윈도우를 생성합니다
 							var infowindow = new daum.maps.InfoWindow({
 								content : iwContent
+								
+							// 다른 곳을 클릭했을때 좋은향 도서관 띄운 것을 없애버립니다.
+							overlay.setMap(null); 
 							});
 						}); 
 
-		// 마커에 마우스오버 이벤트를 등록합니다
+		 // 마커에 마우스오버 이벤트를 등록합니다
 		daum.maps.event.addListener(marker, 'mouseover', function() {
 			// 마커에 마우스오버 이벤트가 발생하면 인포윈도우를 마커위에 표시합니다
 			infowindow.open(map, marker);
@@ -540,7 +553,7 @@
 		daum.maps.event.addListener(marker, 'mouseout', function() {
 			// 마커에 마우스아웃 이벤트가 발생하면 인포윈도우를 제거합니다
 			infowindow.close();
-		}); */
+		});  */
 		
 		// 커스텀 오버레이에 표시할 컨텐츠 입니다
 		// 커스텀 오버레이는 아래와 같이 사용자가 자유롭게 컨텐츠를 구성하고 이벤트를 제어할 수 있기 때문에
