@@ -12,7 +12,7 @@
 <%@ include file="../home.jsp"%>
 <%@ include file="./bookhead.jsp" %>
 	
-	<table id="bookInfoTbl">
+	<table id="bookInfoTbl" border="1">
 		<tr>
 			<td><img id="bookImg" src="#"></td>
 			<td><ul>
@@ -24,6 +24,7 @@
 				<li>수량 : 재고수</li>
 				<li>책설명 : 책설명</li> 
 			</ul></td>
+			<td rowspan="2"><button>대출하기</button></td>
 		</tr>
 	</table>
 	
@@ -35,7 +36,7 @@
 				</tr>
 				<tr>
 					<td>댓글달기</td>
-					<td><textarea type="text" placeholder="내용을 입력하여 주십시오." id="comment"></textarea><br>
+					<td><textarea type="text" placeholder="내용을 입력하여 주십시오." id="comment"></textarea>
 						<button class="commentbtn">추가</button></td>
 				</tr>
 			</thead>
