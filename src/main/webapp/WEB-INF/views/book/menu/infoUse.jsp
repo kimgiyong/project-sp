@@ -7,6 +7,7 @@
 	<title>이용시간</title>
 </head>
 <body>
-
+<%@ include file="../home.jsp" %>
+<%@ include file="../footer.jsp" %>
 </body>
 </html>

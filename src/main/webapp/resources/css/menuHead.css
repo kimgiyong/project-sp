@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+#listHead{
+	width: 1500px;
+    height: 150px;
+    border-bottom: 2px solid #aaa;
+    line-height: 210px;
+    padding: 0 35px;
+    margin-bottom:100px;
+}
+#listHead span{
+	float:left;
+	font-size:50px;
+	font-weight:bold;
+	color:#444;  
+	margin-left:100px;
+}  
+#listHead h3>a{
+	float:right;
+	color:aaa;	
+}
+
+
+#listTable{
+	width:1200px;
+	border:1px solid #ccc;
+	text-align:center;
+	margin:0px;
+	border-collapse:collapse;
+	margin-left:150px;
+	font-size:20px;
+}
+#listTable td{
+	padding:20px;
+}
+
+#callback{
+	cursor: pointer;
+}

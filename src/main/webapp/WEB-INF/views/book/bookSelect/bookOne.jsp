@@ -10,7 +10,7 @@
 </head>
 <body>
 <%@ include file="../home.jsp"%>
-<%@ include file="./bookhead.jsp" %>
+<%@ include file="../menuHead.jsp" %>
 	
 	<table id="bookInfoTbl" border="1">
 		<tr>
@@ -23,7 +23,7 @@
 				<li><span id="like">좋아요 : 좋아요개수</span><button id="likeToggle"><img  id="likeImg" src="/resources/img/heart.png"></button></li>
 				<li>수량 : 재고수</li>
 			</ul></td>
-			<td rowspan="2"><button class="bookOnebtn">대출하기</button><br><button class="bookOnebtn">줄거리 찾아보기</button></td> 
+			<td rowspan="2"><button class="bookOnebtn">대출하기</button><br><button class="bookOnebtn" onclick="goSearchpage()">웹에서 책정보  찾기</button></td> 
 		</tr>
 	</table>
 	
@@ -72,6 +72,10 @@
 	
 	function go(){
 		window.history.go(-1);
+	}
+	
+	function goSearchpage(){
+		window.open("https://book.naver.com/search/search.nhn?sm=sta_hty.book&sug=&where=nexearch&query=책이름");
 	}
 	/* callback.addEventLitener("click",history.go(-1))  */
 </script>

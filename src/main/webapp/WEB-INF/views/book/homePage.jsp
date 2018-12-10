@@ -192,7 +192,7 @@
 		</div>
 		<div class="iconMenu">	
 			<div class="iconBox">	
-				<a href="#"><img src="${rootPath}/resources/img/homeimg/icon/rental-icon1.png"></a>
+				<a href="/uri/book/bookSelect/bookList"><img src="${rootPath}/resources/img/homeimg/icon/rental-icon1.png"></a>
 			</div>
 			<a href="#">대출하기</a>
 		</div>
