@@ -106,12 +106,13 @@
 	
 	var save = document.querySelector('#save');
 	var cancel = document.querySelector('#cancel');
+	var joinout = document.querySelector('#joinout');
 	function saves(){
 		var pwd = document.querySelector('#pwd');
 		if(pwd.value=='<%=user.getUserPwd()%>'){
-			var address = '--';
-			if(postcode.value!='undefined'&&address.value!='undefined'&&address2.value!='undefined');{
-				var address = postcode.value + "-" + address.value + "-" + address2.value;
+			var addr = '--';
+			if(postcode.value!=''&&address.value!='');{
+				addr = postcode.value + "-" + address.value + "-" + address2.value;
 			}
 			var newPwd = document.querySelector('#newPwd').value;
 			var mobile = document.querySelector('#mobile').value;
@@ -120,8 +121,9 @@
 						url:'/user',
 						method:'PUT',
 						param:JSON.stringify({
-							userNum:<%=user.getUserNum()%>, userMobile:mobile,
-							userAddr:address
+							userNum:<%=user.getUserNum()%>, userName:'<%=user.getUserName()%>',
+							userId:'<%=user.getUserId()%>', userPwd:pwd.value, userBirth:'<%=user.getUserBirth()%>',
+							userMobile:mobile, userAddr:addr, userScore:<%=user.getUserScore()%>, userLevel:<%=user.getUserLevel()%>
 						}),
 						success:function(res){
 							if(res==1){
@@ -142,8 +144,9 @@
 							url:'/user',
 							method:'PUT',
 							param:JSON.stringify({
-								userNum:<%=user.getUserNum()%>, userPwd:newPwd,
-								userMobile:mobile, userAddr:address
+								userNum:<%=user.getUserNum()%>, userName:'<%=user.getUserName()%>',
+								userId:'<%=user.getUserId()%>', userPwd:newPwd, userBirth:'<%=user.getUserBirth()%>',
+								userMobile:mobile, userAddr:addr, userScore:<%=user.getUserScore()%>, userLevel:<%=user.getUserLevel()%>
 							}),
 							success:function(res){
 								if(res==1){
@@ -164,8 +167,31 @@
 	function back(){
 		location.href='/uri/book/homePage';
 	}
+	function out(){
+		if(confirm("정말 탈퇴하시겠습니까?")){
+			var pwd = document.querySelector('#pwd');
+			if(pwd.value=='<%=user.getUserPwd()%>'){
+				var conf ={
+					url:'/user/'+<%=user.getUserNum()%>,
+					method:'DELETE',
+					success:function(res){
+						if(res==1){
+							alert('탈퇴하셨습니다.');
+							location.href="/uri/book/homePage";
+						}else{
+							alert('탈퇴에 실패하였습니다.');
+						}
+					}
+				}
+				au.send(conf);
+			}else{
+				alert('기존비밀번호가 틀렷습니다.');
+			}
+		}
+	}
 	save.addEventListener('click',saves);
 	cancel.addEventListener('click',back);
+	joinout.addEventListener('click',out);
 </script>
 </body>
 </html>

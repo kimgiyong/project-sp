@@ -52,14 +52,26 @@ public class UserController {
 		}
 	}
 	
+	@SuppressWarnings("deprecation")
 	@PutMapping(value="/user")
-	public @ResponseBody int userUpdate(@RequestBody UserVO user) {
+	public @ResponseBody int userUpdate(@RequestBody UserVO user, HttpSession hs, HttpServletRequest request) {
+		if(ls.userUpdate(user)==1) {
+			hs = request.getSession(true);
+			hs.removeAttribute("user");
+			hs.setAttribute("user", user);
+		}
 		return ls.userUpdate(user);
 	}
 	
 	@DeleteMapping(value="/user/{userNum}")
-	public @ResponseBody int userDelete(@PathVariable int userNum) {
-		return ls.userDelete(userNum);
+	public @ResponseBody int userDelete(@PathVariable int userNum,HttpSession hs, HttpServletRequest request) {
+		hs = request.getSession(false);
+		if(hs != null) {
+			hs.invalidate();
+			return ls.userDelete(userNum);
+		}else {
+			return 2;
+		}
 	}
 	
 	@GetMapping(value="/user")
@@ -92,7 +104,6 @@ public class UserController {
 			return key;
 		}else {
 			request.setAttribute("user", user);
-			request.setAttribute("key", key);
 			return key;
 		}
 	}
