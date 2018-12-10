@@ -58,7 +58,7 @@
 	<ul id="menuBox">
 		<li class="mainMenu"><a href="#">좋은 도서</a>
 			<ul class="subMenuBox">
-				<li class="subMenu"><a href="#">도서대출</a></li>
+				<li class="subMenu"><a href="/uri/book/bookSelect/bookList">도서대출</a></li>
 				<li class="subMenu"><a href="#">도서반납</a></li>
 				<li class="subMenu"><a href="#">도서신청</a></li>
 			</ul>

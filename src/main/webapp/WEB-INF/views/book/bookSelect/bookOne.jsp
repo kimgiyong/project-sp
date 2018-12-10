@@ -19,12 +19,11 @@
 				<li>도서명 : 책이름</li>
 				<li>저작자 : 작가이름</li>
 				<li>출판사 : 출판사이름</li>
-				<li>저작일 : 저작 날짜</li>
+				<li>출판일 : 출판 날짜</li>
 				<li><span id="like">좋아요 : 좋아요개수</span><button id="likeToggle"><img  id="likeImg" src="/resources/img/heart.png"></button></li>
 				<li>수량 : 재고수</li>
-				<li>책설명 : 책설명</li> 
 			</ul></td>
-			<td rowspan="2"><button>대출하기</button></td>
+			<td rowspan="2"><button class="bookOnebtn">대출하기</button><br><button class="bookOnebtn">줄거리 찾아보기</button></td> 
 		</tr>
 	</table>
 	
