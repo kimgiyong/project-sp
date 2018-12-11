@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!doctype html>
 <footer>
 		<div class="logoBox" id="foologoBox">
 			<span id="logof1">좋은</span> <span id="logof2">향</span> <br>

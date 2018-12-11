@@ -31,7 +31,7 @@
 
 #menu4-3back {
 	width: 100%;
-	height: 100%;
+	height: auto;
 	background-color: #fff;
 }
 
@@ -435,6 +435,7 @@
 #mapinfo .list_ride .ico_traffic {
     float: left;
     margin-right: 6px;
+    margin-left: 10px;
 }
 
 #mapinfo .ico_traffic {
