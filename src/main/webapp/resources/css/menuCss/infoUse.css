@@ -19,3 +19,32 @@
 	padding: 40px 20px;
 	font-size:18px;
 }
+
+#seach img{
+	text-align: left;
+	border: 1px blue solid;
+	width: 100%;
+}
+
+.details .ex{
+	color:#9797ff;
+}
+
+.capchurimg{
+	border: 1px solid blue
+    width: 800px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.capchurimg img:nth-child(1){
+	padding-left:50px;
+	padding-top:50px;
+}
+.capchurimg img:nth-child(2){
+		
+}
+.capchurimg img:nth-child(3){
+		padding-left:50px;
+}

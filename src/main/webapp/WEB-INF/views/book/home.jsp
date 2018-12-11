@@ -79,7 +79,7 @@
 		</li>
 		<li class="mainMenu"><a href="#">좋은 소개</a>
 			<ul class="subMenuBox" style="width:376px">
-				<li class="subMenu" style="width:376px"><a href="#">도서관 이용방법</a></li>
+				<li class="subMenu" style="width:376px"><a href="/uri/book/menu/infoUse">도서관 이용방법</a></li>
 				<li class="subMenu" style="width:376px"><a href="#">도서관 연혁</a></li>
 				<li class="subMenu" style="width:376px"><a href="/uri/book/menu/menu4-3">도서관 위치</a></li>
 			</ul>

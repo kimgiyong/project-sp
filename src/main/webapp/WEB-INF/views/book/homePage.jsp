@@ -180,9 +180,9 @@
 		</div>
 		<div class="iconMenu">	
 			<div class="iconBox">	
-				<a href="#"><img src="${rootPath}/resources/img/homeimg/icon/Q&A-icon1.png"></a>
+				<a href="/uri/book/menu/qna"><img src="${rootPath}/resources/img/homeimg/icon/Q&A-icon1.png"></a>
 			</div>
-			<a href="#">질의 응답</a>
+			<a href="/uri/book/menu/qna">질의 응답</a>
 		</div>
 		<div class="iconMenu">	
 			<div class="iconBox">	
@@ -194,13 +194,13 @@
 			<div class="iconBox">	
 				<a href="/uri/book/bookSelect/bookList"><img src="${rootPath}/resources/img/homeimg/icon/rental-icon1.png"></a>
 			</div>
-			<a href="#">대출하기</a>
+			<a href="/uri/book/bookSelect/bookList">대출하기</a>
 		</div>
 		<div class="iconMenu">	
 			<div class="iconBox">	
-				<a href="#"><img src="${rootPath}/resources/img/homeimg/icon/info-icon1.png"></a>
+				<a href="/uri/book/menu/infoUse"><img src="${rootPath}/resources/img/homeimg/icon/info-icon1.png"></a>
 			</div>
-			<a href="#">이용 안내</a>
+			<a href="/uri/book/menu/infoUse">이용 안내</a>
 		</div>
 	</div>	
 </div>
