@@ -283,9 +283,9 @@
     text-decoration: underline;
 }
 #mapinfo .ride_wayout{
-	overflow: hidden;/* 
-	height: 50px;
-	border: 1px solid blue; */
+	overflow: hidden;
+	height: 80px;
+	border: 1px solid blue;
 }
 
 #mapinfo .ride_wayout .list_ride {
@@ -304,6 +304,8 @@
 
 #mapinfo .list_ride li {
     overflow: hidden;
+   /*  height:50px; */
+    border:1px solid purple;
     position: relative;
     padding-top: 8px;
 }
@@ -455,6 +457,12 @@
 
 #mapinfo .bus_blue {
     background-position: 0 -410px;
+}
+
+#mapinfo .bus_green {
+    width: 26px;
+    height: 16px;
+    background-position: -60px -410px;
 }
 
 #mapinfo .seoul_line1_small {
