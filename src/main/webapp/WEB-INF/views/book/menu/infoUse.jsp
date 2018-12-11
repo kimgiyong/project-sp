@@ -32,7 +32,7 @@
 		<div id="borrow" class="contentDiv">
 			<span class="title">대출 방법</span>
 			<div class="details">
-				세부내용들이 들어갈 자리입니다.
+				
 			</div>
 		</div>
 		<div id="borrowInfo" class="contentDiv">
