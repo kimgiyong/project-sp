@@ -7,7 +7,7 @@
 
 .contentDiv{
 	width:80%;
-	border:1px solid red; 
+	border-bottom: 1px solid #b8aa94;
 }
 
 #content .title{
@@ -30,12 +30,30 @@
 	color:#9797ff;
 }
 
+.details{
+	line-height: 150%;
+}
+
+.details .ranking{
+	font-weight: bold;
+	color: darkred;
+}
+
+.details .texta{
+	color: blue;
+}
+
+.details .textb{
+	color: red;
+}
+
 .capchurimg{
 	border: 1px solid blue
     width: 800px;
     height: 300px;
     overflow: hidden;
-    border-radius: 50%;
+    border:1px solid #F00;
+    border-radius: 20%;
 }
 
 .capchurimg img:nth-child(1){
@@ -48,3 +66,4 @@
 .capchurimg img:nth-child(3){
 		padding-left:50px;
 }
+

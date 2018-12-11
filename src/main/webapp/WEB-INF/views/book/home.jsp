@@ -4,6 +4,7 @@
 	href="${rootPath}/resources/css/homeCss.css">
 <link href="http://fonts.googleapis.com/earlyaccess/jejuhallasan.css"
 	rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Black+And+White+Picture|Dokdo|East+Sea+Dokdo|Gamja+Flower|Gugi|Nanum+Pen+Script" rel="stylesheet">
 <script type="text/javascript"
 	src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <%
@@ -21,6 +22,7 @@
 	}
 	window.addEventListener('load', doInit);
 </script>
+<div class="body"></div>
 <header>
 	<div id="login">
 		<a><button id="loge1" value="loge1" class="loge"
@@ -66,7 +68,7 @@
 		<li class="mainMenu"><a href="#">좋은 소통</a>
 			<ul class="subMenuBox">
 				<li class="subMenu"><a href="#">공지사항</a></li>
-				<li class="subMenu"><a href="/uri/book/menu/qna">Q & A</a></li>
+				<li class="subMenu"><a href="/uri/book/menu/qna/qnaReply">Q & A</a></li>
 				<li class="subMenu"><a href="#">자유게시판</a></li>
 			</ul>
 		</li>

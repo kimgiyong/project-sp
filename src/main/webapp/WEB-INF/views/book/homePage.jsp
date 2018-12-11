@@ -180,9 +180,9 @@
 		</div>
 		<div class="iconMenu">	
 			<div class="iconBox">	
-				<a href="/uri/book/menu/qna"><img src="${rootPath}/resources/img/homeimg/icon/Q&A-icon1.png"></a>
+				<a href="/uri/book/menu/qna/qnaReply"><img src="${rootPath}/resources/img/homeimg/icon/Q&A-icon1.png"></a>
 			</div>
-			<a href="/uri/book/menu/qna">질의 응답</a>
+			<a href="/uri/book/menu/qna/qnaReply">질의 응답</a>
 		</div>
 		<div class="iconMenu">	
 			<div class="iconBox">	
