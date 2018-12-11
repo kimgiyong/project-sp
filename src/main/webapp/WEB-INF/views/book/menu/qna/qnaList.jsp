@@ -32,14 +32,16 @@
 				<th class="member">회원명님</th>
 				<th class="summary">회원이 질문의 대략적인 내용을 적어두는 자리입니다.</th>
 			</tr>
-			<tr id="detail">
+			<tr class="contentsD">
+				<td colspan="2"><textarea></textarea></td>
+			</tr>
+			<tr id="detail"> 
 				<td colspan="2"> 
-					
 					<div id="answers">
 						<ul id="answerList">
-							<li><span class="replier">답변자님</span><br><textarea class="contentsD" placeholder="답변자님의 답변입니다."></textarea></li>
-							<li><span class="replier">답변자님</span><br><textarea class="contentsD" placeholder="답변자님의 답변입니다."></textarea></li>
-							<li><span class="replier">답변자님</span><br><textarea class="contentsD" placeholder="답변자님의 답변입니다."></textarea></li>
+							<li><span class="replier">답변자님</span><br><textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea></li>
+							<li><span class="replier">답변자님</span><br><textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea></li>
+							<li><span class="replier">답변자님</span><br><textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea></li>
 						</ul>
 					</div>
 					<hr>
