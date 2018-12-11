@@ -24,7 +24,7 @@
 				<li><span id="like">좋아요 : 좋아요개수</span><button id="likeToggle"><img  id="likeImg" src="/resources/img/heart.png"></button></li>
 				<li>수량 : 재고수</li>
 			</ul></td>
-			<td rowspan="2"><button class="bookOnebtn">대출하기</button><br><button class="bookOnebtn" onclick="goSearchpage()">웹에서 책정보  찾기</button></td> 
+			<td rowspan="2"><button class="bookOnebtn bor">대출하기</button><br><button class="bookOnebtn web" onclick="goSearchpage()">웹서치<!-- 에서 책정보  찾기 --></button></td> 
 		</tr>
 	</table>
 	

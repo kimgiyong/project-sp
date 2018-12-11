@@ -85,7 +85,18 @@
 .bookOnebtn{
 	width:120px;
 	height:50px;
-	background: #abc;
+	background: rgba(164,227,245,0.3);
 	margin:10px;   
 	color:gary;
+	font-size: 150%;
+	border-radius: 30%;
+}
+
+.bookOnebtn:hover{
+	font-weight:bold;
+	cursor: pointer;
+}
+
+.web{
+	120%;
 }
