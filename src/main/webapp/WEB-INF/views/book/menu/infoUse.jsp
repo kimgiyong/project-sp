@@ -23,17 +23,17 @@
 		<div id="spaceDiv"></div>
 
 		<div id="tags">
-			<a href="#borrow">#대출방법</a> <a href="#borrowInfo">#대출안내</a> <a
-				href="#apply">#도서신청</a> <a href="#seach">#도서찾기</a> <a href="#donate">#기부방법</a>
-			<a href="#donateUses">#기부활용처</a>
+			<a href="#borrow" class="abtn">#대출방법</a> <a href="#borrowInfo" class="abtn">#대출안내</a> <a
+				href="#apply" class="abtn">#도서신청</a> <a href="#seach" class="abtn">#도서찾기</a> <a href="#donate" class="abtn">#기부방법</a>
+			<a href="#donateUses" class="abtn">#기부활용처</a>
 		</div>
 
 		<div id="content">
 			<div id="borrow" class="contentDiv">
 				<span class="title">대출 방법</span>
 				<div class="details">
-					1.상단 메뉴 왼쪽 첫번째 칸의 첫번재 줄에 있는 도서 대출로 들어가서 <br>&ensp;대출하고 싶은 도서를 상단의 메뉴바에 검색후 '상세보기'를 클릭후 대출하기 버튼을 클릭한다.
-					2.
+					1.상단 메뉴 왼쪽 첫번째 칸의 첫번재 줄에 있는 도서 대출로 들어가서 <br>&ensp;대출하고 싶은 도서를 상단의 메뉴바에 검색후 '상세보기'를 클릭후 대출하기 버튼을 클릭한다.<br>
+					<br>2.상단의 검색박스에 대출할 책을 검색하고 상세정보를 클릭후 재고가 남아있다면 대출하기 버튼을 누른다.
 					
 				</div>
 			</div>
@@ -69,11 +69,11 @@
 				<div class="details">
 					딱히 제목이나 작가나 출판사가 아니라 그냥 아무거나 검색하고 싶으면<br> 상단에 보이는 검색 창에 검색할
 					내용을 쓰고 우측에 있는 동그라미 버튼을 누른다.<br> 상단에 보이는 검색 창에 원하는 책의 제목이나, 작가,
-					출판사 별로 검색을 할 수 있고,<br><br> <span class="ex">예시 )</span>
+					출판사 별로 검색을 할 수 있다.<br><br> <span class="ex">예시 )</span>
 					<div class="capchurimg">
-						<img src="${resPath}/img/menu/userinfo/capchur1.PNG" alt="capchur1.png"><br> 
-						<img src="${resPath}/img/menu/userinfo/capchur2.PNG" alt="capchur2.png"><br> 
-						<img src="${resPath}/img/menu/userinfo/capchur3.PNG" alt="capchur3.png"><br>
+						<div class="capimg2"><img src="${resPath}/img/menu/userinfo/capchur1.PNG" alt="capchur1.png"></div><br> 
+						<div class="capimg2"><img src="${resPath}/img/menu/userinfo/capchur2.PNG" alt="capchur2.png"></div><br> 
+						<div class="capimg2"><img src="${resPath}/img/menu/userinfo/capchur3.PNG" alt="capchur3.png"></div><br>
 					</div>
 				</div>
 			</div>
@@ -92,7 +92,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="contentDiv">
+		<div class="contentDiv lastdiv">
 			다른 궁금한 사항이 있으시면 Q&A에 질문을 올려주세요!<br> 저희가 24시간 이내에 친절하고 빠르게 알려드리겠습니다. ^^
 		</div>
 	</div>
