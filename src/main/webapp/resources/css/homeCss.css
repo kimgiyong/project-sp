@@ -1,5 +1,6 @@
 @charset "utf-8";
-* {	/* 기본값 */
+
+* { /* 기본값 */
 	margin: 0 auto;
 	padding: 0px;
 	list-style-type: none;
@@ -8,7 +9,7 @@
 	box-sizing: border-box;
 }
 
-pre{
+pre {
 	display: inline;
 }
 
@@ -17,20 +18,20 @@ body {
 	/* background-image: url("https://i.pinimg.com/564x/62/81/68/628168603156332c4329d1b17ab136b7.jpg"); */
 	background-repeat: no-repeat;
 	background-size: 100% 1400px;
-	background-color:#f5f5f5;
-	width: 1500px; 
-	height:100%;
+	background-color: #f5f5f5;
+	width: 1500px;
+	height: 100%;
 }
 
-.body{
-	position:absolute;
-	z-index:-100;
-	margin-left:-500px;
+.body {
+	position: absolute;
+	z-index: -100;
+	margin-left: -500px;
 	width: 200%;
 	height: 370px;
 	background-color: #ece6ce;
 }
-   
+
 .clear {
 	clear: both;
 }
@@ -44,21 +45,20 @@ body {
 	/* font-family: 'Dokdo', cursive; */
 	/* font-family: 'Gugi', cursive; */
 	/* font-family: 'East Sea Dokdo', cursive; */
-	 font-family: 'Black And White Picture', sans-serif;
+	font-family: 'Black And White Picture', sans-serif;
 	/* font-family: 'Nanum Pen Script', cursive; */
 	font-size: 50px;
 	margin: 50px 0 30px 0;
-	line-height:80%;/* 
+	line-height: 80%; /* 
 	background-color: #ffeeff;
 	border-radius: 10%; */
 }
 
 /* https://google-webfonts-helper.herokuapp.com/fonts/black-and-white-picture?subsets=latin 여기 페이지 에서 폰트 다운 받아서 해야 나중에 익스플로러 할때 폰트에러 안남 */
-
-#logof{
-	color:black;
+#logof {
+	color: black;
 	cursor: pointer;
-}	
+}
 
 #logof1 {
 	color: brown;
@@ -79,38 +79,38 @@ body {
 }
 
 /* 검색창 */
-#search-box{
-	margin:80px 0 0 375px; 
+#search-box {
+	margin: 80px 0 0 375px;
 	position: absolute;
 	background: #2f3640;
-	height:70px; 
+	height: 70px;
 	border-radius: 40px;
-	padding:10px;  
+	padding: 10px;
 	width: 900px;
 }
 
- #search-box #selection {
-	margin-right:30px;
+#search-box #selection {
+	margin-right: 30px;
 	font-size: 20px;
-	border-radius:40px;
+	border-radius: 40px;
 	background-color: white;
 	height: 50px;
 	padding: auto 10px;
-	float:left;
+	float: left;
 	border: 0;
-	line-height:20px;
+	line-height: 20px;
 }
 
 #search-box input {
-	border : none;
-	background : white;
+	border: none;
+	background: white;
 	outline: none;
 	padding-left: 25px;
-	margin-left:5px;
+	margin-left: 5px;
 	color: #333;
-	float:left;
-	border-radius:30px;
-	width:670px;
+	float: left;
+	border-radius: 30px;
+	width: 670px;
 	font-size: 20px;
 	transition: 0.4s;
 	line-height: 50px;
@@ -118,14 +118,14 @@ body {
 
 #search-box button {
 	font-size: 20px;
-	background-color: rgba(255,255,255,0.5);
-	border-radius:100%;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 100%;
 	border: 0;
 	font-weight: bold;
-	width:50px; 
-	height:50px;
- 	cursor: pointer;
- 	float:right;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	float: right;
 }
 
 #search-box button:hover {
@@ -139,7 +139,7 @@ body {
 	font-size: 115%;
 	font-weight: bold;
 	font-family: fantasy;
-	color:#888; 
+	color: #442200;
 	margin-top: 20px;
 }
 
@@ -154,30 +154,31 @@ body {
 	cursor: pointer;
 	background-color: transparent !important;
 	font-size: 120%;
+	color:#442200;
 }
 
-.loge:hover{
+.loge:hover {
 	color: #a92940;
 }
 
 /* menu부분 */
-#bodyHead {	
-	height:	auto;
+#bodyHead {
+	height: auto;
 	width: 1500px;
-	position:relative;
-	z-index:5;
+	position: relative;
+	z-index: 5;
 	background-color: #442200;
 	margin-top: -51px;
-} 
+}
 
 #menuBox {
 	color: white;
 	text-align: center;
-	height: 51px; 
+	height: 51px;
 	z-index: 10;
 	width: 100%;
 	margin-left: -1px;
-	padding-right:-2px;
+	padding-right: -2px;
 }
 
 #menuBox .mainMenu {
@@ -189,13 +190,12 @@ body {
 	padding-top: 12px;
 }
 
-#lastmainMenu{
+#lastmainMenu {
 	width: 51px;
-    padding-top: 0px;
-    margin-left: 96.6%;
-    z-index: 13;
-    position: relative;
-	
+	padding-top: 0px;
+	margin-left: 96.6%;
+	z-index: 13;
+	position: relative;
 }
 
 #menuBox .mainMenu a {
@@ -211,7 +211,8 @@ body {
 #menuBox .subMenuBox {
 	display: none;
 }
-#menuBox .subMenu{
+
+#menuBox .subMenu {
 	background-color: #795022;
 	padding: 15px 0px;
 	width: 375.1px;
@@ -225,8 +226,6 @@ body {
 	margin-top: 15px;
 }
 
-
-
 /*  #menuBox .mainMenu:hover .subMenuBox { 
 	display: block;
 	transition:all 0.3s;
@@ -237,48 +236,48 @@ body {
 	color: #FFDDDD;
 }
 
-
-#allmenubtn{
+#allmenubtn {
 	width: 51px;
 	height: 51px;
 	border: 1px solid white;
-	background-color: rgba(0,0,0,0.4);
-	border-radius: 30%;	
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 30%;
 	z-index: 11;
-	display:inline-block;
-	text-align:center;
-	color:white;
-	font-size:20px;
-	line-height:45px;
+	display: inline-block;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	line-height: 45px;
 }
 
-#menuBox #lastmainMenu>a{
+#menuBox #lastmainMenu>a {
 	font-size: 40px;
 	color: white;
 	margin: 0px;
-	line-height:41px;
-	
+	line-height: 41px;
 }
 
-#menuBox #d{
-	width:413.25px;
+#menuBox #d {
+	width: 413.25px;
 }
-#mainmenu{
+
+#mainmenu {
 	margin: 0px;
 	padding: 0px;
 }
 
-#allmenubtn:hover{
+#allmenubtn:hover {
 	cursor: pointer;
-	background-color: rgba(255,255,255,0.2);
+	background-color: rgba(255, 255, 255, 0.2);
 }
 
-.container{
-	background:white;
-	width:1500px;
-	padding-bottom:100px;
+.container {
+	background: white;
+	width: 1500px;
+	padding-bottom: 100px;
 }
-.hover:hover{
-	color:#800040;	
-	font-weight: bold;	
+
+.hover:hover {
+	color: #800040;
+	font-weight: bold;
 }
