@@ -220,7 +220,6 @@
     color: #000;
     letter-spacing: -1px;
 }
-
 #mapinfo h4 {
     display: block;
     margin-block-start: 1.33em;
@@ -230,7 +229,7 @@
     font-weight: bold;
 }
 
-.screen_out {
+#mapinfo .screen_out {
     overflow: hidden;
     position: absolute;
     width: 0;
@@ -240,8 +239,8 @@
 }
 
 #mapinfo .tit_wayout {
-	height:50px;
-	border:1px red solid; 
+	/* height:50px;
+	border:1px red solid;  */
 
     overflow: hidden;
     float: left;
@@ -284,9 +283,9 @@
     text-decoration: underline;
 }
 #mapinfo .ride_wayout{
-	
+	overflow: hidden;/* 
 	height: 50px;
-	border: 1px solid blue;
+	border: 1px solid blue; */
 }
 
 #mapinfo .ride_wayout .list_ride {
@@ -313,15 +312,6 @@
     text-align: -webkit-match-parent;
 }
 
-#mapinfo .bus_blue {
-    background-position: 0 -410px;
-}
-
-#mapinfo .bus_blue,#mapinfo  .bus_circle {
-    width: 26px;
-    height: 16px;
-}
-
 #mapinfo address,#mapinfo caption,#mapinfo cite,#mapinfo code,#mapinfo dfn,#mapinfo em,#mapinfo var {
     font-style: normal;
     font-weight: 400;
@@ -331,24 +321,11 @@
     overflow: hidden;
     position: relative;
 }
+
 #mapinfo .check_list .list_ride .num_ride {
     height: 16px;
 }
-#mapinfo .list_ride .num_ride {
-    ove overflow: hidden;idden;
-    float: left;
-    width: 310px;
-    height: auto;
-    font-family: Arial,sans-serif;
-    font-size: 14px;
-    line-height: 16px;
-    color: #666;
-    letter-spacing: 0;
-}
 
-#mapinfo #kakaoContent .hide {
-    display: none;
-}
 #mapinfo .list_ride .btn_more {
     position: absolute;
     top: -5px;
@@ -374,7 +351,7 @@
     vertical-align: top;
     text-indent: -9999px;
 }
-#mapinfo #kakaoContent .hide {
+/* #mapinfo #kakaoContent .hide {
     display: none;
 }
 #mapinfo .map_layer {
@@ -389,7 +366,45 @@
     position: relative;
     background: #f3f3f3;
 }
+ */
+/* 정보 줄 밑에 부분 */
+#mapinfo .txt_busstop {
+    float: left;
+    overflow: hidden;
+    max-width: 140px;
+    white-space: nowrap;
+    text-decoration: none;
+    text-overflow: ellipsis;
+}
 
+#mapinfo .list_ride .num_ride {
+    overflow: hidden;
+    float: left;
+    width: 310px;
+    height: auto;
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: #666;
+    letter-spacing: 0;
+}
+
+.list_ride .btn_more .ico_more {
+    width: 12px;
+    height: 2px;
+    margin: 11px auto 0;
+    background-position: -120px -50px;
+}
+
+.ico_comm {
+    display: block;
+    overflow: hidden;
+    font-size: 1px;
+    line-height: 0;
+    background: url(//t1.daumcdn.net/localimg/localimages/07/2017/pc/ico_detail_180801.png) no-repeat;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+}
 /* 지하철역 부분 */
 
 #mapinfo .station_wayout {
