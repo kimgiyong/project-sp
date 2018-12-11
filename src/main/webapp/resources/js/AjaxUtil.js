@@ -34,7 +34,10 @@ var AjaxUtil = function(){
 	} 
 	
 	this.send = function(conf){
-		init(conf);
+		init(conf); 
+		if(conf.method=='GET'){
+			conf.url += '?' + conf.param;
+		}
 		xhr.open(conf.method,conf.url);
 		if(conf.method!='GET'){
 			xhr.setRequestHeader('Content-type','application/json;charset=utf-8');

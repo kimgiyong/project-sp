@@ -3,7 +3,7 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.project.sp.BOOK">
-	<select id="bookSelectList" resultType="book">
+	<select id="bookSelectList" resultType="book" parameterType="book">
 		select DISTINCT * from booktbl
 		<where>
 			<if test="bookName!=null">or bookName like concat('%',#{bookName},'%')</if>

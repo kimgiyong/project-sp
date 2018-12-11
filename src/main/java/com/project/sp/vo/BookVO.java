@@ -4,8 +4,8 @@ import org.springframework.stereotype.Component;
 
 import lombok.Data;
 
-@Data
 @Component
+@Data
 public class BookVO {
 
 	private Integer userNum;

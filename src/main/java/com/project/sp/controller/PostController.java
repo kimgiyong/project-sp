@@ -24,6 +24,7 @@ public class PostController {
 	
 	@GetMapping(value="/postList")
 	public @ResponseBody List<PostVO> postSelectList(@ModelAttribute PostVO post){
+		System.out.println(post);
 		return ps.postSelectList(post);
 	}
 	@GetMapping(value="/postCode/{postCode}")

@@ -1,6 +1,9 @@
 package com.project.sp.controller;
 
+import java.util.ArrayList;
 import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -17,16 +20,24 @@ import com.project.sp.service.BookService;
 import com.project.sp.vo.BookVO;
 import com.project.sp.vo.PostVO;
 
+import lombok.extern.slf4j.Slf4j;
+
 @Controller
+@Slf4j
 public class BookController {
 
 	@Autowired
 	private BookService bs;
 	
 	@GetMapping(value="/bookList")
-	public @ResponseBody List<BookVO> bookSelectList(@ModelAttribute BookVO book){
-		System.out.println(book);
-		return bs.bookSelectList(book);
+	public @ResponseBody int bookSelectList(@ModelAttribute("book") BookVO book, HttpServletRequest request){
+		List<BookVO> books = bs.bookSelectList(book);
+		if(books!=null){
+			request.setAttribute("book", books);
+			return 1;
+		}else {
+			return 0;
+		}
 	}
 	@GetMapping(value="/bookCode/{bookCode}")
 	public @ResponseBody List<BookVO> bookSelectListCode(@PathVariable String bookCode) {
