@@ -11,6 +11,10 @@
 <body>
 <%@ include file="../home.jsp"%>
 <hr>
+<%
+String type = request.getParameter("type");
+String text = request.getParameter("text");
+%>
 <div class="container">
 	<div id="listHead">
 		<span>통합검색</span>
@@ -41,6 +45,40 @@
 		</tbody>
 	</table>
 </div>
+<script>
+	var type = '<%=type%>';
+	var text = '<%=text%>';
+	function doinit(){
+		var conf;
+		if(type=='none'){
+			conf = {
+					url:'/bookList',
+					method:'GET',
+					param:JSON.stringify({
+						bookName:text, bookPub:text, bookWriter:text
+					}),
+					success:function(res){
+						res = JSON.parse(res);
+						alert(res[0].value);
+					}
+			}
+		}else{
+			conf = {
+					url:'/bookList',
+					method:'GET',
+					param:JSON.stringify({
+						type:text
+					}),
+					success:function(res){
+						res = JSON.parse(res);
+						alert(res);
+					}
+			}
+		}
+		au.send(conf);
+	}
+	window.addEventListener('load',doinit);
+</script>
 <%@ include file="../footer.jsp"%>
 </body>
 </html>

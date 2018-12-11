@@ -25,6 +25,7 @@ public class BookController {
 	
 	@GetMapping(value="/bookList")
 	public @ResponseBody List<BookVO> bookSelectList(@ModelAttribute BookVO book){
+		System.out.println(book);
 		return bs.bookSelectList(book);
 	}
 	@GetMapping(value="/bookCode/{bookCode}")

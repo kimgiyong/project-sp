@@ -40,9 +40,9 @@
 	<div id="search-box">
 		<select id="selection">
 			<option value="none">검색 방식</option>
-			<option value="title">제목</option>
-			<option value="witer">작가</option>
-			<option value="publisher">출판사</option>
+			<option value="bookName">제목</option>
+			<option value="bookWriter">작가</option>
+			<option value="bookPub">출판사</option>
 		</select> <input type="text" name="search" id="searchBox" placeholder="검색어를 입력하세요">
 		<button class="search-btn">
 			<i class="fas fa-search"></i>
@@ -151,8 +151,7 @@
 	function search(){
 		var selection = document.querySelector('#selection');
 		var searchBox = document.querySelector('#searchBox');
-		alert(selection.value);
-		location.href="/uri/book/bookSelect/bookList?" + selection.value + "=" ;
+		location.href="/uri/book/bookSelect/bookList?type=" + selection.value + "&text=" + searchBox.value;
 	}
 	
 	btn.addEventListener('click',search);
