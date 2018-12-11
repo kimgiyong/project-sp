@@ -15,7 +15,7 @@
 <div class="container"> 
 	<div id="listHead">
 		<span>이용 안내</span> 
-		<h3><a id="callback" onclick="go()">홈페이지</a></h3>
+		<h3><a id="callback" onclick="gohome()">홈페이지</a></h3>
 	</div>
 	<div id="spaceDiv"></div>
 	
@@ -72,7 +72,7 @@
 <%@ include file="../footer.jsp" %>
 </body>
 <script>
- function go(){
+ function gohome(){
 	 location.href="/uri/book/homePage";
  }
 </script>
