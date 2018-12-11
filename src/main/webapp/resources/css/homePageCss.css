@@ -172,7 +172,11 @@
 }
 
 #goNew{
-	color:gray;
+	color:gray;  
+}
+ 
+#newBook{
+	display: none;
 }
 
 /* 아이콘 */
