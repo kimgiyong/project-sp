@@ -23,7 +23,7 @@
 	<div id="question">
 		<table>
 			<tr>
-				<td>회원이름</td>
+				<td>작성자회원이름</td>
 				<td>대출이 연체 되서 책을 못빌려요.. </td>
 			</tr>
 			<tr>
