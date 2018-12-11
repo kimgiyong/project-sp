@@ -1,1 +1,32 @@
 @charset "UTF-8";
+#questions{
+	border:1px solid black;
+	width:80%;
+}
+#questions table{
+	width:100%;
+	text-align:center;
+	border-collapse: collapse;
+}
+#questions td{
+	border:1px solid black;
+}
+#question tbody tr{
+	height:180px;
+}
+#question tbody tr td:nth-child(1){
+	height:80px;
+}
+
+#question td:nth-child(1){
+	width:80%;
+}
+#question td:nth-child(2){
+	width:80%;
+}
+textarea{
+	width:95%;
+	height:60px;
+	background: white;
+	resize:none;
+}

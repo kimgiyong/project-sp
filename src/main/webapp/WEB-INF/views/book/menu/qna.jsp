@@ -20,30 +20,30 @@
 	</div>
 	<div id="spaceDiv"></div>
 	
-	<div id="question">
+	<div id="questions">
 		<table>
-			<tr>
-				<td>작성자회원이름</td>
-				<td>대출이 연체 되서 책을 못빌려요.. </td>
-			</tr>
-			<tr>
-				<td><textarea disabled="disabled"></textarea></td>
-			</tr>
-			<tr>
-				<td>
-					<ul id="answerList">
-						<li><textarea disabled="disabled">답변내용이 들어갈 자리입니다.</textarea></li>
-						<li><textarea disabled="disabled">답변내용이 들어갈 자리입니다.</textarea></li>
-					</ul>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<textarea id="answerText" placeholder="회원이름님께 답글을 남겨주세요."></textarea>
-					<button onclick="sendAnswer()">보내기</button>
-				</td>
-			</tr>
-				
+			<tbody class="question">
+				<tr>
+					<td>작성자회원이름</td>
+					<td>대출이 연체 되서 책을 못빌려요..</td>
+				</tr>
+				<tr>
+					<td>작성자회원이름</td>
+					<td><textarea disabled="disabled"></textarea></td>
+				</tr>
+				<tr>
+					<td>
+						<ul id="answerList">
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<textarea id="answerText" placeholder="회원이름님께 답글을 남겨주세요."></textarea>
+						<button onclick="sendAnswer()">보내기</button>
+					</td>
+				</tr>
+			</tbody>
 		</table>
 	</div>
 </div>
@@ -53,7 +53,11 @@
 var answerText = document.getElementById("answerText");
 var answerList = document.getElementById("answerList");
 function sendAnswer(){
-	var newElement = '<textarea disabled="disabled">' + answerText.value + '</textarea>';
+	var newElement = '<span>회원이름님</span><textarea disabled="disabled">' + answerText.value + '</textarea>';
+	if(answerText.value==""||answerText.value==null){
+		alert("답글을 작성해 주세요");
+		return;
+	} 
 	answerList.insertAdjacentHTML("beforebegin",newElement); 
 }
 </script>
