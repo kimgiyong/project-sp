@@ -53,6 +53,8 @@ body {
 	border-radius: 10%; */
 }
 
+/* https://google-webfonts-helper.herokuapp.com/fonts/black-and-white-picture?subsets=latin 여기 페이지 에서 폰트 다운 받아서 해야 나중에 익스플로러 할때 폰트에러 안남 */
+
 #logof{
 	color:black;
 	cursor: pointer;
