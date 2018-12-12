@@ -15,7 +15,7 @@
 <%@ include file="../../home.jsp" %>
 <div class="container"> 
 	<div id="listHead">
-		<span>이용 안내</span> 
+		<span>게시판</span> 
 		<h3><a id="callback" onclick="go()">홈페이지</a></h3>
 	</div>
 	<div id="spaceDiv"></div>
@@ -40,16 +40,21 @@
 			<tr id="answers"> 
 				<td colspan="2"> 
 					<div>
-						<ul id="answerList">
-							<li><span class="replier">답변자님</span><br>
-							<textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea><br>
-							<span class="credat">20xx-xx-xx</span></li>
-							<li><span class="replier">답변자님</span><br>
-							<textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea><br>
-							<span class="credat">20xx-xx-xx</span></li>
-							<li><span class="replier">답변자님</span><br>
-							<textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea><br>
-							<span class="credat">20xx-xx-xx</span></li>	
+						<ul class="answerList">
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea></li>
 						</ul>
 					</div>
 					<hr>
@@ -61,4 +66,12 @@
 </div>
 <%@ include file="../../footer.jsp" %>
 </body>
+<script>
+$(function(){
+	$('.answerList').scrollTop($('.answerList').prop('scrollHeight'));
+})
+$('.positionTopic tr').on('click',function(){
+		$(this).siblings('tbody.detail').toggle();
+	})
+</script>
 </html>
