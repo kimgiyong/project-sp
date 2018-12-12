@@ -41,12 +41,12 @@ body {
 	height: auto;
 	display: inline-block;
 	float: left;
-	/* font-family: 'Gamja Flower', cursive; */
-	/* font-family: 'Dokdo', cursive; */
-	/* font-family: 'Gugi', cursive; */
+	font-family: 'Gamja Flower', cursive;
+	/* font-family: 'Dokdo', cursive; x */ 
+	/* font-family: 'Gugi', cursive; x */
 	/* font-family: 'East Sea Dokdo', cursive; */
-	font-family: 'Black And White Picture', sans-serif;
-	/* font-family: 'Nanum Pen Script', cursive; */
+	/* font-family: 'Black And White Picture', sans-serif; x*/
+	/* font-family: 'Nanum Pen Script', cursive; x*/
 	font-size: 50px;
 	margin: 50px 0 30px 0;
 	line-height: 80%; /* 
