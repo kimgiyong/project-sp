@@ -34,8 +34,8 @@
 			</tr>
 			<tr class="contentsD"> 	
 				<td colspan="2">
-				<div>상세내용</div>
-				<textarea></textarea></td>
+				<div>상세내용</div> 
+				<textarea disabled="disabled"></textarea></td>
 			</tr>
 			<tr id="detail"> 
 				<td colspan="2"> 
@@ -60,14 +60,14 @@
 	var answerList = document.getElementById("answerList");
 	function Reply() {
 		var newElement = '<div><span class="replier">'+ '회원이름님' 
-				+ '</span><br><textarea class="contentsR" placeholder="답변자님의 답변입니다.">'
+				+ '</span><br><textarea class="contentsR">'
 				+ contentsR.value + '</textarea></div>';
 		if (contentsR.value == "" || contentsR.value == null) {
 			alert("답글을 작성해 주세요");
 			return;
 		}
 		answerList.insertAdjacentHTML("beforeend", newElement);
-		$('#answerList').scrollTop($('#answerList').height());
+		$('#answers').scrollTop($('#answers').prop('scrollHeight'));
 	}
 </script>
 </html>
