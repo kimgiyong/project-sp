@@ -8,6 +8,7 @@
 <title>로그인/회원가입페이지</title>
 <link rel="stylesheet" type="text/css"
 	href="${resPath}/css/loginCss/loginPage.css" />
+	<link href="https://fonts.googleapis.com/css?family=Black+And+White+Picture|Dokdo|East+Sea+Dokdo|Gamja+Flower|Gugi|Nanum+Pen+Script" rel="stylesheet">
 </head>
 <body>
 	<%

@@ -114,10 +114,11 @@ hr{
 /* 로고 부분 (글씨) */
 #logo, #hyang {
 	text-shadow: 3px 3px 3px gray;
-	font-family: 'cursive';
+	/* font-family: 'cursive'; */
 	color: white;
 	padding-bottom: 40px;/* 
 	margin-top: -30px; */
+	font-family: 'Gamja Flower', cursive;
 }
 
 #hyang {
