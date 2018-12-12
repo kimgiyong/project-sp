@@ -30,14 +30,11 @@ public class BookController {
 	private BookService bs;
 	
 	@GetMapping(value="/bookList")
-	public @ResponseBody int bookSelectList(@ModelAttribute("book") BookVO book, HttpServletRequest request){
+	public String bookSelectList(@ModelAttribute("book") BookVO book, HttpServletRequest request){
 		List<BookVO> books = bs.bookSelectList(book);
-		if(books!=null){
-			request.setAttribute("book", books);
-			return 1;
-		}else {
-			return 0;
-		}
+		request.setAttribute("book", books);
+		System.out.println(request.getAttribute("book"));
+		return "book/bookSelect/bookList";
 	}
 	@GetMapping(value="/bookCode/{bookCode}")
 	public @ResponseBody List<BookVO> bookSelectListCode(@PathVariable String bookCode) {
