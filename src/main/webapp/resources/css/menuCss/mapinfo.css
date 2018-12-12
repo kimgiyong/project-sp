@@ -95,6 +95,7 @@
 	font-size: 18px;
 	font-weight: bold;
 	color: #333;
+	font-family: '굴림';
 }
 
 .info .close {
@@ -112,7 +113,7 @@
 	cursor: pointer;
 }
 
-.info .body {
+.info .bodyi {
 	position: relative;
 	overflow: hidden;
 }
@@ -348,22 +349,6 @@
     vertical-align: top;
     text-indent: -9999px;
 }
-/* #mapinfo #kakaoContent .hide {
-    display: none;
-}
-#mapinfo .map_layer {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    z-index: 999;
-    width: auto;
-    margin-top: -350px;
-}
-#mapinfo #kakaoWrap {
-    position: relative;
-    background: #f3f3f3;
-}
- */
 /* 정보 줄 밑에 부분 */
 #mapinfo .txt_busstop {
     float: left;
@@ -449,7 +434,7 @@
     vertical-align: top;
 }
 
-#mapinfo .bus_blue,#mapinfo  .bus_circle{
+#mapinfo .bus_blue, #mapinfo .bus_circle{
 	width: 26px;
     height: 16px;
 }

@@ -6,7 +6,7 @@
 <meta charset="utf-8">
 <title>오시는 길</title>
 <link rel="stylesheet" type="text/css"
-	href="${resPath}/css/menuCss/menu4-3.css">
+	href="${resPath}/css/menuCss/mapinfo.css">
 <script type="text/javascript"
 	src="//dapi.kakao.com/v2/maps/sdk.js?appkey=52ed07a2a9a6bdc509cbde1cb8741f6b&libraries=services,clusterer,drawing"></script>
 </head>
@@ -564,7 +564,7 @@
 		            '            좋은향도서관' + 
 		            '            <div class="close" onclick="closeOverlay()" title="닫기"></div>' + 
 		            '        </div>' + 
-		            '        <div class="body">' + 
+		            '        <div class="bodyi">' + 
 		            '            <div class="img">' +
 		            '                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-m7ucdMplddFid2kpCvo8-Bi52ePBND2KUYJBGVPOUqgqyXJi" width="73" height="70" alt="좋은향 도서관">' +
 		            '           </div>' + 
