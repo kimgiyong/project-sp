@@ -2,4 +2,14 @@
 
 #historysection{
 	background-color: white;
+	width: 100%;
+	height: auto;
+	padding-bottom: 100px;
+}
+
+#historysection img{
+	width: 400px;
+	height: auto;
+	border: 10px double purple;
+	margin-left: 50px;
 }

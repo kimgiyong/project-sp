@@ -13,9 +13,15 @@
 	<%@ include file="../menuHead.jsp" %>
 	<section id="historysection">
 		<img src="${resPath}/img/menu/flowers1.png">
-	</section>
-	<script>
+		<div>
+			
+		</div>
 		
+	</section>
+	<%@ include file="../footer.jsp" %>
+	<script>
+		detextname.textContent = "도서관 소개";
+		callback.addEventListener("click", gohome);
 	</script>
 </body>
 </html>
