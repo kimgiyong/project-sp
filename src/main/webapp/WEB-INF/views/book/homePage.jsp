@@ -13,7 +13,7 @@
 	<div id="mainslide">
 		<div id="btn">
 			<div id="leftbtn">
-				<button id="MoveLeftBtn">&lt;	</button>  
+				<button id="MoveLeftBtn">&lt;</button>  
 			</div> 
 			<div id="rightbtn">
 				<button id="MoverightBtn">&gt;</button> 

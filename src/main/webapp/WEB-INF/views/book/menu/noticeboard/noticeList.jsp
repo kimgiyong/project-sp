@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css"
 	href="${rootPath}/resources/css/menuHead.css" />
 	<link rel="stylesheet" type="text/css"
-	href="${rootPath}/resources/css/menuCss/qna/qnaList.css" />
+	href="${rootPath}/resources/css/menuCss/noticeboardCss/noticeList.css" />
 </head>
 
 <body>
@@ -20,28 +20,36 @@
 	</div>
 	<div id="spaceDiv"></div>
 	
-	<table id="questions">
+	<table id=notices>
 		<thead class="category">
 			<tr>
 				<th>회원명</th>
 				<th>질문</th>
 			</tr>
 		</thead>
-		<tbody class="question">
+		<tbody class="positionTopic">
 			<tr>
 				<th class="member">회원명님</th>
 				<th class="summary">회원이 질문의 대략적인 내용을 적어두는 자리입니다.</th>
 			</tr>
+		</tbody>
+		<tbody class="detail">
 			<tr class="contentsD">
-				<td colspan="2"><textarea></textarea></td>
+				<td colspan="2"><textarea disabled="disabled">db에서 내용 받아 올꺼다</textarea></td>
 			</tr>
-			<tr id="detail"> 
+			<tr id="answers"> 
 				<td colspan="2"> 
-					<div id="answers">
+					<div>
 						<ul id="answerList">
-							<li><span class="replier">답변자님</span><br><textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea></li>
-							<li><span class="replier">답변자님</span><br><textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea></li>
-							<li><span class="replier">답변자님</span><br><textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea></li>
+							<li><span class="replier">답변자님</span><br>
+							<textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea><br>
+							<span class="credat">20xx-xx-xx</span></li>
+							<li><span class="replier">답변자님</span><br>
+							<textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea><br>
+							<span class="credat">20xx-xx-xx</span></li>
+							<li><span class="replier">답변자님</span><br>
+							<textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea><br>
+							<span class="credat">20xx-xx-xx</span></li>	
 						</ul>
 					</div>
 					<hr>

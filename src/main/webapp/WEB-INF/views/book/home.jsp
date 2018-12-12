@@ -68,8 +68,8 @@
 		<li class="mainMenu"><a href="#">좋은 소통</a>
 			<ul class="subMenuBox">
 				<li class="subMenu"><a href="#">공지사항</a></li>
-				<li class="subMenu"><a href="/uri/book/menu/qna/qnaReply">Q & A</a></li>
-				<li class="subMenu"><a href="#">자유게시판</a></li>
+				<li class="subMenu"><a href="#">Q & A</a></li>
+				<li class="subMenu"><a href="/uri/book/menu/qna/qnaReply">게시판</a></li>
 			</ul>
 		</li>
 		<li class="mainMenu"><a href="#">좋은 나눔</a>
