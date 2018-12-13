@@ -117,13 +117,65 @@
 
 #historystart{
 	margin-top: 70px;
-	border: 1px solid red;
 	width: 100%;
-	height: 100px;
+	height: auto;
 	margin-left: -65px;
+	display: inline-block;
 }
 
 #historystart h1{
 	font-style: italic;
 	color: #573931;
+	font-size: xx-large
 }
+
+#histone{
+	border-top:1px solid #e6e2dd;
+	margin-bottom: 25px;
+}
+
+.historyhr{
+	margin: 25px 0;
+}
+
+table{
+	width: 100%;
+	height: 500px;
+}
+
+#historystart .historyYears{
+	text-align: center;
+	font-size: 400%;
+	font-weight: bold;
+    font-style: italic;
+    color: rgba(8,22,222,0.2);
+    width: 40%;
+}
+
+#historystart .historyContents{
+	 font-size: 150%;
+	 line-height: 200%;
+}
+/* #historystart hr{
+	border-color:#e6e2dd;
+	margin: 25px 0;
+}*/
+/*
+#historystart .historyYears{
+	float: left;
+	margin-left: 150px;
+    font-size: 400%;
+    font-weight: bold;
+    font-style: italic;
+    color: rgba(8,22,222,0.2);
+}
+
+#historystart .historyContents{
+	float: right;
+	margin-top:10px;
+}
+
+#historystart .historyContents li{
+    font-size: 150%;
+}
+*/

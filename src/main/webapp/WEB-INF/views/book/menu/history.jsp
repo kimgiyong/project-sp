@@ -26,7 +26,52 @@
             </div>
         </div>
         <div id="historystart">
-        	<h1>History</h1>        
+        <h1>History</h1>
+ 			<table>
+	 			<tr class="historyhr" id="histone">
+	 				<td class="historyYears">2018.9</td>
+	 				<td class="historyContents">
+		 				<ul>
+	        				<li> ㆍ 도서관 설립</li>
+	        				<li> ㆍ 도서관 설립2</li>
+	        			</ul>
+        			</td>
+ 				</tr>
+ 				<tr class="historyhr" id="histone">
+	 				<td class="historyYears">2018.10</td>
+	 				<td class="historyContents">
+		 				<ul>
+	        				<li> ㆍ 도서관 설립</li>
+	        				<li> ㆍ 도서관 설립2</li>
+	        			</ul>
+        			</td>
+ 				</tr>
+ 			</table>
+        	<div class="clear"></div>
+        	<!-- <ul class="historyhr" id="histone">
+        		<li class="historyYears">
+        		2018.9
+        		</li>
+        		<li class="historyContents">
+        			<ul>
+        				<li> ㆍ 도서관 설립</li>
+        				<li> ㆍ 도서관 설립2</li>
+        			</ul>
+        		</li>
+        	</ul>
+        	<div class="clear"></div>
+        	<ul class="historyhr">
+        		<li class="historyYears">
+        		2018.10
+        		</li>
+        		<li class="historyContents">
+        			<ul>
+        				<li> ㆍ 도서관 설립</li>
+        				<li> ㆍ 도서관 설립2</li>
+        			</ul>
+        		</li>
+        	</ul> -->
+        	
         </div>
   </div>
 
