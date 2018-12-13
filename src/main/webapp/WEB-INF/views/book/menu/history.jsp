@@ -10,15 +10,25 @@
 </head>
 <body>
 	<%@ include file="../home.jsp"%>
-	<%@ include file="../menuHead.jsp" %>
+	<%@ include file="../menuHead.jsp"%>
 	<section id="historysection">
-		<img src="${resPath}/img/menu/flowers1.png">
-		<div>
-			
-		</div>
-		
+	<div class="testimonial-quote group right">
+        <div class="righta"><img src="${resPath}/img/menu/flowers1.png"></div>
+        <div class="quote-container">
+            <div>
+                <div class="ejblockquote">
+                    <p>A good incense - 마음을 안정시켜주며 공간의 분위기를 부드럽게 만들어주는 향”</p>
+                </div>  
+                <cite><span>Petunia</span><br>
+                   	I feel comfortable with you<br>
+                   	 당신과 있으면 마음이 편해집니다.2
+                </cite>
+            </div>
+        </div>
+  </div>
+
 	</section>
-	<%@ include file="../footer.jsp" %>
+	<%@ include file="../footer.jsp"%>
 	<script>
 		detextname.textContent = "도서관 소개";
 		callback.addEventListener("click", gohome);
