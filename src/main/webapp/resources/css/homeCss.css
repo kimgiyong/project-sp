@@ -26,8 +26,8 @@ body {
 .body {
 	position: absolute;
 	z-index: -100;
-	margin-left: -40%;
-	width: 200%;
+	margin-left: -50%;
+	width: 150%;
 	height: 370px;
 	background-color: #ece6ce;
 }
@@ -82,7 +82,7 @@ body {
 #search-box {
 	margin: 80px 0 0 375px;
 	position: absolute;
-	background: #2f3640;
+	background: #534451;
 	height: 70px;
 	border-radius: 40px;
 	padding: 10px;
@@ -239,9 +239,6 @@ body {
 #allmenubtn {
 	width: 51px;
 	height: 51px;
-	border: 1px solid white;
-	background-color: rgba(0, 0, 0, 0.4);
-	border-radius: 30%;
 	z-index: 11;
 	display: inline-block;
 	text-align: center;
@@ -254,7 +251,6 @@ body {
 	font-size: 40px;
 	color: white;
 	margin: 0px;
-	line-height: 41px;
 }
 
 #menuBox #d {

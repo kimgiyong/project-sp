@@ -14,14 +14,7 @@
 <body>
 	<%@ include file="../home.jsp"%>
 	<div class="container">
-		<div id="listHead">
-			<span>이용 안내</span>
-			<h3>
-				<a id="callback" onclick="gohome()">홈페이지</a>
-			</h3>
-		</div>
-		<div id="spaceDiv"></div>
-
+		<%@ include file="../menuHead.jsp" %>
 		<div id="tags">
 			<a href="#borrow" class="abtn">#대출방법</a> <a href="#borrowInfo" class="abtn">#대출안내</a> <a
 				href="#apply" class="abtn">#도서신청</a> <a href="#seach" class="abtn">#도서찾기</a> <a href="#donate" class="abtn">#기부방법</a>
@@ -99,8 +92,8 @@
 	<%@ include file="../footer.jsp"%>
 </body>
 <script>
-	function gohome() {
-		location.href = "/uri/book/homePage";
-	}
+	detextname.textContent = "도서관 소개";
+	callback.textContent="홈페이지";
+	callback.addEventListener("click", gohome);
 </script>
 </html>

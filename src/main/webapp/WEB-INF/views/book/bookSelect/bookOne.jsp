@@ -55,8 +55,8 @@
 <script>
 	var likeToggle = document.getElementById("likeToggle");
 	var likeImg = document.getElementById("likeImg");
-	var callback =  document.getElementById("callback");
-		
+	
+	detextname.textContent = "상세 정보";	
 	likeToggle.addEventListener("click",function(){
 		if(likeImg.src.match("space") == null){
 			likeImg.src = "/resources/img/heart.gif";
@@ -70,10 +70,6 @@
 			}, 750);
 		}
 	});
-	
-	function go(){
-		window.history.go(-1);
-	}
 	
 	function goSearchpage(){
 		window.open("https://book.naver.com/search/search.nhn?sm=sta_hty.book&sug=&where=nexearch&query=책이름");

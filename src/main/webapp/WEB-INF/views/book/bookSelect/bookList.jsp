@@ -11,37 +11,6 @@
 <body>
 <%@ include file="../home.jsp"%>
 <hr>
-<%
-String type = request.getParameter("type");
-String text = request.getParameter("text");
-%>
-<script>
-	var type = '<%=type%>';
-	var text = '<%=text%>';
-	function doinit(){
-		if(type=='none'){
-			var conf = {
-					url:'/bookList',
-					method:'GET',
-					param:'bookName=' + text + '&bookPub=' + text + '&bookWriter=' + text,
-					success:function(res){
-						res = JSON.parse(res);
-					}
-			}
-			au.send(conf);
-		}else{
-			var conf = {
-					url:'/bookList',
-					method:'GET',
-					param:type + '=' + text,
-					success:function(res){
-						res = JSON.parse(res);
-					}
-			}
-		}
-	}
-	window.addEventListener('load',doinit);
-</script>
 <div class="container">
 	<div id="listHead">
 		<span>통합검색</span>
@@ -56,9 +25,6 @@ String text = request.getParameter("text");
 		<li><a href="#">최신순 ▼</a></li>
 		<li><a href="#">글자순 ▼</a></li>
 	</ul>
-	<c:forEach var="1" begin="2" end="10" step="1">
-	
-	</c:forEach>
 	<table id="listTable">		
 		<tbody>
 			<tr>

@@ -54,7 +54,7 @@
 
 <div class="clear"></div>
 
-<div class="mainMenu" id="lastmainMenu"><a href="#" id="allmenubtn" style="font-size: 300%;">=</a>	
+<div class="mainMenu" id="lastmainMenu"><a href="#" id="allmenubtn" style="font-size: 300%;">≡</a>	
 </div>
 <section id="bodyHead">
 	<ul id="menuBox">
@@ -82,8 +82,8 @@
 		<li class="mainMenu"><a href="#">좋은 소개</a>
 			<ul class="subMenuBox" style="width:376px">
 				<li class="subMenu" style="width:376px"><a href="/uri/book/menu/infoUse">도서관 이용방법</a></li>
-				<li class="subMenu" style="width:376px"><a href="#">도서관 연혁</a></li>
-				<li class="subMenu" style="width:376px"><a href="/uri/book/menu/menu4-3">도서관 위치</a></li>
+				<li class="subMenu" style="width:376px"><a href="/uri/book/menu/history">도서관 연혁</a></li>
+				<li class="subMenu" style="width:376px"><a href="/uri/book/menu/mapinfo">도서관 위치</a></li>
 			</ul>
 		</li>
 	</ul>	
@@ -151,9 +151,13 @@
 	var btn = document.querySelector('.search-btn');
 	
 	function search(){
-		var selection = document.querySelector('#selection');
-		var searchBox = document.querySelector('#searchBox');
-		location.href="/uri/book/bookSelect/bookList?type=" + selection.value + "&text=" + searchBox.value;
+		var selection = document.querySelector('#selection').value;
+		var searchBox = document.querySelector('#searchBox').value;
+		if(selection=='none'){
+			location.href="/bookList?bookName=" + searchBox + '&bookPub=' + searchBox + '&bookWriter=' + searchBox;
+		}else{
+			location.href='/bookList?' + selection + '=' + searchBox;
+		}
 	}
 	
 	btn.addEventListener('click',search);

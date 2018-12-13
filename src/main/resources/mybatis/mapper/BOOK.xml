@@ -10,6 +10,7 @@
 			<if test="bookWriter!=null">or bookWriter like concat('%',#{bookWriter},'%')</if>
 			<if test="bookPub!=null">or bookPub like concat('%',#{bookPub},'%')</if>
 		</where>
+		limit 10
 	</select>
 	<select id="bookSelect" resultType="book" parameterType="String">
 		select * from booktbl
