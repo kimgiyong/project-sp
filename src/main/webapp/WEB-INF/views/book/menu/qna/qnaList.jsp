@@ -13,6 +13,7 @@
 	<%@ include file="../../home.jsp"%>
 	<div class="container">
 		<%@ include file="../../menuHead.jsp"%>
+		<span onclick="goAddQ()" id="addQ">좋은향 도서관에 질문하기</span>
 		<table id="notices">
 			<thead class="category">
 				<tr>
@@ -29,6 +30,9 @@
 				<tr class="detail">
 					<th colspan="3" class="contentD"><textarea disabled="disabled"></textarea></th>
 				</tr>
+				<tr class="detail">
+					<th colspan="3" class="reply"><textarea disabled="disabled"></textarea></th>
+				</tr>
 			</tbody>
 			<tbody class="qnaBox">
 				<tr class="positionTopic">
@@ -39,6 +43,9 @@
 				<tr class="detail">
 					<th colspan="3" class="contentD"><textarea disabled="disabled"></textarea></th>
 				</tr>
+				<tr class="detail">
+					<th colspan="3" class="reply"><textarea disabled="disabled"></textarea></th>
+				</tr>
 			</tbody>
 			<tbody class="qnaBox">
 				<tr class="positionTopic">
@@ -48,6 +55,9 @@
 				</tr>
 				<tr class="detail">
 					<th colspan="3" class="contentD"><textarea disabled="disabled"></textarea></th>
+				</tr>
+				<tr class="detail">
+					<th colspan="3" class="reply"><textarea disabled="disabled"></textarea></th>
 				</tr>
 			</tbody>
 		</table>
@@ -59,10 +69,18 @@
 	callback.textContent = "홈페이지";
 	callback.addEventListener("click", gohome);
 	$(function(){
+		$('.contentD textarea').text('질문의 내용이 들어 갈 곳');
+		$('.reply textarea').text('사서가 입력한 답변이 들어갈 곳');
 		$('.detail').hide();
+		if(<%=user.getUserLevel()%>==1){
+			$('.goBtn').hide();
+		}
 	})
 	$('.summary').on('click',function(){
 		$(this).parents().siblings('tr').toggle();
 	})
+	function goReplyPage(){
+		location.href="/uri/book/menu/qna/qnaReply";
+	}
 </script>
 </html>
