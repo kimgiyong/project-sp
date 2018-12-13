@@ -21,9 +21,12 @@
                 </div>  
                 <cite><span>Petunia</span><br>
                    	I feel comfortable with you<br>
-                   	 당신과 있으면 마음이 편해집니다.2
+                   	 당신과 있으면 마음이 편해집니다.
                 </cite>
             </div>
+        </div>
+        <div id="historystart">
+        	<h1>History</h1>        
         </div>
   </div>
 
