@@ -71,7 +71,7 @@ $(function(){
 	$('.answerList').scrollTop($('.answerList').prop('scrollHeight'));
 })
 $('.positionTopic tr').on('click',function(){
-		$(this).siblings('tbody.detail').toggle();
+		$(this).siblings('tbody.detail').toggle(); 
 	})
 </script>
 </html>
