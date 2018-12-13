@@ -21,6 +21,11 @@ public class BookDAOImpl implements BookDAO {
 	private LikeInOut lio;
 	
 	@Override
+	public int bookSelectSize(BookVO book) {
+		return ss.selectOne("com.project.sp.BOOK.bookSelectSize",book);
+	}
+	
+	@Override
 	public List<BookVO> bookSelectList(BookVO book) {
 		return ss.selectList("com.project.sp.BOOK.bookSelectList",book);
 	}

@@ -17,12 +17,12 @@
 		<tr>
 			<td><img id="bookImg" src="#"></td>
 			<td><ul>
-				<li>도서명 : 책이름</li>
-				<li>저작자 : 작가이름</li>
-				<li>출판사 : 출판사이름</li>
-				<li>출판일 : 출판 날짜</li>
-				<li><span id="like">좋아요 : 좋아요개수</span><button id="likeToggle"><img  id="likeImg" src="/resources/img/heart.png"></button></li>
-				<li>수량 : 재고수</li>
+				<li>도서명 : ${books.bookName}</li>
+				<li>저작자 : ${books.bookWriter}</li>
+				<li>출판사 : ${books.bookPub}</li>
+				<li>출판년도 : ${books.bookYear}</li>
+				<li><span id="like">좋아요 : ${books.bookLike}</span><button id="likeToggle"><img  id="likeImg" src="/resources/img/heart.png"></button></li>
+				<li>수량 : ${books.bookAmount}</li>
 			</ul></td>
 			<td rowspan="2"><button class="bookOnebtn bor">대출하기</button><br><button class="bookOnebtn web" onclick="goSearchpage()">웹서치<!-- 에서 책정보  찾기 --></button></td> 
 		</tr>

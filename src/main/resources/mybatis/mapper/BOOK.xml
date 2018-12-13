@@ -3,14 +3,22 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.project.sp.BOOK">
-	<select id="bookSelectList" resultType="book" parameterType="book">
+	<select id="bookSelectSize" resultType="int" parameterType="book">
+		select count(*) from booktbl
+		<where>
+			<if test="bookName!=null">or bookName like concat('%',#{bookName},'%')</if>
+			<if test="bookWriter!=null">or bookWriter like concat('%',#{bookWriter},'%')</if>
+			<if test="bookPub!=null">or bookPub like concat('%',#{bookPub},'%')</if>
+		</where>
+	</select>
+	<select id="bookSelectLists" resultType="book" parameterType="book">
 		select DISTINCT * from booktbl
 		<where>
 			<if test="bookName!=null">or bookName like concat('%',#{bookName},'%')</if>
 			<if test="bookWriter!=null">or bookWriter like concat('%',#{bookWriter},'%')</if>
 			<if test="bookPub!=null">or bookPub like concat('%',#{bookPub},'%')</if>
 		</where>
-		limit 10
+		limit #{pageS},10
 	</select>
 	<select id="bookSelect" resultType="book" parameterType="String">
 		select * from booktbl

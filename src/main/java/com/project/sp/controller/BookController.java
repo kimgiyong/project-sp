@@ -31,9 +31,9 @@ public class BookController {
 	
 	@GetMapping(value="/bookList")
 	public String bookSelectList(@ModelAttribute("book") BookVO book, HttpServletRequest request){
+		System.out.println(request.getRequestURI());
 		List<BookVO> books = bs.bookSelectList(book);
-		request.setAttribute("book", books);
-		System.out.println(request.getAttribute("book"));
+		request.setAttribute("books", books);
 		return "book/bookSelect/bookList";
 	}
 	@GetMapping(value="/bookCode/{bookCode}")
@@ -41,8 +41,9 @@ public class BookController {
 		return bs.bookSelectListCode(bookCode);
 	}
 	@GetMapping(value="/book/{bookCode}")
-	public @ResponseBody BookVO bookSelect(@PathVariable String bookCode) {
-		return bs.bookSelect(bookCode);
+	public String bookSelect(@PathVariable String bookCode, HttpServletRequest request) {
+		request.setAttribute("books", bs.bookSelect(bookCode));
+		return "book/bookSelect/bookOne";
 	}
 	@PostMapping(value="/book")
 	public @ResponseBody int bookInsert(@RequestBody BookVO book) {

@@ -20,4 +20,5 @@ public class BookVO {
 	private String moddat;
 	private String credat;
 	private String bookdesc;
+	private Integer pageS;
 }

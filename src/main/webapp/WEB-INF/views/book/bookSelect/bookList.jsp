@@ -25,21 +25,29 @@
 		<li><a href="#">최신순 ▼</a></li>
 		<li><a href="#">글자순 ▼</a></li>
 	</ul>
-	<table id="listTable">		
-		<tbody>
-			<tr>
-				<td>1</td>
-				<td><img id="bookImg" src="#"><br><span class="bookTitle">제목</span></td>
-				<td>
-					저작자 : 김기용<br><br>
-					출판사 : 은향사<br><br>
-					좋아요 개수 : 0<br><br> 
-					출판일 : 2018.12.05
-				</td>
-				<td><a href="/uri/book/bookSelect/bookOne" class="hover">상세정보</a></td>
-			</tr>
-		</tbody>
-	</table>
+	<c:forEach var="list" items="${books}">
+		<table id="listTable">		
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td id="tds"><img id="bookImg" src="#"><br><span class="bookTitle">${list.bookName}</span></td>
+					<td id="tds2">
+						저작자 : ${list.bookWriter}<br><br>
+						출판사 : ${list.bookPub}<br><br>
+						좋아요 개수 : ${list.bookLike}<br><br> 
+						출판년도 : ${list.bookYear}
+					</td>
+					<td id="tds3"><a href="/book/${list.bookCode}" class="hover">상세정보</a></td>
+				</tr>
+			</tbody>
+		</table>
+	</c:forEach>
+	<div id="page">
+	<c:forEach var="a" begin="1" end="10">
+		<span><a href="/bookList?bookName=<%=request.getParameter("bookName")%>&bookPub=<%=request.getParameter("bookPub")%>&
+		bookWriter=<%=request.getParameter("bookWriter")%>&pageS=${a}">[${a}]</a></span>
+	</c:forEach>
+	</div>
 </div>
 <%@ include file="../footer.jsp"%>
 </body>

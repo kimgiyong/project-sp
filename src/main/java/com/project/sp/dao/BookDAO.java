@@ -5,6 +5,7 @@ import java.util.List;
 import com.project.sp.vo.BookVO;
 public interface BookDAO {
 
+	public int bookSelectSize(BookVO book);
 	public List<BookVO> bookSelectList(BookVO book);
 	public List<BookVO> bookSelectListCode(String bookCode);
 	public BookVO bookSelect(String bookCode);

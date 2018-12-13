@@ -63,4 +63,15 @@
 	width:150px;
 	height:200px; 
 } 
-
+#tds{
+	width:400px;
+}
+#tds2{
+	width:500px;
+}
+#tds3{
+	width:200px;
+}
+#page{
+	text-align:center;
+}

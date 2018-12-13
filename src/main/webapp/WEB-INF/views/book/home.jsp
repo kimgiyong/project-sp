@@ -154,9 +154,9 @@
 		var selection = document.querySelector('#selection').value;
 		var searchBox = document.querySelector('#searchBox').value;
 		if(selection=='none'){
-			location.href="/bookList?bookName=" + searchBox + '&bookPub=' + searchBox + '&bookWriter=' + searchBox;
+			location.href="/bookList?bookName=" + searchBox + '&bookPub=' + searchBox + '&bookWriter=' + searchBox + '&pageS=0';
 		}else{
-			location.href='/bookList?' + selection + '=' + searchBox;
+			location.href='/bookList?' + selection + '=' + searchBox + "&pageS=0";
 		}
 	}
 	
