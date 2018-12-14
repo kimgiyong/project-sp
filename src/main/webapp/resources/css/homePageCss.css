@@ -1,29 +1,34 @@
 @charset "utf-8";
+
 .clear {
-	clear: both; 
-	width:100%; 
+	clear: both;
+	width: 100%;
 }
 /* homePage.jsp */
-#mainslide{
-	position: relative;	
-	margin: 0; 
+#mainslide {
+	position: relative;
+	margin: 0;
 }
-#slideimge{
-	height:446px;
-	width:1500px;
-	position:absolute;
+
+#slideimge {
+	height: 446px;
+	width: 1500px;
+	position: absolute;
 	z-index: 1;
-/* 	background-image: url("../img/homeimg/imgback.jpg"); 이전 이미지*/
-	background-image: url("https://i.pinimg.com/564x/c8/66/46/c86646eed6013137a53961c88f2e871e.jpg"); 
+	/* 	background-image: url("../img/homeimg/imgback.jpg"); 이전 이미지*/
+	background-image:
+		url("https://i.pinimg.com/564x/c8/66/46/c86646eed6013137a53961c88f2e871e.jpg");
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
-#btn{
-	width:1500px; height:446px;
-	position:absolute;
+
+#btn {
+	width: 1500px;
+	height: 446px;
+	position: absolute;
 	z-index: 2;
-	top:50%;
+	top: 50%;
 }
 
 #leftbtn, #rightbtn {
@@ -31,196 +36,216 @@
 	text-align: center;
 	height: 100%;
 	width: 10%;
-} 
+}
 
 #leftbtn {
-	float:left;
+	float: left;
 }
 
 #rightbtn {
-	float:right;
+	float: right;
 }
 
 #MoveLeftBtn, #MoverightBtn {
 	font-size: 50px;
-	border:0;
-	background-color: rgba(200,200,200,0.6);
-	border-radius:100%;
-	color:white;
-	width:80px;
-	height:80px;
-	margin-top:160px; 
+	border: 0;
+	background-color: rgba(200, 200, 200, 0.6);
+	border-radius: 100%;
+	color: white;
+	width: 80px;
+	height: 80px;
+	margin-top: 160px;
 	cursor: pointer;
 }
-#slideimge .imgeul{
-	width: 100%; height: 100%;
-	
+
+#slideimge .imgeul {
+	width: 100%;
+	height: 100%;
 }
 
-.imgeli img{
-	width: 100%; height: 100%;
-	display:inline-block;
+.imgeli img {
+	width: 100%;
+	height: 100%;
+	display: inline-block;
 }
-
 
 /* 슬라이드 밑에 부분 */
 /* 명언부분 */
-#wiseSaying{
-	background-color: rgba(91,77,48,0.7);
+#wiseSaying {
+	background-color: rgba(71, 57, 28, 0.8);
 	width: 100%;
-	height: 24px;
-	padding: 2px;
-	margin-bottom: 2px;
+	height: 26px;
+	padding: 4px;
+	padding-bottom: 27px;
 }
 
-#wiseSaying a{
+#wiseSaying a {
 	color: white;
 	cursor: pointer;
 }
 
 /* 추천도서 */
-#cus button{
+#cus button {
 	background-color: transparent !important;
-	border:none;
+	border: none;
 	font-weight: bold;
 	font-size: 150%;
 	cursor: pointer;
 }
 
-#cus{
-	padding-left:100px;
+#cus {
+	padding-left: 100px;
+	padding-bottom: 20px;
 }
 
-#content{
-	width:1500px; 
-	height:800px;
-	margin:446px 0 0 0;
-	background-color:rgba(255,255,255,0.7);
-	position:relative;
-}
-#contentA{
-	border:1px solid lime;
-	width:100%;
-	height:350px;
-	padding-top:85px;
-	margin:0 auto;
-	float:left;
-	padding-left:20px;
-	position:absolute;
-}
-#cus button,#cus{
-	margin:4px 0;
-	font-size:18px;
+#content {
+	width: 1500px;
+	height: 1000px;
+	margin: 446px 0 0 0;
+	background-color: rgba(255, 255, 255, 0.7);
+	position: relative;
 }
 
-#contentA li{
+#contentA {
+	width: 100%;
+	height: 430px;
+	padding-top: 85px;
+	margin: 0 auto;
+	float: left;
+	padding-left: 20px;
+	position: absolute;
+}
+
+#cus button, #cus {
+	margin: 4px 0;
+	font-size: 18px;
+}
+
+#contentA li {
 	display: inline-block;
 }
-#fooleftbtn, #foorightbtn{
-	width:30px;
-	height:60px;
-	border:none;
-	border-radius:10%;
-	background:#666;
-	color:white;
+
+#fooleftbtn, #foorightbtn {
+	width: 30px;
+	height: 60px;
+	border: none;
+	border-radius: 10%;
+	background: #666;
+	color: white;
 }
-#fooleftbtn{
-	position:absolute;
-	margin-top:100px;
-	margin-left:30px;
+
+#fooleftbtn {
+	position: absolute;
+	margin-top: 100px;
+	margin-left: 30px;
 }
-#foorightbtn{
-	position:absolute;
-	margin-top:-160px;
-	margin-left:1410px;
+
+#foorightbtn {
+	position: absolute;
+	margin-top: -160px;
+	margin-left: 1410px;
 }
-#contentA ul{
-	width:800px;
-	height:256px;
-	text-align:center;
+
+#contentA ul {
+	width: 1300px;
+	height: 258px;
+	text-align: center;
 	overflow: hidden;
 }
-#contentA h2{
-	margin-top:10px;
+
+#contentA h2 {
+	margin-top: 10px;
 }
-#contentA img{
-	width:160px;
-	height:216px;
-	margin:0 10px;
-}
-.contentAtbl{
-	border: 1px solid lime;	
+
+#contentA img {
+	width: 160px;
+	height: 216px;
+	margin: 0 10px;
 }
 
 /* 공지사항  */
-.contentB{
+.contentB {
 	width: 100%;
-	height: 800px;
-	border: 1px solid red;
+	margin-top: 500px;
+	height: 400px;
 }
 
-#contentB{  
-	width:478px;
-	height:350px;
-	position:absolute; 
-	margin-left:100px;
-	margin-top:440px;
+.contentBnotice {
+	width: 285px;
+	height: 350px;
+	margin-left: 67px;
+	margin-top: 50px;
+	display: inline-block;
 }
 
-#contentBtbl{
+.contentBnotice h1{
+	margin-bottom: -20px;
+	font-family:'Gamja Flower', cursive;
+	color: #562727;
+	font-size: 200%;
+}
+
+.contentB .contentBA{
+	float: right;
+	color: #4e3fa3;
+	cursor: pointer;
+}
+
+.contentBtbl {
 	text-align: left;
-	float: left;
 	width: 100%;
-	height:80%; 
+	height: 80%;
 }
 
-#contentBtr td{
-	border-bottom: 1px gray solid;
+
+.contentBtr td {
+	border-bottom: 1px #c0b4af solid;
 }
 
-#goNew{
-	color:gray;  
+#goNew {
+	color: gray;
 }
- 
-#newBook{
+
+#newBook {
 	display: none;
 }
 
 /* 아이콘 */
-#iconContent{
-	border-top:2px solid #333;
-	border-bottom:2px solid #333;
+#iconContent {
+	border-top: 2px solid #333;
+	border-bottom: 2px solid #333;
 	background: #dde;
-	width:1500px;
-	height:285px;
-	}
-#iconContainer{
+	width: 1500px;
+	height: 285px;
+}
+
+#iconContainer {
 	margin-left: 10%;
 }
 
-#iconContainer .iconMenu{
-	display:inline-block;
-	margin:0 40px;
-	margin-top:60px;
-	text-align:center;
+#iconContainer .iconMenu {
+	display: inline-block;
+	margin: 0 40px;
+	margin-top: 60px;
+	text-align: center;
 }
 
-#iconContainer .iconMenu img{
-	width:150px;
-	height:150px;	
+#iconContainer .iconMenu img {
+	width: 150px;
+	height: 150px;
 }
 
-#iconContainer .iconMenu a{
-	font-size:20px;
-	color:#224;
-	font-weight:bold;
+#iconContainer .iconMenu a {
+	font-size: 20px;
+	color: #224;
+	font-weight: bold;
 }
 
-#iconContainer .iconBox{
-	border-radius:100%;
-	overflow:hidden;
-	width:150px;
-	height:150px; 
-	border:solid 2px lightgray;
-	margin-bottom:20px;
+#iconContainer .iconBox {
+	border-radius: 100%;
+	overflow: hidden;
+	width: 150px;
+	height: 150px;
+	border: solid 2px lightgray;
+	margin-bottom: 20px;
 }

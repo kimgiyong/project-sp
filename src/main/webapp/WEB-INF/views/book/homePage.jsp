@@ -43,7 +43,7 @@
 	<div class="clear"></div>
 	<div id="content">
 		<div id="wiseSaying">
-			<a id="wisetrun">명언이 나올 위치.. 페이지가 새로 로딩될때마다 만 바뀜.. DB받아오기</a>
+			<a id="wisetrun">오늘의 명언 : 명언이 나올 위치.. 페이지가 새로 로딩될때마다 만 바뀜.. DB받아오기</a>
 		</div>
 		<div class="clear"></div>
 		<section id="contentA">
@@ -82,8 +82,6 @@
 					<h2>제목13</h2></li>
 				<li class="imgBook"><img src="#">
 					<h2>제목14</h2></li>
-				<li class="imgBook"><img src="#">
-					<h2>제목15</h2></li>
 			</ul>
 			<ul id="newBook">
 				<li class="imgBook"><img src="#">
@@ -114,40 +112,102 @@
 					<h2>제목m</h2></li>
 				<li class="imgBook"><img src="#">
 					<h2>제목n</h2></li>
-				<li class="imgBook"><img src="#">
-					<h2>제목o</h2></li>
 			</ul>
 			<button id="foorightbtn">&gt;</button>
 		</section>
 		<div class="clear"></div>
 		<section class="contentB">
-			<div id="contentB">
+			<div class="contentBnotice abtr">
 				<h1>공지사항</h1>
+				<a class="contentBA" href="#">바로가기</a>
 				<!-- DB에서 받아올 것 -->
-				<table id="contentBtbl">
+				<table class="contentBtbl">
 					<tr class="contentBtr">
-						<td><a href="#" class="hover">나는 공지사항위치다</a></td>
+						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><a href="#" class="hover">나는 공지사항위치다</a></td>
+						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><a href="#" class="hover">나는 공지사항위치다</a></td>
+						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><a href="#" class="hover">나는 공지사항위치다</a></td>
+						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><a href="#" class="hover">나는 공지사항위치다</a></td>
+						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+					</tr>
+				</table>
+			</div>
+			<div class="contentBnotice bbtr">
+				<h1>자유게시판</h1>
+				<p class="contentBA" href="#">바로가기</p>
+				<!-- DB에서 받아올 것 -->
+				<table class="contentBtbl">
+					<tr class="contentBtr ">
+						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+					</tr>
+					<tr class="contentBtr">
+						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+					</tr>
+					<tr class="contentBtr">
+						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+					</tr>
+					<tr class="contentBtr">
+						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+					</tr>
+					<tr class="contentBtr">
+						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+					</tr>
+				</table>
+			</div>
+			<div class="contentBnotice cbtr">
+				<h1>유머게시판</h1>
+				<p class="contentBA" href="#">바로가기</p>
+				<!-- DB에서 받아올 것 -->
+				<table class="contentBtbl">
+					<tr class="contentBtr">
+						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+					</tr>
+					<tr class="contentBtr">
+						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+					</tr>
+					<tr class="contentBtr">
+						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+					</tr>
+					<tr class="contentBtr">
+						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+					</tr>
+					<tr class="contentBtr">
+						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+					</tr>
+				</table>
+			</div>
+			<div class="contentBnotice dbtr">
+				<h1>질문 게시판</h1>
+				<p class="contentBA" href="#">바로가기</p>
+				<!-- DB에서 받아올 것 -->
+				<table class="contentBtbl">
+					<tr class="contentBtr">
+						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+					</tr>
+					<tr class="contentBtr">
+						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+					</tr>
+					<tr class="contentBtr">
+						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+					</tr>
+					<tr class="contentBtr">
+						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+					</tr>
+					<tr class="contentBtr">
+						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
 					</tr>
 				</table>
 			</div>
 		</section>
-
-
 	</div>
 	<div class="clear"></div>
-	<!-- 도서신청, 질의응답, 지도검색, 대출하기, 이용안내 -->
 	<div id="iconContent">
 		<div id="iconContainer">
 			<div class="iconMenu">
@@ -234,22 +294,35 @@
 			var bcareSize = 14; //0~14까지
 			var btoggle = 0;
 
+			function numcount(){
+				bcareNum1 = bcareNum+1;
+				bcareNum2 = bcareNum+2;
+				bcareNum3 = bcareNum+3;
+				bcareNum4 = bcareNum+4;
+				bcareNum5 = bcareNum+5;
+				bcareNum6 = bcareNum+6;
+			}
+			
 			function bestBookfun() {
+				numcount();
 				$("#bestBook li").hide();
-				$("#bestBook li").eq(bcareNum++).show();
-				$("#bestBook li").eq(bcareNum++).show();
-				$("#bestBook li").eq(bcareNum++).show();
-				$("#bestBook li").eq(bcareNum++).show();
-				$("#bestBook li").eq(bcareNum++).show();
+				$("#bestBook li").eq(bcareNum6).show();
+				$("#bestBook li").eq(bcareNum5).show();
+				$("#bestBook li").eq(bcareNum4).show();
+				$("#bestBook li").eq(bcareNum3).show();
+				$("#bestBook li").eq(bcareNum2).show();
+				$("#bestBook li").eq(bcareNum1).show();
 				$("#bestBook li").eq(bcareNum).show();
 			}
 			function newBookfun() {
+				numcount();
 				$("#newBook li").hide();
-				$("#newBook li").eq(bcareNum++).show();
-				$("#newBook li").eq(bcareNum++).show();
-				$("#newBook li").eq(bcareNum++).show();
-				$("#newBook li").eq(bcareNum++).show();
-				$("#newBook li").eq(bcareNum++).show();
+				$("#newBook li").eq(bcareNum6).show();
+				$("#newBook li").eq(bcareNum5).show();
+				$("#newBook li").eq(bcareNum4).show();
+				$("#newBook li").eq(bcareNum3).show();
+				$("#newBook li").eq(bcareNum2).show();
+				$("#newBook li").eq(bcareNum1).show();
 				$("#newBook li").eq(bcareNum).show();
 			}
 
@@ -269,12 +342,29 @@
 				cuscolorchange('goNew');
 				btoggle = 1;
 			});
-
-			$("#fooleftbtn").click(function() {
-				bcareNum -= 4;
-				if (bcareNum < 0) {
-					bcareNum = bcareSize - 3;
+			
+			$("#fooleftbtn,#foorightbtn").click(function() {
+				if (btoggle == 0) {
+					bestBookfun();
+				} else {
+					newBookfun();
 				}
+			});
+			
+			$("#fooleftbtn").click(function() {
+				bcareNum -= 7;
+				if (bcareNum < 0) {
+					bcareNum = bcareSize - 7;
+				}
+			});
+			$("#foorightbtn").click(function() {
+				bcareNum -= 7;
+				if (bcareNum < 0) {
+					bcareNum = bcareSize - 7;
+				}
+			});
+			
+			$("#fooleftbtn,#foorightbtn").click(function() {
 				if (btoggle == 0) {
 					bestBookfun();
 				} else {
@@ -282,6 +372,18 @@
 				}
 			});
 
+			/* $("#fooleftbtn").click(function() {
+				bcareNum -= 6;
+				if (bcareNum < 0) {
+					bcareNum = bcareSize - 1;
+				}
+				if (btoggle == 0) {
+					bestBookfun();
+				} else {
+					newBookfun();
+				}
+			}); */
+/*
 			$("#foorightbtn").click(function() {
 				bcareNum -= 2;
 				if (bcareNum > bcareSize - 3) {
@@ -295,7 +397,7 @@
 					newBookfun();
 				}
 
-			});
+			}); */
 		});
 	</script>
 </body>
