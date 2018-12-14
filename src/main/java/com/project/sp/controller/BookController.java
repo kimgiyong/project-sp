@@ -32,19 +32,15 @@ public class BookController {
 	
 	@GetMapping(value="/bookList")
 	public String bookSelectList(@ModelAttribute("book") BookVO book, HttpServletRequest request){
-		int bookSize = bs.bookSelectSize(book);
-		int pageSize = bookSize / 10;
-		if(bookSize%10>0) {
-			pageSize++;
-		}
+		int pageSize = bs.bookSelectSize(book);
 		int pageNO = book.getPageS();
-		if(pageNO>bookSize) {
-			pageNO = bookSize ;
+		if(pageNO>pageSize) {
+			pageNO = pageSize ;
 		}
 		PageVO pages = new PageVO();
 		pages.makePaging(pageSize, pageNO);
 		request.setAttribute("page", pages);
-		book.setPageS((book.getPageS()-1)*10);
+		book.setPageS(pages.getPageStart());
 		List<BookVO> books = bs.bookSelectList(book);
 		request.setAttribute("books", books);
 		return "book/bookSelect/bookList";

@@ -36,7 +36,7 @@ public class VOTest {
 	public void test() {
 		BookVO bv = new BookVO();
 		bv.setBookName("집");
-		bs.bookSelectList(bv);
+		System.out.println(bs.bookSelectSize(bv));
 		PageVO p = new PageVO();
 		p.makePaging(15,10);
 	}

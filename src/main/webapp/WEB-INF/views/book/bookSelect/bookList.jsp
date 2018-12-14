@@ -29,7 +29,7 @@
 		<table id="listTable">		
 			<tbody>
 				<tr>
-					<td>${sta.count}</td>
+					<td><c:out value="${sta.count+page.pageStart}"/></td>
 					<td id="tds"><img id="bookImg" src="#"><br><span class="bookTitle">${list.bookName}</span></td>
 					<td id="tds2">
 						저작자 : ${list.bookWriter}<br><br>
@@ -43,10 +43,20 @@
 		</table>
 	</c:forEach>
 	<div id="page">
+	<span id="leftMove" class="pBtn">◀◀</span>
+	<span id="leftM" class="pBtn">◀</span>
 	<c:forEach var="a" begin="${page.startPage}" end="${page.endPage}">
+	<c:if test="${a!=page.pageN}">
 		<span><a href="/bookList?bookName=<%=request.getParameter("bookName")%>&bookPub=<%=request.getParameter("bookPub")%>&
 		bookWriter=<%=request.getParameter("bookWriter")%>&pageS=${a}">[${a}]</a></span>
+	</c:if>
+	<c:if test="${a==page.pageN}">
+		<span><a href="/bookList?bookName=<%=request.getParameter("bookName")%>&bookPub=<%=request.getParameter("bookPub")%>&
+		bookWriter=<%=request.getParameter("bookWriter")%>&pageS=${a}" id="nowP">[${a}]</a></span>
+	</c:if>
 	</c:forEach>
+	<span id="rightM" class="pBtn">▶</span>
+	<span id="rightMove" class="pBtn">▶▶</span>
 	</div>
 </div>
 <%@ include file="../footer.jsp"%>
