@@ -13,7 +13,7 @@
 	<%@ include file="../../home.jsp"%>
 	<div class="container">
 		<%@ include file="../../menuHead.jsp"%>
-		<span onclick="goAddQ()" id="addQ">좋은향 도서관에 질문하기</span>
+		<button id="addQ" onclick="goAddQ()">질문하기</button>
 		<table id="notices">
 			<thead class="category">
 				<tr>
@@ -71,18 +71,28 @@
 	$(function(){
 		$('.contentD textarea').text('질문의 내용이 들어 갈 곳');
 		$('.reply textarea').text('사서가 입력한 답변이 들어갈 곳');
-		$('.detail').hide();
-		if('<%=user%>' == null){
+		if('<%=user%>' == 'null'){
 			$('.goBtn').hide();
-		}else if('<%=user%>' != null){
-			$('.goBtn').show();
 		}
 	})
+	var cnt = 0;
 	$('.summary').on('click',function(){
-		$(this).parents().siblings('tr').toggle();
+		if(cnt==1){
+			$(this).parents().siblings('tr').animate({'display':'none'},1000);
+			cnt=1;
+		}else{
+			$(this).parents().siblings('tr').animate({'display':'inline-block'},1000);
+			cnt=0;
+		}
 	})
+	
 	function goReplyPage(){
 		location.href="/uri/book/menu/qna/qnaReply";
 	}
+	
+	function goAddQ(){
+		location.href="/uri/book/menu/qna/qnaInsert";
+	}
+	
 </script>
 </html>

@@ -1,16 +1,29 @@
 @charset "UTF-8";
 #addQ{
-	font-size:30px;
-	margin-left:950px;
-	color:#222;
+	font-size:25px;
+	margin-left:79%;
+	color:#050c54;
 	font-weight:bolder;
+	border:none;
+	border-radius: 10px;
+	background-color:rgba(0,0,0,0);
+	padding:7px 21px;
 }
+#addQ:hover{
+	color:#888;
+	cursor: pointer;
+}
+
+.category{
+	font-size: 120%;
+}
+
 #notices{
 	width:75%;
 	border:1px solid #333;
 	border-collapse: collapse;
 	background: #e2e2e4;
-	margin-top:50px;
+	margin-top:10px;
 }
 #notices td,th{
 	border:1px solid #1c004f;
@@ -27,6 +40,9 @@
 }
 .positionTopic{
 	height:50px;
+}
+.detail{
+	display: none;
 }
 .detail textarea{
 	width:100%;

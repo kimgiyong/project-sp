@@ -24,7 +24,7 @@
 					<th colspan="3" class="contentD"><textarea disabled="disabled"></textarea></th>
 				</tr>
 				<tr class="detail">
-					<th colspan="3" class="reply"><textarea></textarea>
+					<th colspan="3" class="reply"><textarea  placeholder="답변을 작성해 주세요"></textarea>
 					<button onclick="insertReply()" id="insertBtn">답글달기</button></th>
 				</tr>
 			</tbody>
@@ -42,7 +42,8 @@
 		}
 	})
 	function insertReply(){
-		alert("기용이가 db를 만들 때까지 기다려 주세요 (꾸벅)")
+		alert("기용이가 db를 만들 때까지 기다려 주세요 (꾸벅)");
+		history.back();
 	}
 </script>
 </html>
