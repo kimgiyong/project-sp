@@ -1,0 +1,31 @@
+@charset "UTF-8";
+#body{
+	width:80%;
+	border:1px solid #dedede;
+	font-size:22px;
+	padding:20px;
+}
+.box{
+	width:96%;
+	border:1px solid #abacab;
+	margin-top:40px;
+	padding:20px;
+	line-height:50%;
+}
+.text{
+	margin-right:100px;
+}
+.box input{
+	width:86.5%;
+	font-size:22px;
+	padding:5px;
+	
+}
+
+.box textarea{
+	margin-top:20px;
+	width:100%;
+	font-size:20px;
+	height:400px;
+	padding:15px;
+}

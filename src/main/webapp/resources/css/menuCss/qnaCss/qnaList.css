@@ -41,9 +41,6 @@
 .positionTopic{
 	height:50px;
 }
-.detail{
-	display: none;
-}
 .detail textarea{
 	width:100%;
 	height:200px;

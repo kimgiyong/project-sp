@@ -68,6 +68,7 @@
 	detextname.textContent = "Q & A";
 	callback.textContent = "홈페이지";
 	callback.addEventListener("click", gohome);
+	$('.detail').hide();
 	$(function(){
 		$('.contentD textarea').text('질문의 내용이 들어 갈 곳');
 		$('.reply textarea').text('사서가 입력한 답변이 들어갈 곳');
@@ -77,13 +78,7 @@
 	})
 	var cnt = 0;
 	$('.summary').on('click',function(){
-		if(cnt==1){
-			$(this).parents().siblings('tr').animate({'display':'none'},1000);
-			cnt=1;
-		}else{
-			$(this).parents().siblings('tr').animate({'display':'inline-block'},1000);
-			cnt=0;
-		}
+			$(this).parents().siblings('tr').toggle();
 	})
 	
 	function goReplyPage(){
