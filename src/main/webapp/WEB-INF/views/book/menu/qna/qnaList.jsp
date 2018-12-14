@@ -72,9 +72,9 @@
 		$('.contentD textarea').text('질문의 내용이 들어 갈 곳');
 		$('.reply textarea').text('사서가 입력한 답변이 들어갈 곳');
 		$('.detail').hide();
-		if(<%=user%> == null){
+		if('<%=user%>' == null){
 			$('.goBtn').hide();
-		}else if(<%=user%> != null){
+		}else if('<%=user%>' != null){
 			$('.goBtn').show();
 		}
 	})
