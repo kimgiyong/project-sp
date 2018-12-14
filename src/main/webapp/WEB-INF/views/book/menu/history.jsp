@@ -29,20 +29,26 @@
         <h1>History</h1>
  			<table>
 	 			<tr class="historyhr" id="histone">
-	 				<td class="historyYears">2018.9</td>
+	 				<td class="historyYears">2018.10</td>
 	 				<td class="historyContents">
 		 				<ul>
-	        				<li> ㆍ 도서관 설립</li>
-	        				<li> ㆍ 도서관 설립2</li>
+	        				<li> ㆍ 도서관 구축</li>
 	        			</ul>
         			</td>
  				</tr>
  				<tr class="historyhr" id="histone">
-	 				<td class="historyYears">2018.10</td>
+	 				<td class="historyYears">2018.11</td>
 	 				<td class="historyContents">
 		 				<ul>
 	        				<li> ㆍ 도서관 설립</li>
-	        				<li> ㆍ 도서관 설립2</li>
+	        			</ul>
+        			</td>
+ 				</tr>
+ 				<tr class="historyhr" id="histone">
+	 				<td class="historyYears">2018.12</td>
+	 				<td class="historyContents">
+		 				<ul>
+	        				<li> ㆍ 도서관 설립 완공식</li>
 	        			</ul>
         			</td>
  				</tr>
@@ -78,7 +84,7 @@
 	</section>
 	<%@ include file="../footer.jsp"%>
 	<script>
-		detextname.textContent = "도서관 소개";
+		detextname.textContent = "연혁";
 		callback.addEventListener("click", gohome);
 	</script>
 </body>

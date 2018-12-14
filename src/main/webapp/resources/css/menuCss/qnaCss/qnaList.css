@@ -39,9 +39,9 @@
 }
 .contentD textarea{
 	height:200px;
-}
+}             
 .reply textarea{
-	width:85%;
+	width:100%;
 	height:100px;
 }
 .goBtn button{
