@@ -9,15 +9,17 @@ public class PageVO {
     private int endPage; // 페이지 번호
     private int pageStart; // 끝 페이지 (페이징 네비 기준)
     private int pageN;
+    private int pageT;
     /**
      * 페이징 생성
      */
     public void makePaging(int pageTotal, int pageNo) {
     	pageN = pageNo;
-        startPage = ((pageN - 1)/pageCount) * pageCount + 1;
+    	pageT = pageTotal;
+        startPage = (((pageN - 1)/pageCount) * pageCount) + 1;
         endPage = startPage + pageCount-1;
-        if(endPage>pageTotal) {
-        	endPage = pageTotal;
+        if(endPage>pageT) {
+        	endPage = pageT;
         }
         pageStart = (pageN-1)*10;
     }

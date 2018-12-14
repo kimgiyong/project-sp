@@ -32,18 +32,25 @@ public class BookController {
 	
 	@GetMapping(value="/bookList")
 	public String bookSelectList(@ModelAttribute("book") BookVO book, HttpServletRequest request){
-		int pageSize = bs.bookSelectSize(book);
-		int pageNO = book.getPageS();
-		if(pageNO>pageSize) {
-			pageNO = pageSize ;
+		if(book.getPageS()!=null) {
+			int pageSize = bs.bookSelectSize(book);
+			int pageNO = book.getPageS();
+			if(pageNO>pageSize) {
+				pageNO = pageSize ;
+			}
+			if(pageNO<1) {
+				pageNO = 1;
+			}
+			PageVO pages = new PageVO();
+			pages.makePaging(pageSize, pageNO);
+			request.setAttribute("page", pages);
+			book.setPageS(pages.getPageStart());
+			List<BookVO> books = bs.bookSelectList(book);
+			request.setAttribute("books", books);
+			return "book/bookSelect/bookList";
+		}else {
+			return "book/homePage";
 		}
-		PageVO pages = new PageVO();
-		pages.makePaging(pageSize, pageNO);
-		request.setAttribute("page", pages);
-		book.setPageS(pages.getPageStart());
-		List<BookVO> books = bs.bookSelectList(book);
-		request.setAttribute("books", books);
-		return "book/bookSelect/bookList";
 	}
 	@GetMapping(value="/bookCode/{bookCode}")
 	public @ResponseBody List<BookVO> bookSelectListCode(@PathVariable String bookCode) {

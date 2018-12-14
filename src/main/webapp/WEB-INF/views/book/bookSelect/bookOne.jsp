@@ -21,7 +21,7 @@
 				<li>저작자 : ${books.bookWriter}</li>
 				<li>출판사 : ${books.bookPub}</li>
 				<li>출판년도 : ${books.bookYear}</li>
-				<li><span id="like">좋아요 : ${books.bookLike}</span><button id="likeToggle"><img  id="likeImg" src="/resources/img/heart.png"></button></li>
+				<li><span id="like">좋아요 : ${books.bookLike}</span><button id="likeToggle"><img  id="likeImg" src="/resources/img/spaceHeart.png"></button></li>
 				<li>수량 : ${books.bookAmount}</li>
 			</ul></td>
 			<td rowspan="2"><button class="bookOnebtn bor">대출하기</button><br><button class="bookOnebtn web" onclick="goSearchpage()">웹서치<!-- 에서 책정보  찾기 --></button></td> 
@@ -74,6 +74,12 @@
 	function goSearchpage(){
 		window.open("https://book.naver.com/search/search.nhn?sm=sta_hty.book&sug=&where=nexearch&query=책이름");
 	}
+	function doinit(){
+		if(<%=user%>==null){
+			likeToggle.style.display="none";
+		}
+	}
+	window.addEventListener('load',doinit);
 	/* callback.addEventLitener("click",history.go(-1))  */
 </script>
 </html>
