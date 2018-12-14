@@ -10,10 +10,10 @@
 </head>
 
 <body>
+	<%@ include file="home.jsp"%>
 <%-- <%
 	FamousVO famous = (FamousVO) session.getAttribute("famous");
 %> --%>
-	<%@ include file="home.jsp"%>
 	<div id="mainslide">
 		<div id="btn">
 			<div id="leftbtn">
@@ -355,15 +355,15 @@
 			});
 			
 			$("#fooleftbtn").click(function() {
-				bcareNum -= 7;
+				bcareNum -= 1;
 				if (bcareNum < 0) {
 					bcareNum = bcareSize - 7;
 				}
 			});
 			$("#foorightbtn").click(function() {
-				bcareNum -= 7;
-				if (bcareNum < 0) {
-					bcareNum = bcareSize - 7;
+				bcareNum += 1;
+				if (bcareNum > bcareSize - 7) {
+					bcareNum = 0;
 				}
 			});
 			
