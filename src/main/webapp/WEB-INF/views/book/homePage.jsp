@@ -11,6 +11,9 @@
 
 <body>
 	<%@ include file="home.jsp"%>
+<%-- <%
+	FamousVO famous = (FamousVO) session.getAttribute("famous");
+%> --%>
 	<div id="mainslide">
 		<div id="btn">
 			<div id="leftbtn">
@@ -43,7 +46,7 @@
 	<div class="clear"></div>
 	<div id="content">
 		<div id="wiseSaying">
-			<a id="wisetrun">오늘의 명언 : 명언이 나올 위치.. 페이지가 새로 로딩될때마다 만 바뀜.. DB받아오기</a>
+			<a id="wisetrun">오늘의 명언 : <%-- <%=famous.getContent()%> --%><!-- ..페이지가 새로 로딩될때마다 만 바뀜.. --></a>
 		</div>
 		<div class="clear"></div>
 		<section id="contentA">
