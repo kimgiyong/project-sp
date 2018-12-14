@@ -98,3 +98,17 @@
 .lastdiv {
 	padding-bottom: 30px;
 }
+
+.topslide {
+	cursor: pointer;
+	text-align: center;
+}
+
+.topa {
+	position: fixed;
+	left: 85%;
+	bottom: 50px;
+	display: none;
+	font-size: 140%;
+	color: darkred;
+}
