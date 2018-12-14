@@ -18,9 +18,11 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.project.sp.controller.UserController;
+import com.project.sp.dao.BookDAO;
 import com.project.sp.service.BookService;
 import com.project.sp.service.UserService;
 import com.project.sp.vo.BookVO;
+import com.project.sp.vo.PageVO;
 import com.project.sp.vo.UserVO;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -28,13 +30,14 @@ import com.project.sp.vo.UserVO;
 public class VOTest {
 
 	@Autowired
-	private BookService bs;
+	private BookDAO bs;
 	
 	@Test
 	public void test() {
 		BookVO bv = new BookVO();
-		bv.setBookCode("s1");
-		bv.setUserNum(1);
-		System.out.println(bs.bookSelectLike(bv));
+		bv.setBookName("집");
+		bs.bookSelectList(bv);
+		PageVO p = new PageVO();
+		p.makePaging(15,10);
 	}
 }

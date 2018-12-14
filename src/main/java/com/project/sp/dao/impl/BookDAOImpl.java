@@ -22,7 +22,12 @@ public class BookDAOImpl implements BookDAO {
 	
 	@Override
 	public int bookSelectSize(BookVO book) {
-		return ss.selectOne("com.project.sp.BOOK.bookSelectSize",book);
+		int bookSize = ss.selectOne("com.project.sp.BOOK.bookSelectSize",book);
+		int pageSize = bookSize / 10;
+		if(bookSize%10>0) {
+			pageSize++;
+		}
+		return pageSize;
 	}
 	
 	@Override

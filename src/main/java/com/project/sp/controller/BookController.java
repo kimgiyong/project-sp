@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.project.sp.service.BookService;
 import com.project.sp.vo.BookVO;
+import com.project.sp.vo.PageVO;
 import com.project.sp.vo.PostVO;
 
 import lombok.extern.slf4j.Slf4j;
@@ -31,7 +32,19 @@ public class BookController {
 	
 	@GetMapping(value="/bookList")
 	public String bookSelectList(@ModelAttribute("book") BookVO book, HttpServletRequest request){
-		System.out.println(request.getRequestURI());
+		int bookSize = bs.bookSelectSize(book);
+		int pageSize = bookSize / 10;
+		if(bookSize%10>0) {
+			pageSize++;
+		}
+		int pageNO = book.getPageS();
+		if(pageNO>bookSize) {
+			pageNO = bookSize ;
+		}
+		PageVO pages = new PageVO();
+		pages.makePaging(pageSize, pageNO);
+		request.setAttribute("page", pages);
+		book.setPageS((book.getPageS()-1)*10);
 		List<BookVO> books = bs.bookSelectList(book);
 		request.setAttribute("books", books);
 		return "book/bookSelect/bookList";

@@ -16,6 +16,10 @@ public class BookServiceImpl implements BookService {
 	private BookDAO bd;
 	
 	@Override
+	public int bookSelectSize(BookVO book) {
+		return bd.bookSelectSize(book);
+	}
+	@Override
 	public List<BookVO> bookSelectList(BookVO book) {
 		return bd.bookSelectList(book);
 	}

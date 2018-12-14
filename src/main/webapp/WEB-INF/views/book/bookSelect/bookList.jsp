@@ -25,11 +25,11 @@
 		<li><a href="#">최신순 ▼</a></li>
 		<li><a href="#">글자순 ▼</a></li>
 	</ul>
-	<c:forEach var="list" items="${books}">
+	<c:forEach var="list" items="${books}" varStatus="sta">
 		<table id="listTable">		
 			<tbody>
 				<tr>
-					<td>1</td>
+					<td>${sta.count}</td>
 					<td id="tds"><img id="bookImg" src="#"><br><span class="bookTitle">${list.bookName}</span></td>
 					<td id="tds2">
 						저작자 : ${list.bookWriter}<br><br>
@@ -43,7 +43,7 @@
 		</table>
 	</c:forEach>
 	<div id="page">
-	<c:forEach var="a" begin="1" end="10">
+	<c:forEach var="a" begin="${page.startPage}" end="${page.endPage}">
 		<span><a href="/bookList?bookName=<%=request.getParameter("bookName")%>&bookPub=<%=request.getParameter("bookPub")%>&
 		bookWriter=<%=request.getParameter("bookWriter")%>&pageS=${a}">[${a}]</a></span>
 	</c:forEach>

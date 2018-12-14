@@ -11,8 +11,8 @@
 			<if test="bookPub!=null">or bookPub like concat('%',#{bookPub},'%')</if>
 		</where>
 	</select>
-	<select id="bookSelectLists" resultType="book" parameterType="book">
-		select DISTINCT * from booktbl
+	<select id="bookSelectList" resultType="book" parameterType="book">
+		select * from booktbl
 		<where>
 			<if test="bookName!=null">or bookName like concat('%',#{bookName},'%')</if>
 			<if test="bookWriter!=null">or bookWriter like concat('%',#{bookWriter},'%')</if>
