@@ -10,10 +10,10 @@
 </head>
 
 <body>
-	<%@ include file="home.jsp"%>
 <%-- <%
 	FamousVO famous = (FamousVO) session.getAttribute("famous");
 %> --%>
+	<%@ include file="home.jsp"%>
 	<div id="mainslide">
 		<div id="btn">
 			<div id="leftbtn">
