@@ -30,7 +30,7 @@
 }
 #notices thead tr{
 	height:60px;
-	background: rgb(0,52,88); 
+	background: #002c2f; 
 }
 #notices thead tr th{
 	color: white;
@@ -61,7 +61,7 @@
 	width: 100%; 
 	height: 50px;
 	border: none;
-	background: rgb(55,88,123);
+	background: #40686a;
 	color: #fefefb;
 }
 .goBtn button:hover{

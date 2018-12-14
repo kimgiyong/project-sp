@@ -4,7 +4,8 @@
 	href="${rootPath}/resources/css/homeCss.css">
 <link href="http://fonts.googleapis.com/earlyaccess/jejuhallasan.css"
 	rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Black+And+White+Picture|Dokdo|East+Sea+Dokdo|Gamja+Flower|Gugi|Nanum+Pen+Script" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Mukta|Nanum+Gothic|Black+And+White+Picture|Dokdo|East+Sea+Dokdo|Gamja+Flower|Gugi|Nanum+Pen+Script" rel="stylesheet">
+<link href="https://software.naver.com/software/summary.nhn?softwareId=GWS_000324#">
 <script type="text/javascript"
 	src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <%

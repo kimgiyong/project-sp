@@ -27,17 +27,15 @@
 				<th>질문</th>
 			</tr>
 		</thead>
-		<tbody class="positionTopic">
-			<tr>
+		<tbody class="noticeOne">
+			<tr class="positionTopic">
 				<th class="member">회원명님</th>
 				<th class="summary">회원이 질문의 대략적인 내용을 적어두는 자리입니다.</th>
 			</tr>
-		</tbody>
-		<tbody class="detail">
-			<tr class="contentsD">
-				<td colspan="2"><textarea disabled="disabled">db에서 내용 받아 올꺼다</textarea></td>
+			<tr class="detail">
+				<td colspan="2" class="contentsD"><textarea disabled="disabled">db에서 내용 받아 올꺼다</textarea></td>
 			</tr>
-			<tr id="answers"> 
+			<tr class="detail"> 
 				<td colspan="2"> 
 					<div>
 						<ul class="answerList">
@@ -58,7 +56,40 @@
 						</ul>
 					</div>
 					<hr>
-					<div id="goReply"><a href="/uri/book/menu/qna/qnaReply?id=1">답글 작성하러 가기</a></div>
+					<div id="goReply"><a href="/uri/book/menu/noticeboard/noticeReply?id=1">답글 작성하러 가기</a></div>
+				</td>
+			</tr>
+		</tbody>
+		<tbody class="noticeOne">
+			<tr class="positionTopic">
+				<th class="member">회원명님</th>
+				<th class="summary">회원이 질문의 대략적인 내용을 적어두는 자리입니다.</th>
+			</tr>
+			<tr class="detail">
+				<td colspan="2" class="contentsD"><textarea disabled="disabled">db에서 내용 받아 올꺼다</textarea></td>
+			</tr>
+			<tr class="detail"> 
+				<td colspan="2"> 
+					<div>
+						<ul class="answerList">
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea></li>
+						</ul>
+					</div>
+					<hr>
+					<div id="goReply"><a href="/uri/book/menu/noticeboard/noticeReply?id=1">답글 작성하러 가기</a></div>
 				</td>
 			</tr>
 		</tbody>
@@ -68,10 +99,11 @@
 </body>
 <script>
 $(function(){
-	$('.answerList').scrollTop($('.answerList').prop('scrollHeight'));
+	$('.detail').hide();
 })
-$('.positionTopic tr').on('click',function(){
-		$(this).siblings('tbody.detail').toggle(); 
-	})
+	$('.answerList').scrollTop($('.answerList').prop('scrollHeight'));
+$('.positionTopic').on('click',function(){
+		$(this).siblings('.detail').toggle(); 
+})
 </script>
 </html>

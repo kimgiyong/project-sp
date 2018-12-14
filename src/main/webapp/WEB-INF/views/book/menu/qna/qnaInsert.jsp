@@ -14,14 +14,24 @@
 		<%@ include file="../../menuHead.jsp"%>
 		<div id="body">
 			<div class="box">
-				<span class="text">제목</span><input type="text" placeholder="제목을 입력해주세요.">
+				<span class="text">제목</span><input type="text"
+					placeholder="제목을 입력해주세요.">
 			</div>
 			<div class="box">
-				<span class="text">상세 내용</span><textarea id="content"  placeholder="질문을 작성해주세요."></textarea>
-				<button id="sendQ" onclick="sendQ()">전송</button>
+				<span class="text">상세 내용</span>
+				<textarea id="content" placeholder="질문을 작성해주세요."></textarea>
+				<button id="sendQ" onclick="sendQ()">전송</button> 
 			</div>
 		</div>
 	</div>
-<%@ include file="../../footer.jsp" %>
+	<%@ include file="../../footer.jsp"%>
 </body>
+<script>
+detextname.textContent = "질문작성";
+callback.textContent = "돌아가기";
+function sendQ(){
+	alert("기용이가 db에 넣어 줄꺼에요~")
+	location.href="/uri/book/menu/qna/qnaList";
+}
+</script>
 </html>
