@@ -47,6 +47,6 @@ var AjaxUtil = function(){
 		}else{
 			xhr.setRequestHeader('Content-type','text/plan;charset=utf-8');
 			xhr.send();
-		}
+		} 
 	}
 }
