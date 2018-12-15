@@ -36,12 +36,17 @@ var AjaxUtil = function(){
 	this.send = function(conf){
 		init(conf); 
 		if(conf.method=='GET'){
-			conf.url += '?' + conf.param;
+			if(conf.param!='{}'){
+				conf.url += '?' + conf.param;
+			}
 		}
 		xhr.open(conf.method,conf.url);
 		if(conf.method!='GET'){
 			xhr.setRequestHeader('Content-type','application/json;charset=utf-8');
-		} 
-		xhr.send(conf.param);
+			xhr.send(conf.param);
+		}else{
+			xhr.setRequestHeader('Content-type','text/plan;charset=utf-8');
+			xhr.send();
+		}
 	}
 }

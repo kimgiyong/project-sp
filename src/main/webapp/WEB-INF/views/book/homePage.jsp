@@ -11,9 +11,21 @@
 
 <body>
 	<%@ include file="home.jsp"%>
-<%-- <%
-	FamousVO famous = (FamousVO) session.getAttribute("famous");
-%> --%>
+	<script>
+		function doin(){
+			var conf = {
+					url:'/famous',
+					method:'GET',
+					success:function(res){
+						res = JSON.parse(res);
+						var wisetrun = document.querySelector('#wisetrun');
+						wisetrun.innerHTML = res.content;
+					}
+			}
+			au.send(conf);
+		}
+		window.addEventListener('load',doin);
+	</script>
 	<div id="mainslide">
 		<div id="btn">
 			<div id="leftbtn">
@@ -27,26 +39,26 @@
 		<section id="slideimge">
 			<ul class="imgeul">
 				<li class="imgeli"><img
-					src="${resPath}/img/loginimg/bookerber.jpg" alt="mainimge" /></li>
+					src="${resPath}/img/homeimg/slideimg/slogan_img1.gif" alt="mainimge" /></li>
 			</ul>
 			<ul class="imgeul">
-				<li class="imgeli"><img src="${resPath}/img/loginimg/book1.jpg"
-					alt="mainimge" /></li>
+				<li class="imgeli"><img
+					src="${resPath}/img/homeimg/slideimg/book6.png" alt="mainimge" /></li>
 			</ul>
 			<ul class="imgeul">
-				<li class="imgeli"><img src="${resPath}/img/homeimg/back3.jpg"
-					alt="mainimge" /></li>
+				<li class="imgeli"><img
+					src="${resPath}/img/homeimg/slideimg/bookgmm.jpg" alt="mainimge" /></li>
 			</ul>
 			<ul class="imgeul">
-				<li class="imgeli"><img src="${resPath}/img/homeimg/back4.jpg"
-					alt="mainimge" /></li>
+				<li class="imgeli"><img
+					src="${resPath}/img/homeimg/slideimg/book5.jpg" alt="mainimge" /></li>
 			</ul>
 		</section>
 	</div>
 	<div class="clear"></div>
 	<div id="content">
 		<div id="wiseSaying">
-			<a id="wisetrun">오늘의 명언 : <%-- <%=famous.getContent()%> --%><!-- ..페이지가 새로 로딩될때마다 만 바뀜.. --></a>
+			<a id="wisetrun"><!-- ..페이지가 새로 로딩될때마다 만 바뀜.. --></a>
 		</div>
 		<div class="clear"></div>
 		<section id="contentA">
@@ -57,63 +69,63 @@
 			</div>
 			<button id="fooleftbtn">&lt;</button>
 			<ul id="bestBook">
-				<li class="imgBook"><img src="#">
+				<li class="imgBook"><img src="#" alt="bookimg">
 					<h2>제목1</h2></li>
-				<li class="imgBook"><img src="#">
+				<li class="imgBook"><img src="#" alt="bookimg">
 					<h2>제목2</h2></li>
-				<li class="imgBook"><img src="#">
+				<li class="imgBook"><img src="#" alt="bookimg">
 					<h2>제목3</h2></li>
-				<li class="imgBook"><img src="#">
+				<li class="imgBook"><img src="#" alt="bookimg">
 					<h2>제목4</h2></li>
-				<li class="imgBook"><img src="#">
+				<li class="imgBook"><img src="#" alt="bookimg">
 					<h2>제목5</h2></li>
-				<li class="imgBook"><img src="#">
+				<li class="imgBook"><img src="#" alt="bookimg">
 					<h2>제목6</h2></li>
-				<li class="imgBook"><img src="#">
+				<li class="imgBook"><img src="#" alt="bookimg">
 					<h2>제목7</h2></li>
-				<li class="imgBook"><img src="#">
+				<li class="imgBook"><img src="#" alt="bookimg">
 					<h2>제목8</h2></li>
-				<li class="imgBook"><img src="#">
+				<li class="imgBook"><img src="#" alt="bookimg">
 					<h2>제목9</h2></li>
-				<li class="imgBook"><img src="#">
+				<li class="imgBook"><img src="#" alt="bookimg">
 					<h2>제목10</h2></li>
-				<li class="imgBook"><img src="#">
+				<li class="imgBook"><img src="#" alt="bookimg">
 					<h2>제목11</h2></li>
-				<li class="imgBook"><img src="#">
+				<li class="imgBook"><img src="#" alt="bookimg">
 					<h2>제목12</h2></li>
-				<li class="imgBook"><img src="#">
+				<li class="imgBook"><img src="#" alt="bookimg">
 					<h2>제목13</h2></li>
-				<li class="imgBook"><img src="#">
+				<li class="imgBook"><img src="#" alt="bookimg">
 					<h2>제목14</h2></li>
 			</ul>
 			<ul id="newBook">
-				<li class="imgBook"><img src="#">
+				<li class="imgBook"><img src="#" alt="bookimg">
 					<h2>제목a</h2></li>
-				<li class="imgBook"><img src="#">
+				<li class="imgBook"><img src="#" alt="bookimg">
 					<h2>제목b</h2></li>
-				<li class="imgBook"><img src="#">
+				<li class="imgBook"><img src="#" alt="bookimg">
 					<h2>제목c</h2></li>
-				<li class="imgBook"><img src="#">
+				<li class="imgBook"><img src="#" alt="bookimg">
 					<h2>제목d</h2></li>
-				<li class="imgBook"><img src="#">
+				<li class="imgBook"><img src="#" alt="bookimg">
 					<h2>제목e</h2></li>
-				<li class="imgBook"><img src="#">
+				<li class="imgBook"><img src="#" alt="bookimg">
 					<h2>제목f</h2></li>
-				<li class="imgBook"><img src="#">
+				<li class="imgBook"><img src="#" alt="bookimg">
 					<h2>제목g</h2></li>
-				<li class="imgBook"><img src="#">
+				<li class="imgBook"><img src="#" alt="bookimg">
 					<h2>제목h</h2></li>
-				<li class="imgBook"><img src="#">
+				<li class="imgBook"><img src="#" alt="bookimg">
 					<h2>제목i</h2></li>
-				<li class="imgBook"><img src="#">
+				<li class="imgBook"><img src="#" alt="bookimg">
 					<h2>제목j</h2></li>
-				<li class="imgBook"><img src="#">
+				<li class="imgBook"><img src="#" alt="bookimg">
 					<h2>제목k</h2></li>
-				<li class="imgBook"><img src="#">
+				<li class="imgBook"><img src="#" alt="bookimg">
 					<h2>제목l</h2></li>
-				<li class="imgBook"><img src="#">
+				<li class="imgBook"><img src="#" alt="bookimg">
 					<h2>제목m</h2></li>
-				<li class="imgBook"><img src="#">
+				<li class="imgBook"><img src="#" alt="bookimg">
 					<h2>제목n</h2></li>
 			</ul>
 			<button id="foorightbtn">&gt;</button>
@@ -125,6 +137,9 @@
 				<a class="contentBA" href="#">바로가기</a>
 				<!-- DB에서 받아올 것 -->
 				<table class="contentBtbl">
+					<tr class="contentBtr">
+						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+					</tr>
 					<tr class="contentBtr">
 						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
 					</tr>
@@ -162,6 +177,9 @@
 					<tr class="contentBtr">
 						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
 					</tr>
+					<tr class="contentBtr">
+						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+					</tr>
 				</table>
 			</div>
 			<div class="contentBnotice cbtr">
@@ -184,6 +202,9 @@
 					<tr class="contentBtr">
 						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
 					</tr>
+					<tr class="contentBtr">
+						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+					</tr>
 				</table>
 			</div>
 			<div class="contentBnotice dbtr">
@@ -191,6 +212,9 @@
 				<p class="contentBA" href="#">바로가기</p>
 				<!-- DB에서 받아올 것 -->
 				<table class="contentBtbl">
+					<tr class="contentBtr">
+						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+					</tr>
 					<tr class="contentBtr">
 						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
 					</tr>
@@ -255,7 +279,7 @@
 	<script>
 		$(function() {
 			var $careNum = 0;
-			var $theSize = 3;
+			var $theSize = 4;
 			$("#slideimge ul").hide();
 			$("#slideimge ul").eq(0).show();
 			window.setInterval(function() {
@@ -297,15 +321,15 @@
 			var bcareSize = 14; //0~14까지
 			var btoggle = 0;
 
-			function numcount(){
-				bcareNum1 = bcareNum+1;
-				bcareNum2 = bcareNum+2;
-				bcareNum3 = bcareNum+3;
-				bcareNum4 = bcareNum+4;
-				bcareNum5 = bcareNum+5;
-				bcareNum6 = bcareNum+6;
+			function numcount() {
+				bcareNum1 = bcareNum + 1;
+				bcareNum2 = bcareNum + 2;
+				bcareNum3 = bcareNum + 3;
+				bcareNum4 = bcareNum + 4;
+				bcareNum5 = bcareNum + 5;
+				bcareNum6 = bcareNum + 6;
 			}
-			
+
 			function bestBookfun() {
 				numcount();
 				$("#bestBook li").hide();
@@ -345,7 +369,7 @@
 				cuscolorchange('goNew');
 				btoggle = 1;
 			});
-			
+
 			$("#fooleftbtn,#foorightbtn").click(function() {
 				if (btoggle == 0) {
 					bestBookfun();
@@ -353,7 +377,7 @@
 					newBookfun();
 				}
 			});
-			
+
 			$("#fooleftbtn").click(function() {
 				bcareNum -= 1;
 				if (bcareNum < 0) {
@@ -366,7 +390,7 @@
 					bcareNum = 0;
 				}
 			});
-			
+
 			$("#fooleftbtn,#foorightbtn").click(function() {
 				if (btoggle == 0) {
 					bestBookfun();
@@ -374,33 +398,6 @@
 					newBookfun();
 				}
 			});
-
-			/* $("#fooleftbtn").click(function() {
-				bcareNum -= 6;
-				if (bcareNum < 0) {
-					bcareNum = bcareSize - 1;
-				}
-				if (btoggle == 0) {
-					bestBookfun();
-				} else {
-					newBookfun();
-				}
-			}); */
-/*
-			$("#foorightbtn").click(function() {
-				bcareNum -= 2;
-				if (bcareNum > bcareSize - 3) {
-					bcareNum = 0;
-				} else if (bcareNum == -2) {
-					bcareNum += 3;
-				}
-				if (btoggle == 0) {
-					bestBookfun();
-				} else {
-					newBookfun();
-				}
-
-			}); */
 		});
 	</script>
 </body>

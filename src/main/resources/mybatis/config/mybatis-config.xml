@@ -9,5 +9,6 @@
 	<typeAlias type="com.project.sp.vo.BookComentVO" alias="bookComent"></typeAlias>
 	<typeAlias type="com.project.sp.vo.PostComentVO" alias="postComent"></typeAlias>
 	<typeAlias type="com.project.sp.vo.LikeVO" alias="like"></typeAlias>
+	<typeAlias type="com.project.sp.vo.FamousVO" alias="famous"></typeAlias>
 	</typeAliases>
 </configuration>
