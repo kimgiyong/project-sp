@@ -58,8 +58,8 @@
 	<div class="clear"></div>
 	<div id="content">
 		<div id="wiseSaying">
-		<marquee behavior=alternate id="wisetrun"></marquee>
-			<!-- <a id="wisetrun">..페이지가 새로 로딩될때마다 만 바뀜..</a> -->
+		<marquee id="wisetrun" behavior=alternate></marquee>
+			<!-- ..페이지가 새로 로딩될때마다 만 바뀜.. -->
 		</div>
 		<div class="clear"></div>
 		<section id="contentA">
@@ -70,63 +70,63 @@
 			</div>
 			<button id="fooleftbtn">&lt;</button>
 			<ul id="bestBook">
-				<li class="imgBook"><img src="#" alt="bookimg">
+				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
 					<h2>제목1</h2></li>
-				<li class="imgBook"><img src="#" alt="bookimg">
+				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
 					<h2>제목2</h2></li>
-				<li class="imgBook"><img src="#" alt="bookimg">
+				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
 					<h2>제목3</h2></li>
-				<li class="imgBook"><img src="#" alt="bookimg">
+				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
 					<h2>제목4</h2></li>
-				<li class="imgBook"><img src="#" alt="bookimg">
+				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
 					<h2>제목5</h2></li>
-				<li class="imgBook"><img src="#" alt="bookimg">
+				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
 					<h2>제목6</h2></li>
-				<li class="imgBook"><img src="#" alt="bookimg">
+				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
 					<h2>제목7</h2></li>
-				<li class="imgBook"><img src="#" alt="bookimg">
+				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
 					<h2>제목8</h2></li>
-				<li class="imgBook"><img src="#" alt="bookimg">
+				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
 					<h2>제목9</h2></li>
-				<li class="imgBook"><img src="#" alt="bookimg">
+				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
 					<h2>제목10</h2></li>
-				<li class="imgBook"><img src="#" alt="bookimg">
+				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
 					<h2>제목11</h2></li>
-				<li class="imgBook"><img src="#" alt="bookimg">
+				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
 					<h2>제목12</h2></li>
-				<li class="imgBook"><img src="#" alt="bookimg">
+				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
 					<h2>제목13</h2></li>
-				<li class="imgBook"><img src="#" alt="bookimg">
+				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
 					<h2>제목14</h2></li>
 			</ul>
 			<ul id="newBook">
-				<li class="imgBook"><img src="#" alt="bookimg">
+				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
 					<h2>제목a</h2></li>
-				<li class="imgBook"><img src="#" alt="bookimg">
+				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
 					<h2>제목b</h2></li>
-				<li class="imgBook"><img src="#" alt="bookimg">
+				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
 					<h2>제목c</h2></li>
-				<li class="imgBook"><img src="#" alt="bookimg">
+				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
 					<h2>제목d</h2></li>
-				<li class="imgBook"><img src="#" alt="bookimg">
+				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
 					<h2>제목e</h2></li>
-				<li class="imgBook"><img src="#" alt="bookimg">
+				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
 					<h2>제목f</h2></li>
-				<li class="imgBook"><img src="#" alt="bookimg">
+				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
 					<h2>제목g</h2></li>
-				<li class="imgBook"><img src="#" alt="bookimg">
+				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
 					<h2>제목h</h2></li>
-				<li class="imgBook"><img src="#" alt="bookimg">
+				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
 					<h2>제목i</h2></li>
-				<li class="imgBook"><img src="#" alt="bookimg">
+				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
 					<h2>제목j</h2></li>
-				<li class="imgBook"><img src="#" alt="bookimg">
+				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
 					<h2>제목k</h2></li>
-				<li class="imgBook"><img src="#" alt="bookimg">
+				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
 					<h2>제목l</h2></li>
-				<li class="imgBook"><img src="#" alt="bookimg">
+				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
 					<h2>제목m</h2></li>
-				<li class="imgBook"><img src="#" alt="bookimg">
+				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
 					<h2>제목n</h2></li>
 			</ul>
 			<button id="foorightbtn">&gt;</button>

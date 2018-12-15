@@ -15,7 +15,7 @@
 <%@ include file="../menuHead.jsp" %>
 	<table id="bookInfoTbl" border="1">
 		<tr>
-			<td><img id="bookImg" src="#"></td>
+			<td><img id="bookImg" src="${resPath}/img/imgredy.jpg"></td>
 			<td><ul>
 				<li>도서명 : ${books.bookName}</li>
 				<li>저작자 : ${books.bookWriter}</li>

@@ -10,7 +10,6 @@
 <link rel="stylesheet" type="text/css"
 	href="${rootPath}/resources/css/menuCss/infoUse.css" />
 </head>
-<!-- 아무나 이곳에 내용을 채워주오. . . -->
 <body>
 	<%@ include file="../home.jsp"%>
 	<div class="container">
@@ -135,7 +134,7 @@
 	    });
 	});
 
-	detextname.textContent = "도서관 소개";
+	detextname.textContent = "도서관 이용안내";
 	callback.textContent = "홈페이지";
 	callback.addEventListener("click", gohome);
 </script>

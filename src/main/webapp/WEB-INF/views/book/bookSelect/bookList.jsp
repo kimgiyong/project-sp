@@ -36,7 +36,7 @@ String pageS = request.getParameter("pageS");
 			<tbody>
 				<tr>
 					<td><c:out value="${sta.count+page.pageStart}"/></td>
-					<td id="tds"><img id="bookImg" src="#"><br><span class="bookTitle">${list.bookName}</span></td>
+					<td id="tds"><img id="bookImg" src="${resPath}/img/imgredy.jpg"><br><span class="bookTitle">${list.bookName}</span></td>
 					<td id="tds2">
 						저작자 : ${list.bookWriter}<br><br>
 						출판사 : ${list.bookPub}<br><br>
