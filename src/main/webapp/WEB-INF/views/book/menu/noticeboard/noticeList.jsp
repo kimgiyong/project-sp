@@ -56,7 +56,7 @@
 						</ul>
 					</div>
 					<hr>
-					<div id="goReply"><a href="/uri/book/menu/noticeboard/noticeReply?id=1">답글 작성하러 가기</a></div>
+					<div class="goReply" onclick="goReply()"><a>답글 작성하러 가기</a></div>
 				</td>
 			</tr>
 		</tbody>
@@ -89,7 +89,7 @@
 						</ul>
 					</div>
 					<hr>
-					<div id="goReply"><a href="/uri/book/menu/noticeboard/noticeReply?id=1">답글 작성하러 가기</a></div>
+					<div class="goReply"><a href="/uri/book/menu/noticeboard/noticeReply?id=1">답글 작성하러 가기</a></div>
 				</td>
 			</tr>
 		</tbody>
@@ -105,5 +105,8 @@ $(function(){
 $('.positionTopic').on('click',function(){
 		$(this).siblings('.detail').toggle(); 
 })
+function goReply(){
+	location.href="/uri/book/menu/noticeboard/noticeReply?id=1";
+}
 </script>
 </html>

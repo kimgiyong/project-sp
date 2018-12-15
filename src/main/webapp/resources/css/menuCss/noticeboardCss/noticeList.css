@@ -5,11 +5,17 @@
 	border-collapse:collapse;
 }
 #notices tr td,th{
-	border:1px solid #aaa;
+	border:1px solid #222;
 }
 .category tr{
 	height:40px;
-	background: rgba(95,155,235,0.2);
+	background: #3d2e2d;
+}
+.category tr th,td{
+	color:white;
+}
+.positionTopic{
+	height:30px;
 }
 .notice tr{
 	height:30px;
@@ -38,4 +44,18 @@
 }
 .answerList .credat{
 	float:right;
+}
+.goReply{   
+    text-align: center;
+    height: 45px;
+    line-height: 42.5px;
+    background: #3d2e2d;
+}
+.goReply:hover{   
+    background: #4d3e3d;
+}
+.goReply a{
+    font-size:18px;
+	font-weight:bold;
+	color:white;
 }

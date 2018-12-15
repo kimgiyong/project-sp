@@ -7,8 +7,8 @@
 <title>Q & A</title>
 <link rel="stylesheet" type="text/css"
 	href="${rootPath}/resources/css/menuHead.css" />
-<link rel="stylesheet" type="text/css"
-	href="${rootPath}/resources/css/menuCss/qna/qnaReply.css" />
+	<link rel="stylesheet" type="text/css"
+	href="${rootPath}/resources/css/menuCss/noticeboardCss/noticeReply	.css" />
 </head>
 <body> 
 	<%@ include file="../../home.jsp"%>

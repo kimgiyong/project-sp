@@ -13,7 +13,9 @@
 }
 
 .category tr{
-	height:40px;
+    font-size: 18px;
+    height: 45px;
+    background: #3d2e2d;
 }
 
 #contentsD{  
@@ -63,10 +65,10 @@
 	padding:20px;
 	line-height:10px;
 }
-#goReply{
-	width:200px;
+#sendRbtn{
+	width:98%;
 	height:40px;
-	background: #162;
+	background: #3d2e2d;
 	color:white;	
 	margin-top:10px;
 	margin-bottom:10px;
