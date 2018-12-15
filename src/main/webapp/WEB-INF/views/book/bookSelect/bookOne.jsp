@@ -51,13 +51,13 @@
 </div>
 
 <%@ include file="../footer.jsp"%>
-</body>
 <script>
 	var likeToggle = document.getElementById("likeToggle");
 	var likeImg = document.getElementById("likeImg");
-	
+	var like = document.getElementById("like");
 	detextname.textContent = "상세 정보";	
-	likeToggle.addEventListener("click",function(){
+	likeToggle.addEventListener("click",likeClick);
+	function likeClick(){
 		if(likeImg.src.match("space") == null){
 			likeImg.src = "/resources/img/heart.gif";
 			window.setTimeout(function() {
@@ -69,17 +69,37 @@
 				likeImg.src = "/resources/img/heart.png";
 			}, 750);
 		}
-	});
+	}
 	
 	function goSearchpage(){
 		window.open("https://book.naver.com/search/search.nhn?sm=sta_hty.book&sug=&where=nexearch&query=책이름");
 	}
-	function doinit(){
-		if(<%=user%>==null){
+	function doin(){
+		if('<%=user%>'=='null'){
 			likeToggle.style.display="none";
+		}else if('<%=user%>'!='null'){
+			var userN = <%=userNum%>;
+			like.style.position="relative";
+			like.style.top="-20px";
+			var conf = {
+					url:'/bookLike',
+					method:'GET',
+					param:JSON.stringify({
+						userNum:userN, bookCode:'${books.bookCode}'
+					}),
+					success:function(res){
+						if(res==1){
+							likeImg.src = "/resources/img/heart.png";
+						}else if(res==0){
+							likeImg.src = "/resources/img/spaceHeart.png";
+						}
+					}
+			}
+			au.send(conf);
 		}
 	}
-	window.addEventListener('load',doinit);
+	window.addEventListener('load',doin);
 	/* callback.addEventLitener("click",history.go(-1))  */
 </script>
+</body>
 </html>

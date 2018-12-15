@@ -21,7 +21,9 @@ import com.project.sp.controller.UserController;
 import com.project.sp.dao.BookDAO;
 import com.project.sp.service.BookService;
 import com.project.sp.service.UserService;
+import com.project.sp.util.LikeInOut;
 import com.project.sp.vo.BookVO;
+import com.project.sp.vo.LikeVO;
 import com.project.sp.vo.PageVO;
 import com.project.sp.vo.UserVO;
 
@@ -34,10 +36,15 @@ public class VOTest {
 	
 	@Test
 	public void test() {
-		BookVO bv = new BookVO();
-		bv.setBookName("집");
-		System.out.println(bs.bookSelectSize(bv));
-		PageVO p = new PageVO();
-		p.makePaging(15,10);
+//		BookVO bv = new BookVO();
+//		bv.setBookName("집");
+//		System.out.println(bs.bookSelectSize(bv));
+//		PageVO p = new PageVO();
+//		p.makePaging(15,10);
+		LikeInOut ls = new LikeInOut();
+		LikeVO lv = new LikeVO();
+		lv.setBookCode("sss");
+		lv.setUserNum(1);
+		System.out.println(ls.likeSelect(lv));
 	}
 }

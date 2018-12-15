@@ -90,11 +90,7 @@ public class BookDAOImpl implements BookDAO {
 		LikeVO lv = new LikeVO();
 		lv.setUserNum(book.getUserNum());
 		lv.setBookCode(book.getBookCode());
-		if(lio.likeSelect(lv)==null) {
-			return 1;
-		}else {
-			return 0;
-		}
+		return lio.likeSelect(lv);
 	}
 
 }
