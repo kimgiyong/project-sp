@@ -52,7 +52,8 @@
     background: #3d2e2d;
 }
 .goReply:hover{   
-    background: #4d3e3d;
+    background: #5d4e4d;
+    cursor:pointer;
 }
 .goReply a{
     font-size:18px;

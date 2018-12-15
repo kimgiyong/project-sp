@@ -16,7 +16,7 @@
 		var user = '<%=user%>';
 		var btn1 = document.getElementById('loge1');
 		var btn0 = document.getElementById('loge0');
-		if (user != 'null') {
+		if (user != 'null') {      
 			btn1.textContent = "LOGOUT";
 			btn0.textContent = "My Page";
 		}
