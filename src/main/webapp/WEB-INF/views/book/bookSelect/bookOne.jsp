@@ -81,7 +81,7 @@
 			var userN = <%=userNum%>;
 			like.style.position="relative";
 			like.style.top="-20px";
-			var conf = {
+			var conf = { 
 					url:'/bookLike',
 					method:'GET',
 					param:JSON.stringify({
