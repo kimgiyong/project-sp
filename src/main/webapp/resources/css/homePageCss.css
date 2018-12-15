@@ -77,11 +77,14 @@
 	height: 26px;
 	padding: 4px;
 	padding-bottom: 27px;
+	white-space:nowrap;
+	overflow: hidden;
 }
 
-#wiseSaying a {
+#wiseSaying marquee {
 	color: white;
 	cursor: pointer;
+	white-space:nowrap;
 }
 
 /* 추천도서 */

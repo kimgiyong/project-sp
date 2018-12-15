@@ -58,7 +58,8 @@
 	<div class="clear"></div>
 	<div id="content">
 		<div id="wiseSaying">
-			<a id="wisetrun"><!-- ..페이지가 새로 로딩될때마다 만 바뀜.. --></a>
+		<marquee behavior=alternate id="wisetrun"></marquee>
+			<!-- <a id="wisetrun">..페이지가 새로 로딩될때마다 만 바뀜..</a> -->
 		</div>
 		<div class="clear"></div>
 		<section id="contentA">
