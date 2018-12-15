@@ -7,10 +7,10 @@
 <title>Q & A</title>
 <link rel="stylesheet" type="text/css"
 	href="${rootPath}/resources/css/menuHead.css" />
-	<link rel="stylesheet" type="text/css"
-	href="${rootPath}/resources/css/menuCss/noticeboardCss/noticeReply	.css" />
+<link rel="stylesheet" type="text/css"
+	href="${rootPath}/resources/css/menuCss/noticeboardCss/noticeReply.css" />
 </head>
-<body> 
+<body>
 	<%@ include file="../../home.jsp"%>
 	<div class="container">
 		<div id="listHead">
@@ -20,48 +20,48 @@
 			</h3>
 		</div>
 		<div id="spaceDiv"></div>
-		<table id="questions">
-		<thead class="category">
-			<tr>
-				<th>회원명</th>
-				<th>질문</th>
-			</tr>
-		</thead>
-		<tbody class="question">
-			<tr>
-				<th class="member">회원명님</th>
-				<th class="summary">회원이 질문의 대략적인 내용을 적어두는 자리입니다.</th>
-			</tr>
-			<tr class="contentsD"> 	
-				<td colspan="2">
-				<div>상세내용</div> 
-				<textarea disabled="disabled"></textarea></td>
-			</tr>
-			<tr id="detail"> 
-				<td colspan="2"> 
-					<div id="answers">
-						<div id="answerList">
-							<!-- 답글이 올라오는 곳 -->
+		<table id="notices">
+			<thead class="category">
+				<tr>
+					<th>회원명</th>
+					<th>질문</th>
+				</tr>
+			</thead>
+			<tbody class="notice">
+				<tr>
+					<th class="member">회원명님</th>
+					<th class="summary">회원이 질문의 대략적인 내용을 적어두는 자리입니다.</th>
+				</tr>
+				<tr class="contentsD">
+					<td colspan="2"><textarea disabled="disabled"></textarea></td>
+				</tr>
+				<tr id="detail">
+					<td colspan="2">
+						<div id="answers">
+							<div id="answerList">
+								<!-- 답글이 올라오는 곳 -->
+							</div>
 						</div>
-					</div>
-					<hr>
-					<div id="reply">
-						<textarea id="contentsR"></textarea>
-						<button id="sendRbtn" onclick="Reply()">전송</button>
-					</div>
-				</td>
-			</tr>
-		</tbody>
-	</table>
+						<hr>
+						<div id="reply">
+							<textarea id="contentsR"></textarea>
+							<button id="sendRbtn" onclick="Reply()">전송</button>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
 </body>
 <script>
+	detextname.textContent = "게시물 등록";
+	callback.textContent = "돌아가기";
 	var contentsR = document.getElementById("contentsR");
 	var answerList = document.getElementById("answerList");
 	function Reply() {
-		var newElement = '<div><span class="replier">'+ '회원이름님' 
-				+ '</span><br><textarea class="contentsR">'
-				+ contentsR.value + '</textarea></div>';
+		var newElement = '<div><span class="replier">' + '회원이름님'
+				+ '</span><br><textarea class="contentsR">' + contentsR.value
+				+ '</textarea></div>';
 		if (contentsR.value == "" || contentsR.value == null) {
 			alert("답글을 작성해 주세요");
 			return;

@@ -1,12 +1,12 @@
 @charset "UTF-8";
-#questions{
+#notices{
 	width:80%;
 	border-collapse: collapse;
 }
-#questions td, th{
+#notices td, th{
 	border:1px solid black;
 }
-#questions table{
+#notices table{
 	width:100%;
 	text-align:center;
 	border-collapse: collapse;
@@ -36,7 +36,7 @@
 #answerList div{
 	margin-top:10px;
 	border:1px solid red; 
-	width:90%;
+	width:600px;
 }
 .replier{
 	font-size:14px;
@@ -53,8 +53,8 @@
 	background: white;
 }
 #answerList{
-	border:10px solid green;
 	width:100%;
+	background: #fafbfb;
 }
 #contentsR{
 	margin-top:10px;
@@ -63,7 +63,11 @@
 	width:100%;
 	resize:none;
 	padding:20px;
-	line-height:10px;
+	line-height:30px;
+	height:110px;
+}
+#reply{
+	text-align: center;
 }
 #sendRbtn{
 	width:98%;
@@ -73,7 +77,6 @@
 	margin-top:10px;
 	margin-bottom:10px;
 	border-radius: 8px;
-	text-align: center;
 	line-height:40px;
 }
 

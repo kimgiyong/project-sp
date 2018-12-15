@@ -6,19 +6,13 @@
 	<meta charset="utf-8">
 	<title>Q & A</title>
 	<link rel="stylesheet" type="text/css"
-	href="${rootPath}/resources/css/menuHead.css" />
-	<link rel="stylesheet" type="text/css"
 	href="${rootPath}/resources/css/menuCss/noticeboardCss/noticeList.css" />
 </head>
 
 <body>
 <%@ include file="../../home.jsp" %>
 <div class="container"> 
-	<div id="listHead">
-		<span>게시판</span> 
-		<h3><a id="callback" onclick="go()">홈페이지</a></h3>
-	</div>
-	<div id="spaceDiv"></div>
+	<%@ include file="../../menuHead.jsp"%>
 	
 	<table id=notices>
 		<thead class="category">
@@ -98,6 +92,8 @@
 <%@ include file="../../footer.jsp" %>
 </body>
 <script>
+detextname.textContent = "게시판";
+callback.textContent = "홈페이지";
 $(function(){
 	$('.detail').hide();
 })
