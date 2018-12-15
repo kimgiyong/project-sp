@@ -10,7 +10,7 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <%
 	UserVO user = (UserVO) session.getAttribute("user");
-	int userNum;
+	int userNum=0;
 	if(user!=null){
 		userNum = user.getUserNum();
 	}

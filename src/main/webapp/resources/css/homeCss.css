@@ -7,7 +7,7 @@
 	text-decoration: none;
 	color: #000;
 	box-sizing: border-box;
-	font-family: 'Mukta', Nanum Gothic';
+	font-family: 'Mukta', Nanum Gothic ';
 }
 
 pre {
@@ -43,7 +43,7 @@ body {
 	display: inline-block;
 	float: left;
 	font-family: 'Gamja Flower', cursive;
-	/* font-family: 'Dokdo', cursive; x */ 
+	/* font-family: 'Dokdo', cursive; x */
 	/* font-family: 'Gugi', cursive; x */
 	/* font-family: 'East Sea Dokdo', cursive; */
 	/* font-family: 'Black And White Picture', sans-serif; x*/
@@ -155,7 +155,7 @@ body {
 	cursor: pointer;
 	background-color: transparent !important;
 	font-size: 120%;
-	color:#442200;
+	color: #442200;
 }
 
 .loge:hover {
@@ -277,4 +277,9 @@ body {
 .hover:hover {
 	color: #800040;
 	font-weight: bold;
+}
+
+.jbFixed {
+	position: fixed;
+	top: 0px;
 }
