@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE9">
 <link rel="stylesheet" type="text/css"
 	href="${rootPath}/resources/css/homeCss.css">
 <link href="http://fonts.googleapis.com/earlyaccess/jejuhallasan.css"
@@ -26,6 +27,18 @@
 		}
 	}
 	window.addEventListener('load', doInit);
+</script>
+<script>
+	$(document).ready(function() {
+		var jbOffset = $('#bodyHead').offset();
+		$(window).scroll(function() {
+			if ($(document).scrollTop() > jbOffset.top) {
+				$('#bodyHead').addClass('jbFixed');
+			} else {
+				$('#bodyHead').removeClass('jbFixed');
+			}
+		});
+	});
 </script>
 <div class="body"></div>
 <header>
@@ -93,6 +106,7 @@
 		</li>
 	</ul>	
 </section>
+
 <script>
 	$(function() {
 		var a = 0;
