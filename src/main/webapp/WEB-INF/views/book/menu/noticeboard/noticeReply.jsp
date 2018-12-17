@@ -12,14 +12,8 @@
 </head>
 <body>
 	<%@ include file="../../home.jsp"%>
-	<div class="container">
-		<div id="listHead">
-			<span>이용 안내</span>
-			<h3>
-				<a id="callback" onclick="go()">홈페이지</a>
-			</h3>
-		</div>
-		<div id="spaceDiv"></div>
+	<div class="container">	
+	<%@ include file="../../menuHead.jsp"%>
 		<table id="notices">
 			<thead class="category">
 				<tr>
@@ -42,9 +36,8 @@
 								<!-- 답글이 올라오는 곳 -->
 							</div>
 						</div>
-						<hr>
 						<div id="reply">
-							<textarea id="contentsR"></textarea>
+							<textarea id="contentsR" placeholder="답변을 작성해 주십시오."></textarea>
 							<button id="sendRbtn" onclick="Reply()">전송</button>
 						</div>
 					</td>
@@ -60,8 +53,8 @@
 	var answerList = document.getElementById("answerList");
 	function Reply() {
 		var newElement = '<div><span class="replier">' + '회원이름님'
-				+ '</span><br><textarea class="contentsR">' + contentsR.value
-				+ '</textarea></div>';
+				+ '</span><br><textarea class="contentR">' + contentsR.value
+				+ '</textarea></div>'; 
 		if (contentsR.value == "" || contentsR.value == null) {
 			alert("답글을 작성해 주세요");
 			return;

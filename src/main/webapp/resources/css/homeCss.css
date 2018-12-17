@@ -195,7 +195,7 @@ body {
 	width: 51px;
 	padding-top: 0px;
 	margin-left: 96.6%;
-	z-index: 13;
+	z-index: 1000;
 	position: relative;
 }
 

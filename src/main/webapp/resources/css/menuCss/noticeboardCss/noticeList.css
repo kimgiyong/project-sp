@@ -68,3 +68,7 @@
 	font-weight:bold;
 	color:white;
 }
+
+.detail textarea{
+    font-size:18px;
+}
