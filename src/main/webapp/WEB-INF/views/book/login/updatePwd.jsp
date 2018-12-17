@@ -11,7 +11,7 @@
 <link rel="stylesheet" type="text/css"
 	href="${rootPath}/resources/css/loginCss/findCss.css">
 <script src="http://code.jquery.com/jquery-latest.js"></script>
-<title>스프링테스트</title>
+<title>비밀번호 변경</title>
 </head>
 
 <body>

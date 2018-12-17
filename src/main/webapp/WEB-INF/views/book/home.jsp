@@ -63,7 +63,7 @@
 			<option value="bookName">제목</option>
 			<option value="bookWriter">작가</option>
 			<option value="bookPub">출판사</option>
-		</select> <input type="text" name="search" id="searchBox" placeholder="검색어를 입력하세요">
+		</select> <input type="text" name="search" id="searchBox" placeholder="검색어를 입력하세요" onkeydown='enterkey()'/>
 		<button class="search-btn">
 			<i class="fas fa-search"></i>
 		</button>
@@ -78,9 +78,9 @@
 	<ul id="menuBox">
 		<li class="mainMenu"><a href="#">좋은 도서</a>
 			<ul class="subMenuBox">
-				<li class="subMenu"><a href="/uri/book/bookSelect/bookList">도서대출</a></li>
-				<li class="subMenu"><a href="#">도서반납</a></li>
-				<li class="subMenu"><a href="#">도서신청</a></li>
+				<li class="subMenu"><a href="/uri/book/bookSelect/bookList">도서 대출</a></li>
+				<li class="subMenu"><a href="#">도서 신청</a></li>
+				<li class="subMenu"><a href="#">도서 기부</a></li>
 			</ul>
 		</li>
 		<li class="mainMenu"><a href="#">좋은 소통</a>
@@ -92,9 +92,9 @@
 		</li>
 		<li class="mainMenu"><a href="#">좋은 나눔</a>
 			<ul class="subMenuBox">
-				<li class="subMenu"><a href="#">도서기부</a></li>
-				<li class="subMenu"><a href="#">기부천사</a></li>
-				<li class="subMenu"><a href="#">기부방법</a></li>
+				<li class="subMenu"><a href="#">책 속의 한 문장</a></li>
+				<li class="subMenu"><a href="#">독후감 자랑</a></li>
+				<li class="subMenu"><a href="#">나는 이책을 봤다</a></li>
 			</ul>
 		</li>
 		<li class="mainMenu"><a href="#">좋은 소개</a>
@@ -168,7 +168,13 @@
 		location.href = '/uri/book/homePage';
 	});
 	var btn = document.querySelector('.search-btn');
-	
+	function enterkey() {
+		if (window.event.keyCode == 13) {
+
+			// 엔터키가 눌렸을 때 실행할 내용
+			search();
+		}
+	}
 	function search(){
 		var selection = document.querySelector('#selection').value;
 		var searchBox = document.querySelector('#searchBox').value;

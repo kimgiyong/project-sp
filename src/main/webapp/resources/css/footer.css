@@ -1,25 +1,66 @@
 @charset "UTF-8";
 /* footer */
-footer{
+footer {
 	/* background: #fbfbff; */
-	background-color:#F5F5F5;
-	width:1500px;
-	height:200px;
+	background-color: #F5F5F5;
+	width: 1500px;
+	height: 200px;
 }
 
-.bookbtn{
+.bookbtn {
 	background-color: transparent !important;
 	border: 0;
 	width: 200px;
 }
 
-#newBook{
+#newBook {
 	display: none;
 }
 
-
-#foologoBox{
-	margin:50px 100px;
+#foologoBox {
+	margin: 50px 100px;
 }
 
 /* footer부분 */
+.footer-lf-tp{
+	display: inline-block;
+}
+.footer-lf-tp>ul>li:first-child {
+	background: none;
+	padding-left: 0;
+}
+
+.footer-lf-tp>ul>li {
+	float: left;
+	background: url(/files/web19/images/main/main_155.gif) no-repeat left
+		center;
+	padding: 0 10px;
+}
+
+.footer-lf-tp>ul>li>a.on {
+	font-weight: bold;
+}
+
+.footer-lf-tp>ul>li>a {
+	display: block;
+	font-size: 14px;
+	color: #555555;
+}
+
+.footer-lf-tp ul,.footer-lf-tp menu,.footer-lf-tp dir {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}

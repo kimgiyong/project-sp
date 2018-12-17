@@ -8,69 +8,102 @@
 <title>로그인/회원가입페이지</title>
 <link rel="stylesheet" type="text/css"
 	href="${resPath}/css/loginCss/loginPage.css" />
-	<link href="https://fonts.googleapis.com/css?family=Black+And+White+Picture|Dokdo|East+Sea+Dokdo|Gamja+Flower|Gugi|Nanum+Pen+Script" rel="stylesheet">
+<link
+	href="https://fonts.googleapis.com/css?family=Black+And+White+Picture|Dokdo|East+Sea+Dokdo|Gamja+Flower|Gugi|Nanum+Pen+Script"
+	rel="stylesheet">
 </head>
 <body>
 	<%
 		String loge = (String) request.getParameter("loge");
 	%>
- 
+
 	<div id="container">
 		<div id="lodiv">
 			<a href="../homePage">
-			<h1 id="logo">좋은<span id="hyang">향</span> 도서관</h1></a>
+				<h1 id="logo">
+					좋은<span id="hyang">향</span> 도서관
+				</h1>
+			</a>
 		</div>
 		<div id="back">
 			<h1 id="log">LOGIN</h1>
 			<div id="sum">
-			<!-- <input id="userId" type="email" placeholder="Account Email" />  -->
-			<label>&nbsp; 이 메 일  </label><div class="input1"><input name="txtEmailId" type="text" value="" maxlength="35" id="txtEmailId" class="txt" onkeydown="if(event.keyCode==13){return false;}" placeholder="Account Email"></div>
-			<div class="at">@</div>
-			<div class="input1"><input type="text" value="" readonly maxlength="30" id="txtEmailDomain" class="txt" onkeydown="if(event.keyCode==13){return false;}"></div>
-			<select name="ddlEmailDomain" id="ddlEmailDomain">
-				<option selected="selected" value="">선택</option>
-				<option value="naver.com">naver.com</option>
-				<option value="hanmail.net">hanmail.net</option>
-				<option value="daum.net">daum.net</option>
-				<option value="nate.com">nate.com</option>
-				<option value="gmail.com">gmail.com</option>
-				<option value="hotmail.com">hotmail.com</option>
-				<option value="direct_input">직접입력</option>
-			</select> 
-			<br>
-			<label>패 스 워 드  </label><input id="userPwd" type="password" placeholder="password" /><br>
-			<div id="joinhidden">
-			<hr>
-				<label id="pwcheck">패스워드 확인</label><input id="userPwdchk" type="password" placeholder="retype password" /><br>
-				<label>&nbsp; &nbsp; &nbsp; &nbsp;이 름  </label><input id="userName" type="text" placeholder="user name" maxlength="5" /><br>
-				<label>생 년 월 일  </label><input id="userBir" type="date" placeholder="Birthday" /><br> 
-				<!-- <input id="userNumber" type="text" placeholder="Phone number('-'없이 써주세요)" maxlength="11" onkeypress="onlyNumber();" /><br> -->
-				<div id="userMobile">
-				<label>전 화 번 호 </label>
-					<select name="ddlMobileTel" id="ddlMobileTel">
-						<option selected="selected" value="010">010</option>
-						<option value="011">011</option>
-						<option value="016">016</option>
-						<option value="017">017</option>
-						<option value="018">018</option>
-						<option value="019">019</option>
-					</select>
-					<div class="var">-</div>
-					<div class="input2"><input name="txtMobileTel2" type="text" value="" maxlength="4" id="txtMobileTel2" class="txt" onkeydown="if(event.keyCode==13){return false;}"></div>
-					<div class="var">-</div>
-					<div class="input2"><input name="txtMobileTel3" type="text" value="" maxlength="4" id="txtMobileTel3" class="txt" onkeydown="if(event.keyCode==13){return false;}"></div>
+				<!-- <input id="userId" type="email" placeholder="Account Email" />  -->
+				<label>&nbsp; 이 메 일 </label>
+				<div class="input1">
+					<input name="txtEmailId" type="text" value="" maxlength="35"
+						id="txtEmailId" class="txt"
+						onkeydown="if(event.keyCode==13){return false;}"
+						placeholder="Account Email">
 				</div>
-				<a href="/uri/book/login/privacyPage?privacy=0" class="terms">서비스 이용약관</a>에 동의합니다.
-				 <input type="checkbox" value="agree" id="serviceTerms" class="termsCkbox"><br>
-				<a href="/uri/book/login/privacyPage?privacy=1" class="terms">개인정보 수집 및 이용</a>에 관한 안내 약관에 동의합니다.
-				 <input type="checkbox" value="agree" id="collectionTerms" class="termsCkbox"><br>
-				<a href="/uri/book/login/privacyPage?privacy=2" class="terms">개인정보 처리 및 위탁</a>에 관한 안내 약관에 동의합니다.
-				 <input type="checkbox" value="agree" id="processTerms" class="termsCkbox"><br>
-				<p>모두동의<input type="checkbox" value="agree" id="allagree" class="termsCkbox"></p><br>
-			</div>
+				<div class="at">@</div>
+				<div class="input1">
+					<input type="text" value="" readonly maxlength="30"
+						id="txtEmailDomain" class="txt"
+						onkeydown="if(event.keyCode==13){return false;}">
+				</div>
+				<select name="ddlEmailDomain" id="ddlEmailDomain">
+					<option selected="selected" value="">선택</option>
+					<option value="naver.com">naver.com</option>
+					<option value="hanmail.net">hanmail.net</option>
+					<option value="daum.net">daum.net</option>
+					<option value="nate.com">nate.com</option>
+					<option value="gmail.com">gmail.com</option>
+					<option value="hotmail.com">hotmail.com</option>
+					<option value="direct_input">직접입력</option>
+				</select> <br> <label>패 스 워 드 </label><input id="userPwd"
+					type="password" placeholder="password" onkeydown='enterkey()' /><br>
+				<div id="joinhidden">
+					<hr>
+					<label id="pwcheck">패스워드 확인</label><input id="userPwdchk"
+						type="password" placeholder="retype password" /><br> <label>&nbsp;
+						&nbsp; &nbsp; &nbsp;이 름 </label><input id="userName" type="text"
+						placeholder="user name" maxlength="5" /><br> <label>생
+						년 월 일 </label><input id="userBir" type="date" placeholder="Birthday" /><br>
+					<!-- <input id="userNumber" type="text" placeholder="Phone number('-'없이 써주세요)" maxlength="11" onkeypress="onlyNumber();" /><br> -->
+					<div id="userMobile">
+						<label>전 화 번 호 </label> <select name="ddlMobileTel"
+							id="ddlMobileTel">
+							<option selected="selected" value="010">010</option>
+							<option value="011">011</option>
+							<option value="016">016</option>
+							<option value="017">017</option>
+							<option value="018">018</option>
+							<option value="019">019</option>
+						</select>
+						<div class="var">-</div>
+						<div class="input2">
+							<input name="txtMobileTel2" type="text" value="" maxlength="4"
+								id="txtMobileTel2" class="txt"
+								onkeydown="if(event.keyCode==13){return false;}">
+						</div>
+						<div class="var">-</div>
+						<div class="input2">
+							<input name="txtMobileTel3" type="text" value="" maxlength="4"
+								id="txtMobileTel3" class="txt"
+								onkeydown="if(event.keyCode==13){return false;}">
+						</div>
+					</div>
+					<a href="/uri/book/login/privacyPage?privacy=0" class="terms">서비스
+						이용약관</a>에 동의합니다. <input type="checkbox" value="agree"
+						id="serviceTerms" class="termsCkbox"><br> <a
+						href="/uri/book/login/privacyPage?privacy=1" class="terms">개인정보
+						수집 및 이용</a>에 관한 안내 약관에 동의합니다. <input type="checkbox" value="agree"
+						id="collectionTerms" class="termsCkbox"><br> <a
+						href="/uri/book/login/privacyPage?privacy=2" class="terms">개인정보
+						처리 및 위탁</a>에 관한 안내 약관에 동의합니다. <input type="checkbox" value="agree"
+						id="processTerms" class="termsCkbox"><br>
+					<p>
+						모두동의<input type="checkbox" value="agree" id="allagree"
+							class="termsCkbox">
+					</p>
+					<br>
+				</div>
 			</div>
 			<button disabled="true" id="loginbtn">LOGIN</button>
-			<br> <span id="forgot">Forgot your <a id="forgetid" href="forgetID">ID</a> or <a id="forgetpwd" href="forgetPwd">Password</a>?</span>
+			<br> <span id="forgot">Forgot your <a id="forgetid"
+				href="forgetID">ID</a> or <a id="forgetpwd" href="forgetPwd">Password</a>?
+			</span>
 			<!-- </a> -->
 			<span id="zz">/</span>
 			<button id="signup">sign up</button>
@@ -84,7 +117,7 @@
 	var pwd = document.getElementById("userPwd");
 	var pwdchk = document.getElementById("userPwdchk");
 	var username = document.getElementById("userName");
-	
+
 	var birthday = document.getElementById("userBir");
 	var number = document.getElementById("userMobile");
 	var joinhidden = document.getElementById("joinhidden");
@@ -92,20 +125,20 @@
 	var txtEmailId = document.getElementById("txtEmailId");
 	var txtEamilDoamin = document.getElementById("txtEmailDomain");
 	var ddlEmailDomain = document.getElementById("ddlEmailDomain");
-	
+
 	/* Mobile */
 	var ddlMobileTel = document.getElementById("ddlMobileTel");
 	var txtMobileTel2 = document.getElementById('txtMobileTel2');
 	var txtMobileTel3 = document.getElementById('txtMobileTel3');
-	
+
 	/* Check */
 	var serviceTerms = document.getElementById("serviceTerms");
 	var collectionTerms = document.getElementById("collectionTerms");
 	var processTerms = document.getElementById("processTerms");
-	
+
 	/* 약정 */
 	var allagree = document.getElementById("allagree");
-	
+
 	var btn = document.getElementById("loginbtn");
 	var signup = document.getElementById("signup");
 	var log = document.getElementById("log");
@@ -143,41 +176,54 @@
 			event.returnValue = false;
 		}
 	}
+
+	/* 엔터치면 로그인 */
 	
-	function checkEmail(){
-		if(ddlEmailDomain.value=="direct_input"){
+	function enterkey() {
+		if (window.event.keyCode == 13) {
+
+			// 엔터키가 눌렸을 때 실행할 내용
+			login();
+		}
+	}
+
+	function checkEmail() {
+		if (ddlEmailDomain.value == "direct_input") {
 			txtEmailDomain.readOnly = false;
 			txtEmailDomain.value = '';
-		}else{
+		} else {
 			txtEmailDomain.readOnly = true;
 			txtEmailDomain.value = ddlEmailDomain.value;
 		}
 	}
-	
-	function privacy(){
+
+	function privacy() {
 		var termsCkbox = document.getElementsByClassName('termsCkbox');
-			if(allagree.checked != false){
-				for(i=0; i < 3; i++) {
-					termsCkbox[i].checked = true;
-				}
-			}else{
-				for(i=0; i < 3; i++) {
-					termsCkbox[i].checked = false;
-				}
+		if (allagree.checked != false) {
+			for (i = 0; i < 3; i++) {
+				termsCkbox[i].checked = true;
 			}
+		} else {
+			for (i = 0; i < 3; i++) {
+				termsCkbox[i].checked = false;
+			}
+		}
 	}
 	allagree.addEventListener("click", privacy);
 
 	function colorCheck() { /* not null 같은 코드  */
-		if(serviceTerms.checked == true && collectionTerms.checked == true && processTerms.checked == true){
+		if (serviceTerms.checked == true && collectionTerms.checked == true
+				&& processTerms.checked == true) {
 			allagree.checked = true;
-		}else{
+		} else {
 			allagree.checked = false;
 		}
 		if (btn.textContent == "Create account") { /* 회원가입 할때 not null 안쓰면 회원가입 안됨 */
-			if (txtEmailId.value != '' && txtEmailDomain.value != "" && ddlEmailDomain.value != "" && pwd.value != "" && pwdchk.value != ""
-					&& username.value != "" && birthday.value != "" && txtMobileTel2.value != "" && txtMobileTel3.value != ""
-					&& allagree.checked == true) {
+			if (txtEmailId.value != '' && txtEmailDomain.value != ""
+					&& ddlEmailDomain.value != "" && pwd.value != ""
+					&& pwdchk.value != "" && username.value != ""
+					&& birthday.value != "" && txtMobileTel2.value != ""
+					&& txtMobileTel3.value != "" && allagree.checked == true) {
 				if (pwd.value == pwdchk.value) {
 					btn.disabled = false;
 					btn.style.backgroundColor = "lightsteelblue";
@@ -187,7 +233,8 @@
 				btn.style.backgroundColor = "lightslategray";
 			}
 		} else { /* 로그인할때 아이디나 패스워드 중에 안쓰면 로그인 버튼못누름 */
-			if (txtEmailId.value != '' && txtEmailDomain.value != "" && ddlEmailDomain.value != "" && pwd.value != "") {
+			if (txtEmailId.value != '' && txtEmailDomain.value != ""
+					&& ddlEmailDomain.value != "" && pwd.value != "") {
 				btn.disabled = false;
 				btn.style.backgroundColor = "lightsteelblue";
 			} else {
@@ -199,7 +246,8 @@
 
 	function login() { /* 회원가입할때 비밀번호가 다르면 alert창에 띄어줌 밖에 없어 */
 		/* console.log(backToObj); */
-		var number = ddlMobileTel.value + txtMobileTel2.value + txtMobileTel3.value;
+		var number = ddlMobileTel.value + txtMobileTel2.value
+				+ txtMobileTel3.value;
 		var id = txtEmailId.value + '@' + ddlEmailDomain.value;
 		var email = checkmail.test(id);
 		if (btn.textContent == "Create account") {
@@ -268,19 +316,19 @@
 			signup.textContent = "sign in";
 		} else {
 			btn.textContent = "Login";
-			log.textContent = "LOGIN"; 
+			log.textContent = "LOGIN";
 			joinhidden.style.display = "none";
 			signup.textContent = "sign up";
 		}
 	}
-	
-	function logeChange(){
-		if(signup.textContent == "sign up"){
+
+	function logeChange() {
+		if (signup.textContent == "sign up") {
 			location.href = "loginPage?loge=0";
-		}else{
+		} else {
 			location.href = "loginPage?loge=1";
 		}
-		
+
 	}
 
 	ddlEmailDomain.addEventListener("click", checkEmail);
