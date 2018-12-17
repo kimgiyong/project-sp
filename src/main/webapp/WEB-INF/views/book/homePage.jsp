@@ -70,64 +70,64 @@
 			</div>
 			<button id="fooleftbtn">&lt;</button>
 			<ul id="bestBook">
+				<li class="imgBook"><img src="http://image.yes24.com/momo/TopCate1333/MidCate009/123958609(3).jpg" alt="bookimg">
+					<h2 title="말의 품격">말의 품격</h2></li>
+				<li class="imgBook"><img src="https://image.aladin.co.kr/product/8895/77/Cover/K582535393_2.jpg" alt="bookimg">
+					<h2 title="언어의 온도">언어의 온도</h2></li>
+				<li class="imgBook"><img src="https://misc.ridibooks.com/cover/754023693/xxlarge" alt="bookimg">
+					<h2 title="죽고싶지만 떡볶이는 먹고싶어">죽고싶지만 떡볶이는 먹고싶어</h2></li>
 				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
-					<h2>제목1</h2></li>
+					<h2 title="">제목4</h2></li>
 				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
-					<h2>제목2</h2></li>
+					<h2 title="">제목5</h2></li>
 				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
-					<h2>제목3</h2></li>
+					<h2 title="">제목6</h2></li>
 				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
-					<h2>제목4</h2></li>
+					<h2 title="">제목7</h2></li>
 				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
-					<h2>제목5</h2></li>
+					<h2 title="">제목8</h2></li>
 				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
-					<h2>제목6</h2></li>
+					<h2 title="">제목9</h2></li>
 				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
-					<h2>제목7</h2></li>
+					<h2 title="">제목10</h2></li>
 				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
-					<h2>제목8</h2></li>
+					<h2 title="">제목11</h2></li>
 				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
-					<h2>제목9</h2></li>
+					<h2 title="">제목12</h2></li>
 				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
-					<h2>제목10</h2></li>
+					<h2 title="">제목13</h2></li>
 				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
-					<h2>제목11</h2></li>
-				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
-					<h2>제목12</h2></li>
-				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
-					<h2>제목13</h2></li>
-				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
-					<h2>제목14</h2></li>
+					<h2 title="">제목14</h2></li>
 			</ul>
 			<ul id="newBook">
+				<li class="imgBook"><img src="https://misc.ridibooks.com/cover/3170010791/xxlarge" alt="bookimg">
+					<h2 title="정령왕 엘퀴네스">정령왕 엘퀴네스</h2></li>
+				<li class="imgBook"><img src="http://image.yesfile.com/data/2018/09/23/1537671265_8yC0.jpg" alt="bookimg">
+					<h2 title="금발의 정령사">금발의 정령사</h2></li>
 				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
-					<h2>제목a</h2></li>
+					<h2 title="">제목c</h2></li>
 				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
-					<h2>제목b</h2></li>
+					<h2 title="">제목d</h2></li>
 				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
-					<h2>제목c</h2></li>
+					<h2 title="">제목e</h2></li>
 				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
-					<h2>제목d</h2></li>
+					<h2 title="">제목f</h2></li>
 				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
-					<h2>제목e</h2></li>
+					<h2 title="">제목g</h2></li>
 				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
-					<h2>제목f</h2></li>
+					<h2 title="">제목h</h2></li>
 				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
-					<h2>제목g</h2></li>
+					<h2 title="">제목i</h2></li>
 				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
-					<h2>제목h</h2></li>
+					<h2 title="">제목j</h2></li>
 				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
-					<h2>제목i</h2></li>
+					<h2 title="">제목k</h2></li>
 				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
-					<h2>제목j</h2></li>
+					<h2 title="">제목l</h2></li>
 				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
-					<h2>제목k</h2></li>
+					<h2 title="">제목m</h2></li>
 				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
-					<h2>제목l</h2></li>
-				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
-					<h2>제목m</h2></li>
-				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
-					<h2>제목n</h2></li>
+					<h2 title="">제목n</h2></li>
 			</ul>
 			<button id="foorightbtn">&gt;</button>
 		</section>

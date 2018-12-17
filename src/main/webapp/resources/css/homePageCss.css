@@ -77,13 +77,13 @@
 	height: 26px;
 	padding: 4px;
 	padding-bottom: 27px;
-	white-space:nowrap;
+	white-space: nowrap;
 	overflow: hidden;
 }
 
 #wiseSaying marquee {
 	color: white;
-	white-space:nowrap;
+	white-space: nowrap;
 }
 
 /* 추천도서 */
@@ -159,6 +159,18 @@
 	margin-top: 10px;
 }
 
+#contentA h2, #contentB h2{
+	overflow: hidden;
+	width: 160px;
+	text-overflow: ellipsis;
+	height: 32px;
+	white-space: nowrap; 
+}
+
+#contentA img, #contentB img{
+	cursor: pointer;
+}
+
 #contentA img {
 	width: 160px;
 	height: 216px;
@@ -180,14 +192,14 @@
 	display: inline-block;
 }
 
-.contentBnotice h1{
+.contentBnotice h1 {
 	margin-bottom: -20px;
-	font-family:'Gamja Flower', cursive;
+	font-family: 'Gamja Flower', cursive;
 	color: #562727;
 	font-size: 200%;
 }
 
-.contentB .contentBA{
+.contentB .contentBA {
 	float: right;
 	color: #4e3fa3;
 	cursor: pointer;
@@ -199,18 +211,17 @@
 	height: 65%;
 }
 
-.contentBtbl td{
-	padding:5px;
+.contentBtbl td {
+	padding: 5px;
 }
 
-.contentBtbl tr:nth-child(2n-1){
-	background-color: rgba(40,0,0,0.1);
+.contentBtbl tr:nth-child(2n-1) {
+	background-color: rgba(40, 0, 0, 0.1);
 }
 
 /* .contentBtr td {
 	border-bottom: 1px #c0b4af solid;
 } */
-
 #goNew {
 	color: gray;
 }
@@ -248,10 +259,11 @@
 	font-size: 28px;
 	color: #224;
 	font-weight: bold;
-	font-family:'Gamja Flower', cursive;
+	font-family: 'Gamja Flower', cursive;
 }
+
 #iconContainer .iconMenu a:hover {
-	color:#bb2f32;
+	color: #bb2f32;
 }
 
 #iconContainer .iconBox {

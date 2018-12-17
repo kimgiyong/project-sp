@@ -37,10 +37,6 @@ footer {
 	padding: 0 10px;
 }
 
-.footer-lf-tp>ul>li>a.on {
-	font-weight: bold;
-}
-
 .footer-lf-tp>ul>li>a {
 	display: block;
 	font-size: 14px;
@@ -63,4 +59,8 @@ footer {
     height: 0;
     clear: both;
     visibility: hidden;
+}
+
+.buga{
+	color: #AAA;
 }
