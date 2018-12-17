@@ -4,7 +4,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>스프링테스트</title>
+	<title>좋은향 도서관</title>
 	<link rel="stylesheet" type="text/css"
 	href="${rootPath}/resources/css/bookSelectCss/bookOne.css" />
 </head>
