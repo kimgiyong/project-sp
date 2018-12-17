@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>로그인/회원가입페이지</title>
+<title>로그인/회원가입페이지</title> 
 <link rel="stylesheet" type="text/css"
 	href="${resPath}/css/loginCss/loginPage.css" />
 <link
