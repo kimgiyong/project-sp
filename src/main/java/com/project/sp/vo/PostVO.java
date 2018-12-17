@@ -15,4 +15,5 @@ public class PostVO {
 	private String credat;
 	private String moddat;
 	private String postImg;
+	private String userName;
 }
