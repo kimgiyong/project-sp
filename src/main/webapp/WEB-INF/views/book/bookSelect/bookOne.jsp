@@ -72,7 +72,7 @@
 	}
 	
 	function goSearchpage(){
-		window.open("https://book.naver.com/search/search.nhn?sm=sta_hty.book&sug=&where=nexearch&query=책이름");
+		window.open("https://book.naver.com/search/search.nhn?sm=sta_hty.book&sug=&where=nexearch&query=${books.bookName}");
 	}
 	function doin(){
 		if('<%=user%>'=='null'){
