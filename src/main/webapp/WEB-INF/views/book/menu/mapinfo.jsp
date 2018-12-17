@@ -20,8 +20,8 @@
 		
 		<div class="desc">
 			<div class="btns">
-				<button type="button" class="big_map" data-type="wideview" onclick="window.open('http://map.daum.net/?urlX=444554.0&urlY=1112844.0&name=%EC%A0%9C%EC%9D%B4%ED%94%8C%EB%9D%BC%EC%B8%A0')">크게보기</button>
-				<button type="button" class="route" data-type="findtheway" onclick="window.open('http://map.daum.net/?eX=444554&eY=1112844&eName=%EC%A0%9C%EC%9D%B4%ED%94%8C%EB%9D%BC%EC%B8%A0')">길찾기</button>
+				<button type="button" class="big_map" data-type="wideview" onclick="window.open('http://map.daum.net/?urlX=473817&urlY=1106255&urlLevel=3&itemId=8067289&q=%EC%A0%9C%EC%9D%B4%ED%94%8C%EB%9D%BC%EC%B8%A0&srcid=8067289&map_type=TYPE_MAP')">크게보기</button>
+				<button type="button" class="route" data-type="findtheway" onclick="window.open('http://map.daum.net/?map_type=TYPE_MAP&target=car&rt=,,473817,1106255&rt1=&rt2=%EC%A0%9C%EC%9D%B4%ED%94%8C%EB%9D%BC%EC%B8%A0&rtIds=,8067289')">길찾기</button>
 			</div>
 		</div>
 		
