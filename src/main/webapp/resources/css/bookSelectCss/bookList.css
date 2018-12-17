@@ -40,7 +40,6 @@
 
 #sortList{
 	width:1200px;
-	border:1px solid #ccc;
 	display: inline-block;
 	margin-left:150px;
 	text-align:left;
@@ -53,6 +52,12 @@
 	padding:10px;
 	font-size:20px;
 	width:150px;
+	border-top: 15px;
+	background: #3d2e2d;
+	border-radius:5% 5% 2% 2%; 
+}
+#sortList li a{
+	color:white;
 }
 #listTable tbody tr{
 	height:180px;
