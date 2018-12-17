@@ -41,10 +41,12 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
-					<td>회원 이름님</td>
-					<td><input type="text" disabled="disabled" class="comments"></td>
-				</tr>
+				<c:forEach var="list" items="${bookComent}" varStatus="sta">
+					<tr>
+						<td>${list.userName}</td>
+						<td><input type="text" disabled="disabled" class="comments"></td>
+					</tr>
+				</c:forEach>
 			</tbody>
 		</table>
 	</div>

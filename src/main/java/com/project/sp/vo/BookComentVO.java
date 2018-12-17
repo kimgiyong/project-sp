@@ -13,4 +13,5 @@ public class BookComentVO {
 	private Integer comentNum;
 	private String comentText;
 	private String comentCreDat;
+	private String userName;
 }

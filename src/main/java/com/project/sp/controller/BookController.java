@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.project.sp.service.BookComentService;
 import com.project.sp.service.BookService;
 import com.project.sp.vo.BookVO;
 import com.project.sp.vo.PageVO;
@@ -29,6 +30,9 @@ public class BookController {
 
 	@Autowired
 	private BookService bs;
+	
+	@Autowired
+	private BookComentService bcs;
 	
 	@GetMapping(value="/bookList")
 	public String bookSelectList(@ModelAttribute("book") BookVO book, HttpServletRequest request){
@@ -59,6 +63,7 @@ public class BookController {
 	@GetMapping(value="/book/{bookCode}")
 	public String bookSelect(@PathVariable String bookCode, HttpServletRequest request) {
 		request.setAttribute("books", bs.bookSelect(bookCode));
+		request.setAttribute("bookComent", bcs.bookComentBook(bookCode));
 		return "book/bookSelect/bookOne";
 	}
 	@PostMapping(value="/book")

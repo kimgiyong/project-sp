@@ -6,7 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.project.sp.service.BookComentService;
@@ -22,24 +24,24 @@ public class BookComentController {
 	public @ResponseBody List<BookComentVO> bookComentSelectList(){
 		return bcs.bookComentSelectList();
 	}
-	@GetMapping(value="/bookComent")
-	public @ResponseBody BookComentVO bookComentSelect(int comentNum) {
+	@GetMapping(value="/bookComent/{comentNum}")
+	public @ResponseBody BookComentVO bookComentSelect(@PathVariable int comentNum) {
 		return bcs.bookComentSelect(comentNum);
 	}
-	@GetMapping(value="/bookComentUser")
-	public @ResponseBody List<BookComentVO> bookComentUser(int userNum){
+	@GetMapping(value="/bookComentUser/{userNum}")
+	public @ResponseBody List<BookComentVO> bookComentUser(@PathVariable int userNum){
 		return bcs.bookComentUser(userNum);
 	}
-	@GetMapping(value="/bookComentBook")
-	public @ResponseBody List<BookComentVO> bookComentBook(String bookCode){
+	@GetMapping(value="/bookComentBook/{bookCode}")
+	public @ResponseBody List<BookComentVO> bookComentBook(@PathVariable String bookCode){
 		return bcs.bookComentBook(bookCode);
 	}
 	@PostMapping(value="/bookComent")
-	public @ResponseBody int bookComentInsert(BookComentVO bookComent) {
+	public @ResponseBody int bookComentInsert(@RequestBody BookComentVO bookComent) {
 		return bcs.bookComentInsert(bookComent);
 	}
-	@DeleteMapping(value="/bookComent")
-	public @ResponseBody int bookComentDelete(int comentNum) {
+	@DeleteMapping(value="/bookComent/{comentNum}")
+	public @ResponseBody int bookComentDelete(@PathVariable int comentNum) {
 		return bcs.bookComentDelete(comentNum);
 	}
 }

@@ -38,19 +38,18 @@
 				</div>
 				<div class="at">@</div>
 				<div class="input1">
-					<input type="text" value="" readonly maxlength="30"
+					<input type="text" value="" maxlength="30"
 						id="txtEmailDomain" class="txt"
 						onkeydown="if(event.keyCode==13){return false;}">
 				</div>
 				<select name="ddlEmailDomain" id="ddlEmailDomain">
-					<option selected="selected" value="">선택</option>
+					<option selected="selected" value="direct_input">직접입력</option>
 					<option value="naver.com">naver.com</option>
 					<option value="hanmail.net">hanmail.net</option>
 					<option value="daum.net">daum.net</option>
 					<option value="nate.com">nate.com</option>
 					<option value="gmail.com">gmail.com</option>
 					<option value="hotmail.com">hotmail.com</option>
-					<option value="direct_input">직접입력</option>
 				</select> <br> <label>패 스 워 드 </label><input id="userPwd"
 					type="password" placeholder="password" onkeydown='enterkey()' /><br>
 				<div id="joinhidden">
@@ -188,12 +187,13 @@
 	}
 
 	function checkEmail() {
-		if (ddlEmailDomain.value == "direct_input") {
+		if (ddlEmailDomain.value != "direct_input") {
+			txtEmailDomain.readOnly = true;
+			txtEmailDomain.value = '';
+			txtEmailDomain.value = ddlEmailDomain.value;
+		} else {
 			txtEmailDomain.readOnly = false;
 			txtEmailDomain.value = '';
-		} else {
-			txtEmailDomain.readOnly = true;
-			txtEmailDomain.value = ddlEmailDomain.value;
 		}
 	}
 
@@ -297,7 +297,7 @@
 				success : function(res) {
 					if (res != '') {
 						alert('로그인하였습니다.');
-						location.href=document.referrer;
+						location.href='/uri/book/homePage';
 					} else {
 						alert('아이디 혹은 비밀번호가 잘못되었습니다.');
 					}
