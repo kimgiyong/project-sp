@@ -78,7 +78,7 @@
 	<ul id="menuBox">
 		<li class="mainMenu"><a href="#">좋은 도서</a>
 			<ul class="subMenuBox">
-				<li class="subMenu"><a href="/uri/book/bookSelect/bookList">도서 대출</a></li>
+				<li class="subMenu"><a onclick="goBList()">도서 대출</a></li>
 				<li class="subMenu"><a href="#">도서 신청</a></li>
 				<li class="subMenu"><a href="#">도서 기부</a></li>
 			</ul>
@@ -178,6 +178,10 @@
 			// 엔터키가 눌렸을 때 실행할 내용
 			search();
 		}
+	}
+	
+	function goBList() {
+		location.href='/bookList?pageS=1';
 	}
 	function search(){
 		var selection = document.querySelector('#selection').value;
