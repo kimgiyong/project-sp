@@ -32,8 +32,9 @@
 							disabled="disabled"></td>
 					</tr>
 					<tr class="updatetr">
-						<td>이   름</td>
-						<td><input type="text" value="<%=user.getUserName()%>" disabled="disabled"></td>
+						<td>이 름</td>
+						<td><input type="text" value="<%=user.getUserName()%>"
+							disabled="disabled"></td>
 					</tr>
 					<tr class="updatetr">
 						<td>현재 비밀번호</td>
@@ -42,7 +43,7 @@
 					<tr class="updatetr">
 						<td>비밀번호 재설정</td>
 						<td><input id="newPwd" type="password" value=""><br>
-						<label> * 비밀번호는 8자리 이상입니다.</label></td>
+							<label> * 비밀번호는 8자리 이상입니다.</label></td>
 					</tr>
 					<tr class="updatetr">
 						<td>비밀번호확인</td>
@@ -55,13 +56,13 @@
 					</tr>
 					<tr class="updatetr">
 						<td>전 화 번 호</td>
-						<td><input id="mobile" type="text" value="<%=user.getUserMobile()%>"><br>
-						<label> * 전화번호는 '-' 를 빼고 써주시기 바랍니다.</label></td>
+						<td><input id="mobile" type="text"
+							value="<%=user.getUserMobile()%>"><br> <label>
+								* 전화번호는 '-' 를 빼고 써주시기 바랍니다.</label></td>
 					</tr>
 					<tr class="updatetr">
-						<td>주     소</td>
-						<td>
-							<%@ include file="jusoapi.jsp"%>
+						<td>주 소</td>
+						<td><%@ include file="jusoapi.jsp"%>
 						</td>
 					</tr>
 				</table>
@@ -72,29 +73,35 @@
 					<button id="joinout">회원탈퇴</button>
 				</div>
 				<div class="clear"></div>
-				<a href="https://www.privacy.go.kr/" target="_blank"><img
+				<a href="https://www.privacy.go.kr/" target="_blank"> <img
 					src="${resPath}/img/mypage.jpg" alt="img" id="img"></a>
 			</div>
 		</section>
 		<section id="dif1" class="total">
-			<div class="updateBack">안녕</div>
+			<div class="updateBack">안녕하세요</div>
 		</section>
 		<section id="dif2" class="total">
-			<div class="updateBack">나는</div>
+			<div class="updateBack">아직은</div>
 		</section>
 		<section id="dif3" class="total">
-			<div class="updateBack">조은향이다</div>
+			<div class="updateBack">미완성입니다.</div>
+		</section>
+		<section id="dif4" class="total">
+			<div class="updateBack">왜 나올까요</div>
 		</section>
 	</div>
-	
-<script>
+
+	<script>
 	var total = document.getElementsByClassName("total");
 	var dif0 = document.getElementById("dif0");
 	var dif1 = document.getElementById("dif1");
 	var dif2 = document.getElementById("dif2");
 	var dif3 = document.getElementById("dif3");
-	var dif = <%=dif%>
-	if(dif==3){
+	var dif4 = document.getElementById("dif4");
+	var dif = <%=dif%>;
+	if(dif==4){
+		dif4.style.display = "block";
+	}else if(dif==3){
 		dif3.style.display = "block";
 	}else if(dif==2){
 		dif2.style.display = "block";
@@ -170,28 +177,30 @@
 	function out(){
 		if(confirm("정말 탈퇴하시겠습니까?")){
 			var pwd = document.querySelector('#pwd');
-			if(pwd.value=='<%=user.getUserPwd()%>'){
-				var conf ={
-					url:'/user/'+<%=user.getUserNum()%>,
-					method:'DELETE',
-					success:function(res){
-						if(res==1){
-							alert('탈퇴하셨습니다.');
-							location.href="/uri/book/homePage";
-						}else{
-							alert('탈퇴에 실패하였습니다.');
+			if(pwd.value=='<%=user.getUserPwd()%>') {
+					var conf = {
+						url : '/user/' +
+	<%=user.getUserNum()%>
+		,
+						method : 'DELETE',
+						success : function(res) {
+							if (res == 1) {
+								alert('탈퇴하셨습니다.');
+								location.href = "/uri/book/homePage";
+							} else {
+								alert('탈퇴에 실패하였습니다.');
+							}
 						}
 					}
+					au.send(conf);
+				} else {
+					alert('기존비밀번호가 틀렷습니다.');
 				}
-				au.send(conf);
-			}else{
-				alert('기존비밀번호가 틀렷습니다.');
 			}
 		}
-	}
-	save.addEventListener('click',saves);
-	cancel.addEventListener('click',back);
-	joinout.addEventListener('click',out);
-</script>
+		save.addEventListener('click', saves);
+		cancel.addEventListener('click', back);
+		joinout.addEventListener('click', out);
+	</script>
 </body>
 </html>

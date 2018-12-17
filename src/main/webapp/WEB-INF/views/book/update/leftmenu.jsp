@@ -9,7 +9,9 @@
 				<li><hr></li>
 				<li class="sub"><a href="/uri/book/update/homeMypage?dif=2">내가 쓴 댓글 보기</a></li>
 				<li><hr></li>
-				<li class="sub"><a href="/uri/book/update/homeMypage?dif=3">관심 책 보기</a></li>
+				<li class="sub"><a href="/uri/book/update/homeMypage?dif=3">내가 신청한 책</a></li>
+				<li><hr></li>
+				<li class="sub"><a href="/uri/book/update/homeMypage?dif=4">관심 책 보기</a></li>
 				<li><hr></li>
 			</ul>
 		</div>
