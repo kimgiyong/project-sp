@@ -149,7 +149,11 @@
 					success : function(res) {
 						if (res == 1) {
 							alert('로그아웃하였습니다.');
-							location.href = '/uri/book/homePage';
+							if(window.location.href.lastIndexOf('homeMypage')==-1){
+								location.href = window.location.href;
+							}else{
+								location.href="/uri/book/homePage";
+							}
 						}
 					}
 				})

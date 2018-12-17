@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 
 import com.project.sp.dao.BookDAO;
-import com.project.sp.util.LikeInOut;
 import com.project.sp.vo.BookVO;
 import com.project.sp.vo.LikeVO;
 
@@ -17,8 +16,6 @@ public class BookDAOImpl implements BookDAO {
 
 	@Autowired
 	private SqlSession ss;
-	
-	private LikeInOut lio;
 	
 	@Override
 	public int bookSelectSize(BookVO book) {
@@ -58,39 +55,6 @@ public class BookDAOImpl implements BookDAO {
 	@Override
 	public int bookDelete(String bookCode) {
 		return ss.delete("com.project.sp.BOOK.bookDelete",bookCode);
-	}
-
-	@Override
-	public int bookLikeUp(BookVO book) {
-		LikeVO lv = new LikeVO();
-		lv.setUserNum(book.getUserNum());
-		lv.setBookCode(book.getBookCode());
-		if(lio.likeInsert(lv)!=0) {
-			return ss.update("com.project.sp.BOOK.bookLikeUp",book);
-		}else {
-			return 0;
-		}
-	}
-
-	@Override
-	public int bookLikeDown(BookVO book) {
-		LikeVO lv = new LikeVO();
-		lv.setUserNum(book.getUserNum());
-		lv.setBookCode(book.getBookCode());
-		if(lio.likeDelete(lv)!=0) {
-			return ss.update("com.prjecto.sp.BOOK.bookLikeDown",book);
-		}else {
-			return 0;
-		}
-		
-	}
-
-	@Override
-	public int bookSelectLike(BookVO book) {
-		LikeVO lv = new LikeVO();
-		lv.setUserNum(book.getUserNum());
-		lv.setBookCode(book.getBookCode());
-		return lio.likeSelect(lv);
 	}
 
 }

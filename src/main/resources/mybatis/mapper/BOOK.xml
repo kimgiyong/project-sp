@@ -44,11 +44,11 @@
 		</set>
 		where bookCode = #{bookCode}
 	</update>
-	<update id="bookLikeUp">
-		update booktbl set bookLike = (bookLike+1)
+	<update id="bookLikeUp" parameterType="String">
+		update booktbl set bookLike = (bookLike+1) where bookCode = #{bookCode}
 	</update>
-	<update id="bookLikeDown">
-		update booktbl set bookLike = (bookLike-1)
+	<update id="bookLikeDown" parameterType="String">
+		update booktbl set bookLike = (bookLike-1) where booKCode = #{bookCode}
 	</update>
 	<delete id="bookDelete" parameterType="String">
 		delete from booktbl

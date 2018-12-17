@@ -62,12 +62,42 @@
 			likeImg.src = "/resources/img/heart.gif";
 			window.setTimeout(function() {
 				likeImg.src = "/resources/img/spaceHeart.png";
-			}, 750);			
+			}, 750);
+			var conf = {
+					url:'/like',
+					method:'DELETE',
+					param:JSON.stringify({
+						userNum:<%=userNum%>, bookCode:'${books.bookCode}'
+					}),
+					success:function(res){
+						if(res==1){
+							location.href="/book/" + '${books.bookCode}';
+						}else{
+							likeImg.src = "/resources/img/heart.png";
+						}
+					}
+			}
+			au.send(conf);
 		}else{				
 			likeImg.src = "/resources/img/heart.gif";
 			window.setTimeout(function() {
 				likeImg.src = "/resources/img/heart.png";
 			}, 750);
+			var conf = {
+					url:'/like',
+					method:'POST',
+					param:JSON.stringify({
+						userNum:<%=userNum%>, bookCode:'${books.bookCode}'
+					}),
+					success:function(res){
+						if(res==1){
+							location.href="/book/" + '${books.bookCode}';
+						}else{
+							likeImg.src = "/resources/img/spaceHeart.png";
+						}
+					}
+			}
+			au.send(conf);
 		}
 	}
 	
@@ -82,11 +112,9 @@
 			like.style.position="relative";
 			like.style.top="-20px";
 			var conf = { 
-					url:'/bookLike',
+					url:'/like',
 					method:'GET',
-					param:JSON.stringify({
-						userNum:userN, bookCode:'${books.bookCode}'
-					}),
+					param:'userNum='+userN +'&bookCode=' + '${books.bookCode}',
 					success:function(res){
 						if(res==1){
 							likeImg.src = "/resources/img/heart.png";

@@ -3,8 +3,8 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.project.sp.LIKE">
-	<select id="likeSelect" resultType="like" parameterType="like">
-		select * from liketbl
+	<select id="likeSelect" resultType="int" parameterType="like">
+		select count(*) from liketbl
 		where userNum = #{userNum} and bookCode = #{bookCode}
 	</select>
 	<select id="likeUserSelect" resultType="like" parameterType="int">

@@ -49,19 +49,4 @@ public class BookServiceImpl implements BookService {
 		return bd.bookDelete(bookCode);
 	}
 
-	@Override
-	public int bookLikeUp(BookVO book) {
-		return bd.bookLikeUp(book);
-	}
-
-	@Override
-	public int bookLikeDown(BookVO book) {
-		return bd.bookLikeDown(book);
-	}
-
-	@Override
-	public int bookSelectLike(BookVO book) {
-		return bd.bookSelectLike(book);
-	}
-
 }

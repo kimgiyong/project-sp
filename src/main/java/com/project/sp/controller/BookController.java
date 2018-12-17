@@ -73,16 +73,4 @@ public class BookController {
 	public @ResponseBody int bookDelete(@PathVariable String bookCode) {
 		return bs.bookDelete(bookCode);
 	}
-	@PutMapping(value="/bookUp")
-	public @ResponseBody int bookLikeUp(@RequestBody BookVO book) {
-		return bs.bookLikeUp(book);
-	}
-	@PutMapping(value="/bookDown")
-	public @ResponseBody int bookLikeDown(@RequestBody BookVO book) {
-		return bs.bookLikeDown(book);
-	}
-	@GetMapping(value="/bookLike")
-	public @ResponseBody int bookSelectLike(@RequestBody BookVO book) {
-		return bs.bookSelectLike(book);
-	}
 }

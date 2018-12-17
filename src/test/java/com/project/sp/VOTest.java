@@ -10,6 +10,7 @@ import java.util.Map;
 
 import javax.sql.DataSource;
 
+import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,9 +20,9 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.project.sp.controller.UserController;
 import com.project.sp.dao.BookDAO;
+import com.project.sp.dao.LikeDAO;
 import com.project.sp.service.BookService;
 import com.project.sp.service.UserService;
-import com.project.sp.util.LikeInOut;
 import com.project.sp.vo.BookVO;
 import com.project.sp.vo.LikeVO;
 import com.project.sp.vo.PageVO;
@@ -34,6 +35,12 @@ public class VOTest {
 	@Autowired
 	private BookDAO bs;
 	
+	@Autowired
+	private SqlSession ss;
+	
+	@Autowired
+	private LikeDAO ld;
+	
 	@Test
 	public void test() {
 //		BookVO bv = new BookVO();
@@ -41,10 +48,9 @@ public class VOTest {
 //		System.out.println(bs.bookSelectSize(bv));
 //		PageVO p = new PageVO();
 //		p.makePaging(15,10);
-		LikeInOut ls = new LikeInOut();
 		LikeVO lv = new LikeVO();
 		lv.setBookCode("sss");
 		lv.setUserNum(1);
-		System.out.println(ls.likeSelect(lv));
+		System.out.println(ld.likeSelect(lv));
 	}
 }
