@@ -39,12 +39,12 @@
 					</ul>
 				</div>
 				<ul class="sub-sharing">
-					<li><a href="/site/program/scrap/scrapPopUp?menuID=148008002"
+					<!-- <li><a href="/site/program/scrap/scrapPopUp?menuID=148008002"
 						target="_blank" onclick="scrapPopUp('148008002'); return false;"
 						title="스크랩 새창으로  열기" class="first"><img
-							src="/files/web148/images/sub/sub_07.png" alt="스크랩"></a></li>
+							src="/files/web148/images/sub/sub_07.png" alt="스크랩"></a></li> -->
 					<li id="topClipboardBtn"><a href="#copy" title="현재페이지 주소 복사하기"><img
-							src="../../../../files/web148/images/sub/sub_09.png"
+							src="${resPath}/uri/img/sub_07.png"
 							alt="현재페이지 주소 복사"></a></li>
 					<li id="topPrintBtn"><a href="/site/program/print/printPopup"
 						target="_blank" title="새창으로 프린트 하기"><img

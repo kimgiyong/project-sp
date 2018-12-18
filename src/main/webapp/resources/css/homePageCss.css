@@ -159,15 +159,15 @@
 	margin-top: 10px;
 }
 
-#contentA h2, #contentB h2{
+#contentA h2, #contentB h2 {
 	overflow: hidden;
 	width: 160px;
 	text-overflow: ellipsis;
 	height: 32px;
-	white-space: nowrap; 
+	white-space: nowrap;
 }
 
-#contentA img, #contentB img{
+#contentA img, #contentB img {
 	cursor: pointer;
 }
 
@@ -190,6 +190,7 @@
 	margin-left: 67px;
 	margin-top: 50px;
 	display: inline-block;
+	overflow: hidden;
 }
 
 .contentBnotice h1 {
@@ -207,21 +208,32 @@
 
 .contentBtbl {
 	text-align: left;
-	width: 100%;
-	height: 65%;
+	width: 285px;
+	height: 350px;
+	overflow: hidden;
 }
 
 .contentBtbl td {
 	padding: 5px;
+	width: 285px;
+	overflow: hidden;
+}
+
+.overflowhidden {
+	width: 270px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap; /* 아래줄로 내려가지 않게 막는 것 */
+}
+
+.overflowhidden:hover{
+	color:#743434;
 }
 
 .contentBtbl tr:nth-child(2n-1) {
 	background-color: rgba(40, 0, 0, 0.1);
 }
 
-/* .contentBtr td {
-	border-bottom: 1px #c0b4af solid;
-} */
 #goNew {
 	color: gray;
 }

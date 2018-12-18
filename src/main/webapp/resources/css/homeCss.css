@@ -222,6 +222,7 @@ body {
 
 #menuBox .subMenu a {
 	color: white;
+	cursor: pointer;
 }
 
 .subMenu:first-child {

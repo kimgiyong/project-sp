@@ -139,22 +139,22 @@
 				<!-- DB에서 받아올 것 -->
 				<table class="contentBtbl">
 					<tr class="contentBtr">
-						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다다다다다다ㅏ다다ㅏ다다다다ㅏ">나는 공지사항 위치다다다다다다ㅏ다다ㅏ다다다다ㅏ</a></div></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="공지사항공지사항공지사항공지사항공지사항공지사항">공지사항공지사항공지사항공지사항공지사항공지사항</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
 					</tr>
 				</table>
 			</div>
@@ -164,22 +164,22 @@
 				<!-- DB에서 받아올 것 -->
 				<table class="contentBtbl">
 					<tr class="contentBtr ">
-						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="토마토마토마토마토마토토마토마토마토마토마토">토마토마토마토마토마토토마토마토마토마토마토</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
 					</tr>
 				</table>
 			</div>
@@ -189,22 +189,22 @@
 				<!-- DB에서 받아올 것 -->
 				<table class="contentBtbl">
 					<tr class="contentBtr">
-						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
 					</tr>
 				</table>
 			</div>
@@ -214,22 +214,22 @@
 				<!-- DB에서 받아올 것 -->
 				<table class="contentBtbl">
 					<tr class="contentBtr">
-						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+						<td><div class="overflowhidden"><a href="#" class="hover">나는 공지사항 위치다</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+						<td><div class="overflowhidden"><a href="#" class="hover">나는 공지사항 위치다</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+						<td><div class="overflowhidden"><a href="#" class="hover">나는 공지사항 위치다</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+						<td><div class="overflowhidden"><a href="#" class="hover">나는 공지사항 위치다</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+						<td><div class="overflowhidden"><a href="#" class="hover">나는 공지사항 위치다</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><a href="#" class="hover">나는 공지사항 위치다</a></td>
+						<td><div class="overflowhidden"><a href="#" class="hover">나는 공지사항 위치다</a></div></td>
 					</tr>
 				</table>
 			</div>

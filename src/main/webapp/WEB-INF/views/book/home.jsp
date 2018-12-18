@@ -54,7 +54,7 @@
 
 	<div class="logoBox">
 		<a href="/uri/book/homePage" id="logof"> 
-			<img src="${resPath}/img/logo.PNG">
+			<img src="${resPath}/img/logo.PNG" alt="uplogo">
 		</a>
 	</div>
 

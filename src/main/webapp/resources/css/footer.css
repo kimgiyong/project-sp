@@ -21,6 +21,11 @@ footer {
 	margin: 50px 100px;
 }
 
+#foologoBox img{
+	-webkit-filter: grayscale(50%);
+	filter: lightgray;
+}
+
 /* footer부분 */
 .footer-lf-tp{
 	display: inline-block;
