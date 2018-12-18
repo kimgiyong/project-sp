@@ -222,6 +222,8 @@ body {
 
 #menuBox .subMenu a {
 	color: white;
+}
+#menuBox .subMenu a:hover {
 	cursor: pointer;
 }
 

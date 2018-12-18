@@ -4,7 +4,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Q & A</title>
+	<title>게시판</title>
 	<link rel="stylesheet" type="text/css"
 	href="${rootPath}/resources/css/menuCss/noticeboardCss/noticeList.css" />
 </head>
@@ -13,28 +13,31 @@
 <%@ include file="../../home.jsp" %>
 <div class="container"> 
 	<%@ include file="../../menuHead.jsp"%>
-	<ul>
+	<ul id="noticeKind">
 		<li><a href="/postCode?postCode=F">자유게시판</a></li>
 		<li><a href="/postCode?postCode=H">유머게시판</a></li>
 		<li><a href="/postCode?postCode=Q">질문게시판</a></li>
+		<li><a href="/uri/book/menu/noticeboard/noticeInsert">게시글작성</a></li>
 	</ul>
 	<table id=notices>
 		<thead class="category">
 			<tr>
+				<th>책코드</th>
 				<th>회원명</th>
 				<th>질문</th>
 			</tr>
 		</thead>
 		<tbody class="noticeOne">
 			<tr class="positionTopic">
+				<th class="bookCode">001252</th>     
 				<th class="member">회원명님</th>
 				<th class="summary">회원이 질문의 대략적인 내용을 적어두는 자리입니다.</th>
 			</tr>
 			<tr class="detail">
-				<td colspan="2" class="contentsD"><textarea disabled="disabled">db에서 내용 받아 올꺼다</textarea></td>
+				<td colspan="3" class="contentsD"><textarea disabled="disabled">db에서 내용 받아 올꺼다</textarea></td>
 			</tr>
 			<tr class="detail"> 
-				<td colspan="2"> 
+				<td colspan="3"> 
 					<div>
 						<ul class="answerList">
 							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
@@ -60,14 +63,15 @@
 		</tbody>
 		<tbody class="noticeOne">
 			<tr class="positionTopic">
+				<th class="postCode">062598</th>
 				<th class="member">회원명님</th>
 				<th class="summary">회원이 질문의 대략적인 내용을 적어두는 자리입니다.</th>
 			</tr>
-			<tr class="detail">
-				<td colspan="2" class="contentsD"><textarea disabled="disabled">db에서 내용 받아 올꺼다</textarea></td>
+			<tr class="detail"> 
+				<td colspan="3" class="contentsD"><textarea disabled="disabled">db에서 내용 받아 올꺼다</textarea></td>
 			</tr>
 			<tr class="detail"> 
-				<td colspan="2"> 
+				<td colspan="3"> 
 					<div>
 						<ul class="answerList">
 							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
@@ -98,10 +102,25 @@
 <script>
 detextname.textContent = "게시판";
 callback.textContent = "홈페이지";
+function getUrlParams(){
+	var params = {};
+	window.location.search.replace(
+		/[?&]+([^&]*)/gi,
+			function(str, key, value){params[key] = value;}
+	);
+	return params;
+}
 $(function(){
+	oParams = getUrlParams();
 	$('.detail').hide();
+	if(oParams.postCode=='F'){
+		$('#noticeKind li').eq(0).css({'background':'#3d2e2d'});
+	}else if(oParams.postCode=='H'){
+		$('#noticeKind li').eq(1).css({'background':'#3d2e2d'});
+	}else if(oParams.postCode=='Q'){
+		$('#noticeKind li').eq(2).css({'background':'#3d2e2d'});
+	}
 })
-	$('.answerList').scrollTop($('.answerList').prop('scrollHeight'));
 $('.positionTopic').on('click',function(){
 		$(this).siblings('.detail').toggle(); 
 })

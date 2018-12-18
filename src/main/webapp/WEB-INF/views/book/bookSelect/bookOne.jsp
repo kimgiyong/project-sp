@@ -54,22 +54,6 @@ String pageS = request.getParameter("pageS");
 			</tbody>
 		</table>
 	</div>
-	<div id="page">
-	<button id="start" class="pBtn">처음으로</button>
-	<button id="leftMoveTen" class="pBtn">◀◀</button>
-	<button id="leftMove" class="pBtn">◀</button>
-	<c:forEach var="a" begin="${page.startPage}" end="${page.endPage}">
-	<c:if test="${a!=page.pageN}">
-		<span><a href="/bookSelect?bookCode=${books.bookCode}&pageS=${a}">[${a}]</a></span>
-	</c:if>
-	<c:if test="${a==page.pageN}">
-		<span><a href="/bookSelect?bookCode=${books.bookCode}&pageS=${a}" id="nowP">[${a}]</a></span>
-	</c:if>
-	</c:forEach>
-	<button id="rightMove" class="pBtn">▶</button>
-	<button id="rightMoveTen" class="pBtn">▶▶</button>
-	<button id="ends" class="pBtn">끝으로</button>
-	</div>
 </div>
 
 <%@ include file="../footer.jsp"%>

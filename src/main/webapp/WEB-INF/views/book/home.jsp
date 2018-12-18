@@ -79,7 +79,7 @@
 	<ul id="menuBox">
 		<li class="mainMenu"><a href="#">좋은 도서</a>
 			<ul class="subMenuBox">
-				<li class="subMenu"><a onclick="goBList()">도서 대출</a></li>
+				<li class="subMenu"><a onclick="goBList()">도서 목록</a></li>
 				<li class="subMenu"><a href="#">도서 신청</a></li>
 				<li class="subMenu"><a href="#">도서 기부</a></li>
 			</ul>

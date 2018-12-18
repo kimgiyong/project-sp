@@ -1,7 +1,29 @@
 @charset "UTF-8";
+#noticeKind{
+	margin-left: 202px;
+}
+#noticeKind li{
+	width:150px;
+	height: 47px;
+	background: #31242f;
+	list-style-type: none;
+	display:inline-block;
+	margin-right:5px;
+	text-align: center;
+	line-height:47px;
+	border-radius: 12px 12px 0px 0px;
+	border:1px solid #2f2431;
+}
+#noticeKind li a{
+	color: white;
+}
+#noticeKind li:last-child{
+	margin-left:464px;
+	border-radius: 12px 12px 0px 0px;
+	background: #31242f;
+}
 #notices{
 	width:73%; 
-	border:2px solid #666;
 	border-collapse:collapse;
 }
 #notices tr td,th{
