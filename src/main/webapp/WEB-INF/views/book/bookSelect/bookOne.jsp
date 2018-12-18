@@ -36,7 +36,7 @@
 				</tr>
 				<tr>
 					<td>댓글달기</td>
-					<td><textarea type="text" placeholder="내용을 입력하여 주십시오." id="comment"></textarea>
+					<td><textarea type="text" placeholder="내용을 입력하여 주십시오." id="coment"></textarea>
 						<button class="commentbtn">추가</button></td>
 				</tr>
 			</thead>
@@ -57,6 +57,8 @@
 	var likeToggle = document.getElementById("likeToggle");
 	var likeImg = document.getElementById("likeImg");
 	var like = document.getElementById("like");
+	var coment = document.querySelector('#coment').value;
+	var commentbtn = document.querySelector('.commentbtn');
 	detextname.textContent = "상세 정보";	
 	likeToggle.addEventListener("click",likeClick);
 	function likeClick(){
@@ -73,7 +75,7 @@
 					}),
 					success:function(res){
 						if(res==1){
-							location.href="/book/" + '${books.bookCode}';
+							location.href="/bookSelect?bookCode=" + '${books.bookCode}' + '&pageS=1';
 						}else{
 							likeImg.src = "/resources/img/heart.png";
 						}
@@ -93,7 +95,7 @@
 					}),
 					success:function(res){
 						if(res==1){
-							location.href="/book/" + '${books.bookCode}';
+							location.href="/bookSelect?bookCode=" +'${books.bookCode}' + '&pageS=1';
 						}else{
 							likeImg.src = "/resources/img/spaceHeart.png";
 						}
@@ -128,7 +130,33 @@
 			au.send(conf);
 		}
 	}
+	function comentPut(){
+		if('<%=user%>'=='null'){
+			alert('로그인하지 않으면 댓글을 달 수 없습니다.');
+		}else if('<%=user%>'!='null'){
+			var userN = <%=userNum%>;
+			var userNa = '<%=userName%>';
+			alert(coment);
+			var conf = { 
+					url:'/bookComent',
+					method:'POST',
+					param:JSON.stringify({
+						userNum:userN, bookCode:'${books.bookCode}', comentText:coment,
+						userName:userNa
+					}),
+					success:function(res){
+						if(res==1){
+							location.href="/bookSelect?bookCode=" + '${books.bookCode}' + "&pageS=1";
+						}else if(res==0){
+							alert('댓글 달기 실패하였습니다.');
+						}
+					}
+			}
+			au.send(conf);
+		}
+	}
 	window.addEventListener('load',doin);
+	commentbtn.addEventListener('click',comentPut);
 	/* callback.addEventLitener("click",history.go(-1))  */
 </script>
 </body>

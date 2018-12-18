@@ -2,6 +2,7 @@ package com.project.sp.service;
 
 import java.util.List;
 
+import com.project.sp.vo.BookComentVO;
 import com.project.sp.vo.BookVO;
 
 public interface BookService {

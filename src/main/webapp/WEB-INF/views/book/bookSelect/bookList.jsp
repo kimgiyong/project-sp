@@ -31,9 +31,9 @@ String pageS = request.getParameter("pageS");
 		<li><a href="#">최신순 ▼</a></li>
 		<li><a href="#">글자순 ▼</a></li>
 	</ul>
-		<table id="listTable">		
-			<c:forEach var="list" items="${books}" varStatus="sta">
+		<table id="listTable">	
 				<tbody>
+					<c:forEach var="list" items="${books}" varStatus="sta">
 					<tr>
 						<td><c:out value="${sta.count+page.pageStart}"/></td>
 						<td id="tds"><img id="bookImg" src="${resPath}/img/imgredy.jpg"><br><span class="bookTitle">${list.bookName}</span></td>
@@ -43,10 +43,10 @@ String pageS = request.getParameter("pageS");
 							좋아요 개수 : ${list.bookLike}<br><br> 
 							출판년도 : ${list.bookYear}
 						</td>
-						<td id="tds3"><a href="/book/${list.bookCode}" class="hover">상세정보</a></td>
+						<td id="tds3"><a href="/bookSelect?bookCode=${list.bookCode}&pageS=1" class="hover">상세정보</a></td>
 					</tr>
+					</c:forEach>
 				</tbody>
-			</c:forEach>ss
 		</table>
 	<div id="page">
 	<button id="start" class="pBtn">처음으로</button>
@@ -85,7 +85,7 @@ function Mov(event){
 		location.href='/bookList?bookName=<%=bookName%>&bookPub=<%=bookPub%>&bookWriter=<%=bookWriter%>&pageS='+page;
 	}else if(event.target.id=='leftMove'){
 		var page = <%=pageS%>-1;
-		if(<%=pageS%><1){
+		if(<%=pageS%><=1){
 			page = 1;
 		}
 		location.href='/bookList?bookName=<%=bookName%>&bookPub=<%=bookPub%>&bookWriter=<%=bookWriter%>&pageS='+page;

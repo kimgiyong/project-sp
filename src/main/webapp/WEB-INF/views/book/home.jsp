@@ -12,8 +12,10 @@
 <%
 	UserVO user = (UserVO) session.getAttribute("user");
 	int userNum=0;
+	String userName = "";
 	if(user!=null){
 		userNum = user.getUserNum();
+		userName = user.getUserName();
 	}
 %>
 <script>

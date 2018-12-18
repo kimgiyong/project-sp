@@ -3,24 +3,45 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.project.sp.BOOKCOMENT">
-	<select id="bookComentSelectList" resultType="bookComent">
+	<select id="bookComentSelectList" resultType="bookComent" parameterType="bookComent">
 		select * from bookcomenttbl
+		<where>
+			<if test="comentText!=null">or comentText = #{comentText}</if>
+			<if test="userName!=null">or userName = #{userName}</if>
+		</where>
+	</select>
+	<select id="bookComentSelectListSize" resultType="bookComent" parameterType="bookComent">
+		select count(*) from bookcomenttbl
+		<where>
+			<if test="comentText!=null">or comentText = #{comentText}</if>
+			<if test="userName!=null">or userName = #{userName}</if>
+		</where>
 	</select>
 	<select id="bookComentSelect" resultType="bookComent" parameterType="int">
 		select * from bookcomenttbl
 		where comentNum = #{comentNum}
 	</select>
-	<select id="bookComentUser" resultType="bookComent" parameterType="int">
+	<select id="bookComentUser" resultType="bookComent" parameterType="bookComent">
 		select * from bookcomenttbl
 		where userNum = #{userNum}
+		limit #{pageS}, 10
 	</select>
-	<select id="bookComentBook" resultType="bookComent" parameterType="String">
+	<select id="bookComentBook" resultType="bookComent" parameterType="bookComent">
 		select * from bookcomenttbl
+		where bookCode = #{bookCode}
+		limit #{pageS}, 10
+	</select>
+	<select id="bookComentUserSize" resultType="int" parameterType="int">
+		select count(*) from bookcomenttbl
+		where userNum = #{userNum}
+	</select>
+	<select id="bookComentBookSize" resultType="int" parameterType="String">
+		select count(*) from bookcomenttbl
 		where bookCode = #{bookCode}
 	</select>
 	<insert id="bookComentInsert" parameterType="bookComent">
 		insert into bookcomenttbl
-		values()
+		values(#{userNum},#{bookCode},null,#{comentText},now(),#{userName})
 	</insert>
 	<delete id="bookComentDelete" parameterType="int">
 		delete from bookcomenttbl

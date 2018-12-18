@@ -18,6 +18,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.project.sp.service.BookComentService;
 import com.project.sp.service.BookService;
+import com.project.sp.vo.BookComentVO;
 import com.project.sp.vo.BookVO;
 import com.project.sp.vo.PageVO;
 import com.project.sp.vo.PostVO;
@@ -60,11 +61,28 @@ public class BookController {
 	public @ResponseBody List<BookVO> bookSelectListCode(@PathVariable String bookCode) {
 		return bs.bookSelectListCode(bookCode);
 	}
-	@GetMapping(value="/book/{bookCode}")
-	public String bookSelect(@PathVariable String bookCode, HttpServletRequest request) {
-		request.setAttribute("books", bs.bookSelect(bookCode));
-		request.setAttribute("bookComent", bcs.bookComentBook(bookCode));
-		return "book/bookSelect/bookOne";
+	@GetMapping(value="/bookSelect")
+	public String bookSelect(@ModelAttribute BookComentVO bookComent, HttpServletRequest request) {
+		request.setAttribute("books", bs.bookSelect(bookComent.getBookCode()));
+		if(bookComent.getPageS()!=null) {
+			int pageSize = bcs.bookComentBookSize(bookComent.getBookCode());
+			int pageNO = bookComent.getPageS();
+			if(pageNO>pageSize) {
+				pageNO = pageSize ;
+			}
+			if(pageNO<1) {
+				pageNO = 1;
+			}
+			PageVO pages = new PageVO();
+			pages.makePaging(pageSize, pageNO);
+			request.setAttribute("page", pages);
+			bookComent.setPageS(pages.getPageStart());
+			List<BookComentVO> bookComents = bcs.bookComentBook(bookComent);
+			request.setAttribute("bookComent", bookComents);
+			return "book/bookSelect/bookOne";
+		}else {
+			return "book/homePage";
+		}
 	}
 	@PostMapping(value="/book")
 	public @ResponseBody int bookInsert(@RequestBody BookVO book) {

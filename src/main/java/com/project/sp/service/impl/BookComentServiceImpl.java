@@ -14,10 +14,15 @@ public class BookComentServiceImpl implements BookComentService {
 
 	@Autowired
 	private BookComentDAO bcd;
-	
+
 	@Override
-	public List<BookComentVO> bookComentSelectList() {
-		return bcd.bookComentSelectList();
+	public List<BookComentVO> bookComentSelectList(BookComentVO bookComent) {
+		return bcd.bookComentSelectList(bookComent);
+	}
+
+	@Override
+	public int bookComentSelectListSize(BookComentVO bookComent) {
+		return bcd.bookComentSelectListSize(bookComent);
 	}
 
 	@Override
@@ -26,13 +31,23 @@ public class BookComentServiceImpl implements BookComentService {
 	}
 
 	@Override
-	public List<BookComentVO> bookComentUser(int userNum) {
-		return bcd.bookComentUser(userNum);
+	public List<BookComentVO> bookComentUser(BookComentVO bookComent) {
+		return bcd.bookComentUser(bookComent);
 	}
 
 	@Override
-	public List<BookComentVO> bookComentBook(String bookCode) {
-		return bcd.bookComentBook(bookCode);
+	public List<BookComentVO> bookComentBook(BookComentVO bookComent) {
+		return bcd.bookComentBook(bookComent);
+	}
+
+	@Override
+	public int bookComentUserSize(int userNum) {
+		return bcd.bookComentUserSize(userNum);
+	}
+
+	@Override
+	public int bookComentBookSize(String bookCode) {
+		return bcd.bookComentBookSize(bookCode);
 	}
 
 	@Override

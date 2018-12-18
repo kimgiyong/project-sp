@@ -14,10 +14,15 @@ public class BookComentDAOImpl implements BookComentDAO {
 
 	@Autowired
 	private SqlSession ss;
-	
+
 	@Override
-	public List<BookComentVO> bookComentSelectList() {
-		return ss.selectList("com.project.sp.BOOKCOMENT.bookComentSelectList");
+	public List<BookComentVO> bookComentSelectList(BookComentVO bookComent) {
+		return ss.selectList("com.project.sp.BOOKCOMENT.bookComentSelectList",bookComent);
+	}
+
+	@Override
+	public int bookComentSelectListSize(BookComentVO bookComent) {
+		return ss.selectOne("com.project.sp.BOOKCOMENT.bookComentSelectListSize",bookComent);
 	}
 
 	@Override
@@ -26,13 +31,33 @@ public class BookComentDAOImpl implements BookComentDAO {
 	}
 
 	@Override
-	public List<BookComentVO> bookComentUser(int userNum) {
-		return ss.selectList("com.project.sp.BOOKCOMENT.bookComentUser",userNum);
+	public List<BookComentVO> bookComentUser(BookComentVO bookComent) {
+		return ss.selectList("com.project.sp.BOOKCOMENT.bookComentUser",bookComent);
 	}
 
 	@Override
-	public List<BookComentVO> bookComentBook(String bookCode) {
-		return ss.selectList("com.project.sp.BOOKCOMENT.bookComentBook",bookCode);
+	public List<BookComentVO> bookComentBook(BookComentVO bookComent) {
+		return ss.selectList("com.project.sp.BOOKCOMENT.bookComentBook",bookComent);
+	}
+
+	@Override
+	public int bookComentUserSize(int userNum) {
+		int bookSize = ss.selectOne("com.project.sp.BOOKCOMENT.bookComentUserSize",userNum);
+		int pageSize = bookSize / 10;
+		if(bookSize%10>0) {
+			pageSize++;
+		}
+		return pageSize;
+	}
+
+	@Override
+	public int bookComentBookSize(String bookCode) {
+		int bookSize = ss.selectOne("com.project.sp.BOOKCOMENT.bookComentBookSize",bookCode);
+		int pageSize = bookSize / 10;
+		if(bookSize%10>0) {
+			pageSize++;
+		}
+		return pageSize;
 	}
 
 	@Override
