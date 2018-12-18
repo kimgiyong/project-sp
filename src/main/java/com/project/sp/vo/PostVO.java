@@ -16,4 +16,5 @@ public class PostVO {
 	private String moddat;
 	private String postImg;
 	private String userName;
+	private Integer pageS;
 }

@@ -14,6 +14,11 @@
 	<select id="postSelectListCode" resultType="post" parameterType="String">
 		select * from postgtbl
 		where postCode like concat(#{postCode},'%')
+		limit #{pageS}, 15
+	</select>
+	<select id="postSelectListCodeSize" resultType="post" parameterType="String">
+		select count(*) from postgtbl
+		where postCode like concat(#{postCode},'%')
 	</select>
 	<select id="postSelect" resultType="post" parameterType="String">
 		select * from posttbl
@@ -21,6 +26,11 @@
 	</select>
 	<select id="postSelectUser" resultType="post" parameterType="int">
 		select * from posttbl
+		where userNum = #{userNum}
+		limit #{pageS}, 15
+	</select>
+	<select id="postSelectUserSize" resultType="post" parameterType="int">
+		select count(*) from posttbl
 		where userNum = #{userNum}
 	</select>
 	<insert id="postInsert" parameterType="post">

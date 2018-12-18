@@ -1,0 +1,26 @@
+@charset "UTF-8";
+#notices{
+	width:80%; 
+	border:2px solid #666;
+	border-collapse:collapse;
+	margin:50px 0 0 10%;
+}
+#notices tr td,th{
+	border:1px solid #222;
+}
+.category tr{
+	height:40px;
+	background: #3d2e2d;
+}
+.category tr th, .category tr td{
+	color:white;
+}
+.category th:nth-child(1){
+	width:750px;
+}
+.positionTopic{
+	height:30px;
+}
+.positionTopic:hover{
+	cursor: pointer;
+}

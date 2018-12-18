@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -27,12 +28,12 @@ public class PostComentController {
 		return pcs.postComentSelect(comentNum);
 	}
 	@GetMapping(value="/postComentUser")
-	public @ResponseBody List<PostComentVO> postComentUser(int userNum){
-		return pcs.postComentUser(userNum);
+	public @ResponseBody List<PostComentVO> postComentUser(@ModelAttribute PostComentVO postComent){
+		return pcs.postComentUser(postComent);
 	}
 	@GetMapping(value="/postComentPost")
-	public @ResponseBody List<PostComentVO> postComentPost(String postCode){
-		return pcs.postComentPost(postCode);
+	public @ResponseBody List<PostComentVO> postComentPost(@ModelAttribute PostComentVO postComent){
+		return pcs.postComentPost(postComent);
 	}
 	@PostMapping(value="/postComent")
 	public @ResponseBody int pookComentInsert(PostComentVO postComent) {

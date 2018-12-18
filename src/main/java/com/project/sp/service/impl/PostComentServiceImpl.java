@@ -24,17 +24,26 @@ public class PostComentServiceImpl implements PostComentService {
 	public PostComentVO postComentSelect(int comentNum) {
 		return pcd.postComentSelect(comentNum);
 	}
-
+	
 	@Override
-	public List<PostComentVO> postComentUser(int userNum) {
-		return pcd.postComentUser(userNum);
+	public List<PostComentVO> postComentUser(PostComentVO postComent) {
+		return pcd.postComentUser(postComent);
 	}
 
 	@Override
-	public List<PostComentVO> postComentPost(String postCode) {
-		return pcd.postComentPost(postCode);
+	public int postComentUserSize(int userNum) {
+		return pcd.postComentUserSize(userNum);
 	}
 
+	@Override
+	public List<PostComentVO> postComentPost(PostComentVO postComent) {
+		return pcd.postComentPost(postComent);
+	}
+
+	@Override
+	public int postComentPostSize(String postCode) {
+		return pcd.postComentPostSize(postCode);
+	}
 	@Override
 	public int postComentInsert(PostComentVO postComent) {
 		return pcd.postComentInsert(postComent);

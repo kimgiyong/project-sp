@@ -10,12 +10,22 @@
 		select * from postcomenttbl
 		where comentNum = #{comentNum}
 	</select>
-	<select id="postComentUser" resultType="postComent" parameterType="int">
+	<select id="postComentUser" resultType="postComent" parameterType="postComent">
 		select * from postcomenttbl
 		where userNum = #{userNum}
+		limit #{pageS}, 15
 	</select>
-	<select id="postComentpost" resultType="postComent" parameterType="String">
+	<select id="postComentUserSize" resultType="int" parameterType="int">
+		select count(*) from postcomenttbl
+		where userNum = #{userNum}
+	</select>
+	<select id="postComentPost" resultType="postComent" parameterType="postComent">
 		select * from postcomenttbl
+		where postCode = #{postCode}
+		limit #{pageS}, 10
+	</select>
+	<select id="postComentPostSize" resultType="int" parameterType="String">
+		select count(*) from postcomenttbl
 		where postCode = #{postCode}
 	</select>
 	<insert id="postComentInsert" parameterType="postComent">

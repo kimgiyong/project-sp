@@ -7,6 +7,8 @@
 <title>개인정보</title>
 <link rel="stylesheet" type="text/css"
 	href="${resPath}/css/update/mypageCss.css">
+<link rel="stylesheet" type="text/css"
+	href="${resPath}/css/update/mypageCss2.css">
 <%
 	String dif = (String) request.getParameter("dif");
 %>
@@ -78,7 +80,22 @@
 			</div>
 		</section>
 		<section id="dif1" class="total">
-			<div class="updateBack">안녕하세요</div>
+			<div class="updateBack">
+				<table id=notices>
+					<thead class="category">
+						<tr>
+							<th>제목</th>
+							<th>작성일</th>
+						</tr>
+					</thead>
+					<tbody class="noticeOne">
+						<tr class="positionTopic">
+							<th class="member">회원명님</th>
+							<th class="summary">회원</th>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 		</section>
 		<section id="dif2" class="total">
 			<div class="updateBack">아직은</div>
@@ -99,18 +116,23 @@
 	var dif3 = document.getElementById("dif3");
 	var dif4 = document.getElementById("dif4");
 	var dif = <%=dif%>;
-	if(dif==4){
-		dif4.style.display = "block";
-	}else if(dif==3){
-		dif3.style.display = "block";
-	}else if(dif==2){
-		dif2.style.display = "block";
-	}else if(dif==1){
-		dif1.style.display = "block";
-	}else{
-		dif0.style.display = "block";
+	function doin(){
+		if(dif==4){
+			dif4.style.display = "block";
+		}else if(dif==3){
+			dif3.style.display = "block";
+		}else if(dif==2){
+			dif2.style.display = "block";
+		}else if(dif==1){
+			dif1.style.display = "block";
+			var conf = {
+					
+			}
+		}else{
+			dif0.style.display = "block";
+		}
 	}
-	
+	window.addEventListener('load',doin);
 	var save = document.querySelector('#save');
 	var cancel = document.querySelector('#cancel');
 	var joinout = document.querySelector('#joinout');

@@ -8,8 +8,10 @@ public interface PostComentService {
 
 	public List<PostComentVO> postComentSelectList();
 	public PostComentVO postComentSelect(int comentNum);
-	public List<PostComentVO> postComentUser(int userNum);
-	public List<PostComentVO> postComentPost(String postCode);
+	public List<PostComentVO> postComentUser(PostComentVO postComent);
+	public int postComentUserSize(int userNum);
+	public List<PostComentVO> postComentPost(PostComentVO postComent);
+	public int postComentPostSize(String postCode);
 	public int postComentInsert(PostComentVO postComent);
 	public int postComentDelete(int comentNum);
 }
