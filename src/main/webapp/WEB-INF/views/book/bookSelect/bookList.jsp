@@ -26,10 +26,9 @@ String pageS = request.getParameter("pageS");
 	<h2 id="tableTitle">자료 검색 결과</h2>
 	
 	<ul id="sortList">
-		<li>정렬</li>
-		<li><a href="#">인기순 ▼</a></li>
-		<li><a href="#">최신순 ▼</a></li>
-		<li><a href="#">글자순 ▼</a></li>
+		<li><a>정렬</a></li>
+		<li><a id="word">글자순 </a></li>
+		<li><a id="faver">인기순 </a></li>
 	</ul>
 		<table id="listTable">	
 				<tbody>
@@ -69,6 +68,7 @@ String pageS = request.getParameter("pageS");
 </div>
 <%@ include file="../footer.jsp"%>
 <script>
+var cnt = 0;
 var leftMoveTen = document.querySelector('#leftMoveTen');
 var leftMove = document.querySelector('#leftMove');
 var rightMoveTen = document.querySelector('#rightMoveTen');

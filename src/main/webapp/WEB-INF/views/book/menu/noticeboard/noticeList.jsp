@@ -13,7 +13,11 @@
 <%@ include file="../../home.jsp" %>
 <div class="container"> 
 	<%@ include file="../../menuHead.jsp"%>
-	
+	<ul>
+		<li><a href="/postCode?postCode=F">자유게시판</a></li>
+		<li><a href="/postCode?postCode=H">유머게시판</a></li>
+		<li><a href="/postCode?postCode=Q">질문게시판</a></li>
+	</ul>
 	<table id=notices>
 		<thead class="category">
 			<tr>
