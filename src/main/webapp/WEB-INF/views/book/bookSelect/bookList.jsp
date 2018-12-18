@@ -46,7 +46,7 @@ String pageS = request.getParameter("pageS");
 						<td id="tds3"><a href="/book/${list.bookCode}" class="hover">상세정보</a></td>
 					</tr>
 				</tbody>
-			</c:forEach>
+			</c:forEach>ss
 		</table>
 	<div id="page">
 	<button id="start" class="pBtn">처음으로</button>
@@ -61,6 +61,7 @@ String pageS = request.getParameter("pageS");
 		<span><a href="/bookList?bookName=<%=request.getParameter("bookName")%>&bookPub=<%=request.getParameter("bookPub")%>&
 		bookWriter=<%=request.getParameter("bookWriter")%>&pageS=${a}" id="nowP">[${a}]</a></span>
 	</c:if>
+	
 	</c:forEach>
 	<button id="rightMove" class="pBtn">▶</button>
 	<button id="rightMoveTen" class="pBtn">▶▶</button>

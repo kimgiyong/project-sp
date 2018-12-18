@@ -79,7 +79,7 @@
 				<li class="imgBook"><img src="http://image.yes24.com/momo/TopCate969/MidCate006/17021192.jpg" alt="bookimg">
 					<h2 title="초속 5cm">초속 5cm</h2></li>
 				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
-					<h2 title=""></h2></li>
+					<h2 title="">제목5</h2></li>
 				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
 					<h2 title="">제목6</h2></li>
 				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">

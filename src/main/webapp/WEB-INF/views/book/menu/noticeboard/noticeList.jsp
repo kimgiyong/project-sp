@@ -34,19 +34,19 @@
 					<div>
 						<ul class="answerList">
 							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
-							<textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea></li>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
 							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
-							<textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea></li>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
 							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
-							<textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea></li>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
 							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
-							<textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea></li>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
 							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
-							<textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea></li>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
 							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
-							<textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea></li>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
 							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
-							<textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea></li>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
 						</ul>
 					</div>
 					<hr>
@@ -67,19 +67,19 @@
 					<div>
 						<ul class="answerList">
 							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
-							<textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea></li>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
 							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
-							<textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea></li>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
 							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
-							<textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea></li>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
 							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
-							<textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea></li>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
 							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
-							<textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea></li>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
 							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
-							<textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea></li>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
 							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
-							<textarea class="contentsR" placeholder="답변자님의 답변입니다."></textarea></li>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
 						</ul>
 					</div>
 					<hr>

@@ -27,10 +27,10 @@ body {
 .body {
 	position: absolute;
 	z-index: -100;
-	margin-left: -50%;
-	width: 150%;
+	width: 2439px;
 	height: 370px;
 	background-color: #ece6ce;
+	margin-left:-500px;
 }
 
 .clear {
