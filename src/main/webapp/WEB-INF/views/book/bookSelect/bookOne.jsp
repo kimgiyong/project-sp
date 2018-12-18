@@ -11,6 +11,10 @@
 <body>
 <%@ include file="../home.jsp"%>
 <hr>
+<%
+String bookCode = request.getParameter("bookCode");
+String pageS = request.getParameter("pageS");
+%>
 <div class="container">
 <%@ include file="../menuHead.jsp" %>
 	<table id="bookInfoTbl" border="1">
@@ -44,11 +48,27 @@
 				<c:forEach var="list" items="${bookComent}" varStatus="sta">
 					<tr>
 						<td>${list.userName}</td>
-						<td><input type="text" disabled="disabled" class="comments"></td>
+						<td><input type="text" disabled="disabled" class="comments" value="${list.comentText}"></td>
 					</tr>
 				</c:forEach>
 			</tbody>
 		</table>
+	</div>
+	<div id="page">
+	<button id="start" class="pBtn">처음으로</button>
+	<button id="leftMoveTen" class="pBtn">◀◀</button>
+	<button id="leftMove" class="pBtn">◀</button>
+	<c:forEach var="a" begin="${page.startPage}" end="${page.endPage}">
+	<c:if test="${a!=page.pageN}">
+		<span><a href="/bookSelect?bookCode=${books.bookCode}&pageS=${a}">[${a}]</a></span>
+	</c:if>
+	<c:if test="${a==page.pageN}">
+		<span><a href="/bookSelect?bookCode=${books.bookCode}&pageS=${a}" id="nowP">[${a}]</a></span>
+	</c:if>
+	</c:forEach>
+	<button id="rightMove" class="pBtn">▶</button>
+	<button id="rightMoveTen" class="pBtn">▶▶</button>
+	<button id="ends" class="pBtn">끝으로</button>
 	</div>
 </div>
 
@@ -57,7 +77,6 @@
 	var likeToggle = document.getElementById("likeToggle");
 	var likeImg = document.getElementById("likeImg");
 	var like = document.getElementById("like");
-	var coment = document.querySelector('#coment').value;
 	var commentbtn = document.querySelector('.commentbtn');
 	detextname.textContent = "상세 정보";	
 	likeToggle.addEventListener("click",likeClick);
@@ -134,14 +153,14 @@
 		if('<%=user%>'=='null'){
 			alert('로그인하지 않으면 댓글을 달 수 없습니다.');
 		}else if('<%=user%>'!='null'){
+			var coment = document.querySelector('#coment');
 			var userN = <%=userNum%>;
 			var userNa = '<%=userName%>';
-			alert(coment);
 			var conf = { 
 					url:'/bookComent',
 					method:'POST',
 					param:JSON.stringify({
-						userNum:userN, bookCode:'${books.bookCode}', comentText:coment,
+						userNum:userN, bookCode:'${books.bookCode}', comentText:coment.value,
 						userName:userNa
 					}),
 					success:function(res){
@@ -158,6 +177,47 @@
 	window.addEventListener('load',doin);
 	commentbtn.addEventListener('click',comentPut);
 	/* callback.addEventLitener("click",history.go(-1))  */
+var leftMoveTen = document.querySelector('#leftMoveTen');
+var leftMove = document.querySelector('#leftMove');
+var rightMoveTen = document.querySelector('#rightMoveTen');
+var rightMove = document.querySelector('#rightMove');
+var startBtn = document.querySelector('#start');
+var endsBtn = document.querySelector('#ends');
+function Mov(event){
+	var page;
+	if(event.target.id=='leftMoveTen'){
+		page = (parseInt((<%=pageS%>-11)/10)*10)+1;
+		if(<%=pageS%><=1){
+			page = 1;
+		}
+	}else if(event.target.id=='leftMove'){
+		page = <%=pageS%>-1;
+		if(<%=pageS%><=1){
+			page = 1;
+		}
+	}else if(event.target.id=='rightMoveTen'){
+		page = (parseInt((<%=pageS%>-1)/10)*10)+11;
+		if(<%=pageS%>>=(parseInt(${(page.pageT-1)}/10)*10)+1){
+			page = ${page.pageT};
+		}
+	}else if(event.target.id=='rightMove'){
+		page = <%=pageS%>+1;
+		if(<%=pageS%>>${page.pageT}){
+			page = ${page.pageT};
+		}
+	}else if(event.target.id=='start'){
+		page = 1;
+	}else if(event.target.id=='ends'){
+		page = ${page.pageT};
+	}
+	location.href='/bookSelect?bookCode=${books.bookCode}&pageS='+page;
+}
+leftMoveTen.addEventListener('click',Mov);
+leftMove.addEventListener('click',Mov);
+rightMoveTen.addEventListener('click',Mov);
+rightMove.addEventListener('click',Mov);
+startBtn.addEventListener('click',Mov);
+endsBtn.addEventListener('click',Mov);
 </script>
 </body>
 </html>

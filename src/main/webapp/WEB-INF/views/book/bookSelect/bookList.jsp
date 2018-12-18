@@ -61,7 +61,6 @@ String pageS = request.getParameter("pageS");
 		<span><a href="/bookList?bookName=<%=request.getParameter("bookName")%>&bookPub=<%=request.getParameter("bookPub")%>&
 		bookWriter=<%=request.getParameter("bookWriter")%>&pageS=${a}" id="nowP">[${a}]</a></span>
 	</c:if>
-	
 	</c:forEach>
 	<button id="rightMove" class="pBtn">▶</button>
 	<button id="rightMoveTen" class="pBtn">▶▶</button>
@@ -77,37 +76,33 @@ var rightMove = document.querySelector('#rightMove');
 var startBtn = document.querySelector('#start');
 var endsBtn = document.querySelector('#ends');
 function Mov(event){
+	var page;
 	if(event.target.id=='leftMoveTen'){
-		var page = (parseInt((<%=pageS%>-11)/10)*10)+1;
+		page = (parseInt((<%=pageS%>-11)/10)*10)+1;
 		if(<%=pageS%><=1){
 			page = 1;
 		}
-		location.href='/bookList?bookName=<%=bookName%>&bookPub=<%=bookPub%>&bookWriter=<%=bookWriter%>&pageS='+page;
 	}else if(event.target.id=='leftMove'){
-		var page = <%=pageS%>-1;
+		page = <%=pageS%>-1;
 		if(<%=pageS%><=1){
 			page = 1;
 		}
-		location.href='/bookList?bookName=<%=bookName%>&bookPub=<%=bookPub%>&bookWriter=<%=bookWriter%>&pageS='+page;
 	}else if(event.target.id=='rightMoveTen'){
-		var page = (parseInt((<%=pageS%>-1)/10)*10)+11;
+		page = (parseInt((<%=pageS%>-1)/10)*10)+11;
 		if(<%=pageS%>>=(parseInt(${(page.pageT-1)}/10)*10)+1){
 			page = ${page.pageT};
 		}
-		location.href='/bookList?bookName=<%=bookName%>&bookPub=<%=bookPub%>&bookWriter=<%=bookWriter%>&pageS='+page;
 	}else if(event.target.id=='rightMove'){
-		var page = <%=pageS%>+1;
+		page = <%=pageS%>+1;
 		if(<%=pageS%>>${page.pageT}){
 			page = ${page.pageT};
 		}
-		location.href='/bookList?bookName=<%=bookName%>&bookPub=<%=bookPub%>&bookWriter=<%=bookWriter%>&pageS='+page;
 	}else if(event.target.id=='start'){
-		var page = 1;
-		location.href='/bookList?bookName=<%=bookName%>&bookPub=<%=bookPub%>&bookWriter=<%=bookWriter%>&pageS='+page;
+		page = 1;
 	}else if(event.target.id=='ends'){
 		var page = ${page.pageT};
-		location.href='/bookList?bookName=<%=bookName%>&bookPub=<%=bookPub%>&bookWriter=<%=bookWriter%>&pageS='+page;
 	}
+	location.href='/bookList?bookName=<%=bookName%>&bookPub=<%=bookPub%>&bookWriter=<%=bookWriter%>&pageS='+page;
 }
 leftMoveTen.addEventListener('click',Mov);
 leftMove.addEventListener('click',Mov);

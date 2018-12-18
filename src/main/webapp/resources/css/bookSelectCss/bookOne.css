@@ -94,3 +94,12 @@
 .web{
 	120%;
 }
+#page{
+	text-align:center;
+}
+#nowP{
+	font-weight:bold;
+}
+.pBtn{
+	margin:0 3px 0 3px;
+}
