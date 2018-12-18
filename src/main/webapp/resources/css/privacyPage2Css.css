@@ -104,7 +104,7 @@ img {
 .sub-nav>div {
 	display: inline-block;
 	height: 46px;
-	background: url(/files/web148/images/sub/sub_nav_area_05.gif) no-repeat
+	background: url(${resPath}/img/popup/sub_nav_area_05.png) no-repeat
 		left top;
 	padding-left: 31px;
 	vertical-align: top;

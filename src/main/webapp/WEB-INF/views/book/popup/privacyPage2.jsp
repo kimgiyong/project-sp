@@ -22,18 +22,7 @@
 						</div>
 						<div class="nav-deaph1">
 							<ul>
-								<li><a href="#none"><span>이용안내</span></a>
-									<ul class="nav-deaph1-menu">
-										<li><a href="/site/homepage/menu/viewMenu?menuid=148001">전자민원</a></li>
-										<li><a href="/site/homepage/menu/viewMenu?menuid=148002">시민참여</a></li>
-										<li><a href="/site/homepage/menu/viewMenu?menuid=148003">행정정보</a></li>
-										<li><a href="/site/homepage/menu/viewMenu?menuid=148004">시정소식</a></li>
-										<li><a href="/site/homepage/menu/viewMenu?menuid=148005">부천안내</a></li>
-										<li><a href="/site/homepage/menu/viewMenu?menuid=148006">분야별정보</a></li>
-										<li><a href="/site/homepage/menu/viewMenu?menuid=148007">멤버십</a></li>
-										<li><a href="/site/program/sitemap/list?menuid=148008001">이용안내</a></li>
-										<li><a href="/site/homepage/menu/viewMenu?menuid=148009">부서안내</a></li>
-									</ul></li>
+								<li><a href="/uri/book/menu/infoUse"><span>이용안내</span></a></li>
 							</ul>
 						</div>
 						<div>
