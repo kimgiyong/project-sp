@@ -78,8 +78,8 @@
 					<h2 title="죽고싶지만 떡볶이는 먹고싶어">죽고싶지만 떡볶이는 먹고싶어</h2></li>
 				<li class="imgBook"><img src="http://image.yes24.com/momo/TopCate969/MidCate006/17021192.jpg" alt="bookimg">
 					<h2 title="초속 5cm">초속 5cm</h2></li>
-				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
-					<h2 title="">제목5</h2></li>
+				<li class="imgBook"><img src="https://misc.ridibooks.com/cover/2066000298/xxlarge" alt="bookimg">
+					<h2 title="너의 췌장을 먹고싶어">너의 췌장을 먹고싶어</h2></li>
 				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
 					<h2 title="">제목6</h2></li>
 				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
@@ -104,8 +104,8 @@
 					<h2 title="정령왕 엘퀴네스">정령왕 엘퀴네스</h2></li>
 				<li class="imgBook"><img src="http://image.yesfile.com/data/2018/09/23/1537671265_8yC0.jpg" alt="bookimg">
 					<h2 title="금발의 정령사">금발의 정령사</h2></li>
-				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
-					<h2 title="">제목c</h2></li>
+				<li class="imgBook"><img src="http://image.yes24.com/goods/32382348/L" alt="bookimg">
+					<h2 title="황제의 외동딸">황제의 외동딸</h2></li>
 				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
 					<h2 title="">제목d</h2></li>
 				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
@@ -156,6 +156,9 @@
 					<tr class="contentBtr">
 						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
 					</tr>
+					<tr class="contentBtr">
+						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
+					</tr>
 				</table>
 			</div>
 			<div class="contentBnotice bbtr">
@@ -167,10 +170,13 @@
 						<td><div class="overflowhidden"><a href="#" class="hover" title="토마토마토마토마토마토토마토마토마토마토마토">토마토마토마토마토마토토마토마토마토마토마토</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="집집집집집집집집집">집집집집집집집집집</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="집가고 싶다">집가고 싶다</a></div></td>
+					</tr>
+					<tr class="contentBtr">
+						<td><div class="overflowhidden"><a href="#" class="hover" title="놀러가고 싶다">놀러가고 싶다</a></div></td>
 					</tr>
 					<tr class="contentBtr">
 						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
@@ -188,6 +194,9 @@
 				<p class="contentBA" href="#">바로가기</p>
 				<!-- DB에서 받아올 것 -->
 				<table class="contentBtbl">
+					<tr class="contentBtr">
+						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
+					</tr>
 					<tr class="contentBtr">
 						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
 					</tr>
@@ -230,6 +239,9 @@
 					</tr>
 					<tr class="contentBtr">
 						<td><div class="overflowhidden"><a href="#" class="hover">나는 공지사항 위치다</a></div></td>
+					</tr>
+					<tr class="contentBtr">
+						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
 					</tr>
 				</table>
 			</div>

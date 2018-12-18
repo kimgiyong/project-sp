@@ -194,7 +194,7 @@
 }
 
 .contentBnotice h1 {
-	margin-bottom: -20px;
+	margin-bottom: -25px;
 	font-family: 'Gamja Flower', cursive;
 	color: #562727;
 	font-size: 200%;
@@ -202,6 +202,7 @@
 
 .contentB .contentBA {
 	float: right;
+	margin-bottom:5px;
 	color: #4e3fa3;
 	cursor: pointer;
 }
@@ -209,13 +210,7 @@
 .contentBtbl {
 	text-align: left;
 	width: 285px;
-	height: 350px;
-	overflow: hidden;
-}
-
-.contentBtbl td {
-	padding: 5px;
-	width: 285px;
+	height: 280px;
 	overflow: hidden;
 }
 
@@ -230,7 +225,7 @@
 	color:#743434;
 }
 
-.contentBtbl tr:nth-child(2n-1) {
+.contentBtbl tr:nth-child(2n) {
 	background-color: rgba(40, 0, 0, 0.1);
 }
 
