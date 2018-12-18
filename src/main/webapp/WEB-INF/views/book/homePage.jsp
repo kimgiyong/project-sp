@@ -76,10 +76,10 @@
 					<h2 title="언어의 온도">언어의 온도</h2></li>
 				<li class="imgBook"><img src="https://misc.ridibooks.com/cover/754023693/xxlarge" alt="bookimg">
 					<h2 title="죽고싶지만 떡볶이는 먹고싶어">죽고싶지만 떡볶이는 먹고싶어</h2></li>
+				<li class="imgBook"><img src="http://image.yes24.com/momo/TopCate969/MidCate006/17021192.jpg" alt="bookimg">
+					<h2 title="초속 5cm">초속 5cm</h2></li>
 				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
-					<h2 title="">제목4</h2></li>
-				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
-					<h2 title="">제목5</h2></li>
+					<h2 title=""></h2></li>
 				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
 					<h2 title="">제목6</h2></li>
 				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">

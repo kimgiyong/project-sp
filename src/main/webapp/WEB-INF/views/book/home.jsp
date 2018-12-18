@@ -51,9 +51,8 @@
 	</div>
 
 	<div class="logoBox">
-		<a href="/uri/book/homePage" id="logof"> <span id="logof1">좋은</span>
-			<span id="logof2">향</span> <br> &emsp; <span id="logof3">&nbsp;도서</span>
-			<span id="logof4">관</span>
+		<a href="/uri/book/homePage" id="logof"> 
+			<img src="${resPath}/img/logo.PNG">
 		</a>
 	</div>
 

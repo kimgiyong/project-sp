@@ -52,9 +52,8 @@
 	var contentsR = document.getElementById("contentsR");
 	var answerList = document.getElementById("answerList");
 	function Reply() {
-		var newElement = '<div><span class="replier">' + '회원이름님'
-				+ '</span><br><textarea class="contentR">' + contentsR.value
-				+ '</textarea></div>'; 
+		var newElement = '<div><span class="replier">' + '답변자님' + '</span><span class="credat">' + '20xx-xx-xx' + '</span><br>'
+			+ '<textarea class="contentsR"></textarea>'; 
 		if (contentsR.value == "" || contentsR.value == null) {
 			alert("답글을 작성해 주세요");
 			return;
