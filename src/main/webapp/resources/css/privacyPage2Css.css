@@ -82,23 +82,29 @@ img {
 	float: right;
 	margin-top: -35px;
 }
-.sub-sharing > li {
-    float: left;
-    margin-left: 5px;
-    position: relative;
-}.sharing-btn {
-    display: none;
-    position: absolute;
-    top: 34px;
-    z-index: 20;
-    right: 0;
-}.sharing-btn li {
-    margin-top: 5px;
+
+.sub-sharing>li {
+	float: left;
+	margin-left: 5px;
+	position: relative;
 }
+
+.sharing-btn {
+	display: none;
+	position: absolute;
+	top: 34px;
+	z-index: 20;
+	right: 0;
+}
+
+.sharing-btn li {
+	margin-top: 5px;
+}
+
 .sub-nav>div {
 	display: inline-block;
 	height: 46px;
-	background: url(/files/web148/images/sub/sub_nav_area_05.gif) no-repeat
+	background: url(${resPath}/img/popup/sub_nav_area_05.png) no-repeat
 		left top;
 	padding-left: 31px;
 	vertical-align: top;
