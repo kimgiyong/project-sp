@@ -41,16 +41,18 @@ footer {
 	display: block;
 	font-size: 14px;
 	color: #555555;
+	font-weight: bold;
+	cursor: pointer;
 }
 
 .footer-lf-tp ul,.footer-lf-tp menu,.footer-lf-tp dir {
     display: block;
     list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
+    margin-top:20px;
+    margin-bottom:-10px;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    padding-inline-start: 40px;
+    padding-inline-start: 0px;
 }
 
 .clearfix:after {

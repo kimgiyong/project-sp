@@ -320,7 +320,7 @@
 		- 개인정보 취급 수탁업무: 좋은향도서관 홈페이지 및 자료관리시스템 유지보수업무 수행</textarea>
 	</li>
 	<li class="termBoxs">
-		<button id="goBack">회원가입 페이지로 돌아가기</button>
+		<button id="goBack">돌아가기</button>
 	</li>
 </ul>
 
