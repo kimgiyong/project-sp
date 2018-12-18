@@ -32,8 +32,6 @@ footer {
 
 .footer-lf-tp>ul>li {
 	float: left;
-	background: url(/files/web19/images/main/main_155.gif) no-repeat left
-		center;
 	padding: 0 10px;
 }
 
@@ -53,7 +51,7 @@ footer {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 0px;
-}
+} */
 
 .clearfix:after {
     content: "";
