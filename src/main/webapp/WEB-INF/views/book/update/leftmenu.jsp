@@ -5,7 +5,7 @@
 			<ul id="menuul">
 				<li class="sub"><a href="/uri/book/update/homeMypage?dif=0">개인정보확인  / 수정</a></li>
 				<li><hr></li>
-				<li class="sub"><a href="/uri/book/update/homeMypage?dif=1">내가 쓴 글 보기</a></li>
+				<li class="sub"><a href="/post?userNum=<%=userNum%>&pageS=1">내가 쓴 글 보기</a></li>
 				<li><hr></li>
 				<li class="sub"><a href="/uri/book/update/homeMypage?dif=2">내가 쓴 댓글 보기</a></li>
 				<li><hr></li>

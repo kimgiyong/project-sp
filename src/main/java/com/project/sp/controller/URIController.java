@@ -17,5 +17,11 @@ public class URIController {
 		logger.debug("rootPath=>{}",rootPath);
 		return req.getRequestURI().replace(rootPath+"/uri/", "");
 	}
+	@GetMapping(value="/WEB-INF/views/uri/**")
+	public String uriCon2(HttpServletRequest req) {
+		String rootPath = req.getContextPath();
+		logger.debug("rootPath=>{}",rootPath);
+		return req.getRequestURI().replace(rootPath+"/WEB-INF/views/uri/", "");
+	}
 	
 }

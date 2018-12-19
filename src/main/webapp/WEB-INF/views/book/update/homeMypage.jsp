@@ -19,6 +19,9 @@
 	<script>var userAddr = '<%=user.getUserAddr()%>';</script>
 	<div id="total">
 		<%@ include file="leftmenu.jsp"%>
+		<%
+			String pageS = request.getParameter("pageS");
+		%>
 		<section id="dif0" class="total">
 			<div class="updateBack">
 				<h1 id="sh">개인정보확인 / 수정</h1>
@@ -89,12 +92,30 @@
 						</tr>
 					</thead>
 					<tbody class="noticeOne">
+					<c:forEach var="list" items="${posts}">
 						<tr class="positionTopic">
-							<th class="member">회원명님</th>
-							<th class="summary">회원</th>
+							<th class="member">${list.postTitle}</th>
+							<th class="summary">${list.credat}</th>
 						</tr>
+					</c:forEach>
 					</tbody>
 				</table>
+				<div id="page">
+				<button id="start" class="pBtn">처음으로</button>
+				<button id="leftMoveTen" class="pBtn">◀◀</button>
+				<button id="leftMove" class="pBtn">◀</button>
+				<c:forEach var="a" begin="${page.startPage}" end="${page.endPage}">
+				<c:if test="${a!=page.pageN}">
+					<span><a href="/post?userNum=<%=userNum%>&pageS=${a}">[${a}]</a></span>
+				</c:if>
+				<c:if test="${a==page.pageN}">
+					<span><a href="/post?userNum=<%=userNum%>&pageS=${a}" id="nowP">[${a}]</a></span>
+				</c:if>
+				</c:forEach>
+				<button id="rightMove" class="pBtn">▶</button>
+				<button id="rightMoveTen" class="pBtn">▶▶</button>
+				<button id="ends" class="pBtn">끝으로</button>
+				</div>
 			</div>
 		</section>
 		<section id="dif2" class="total">
@@ -125,9 +146,6 @@
 			dif2.style.display = "block";
 		}else if(dif==1){
 			dif1.style.display = "block";
-			var conf = {
-					
-			}
 		}else{
 			dif0.style.display = "block";
 		}
@@ -201,9 +219,7 @@
 			var pwd = document.querySelector('#pwd');
 			if(pwd.value=='<%=user.getUserPwd()%>') {
 					var conf = {
-						url : '/user/' +
-	<%=user.getUserNum()%>
-		,
+						url : '/user/' + <%=user.getUserNum()%>,
 						method : 'DELETE',
 						success : function(res) {
 							if (res == 1) {
@@ -223,6 +239,47 @@
 		save.addEventListener('click', saves);
 		cancel.addEventListener('click', back);
 		joinout.addEventListener('click', out);
+		var leftMoveTen = document.querySelector('#leftMoveTen');
+		var leftMove = document.querySelector('#leftMove');
+		var rightMoveTen = document.querySelector('#rightMoveTen');
+		var rightMove = document.querySelector('#rightMove');
+		var startBtn = document.querySelector('#start');
+		var endsBtn = document.querySelector('#ends');
+		function Mov(event){
+			var page;
+			if(event.target.id=='leftMoveTen'){
+				page = (parseInt((<%=pageS%>-11)/10)*10)+1;
+				if(<%=pageS%><=1){
+					page = 1;
+				}
+			}else if(event.target.id=='leftMove'){
+				page = <%=pageS%>-1;
+				if(<%=pageS%><=1){
+					page = 1;
+				}
+			}else if(event.target.id=='rightMoveTen'){
+				page = (parseInt((<%=pageS%>-1)/10)*10)+11;
+				if(<%=pageS%>>=/*(parseInt(${(page.pageT-1)}/10)*10)+1*/1){
+//					page = ${page.pageT};
+				}
+			}else if(event.target.id=='rightMove'){
+				page = <%=pageS%>+1;
+				if(<%=pageS%>>/*${page.pageT}*/1){
+//					page = ${page.pageT};
+				}
+			}else if(event.target.id=='start'){
+				page = 1;
+			}else if(event.target.id=='ends'){
+//				var page = ${page.pageT};
+			}
+			location.href='/post?userNum=<%=userNum%>&pageS='+page;
+		}
+		leftMoveTen.addEventListener('click',Mov);
+		leftMove.addEventListener('click',Mov);
+		rightMoveTen.addEventListener('click',Mov);
+		rightMove.addEventListener('click',Mov);
+		startBtn.addEventListener('click',Mov);
+		endsBtn.addEventListener('click',Mov);
 	</script>
 </body>
 </html>

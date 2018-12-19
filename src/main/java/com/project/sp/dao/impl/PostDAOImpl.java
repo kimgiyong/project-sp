@@ -25,8 +25,18 @@ public class PostDAOImpl implements PostDAO {
 	}
 
 	@Override
-	public List<PostVO> postSelectListCode(String postCode) {
-		return ss.selectList("com.project.sp.POST.postSelectListCode",postCode);
+	public List<PostVO> postSelectListCode(PostVO post) {
+		return ss.selectList("com.project.sp.POST.postSelectListCode",post);
+	}
+
+	@Override
+	public int postSelectListCodeSize(String postCode) {
+		int postSize = ss.selectOne("com.project.sp.POST.postSelectListCodeSize",postCode);
+		int pageSize = postSize / 10;
+		if(postSize%10>0) {
+			pageSize++;
+		}
+		return pageSize;
 	}
 
 	@Override
@@ -35,8 +45,18 @@ public class PostDAOImpl implements PostDAO {
 	}
 
 	@Override
-	public List<PostVO> postSelectUser(int userNum) {
-		return ss.selectList("com.project.sp.POST.postSelectUser",userNum);
+	public List<PostVO> postSelectUser(PostVO post) {
+		return ss.selectList("com.project.sp.POST.postSelectUser",post);
+	}
+
+	@Override
+	public int postSelectUserSize(int userNum) {
+		int postSize = ss.selectOne("com.project.sp.POST.postSelectUserSize",userNum);
+		int pageSize = postSize / 10;
+		if(postSize%10>0) {
+			pageSize++;
+		}
+		return pageSize;
 	}
 
 	@Override

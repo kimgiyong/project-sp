@@ -21,8 +21,13 @@ public class PostServiceImpl implements PostService {
 	}
 
 	@Override
-	public List<PostVO> postSelectListCode(String postCode) {
-		return pd.postSelectListCode(postCode);
+	public List<PostVO> postSelectListCode(PostVO post) {
+		return pd.postSelectListCode(post);
+	}
+
+	@Override
+	public int postSelectListCodeSize(String postCode) {
+		return pd.postSelectListCodeSize(postCode);
 	}
 
 	@Override
@@ -31,10 +36,14 @@ public class PostServiceImpl implements PostService {
 	}
 
 	@Override
-	public List<PostVO> postSelectUser(int userNum) {
-		return pd.postSelectUser(userNum);
+	public List<PostVO> postSelectUser(PostVO post) {
+		return pd.postSelectUser(post);
 	}
 
+	@Override
+	public int postSelectUserSize(int userNum) {
+		return pd.postSelectUserSize(userNum);
+	}
 	@Override
 	public int postInsert(PostVO post) {
 		return pd.postInsert(post);

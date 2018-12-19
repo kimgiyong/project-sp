@@ -130,3 +130,15 @@ hr{
 	width:220px;
 	margin-right:65px;
 }
+#page{
+	text-align:center;
+}
+#page btn{
+	
+}
+#nowP{
+	font-weight:bold;
+}
+.pBtn{
+	margin:0 3px 0 3px;
+}
