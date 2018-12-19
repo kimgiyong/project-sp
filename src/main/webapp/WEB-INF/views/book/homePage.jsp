@@ -80,10 +80,10 @@
 					<h2 title="초속 5cm">초속 5cm</h2></li>
 				<li class="imgBook"><img src="https://misc.ridibooks.com/cover/2066000298/xxlarge" alt="bookimg">
 					<h2 title="너의 췌장을 먹고싶어">너의 췌장을 먹고싶어</h2></li>
-				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
-					<h2 title="">제목6</h2></li>
-				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
-					<h2 title="">제목7</h2></li>
+				<li class="imgBook"><img src="https://misc.ridibooks.com/cover/2416000006/xxlarge" alt="bookimg">
+					<h2 title="왕자의 게임:얼음과 불의 노래 제1부">왕자의 게임 : 얼음과 불의 노래 제1부</h2></li>
+				<li class="imgBook"><img src="https://t1.daumcdn.net/cfile/tistory/257C954E5943217B1A" alt="bookimg">
+					<h2 title="자바의 정석 3판">자바의 정석 3판</h2></li>
 				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
 					<h2 title="">제목8</h2></li>
 				<li class="imgBook"><img src="${resPath}/img/imgredy.jpg" alt="bookimg">
@@ -139,25 +139,25 @@
 				<!-- DB에서 받아올 것 -->
 				<table class="contentBtbl">
 					<tr class="contentBtr">
-						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다다다다다다ㅏ다다ㅏ다다다다ㅏ">나는 공지사항 위치다다다다다다ㅏ다다ㅏ다다다다ㅏ</a></div></div></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="도서관 설립이벤트를 합니다.">도서관 설립이벤트를 합니다.</a></div></div></td>
 					</tr>
 					<tr class="contentBtr">
 						<td><div class="overflowhidden"><a href="#" class="hover" title="공지사항공지사항공지사항공지사항공지사항공지사항">공지사항공지사항공지사항공지사항공지사항공지사항</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="공지사항1">공지사항1</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="공지사항2">공지사항2</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="공지사항3">공지사항3</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="공지사항4">공지사항4</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="공지사항5">공지사항5</a></div></td>
 					</tr>
 				</table>
 			</div>
@@ -170,22 +170,22 @@
 						<td><div class="overflowhidden"><a href="#" class="hover" title="토마토마토마토마토마토토마토마토마토마토마토">토마토마토마토마토마토토마토마토마토마토마토</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><div class="overflowhidden"><a href="#" class="hover" title="집집집집집집집집집">집집집집집집집집집</a></div></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="자유게시판 뭐하는 곳인가요?">자유게시판 뭐하는 곳인가요?</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><div class="overflowhidden"><a href="#" class="hover" title="집가고 싶다">집가고 싶다</a></div></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="자유게시판 위치1">자유게시판 위치1</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><div class="overflowhidden"><a href="#" class="hover" title="놀러가고 싶다">놀러가고 싶다</a></div></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="자유게시판 위치2">자유게시판 위치2</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="자유게시판 위치3">자유게시판 위치3</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="자유게시판 위치4">자유게시판 위치4</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="자유게시판 위치5">자유게시판 위치5</a></div></td>
 					</tr>
 				</table>
 			</div>
@@ -195,25 +195,25 @@
 				<!-- DB에서 받아올 것 -->
 				<table class="contentBtbl">
 					<tr class="contentBtr">
-						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="유머게시판1">유머게시판1</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="유머게시판2">유머게시판2</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="유머게시판3">유머게시판3</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="유머게시판4">유머게시판4</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="유머게시판5">유머게시판5</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="유머게시판6">유머게시판6</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="유머게시판7">유머게시판7</a></div></td>
 					</tr>
 				</table>
 			</div>
@@ -223,25 +223,25 @@
 				<!-- DB에서 받아올 것 -->
 				<table class="contentBtbl">
 					<tr class="contentBtr">
-						<td><div class="overflowhidden"><a href="#" class="hover">나는 공지사항 위치다</a></div></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="질문게시판1">질문게시판1</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><div class="overflowhidden"><a href="#" class="hover">나는 공지사항 위치다</a></div></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="질문게시판2">질문게시판2</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><div class="overflowhidden"><a href="#" class="hover">나는 공지사항 위치다</a></div></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="질문게시판3">질문게시판3</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><div class="overflowhidden"><a href="#" class="hover">나는 공지사항 위치다</a></div></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="질문게시판4">질문게시판4</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><div class="overflowhidden"><a href="#" class="hover">나는 공지사항 위치다</a></div></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="질문게시판5">질문게시판5</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><div class="overflowhidden"><a href="#" class="hover">나는 공지사항 위치다</a></div></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="질문게시판6">질문게시판6</a></div></td>
 					</tr>
 					<tr class="contentBtr">
-						<td><div class="overflowhidden"><a href="#" class="hover" title="나는 공지사항 위치다">나는 공지사항 위치다</a></div></td>
+						<td><div class="overflowhidden"><a href="#" class="hover" title="질문게시판7">질문게시판7</a></div></td>
 					</tr>
 				</table>
 			</div>
