@@ -13,6 +13,12 @@
 <body>
 	<%@ include file="../../home.jsp"%>
 	<div class="container">	
+	<ul id="noticeKind">
+		<li><a href="/postCode?postCode=F">자유게시판</a></li>
+		<li><a href="/postCode?postCode=H">유머게시판</a></li>
+		<li><a href="/postCode?postCode=Q">질문게시판</a></li>
+		<li><a href="/uri/book/menu/noticeboard/noticeInsert">게시글작성</a></li>
+	</ul>
 	<%@ include file="../../menuHead.jsp"%>
 		<table id="notices">
 			<thead class="category">

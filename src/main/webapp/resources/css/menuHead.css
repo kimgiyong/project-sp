@@ -1,12 +1,14 @@
 @charset "UTF-8";
 
+#body{
+    background:white;
+}
 #listHead{
 	width: 1500px;
     height: 150px;
     border-bottom: 2px solid #aaa;
     line-height: 210px;
     padding: 0 35px;
-    background:white;
 }
 #listHead span{
 	float:left;
@@ -38,7 +40,7 @@
 	cursor: pointer;
 }
 
-#spaceDiv{
+.spaceDiv{
 	height:100px;
     background:white;
 }

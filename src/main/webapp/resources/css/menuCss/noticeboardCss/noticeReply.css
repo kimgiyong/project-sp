@@ -1,7 +1,30 @@
 @charset "UTF-8";
+#noticeKind{    
+	margin: 100px 1530px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid black;
+    width: 150;
+    position: fixed;
+}
+#noticeKind li{
+    width: 150px;
+    height: 47px;
+    background: #31242f;
+    list-style-type: none;
+    display: inline-block;
+    margin-right: -5px;
+    text-align: center;
+    line-height: 47px;
+}
+#noticeKind li a{
+	color: white;
+}
+
 #notices{
-	width:69%;
+	width:73%;
 	border-collapse: collapse;
+	margin-left:200px;
 }
 
 

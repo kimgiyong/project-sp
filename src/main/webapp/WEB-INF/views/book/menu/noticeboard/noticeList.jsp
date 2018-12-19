@@ -95,7 +95,519 @@
 				</td>
 			</tr>
 		</tbody>
+	<tbody class="noticeOne">
+			<tr class="positionTopic">
+				<th class="postCode">062598</th>
+				<th class="member">회원명님</th>
+				<th class="summary">회원이 질문의 대략적인 내용을 적어두는 자리입니다.</th>
+			</tr>
+			<tr class="detail"> 
+				<td colspan="3" class="contentsD"><textarea disabled="disabled">db에서 내용 받아 올꺼다</textarea></td>
+			</tr>
+			<tr class="detail"> 
+				<td colspan="3"> 
+					<div>
+						<ul class="answerList">
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+						</ul>
+					</div>
+					<hr>
+					<div class="goReply"><a href="/uri/book/menu/noticeboard/noticeReply?id=1">답글 작성하러 가기</a></div>
+				</td>
+			</tr>
+		</tbody>
+	<tbody class="noticeOne">
+			<tr class="positionTopic">
+				<th class="postCode">062598</th>
+				<th class="member">회원명님</th>
+				<th class="summary">회원이 질문의 대략적인 내용을 적어두는 자리입니다.</th>
+			</tr>
+			<tr class="detail"> 
+				<td colspan="3" class="contentsD"><textarea disabled="disabled">db에서 내용 받아 올꺼다</textarea></td>
+			</tr>
+			<tr class="detail"> 
+				<td colspan="3"> 
+					<div>
+						<ul class="answerList">
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+						</ul>
+					</div>
+					<hr>
+					<div class="goReply"><a href="/uri/book/menu/noticeboard/noticeReply?id=1">답글 작성하러 가기</a></div>
+				</td>
+			</tr>
+		</tbody>
+	<tbody class="noticeOne">
+			<tr class="positionTopic">
+				<th class="postCode">062598</th>
+				<th class="member">회원명님</th>
+				<th class="summary">회원이 질문의 대략적인 내용을 적어두는 자리입니다.</th>
+			</tr>
+			<tr class="detail"> 
+				<td colspan="3" class="contentsD"><textarea disabled="disabled">db에서 내용 받아 올꺼다</textarea></td>
+			</tr>
+			<tr class="detail"> 
+				<td colspan="3"> 
+					<div>
+						<ul class="answerList">
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+						</ul>
+					</div>
+					<hr>
+					<div class="goReply"><a href="/uri/book/menu/noticeboard/noticeReply?id=1">답글 작성하러 가기</a></div>
+				</td>
+			</tr>
+		</tbody>
+	<tbody class="noticeOne">
+			<tr class="positionTopic">
+				<th class="postCode">062598</th>
+				<th class="member">회원명님</th>
+				<th class="summary">회원이 질문의 대략적인 내용을 적어두는 자리입니다.</th>
+			</tr>
+			<tr class="detail"> 
+				<td colspan="3" class="contentsD"><textarea disabled="disabled">db에서 내용 받아 올꺼다</textarea></td>
+			</tr>
+			<tr class="detail"> 
+				<td colspan="3"> 
+					<div>
+						<ul class="answerList">
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+						</ul>
+					</div>
+					<hr>
+					<div class="goReply"><a href="/uri/book/menu/noticeboard/noticeReply?id=1">답글 작성하러 가기</a></div>
+				</td>
+			</tr>
+		</tbody>
+	<tbody class="noticeOne">
+			<tr class="positionTopic">
+				<th class="postCode">062598</th>
+				<th class="member">회원명님</th>
+				<th class="summary">회원이 질문의 대략적인 내용을 적어두는 자리입니다.</th>
+			</tr>
+			<tr class="detail"> 
+				<td colspan="3" class="contentsD"><textarea disabled="disabled">db에서 내용 받아 올꺼다</textarea></td>
+			</tr>
+			<tr class="detail"> 
+				<td colspan="3"> 
+					<div>
+						<ul class="answerList">
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+						</ul>
+					</div>
+					<hr>
+					<div class="goReply"><a href="/uri/book/menu/noticeboard/noticeReply?id=1">답글 작성하러 가기</a></div>
+				</td>
+			</tr>
+		</tbody>
+	<tbody class="noticeOne">
+			<tr class="positionTopic">
+				<th class="postCode">062598</th>
+				<th class="member">회원명님</th>
+				<th class="summary">회원이 질문의 대략적인 내용을 적어두는 자리입니다.</th>
+			</tr>
+			<tr class="detail"> 
+				<td colspan="3" class="contentsD"><textarea disabled="disabled">db에서 내용 받아 올꺼다</textarea></td>
+			</tr>
+			<tr class="detail"> 
+				<td colspan="3"> 
+					<div>
+						<ul class="answerList">
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+						</ul>
+					</div>
+					<hr>
+					<div class="goReply"><a href="/uri/book/menu/noticeboard/noticeReply?id=1">답글 작성하러 가기</a></div>
+				</td>
+			</tr>
+		</tbody>
+	<tbody class="noticeOne">
+			<tr class="positionTopic">
+				<th class="postCode">062598</th>
+				<th class="member">회원명님</th>
+				<th class="summary">회원이 질문의 대략적인 내용을 적어두는 자리입니다.</th>
+			</tr>
+			<tr class="detail"> 
+				<td colspan="3" class="contentsD"><textarea disabled="disabled">db에서 내용 받아 올꺼다</textarea></td>
+			</tr>
+			<tr class="detail"> 
+				<td colspan="3"> 
+					<div>
+						<ul class="answerList">
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+						</ul>
+					</div>
+					<hr>
+					<div class="goReply"><a href="/uri/book/menu/noticeboard/noticeReply?id=1">답글 작성하러 가기</a></div>
+				</td>
+			</tr>
+		</tbody>
+	<tbody class="noticeOne">
+			<tr class="positionTopic">
+				<th class="postCode">062598</th>
+				<th class="member">회원명님</th>
+				<th class="summary">회원이 질문의 대략적인 내용을 적어두는 자리입니다.</th>
+			</tr>
+			<tr class="detail"> 
+				<td colspan="3" class="contentsD"><textarea disabled="disabled">db에서 내용 받아 올꺼다</textarea></td>
+			</tr>
+			<tr class="detail"> 
+				<td colspan="3"> 
+					<div>
+						<ul class="answerList">
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+						</ul>
+					</div>
+					<hr>
+					<div class="goReply"><a href="/uri/book/menu/noticeboard/noticeReply?id=1">답글 작성하러 가기</a></div>
+				</td>
+			</tr>
+		</tbody>
+	<tbody class="noticeOne">
+			<tr class="positionTopic">
+				<th class="postCode">062598</th>
+				<th class="member">회원명님</th>
+				<th class="summary">회원이 질문의 대략적인 내용을 적어두는 자리입니다.</th>
+			</tr>
+			<tr class="detail"> 
+				<td colspan="3" class="contentsD"><textarea disabled="disabled">db에서 내용 받아 올꺼다</textarea></td>
+			</tr>
+			<tr class="detail"> 
+				<td colspan="3"> 
+					<div>
+						<ul class="answerList">
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+						</ul>
+					</div>
+					<hr>
+					<div class="goReply"><a href="/uri/book/menu/noticeboard/noticeReply?id=1">답글 작성하러 가기</a></div>
+				</td>
+			</tr>
+		</tbody>
+	<tbody class="noticeOne">
+			<tr class="positionTopic">
+				<th class="postCode">062598</th>
+				<th class="member">회원명님</th>
+				<th class="summary">회원이 질문의 대략적인 내용을 적어두는 자리입니다.</th>
+			</tr>
+			<tr class="detail"> 
+				<td colspan="3" class="contentsD"><textarea disabled="disabled">db에서 내용 받아 올꺼다</textarea></td>
+			</tr>
+			<tr class="detail"> 
+				<td colspan="3"> 
+					<div>
+						<ul class="answerList">
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+						</ul>
+					</div>
+					<hr>
+					<div class="goReply"><a href="/uri/book/menu/noticeboard/noticeReply?id=1">답글 작성하러 가기</a></div>
+				</td>
+			</tr>
+		</tbody>
+	<tbody class="noticeOne">
+			<tr class="positionTopic">
+				<th class="postCode">062598</th>
+				<th class="member">회원명님</th>
+				<th class="summary">회원이 질문의 대략적인 내용을 적어두는 자리입니다.</th>
+			</tr>
+			<tr class="detail"> 
+				<td colspan="3" class="contentsD"><textarea disabled="disabled">db에서 내용 받아 올꺼다</textarea></td>
+			</tr>
+			<tr class="detail"> 
+				<td colspan="3"> 
+					<div>
+						<ul class="answerList">
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+						</ul>
+					</div>
+					<hr>
+					<div class="goReply"><a href="/uri/book/menu/noticeboard/noticeReply?id=1">답글 작성하러 가기</a></div>
+				</td>
+			</tr>
+		</tbody>
+	<tbody class="noticeOne">
+			<tr class="positionTopic">
+				<th class="postCode">062598</th>
+				<th class="member">회원명님</th>
+				<th class="summary">회원이 질문의 대략적인 내용을 적어두는 자리입니다.</th>
+			</tr>
+			<tr class="detail"> 
+				<td colspan="3" class="contentsD"><textarea disabled="disabled">db에서 내용 받아 올꺼다</textarea></td>
+			</tr>
+			<tr class="detail"> 
+				<td colspan="3"> 
+					<div>
+						<ul class="answerList">
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+						</ul>
+					</div>
+					<hr>
+					<div class="goReply"><a href="/uri/book/menu/noticeboard/noticeReply?id=1">답글 작성하러 가기</a></div>
+				</td>
+			</tr>
+		</tbody>
+	<tbody class="noticeOne">
+			<tr class="positionTopic">
+				<th class="postCode">062598</th>
+				<th class="member">회원명님</th>
+				<th class="summary">회원이 질문의 대략적인 내용을 적어두는 자리입니다.</th>
+			</tr>
+			<tr class="detail"> 
+				<td colspan="3" class="contentsD"><textarea disabled="disabled">db에서 내용 받아 올꺼다</textarea></td>
+			</tr>
+			<tr class="detail"> 
+				<td colspan="3"> 
+					<div>
+						<ul class="answerList">
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+						</ul>
+					</div>
+					<hr>
+					<div class="goReply"><a href="/uri/book/menu/noticeboard/noticeReply?id=1">답글 작성하러 가기</a></div>
+				</td>
+			</tr>
+		</tbody>
+	<tbody class="noticeOne">
+			<tr class="positionTopic">
+				<th class="postCode">062598</th>
+				<th class="member">회원명님</th>
+				<th class="summary">회원이 질문의 대략적인 내용을 적어두는 자리입니다.</th>
+			</tr>
+			<tr class="detail"> 
+				<td colspan="3" class="contentsD"><textarea disabled="disabled">db에서 내용 받아 올꺼다</textarea></td>
+			</tr>
+			<tr class="detail"> 
+				<td colspan="3"> 
+					<div>
+						<ul class="answerList">
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+						</ul>
+					</div>
+					<hr>
+					<div class="goReply"><a href="/uri/book/menu/noticeboard/noticeReply?id=1">답글 작성하러 가기</a></div>
+				</td>
+			</tr>
+		</tbody>
+	<tbody class="noticeOne">
+			<tr class="positionTopic">
+				<th class="postCode">062598</th>
+				<th class="member">회원명님</th>
+				<th class="summary">회원이 질문의 대략적인 내용을 적어두는 자리입니다.</th>
+			</tr>
+			<tr class="detail"> 
+				<td colspan="3" class="contentsD"><textarea disabled="disabled">db에서 내용 받아 올꺼다</textarea></td>
+			</tr>
+			<tr class="detail"> 
+				<td colspan="3"> 
+					<div>
+						<ul class="answerList">
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+							<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+							<textarea class="contentsR" disabled="disabled"></textarea></li>
+						</ul>
+					</div>
+					<hr>
+					<div class="goReply"><a href="/uri/book/menu/noticeboard/noticeReply?id=1">답글 작성하러 가기</a></div>
+				</td>
+			</tr>
+		</tbody>
+	
 	</table>
+<div class="clear"></div>
 </div>
 <%@ include file="../../footer.jsp" %>
 </body>
