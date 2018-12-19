@@ -7,2456 +7,1486 @@
 <title>테스트 입니다.아마도</title>
 </head>
 <body>
-	<div id="onlyOne">
-		<div onclick=""></div>
-		<script type="text/template" id="composerEditorComponentsSymbol">
-	<form class="inner_layer">
-		<strong class="tit_editor">기호 삽입</strong>
-		<div class="info_symbol">
-			<ul class="tab_symbol">
-				<li class="on"><a href="javascript:;" class="link_symbol">일반기호</a><span class="txt_bar"></span></li>
-				<li><a href="javascript:;" class="link_symbol">수학기호, 통화단위</a><span class="txt_bar"></span></li>
-				<li><a href="javascript:;" class="link_symbol">원 기호, 괄호</a><span class="txt_bar"></span></li>
-				<li><a href="javascript:;" class="link_symbol">일본어</a><span class="txt_bar"></span></li>
-				<li><a href="javascript:;" class="link_symbol">로마자, 그리스</a></li>
-			</ul>
-			<div class="view_symbol" style="display:block">
-				<strong class="screen_out">일반기호</strong>
-				<ul class="list_symbol">
-					<li>
-						<button type="button" class="btn_symbol">＃</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">＆</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">＊</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">＠</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">§</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">※</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">☆</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">★</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">○</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">●</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">◎</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">◇</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">◆</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">□</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">■</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">△</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">▲</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">▽</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">▼</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">→</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">←</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">↑</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">↓</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">↔</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">〓</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">◁</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">◀</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">▷</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">▶</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">♤</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">♠</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">♡</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">♥</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">♧</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">♣</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⊙</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">◈</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">▣</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">◐</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">◑</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">▒</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">▤</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">▥</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">▨</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">▧</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">▦</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">▩</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">♨</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">☏</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">☎</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">☜</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">☞</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">¶</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">†</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">‡</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">↕</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">↗</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">↙</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">↖</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">↘</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">♭</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">♩</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">♪</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">♬</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㉿</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㈜</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">№</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㏇</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">™</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㏂</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㏘</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">℡</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">®</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ª</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">º</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">＂</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">（</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">）</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">［</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">］</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">｛</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">｝</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">‘</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">’</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">“</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">”</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">〔</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">〕</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">〈</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">〉</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">《</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">》</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">「</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">」</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">『</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">』</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">【</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">】</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">！</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">＇</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">，</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">．</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">／</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">：</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">；</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">？</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">＾</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">＿</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">｀</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">｜</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">￣</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">、</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">。</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">·</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">‥</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">…</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">¨</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">〃</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">―</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">∥</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">＼</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">∼</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">´</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">～</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ˇ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">˘</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">˝</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">˚</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">˙</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">¸</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">˛</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">¡</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">¿</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ː</button>
-					</li>
-				</ul>
-			</div>
-			<div class="view_symbol" style="display:none">
-				<strong class="screen_out">수학기호, 통화단위</strong>
-				<ul class="list_symbol">
-					<li>
-						<button type="button" class="btn_symbol">＋</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">－</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">＜</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">＝</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">＞</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">±</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">×</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">÷</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">≠</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">≤</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">≥</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">∞</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">∴</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">♂</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">♀</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">∠</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⊥</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⌒</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">∂</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">∇</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">≡</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">≒</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">≪</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">≫</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">√</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">∽</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">∝</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">∵</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">∫</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">∬</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">∈</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">∋</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⊆</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⊇</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⊂</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⊃</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">∪</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">∩</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">∧</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">∨</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">￢</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⇒</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⇔</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">∀</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">∃</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">∮</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">∑</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">∏</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">＄</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">％</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">￦</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">Ｆ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">′</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">″</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">℃</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">Å</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">￠</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">￡</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">￥</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">¤</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">℉</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">‰</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">?</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎕</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎖</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎗</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ℓ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎘</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㏄</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎣</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎤</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎥</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎥</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎦</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎙</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎚</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎛</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎜</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎝</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎞</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎟</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎠</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎡</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎢</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㏊</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎍</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎎</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎏</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㏏</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎈</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎉</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㏈</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎧</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎨</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎰</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎱</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎲</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎳</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎴</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎵</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎶</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎷</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎸</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎹</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎀</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎁</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎂</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎃</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎄</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎺</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎻</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎼</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎽</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎾</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎿</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎐</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎑</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎒</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎓</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎔</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">Ω</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㏀</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㏁</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎊</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎋</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎌</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㏖</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㏅</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎭</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎮</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎯</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㏛</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎩</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎪</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎫</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㎬</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㏝</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㏐</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㏓</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㏃</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㏉</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㏜</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㏆</button>
-					</li>
-				</ul>
-			</div>
-			<div class="view_symbol" style="display:none">
-				<strong class="screen_out">원 기호, 괄호</strong>
-				<ul class="list_symbol">
-					<li>
-						<button type="button" class="btn_symbol">㉠</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㉡</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㉢</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㉣</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㉤</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㉥</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㉦</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㉧</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㉨</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㉩</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㉪</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㉫</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㉬</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㉭</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㉮</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㉯</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㉰</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㉱</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㉲</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㉳</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㉴</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㉵</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㉶</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㉷</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㉸</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㉹</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㉺</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㉻</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㈀</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㈁</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㈂</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㈃</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㈄</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㈅</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㈆</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㈇</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㈈</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㈉</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㈊</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㈋</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㈌</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㈍</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㈎</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㈏</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㈐</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㈑</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㈒</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㈓</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㈔</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㈕</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㈖</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㈗</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㈘</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㈙</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㈚</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">㈛</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ⓐ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ⓑ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ⓒ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ⓓ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ⓔ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ⓕ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ⓖ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ⓗ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ⓘ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ⓙ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ⓚ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ⓛ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ⓜ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ⓝ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ⓞ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ⓟ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ⓠ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ⓡ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ⓢ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ⓣ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ⓤ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ⓥ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ⓦ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ⓧ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ⓨ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ⓩ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">①</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">②</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">③</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">④</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⑤</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⑥</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⑦</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⑧</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⑨</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⑩</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⑪</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⑫</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⑬</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⑭</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⑮</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⒜</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⒝</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⒞</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⒟</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⒠</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⒡</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⒢</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⒣</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⒤</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⒥</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⒦</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⒧</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⒨</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⒩</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⒪</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⒫</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⒬</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⒭</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⒮</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⒯</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⒰</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⒱</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⒲</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⒳</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⒴</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⒵</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⑴</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⑵</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⑶</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⑷</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⑸</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⑹</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⑺</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⑻</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⑼</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⑽</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⑾</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⑿</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⒀</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⒁</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">⒂</button>
-					</li>
-				</ul>
-			</div>
-			<div class="view_symbol" style="display:none">
-				<strong class="screen_out">일본어</strong>
-				<ul class="list_symbol">
-					<li>
-						<button type="button" class="btn_symbol">ぁ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">あ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ぃ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">い</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ぅ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">う</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ぇ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">え</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ぉ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">お</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">か</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">が</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">き</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ぎ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">く</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ぐ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">け</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ぉ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">こ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ご</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">さ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ざ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">し</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">じ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">す</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ず</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">せ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ぜ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">そ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ぞ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">た</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">だ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ち</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ぢ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">っ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">つ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">づ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">て</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">で</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">と</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ど</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">な</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">に</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ぬ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ね</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">の</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">は</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ば</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ぱ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ひ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">び</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ぴ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ふ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ぶ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ぷ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">へ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">べ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ぺ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ほ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ぼ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ぽ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ま</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">み</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">む</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">め</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">も</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ゃ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">や</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ゅ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ゆ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ょ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">よ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ら</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">り</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">る</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">れ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ろ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ゎ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">わ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ゐ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ゑ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">を</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ん</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ァ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ア</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ィ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">イ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ゥ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ウ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ェ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">エ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ォ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">オ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">カ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ガ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">キ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ギ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ク</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">グ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ケ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ゲ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">コ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ゴ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">サ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ザ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">シ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ジ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ス</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ズ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">セ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ゼ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ソ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ゾ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">タ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ダ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">チ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ヂ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ッ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ツ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ヅ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">テ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">デ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ト</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ド</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ナ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ニ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ヌ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ネ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ノ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ハ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">バ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">パ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ヒ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ビ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ピ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">フ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ブ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">プ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ヘ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ベ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ペ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ホ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ボ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ポ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">マ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ミ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ム</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">メ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">モ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ャ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ヤ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ュ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ユ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ョ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ヨ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ラ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">リ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ル</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">レ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ロ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ヮ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ワ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ヰ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ヱ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ヲ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ン</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ヴ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ヵ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ヶ</button>
-					</li>
-				</ul>
-			</div>
-			<div class="view_symbol" style="display:none">
-				<strong class="screen_out">로마자, 그리스</strong>
-				<ul class="list_symbol">
-					<li>
-						<button type="button" class="btn_symbol">０</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">１</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">２</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">３</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">４</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">５</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">６</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">７</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">８</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">９</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ⅰ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ⅱ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ⅲ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ⅳ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ⅴ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ⅵ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ⅶ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ⅷ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ⅸ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ⅹ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">Ⅰ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">Ⅱ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">Ⅲ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">Ⅳ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">Ⅴ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">Ⅵ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">Ⅶ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">Ⅷ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">Ⅸ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">Ⅹ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">Α</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">Β</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">Γ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">Δ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">Ε</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">Ζ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">Η</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">Θ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">Ι</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">Κ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">Λ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">Μ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">Ν</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">Ξ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">Ο</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">Π</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">Ρ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">Σ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">Τ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">Υ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">Φ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">Χ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">Ψ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">Ω</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">α</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">β</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">γ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">δ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ε</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ζ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">η</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">θ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ικ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">λ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">μ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ν</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ξ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ο</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">π</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ρ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">σ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">τ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">υ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">φ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">χ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ψ</button>
-					</li>
-					<li>
-						<button type="button" class="btn_symbol">ω</button>
-					</li>
-				</ul>
-			</div>
-			<div class="choice_symbol">
-				<label for="choiceSymbol" class="lab_symbol">선택한 기호</label>
-				<div class="write_place" style="width:420px"><!-- 입력창 선택시 on 추가 -->
-					<input type="text" class="inp_txt" name="choiceSymbol" id="choiceSymbol">
-				</div>
-			</div>
-		</div>
-		<div class="btn_box">
-			<div class="btn_box">
-				<span class="inner_btn">
-					<button type="submit" class="btn_g btn_check"><span class="txt">삽입</span></button>
-					<button type="button" class="btn_g close_symbol"><span class="txt">취소</span></button>
-				</span>
-			</div>
-		</div>
-		<a href="javascript:;" class="link_close close_symbol"><span class="img_editor ico_close">닫기</span></a>
-	</form>
-</script>
-		<script type="text/template"
-			id="composerEditorComponentsTableType_type1">
-					<table class="tbl">
-						<tbody>
-							<tr>
-								<td class="bn_l">&nbsp;</td>
-								<td>&nbsp;</td>
-								<td>&nbsp;</td>
-								<td class="bn_r">&nbsp;</td>
-							</tr>
-							<tr>
-								<td class="bn_l">&nbsp;</td>
-								<td>&nbsp;</td>
-								<td>&nbsp;</td>
-								<td class="bn_r">&nbsp;</td>
-							</tr>
-							<tr class="lst">
-								<td class="bn_l">&nbsp;</td>
-								<td>&nbsp;</td>
-								<td>&nbsp;</td>
-								<td class="bn_r">&nbsp;</td>
-							</tr>
-						</tbody>
-					</table>
-</script>
-		<script type="text/template"
-			id="composerEditorComponentsTableType_type2">
-					<table class="tbl" >
-						<tbody>
-							<tr>
-								<td class="bn_l">&nbsp;</td>
-								<td>&nbsp;</td>
-								<td>&nbsp;</td>
-								<td class="bn_r">&nbsp;</td>
-							</tr>
-							<tr class="bg_type1">
-								<td class="bn_l">&nbsp;</td>
-								<td>&nbsp;</td>
-								<td>&nbsp;</td>
-								<td class="bn_r">&nbsp;</td>
-							</tr>
-							<tr class="lst">
-								<td class="bn_l">&nbsp;</td>
-								<td>&nbsp;</td>
-								<td>&nbsp;</td>
-								<td class="bn_r">&nbsp;</td>
-							</tr>
-						</tbody>
-					</table>
-</script>
-		<script type="text/template"
-			id="composerEditorComponentsTableTemplate">
-	<div class="inner_layer">
-		<strong class="tit_editor">표 삽입</strong>
-		<div class="editor_insert">
-			<div class="insert_view">
-				<label for="tableRowLength" class="lab_editor">행</label>
-				<div class="write_place spinner_wrapper" style="width:50px"><!-- 입력창 선택시 on 추가 -->
-					<input type="text" class="inp_txt" name="tableRowLength" id="tableRowLength" value="4" data-attr="row">
-					<button type="button" class="btn_move row btn_add"><span class="img_editor">행 개수 추가</span></button>
-					<button type="button" class="btn_move row btn_delete"><span class="img_editor">행 개수 제거</span></button>
-				</div>
-				<label for="tableColLength" class="lab_editor">열</label>
-				<div class="write_place spinner_wrapper" style="width:50px"><!-- 입력창 선택시 on 추가 -->
-					<input type="text" class="inp_txt" name="tableColLength" id="tableColLength" value="4" data-attr="col">
-					<button type="button" class="btn_move col btn_add"><span class="img_editor">열 개수 추가</span></button>
-					<button type="button" class="btn_move col btn_delete"><span class="img_editor">열 개수 제거</span></button>
-				</div>
-				<strong class="screen_out">표 미리보기</strong>
-				<div class="box_view">
-					<div class="align_view">
-						<div class="inner_view">
-							<div class="tbl_type">
-								<table class="tbl">
-									<tbody>
-										<tr>
-											<td class="bn_l">&nbsp;</td>
-											<td>&nbsp;</td>
-											<td>&nbsp;</td>
-											<td class="bn_r">&nbsp;</td>
-										</tr>
-										<tr>
-											<td class="bn_l">&nbsp;</td>
-											<td>&nbsp;</td>
-											<td>&nbsp;</td>
-											<td class="bn_r">&nbsp;</td>
-										</tr>
-										<tr class="lst">
-											<td class="bn_l">&nbsp;</td>
-											<td>&nbsp;</td>
-											<td>&nbsp;</td>
-											<td class="bn_r">&nbsp;</td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="insert_select">
-				<div class="simple_select">
-					<div class="radio_mail focused on">
-						<input type="radio" name="tableMode" id="tablePreset" class="inp_radio" checked="checked">
-						<label for="tablePreset" class="lab_radio">
-							<span class="img_mail ico_radio"></span>
-							<span class="lab_txt">스타일 선택</span>
-						</label>
-					</div>
-					<div class="opt_tbl"><!-- 클래스 opt_open추가시 활성화 -->
-						<button type="button" class="btn_table">
-							<span class="box_tbl"><span class="img_editor tbl_type1">표스타일1</span></span>
-							<span class="img_editor ico_arrow"></span>
-						</button>
-						<div class="box_opt" style="display:none">
-							<ul class="list_opt">
-								<li><a href="javascript:;" class="link_option" data-table-preset="type1"><span class="img_editor tbl_type1">표스타일1</span></a></li>
-								<li><a href="javascript:;" class="link_option" data-table-preset="type2"><span class="img_editor tbl_type2">표스타일2</span></a></li>
-								<li><a href="javascript:;" class="link_option" data-table-preset="type3"><span class="img_editor tbl_type3">표스타일3</span></a></li>
-								<li><a href="javascript:;" class="link_option" data-table-preset="type4"><span class="img_editor tbl_type4">표스타일4</span></a></li>
-								<li><a href="javascript:;" class="link_option" data-table-preset="type5"><span class="img_editor tbl_type5">표스타일5</span></a></li>
-								<li><a href="javascript:;" class="link_option" data-table-preset="type6"><span class="img_editor tbl_type6">표스타일6</span></a></li>
-								<li><a href="javascript:;" class="link_option" data-table-preset="type7"><span class="img_editor tbl_type7">표스타일7</span></a></li>
-								<li><a href="javascript:;" class="link_option" data-table-preset="type8"><span class="img_editor tbl_type8">표스타일8</span></a></li>
-								<li><a href="javascript:;" class="link_option" data-table-preset="type9"><span class="img_editor tbl_type9">표스타일9</span></a></li>
-								<li><a href="javascript:;" class="link_option" data-table-preset="type10"><span class="img_editor tbl_type10">표스타일10</span></a></li>
-								<li><a href="javascript:;" class="link_option" data-table-preset="type11"><span class="img_editor tbl_type11">표스타일11</span></a></li>
-								<li><a href="javascript:;" class="link_option" data-table-preset="type12"><span class="img_editor tbl_type12">표스타일12</span></a></li>
-								<li><a href="javascript:;" class="link_option" data-table-preset="type13"><span class="img_editor tbl_type13">표스타일13</span></a></li>
-								<li><a href="javascript:;" class="link_option" data-table-preset="type14"><span class="img_editor tbl_type14">표스타일14</span></a></li>
-								<li><a href="javascript:;" class="link_option" data-table-preset="type15"><span class="img_editor tbl_type15">표스타일15</span></a></li>
-								<li><a href="javascript:;" class="link_option" data-table-preset="type16"><span class="img_editor tbl_type16">표스타일16</span></a></li>
+	<div class="se2_tool" id="se2_tool">
+
+		<div class="se2_text_tool husky_seditor_text_tool">
+			<ul class="se2_font_type">
+				<li class="husky_seditor_ui_fontName"><button type="button"
+						class="se2_font_family" onclick="ccr(this, 'SE2.font', event)"
+						title="글꼴">
+						<span class="husky_se2m_current_fontName">굴림</span>
+					</button>
+
+					<div class="se2_layer husky_se_fontName_layer"
+						style="overflow: hidden auto; height: 400px; width: 204px;">
+						<div class="se2_in_layer">
+							<ul class="se2_l_font_fam" style="">
+								<li class="active"><button type="button">
+										<span>굴림<span>(</span><em
+											style="font-family: gulim, sans-serif;">가나다라</em><span>)</span></span>
+									</button></li>
+								<li><button type="button">
+										<span>굴림체<span>(</span><em
+											style="font-family: gulimche, sans-serif;">가나다라</em><span>)</span></span>
+									</button></li>
+								<li><button type="button">
+										<span>돋움<span>(</span><em
+											style="font-family: dotum, sans-serif;">가나다라</em><span>)</span></span>
+									</button></li>
+								<li><button type="button">
+										<span>돋움체<span>(</span><em
+											style="font-family: dotumche, sans-serif;">가나다라</em><span>)</span></span>
+									</button></li>
+								<li><button type="button">
+										<span>바탕<span>(</span><em
+											style="font-family: batang, serif;">가나다라</em><span>)</span></span>
+									</button></li>
+								<li><button type="button">
+										<span>바탕체<span>(</span><em
+											style="font-family: batangche, serif;">가나다라</em><span>)</span></span>
+									</button></li>
+								<li><button type="button">
+										<span>궁서<span>(</span><em
+											style="font-family: gungsuh, serif;">가나다라</em><span>)</span></span>
+									</button></li>
+								<li><button type="button">
+										<span>궁서체<span>(</span><em
+											style="font-family: gungsuhche, serif;">가나다라</em><span>)</span></span>
+									</button></li>
+								<li><button type="button">
+										<span>Arial<span>(</span><em
+											style="font-family: arial, sans-serif;">가나다라</em><span>)</span></span>
+									</button></li>
+								<li><button type="button">
+										<span>Courier New<span>(</span><em
+											style="font-family: courier new, serif;">가나다라</em><span>)</span></span>
+									</button></li>
+								<li><button type="button">
+										<span>Tahoma<span>(</span><em
+											style="font-family: tahoma, sans-serif;">가나다라</em><span>)</span></span>
+									</button></li>
+								<li><button type="button">
+										<span>Times New Roman<span>(</span><em
+											style="font-family: times new roman, serif, sans-serif;">가나다라</em><span>)</span></span>
+									</button></li>
+								<li><button type="button">
+										<span>Verdana<span>(</span><em
+											style="font-family: verdana, sans-serif;">가나다라</em><span>)</span></span>
+									</button></li>
+								<li><button type="button">
+										<span>Sans Serif<span>(</span><em
+											style="font-family: sans serif;">가나다라</em><span>)</span></span>
+									</button></li>
+								<li><button type="button">
+										<span>MS Gothic<span>(</span><em
+											style="font-family: ms gothic, sans-serif;">가나다라</em><span>)</span></span>
+									</button></li>
+								<li><button type="button">
+										<span>MS PGothic<span>(</span><em
+											style="font-family: ms pgothic, sans-serif;">가나다라</em><span>)</span></span>
+									</button></li>
+								<li><button type="button">
+										<span>MS UI Gothic<span>(</span><em
+											style="font-family: ms ui gothic, sans-serif;">가나다라</em><span>)</span></span>
+									</button></li>
+								<li><button type="button">
+										<span>Meiryo<span>(</span><em
+											style="font-family: meiryo, sans-serif;">가나다라</em><span>)</span></span>
+									</button></li>
+								<li><button type="button">
+										<span>SimSun<span>(</span><em
+											style="font-family: simsun, serif;">가나다라</em><span>)</span></span>
+									</button></li>
+								<li style="display: none"><button type="button">
+										<span>@DisplayName@<span>(</span><em
+											style="font-family: FontFamily;">@SampleText@</em><span>)</span></span>
+									</button></li>
+								<li class="se2_division husky_seditor_font_separator"
+									style="display: block;"></li>
+
+								<li data-font="NanumGothic,나눔고딕"
+									class="husky_seditor_font_nanumgothic" style="display: block;"><button
+										type="button">
+										<span>나눔고딕<span>(</span><em
+											style="font-family: NanumGothic, 나눔고딕, sans-serif;">가나다라</em><span>)</span></span>
+									</button></li>
+								<li data-font="NanumMyeongjo,나눔명조"
+									class="husky_seditor_font_nanummyeongjo" style="display: none;"><button
+										type="button">
+										<span>나눔명조<span>(</span><em
+											style="font-family: NanumMyeongjo, 나눔명조, serif;">가나다라</em><span>)</span></span>
+									</button></li>
+								<li data-font="NanumSquare,나눔스퀘어"
+									class="husky_seditor_font_nanumsquare" style="display: none;"><button
+										type="button">
+										<span>나눔스퀘어<span>(</span><em
+											style="font-family: NanumSquare, 나눔스퀘어, serif;">가나다라</em><span>)</span></span>
+									</button></li>
 							</ul>
 						</div>
-					</div>
-				</div>
-				<div class="user_select">
-					<div class="radio_mail">
-						<input type="radio" name="tableMode" id="tableCustomize" class="inp_radio">
-						<label for="tableCustomize" class="lab_radio">
-							<span class="img_mail ico_radio"></span>
-							<span class="lab_txt">직접 꾸미기</span>
-						</label>
-					</div>
-					<dl class="list_user">
-						<dt class="tit_user"><label for="table_bgColor" class="lab_editor">배경색</label></dt>
-						<dd class="info_uesr table_bgcolor">
-							<div class="box_bgcolor">
-								<button type="button" class="btn_bgcolor btn_white"><span class="inner_bgcolor" style="background-color:#ffffff">배경컬러 선택</span></button><!-- 흰색 컬러일 경우에만 클래스 btn_white추가  -->
-							</div>
-							<div class="layer_editor layer_color"></div>
-						</dd>
-						<dt class="tit_user">선스타일</dt>
-						<dd class="info_uesr">
-							<button type="button" class="btn_linestyle" data-linestyle="none"><span class="img_editor ico_not">테두리 없음</span></button>
-							<button type="button" class="btn_linestyle" data-linestyle="solid"><span class="img_editor ico_straight">직선</span></button>
-							<button type="button" class="btn_linestyle" data-linestyle="dashed"><span class="img_editor ico_dotted">점선</span></button>
-							<button type="button" class="btn_linestyle" data-linestyle="double"><span class="img_editor ico_thick">두꺼운선</span></button>
-						</dd>
-						<dt class="tit_user"><label for="table_lineThickness" class="lab_editor">선굵기</label></dt>
-						<dd class="info_uesr">
-							<div class="write_place spinner_wrapper" style="width:50px">
-								<input type="text" class="inp_txt" name="table_lineThickness" id="table_lineThickness" value="1" data-attr="borderWidth">
-								<button type="button" class="btn_move border btn_add"><span class="img_editor">선 굵기 1px 더하기</span></button>
-								<button type="button" class="btn_move border btn_delete"><span class="img_editor">선 굵기 1px 빼기</span></button>
-							</div>
-						</dd>
-						<dt class="tit_user"><label for="table_lineColor" class="lab_editor">선 색</label></dt>
-						<dd class="info_uesr table_bordercolor">
-							<div class="box_bgcolor">
-								<button type="button" class="btn_bgcolor"><span class="inner_bgcolor" style="background-color:#cccccc">배경컬러 선택</span></button>
-							</div>
-							<div class="layer_editor layer_color"></div>
-						</dd>
-					</dl>
-				</div>
-			</div>
-		</div>
-		<div class="btn_box">
-			<div class="btn_box">
-				<span class="inner_btn">
-					<button type="submit" class="btn_g btn_check apply_table"><span class="txt">삽입</span></button>
-					<button type="button" class="btn_g close_table"><span class="txt">취소</span></button>
-				</span>
-			</div>
-		</div>
-		<a href="javascript:;" class="link_close close_table"><span class="img_editor ico_close">닫기</span></a>
-	</div>
-</script>
-		<script type="text/template"
-			id="composerEditorComponentsTextboxTemplate">
-	<div class="inner_layer">
-		<strong class="tit_editor">박스 삽입</strong>
-		<div class="editor_insert editor_box">
-			<div class="insert_view">
-				<div class="align_view">
-					<div class="inner_view">
-						<div class="box_type"></div>
-					</div>
-				</div>
-			</div>
-			<div class="insert_select">
-				<div class="simple_select">
-					<div class="radio_mail on">
-						<span class="lab_radio">
-							<span class="lab_txt">스타일 선택</span>
-						</span>
-					</div>
-					<div class="simple_type">
-						<button type="button" class="btn_simple" data-textbox-preset=""><span class="img_editor ico_type1">박스 타입1</span><span class="frame_g"></span></button>
-						<button type="button" class="btn_simple" data-textbox-preset="box_type2"><span class="img_editor ico_type2">박스 타입2</span><span class="frame_g"></span></button>
-						<button type="button" class="btn_simple" data-textbox-preset="box_type3"><span class="img_editor ico_type3">박스 타입3</span><span class="frame_g"></span></button>
-						<button type="button" class="btn_simple" data-textbox-preset="box_type4"><span class="img_editor ico_type4">박스 타입4</span><span class="frame_g"></span></button>
-						<button type="button" class="btn_simple" data-textbox-preset="box_type5"><span class="img_editor ico_type5">박스 타입5</span><span class="frame_g"></span></button>
-						<button type="button" class="btn_simple" data-textbox-preset="box_type6"><span class="img_editor ico_type6">박스 타입6</span><span class="frame_g"></span></button>
-						<button type="button" class="btn_simple" data-textbox-preset="box_type7"><span class="img_editor ico_type7">박스 타입7</span><span class="frame_g"></span></button>
-						<button type="button" class="btn_simple" data-textbox-preset="box_type8"><span class="img_editor ico_type8">박스 타입8</span><span class="frame_g"></span></button>
-						<button type="button" class="btn_simple" data-textbox-preset="box_type9"><span class="img_editor ico_type9">박스 타입9</span><span class="frame_g"></span></button>
-					</div>
-				</div>
-				<div class="user_select">
-					<div class="radio_mail">
-						<span class="lab_radio">
-							<span class="lab_txt">세부 설정</span>
-						</span>
-					</div>
-					<dl class="list_user">
-						<dt class="tit_user"><label for="textbox_bgColor" class="lab_editor">배경색</label></dt>
-						<dd class="info_uesr textbox_bgcolor">
-							<div class="box_bgcolor">
-								<button type="button" class="btn_bgcolor btn_white"><span class="inner_bgcolor" style="background-color:#ffffff">색상 선택</span></button><!-- 2015-09-01 수정 --><!-- 흰색 컬러일 경우에만 클래스 btn_white추가  -->
-							</div>
-							<div class="layer_editor layer_color"></div>
-						</dd>
-						<dt class="tit_user">선스타일</dt>
-						<dd class="info_uesr">
-							<button type="button" class="btn_linestyle" data-linestyle="none"><span class="img_editor ico_not">테두리 없음</span></button>
-							<button type="button" class="btn_linestyle" data-linestyle="solid"><span class="img_editor ico_straight">직선</span></button>
-							<button type="button" class="btn_linestyle" data-linestyle="dashed"><span class="img_editor ico_dotted">점선</span></button>
-							<button type="button" class="btn_linestyle" data-linestyle="double"><span class="img_editor ico_thick">두꺼운선</span></button>
-						</dd>
-						<dt class="tit_user"><label for="textbox_lineThickness" class="lab_editor">선굵기</label></dt>
-						<dd class="info_uesr">
-							<div class="write_place spinner_wrapper" style="width:50px"><!-- 입력창 선택시 on 추가 -->
-								<input type="text" class="inp_txt" name="textbox_lineThickness" id="textbox_lineThickness" value="1">
-								<button type="button" class="btn_move btn_add"><span class="img_editor">선 굵기 1px 더하기</span></button>
-								<button type="button" class="btn_move btn_delete"><span class="img_editor">선 굵기 1px 빼기</span></button>
-							</div>
-						</dd>
-						<dt class="tit_user"><label for="textbox_lineColor" class="lab_editor">선 색</label></dt>
-						<dd class="info_uesr textbox_bordercolor">
-							<div class="box_bgcolor">
-								<button type="button" class="btn_bgcolor"><span class="inner_bgcolor" style="background-color:#cccccc">색상 선택</span></button><!-- 2015-09-01 수정 -->
-							</div>
-							<div class="layer_editor layer_color"></div>
-						</dd>
-					</dl>
-				</div>
-			</div>
-		</div>
-		<div class="btn_box">
-			<div class="btn_box">
-				<span class="inner_btn">
-					<button type="button" class="btn_g btn_check apply_textbox"><span class="txt">삽입</span></button>
-					<button type="button" class="btn_g close_textbox"><span class="txt">취소</span></button>
-				</span>
-			</div>
-		</div>
-		<a href="javascript:;" class="link_close close_textbox"><span class="img_editor ico_close">닫기</span></a>
-	</div>
-</script>
-		<script type="text/template"
-			id="composerEditorTablecellToolbarTemplate">
-	<div class="inner_layer">
-		<strong class="screen_out">표 수정</strong>
-		<div class="table_edit">
-			<dl class="list_cell">
-				<dt class="tit_cell">삽입</dt>
-				<dd class="txt_cell txt_type2">
-					<button type="button" class="btn_cell insert_row" title="선택한 행의 개수만큼 위에 삽입합니다"><span class="txt"><span class="img_editor ico_insert_row"></span>행</span></button>
-					<button type="button" class="btn_cell insert_col" title="선택한 열의 개수만큼 왼쪽에 삽입합니다"><span class="txt"><span class="img_editor ico_insert_col"></span>열</span></button>
-					<span class="bg_bar"></span>
-				</dd>
-				<dt class="tit_cell">병합</dt>
-				<dd class="txt_cell">
-					<button type="button" class="btn_cell merge_cells"><span class="txt"><span class="img_editor ico_cell"></span>셀 병합</span></button>
-				</dd>
-				<dd class="txt_cell txt_type3">
-					<button type="button" class="btn_cell cancel_merge"><span class="txt"><span class="img_editor ico_cell"></span>병합취소</span></button>
-				</dd>
-				<dt class="tit_cell">삭제</dt>
-				<dd class="txt_cell txt_type2">
-					<button type="button" class="btn_cell btn_delete delete_row"><span class="txt"><span class="img_editor ico_delete_row"></span>행</span></button>
-					<button type="button" class="btn_cell btn_delete delete_col"><span class="txt"><span class="img_editor ico_delete_col"></span>열</span></button>
-					<span class="bg_bar"></span>
-				</dd>
-			</dl>
-			<div class="tbl_bgcolor">
-				<div class="radio_mail"><!-- 클릭 시 클래스 on추가 / 포커스시 클래스 focused추가 -->
-					<span class="lab_radio">
-						<span class="lab_txt">셀배경색</span>
-					</span>
-				</div>
-				<div class="write_place" style="width:79px"><!-- 입력창 선택시 on 추가 -->
-					<label for="tablecell_bg" class="screen_out">배경컬러 선택</label>
-					<input type="text" class="inp_txt" name="tablecell_bg" id="tablecell_bg" value="#cccccc" disabled>
-				</div>
-				<div class="box_bgcolor">
-					<button type="button" class="btn_bgcolor"><span class="inner_bgcolor" style="background-color:#cccccc">색상 선택</span></button><!-- 흰색 컬러일 경우에만 btn_bgcolor옆에 클래스 btn_white추가  -->
-				</div>
-				<div class="layer_editor layer_color" style="display:none"></div>
-			</div>
-            <div class="simple_select">
-                <div class="radio_mail">
-                    <span class="lab_radio">
-                        <span class="lab_txt">간단선택</span>
-                    </span>
-                </div>
-                <div class="opt_tbl"><!-- 클래스 opt_open추가시 활성화 -->
-                    <button type="button" class="btn_table">
-                        <span class="box_tbl"><span class="img_editor tbl_type1">표스타일1</span></span>
-                        <span class="img_editor ico_arrow"></span>
-                    </button>
-                    <div class="box_opt" style="display:none">
-                        <ul class="list_opt">
-                            <li><a href="javascript:;" class="link_option" data-table-preset="type1"><span class="img_editor tbl_type1">표스타일1</span></a></li>
-                            <li><a href="javascript:;" class="link_option" data-table-preset="type2"><span class="img_editor tbl_type2">표스타일2</span></a></li>
-                            <li><a href="javascript:;" class="link_option" data-table-preset="type3"><span class="img_editor tbl_type3">표스타일3</span></a></li>
-                            <li><a href="javascript:;" class="link_option" data-table-preset="type4"><span class="img_editor tbl_type4">표스타일4</span></a></li>
-                            <li><a href="javascript:;" class="link_option" data-table-preset="type5"><span class="img_editor tbl_type5">표스타일5</span></a></li>
-                            <li><a href="javascript:;" class="link_option" data-table-preset="type6"><span class="img_editor tbl_type6">표스타일6</span></a></li>
-                            <li><a href="javascript:;" class="link_option" data-table-preset="type7"><span class="img_editor tbl_type7">표스타일7</span></a></li>
-                            <li><a href="javascript:;" class="link_option" data-table-preset="type8"><span class="img_editor tbl_type8">표스타일8</span></a></li>
-                            <li><a href="javascript:;" class="link_option" data-table-preset="type9"><span class="img_editor tbl_type9">표스타일9</span></a></li>
-                            <li><a href="javascript:;" class="link_option" data-table-preset="type10"><span class="img_editor tbl_type10">표스타일10</span></a></li>
-                            <li><a href="javascript:;" class="link_option" data-table-preset="type11"><span class="img_editor tbl_type11">표스타일11</span></a></li>
-                            <li><a href="javascript:;" class="link_option" data-table-preset="type12"><span class="img_editor tbl_type12">표스타일12</span></a></li>
-                            <li><a href="javascript:;" class="link_option" data-table-preset="type13"><span class="img_editor tbl_type13">표스타일13</span></a></li>
-                            <li><a href="javascript:;" class="link_option" data-table-preset="type14"><span class="img_editor tbl_type14">표스타일14</span></a></li>
-                            <li><a href="javascript:;" class="link_option" data-table-preset="type15"><span class="img_editor tbl_type15">표스타일15</span></a></li>
-                            <li><a href="javascript:;" class="link_option" data-table-preset="type16"><span class="img_editor tbl_type16">표스타일16</span></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-		</div>
-	</div>
-</script>
-		<script type="text/template" id="composerEditorSimpleToolbarTemplate">
-    <ul class="list_textedit tool_basic"></ul>
-</script>
-		<script type="text/template"
-			id="composerEditorToolbarFontFamilyTemplate">
-        <button type="button" class="btn_editor btn_font"><span class="txt">글꼴</span><span class="img_editor ico_more"></span></button>
-        <span class="txt_bar"></span>
-        <div class="layer_editor">
-            <div class="inner_layer">
-                <ul class="list_editor list_type font_family_list">
-                    <%-- <% if (isMac) { %>
-                        <li><button type="button" class="btn_edit" data-command="fontfamily" data-value="Apple SD Gothic Neo,sans-serif" font-number="0" style="font-family:Apple SD Gothic Neo,sans-serif;">Apple Gothic <span class="txt_abc">(가나다라)</span></button></li><!-- mac에서는 이걸로 뿌려주세요 -->
-                    <% } else { %>
-                        <li><button type="button" class="btn_edit" data-command="fontfamily" data-value="Malgun Gothic,'맑은 고딕'" font-number="0" style="font-family:Malgun Gothic,'맑은 고딕';">맑은고딕 <span class="txt_abc">(가나다라)</span></button></li>
-                    <% } %> --%>
-                    <li><button type="button" class="btn_edit" data-command="fontfamily" data-value="gulim,'굴림'" font-number="2" style="font-family:gulim,'굴림'">굴림 <span class="txt_abc">(가나다라)</span></button></li>
-                    <li><button type="button" class="btn_edit" data-command="fontfamily" data-value="batang,'바탕'" font-number="3" style="font-family:batang,'바탕';">바탕 <span class="txt_abc">(가나다라)</span></button></li>
-                    <li><button type="button" class="btn_edit" data-command="fontfamily" data-value="'돋움',dotum" font-number="1" style="font-family:'돋움',dotum;">돋움 <span class="txt_abc">(가나다라)</span></button></li>
-                    <li><button type="button" class="btn_edit" data-command="fontfamily" data-value="gungseo, '궁서'" font-number="4" style="font-family:gungseo, '궁서';">궁서 <span class="txt_abc">(가나다라)</span></button></li>
-                    <li><button type="button" class="btn_edit" data-command="fontfamily" data-value="Arial,Helvetica,sans-serif" font-number="5" style="font-family:Arial,Helvetica,sans-serif;">Arial <span class="txt_abc">(abcd)</span></button></li>
-                    <li><button type="button" class="btn_edit" data-command="fontfamily" data-value="Verdana,Geneva,sans-serif" font-number="6" style="font-family:Verdana,Geneva,sans-serif;">Verdana <span class="txt_abc">(abcd)</span></button></li>
-                    <li><button type="button" class="btn_edit" data-command="fontfamily" data-value="tahoma,sans-serif" font-number="7" style="font-family:tahoma,sans-serif;">tahoma <span class="txt_abc">(abcd)</span></button></li>
-                </ul>
-                <ul class="list_editor list_type2">
-                    <li><button type="button" class="btn_edit" data-command="fontfamily" data-value="'나눔고딕',NanumGothic,Sans-serif" font-number="8" style="font-family:'나눔고딕',NanumGothic,Sans-serif;">나눔고딕 <span class="txt_abc">(가나다라)</span></button></li>
-                </ul>
-            </div>
-        </div>
-</script>
-		<script type="text/template"
-			id="composerEditorToolbarFontSizeTemplate">
-        <button type="button" class="btn_editor btn_size" title="글자크기"><span class="txt"><%-- <%= defaultSize %> --%>pt</span><span class="img_editor ico_more"></span></button>
-        <span class="txt_bar"></span>
+					</div></li>
 
-        <div class="layer_editor layer_size">
-            <div class="inner_layer">
-                <ul class="list_editor list_size font_size_list">
-                    <li><button type="button" style="font-size:8pt;" class="btn_edit" data-command="fontsize" data-value="8pt">가나다라마바사 (8pt)</button></li>
-                    <li><button type="button" style="font-size:9pt;" class="btn_edit" data-command="fontsize" data-value="9pt">가나다라마바사 (9pt)</button></li>
-                    <li><button type="button" style="font-size:10pt;" class="btn_edit" data-command="fontsize" data-value="10pt">가나다라마바사 (10pt)</button></li>
-                    <li><button type="button" style="font-size:11pt;" class="btn_edit" data-command="fontsize" data-value="11pt">가나다라마바사 (11pt)</button></li>
-                    <li><button type="button" style="font-size:12pt;" class="btn_edit" data-command="fontsize" data-value="12pt">가나다라마바사 (12pt)</button></li>
-                    <li><button type="button" style="font-size:14pt;" class="btn_edit" data-command="fontsize" data-value="14pt">가나다라마바사 (14pt)</button></li>
-                    <li><button type="button" class="btn_edit txt_size18" style="font-size:18pt;" data-command="fontsize" data-value="18pt">가나다라마바사 (18pt)</button></li>
-                    <li><button type="button" class="btn_edit txt_size24" style="font-size:24pt;" data-command="fontsize" data-value="24pt">가나다라마 (24pt)</button></li>
-                    <li><button type="button" class="btn_edit txt_size36" style="font-size:36pt;" data-command="fontsize" data-value="36pt">가나다 (36pt)</button></li>
-                </ul>
-            </div>
-        </div>
-</script>
-		<script type="text/template"
-			id="composerEditorToolbarFontBoldTemplate">
-    <button type="button" class="btn_editor btn_bold" title="굵게 (Ctrl+B)" data-command="bold"><span class="img_editor ico_bold">굵게</span></button>
-</script>
-<script type="text/template" id="composerEditorToolbarFontUnderlineTemplate">
-    <button type="button" class="btn_editor btn_underline" title="밑줄 (Ctrl+U)" data-command="underline"><span class="img_editor ico_underline">밑줄</span></button>
-</script>
-<script type="text/template" id="composerEditorToolbarFontItalicTemplate">
-    <button type="button" class="btn_editor btn_italic" title="기울임 (Ctrl+I)" data-command="italic"><span class="img_editor ico_italic">기울임</span></button>
-</script>
-<script type="text/template" id="composerEditorToolbarFontStrikeTemplate">
-    <button type="button" class="btn_editor btn_strike" title="취소선 (Ctrl+D)" data-command="strike"><span class="img_editor ico_strike">취소선</span></button>
-</script>
+				<li class="husky_seditor_ui_fontSize"><button type="button"
+						class="se2_font_size" title="글자크기"
+						onclick="ccr(this, 'SE2.size', event)">
+						<span class="husky_se2m_current_fontSize">10pt</span>
+					</button>
 
+					<div class="se2_layer husky_se_fontSize_layer">
+						<div class="se2_in_layer">
+							<ul class="se2_l_font_size">
+								<li><button type="button">
+										<span
+											style="margin-top: 4px; margin-bottom: 3px; margin-left: 5px; font-size: 7pt;">가나다라마바사<span
+											style="font-size: 7pt;">(7pt)</span></span>
+									</button></li>
+								<li><button type="button">
+										<span style="margin-bottom: 2px; font-size: 8pt;">가나다라마바사<span
+											style="font-size: 8pt;">(8pt)</span></span>
+									</button></li>
+								<li class=""><button type="button">
+										<span style="margin-bottom: 1px; font-size: 9pt;">가나다라마바사<span
+											style="font-size: 9pt;">(9pt)</span></span>
+									</button></li>
+								<li class="active"><button type="button">
+										<span style="margin-bottom: 1px; font-size: 10pt;">가나다라마바사<span
+											style="font-size: 10pt;">(10pt)</span></span>
+									</button></li>
+								<li><button type="button">
+										<span style="margin-bottom: 2px; font-size: 11pt;">가나다라마바사<span
+											style="font-size: 11pt;">(11pt)</span></span>
+									</button></li>
+								<li><button type="button">
+										<span style="margin-bottom: 1px; font-size: 12pt;">가나다라마바사<span
+											style="font-size: 12pt;">(12pt)</span></span>
+									</button></li>
+								<li><button type="button">
+										<span style="margin-bottom: 2px; font-size: 14pt;">가나다라마바사<span
+											style="margin-left: 6px; font-size: 14pt;">(14pt)</span></span>
+									</button></li>
+								<li><button type="button">
+										<span style="margin-bottom: 1px; font-size: 18pt;">가나다라마<span
+											style="margin-left: 8px; font-size: 18pt;">(18pt)</span></span>
+									</button></li>
+								<li><button type="button">
+										<span style="margin-left: 3px; font-size: 24pt;">가나다<span
+											style="margin-left: 11px; font-size: 24pt;">(24pt)</span></span>
+									</button></li>
+								<li><button type="button">
+										<span
+											style="margin-top: -1px; margin-left: 3px; font-size: 36pt;">가나다<span
+											style="font-size: 36pt;">(36pt)</span></span>
+									</button></li>
+							</ul>
+						</div>
+					</div></li>
+			</ul>
+			<ul>
+				<li class="husky_seditor_ui_bold first_child"><button
+						type="button" title="굵게[Ctrl+B]" class="se2_bold"
+						onclick="ccr(this, 'SE2.bold', event)">
+						<span class="_buttonRound tool_bg">굵게[Ctrl+B]</span>
+					</button></li>
+
+				<li class="husky_seditor_ui_underline"><button type="button"
+						title="밑줄[Ctrl+U]" class="se2_underline"
+						onclick="ccr(this, 'SE2.underline', event)">
+						<span class="_buttonRound">밑줄[Ctrl+U]</span>
+					</button></li>
+
+				<li class="husky_seditor_ui_italic"><button type="button"
+						title="기울임꼴[Ctrl+I]" class="se2_italic"
+						onclick="ccr(this, 'SE2.italic', event)">
+						<span class="_buttonRound">기울임꼴[Ctrl+I]</span>
+					</button></li>
+
+				<li class="husky_seditor_ui_lineThrough"><button type="button"
+						title="취소선[Ctrl+D]" class="se2_tdel"
+						onclick="ccr(this, 'SE2.strikethrough', event)">
+						<span class="_buttonRound">취소선[Ctrl+D]</span>
+					</button></li>
+
+				<li class="se2_pair husky_seditor_ui_fontColor last_child"><span
+					class="selected_color husky_se2m_fontColor_lastUsed"
+					style="background-color: rgb(0, 0, 0);"></span><span
+					class="husky_seditor_ui_fontColorA"><button type="button"
+							title="글자색" class="se2_fcolor"
+							onclick="ccr(this, 'SE2.fontcolor', event)">
+							<span>글자색</span>
+						</button></span><span class="husky_seditor_ui_fontColorB"><button
+							type="button" title="더보기" class="se2_fcolor_more">
+							<span class="_buttonRound tool_bg">더보기</span>
+						</button></span>
+
+					<div class="se2_layer husky_se2m_fontcolor_layer"
+						style="display: none">
+						<div class="se2_in_layer husky_se2m_fontcolor_paletteHolder">
+							<div class="se2_palette husky_se2m_color_palette">
+								<ul class="se2_pick_color">
+									<li><button type="button" title="#ff0000"
+											style="background: #ff0000">
+											<span><span>#ff0000</span></span>
+										</button></li>
+									<li><button type="button" title="#ff6c00"
+											style="background: #ff6c00">
+											<span><span>#ff6c00</span></span>
+										</button></li>
+									<li><button type="button" title="#ffaa00"
+											style="background: #ffaa00">
+											<span><span>#ffaa00</span></span>
+										</button></li>
+									<li><button type="button" title="#ffef00"
+											style="background: #ffef00">
+											<span><span>#ffef00</span></span>
+										</button></li>
+									<li><button type="button" title="#a6cf00"
+											style="background: #a6cf00">
+											<span><span>#a6cf00</span></span>
+										</button></li>
+									<li><button type="button" title="#009e25"
+											style="background: #009e25">
+											<span><span>#009e25</span></span>
+										</button></li>
+									<li><button type="button" title="#00b0a2"
+											style="background: #00b0a2">
+											<span><span>#00b0a2</span></span>
+										</button></li>
+									<li><button type="button" title="#0075c8"
+											style="background: #0075c8">
+											<span><span>#0075c8</span></span>
+										</button></li>
+									<li><button type="button" title="#3a32c3"
+											style="background: #3a32c3">
+											<span><span>#3a32c3</span></span>
+										</button></li>
+									<li><button type="button" title="#7820b9"
+											style="background: #7820b9">
+											<span><span>#7820b9</span></span>
+										</button></li>
+									<li><button type="button" title="#ef007c"
+											style="background: #ef007c">
+											<span><span>#ef007c</span></span>
+										</button></li>
+									<li><button type="button" title="#000000"
+											style="background: #000000">
+											<span><span>#000000</span></span>
+										</button></li>
+									<li><button type="button" title="#252525"
+											style="background: #252525">
+											<span><span>#252525</span></span>
+										</button></li>
+									<li><button type="button" title="#464646"
+											style="background: #464646">
+											<span><span>#464646</span></span>
+										</button></li>
+									<li><button type="button" title="#636363"
+											style="background: #636363">
+											<span><span>#636363</span></span>
+										</button></li>
+									<li><button type="button" title="#7d7d7d"
+											style="background: #7d7d7d">
+											<span><span>#7d7d7d</span></span>
+										</button></li>
+									<li><button type="button" title="#9a9a9a"
+											style="background: #9a9a9a">
+											<span><span>#9a9a9a</span></span>
+										</button></li>
+									<li><button type="button" title="#ffe8e8"
+											style="background: #ffe8e8">
+											<span><span>#9a9a9a</span></span>
+										</button></li>
+									<li><button type="button" title="#f7e2d2"
+											style="background: #f7e2d2">
+											<span><span>#f7e2d2</span></span>
+										</button></li>
+									<li><button type="button" title="#f5eddc"
+											style="background: #f5eddc">
+											<span><span>#f5eddc</span></span>
+										</button></li>
+									<li><button type="button" title="#f5f4e0"
+											style="background: #f5f4e0">
+											<span><span>#f5f4e0</span></span>
+										</button></li>
+									<li><button type="button" title="#edf2c2"
+											style="background: #edf2c2">
+											<span><span>#edf2c2</span></span>
+										</button></li>
+									<li><button type="button" title="#def7e5"
+											style="background: #def7e5">
+											<span><span>#def7e5</span></span>
+										</button></li>
+									<li><button type="button" title="#d9eeec"
+											style="background: #d9eeec">
+											<span><span>#d9eeec</span></span>
+										</button></li>
+									<li><button type="button" title="#c9e0f0"
+											style="background: #c9e0f0">
+											<span><span>#c9e0f0</span></span>
+										</button></li>
+									<li><button type="button" title="#d6d4eb"
+											style="background: #d6d4eb">
+											<span><span>#d6d4eb</span></span>
+										</button></li>
+									<li><button type="button" title="#e7dbed"
+											style="background: #e7dbed">
+											<span><span>#e7dbed</span></span>
+										</button></li>
+									<li><button type="button" title="#f1e2ea"
+											style="background: #f1e2ea">
+											<span><span>#f1e2ea</span></span>
+										</button></li>
+									<li><button type="button" title="#acacac"
+											style="background: #acacac">
+											<span><span>#acacac</span></span>
+										</button></li>
+									<li><button type="button" title="#c2c2c2"
+											style="background: #c2c2c2">
+											<span><span>#c2c2c2</span></span>
+										</button></li>
+									<li><button type="button" title="#cccccc"
+											style="background: #cccccc">
+											<span><span>#cccccc</span></span>
+										</button></li>
+									<li><button type="button" title="#e1e1e1"
+											style="background: #e1e1e1">
+											<span><span>#e1e1e1</span></span>
+										</button></li>
+									<li><button type="button" title="#ebebeb"
+											style="background: #ebebeb">
+											<span><span>#ebebeb</span></span>
+										</button></li>
+									<li><button type="button" title="#ffffff"
+											style="background: #ffffff">
+											<span><span>#ffffff</span></span>
+										</button></li>
+								</ul>
+								<ul class="se2_pick_color" style="width: 156px;">
+									<li><button type="button" title="#e97d81"
+											style="background: #e97d81">
+											<span><span>#e97d81</span></span>
+										</button></li>
+									<li><button type="button" title="#e19b73"
+											style="background: #e19b73">
+											<span><span>#e19b73</span></span>
+										</button></li>
+									<li><button type="button" title="#d1b274"
+											style="background: #d1b274">
+											<span><span>#d1b274</span></span>
+										</button></li>
+									<li><button type="button" title="#cfcca2"
+											style="background: #cfcca2">
+											<span><span>#cfcca2</span></span>
+										</button></li>
+									<li><button type="button" title="#cfcca2"
+											style="background: #cfcca2">
+											<span><span>#cfcca2</span></span>
+										</button></li>
+									<li><button type="button" title="#61b977"
+											style="background: #61b977">
+											<span><span>#61b977</span></span>
+										</button></li>
+									<li><button type="button" title="#53aea8"
+											style="background: #53aea8">
+											<span><span>#53aea8</span></span>
+										</button></li>
+									<li><button type="button" title="#518fbb"
+											style="background: #518fbb">
+											<span><span>#518fbb</span></span>
+										</button></li>
+									<li><button type="button" title="#6a65bb"
+											style="background: #6a65bb">
+											<span><span>#6a65bb</span></span>
+										</button></li>
+									<li><button type="button" title="#9a54ce"
+											style="background: #9a54ce">
+											<span><span>#9a54ce</span></span>
+										</button></li>
+									<li><button type="button" title="#e573ae"
+											style="background: #e573ae">
+											<span><span>#e573ae</span></span>
+										</button></li>
+									<li><button type="button" title="#5a504b"
+											style="background: #5a504b">
+											<span><span>#5a504b</span></span>
+										</button></li>
+									<li><button type="button" title="#767b86"
+											style="background: #767b86">
+											<span><span>#767b86</span></span>
+										</button></li>
+									<li><button type="button" title="#951015"
+											style="background: #951015">
+											<span><span>#951015</span></span>
+										</button></li>
+									<li><button type="button" title="#6e391a"
+											style="background: #6e391a">
+											<span><span>#6e391a</span></span>
+										</button></li>
+									<li><button type="button" title="#785c25"
+											style="background: #785c25">
+											<span><span>#785c25</span></span>
+										</button></li>
+									<li><button type="button" title="#5f5b25"
+											style="background: #5f5b25">
+											<span><span>#5f5b25</span></span>
+										</button></li>
+									<li><button type="button" title="#4c511f"
+											style="background: #4c511f">
+											<span><span>#4c511f</span></span>
+										</button></li>
+									<li><button type="button" title="#1c4827"
+											style="background: #1c4827">
+											<span><span>#1c4827</span></span>
+										</button></li>
+									<li><button type="button" title="#0d514c"
+											style="background: #0d514c">
+											<span><span>#0d514c</span></span>
+										</button></li>
+									<li><button type="button" title="#1b496a"
+											style="background: #1b496a">
+											<span><span>#1b496a</span></span>
+										</button></li>
+									<li><button type="button" title="#2b285f"
+											style="background: #2b285f">
+											<span><span>#2b285f</span></span>
+										</button></li>
+									<li><button type="button" title="#45245b"
+											style="background: #45245b">
+											<span><span>#45245b</span></span>
+										</button></li>
+									<li><button type="button" title="#721947"
+											style="background: #721947">
+											<span><span>#721947</span></span>
+										</button></li>
+									<li><button type="button" title="#352e2c"
+											style="background: #352e2c">
+											<span><span>#352e2c</span></span>
+										</button></li>
+									<li><button type="button" title="#3c3f45"
+											style="background: #3c3f45">
+											<span><span>#3c3f45</span></span>
+										</button></li>
+								</ul>
+								<button type="button" title="더보기"
+									class="se2_view_more husky_se2m_color_palette_more_btn">
+									<span>더보기</span>
+								</button>
+								<div class="husky_se2m_color_palette_recent"
+									style="display: none">
+									<h4>최근 사용한 색</h4>
+									<ul class="se2_pick_color">
+										<li></li>
+
+										<!-- <li><button type="button" title="#e97d81" style="background:#e97d81"><span><span>#e97d81</span></span></button></li> -->
+
+									</ul>
+								</div>
+								<div class="se2_palette2 husky_se2m_color_palette_colorpicker">
+									<div class="se2_color_set">
+										<span class="se2_selected_color"><span
+											class="husky_se2m_cp_preview" style="background: #e97d81"></span></span><label
+											for="se2m_cp_colorcode" class="blind">글자 색상 코드</label><input
+											type="text" id="se2m_cp_colorcode" name=""
+											class="input_ty1 husky_se2m_cp_colorcode" value="#e97d81">
+										<button type="button"
+											class="se2_btn_insert husky_se2m_color_palette_ok_btn"
+											title="입력">
+											<span>입력</span>
+										</button>
+									</div>
+									<div class="se2_gradation1 husky_se2m_cp_colpanel"></div>
+									<div class="se2_gradation2 husky_se2m_cp_huepanel"></div>
+								</div>
+							</div>
+						</div>
+					</div></li>
+
+				<li class="se2_pair husky_seditor_ui_BGColor last_child"><span
+					class="selected_color husky_se2m_BGColor_lastUsed"
+					style="background-color: rgb(119, 119, 119);"></span><span
+					class="husky_seditor_ui_BGColorA"><button type="button"
+							title="배경색" class="se2_bgcolor"
+							onclick="ccr(this, 'SE2.bgcolor', event)">
+							<span>배경색</span>
+						</button></span><span class="husky_seditor_ui_BGColorB"><button
+							type="button" title="더보기" class="se2_bgcolor_more">
+							<span class="_buttonRound tool_bg">더보기</span>
+						</button></span>
+
+					<div class="se2_layer se2_layer husky_se2m_BGColor_layer"
+						style="display: none">
+						<div class="se2_in_layer">
+							<div class="se2_palette_bgcolor">
+								<ul class="se2_background husky_se2m_bgcolor_list">
+									<li><button type="button" title="#ff0000"
+											style="background: #ff0000; color: #ffffff">
+											<span><span>가나다</span></span>
+										</button></li>
+									<li><button type="button" title="#6d30cf"
+											style="background: #6d30cf; color: #ffffff">
+											<span><span>가나다</span></span>
+										</button></li>
+									<li><button type="button" title="#000000"
+											style="background: #000000; color: #ffffff">
+											<span><span>가나다</span></span>
+										</button></li>
+									<li><button type="button" title="#ff6600"
+											style="background: #ff6600; color: #ffffff">
+											<span><span>가나다</span></span>
+										</button></li>
+									<li><button type="button" title="#3333cc"
+											style="background: #3333cc; color: #ffffff">
+											<span><span>가나다</span></span>
+										</button></li>
+									<li><button type="button" title="#333333"
+											style="background: #333333; color: #ffff00">
+											<span><span>가나다</span></span>
+										</button></li>
+									<li><button type="button" title="#ffa700"
+											style="background: #ffa700; color: #ffffff">
+											<span><span>가나다</span></span>
+										</button></li>
+									<li><button type="button" title="#009999"
+											style="background: #009999; color: #ffffff">
+											<span><span>가나다</span></span>
+										</button></li>
+									<li><button type="button" title="#8e8e8e"
+											style="background: #8e8e8e; color: #ffffff">
+											<span><span>가나다</span></span>
+										</button></li>
+									<li><button type="button" title="#cc9900"
+											style="background: #cc9900; color: #ffffff">
+											<span><span>가나다</span></span>
+										</button></li>
+									<li><button type="button" title="#77b02b"
+											style="background: #77b02b; color: #ffffff">
+											<span><span>가나다</span></span>
+										</button></li>
+									<li><button type="button" title="#ffffff"
+											style="background: #ffffff; color: #000000">
+											<span><span>가나다</span></span>
+										</button></li>
+								</ul>
+							</div>
+							<div class="husky_se2m_BGColor_paletteHolder"></div>
+						</div>
+					</div></li>
+			</ul>
+			<ul>
+				<li class="husky_seditor_ui_justifyleft first_child active"><button
+						type="button" title="왼쪽정렬" class="se2_left">
+						<span class="_buttonRound tool_bg">왼쪽정렬</span>
+					</button></li>
+
+				<li class="husky_seditor_ui_justifycenter"><button
+						type="button" title="가운데정렬" class="se2_center">
+						<span class="_buttonRound">가운데정렬</span>
+					</button></li>
+
+				<li class="husky_seditor_ui_justifyright"><button type="button"
+						title="오른쪽정렬" class="se2_right">
+						<span class="_buttonRound">오른쪽정렬</span>
+					</button></li>
+
+				<li class="husky_seditor_ui_justifyfull"><button type="button"
+						title="양쪽정렬" class="se2_justify">
+						<span class="_buttonRound">양쪽정렬</span>
+					</button></li>
+				<li class="husky_seditor_ui_lineHeight last_child"><button
+						type="button" title="줄간격" class="se2_lineheight"
+						onclick="ccr(this, 'SE2.lineheight', event)">
+						<span class="_buttonRound tool_bg">줄간격</span>
+					</button>
+
+
+					<div class="se2_layer husky_se2m_lineHeight_layer">
+						<div class="se2_in_layer">
+							<ul class="se2_l_line_height">
+								<li><button type="button">
+										<span>50%</span>
+									</button></li>
+								<li><button type="button">
+										<span>80%</span>
+									</button></li>
+								<li><button type="button">
+										<span>100%</span>
+									</button></li>
+								<li><button type="button">
+										<span>120%</span>
+									</button></li>
+
+								<li><button type="button">
+										<span>150%</span>
+									</button></li>
+								<li><button type="button">
+										<span>180%</span>
+									</button></li>
+								<li><button type="button">
+										<span>200%</span>
+									</button></li>
+							</ul>
+							<div
+								class="se2_l_line_height_user husky_se2m_lineHeight_direct_input">
+								<h3>사용자 지정</h3>
+								<span class="bx_input"> <input type="text"
+									class="input_ty1" maxlength="3" style="width: 75px" title="줄간격">
+									<button type="button" title="1% 더하기" class="btn_up">
+										<span>1% 더하기</span>
+									</button>
+									<button type="button" title="1% 빼기" class="btn_down">
+										<span>1% 빼기</span>
+									</button>
+								</span>
+								<div class="btn_area">
+									<button type="button" class="se2_btn_apply3">
+										<span>적용</span>
+									</button>
+									<button type="button" class="se2_btn_cancel3">
+										<span>취소</span>
+									</button>
+								</div>
+
+							</div>
+						</div>
+					</div></li>
+			</ul>
+			<ul>
+				<li class="se2_pair husky_seditor_ui_orderedlist"><span
+					class="wrap_ui_btn husky_seditor_ui_OrderedlistA"><button
+							type="button" title="번호매기기" class="se2_ol se2_orderedlist"
+							onclick="ccr(this, 'SE2.orderedlist', event)">
+							<span class="_buttonRound tool_bg">번호매기기</span>
+						</button></span><span class="wrap_ui_btn_side husky_seditor_ui_OrderedlistB"><button
+							type="button" title="더보기"
+							class="se2_btn_more se2_orderedlist_more">
+							<span class="_buttonRound tool_bg">더보기</span>
+						</button></span>
+					<div class="se2_layer husky_se2m_orderedlist_layer"
+						style="display: none">
+						<div class="se2_in_layer">
+							<div class="se2_orderedlist">
+								<div class="bullets_cover">
+									<ul class="se2_background husky_se2m_orderedlist_list">
+										<li><button title="none">없음</button></li>
+										<li><button class="lst_upper_alpha" title="upper-alpha">
+												<i class="blind">upper-alpha</i>
+											</button></li>
+										<li><button class="lst_upper_roman" title="upper-roman">
+												<i class="blind">upper-roman</i>
+											</button></li>
+										<li><button class="lst_decimal" title="decimal">
+												<i class="blind">decimal</i>
+											</button></li>
+										<li><button class="lst_lower_alpha" title="lower-alpha">
+												<i class="blind">lower-alpha</i>
+											</button></li>
+										<li><button class="lst_lower_roman" title="lower-roman">
+												<i class="blind">lower-roman</i>
+											</button></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div></li>
+			</ul>
+			<ul>
+				<li class="se2_pair husky_seditor_ui_unorderedlist"><span
+					class="wrap_ui_btn husky_seditor_ui_UnorderedlistA"><button
+							type="button" title="글머리기호" class="se2_ul se2_unorderedlist"
+							onclick="ccr(this, 'SE2.unorderedlist', event)">
+							<span class="_buttonRound tool_bg">글머리기호</span>
+						</button></span><span class="wrap_ui_btn_side husky_seditor_ui_UnorderedlistB"><button
+							type="button" title="더보기"
+							class="se2_btn_more se2_unorderedlist_more">
+							<span class="_buttonRound tool_bg">더보기</span>
+						</button></span>
+					<div class="se2_layer husky_se2m_unorderedlist_layer"
+						style="display: none">
+						<div class="se2_in_layer">
+							<div class="se2_unorderedlist">
+								<div class="bullets_cover">
+									<ul class="se2_background husky_se2m_unorderedlist_list">
+										<li><button title="none">없음</button></li>
+										<li><button class="lst_disc" title="disc">
+												<i class="blind">disc</i>
+											</button></li>
+										<li><button class="lst_big_circle" title="big-circle">
+												<i class="blind">big_circle</i>
+											</button></li>
+										<li><button class="lst_check" title="check">
+												<i class="blind">check</i>
+											</button></li>
+										<li><button class="lst_dashed" title="dashed">
+												<i class="blind">dashed</i>
+											</button></li>
+										<li><button class="lst_empty_disc" title="empty-disc">
+												<i class="blind">empty_disc</i>
+											</button></li>
+										<li><button class="lst_square" title="square">
+												<i class="blind">square</i>
+											</button></li>
+										<li><button class="lst_check_green" title="green-check">
+												<i class="blind">green_check</i>
+											</button></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div></li>
+			</ul>
+			<ul>
+				<li class="husky_seditor_ui_outdent first_child"><button
+						type="button" title="내어쓰기[Shift+Tab]" class="se2_outdent"
+						onclick="ccr(this, 'SE2.outdent', event)">
+						<span class="_buttonRound tool_bg">내어쓰기[Shift+Tab]</span>
+					</button></li>
+				<li class="husky_seditor_ui_indent last_child"><button
+						type="button" title="들여쓰기[Tab]" class="se2_indent"
+						onclick="ccr(this, 'SE2.indent', event)">
+						<span class="_buttonRound tool_bg">들여쓰기[Tab]</span>
+					</button></li>
+			</ul>
+			<ul>
+				<li class="husky_seditor_ui_hyperlink first_child"><button
+						type="button" title="링크" class="se2_url"
+						onclick="ccr(this, 'SE2.hyperlink', event)">
+						<span class="_buttonRound tool_bg">링크</span>
+					</button>
+
+					<div class="se2_layer" style="margin-left: -285px;">
+						<div class="se2_in_layer">
+							<div class="se2_url2">
+								<p class="textfield_cont">
+									<label for="temphypertext01">텍스트</label><input type="text"
+										id="temphypertext01" class="input_ty1" value="">
+								</p>
+								<p class="textfield_cont">
+									<label for="temphypertext02">링크</label><input type="text"
+										id="temphypertext02" class="input_ty1"
+										value="https://ui.nboard2.naver.com">
+								</p>
+								<div class="se2_layer_confirm">
+									<a href="#" class="link_check disabled" target="_blank">링크테스트</a>
+									<button type="button" class="se2_apply">
+										<span>적용</span>
+									</button>
+									<button type="button" class="se2_cancel">
+										<span>취소</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div></li>
+
+				<li class="husky_seditor_ui_emoticon"><button type="button"
+						title="이모티콘" class="se2_emoticon"
+						onclick="ccr(this, 'SE2.emoticon', event)">
+						<span class="_buttonRound">이모티콘</span>
+					</button>
+
+					<div class="se2_layer husky_se2m_emoticon_layer"
+						style="margin-left: -308px">
+						<div class="se2_in_layer">
+							<div class="se2_emoticon_set">
+								<ul class="se2_imo_tab se2_imo_tab2">
+									<li class="active"><button type="button"
+											class="se2_imoticon1">
+											<span>표정</span>
+										</button>
+
+										<div class="se2_imoticon_list">
+											<ul>
+												<li></li>
+
+
+											</ul>
+										</div></li>
+									<li><button type="button" class="se2_imoticon2">
+											<span>동식물</span>
+										</button>
+
+										<div class="se2_imoticon_list">
+											<ul>
+												<li></li>
+											</ul>
+										</div></li>
+									<li><button type="button" class="se2_imoticon3">
+											<span>사물1</span>
+										</button>
+
+										<div class="se2_imoticon_list">
+											<ul>
+												<li></li>
+											</ul>
+										</div></li>
+									<li><button type="button" class="se2_imoticon4">
+											<span>사물2</span>
+										</button>
+
+										<div class="se2_imoticon_list">
+											<ul>
+												<li></li>
+											</ul>
+										</div></li>
+									<li><button type="button" class="se2_imoticon5">
+											<span>말풍선</span>
+										</button>
+
+										<div class="se2_imoticon_list">
+											<ul>
+												<li></li>
+											</ul>
+										</div></li>
+								</ul>
+							</div>
+						</div>
+					</div></li>
+
+				<li class="husky_seditor_ui_sCharacter ">
+					<button type="button" title="특수기호" class="se2_character"
+						onclick="ccr(this, 'SE2.symbol', event)">
+						<span class="_buttonRound ">특수기호</span>
+					</button>
+
+					<div class="se2_layer husky_seditor_sCharacter_layer"
+						style="margin-left: -448px;">
+						<div class="se2_in_layer">
+							<div class="se2_bx_character">
+								<ul class="se2_char_tab">
+									<li class="active"><button type="button" title="일반기호"
+											class="se2_char1">
+											<span>일반기호</span>
+										</button>
+										<div class="se2_s_character">
+											<ul class="husky_se2m_sCharacter_list">
+												<li></li>
+											</ul>
+										</div></li>
+									<li><button type="button" title="숫자와 단위" class="se2_char2">
+											<span>숫자와 단위</span>
+										</button>
+										<div class="se2_s_character">
+											<ul class="husky_se2m_sCharacter_list">
+												<li></li>
+											</ul>
+										</div></li>
+									<li><button type="button" title="원,괄호" class="se2_char3">
+											<span>원,괄호</span>
+										</button>
+										<div class="se2_s_character">
+											<ul class="husky_se2m_sCharacter_list">
+												<li></li>
+											</ul>
+										</div></li>
+
+
+
+									<li><button type="button" title="한글" class="se2_char4">
+											<span>한글</span>
+										</button>
+										<div class="se2_s_character">
+											<ul class="husky_se2m_sCharacter_list">
+												<li></li>
+											</ul>
+										</div></li>
+									<li><button type="button" title="그리스,라틴어"
+											class="se2_char5">
+											<span>그리스,라틴어</span>
+										</button>
+										<div class="se2_s_character">
+											<ul class="husky_se2m_sCharacter_list">
+												<li></li>
+											</ul>
+										</div></li>
+									<li><button type="button" title="일본어" class="se2_char6">
+											<span>일본어</span>
+										</button>
+										<div class="se2_s_character">
+											<ul class="husky_se2m_sCharacter_list">
+												<li></li>
+											</ul>
+										</div></li>
+
+
+								</ul>
+								<div class="se2_recent_character">
+									<span class="se2_tit">최근 사용한 기호</span>
+									<div class="se2_s_character" style="display: block;">
+										<ul class="husky_se2m_sCharacter_list"></ul>
+									</div>
+								</div>
+								<p class="se2_apply_character">
+									<label for="char_preview">선택한 기호</label> <input type="text"
+										name="char_preview" id="char_preview" value="®º⊆●○"
+										class="input_ty1">
+									<button type="button" class="se2_confirm">
+										<span>적용</span>
+									</button>
+									<button type="button"
+										class="se2_cancel husky_se2m_sCharacter_close">
+										<span>취소</span>
+									</button>
+								</p>
+							</div>
+						</div>
+					</div>
+
+				</li>
+
+				<li class="husky_seditor_ui_table"><button type="button"
+						title="표" class="se2_table"
+						onclick="ccr(this, 'SE2.table', event)">
+						<span class="_buttonRound">표</span>
+					</button>
+					<div class="se2_layer generate_table"
+						style="margin-left: -171px; display: none;">
+						<div class="se2_in_layer">
+							<div class="se2_table_set">
+								<span class="se2_tit">표 삽입 <em class="cnt"><span
+										class="table_col_cnt">1</span> X <span class="table_row_cnt">1</span></em>
+								</span>
+								<div class="grid_cover">
+									<!-- 10 X 13 -->
+									<table class="generate_grid">
+										<caption>
+											<span class="blind">표 만들기</span>
+										</caption>
+										<tbody>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+											<tr>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+												<td></td>
+											</tr>
+										</tbody>
+									</table>
+									<!-- width: 16 * n / height: 16 * n -->
+									<div class="generate_grid_selection"
+										style="width: 16px; height: 16px;"></div>
+								</div>
+								<a href="#" class="utx_btn_se btn_table_set"><span
+									class="utx_inrbtn">세부 설정</span></a>
+							</div>
+						</div>
+					</div>
+					<div class="se2_layer husky_se2m_table_layer"
+						style="margin-left: -171px; display: none">
+						<div class="se2_in_layer">
+							<div class="se2_table_set">
+								<fieldset>
+									<legend>칸수 지정</legend>
+									<dl class="se2_cell_num">
+										<dt>
+											<label for="row">행</label>
+										</dt>
+										<dd>
+											<input id="row" name="" type="text" maxlength="2" value="4"
+												class="input_ty2">
+											<button type="button" class="se2_add">
+												<span>1행추가</span>
+											</button>
+											<button type="button" class="se2_del">
+												<span>1행삭제</span>
+											</button>
+										</dd>
+										<dt>
+											<label for="col">열</label>
+										</dt>
+										<dd>
+											<input id="col" name="" type="text" maxlength="2" value="4"
+												class="input_ty2">
+											<button type="button" class="se2_add">
+												<span>1열추가</span>
+											</button>
+											<button type="button" class="se2_del">
+												<span>1열삭제</span>
+											</button>
+										</dd>
+									</dl>
+									<table border="0" cellspacing="1"
+										class="se2_pre_table husky_se2m_table_preview">
+										<caption>
+											<span class="blind">행렬 미리보기</span>
+										</caption>
+										<tbody>
+											<tr>
+												<td>&nbsp;</td>
+												<td>&nbsp;</td>
+												<td>&nbsp;</td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr>
+												<td>&nbsp;</td>
+												<td>&nbsp;</td>
+												<td>&nbsp;</td>
+												<td>&nbsp;</td>
+											</tr>
+											<tr>
+												<td>&nbsp;</td>
+												<td>&nbsp;</td>
+												<td>&nbsp;</td>
+												<td>&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+								</fieldset>
+								<fieldset>
+									<legend>속성직접입력</legend>
+									<dl class="se2_t_proper1">
+										<dt>
+											<input type="radio" id="se2_tbp1" name="se2_tbp" checked=""><label
+												for="se2_tbp1">속성직접입력</label>
+										</dt>
+										<dd>
+											<dl class="se2_t_proper1_1">
+												<dt>
+													<label>테두리스타일</label>
+												</dt>
+												<dd>
+													<div class="se2_select_ty1">
+														<span
+															class="se2_b_style3 husky_se2m_table_border_style_preview"></span>
+														<button type="button" title="더보기" class="se2_view_more">
+															<span>더보기</span>
+														</button>
+													</div>
+
+													<div
+														class="se2_layer_b_style husky_se2m_table_border_style_layer"
+														style="display: none">
+														<ul>
+															<li><button type="button" class="se2_b_style1">
+																	<span class="se2m_no_border">테두리 없음</span>
+																</button></li>
+															<li><button type="button" class="se2_b_style2">
+																	<span><span>테두리스타일2</span></span>
+																</button></li>
+															<li><button type="button" class="se2_b_style3">
+																	<span><span>테두리스타일3</span></span>
+																</button></li>
+															<li><button type="button" class="se2_b_style4">
+																	<span><span>테두리스타일4</span></span>
+																</button></li>
+															<li><button type="button" class="se2_b_style5">
+																	<span><span>테두리스타일5</span></span>
+																</button></li>
+															<li><button type="button" class="se2_b_style6">
+																	<span><span>테두리스타일6</span></span>
+																</button></li>
+															<li><button type="button" class="se2_b_style7">
+																	<span><span>테두리스타일7</span></span>
+																</button></li>
+														</ul>
+													</div>
+
+												</dd>
+											</dl>
+											<dl class="se2_t_proper1_1 se2_t_proper1_2">
+												<dt>
+													<label for="se2_b_width">테두리두께</label>
+												</dt>
+												<dd>
+													<input id="se2_b_width" name="" type="text" maxlength="2"
+														value="1" class="input_ty1">
+													<button type="button" title="1px 더하기"
+														class="se2_add se2m_incBorder">
+														<span>1px 더하기</span>
+													</button>
+													<button type="button" title="1px 빼기"
+														class="se2_del se2m_decBorder">
+														<span>1px 빼기</span>
+													</button>
+												</dd>
+											</dl>
+											<dl class="se2_t_proper1_1 se2_t_proper1_3">
+												<dt>
+													<label for="se2_b_color">테두리색</label>
+												</dt>
+												<dd>
+													<input id="se2_b_color" name="" type="text" maxlength="7"
+														value="#cccccc" class="input_ty3"><span
+														class="se2_pre_color"><button type="button"
+															style="background: #cccccc;">
+															<span>색찾기</span>
+														</button></span>
+
+													<div class="se2_layer se2_b_t_b1"
+														style="clear: both; display: none; position: absolute; top: 20px; left: -147px;">
+														<div
+															class="se2_in_layer husky_se2m_table_border_color_pallet">
+														</div>
+													</div>
+
+												</dd>
+											</dl>
+											<div class="se2_t_dim0"></div>
+
+											<dl class="se2_t_proper1_1 se2_t_proper1_4">
+												<dt>
+													<label for="se2_cellbg">셀 배경색</label>
+												</dt>
+												<dd>
+													<input id="se2_cellbg" name="" type="text" maxlength="7"
+														value="#ffffff" class="input_ty3"><span
+														class="se2_pre_color"><button type="button"
+															style="background: #ffffff;">
+															<span>색찾기</span>
+														</button></span>
+
+													<div class="se2_layer se2_b_t_b1"
+														style="clear: both; display: none; position: absolute; top: 20px; left: -147px;">
+														<div class="se2_in_layer husky_se2m_table_bgcolor_pallet">
+														</div>
+													</div>
+
+												</dd>
+											</dl>
+										</dd>
+									</dl>
+								</fieldset>
+								<fieldset>
+									<legend>표 스타일</legend>
+									<dl class="se2_t_proper2">
+										<dt>
+											<input type="radio" id="se2_tbp2" name="se2_tbp"><label
+												for="se2_tbp2">스타일 선택</label>
+										</dt>
+										<dd>
+											<div class="se2_select_ty2">
+												<span class="se2_t_style1 husky_se2m_table_style_preview"></span>
+												<button type="button" title="더보기" class="se2_view_more">
+													<span>더보기</span>
+												</button>
+											</div>
+
+											<div class="se2_layer_t_style husky_se2m_table_style_layer"
+												style="display: none">
+												<ul class="se2_scroll">
+													<li><button type="button" class="se2_t_style1">
+															<span>표스타일1</span>
+														</button></li>
+													<li><button type="button" class="se2_t_style2">
+															<span>표스타일2</span>
+														</button></li>
+													<li><button type="button" class="se2_t_style3">
+															<span>표스타일3</span>
+														</button></li>
+													<li><button type="button" class="se2_t_style4">
+															<span>표스타일4</span>
+														</button></li>
+													<li><button type="button" class="se2_t_style5">
+															<span>표스타일5</span>
+														</button></li>
+													<li><button type="button" class="se2_t_style6">
+															<span>표스타일6</span>
+														</button></li>
+													<li><button type="button" class="se2_t_style7">
+															<span>표스타일7</span>
+														</button></li>
+													<li><button type="button" class="se2_t_style8">
+															<span>표스타일8</span>
+														</button></li>
+													<li><button type="button" class="se2_t_style9">
+															<span>표스타일9</span>
+														</button></li>
+													<li><button type="button" class="se2_t_style10">
+															<span>표스타일10</span>
+														</button></li>
+													<li><button type="button" class="se2_t_style11">
+															<span>표스타일11</span>
+														</button></li>
+													<li><button type="button" class="se2_t_style12">
+															<span>표스타일12</span>
+														</button></li>
+													<li><button type="button" class="se2_t_style13">
+															<span>표스타일13</span>
+														</button></li>
+													<li><button type="button" class="se2_t_style14">
+															<span>표스타일14</span>
+														</button></li>
+													<li><button type="button" class="se2_t_style15">
+															<span>표스타일15</span>
+														</button></li>
+													<li><button type="button" class="se2_t_style16">
+															<span>표스타일16</span>
+														</button></li>
+												</ul>
+											</div>
+
+										</dd>
+									</dl>
+								</fieldset>
+								<p class="se2_btn_area">
+									<button type="button" class="se2_apply">
+										<span>적용</span>
+									</button>
+									<button type="button" class="se2_cancel">
+										<span>취소</span>
+									</button>
+								</p>
+
+								<div class="se2_t_dim3"></div>
+
+							</div>
+						</div>
+					</div></li>
+
+
+
+				<li class="husky_seditor_ui_findAndReplace"><button
+						type="button" title="찾기/바꾸기" class="se2_find"
+						onclick="ccr(this, 'SE2.findreplace', event)">
+						<span class="_buttonRound">찾기/바꾸기</span>
+					</button> <!--@lazyload_html find_and_replace-->
+					<div class="se2_layer husky_se2m_findAndReplace_layer"
+						style="margin-left: -238px;">
+						<div class="se2_in_layer">
+							<div class="se2_bx_find_revise">
+								<button type="button" title="닫기"
+									class="se2_close husky_se2m_cancel">
+									<span>닫기</span>
+								</button>
+								<h3>찾기/바꾸기</h3>
+								<ul>
+									<li class="active"><button type="button"
+											class="se2_tabfind">
+											<span>찾기</span>
+										</button></li>
+									<li><button type="button" class="se2_tabrevise">
+											<span>바꾸기</span>
+										</button></li>
+								</ul>
+								<div class="se2_in_bx_find husky_se2m_find_ui"
+									style="display: block">
+									<dl>
+										<dt>
+											<label for="find_word">찾을단어</label>
+										</dt>
+										<dd>
+											<input type="text" id="find_word" value="스마트에디터"
+												class="input_ty1">
+										</dd>
+									</dl>
+									<p class="se2_find_btns">
+										<button type="button"
+											class="se2_find_next husky_se2m_find_next">
+											<span>다음찾기</span>
+										</button>
+										<button type="button" class="se2_cancel husky_se2m_cancel">
+											<span>취소</span>
+										</button>
+									</p>
+								</div>
+								<div class="se2_in_bx_revise husky_se2m_replace_ui"
+									style="display: none">
+									<dl>
+										<dt>
+											<label for="find_word2">찾을단어</label>
+										</dt>
+										<dd>
+											<input type="text" id="find_word2" value="스마트에디터"
+												class="input_ty1">
+										</dd>
+										<dt>
+											<label for="revise_word">바꿀단어</label>
+										</dt>
+										<dd>
+											<input type="text" id="revise_word" value="스마트에디터"
+												class="input_ty1">
+										</dd>
+									</dl>
+									<p class="se2_find_btns">
+										<button type="button"
+											class="se2_find_next2 husky_se2m_replace_find_next">
+											<span>다음찾기</span>
+										</button>
+										<button type="button" class="se2_revise1 husky_se2m_replace">
+											<span>바꾸기</span>
+										</button>
+										<button type="button"
+											class="se2_revise2 husky_se2m_replace_all">
+											<span>모두 바꾸기</span>
+										</button>
+										<button type="button" class="se2_cancel husky_se2m_cancel">
+											<span>취소</span>
+										</button>
+									</p>
+								</div>
+								<button type="button" title="닫기"
+									class="se2_close husky_se2m_cancel">
+									<span>닫기</span>
+								</button>
+							</div>
+						</div>
+					</div> <!--//@lazyload_html--></li>
+
+
+				<li class="husky_seditor_ui_spellCheck last_child"><button
+						type="button" title="맞춤법검사" class="se2_spelling"
+						onclick="ccr(this, 'SE2.spellcheck', event)">
+						<span class="_buttonRound tool_bg">맞춤법검사</span>
+					</button></li>
+
+
+
+			</ul>
+
+			<ul>
+				<li><a href="#"
+					class="utx_btn_se _ccr(SE2.translator) _c1(mwCore|openTranslatePopup) _stopDefault"><span
+						class="utx_inrbtn">번역</span></a></li>
+			</ul>
+		</div>
+	</div>
 </body>
 </html>

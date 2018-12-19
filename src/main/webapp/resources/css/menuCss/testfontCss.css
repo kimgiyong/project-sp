@@ -1,6 +1,787 @@
 @charset "utf-8";
 
-*{
+* {
 	margin: 0 auto;
 	padding: 0 auto;
+	list-style-type: none;
+	text-decoration: none;
+	font-family: '돋움', Dotum, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #666;
+}
+
+#smart_editor2 .se2_text_tool .se2_font_type button.se2_font_family span,
+	#smart_editor2 .se2_text_tool .se2_font_type button.se2_font_size span
+	{
+	display: inline-block;
+	visibility: visible;
+	position: static;
+	width: 52px;
+	height: 20px;
+	padding: 0 0 0 6px;
+	font-size: 12px;
+	line-height: 20px;
+	*line-height: 22px;
+	color: #333;
+	*zoom: 1;
+}
+
+div#smart_editor2 .se2_tool {
+	z-index: 20;
+}
+
+div#smart_editor2 .se2_tool {
+	z-index: 20;
+}
+
+#smart_editor2 .se2_tool {
+	overflow: visible;
+	position: relative;
+	z-index: 25;
+}
+
+#smart_editor2 .se2_text_tool {
+	position: relative;
+	clear: both;
+	z-index: 30;
+	padding: 4px 0 4px 3px;
+	background:
+		url(https://ssl.pstatic.net/static/pwe/nm/se2_new/bg_text_tool.gif)
+		repeat-x #f4f4f4;
+	border-bottom: 1px solid #b5b5b5;
+	*zoom: 1;
+}
+
+#smart_editor2 .se2_text_tool .se2_font_type button {
+	text-align: left;
+}
+
+#smart_editor2 .se2_text_tool .se2_font_family {
+	width: 70px;
+	height: 21px;
+	background-position: 0 -10px;
+}
+
+#smart_editor2 .se2_multy .se2_icon, #smart_editor2 .se2_text_tool button
+	{
+	width: 21px;
+	height: 21px;
+	background:
+		url(https://ssl.pstatic.net/static/pwe/nm/se2_new/ko_KR/text_tool_set.png?140317)
+		no-repeat;
+	vertical-align: top;
+}
+
+#smart_editor2 button {
+	border: 0;
+	background: 0 0;
+	font-size: 11px;
+	vertical-align: top;
+	cursor: pointer;
+	border-radius: 0;
+	line-height: 140%;
+}
+
+#smart_editor2 button {
+	border-radius: 0;
+	line-height: 140%;
+}
+
+#smart_editor2 button {
+	border-radius: 0;
+	line-height: 140%;
+}
+
+.editorFrame button {
+	border-radius: 0;
+}
+
+.editorFrame button {
+	border-radius: 0;
+}
+
+button {
+	*margin: 0 2px;
+}
+
+#smart_editor2 .se2_text_tool ul {
+	float: left;
+	display: inline;
+	margin-right: 3px;
+	padding-left: 1px;
+	white-space: nowrap;
+}
+
+#smart_editor2 .se2_text_tool .se2_layer {
+	display: none;
+	float: left;
+	position: absolute;
+	top: 20px;
+	left: 0;
+	z-index: 50;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #bcbbbb;
+	background: #fafafa;
+}
+
+#smart_editor2 .se2_text_tool .se2_layer .se2_in_layer {
+	float: left;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #fff;
+	background: #fafafa;
+}
+
+#smart_editor2 .se2_tool .se2_l_font_fam {
+	width: 202px;
+	margin: 0;
+	padding: 0;
+}
+
+ul, menu, dir {
+	display: block;
+	list-style-type: disc;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	padding-inline-start: 40px;
+}
+
+#smart_editor2 .se2_tool .se2_l_font_fam li {
+	display: block;
+	width: 202px;
+	height: 21px;
+	margin: 0;
+	padding: 0;
+	color: #333;
+	cursor: pointer;
+}
+
+#smart_editor2 .se2_text_tool li.active {
+	z-index: 50;
+}
+
+#smart_editor2 .se2_l_font_fam .active, #smart_editor2 .se2_l_font_fam .hover
+	{
+	background: #ebebeb;
+}
+
+#smart_editor2 .se2_text_tool li {
+	_display: inline;
+	float: left;
+	position: relative;
+	z-index: 30;
+}
+
+#smart_editor2 .se2_text_tool .se2_font_type button {
+	text-align: left;
+}
+
+#smart_editor2 .se2_l_font_fam button {
+	width: 200px;
+	height: 21px;
+	margin: 0;
+	padding: 2px 0;
+	background: 0 0;
+	text-align: left;
+}
+
+#smart_editor2 button {
+	border: 0;
+	background: 0 0;
+	font-size: 11px;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+#smart_editor2 .se2_l_font_fam button span {
+	display: block;
+	visibility: visible;
+	overflow: visible;
+	position: relative;
+	top: auto;
+	left: auto;
+	width: auto;
+	height: auto;
+	margin: 0 0 0 4px;
+	padding: 0;
+	font-size: 12px;
+	line-height: normal;
+	color: #333;
+}
+
+#smart_editor2 .se2_l_font_fam button span span {
+	display: inline;
+	visibility: visible;
+	overflow: visible;
+	width: auto;
+	height: auto;
+	margin: 0 0 0 4px;
+	font-family: Verdana;
+	font-size: 12px;
+	line-height: 14px;
+	color: #888;
+}
+
+#smart_editor2 .se2_l_font_fam button span em {
+	visibility: visible;
+	overflow: auto;
+	position: static;
+	width: auto;
+	height: auto;
+	margin-right: -4px;
+	font-size: 12px;
+	color: #888;
+}
+
+#smart_editor2 address, #smart_editor2 em {
+	font-style: normal;
+}
+
+#smart_editor2 button {
+	border: 0;
+	background: 0 0;
+	font-size: 11px;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+#smart_editor2 em, #smart_editor2 span {
+	font-size: 12px;
+}
+
+#smart_editor2 .se2_text_tool .se2_font_type li {
+	margin-left: 3px;
+}
+
+#smart_editor2 .se2_l_font_fam .se2_division {
+	width: 162px;
+	height: 2px !important;
+	margin: 1px 0;
+	border: 0;
+	background:
+		url(https://ssl.pstatic.net/static/pwe/nm/se2_new/bg_line1.gif)
+		repeat-x;
+	font-size: 0;
+	cursor: default;
+}
+
+#smart_editor2 .se2_tool .se2_l_font_fam li {
+	display: block;
+	width: 202px;
+	height: 21px;
+	margin: 0;
+	padding: 0;
+	color: #333;
+	cursor: pointer;
+}
+
+#smart_editor2 .se2_text_tool .se2_font_type button {
+	text-align: left;
+}
+
+#smart_editor2 .se2_text_tool .se2_font_size {
+	width: 45px;
+	height: 21px;
+	background-position: -70px -10px;
+}
+
+#smart_editor2 .se2_tool .se2_l_font_size {
+	width: 302px;
+	margin: 0;
+	padding: 0;
+}
+
+#smart_editor2 .se2_tool .se2_l_font_size li {
+	width: 302px;
+	margin: 0;
+	padding: 0;
+	color: #333;
+	cursor: pointer;
+}
+
+div#smart_editor2 .se2_l_font_size button {
+	height: auto !important;
+}
+
+#smart_editor2 .se2_l_font_size button span {
+	display: block;
+	visibility: visible;
+	overflow: visible;
+	position: relative;
+	top: auto;
+	left: auto;
+	width: auto;
+	height: auto;
+	margin: 0 0 0 4px;
+	padding: 0;
+	line-height: normal;
+	color: #373737;
+	letter-spacing: 0;
+}
+
+#smart_editor2 .se2_l_font_size button span span {
+	display: inline;
+	margin: 0 0 0 5px;
+	padding: 0;
+}
+
+#smart_editor2 .se2_l_font_size .active, #smart_editor2 .se2_l_font_size .hover
+	{
+	background: #ebebeb;
+}
+
+#smart_editor2 .se2_text_tool .se2_bold {
+	background-position: -115px -10px;
+}
+
+#smart_editor2 ul li.first_child button span.tool_bg {
+	left: -1px;
+	width: 3px;
+	background:
+		url(https://ssl.pstatic.net/static/pwe/nm/se2_new/bg_button_left.gif?20121228)
+		no-repeat;
+}
+
+#smart_editor2 ul li.first_child button span.tool_bg, #smart_editor2 ul li.last_child button span.tool_bg,
+	#smart_editor2 ul li.single_child button span.tool_bg {
+	visibility: visible;
+	height: 21px;
+}
+
+#smart_editor2 .se2_text_tool .se2_underline {
+	background-position: -136px -10px;
+}
+
+#smart_editor2 .se2_text_tool .se2_italic {
+	background-position: -157px -10px;
+}
+
+#smart_editor2 button em, #smart_editor2 button span {
+	visibility: hidden;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	font-size: 0;
+	line-height: 0;
+}
+
+#smart_editor2 .se2_text_tool .se2_tdel {
+	background-position: -178px -10px;
+}
+
+#smart_editor2 .se2_text_tool .selected_color {
+	position: absolute;
+	top: 14px;
+	left: 5px;
+	width: 11px;
+	height: 3px;
+	font-size: 0;
+}
+
+#smart_editor2 .se2_text_tool .se2_fcolor {
+	position: relative;
+	background-position: -199px -10px;
+}
+
+#smart_editor2 .se2_text_tool .se2_fcolor_more {
+	background-position: -220px -10px;
+	width: 10px;
+}
+
+#smart_editor2 ul li.last_child button span.tool_bg {
+	right: 0;
+	_right: -1px;
+	width: 2px;
+	background:
+		url(https://ssl.pstatic.net/static/pwe/nm/se2_new/bg_button_right.gif)
+		no-repeat;
+}
+
+#smart_editor2 .se2_palette {
+	float: left;
+	position: relative;
+	width: 225px;
+	margin: 0;
+	padding: 11px 0 10px;
+}
+
+#smart_editor2 .se2_palette .se2_pick_color {
+	_display: inline;
+	float: left;
+	clear: both;
+	width: 205px;
+	margin: 0 0 0 11px;
+	padding: 0;
+}
+
+#smart_editor2 .se2_palette .se2_pick_color li {
+	float: left;
+	width: 12px;
+	height: 12px;
+	margin: 0;
+	padding: 0;
+}
+
+#smart_editor2 .se2_palette .se2_pick_color li button {
+	width: 11px;
+	height: 11px;
+	border: 0;
+}
+
+#smart_editor2 .se2_palette .se2_pick_color li button span {
+	display: block;
+	visibility: visible;
+	overflow: visible;
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	width: 11px;
+	height: 11px;
+}
+
+#smart_editor2 .se2_palette .se2_pick_color li button span span {
+	visibility: hidden;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+}
+
+#smart_editor2 .se2_palette .se2_view_more {
+	_display: inline;
+	float: left;
+	width: 46px;
+	height: 23px;
+	margin: 1px 0 0 1px;
+	background:
+		url(https://ssl.pstatic.net/static/pwe/nm/se2_new/ko_KR/btn_set.png?130306)
+		0 -47px no-repeat;
+}
+
+#smart_editor2 button em, #smart_editor2 button span {
+	visibility: hidden;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	font-size: 0;
+	line-height: 0;
+}
+
+#smart_editor2 .se2_palette h4 {
+	_display: inline;
+	float: left;
+	width: 203px;
+	margin: 9px 0 0 11px;
+	padding: 10px 0 4px;
+	background:
+		url(https://ssl.pstatic.net/static/pwe/nm/se2_new/bg_line1.gif)
+		repeat-x;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14px;
+	color: #333;
+	letter-spacing: -1px;
+}
+
+#smart_editor2 .se2_palette .se2_pick_color {
+	_display: inline;
+	float: left;
+	clear: both;
+	width: 205px;
+	margin: 0 0 0 11px;
+	padding: 0;
+}
+
+#smart_editor2 .se2_palette .se2_pick_color li {
+	float: left;
+	width: 12px;
+	height: 12px;
+	margin: 0;
+	padding: 0;
+}
+
+#smart_editor2 .se2_palette2 {
+	float: left;
+	_float: none;
+	width: 214px;
+	margin: 9px 0 0;
+	padding: 11px 0 0 11px;
+	background:
+		url(https://ssl.pstatic.net/static/pwe/nm/se2_new/bg_line1.gif)
+		repeat-x;
+}
+
+#smart_editor2 .se2_palette2 .se2_color_set {
+	float: left;
+}
+
+#smart_editor2 .se2_palette2 .se2_selected_color {
+	_display: inline;
+	float: left;
+	width: 83px;
+	height: 18px;
+	margin: 0;
+	border: 1px solid #c7c7c7;
+	background: #fff;
+}
+
+#smart_editor2 em, #smart_editor2 span {
+	font-size: 12px;
+}
+
+#smart_editor2 .blind, #smart_editor2 legend {
+	visibility: hidden;
+	overflow: hidden;
+	position: absolute;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+}
+
+.blind {
+	display: block;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	border: 0;
+	background: 0 0;
+	font-size: 0;
+	line-height: 0;
+}
+
+#smart_editor2 .se2_palette2 .input_ty1 {
+	_display: inline;
+	float: left;
+	width: 67px;
+	height: 16px;
+	margin: 0 3px;
+	padding: 2px 2px 0 4px;
+	font-family: tahoma;
+	font-size: 11px;
+}
+
+#smart_editor2 .input_ty1 {
+	height: 14px;
+	margin: 0;
+	padding: 4px 2px 0 4px;
+	border: 1px solid #c7c7c7;
+	font-size: 11px;
+	color: #666;
+}
+
+#smart_editor2 .se2_palette2 button.se2_btn_insert {
+	float: left;
+	width: 35px;
+	height: 21px;
+	margin-left: 2px;
+	padding: 0;
+	background:
+		url(https://ssl.pstatic.net/static/pwe/nm/se2_new/ko_KR/btn_set.png?130306)
+		-80px 0 no-repeat;
+}
+
+#smart_editor2 button {
+	border: 0;
+	background: 0 0;
+	font-size: 11px;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+#smart_editor2 button em, #smart_editor2 button span {
+	visibility: hidden;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	font-size: 0;
+	line-height: 0;
+}
+
+#smart_editor2 .se2_gradation1 {
+	float: left;
+	_float: none;
+	width: 201px;
+	height: 128px;
+	margin: 4px 0 0;
+	border: 1px solid #c7c7c7;
+	cursor: crosshair;
+}
+
+#smart_editor2 .se2_gradation2 {
+	float: left;
+	_float: none;
+	width: 201px;
+	height: 10px;
+	margin: 4px 0 1px;
+	border: 1px solid #c7c7c7;
+	cursor: crosshair;
+}
+
+#smart_editor2 .se2_text_tool .selected_color {
+	position: absolute;
+	top: 14px;
+	left: 5px;
+	width: 11px;
+	height: 3px;
+	font-size: 0;
+}
+
+#smart_editor2 .se2_text_tool .se2_bgcolor {
+	position: relative;
+	background-position: -230px -10px;
+}
+
+#smart_editor2 button em, #smart_editor2 button span {
+	visibility: hidden;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	font-size: 0;
+	line-height: 0;
+}
+
+#smart_editor2 .se2_text_tool .se2_bgcolor_more {
+	background-position: -251px -10px;
+	width: 10px;
+}
+
+#smart_editor2 ul li.last_child button span.tool_bg {
+	right: 0;
+	_right: -1px;
+	width: 2px;
+	background:
+		url(https://ssl.pstatic.net/static/pwe/nm/se2_new/bg_button_right.gif)
+		no-repeat;
+}
+
+#smart_editor2 .se2_text_tool .se2_layer {
+	display: none;
+	float: left;
+	position: absolute;
+	top: 20px;
+	left: 0;
+	z-index: 50;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #bcbbbb;
+	background: #fafafa;
+}
+
+#smart_editor2 .se2_palette_bgcolor {
+	width: 225px;
+	margin: 11px 0 0;
+	padding: 0;
+}
+
+#smart_editor2 .se2_palette_bgcolor .se2_background {
+	width: 205px;
+	margin: 0 11px;
+}
+
+#smart_editor2 .se2_palette_bgcolor .se2_background li {
+	width: 68px;
+	height: 20px;
+}
+
+#smart_editor2 .se2_palette_bgcolor .se2_background button {
+	width: 67px;
+	height: 19px;
+	border: 0;
+}
+
+#smart_editor2 .se2_palette_bgcolor .se2_background span {
+	left: 0;
+	display: block;
+	visibility: visible;
+	overflow: visible;
+	width: 65px;
+	height: 17px;
+	padding: 0;
+}
+
+#smart_editor2 .se2_palette_bgcolor .se2_background span span {
+	display: block;
+	visibility: visible;
+	overflow: visible;
+	width: 64px;
+	height: 16px;
+	padding: 3px 0 0 3px;
+	font-size: 11px;
+	line-height: 14px;
+	text-align: left;
+}
+
+/* 번역 */
+#smart_editor2 .se2_text_tool .utx_btn_se, #smart_editor2 .se2_text_tool .utx_btn_se .utx_inrbtn
+	{
+	background-position: 100% -273px;
+	height: 21px !important;
+	overflow: hidden;
+}
+
+#smart_editor2 .se2_text_tool .utx_btn_se .utx_inrbtn {
+	background-position: 0 -273px;
+	margin-right: 5px;
+	padding-left: 5px;
+	line-height: 21px;
+	font-size: 11px !important;
+	letter-spacing: -1px;
+	position: static;
+	visibility: visible;
+}
+
+#smart_editor2 .se2_text_tool .active .se2_left {
+	background-position: -261px -103px;
+}
+
+#smart_editor2 .se2_text_tool .se2_left {
+	background-position: -261px -10px;
+}
+
+#smart_editor2 div.se2_text_tool ul li.active button span.tool_bg,
+	#smart_editor2 div.se2_text_tool ul li.active li.active button span.tool_bg
+	{
+	background-position: 0 -42px;
+}
+
+#smart_editor2 .se2_text_tool .se2_center {
+	background-position: -282px -10px;
+}
+
+#smart_editor2 .se2_text_tool .se2_right {
+	background-position: -303px -10px;
+}
+
+#smart_editor2 .se2_text_tool .se2_justify {
+	background-position: -324px -10px;
+}
+
+#smart_editor2 .se2_text_tool .se2_lineheight {
+	background-position: -429px -10px #smart_editor2 .se2_text_tool
+		.se2_layer{
+    display: none;
+	float: left;
+	position: absolute;
+	top: 20px;
+	left: 0;
+	z-index: 50;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #bcbbbb;
+	background: #fafafa;
+}
+
+#smart_editor2 .se2_l_line_height {
+	width: 107px;
+	margin: 0;
+	padding: 0;
 }

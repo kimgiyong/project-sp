@@ -24,6 +24,10 @@ body {
 	height: 100%;
 }
 
+img{
+	background-image: url("${resPath}/img/imgredy.jpg");
+}
+
 .body {
 	position: absolute;
 	z-index: -100;
