@@ -44,10 +44,10 @@ public class PostController {
 		if(post.getPageS()!=null) {
 			int pageSize = ps.postSelectUserSize(post.getUserNum());
 			int pageNO = post.getPageS();
-			if(pageNO>pageSize) {
+			if(pageNO>=pageSize) {
 				pageNO = pageSize ;
 			}
-			if(pageNO<1) {
+			if(pageNO<=1) {
 				pageNO = 1;
 			}
 			PageVO pages = new PageVO();

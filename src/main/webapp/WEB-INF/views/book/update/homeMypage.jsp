@@ -11,6 +11,7 @@
 	href="${resPath}/css/update/mypageCss2.css">
 <%
 	String dif = (String) request.getParameter("dif");
+	String pageS = request.getParameter("pageS");
 %>
 </head>
 
@@ -18,10 +19,23 @@
 	<%@ include file="../home.jsp"%>
 	<script>var userAddr = '<%=user.getUserAddr()%>';</script>
 	<div id="total">
-		<%@ include file="leftmenu.jsp"%>
-		<%
-			String pageS = request.getParameter("pageS");
-		%>
+		<div id="menu">
+			<h1 id="fh">My Page</h1>
+			<ul id="menuul">
+				<li class="sub"><a href="/uri/book/update/homeMypage?dif=0">개인정보확인  / 수정</a></li>
+				<li><hr></li>
+				<li class="sub"><a href="/post?userNum=<%=userNum%>&pageS=1">내가 쓴 글 보기</a></li>
+				<li><hr></li>
+				<li class="sub"><a href="/uri/book/update/homeMypage?dif=2">내가 책에 쓴 댓글 보기</a></li>
+				<li><hr></li>
+				<li class="sub"><a href="/uri/book/update/homeMypage?dif=3">내가 게시글에 쓴 댓글 보기</a></li>
+				<li><hr></li>
+				<li class="sub"><a href="/uri/book/update/homeMypage?dif=4">내가 신청한 책</a></li>
+				<li><hr></li>
+				<li class="sub"><a href="/uri/book/update/homeMypage?dif=5">관심 책 보기</a></li>
+				<li><hr></li>
+			</ul>
+		</div>
 		<section id="dif0" class="total">
 			<div class="updateBack">
 				<h1 id="sh">개인정보확인 / 수정</h1>
@@ -92,6 +106,12 @@
 						</tr>
 					</thead>
 					<tbody class="noticeOne">
+					<c:if test="${posts eq '[]'}">
+						<tr class="positionTopic">
+							<th class="member">작성된 글이 없습니다.</th>
+							<th class="summary">--</th>
+						</tr>						
+					</c:if>
 					<c:forEach var="list" items="${posts}">
 						<tr class="positionTopic">
 							<th class="member">${list.postTitle}</th>
@@ -127,6 +147,9 @@
 		<section id="dif4" class="total">
 			<div class="updateBack">왜 나올까요</div>
 		</section>
+		<section id="dif5" class="total">
+			<div class="updateBack">왜 나올까요</div>
+		</section>
 	</div>
 
 	<script>
@@ -136,9 +159,12 @@
 	var dif2 = document.getElementById("dif2");
 	var dif3 = document.getElementById("dif3");
 	var dif4 = document.getElementById("dif4");
+	var dif5 = document.getElementById("dif5");
 	var dif = <%=dif%>;
 	function doin(){
-		if(dif==4){
+		if(dif==5){
+			dif5.style.display = "block";
+		}else if(dif==4){
 			dif4.style.display = "block";
 		}else if(dif==3){
 			dif3.style.display = "block";
@@ -146,7 +172,7 @@
 			dif2.style.display = "block";
 		}else if(dif==1){
 			dif1.style.display = "block";
-		}else{
+		}else {
 			dif0.style.display = "block";
 		}
 	}

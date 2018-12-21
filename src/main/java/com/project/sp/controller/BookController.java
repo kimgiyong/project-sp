@@ -40,10 +40,10 @@ public class BookController {
 		if(book.getPageS()!=null) {
 			int pageSize = bs.bookSelectSize(book);
 			int pageNO = book.getPageS();
-			if(pageNO>pageSize) {
+			if(pageNO>=pageSize) {
 				pageNO = pageSize ;
 			}
-			if(pageNO<1) {
+			if(pageNO<=1) {
 				pageNO = 1;
 			}
 			PageVO pages = new PageVO();
@@ -67,10 +67,10 @@ public class BookController {
 		if(bookComent.getPageS()!=null) {
 			int pageSize = bcs.bookComentBookSize(bookComent.getBookCode());
 			int pageNO = bookComent.getPageS();
-			if(pageNO>pageSize) {
+			if(pageNO>=pageSize) {
 				pageNO = pageSize ;
 			}
-			if(pageNO<1) {
+			if(pageNO<=1) {
 				pageNO = 1;
 			}
 			PageVO pages = new PageVO();
