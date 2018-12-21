@@ -785,3 +785,25 @@ div#smart_editor2 .se2_l_font_size button {
 	margin: 0;
 	padding: 0;
 }
+
+#smart_editor2 .se2_l_line_height button {
+	width: 105px;
+	height: 19px;
+	margin: 0;
+	padding: 3px 0 2px;
+	background: 0 0;
+	text-align: left;
+}
+
+#smart_editor2 .se2_l_line_height button span {
+	visibility: visible;
+	overflow: visible;
+	position: relative;
+	width: auto;
+	height: auto;
+	margin: 0;
+	padding: 0 0 0 15px;
+	font-size: 12px;
+	line-height: normal;
+	color: #373737;
+}

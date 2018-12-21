@@ -33,8 +33,7 @@
 				<div class="input1">
 					<input name="txtEmailId" type="text" value="" maxlength="35"
 						id="txtEmailId" class="txt"
-						onkeydown="if(event.keyCode==13){return false;}"
-						placeholder="Account Email">
+						placeholder="Account Email" onkeydown='enterkey()' >
 				</div>
 				<div class="at">@</div>
 				<div class="input1">
@@ -55,10 +54,10 @@
 				<div id="joinhidden">
 					<hr>
 					<label id="pwcheck">패스워드 확인</label><input id="userPwdchk"
-						type="password" placeholder="retype password" /><br> <label>&nbsp;
+						type="password" placeholder="retype password" onkeydown='enterkey()'/><br> <label>&nbsp;
 						&nbsp; &nbsp; &nbsp;이 름 </label><input id="userName" type="text"
 						placeholder="user name" maxlength="5" /><br> <label>생
-						년 월 일 </label><input id="userBir" type="date" placeholder="Birthday" /><br>
+						년 월 일 </label><input id="userBir" type="date" placeholder="Birthday" onkeydown='enterkey()'/><br>
 					<!-- <input id="userNumber" type="text" placeholder="Phone number('-'없이 써주세요)" maxlength="11" onkeypress="onlyNumber();" /><br> -->
 					<div id="userMobile">
 						<label>전 화 번 호 </label> <select name="ddlMobileTel"
@@ -180,7 +179,6 @@
 	
 	function enterkey() {
 		if (window.event.keyCode == 13) {
-
 			// 엔터키가 눌렸을 때 실행할 내용
 			login();
 		}
