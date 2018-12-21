@@ -9,6 +9,7 @@
 			<a id="callback" onclick="goback()">돌아가기</a>
 		</h3>
 	</div>
+	<div class="spaceDiv"></div>
 	<script>
 		var detextname = document.getElementById("detextname");
 		var callback = document.getElementById("callback");
