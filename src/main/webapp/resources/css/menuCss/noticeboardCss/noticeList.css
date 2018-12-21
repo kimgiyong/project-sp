@@ -6,6 +6,7 @@
     border: 1px solid black;
     width: 150;
     position: fixed;
+     background: #31242f;
 }
 #noticeKind li{
     width: 150px;
@@ -16,6 +17,10 @@
     margin-right: -5px;
     text-align: center;
     line-height: 47px;
+}
+#noticeKind>li:hover{        
+	background: rgba(255,255,255,0.1);
+	cursor: pointer;
 }
 #noticeKind li a{
 	color: white;

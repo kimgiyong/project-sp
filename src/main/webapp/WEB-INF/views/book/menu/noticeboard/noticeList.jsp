@@ -13,7 +13,7 @@
 <%@ include file="../../home.jsp" %>
 <div class="container"> 
 	<%@ include file="../../menuHead.jsp"%>
-	<ul id="noticeKind">
+	<ul id="noticeKind">  
 		<li><a href="/postCode?postCode=F">자유게시판</a></li>
 		<li><a href="/postCode?postCode=H">유머게시판</a></li>
 		<li><a href="/postCode?postCode=Q">질문게시판</a></li>
@@ -605,7 +605,6 @@
 				</td>
 			</tr>
 		</tbody>
-	
 	</table>
 <div class="clear"></div>
 </div>
