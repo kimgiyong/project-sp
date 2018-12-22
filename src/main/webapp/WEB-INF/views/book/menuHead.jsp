@@ -6,7 +6,7 @@
 	<div id="listHead">
 		<span id="detextname"></span>
 		<h3>
-			<a id="callback" onclick="goback()">돌아가기</a>
+			<a id="callback">돌아가기</a>
 		</h3>
 	</div>
 	<div class="spaceDiv"></div>
@@ -14,7 +14,7 @@
 		var detextname = document.getElementById("detextname");
 		var callback = document.getElementById("callback");
 		function goback(){
-			window.history.go(-1);
+			window.history.back();
 		}
 		function gohome(){
 			window.location.href = '/uri/book/homePage';

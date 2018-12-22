@@ -1,15 +1,15 @@
 @charset "UTF-8";
 #noticeKind{    
-	margin: 100px 1530px;
+	margin: -100px 1530px;
     border-radius: 10px;
     overflow: hidden;
-    border: 1px solid black;
+    border: 4px solid #2f2704;
     width: 150;
     position: fixed;
+    background: #2f2704;
 }
 
 #noticeKind li{
-    background: #31242f;
     width: 150px;
     height: 47px;
     list-style-type: none;
@@ -18,13 +18,14 @@
     text-align: center;
     line-height: 47px;
 }
-#selected{
-	background: #745314;
-}
 #noticeKind>li:hover{        
-	opacity:0.8; 
+	background: rgba(255,255,255,0.2);
 	cursor: pointer;
 }
+#selected{
+	background: #85700c;
+}
+
 #noticeKind li a{
 	color: white;
 }
@@ -64,14 +65,22 @@
 	font-size:18px;
 	border: none;
 	border-bottom:1px solid black;	
-	width:90%;
+	width:88%;
 	margin-top:5px;
 }
 #contents{
 	border:1px solid black;
 	width: 95%;
-	margin:25px;
-	
+	margin:25px;	
+}
+#contents textarea{
+	width: 95%;
+	height: 300px;
+	resize: none;
+	margin:10px;
+	padding: 8px;
+	font-size:18px;
+	line-height:20px;
 }
 
 
