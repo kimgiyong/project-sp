@@ -11,7 +11,14 @@
 	href="${resPath}/css/update/mypageCss2.css">
 <%
 	String dif = (String) request.getParameter("dif");
-	String pageS = request.getParameter("pageS");
+	String moveName = "";
+	if(dif=="1"){
+		moveName = "post";
+	}else if(dif=="2"){
+		moveName = "bookComentUser";
+	}else if(dif=="3"){
+		moveName = "postComentUser";
+	}
 %>
 </head>
 
@@ -36,8 +43,8 @@
 				<li><hr></li>
 			</ul>
 		</div>
+		<div class="updateBack">
 		<section id="dif0" class="total">
-			<div class="updateBack">
 				<h1 id="sh">개인정보확인 / 수정</h1>
 				<table id="updatetbl">
 					<tr class="updatetr">
@@ -94,62 +101,78 @@
 				<div class="clear"></div>
 				<a href="https://www.privacy.go.kr/" target="_blank"> <img
 					src="${resPath}/img/mypage.jpg" alt="img" id="img"></a>
-			</div>
 		</section>
 		<section id="dif1" class="total">
-			<div class="updateBack">
-				<table id=notices>
-					<thead class="category">
-						<tr>
-							<th>제목</th>
-							<th>작성일</th>
-						</tr>
-					</thead>
-					<tbody class="noticeOne">
-					<c:if test="${posts eq '[]'}">
-						<tr class="positionTopic">
-							<th class="member">작성된 글이 없습니다.</th>
-							<th class="summary">--</th>
-						</tr>						
-					</c:if>
-					<c:forEach var="list" items="${posts}">
-						<tr class="positionTopic">
-							<th class="member">${list.postTitle}</th>
-							<th class="summary">${list.credat}</th>
-						</tr>
-					</c:forEach>
-					</tbody>
-				</table>
-				<div id="page">
+			<table id=notices>
+				<thead class="category">
+					<tr>
+						<th>제목</th>
+						<th>작성일</th>
+					</tr>
+				</thead>
+				<tbody class="noticeOne">
+				<c:if test="${posts eq '[]'}">
+					<tr class="positionTopic">
+						<th class="member">작성된 글이 없습니다.</th>
+						<th class="summary">--</th>
+					</tr>						
+				</c:if>
+				<c:forEach var="list" items="${posts}">
+					<tr class="positionTopic">
+						<th class="member">${list.postTitle}</th>
+						<th class="summary">${list.credat}</th>
+					</tr>
+				</c:forEach>
+				</tbody>
+			</table>
+		</section>
+		<section id="dif2" class="total">
+			<table id=notices>
+				<thead class="category">
+					<tr>
+						<th>제목</th>
+						<th>작성일</th>
+					</tr>
+				</thead>
+				<tbody class="noticeOne">
+				<c:if test="${posts eq '[]'}">
+					<tr class="positionTopic">
+						<th class="member">작성된 글이 없습니다.</th>
+						<th class="summary">--</th>
+					</tr>						
+				</c:if>
+				<c:forEach var="list" items="${posts}">
+					<tr class="positionTopic">
+						<th class="member">${list.postTitle}</th>
+						<th class="summary">${list.credat}</th>
+					</tr>
+				</c:forEach>
+				</tbody>
+			</table>
+		</section>
+		<section id="dif3" class="total">
+		</section>
+		<section id="dif4" class="total">
+		</section>
+		<section id="dif5" class="total">
+		</section>
+			<div id="page">
 				<button id="start" class="pBtn">처음으로</button>
 				<button id="leftMoveTen" class="pBtn">◀◀</button>
 				<button id="leftMove" class="pBtn">◀</button>
 				<c:forEach var="a" begin="${page.startPage}" end="${page.endPage}">
-				<c:if test="${a!=page.pageN}">
-					<span><a href="/post?userNum=<%=userNum%>&pageS=${a}">[${a}]</a></span>
-				</c:if>
-				<c:if test="${a==page.pageN}">
-					<span><a href="/post?userNum=<%=userNum%>&pageS=${a}" id="nowP">[${a}]</a></span>
-				</c:if>
+					<c:if test="${a!=page.pageN}">
+						<span><a href="/post?userNum=<%=userNum%>&pageS=${a}">[${a}]</a></span>
+					</c:if>
+					<c:if test="${a==page.pageN}">
+						<span><a href="/post?userNum=<%=userNum%>&pageS=${a}" id="nowP">[${a}]</a></span>
+					</c:if>
 				</c:forEach>
 				<button id="rightMove" class="pBtn">▶</button>
 				<button id="rightMoveTen" class="pBtn">▶▶</button>
 				<button id="ends" class="pBtn">끝으로</button>
-				</div>
 			</div>
-		</section>
-		<section id="dif2" class="total">
-			<div class="updateBack">아직은</div>
-		</section>
-		<section id="dif3" class="total">
-			<div class="updateBack">미완성입니다.</div>
-		</section>
-		<section id="dif4" class="total">
-			<div class="updateBack">왜 나올까요</div>
-		</section>
-		<section id="dif5" class="total">
-			<div class="updateBack">왜 나올까요</div>
-		</section>
+		</div>
 	</div>
 
 	<script>
@@ -160,20 +183,27 @@
 	var dif3 = document.getElementById("dif3");
 	var dif4 = document.getElementById("dif4");
 	var dif5 = document.getElementById("dif5");
+	var page = document.getElementById('page');
+	var moveName = '';
 	var dif = <%=dif%>;
 	function doin(){
 		if(dif==5){
 			dif5.style.display = "block";
 		}else if(dif==4){
 			dif4.style.display = "block";
+			moveName = 'uri/book/homePage';
 		}else if(dif==3){
 			dif3.style.display = "block";
+			moveName = 'postComentUser';
 		}else if(dif==2){
 			dif2.style.display = "block";
+			moveName = 'bookComentUser';
 		}else if(dif==1){
 			dif1.style.display = "block";
+			moveName = 'post';
 		}else {
 			dif0.style.display = "block";
+			page.style.display = 'none';
 		}
 	}
 	window.addEventListener('load',doin);
@@ -274,31 +304,31 @@
 		function Mov(event){
 			var page;
 			if(event.target.id=='leftMoveTen'){
-				page = (parseInt((<%=pageS%>-11)/10)*10)+1;
-				if(<%=pageS%><=1){
+				page = (parseInt((${page.pageN}-11)/10)*10)+1;
+				if('${page.pageN}'<=1){
 					page = 1;
 				}
 			}else if(event.target.id=='leftMove'){
-				page = <%=pageS%>-1;
-				if(<%=pageS%><=1){
+				page = ${page.pageN}-1;
+				if('${page.pageN}'<=1){
 					page = 1;
 				}
 			}else if(event.target.id=='rightMoveTen'){
-				page = (parseInt((<%=pageS%>-1)/10)*10)+11;
-				if(<%=pageS%>>=/*(parseInt(${(page.pageT-1)}/10)*10)+1*/1){
-//					page = ${page.pageT};
+				page = (parseInt(('${page.pageN}'-1)/10)*10)+11;
+				if('${page.pageN}'>=(parseInt(${(page.pageT-1)}/10)*10)+11){
+					page = '${page.pageT}';
 				}
 			}else if(event.target.id=='rightMove'){
-				page = <%=pageS%>+1;
-				if(<%=pageS%>>/*${page.pageT}*/1){
-//					page = ${page.pageT};
+				page = '${page.pageN}'+1;
+				if('${page.pageN}'>'${page.pageT}'){
+				page = '${page.pageT}';
 				}
 			}else if(event.target.id=='start'){
 				page = 1;
 			}else if(event.target.id=='ends'){
-//				var page = ${page.pageT};
+				var page = '${page.pageT}';
 			}
-			location.href='/post?userNum=<%=userNum%>&pageS='+page;
+			location.href='/' + '<%=moveName%>' + '?userNum=<%=userNum%>&pageS='+page;
 		}
 		leftMoveTen.addEventListener('click',Mov);
 		leftMove.addEventListener('click',Mov);

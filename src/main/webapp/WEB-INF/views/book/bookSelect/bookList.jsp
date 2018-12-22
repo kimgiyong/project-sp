@@ -78,23 +78,23 @@ var endsBtn = document.querySelector('#ends');
 function Mov(event){
 	var page;
 	if(event.target.id=='leftMoveTen'){
-		page = (parseInt((<%=pageS%>-11)/10)*10)+1;
-		if(<%=pageS%><=1){
+		page = (parseInt((${page.pageN}-11)/10)*10)+1;
+		if(${page.pageN}<=1){
 			page = 1;
 		}
 	}else if(event.target.id=='leftMove'){
-		page = <%=pageS%>-1;
-		if(<%=pageS%><=1){
+		page = ${page.pageN}-1;
+		if(${page.pageN}<=1){
 			page = 1;
 		}
 	}else if(event.target.id=='rightMoveTen'){
-		page = (parseInt((<%=pageS%>-1)/10)*10)+11;
-		if(<%=pageS%>>=(parseInt(${(page.pageT-1)}/10)*10)+1){
+		page = (parseInt((${page.pageN}-1)/10)*10)+11;
+		if(${page.pageN}>=(parseInt(${(page.pageT-1)}/10)*10)+1){
 			page = ${page.pageT};
 		}
 	}else if(event.target.id=='rightMove'){
-		page = <%=pageS%>+1;
-		if(<%=pageS%>>${page.pageT}){
+		page = ${page.pageN}+1;
+		if(${page.pageN}>${page.pageT}){
 			page = ${page.pageT};
 		}
 	}else if(event.target.id=='start'){
