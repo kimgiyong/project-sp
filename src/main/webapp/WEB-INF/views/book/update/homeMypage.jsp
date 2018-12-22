@@ -130,7 +130,7 @@
 			<table id=notices>
 				<thead class="category">
 					<tr>
-						<th>제목</th>
+						<th>내용</th>
 						<th>작성일</th>
 					</tr>
 				</thead>
@@ -162,10 +162,10 @@
 				<button id="leftMove" class="pBtn">◀</button>
 				<c:forEach var="a" begin="${page.startPage}" end="${page.endPage}">
 					<c:if test="${a!=page.pageN}">
-						<span><a href="/post?userNum=<%=userNum%>&pageS=${a}">[${a}]</a></span>
+						<span><a href="/<%=moveName%>?userNum=<%=userNum%>&pageS=${a}">[${a}]</a></span>
 					</c:if>
 					<c:if test="${a==page.pageN}">
-						<span><a href="/post?userNum=<%=userNum%>&pageS=${a}" id="nowP">[${a}]</a></span>
+						<span><a href="/<%=moveName%>?userNum=<%=userNum%>&pageS=${a}" id="nowP">[${a}]</a></span>
 					</c:if>
 				</c:forEach>
 				<button id="rightMove" class="pBtn">▶</button>
@@ -184,23 +184,18 @@
 	var dif4 = document.getElementById("dif4");
 	var dif5 = document.getElementById("dif5");
 	var page = document.getElementById('page');
-	var moveName = '';
 	var dif = <%=dif%>;
 	function doin(){
 		if(dif==5){
 			dif5.style.display = "block";
 		}else if(dif==4){
 			dif4.style.display = "block";
-			moveName = 'uri/book/homePage';
 		}else if(dif==3){
 			dif3.style.display = "block";
-			moveName = 'postComentUser';
 		}else if(dif==2){
 			dif2.style.display = "block";
-			moveName = 'bookComentUser';
 		}else if(dif==1){
 			dif1.style.display = "block";
-			moveName = 'post';
 		}else {
 			dif0.style.display = "block";
 			page.style.display = 'none';
