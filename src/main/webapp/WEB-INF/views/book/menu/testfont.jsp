@@ -5,6 +5,7 @@
 <head>
 <meta charset="utf-8">
 <title>테스트 입니다.아마도</title>
+<!-- https://o7planning.org/en/10369/ckeditor-tutorial -->
 </head>
 <body>
 	<div class="se2_tool" id="se2_tool">
@@ -1381,8 +1382,6 @@
 						</div>
 					</div></li>
 
-
-
 				<li class="husky_seditor_ui_findAndReplace"><button
 						type="button" title="찾기/바꾸기" class="se2_find"
 						onclick="ccr(this, 'SE2.findreplace', event)">
@@ -1470,15 +1469,11 @@
 						</div>
 					</div> <!--//@lazyload_html--></li>
 
-
 				<li class="husky_seditor_ui_spellCheck last_child"><button
 						type="button" title="맞춤법검사" class="se2_spelling"
 						onclick="ccr(this, 'SE2.spellcheck', event)">
 						<span class="_buttonRound tool_bg">맞춤법검사</span>
 					</button></li>
-
-
-
 			</ul>
 
 			<ul>
