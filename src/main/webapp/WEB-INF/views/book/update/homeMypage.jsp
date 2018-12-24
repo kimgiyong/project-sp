@@ -48,7 +48,7 @@
 				<li><hr></li>
 			</ul>
 		</div>
-		<div class="updateBack">
+		<div class="updateBack"> 
 		<section id="dif0" class="total">
 				<h1 id="sh">개인정보확인 / 수정</h1>
 				<table id="updatetbl">
@@ -62,7 +62,7 @@
 						<td><input type="email" value="<%=user.getUserId()%>"
 							disabled="disabled"></td>
 					</tr>
-					<tr class="updatetr">
+					<tr class="updatetr"> 
 						<td>이 름</td>
 						<td><input type="text" value="<%=user.getUserName()%>"
 							disabled="disabled"></td>
