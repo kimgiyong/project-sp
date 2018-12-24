@@ -23,11 +23,21 @@
 			<div id="head"><%-- <%=user.getUserName()%> --%>회원님의 게시물</div>
 			<div id="title">
 				<span class="text">제목</span>
-				<input type="text" placeholder="제목을 작성해 주십시오.">
+				<input type="text" placeholder="제목을 작성해 주십시오.">			
+				<select>
+					<option selected="selected">게시판 분류</option>
+					<option>자유게시판</option>
+					<option>유머게시판</option>
+					<option>질문게시판</option>
+				</select>
+				<hr id="line">
 			</div>
 			<div id="contents">
 				<span class="text">내용</span><br>
 				<textarea placeholder="내용을 입력해 주십시오."></textarea>
+			</div>
+			<div>
+				<div class="goReply"><a href="/uri/book/menu/noticeboard/noticeReply?id=1">답글 작성하러 가기</a></div>
 			</div>
 		</div>
 </div>
