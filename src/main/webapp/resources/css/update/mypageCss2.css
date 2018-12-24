@@ -8,6 +8,9 @@
 #notices tr td,th{
 	border:1px solid #222;
 }
+.category{
+	width:100%;
+}
 .category tr{
 	height:40px;
 	background: #3d2e2d;
@@ -16,11 +19,21 @@
 	color:white;
 }
 .category th:nth-child(1){
-	width:750px;
+	width:76%;
+}
+.noticeOne{
+	width:100%;
 }
 .positionTopic{
 	height:30px;
+	width:100%;
 }
 .positionTopic:hover{
 	cursor: pointer;
+}
+.member{
+	width:76%;
+}
+.summary{
+	
 }

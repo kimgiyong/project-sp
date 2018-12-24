@@ -24,7 +24,12 @@
 
 <body>
 	<%@ include file="../home.jsp"%>
-	<script>var userAddr = '<%=user.getUserAddr()%>';</script>
+	<script>
+		if('<%=user%>'==null){
+			location.href="/uri/book/homePage";
+		}
+		var userAddr = '<%=user.getUserAddr()%>';
+	</script>
 	<div id="total">
 		<div id="menu">
 			<h1 id="fh">My Page</h1>
@@ -102,15 +107,14 @@
 				<a href="https://www.privacy.go.kr/" target="_blank"> <img
 					src="${resPath}/img/mypage.jpg" alt="img" id="img"></a>
 		</section>
-		<section id="dif1" class="total">
-			<table id=notices>
-				<thead class="category">
-					<tr>
-						<th>제목</th>
-						<th>작성일</th>
-					</tr>
-				</thead>
-				<tbody class="noticeOne">
+		<table id=notices>
+			<thead class="category">
+				<tr>
+					<th id="tableTitle">ss</th>
+					<th id="tableYear">aa</th>
+				</tr>
+			</thead>
+			<tbody class="noticeOne" id="dif1">
 				<c:if test="${posts eq '[]'}">
 					<tr class="positionTopic">
 						<th class="member">작성된 글이 없습니다.</th>
@@ -123,18 +127,8 @@
 						<th class="summary">${list.credat}</th>
 					</tr>
 				</c:forEach>
-				</tbody>
-			</table>
-		</section>
-		<section id="dif2" class="total">
-			<table id=notices>
-				<thead class="category">
-					<tr>
-						<th>내용</th>
-						<th>작성일</th>
-					</tr>
-				</thead>
-				<tbody class="noticeOne">
+			</tbody>
+			<tbody class="noticeOne" id="dif2" class="total">
 				<c:if test="${posts eq '[]'}">
 					<tr class="positionTopic">
 						<th class="member">작성된 글이 없습니다.</th>
@@ -147,15 +141,14 @@
 						<th class="summary">${list.credat}</th>
 					</tr>
 				</c:forEach>
-				</tbody>
-			</table>
-		</section>
+			</tbody>
 		<section id="dif3" class="total">
 		</section>
 		<section id="dif4" class="total">
 		</section>
 		<section id="dif5" class="total">
 		</section>
+		</table>
 			<div id="page">
 				<button id="start" class="pBtn">처음으로</button>
 				<button id="leftMoveTen" class="pBtn">◀◀</button>
@@ -176,6 +169,7 @@
 	</div>
 
 	<script>
+	var notices = document.getElementById('notices');
 	var total = document.getElementsByClassName("total");
 	var dif0 = document.getElementById("dif0");
 	var dif1 = document.getElementById("dif1");
@@ -199,6 +193,7 @@
 		}else {
 			dif0.style.display = "block";
 			page.style.display = 'none';
+			notices.style.display = 'none';
 		}
 	}
 	window.addEventListener('load',doin);
