@@ -109,3 +109,15 @@
 .detail textarea{
     font-size:18px;
 }
+#page{
+	text-align:center;
+}
+#page btn{
+	
+}
+#nowP{
+	font-weight:bold;
+}
+.pBtn{
+	margin:0 3px 0 3px;
+}
