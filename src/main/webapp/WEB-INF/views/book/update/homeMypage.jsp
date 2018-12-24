@@ -107,8 +107,8 @@
 				<a href="https://www.privacy.go.kr/" target="_blank"> <img
 					src="${resPath}/img/mypage.jpg" alt="img" id="img"></a>
 		</section>
-		<table id=notices>
-			<thead class="category">
+		<table id="notices">
+			 <thead class="category">
 				<tr>
 					<th id="tableTitle">ss</th>
 					<th id="tableYear">aa</th>
@@ -141,14 +141,14 @@
 						<th class="summary">${list.credat}</th>
 					</tr>
 				</c:forEach>
-			</tbody>
+			</tbody>    
+		</table>
 		<section id="dif3" class="total">
 		</section>
 		<section id="dif4" class="total">
 		</section>
 		<section id="dif5" class="total">
 		</section>
-		</table>
 			<div id="page">
 				<button id="start" class="pBtn">처음으로</button>
 				<button id="leftMoveTen" class="pBtn">◀◀</button>
