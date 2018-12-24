@@ -48,7 +48,7 @@
 				<li><hr></li>
 			</ul>
 		</div>
-		<div class="updateBack"> 
+		<div class="updateBack">  
 		<section id="dif0" class="total">
 				<h1 id="sh">개인정보확인 / 수정</h1>
 				<table id="updatetbl">
