@@ -6,6 +6,8 @@
 <meta charset="utf-8">
 <title>테스트 입니다.아마도</title>
 <!-- https://o7planning.org/en/10369/ckeditor-tutorial -->
+<link rel="stylesheet" type="text/css"
+	href="${resPath}/css/menuCss/testfontCss.css">
 </head>
 <body>
 	<div class="se2_tool" id="se2_tool">
