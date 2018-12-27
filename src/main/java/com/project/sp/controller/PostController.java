@@ -32,8 +32,27 @@ public class PostController {
 		return ps.postSelectList(post);
 	}
 	@GetMapping(value="/postCode")
-	public @ResponseBody List<PostVO> postSelectListCode(@ModelAttribute PostVO post) {
-		return ps.postSelectListCode(post);
+	public String postSelectListCode(@ModelAttribute PostVO post,HttpServletRequest request) {
+		if(post.getPageS()!=null) {
+			int pageSize = ps.postSelectUserSize(post.getUserNum());
+			int pageNO = post.getPageS();
+			if(pageNO>=pageSize) {
+				pageNO = pageSize ;
+			}
+			if(pageNO<=1) {
+				pageNO = 1;
+			}
+			PageVO pages = new PageVO();
+			pages.makePaging(pageSize, pageNO);
+			request.setAttribute("page", pages);
+			post.setPageS(pages.getPageStart());
+			List<PostVO> posts = ps.postSelectUser(post);
+			request.setAttribute("posts", posts);
+			return "uri/book/update/homeMypage?dif=1&";
+		}else {
+			return "book/homePage";
+		}
+	//	ps.postSelectListCode(post);
 	}
 	@GetMapping(value="/post/{postCode}")
 	public @ResponseBody PostVO postSelect(@PathVariable String postCode) {
