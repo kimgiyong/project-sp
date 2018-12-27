@@ -10,8 +10,8 @@
 	color: #666;
 }
 
-#smart_editor2 .se2_text_tool .se2_font_type button.se2_font_family span,
-	#smart_editor2 .se2_text_tool .se2_font_type button.se2_font_size span
+ .se2_text_tool .se2_font_type button.se2_font_family span,
+	 .se2_text_tool .se2_font_type button.se2_font_size span
 	{
 	display: inline-block;
 	visibility: visible;
@@ -26,17 +26,17 @@
 	*zoom: 1;
 }
 
-div#smart_editor2 .se2_tool {
+div .se2_tool {
 	z-index: 20;
 }
 
-#smart_editor2 .se2_tool {
+ .se2_tool {
 	overflow: visible;
 	position: relative;
 	z-index: 25;
 }
 
-#smart_editor2 .se2_text_tool {
+ .se2_text_tool {
 	position: relative;
 	clear: both;
 	z-index: 30;
@@ -44,21 +44,19 @@ div#smart_editor2 .se2_tool {
 	background:
 		url(https://ssl.pstatic.net/static/pwe/nm/se2_new/bg_text_tool.gif)
 		repeat-x #f4f4f4;
-	border-bottom: 1px solid #b5b5b5;
-	*zoom: 1;
 }
 
-#smart_editor2 .se2_text_tool .se2_font_type button {
+ .se2_text_tool .se2_font_type button {
 	text-align: left;
 }
 
-#smart_editor2 .se2_text_tool .se2_font_family {
+ .se2_text_tool .se2_font_family {
 	width: 70px;
 	height: 21px;
 	background-position: 0 -10px;
 }
 
-#smart_editor2 .se2_multy .se2_icon, #smart_editor2 .se2_text_tool button
+ .se2_multy .se2_icon,  .se2_text_tool button
 	{
 	width: 21px;
 	height: 21px;
@@ -68,7 +66,7 @@ div#smart_editor2 .se2_tool {
 	vertical-align: top;
 }
 
-#smart_editor2 button {
+ button {
 	border: 0;
 	background: 0 0;
 	font-size: 11px;
@@ -82,7 +80,7 @@ button {
 	*margin: 0 2px;
 }
 
-#smart_editor2 .se2_text_tool ul {
+ .se2_text_tool ul {
 	float: left;
 	display: inline;
 	margin-right: 3px;
@@ -90,7 +88,7 @@ button {
 	white-space: nowrap;
 }
 
-#smart_editor2 .se2_text_tool .se2_layer {
+ .se2_text_tool .se2_layer {
 	display: none;
 	float: left;
 	position: absolute;
@@ -103,7 +101,7 @@ button {
 	background: #fafafa;
 }
 
-#smart_editor2 .se2_text_tool .se2_layer .se2_in_layer {
+ .se2_text_tool .se2_layer .se2_in_layer {
 	float: left;
 	margin: 0;
 	padding: 0;
@@ -111,7 +109,7 @@ button {
 	background: #fafafa;
 }
 
-#smart_editor2 .se2_tool .se2_l_font_fam {
+ .se2_tool .se2_l_font_fam {
 	width: 202px;
 	margin: 0;
 	padding: 0;
@@ -127,7 +125,7 @@ ul, menu, dir {
 	padding-inline-start: 40px;
 }
 
-#smart_editor2 .se2_tool .se2_l_font_fam li {
+ .se2_tool .se2_l_font_fam li {
 	display: block;
 	width: 202px;
 	height: 21px;
@@ -137,23 +135,23 @@ ul, menu, dir {
 	cursor: pointer;
 }
 
-#smart_editor2 .se2_text_tool li.active {
+ .se2_text_tool li.active {
 	z-index: 50;
 }
 
-#smart_editor2 .se2_l_font_fam .active, #smart_editor2 .se2_l_font_fam .hover
+ .se2_l_font_fam .active,  .se2_l_font_fam .hover
 	{
 	background: #ebebeb;
 }
 
-#smart_editor2 .se2_text_tool li {
+ .se2_text_tool li {
 	_display: inline;
 	float: left;
 	position: relative;
 	z-index: 30;
 }
 
-#smart_editor2 .se2_l_font_fam button {
+ .se2_l_font_fam button {
 	width: 200px;
 	height: 21px;
 	margin: 0;
@@ -162,7 +160,7 @@ ul, menu, dir {
 	text-align: left;
 }
 
-#smart_editor2 .se2_l_font_fam button span {
+ .se2_l_font_fam button span {
 	display: block;
 	visibility: visible;
 	overflow: visible;
@@ -178,7 +176,7 @@ ul, menu, dir {
 	color: #333;
 }
 
-#smart_editor2 .se2_l_font_fam button span span {
+ .se2_l_font_fam button span span {
 	display: inline;
 	visibility: visible;
 	overflow: visible;
@@ -191,7 +189,7 @@ ul, menu, dir {
 	color: #888;
 }
 
-#smart_editor2 .se2_l_font_fam button span em {
+ .se2_l_font_fam button span em {
 	visibility: visible;
 	overflow: auto;
 	position: static;
@@ -202,19 +200,19 @@ ul, menu, dir {
 	color: #888;
 }
 
-#smart_editor2 address, #smart_editor2 em {
+ address,  em {
 	font-style: normal;
 }
 
-#smart_editor2 em, #smart_editor2 span {
+ em,  span {
 	font-size: 12px;
 }
 
-#smart_editor2 .se2_text_tool .se2_font_type li {
+ .se2_text_tool .se2_font_type li {
 	margin-left: 3px;
 }
 
-#smart_editor2 .se2_l_font_fam .se2_division {
+ .se2_l_font_fam .se2_division {
 	width: 162px;
 	height: 2px !important;
 	margin: 1px 0;
@@ -226,7 +224,7 @@ ul, menu, dir {
 	cursor: default;
 }
 
-#smart_editor2 .se2_tool .se2_l_font_fam li {
+ .se2_tool .se2_l_font_fam li {
 	display: block;
 	width: 202px;
 	height: 21px;
@@ -236,19 +234,19 @@ ul, menu, dir {
 	cursor: pointer;
 }
 
-#smart_editor2 .se2_text_tool .se2_font_size {
+ .se2_text_tool .se2_font_size {
 	width: 45px;
 	height: 21px;
 	background-position: -70px -10px;
 }
 
-#smart_editor2 .se2_tool .se2_l_font_size {
+ .se2_tool .se2_l_font_size {
 	width: 302px;
 	margin: 0;
 	padding: 0;
 }
 
-#smart_editor2 .se2_tool .se2_l_font_size li {
+ .se2_tool .se2_l_font_size li {
 	width: 302px;
 	margin: 0;
 	padding: 0;
@@ -256,11 +254,11 @@ ul, menu, dir {
 	cursor: pointer;
 }
 
-div#smart_editor2 .se2_l_font_size button {
+div .se2_l_font_size button {
 	height: auto !important;
 }
 
-#smart_editor2 .se2_l_font_size button span {
+ .se2_l_font_size button span {
 	display: block;
 	visibility: visible;
 	overflow: visible;
@@ -276,22 +274,22 @@ div#smart_editor2 .se2_l_font_size button {
 	letter-spacing: 0;
 }
 
-#smart_editor2 .se2_l_font_size button span span {
+ .se2_l_font_size button span span {
 	display: inline;
 	margin: 0 0 0 5px;
 	padding: 0;
 }
 
-#smart_editor2 .se2_l_font_size .active, #smart_editor2 .se2_l_font_size .hover
+ .se2_l_font_size .active,  .se2_l_font_size .hover
 	{
 	background: #ebebeb;
 }
 
-#smart_editor2 .se2_text_tool .se2_bold {
+ .se2_text_tool .se2_bold {
 	background-position: -115px -10px;
 }
 
-#smart_editor2 ul li.first_child button span.tool_bg {
+ ul li.first_child button span.tool_bg {
 	left: -1px;
 	width: 3px;
 	background:
@@ -299,25 +297,25 @@ div#smart_editor2 .se2_l_font_size button {
 		no-repeat;
 }
 
-#smart_editor2 ul li.first_child button span.tool_bg, #smart_editor2 ul li.last_child button span.tool_bg,
-	#smart_editor2 ul li.single_child button span.tool_bg {
+ ul li.first_child button span.tool_bg,  ul li.last_child button span.tool_bg,
+	 ul li.single_child button span.tool_bg {
 	visibility: visible;
 	height: 21px;
 }
 
-#smart_editor2 .se2_text_tool .se2_underline {
+ .se2_text_tool .se2_underline {
 	background-position: -136px -10px;
 }
 
-#smart_editor2 .se2_text_tool .se2_italic {
+ .se2_text_tool .se2_italic {
 	background-position: -157px -10px;
 }
 
-#smart_editor2 .se2_text_tool .se2_tdel {
+ .se2_text_tool .se2_tdel {
 	background-position: -178px -10px;
 }
 
-#smart_editor2 .se2_text_tool .selected_color {
+ .se2_text_tool .selected_color {
 	position: absolute;
 	top: 14px;
 	left: 5px;
@@ -326,17 +324,17 @@ div#smart_editor2 .se2_l_font_size button {
 	font-size: 0;
 }
 
-#smart_editor2 .se2_text_tool .se2_fcolor {
+ .se2_text_tool .se2_fcolor {
 	position: relative;
 	background-position: -199px -10px;
 }
 
-#smart_editor2 .se2_text_tool .se2_fcolor_more {
+ .se2_text_tool .se2_fcolor_more {
 	background-position: -220px -10px;
 	width: 10px;
 }
 
-#smart_editor2 ul li.last_child button span.tool_bg {
+ ul li.last_child button span.tool_bg {
 	right: 0;
 	_right: -1px;
 	width: 2px;
@@ -345,7 +343,7 @@ div#smart_editor2 .se2_l_font_size button {
 		no-repeat;
 }
 
-#smart_editor2 .se2_palette {
+ .se2_palette {
 	float: left;
 	position: relative;
 	width: 225px;
@@ -353,7 +351,7 @@ div#smart_editor2 .se2_l_font_size button {
 	padding: 11px 0 10px;
 }
 
-#smart_editor2 .se2_palette .se2_pick_color {
+ .se2_palette .se2_pick_color {
 	_display: inline;
 	float: left;
 	clear: both;
@@ -362,7 +360,7 @@ div#smart_editor2 .se2_l_font_size button {
 	padding: 0;
 }
 
-#smart_editor2 .se2_palette .se2_pick_color li {
+ .se2_palette .se2_pick_color li {
 	float: left;
 	width: 12px;
 	height: 12px;
@@ -370,13 +368,13 @@ div#smart_editor2 .se2_l_font_size button {
 	padding: 0;
 }
 
-#smart_editor2 .se2_palette .se2_pick_color li button {
+ .se2_palette .se2_pick_color li button {
 	width: 11px;
 	height: 11px;
 	border: 0;
 }
 
-#smart_editor2 .se2_palette .se2_pick_color li button span {
+ .se2_palette .se2_pick_color li button span {
 	display: block;
 	visibility: visible;
 	overflow: visible;
@@ -387,7 +385,7 @@ div#smart_editor2 .se2_l_font_size button {
 	height: 11px;
 }
 
-#smart_editor2 .se2_palette .se2_pick_color li button span span {
+ .se2_palette .se2_pick_color li button span span {
 	visibility: hidden;
 	overflow: hidden;
 	position: absolute;
@@ -397,7 +395,7 @@ div#smart_editor2 .se2_l_font_size button {
 	height: 0;
 }
 
-#smart_editor2 .se2_palette .se2_view_more {
+ .se2_palette .se2_view_more {
 	_display: inline;
 	float: left;
 	width: 46px;
@@ -408,7 +406,7 @@ div#smart_editor2 .se2_l_font_size button {
 		0 -47px no-repeat;
 }
 
-#smart_editor2 .se2_palette h4 {
+ .se2_palette h4 {
 	_display: inline;
 	float: left;
 	width: 203px;
@@ -424,7 +422,7 @@ div#smart_editor2 .se2_l_font_size button {
 	letter-spacing: -1px;
 }
 
-#smart_editor2 .se2_palette .se2_pick_color {
+ .se2_palette .se2_pick_color {
 	_display: inline;
 	float: left;
 	clear: both;
@@ -433,7 +431,7 @@ div#smart_editor2 .se2_l_font_size button {
 	padding: 0;
 }
 
-#smart_editor2 .se2_palette .se2_pick_color li {
+ .se2_palette .se2_pick_color li {
 	float: left;
 	width: 12px;
 	height: 12px;
@@ -441,7 +439,7 @@ div#smart_editor2 .se2_l_font_size button {
 	padding: 0;
 }
 
-#smart_editor2 .se2_palette2 {
+ .se2_palette2 {
 	float: left;
 	_float: none;
 	width: 214px;
@@ -452,11 +450,11 @@ div#smart_editor2 .se2_l_font_size button {
 		repeat-x;
 }
 
-#smart_editor2 .se2_palette2 .se2_color_set {
+ .se2_palette2 .se2_color_set {
 	float: left;
 }
 
-#smart_editor2 .se2_palette2 .se2_selected_color {
+ .se2_palette2 .se2_selected_color {
 	_display: inline;
 	float: left;
 	width: 83px;
@@ -466,7 +464,7 @@ div#smart_editor2 .se2_l_font_size button {
 	background: #fff;
 }
 
-#smart_editor2 .blind, #smart_editor2 legend {
+ .blind,  legend {
 	visibility: hidden;
 	overflow: hidden;
 	position: absolute;
@@ -490,7 +488,7 @@ div#smart_editor2 .se2_l_font_size button {
 	line-height: 0;
 }
 
-#smart_editor2 .se2_palette2 .input_ty1 {
+ .se2_palette2 .input_ty1 {
 	_display: inline;
 	float: left;
 	width: 67px;
@@ -501,7 +499,7 @@ div#smart_editor2 .se2_l_font_size button {
 	font-size: 11px;
 }
 
-#smart_editor2 .input_ty1 {
+ .input_ty1 {
 	height: 14px;
 	margin: 0;
 	padding: 4px 2px 0 4px;
@@ -510,7 +508,7 @@ div#smart_editor2 .se2_l_font_size button {
 	color: #666;
 }
 
-#smart_editor2 .se2_palette2 button.se2_btn_insert {
+ .se2_palette2 button.se2_btn_insert {
 	float: left;
 	width: 35px;
 	height: 21px;
@@ -521,7 +519,7 @@ div#smart_editor2 .se2_l_font_size button {
 		-80px 0 no-repeat;
 }
 
-#smart_editor2 .se2_gradation1 {
+ .se2_gradation1 {
 	float: left;
 	_float: none;
 	width: 201px;
@@ -531,7 +529,7 @@ div#smart_editor2 .se2_l_font_size button {
 	cursor: crosshair;
 }
 
-#smart_editor2 .se2_gradation2 {
+ .se2_gradation2 {
 	float: left;
 	_float: none;
 	width: 201px;
@@ -541,7 +539,7 @@ div#smart_editor2 .se2_l_font_size button {
 	cursor: crosshair;
 }
 
-#smart_editor2 .se2_text_tool .selected_color {
+ .se2_text_tool .selected_color {
 	position: absolute;
 	top: 14px;
 	left: 5px;
@@ -550,12 +548,12 @@ div#smart_editor2 .se2_l_font_size button {
 	font-size: 0;
 }
 
-#smart_editor2 .se2_text_tool .se2_bgcolor {
+ .se2_text_tool .se2_bgcolor {
 	position: relative;
 	background-position: -230px -10px;
 }
 
-#smart_editor2 button em, #smart_editor2 button span {
+ button em,  button span {
 	visibility: hidden;
 	overflow: hidden;
 	position: absolute;
@@ -564,34 +562,34 @@ div#smart_editor2 .se2_l_font_size button {
 	line-height: 0;
 }
 
-#smart_editor2 .se2_text_tool .se2_bgcolor_more {
+ .se2_text_tool .se2_bgcolor_more {
 	background-position: -251px -10px;
 	width: 10px;
 }
 
-#smart_editor2 .se2_palette_bgcolor {
+ .se2_palette_bgcolor {
 	width: 225px;
 	margin: 11px 0 0;
 	padding: 0;
 }
 
-#smart_editor2 .se2_palette_bgcolor .se2_background {
+ .se2_palette_bgcolor .se2_background {
 	width: 205px;
 	margin: 0 11px;
 }
 
-#smart_editor2 .se2_palette_bgcolor .se2_background li {
+ .se2_palette_bgcolor .se2_background li {
 	width: 68px;
 	height: 20px;
 }
 
-#smart_editor2 .se2_palette_bgcolor .se2_background button {
+ .se2_palette_bgcolor .se2_background button {
 	width: 67px;
 	height: 19px;
 	border: 0;
 }
 
-#smart_editor2 .se2_palette_bgcolor .se2_background span {
+ .se2_palette_bgcolor .se2_background span {
 	left: 0;
 	display: block;
 	visibility: visible;
@@ -601,7 +599,7 @@ div#smart_editor2 .se2_l_font_size button {
 	padding: 0;
 }
 
-#smart_editor2 .se2_palette_bgcolor .se2_background span span {
+ .se2_palette_bgcolor .se2_background span span {
 	display: block;
 	visibility: visible;
 	overflow: visible;
@@ -614,14 +612,14 @@ div#smart_editor2 .se2_l_font_size button {
 }
 
 /* 번역 */
-#smart_editor2 .se2_text_tool .utx_btn_se, #smart_editor2 .se2_text_tool .utx_btn_se .utx_inrbtn
+ .se2_text_tool .utx_btn_se,  .se2_text_tool .utx_btn_se .utx_inrbtn
 	{
 	background-position: 100% -273px;
 	height: 21px !important;
 	overflow: hidden;
 }
 
-#smart_editor2 .se2_text_tool .utx_btn_se .utx_inrbtn {
+ .se2_text_tool .utx_btn_se .utx_inrbtn {
 	background-position: 0 -273px;
 	margin-right: 5px;
 	padding-left: 5px;
@@ -632,34 +630,34 @@ div#smart_editor2 .se2_l_font_size button {
 	visibility: visible;
 }
 
-#smart_editor2 .se2_text_tool .active .se2_left {
+ .se2_text_tool .active .se2_left {
 	background-position: -261px -103px;
 }
 
-#smart_editor2 .se2_text_tool .se2_left {
+ .se2_text_tool .se2_left {
 	background-position: -261px -10px;
 }
 
-#smart_editor2 div.se2_text_tool ul li.active button span.tool_bg,
-	#smart_editor2 div.se2_text_tool ul li.active li.active button span.tool_bg
+ div.se2_text_tool ul li.active button span.tool_bg,
+	 div.se2_text_tool ul li.active li.active button span.tool_bg
 	{
 	background-position: 0 -42px;
 }
 
-#smart_editor2 .se2_text_tool .se2_center {
+ .se2_text_tool .se2_center {
 	background-position: -282px -10px;
 }
 
-#smart_editor2 .se2_text_tool .se2_right {
+ .se2_text_tool .se2_right {
 	background-position: -303px -10px;
 }
 
-#smart_editor2 .se2_text_tool .se2_justify {
+ .se2_text_tool .se2_justify {
 	background-position: -324px -10px;
 }
 
-#smart_editor2 .se2_text_tool .se2_lineheight {
-	background-position: -429px -10px #smart_editor2 .se2_text_tool
+ .se2_text_tool .se2_lineheight {
+	background-position: -429px -10px  .se2_text_tool
 		.se2_layer{
     display: none;
 	float: left;
@@ -673,13 +671,13 @@ div#smart_editor2 .se2_l_font_size button {
 	background: #fafafa;
 }
 
-#smart_editor2 .se2_l_line_height {
+ .se2_l_line_height {
 	width: 107px;
 	margin: 0;
 	padding: 0;
 }
 
-#smart_editor2 .se2_l_line_height button {
+ .se2_l_line_height button {
 	width: 105px;
 	height: 19px;
 	margin: 0;
@@ -688,7 +686,7 @@ div#smart_editor2 .se2_l_font_size button {
 	text-align: left;
 }
 
-#smart_editor2 .se2_l_line_height button span {
+ .se2_l_line_height button span {
 	visibility: visible;
 	overflow: visible;
 	position: relative;
@@ -701,7 +699,7 @@ div#smart_editor2 .se2_l_font_size button {
 	color: #373737;
 }
 
-#smart_editor2 .se2_l_line_height_user {
+ .se2_l_line_height_user {
 	clear: both;
 	width: 83px;
 	margin: 5px 0 0 12px;
@@ -712,7 +710,7 @@ div#smart_editor2 .se2_l_font_size button {
 		repeat-x;
 }
 
-#smart_editor2 .se2_l_line_height_user h3 {
+ .se2_l_line_height_user h3 {
 	margin: 0 0 4px;
 	_margin: 0 0 2px -1px;
 	padding: 0;
@@ -721,13 +719,13 @@ div#smart_editor2 .se2_l_font_size button {
 	letter-spacing: -1px;
 }
 
-#smart_editor2 .se2_l_line_height_user .bx_input {
+ .se2_l_line_height_user .bx_input {
 	display: block;
 	position: relative;
 	width: 83px;
 }
 
-#smart_editor2 .se2_l_line_height_user .btn_up {
+ .se2_l_line_height_user .btn_up {
 	position: absolute;
 	top: 2px;
 	*top: 3px;
@@ -739,7 +737,7 @@ div#smart_editor2 .se2_l_font_size button {
 		-86px -54px no-repeat;
 }
 
-#smart_editor2 .se2_l_line_height_user .btn_down {
+ .se2_l_line_height_user .btn_down {
 	position: absolute;
 	top: 10px;
 	*top: 11px;
@@ -751,11 +749,11 @@ div#smart_editor2 .se2_l_font_size button {
 		-86px -62px no-repeat;
 }
 
-#smart_editor2 .se2_l_line_height_user .btn_area {
+ .se2_l_line_height_user .btn_area {
 	margin: 5px 0 10px;
 }
 
-#smart_editor2 .se2_tool .btn_area .se2_btn_apply3 {
+ .se2_tool .btn_area .se2_btn_apply3 {
 	width: 41px;
 	height: 24px;
 	background:
@@ -763,7 +761,7 @@ div#smart_editor2 .se2_l_font_size button {
 		no-repeat;
 }
 
-#smart_editor2 .se2_tool .btn_area .se2_btn_cancel3 {
+ .se2_tool .btn_area .se2_btn_cancel3 {
 	width: 39px;
 	height: 24px;
 	margin-left: 3px;
@@ -772,8 +770,8 @@ div#smart_editor2 .se2_l_font_size button {
 		-41px 0 no-repeat;
 }
 
-#smart_editor2 .se2_text_tool .husky_seditor_ui_orderedlist span.wrap_ui_btn,
-	#smart_editor2 .se2_text_tool .husky_seditor_ui_unorderedlist span.wrap_ui_btn
+ .se2_text_tool .husky_seditor_ui_orderedlist span.wrap_ui_btn,
+	 .se2_text_tool .husky_seditor_ui_unorderedlist span.wrap_ui_btn
 	{
 	display: inline-block;
 	padding-left: 2px;
@@ -783,13 +781,13 @@ div#smart_editor2 .se2_l_font_size button {
 	vertical-align: top;
 }
 
-#smart_editor2 .se2_text_tool .husky_seditor_ui_orderedlist .se2_ol {
+ .se2_text_tool .husky_seditor_ui_orderedlist .se2_ol {
 	width: 19px;
 	background-position: -347px -10px;
 }
 
-#smart_editor2 .se2_text_tool .husky_seditor_ui_orderedlist span.wrap_ui_btn_side,
-	#smart_editor2 .se2_text_tool .husky_seditor_ui_unorderedlist span.wrap_ui_btn_side
+ .se2_text_tool .husky_seditor_ui_orderedlist span.wrap_ui_btn_side,
+	 .se2_text_tool .husky_seditor_ui_unorderedlist span.wrap_ui_btn_side
 	{
 	display: inline-block;
 	padding-right: 2px;
@@ -799,35 +797,35 @@ div#smart_editor2 .se2_l_font_size button {
 	vertical-align: top;
 }
 
-#smart_editor2 .se2_text_tool .husky_seditor_ui_orderedlist .se2_btn_more,
-	#smart_editor2 .se2_text_tool .husky_seditor_ui_unorderedlist .se2_btn_more
+ .se2_text_tool .husky_seditor_ui_orderedlist .se2_btn_more,
+	 .se2_text_tool .husky_seditor_ui_unorderedlist .se2_btn_more
 	{
 	background-position: -251px -10px;
 	width: 9px;
 }
 
-#smart_editor2 .se2_orderedlist, #smart_editor2 .se2_unorderedlist {
+ .se2_orderedlist,  .se2_unorderedlist {
 	padding: 8px;
 	overflow: hidden;
 	width: 106px;
 	zoom: 1;
 }
 
-#smart_editor2 .se2_orderedlist .bullets_cover, #smart_editor2 .se2_unorderedlist .bullets_cover
+ .se2_orderedlist .bullets_cover,  .se2_unorderedlist .bullets_cover
 	{
 	border: 1px solid #d1d1d1;
 	width: 104px;
 	overflow: hidden;
 }
 
-#smart_editor2 .se2_orderedlist ul, #smart_editor2 .se2_unorderedlist ul
+ .se2_orderedlist ul,  .se2_unorderedlist ul
 	{
 	margin: -1px 0 0 -1px;
 	padding: 0;
 	width: 107px;
 }
 
-#smart_editor2 .se2_orderedlist li, #smart_editor2 .se2_unorderedlist li
+ .se2_orderedlist li,  .se2_unorderedlist li
 	{
 	width: 34px;
 	height: 34px;
@@ -838,7 +836,7 @@ div#smart_editor2 .se2_l_font_size button {
 	float: left;
 }
 
-#smart_editor2 .se2_orderedlist li button, #smart_editor2 .se2_unorderedlist li button
+ .se2_orderedlist li button,  .se2_unorderedlist li button
 	{
 	background: #fff;
 	width: 100%;
@@ -847,34 +845,34 @@ div#smart_editor2 .se2_l_font_size button {
 	line-height: 32px;
 }
 
-#smart_editor2 .bullets_cover li button.lst_upper_alpha {
+ .bullets_cover li button.lst_upper_alpha {
 	background-position: -30px 6px;
 }
 
-#smart_editor2 .bullets_cover li button.lst_upper_roman {
+ .bullets_cover li button.lst_upper_roman {
 	background-position: -65px 6px;
 }
 
-#smart_editor2 .bullets_cover li button.lst_decimal {
+ .bullets_cover li button.lst_decimal {
 	background-position: 5px -29px;
 }
 
-#smart_editor2 .bullets_cover li button.lst_lower_alpha {
+ .bullets_cover li button.lst_lower_alpha {
 	background-position: -30px -29px;
 }
 
-#smart_editor2 .bullets_cover li button.lst_lower_roman {
+ .bullets_cover li button.lst_lower_roman {
 	background-position: -65px -29px;
 }
 
-#smart_editor2 .se2_text_tool .husky_seditor_ui_orderedlist span.wrap_ui_btn.active,
-	#smart_editor2 .se2_text_tool .husky_seditor_ui_unorderedlist span.wrap_ui_btn.active
+ .se2_text_tool .husky_seditor_ui_orderedlist span.wrap_ui_btn.active,
+	 .se2_text_tool .husky_seditor_ui_unorderedlist span.wrap_ui_btn.active
 	{
 	background-position: 0 -42px;
 }
 
-#smart_editor2 .se2_text_tool .husky_seditor_ui_orderedlist span.wrap_ui_btn,
-	#smart_editor2 .se2_text_tool .husky_seditor_ui_unorderedlist span.wrap_ui_btn
+ .se2_text_tool .husky_seditor_ui_orderedlist span.wrap_ui_btn,
+	 .se2_text_tool .husky_seditor_ui_unorderedlist span.wrap_ui_btn
 	{
 	display: inline-block;
 	padding-left: 2px;
@@ -884,18 +882,18 @@ div#smart_editor2 .se2_l_font_size button {
 	vertical-align: top;
 }
 
-#smart_editor2 .se2_text_tool .husky_seditor_ui_unorderedlist .active .se2_ul
+ .se2_text_tool .husky_seditor_ui_unorderedlist .active .se2_ul
 	{
 	background-position: -368px -103px;
 }
 
-#smart_editor2 .se2_text_tool .husky_seditor_ui_unorderedlist .se2_ul {
+ .se2_text_tool .husky_seditor_ui_unorderedlist .se2_ul {
 	width: 19px;
 	background-position: -368px -10px;
 }
 
-#smart_editor2 .se2_text_tool .husky_seditor_ui_orderedlist span.wrap_ui_btn_side,
-	#smart_editor2 .se2_text_tool .husky_seditor_ui_unorderedlist span.wrap_ui_btn_side
+ .se2_text_tool .husky_seditor_ui_orderedlist span.wrap_ui_btn_side,
+	 .se2_text_tool .husky_seditor_ui_unorderedlist span.wrap_ui_btn_side
 	{
 	display: inline-block;
 	padding-right: 2px;
@@ -905,79 +903,79 @@ div#smart_editor2 .se2_l_font_size button {
 	vertical-align: top;
 }
 
-#smart_editor2 .se2_text_tool .husky_seditor_ui_orderedlist .se2_btn_more,
-	#smart_editor2 .se2_text_tool .husky_seditor_ui_unorderedlist .se2_btn_more
+ .se2_text_tool .husky_seditor_ui_orderedlist .se2_btn_more,
+	 .se2_text_tool .husky_seditor_ui_unorderedlist .se2_btn_more
 	{
 	background-position: -251px -10px;
 	width: 9px;
 }
 
-#smart_editor2 .se2_unorderedlist {
+ .se2_unorderedlist {
 	width: auto;
 }
 
-#smart_editor2 .se2_unorderedlist .bullets_cover {
+ .se2_unorderedlist .bullets_cover {
 	width: 139px;
 }
 
-#smart_editor2 .se2_unorderedlist ul {
+ .se2_unorderedlist ul {
 	width: 140px;
 }
 
-#smart_editor2 .bullets_cover li button.lst_disc {
+ .bullets_cover li button.lst_disc {
 	background-position: -135px 7px;
 }
 
-#smart_editor2 .bullets_cover li button.lst_big_circle {
+ .bullets_cover li button.lst_big_circle {
 	background-position: -170px 7px;
 }
 
-#smart_editor2 .bullets_cover li button.lst_check {
+ .bullets_cover li button.lst_check {
 	background-position: -205px 7px;
 }
 
-#smart_editor2 .bullets_cover li button.lst_dashed {
+ .bullets_cover li button.lst_dashed {
 	background-position: -100px -28px;
 }
 
-#smart_editor2 .bullets_cover li button.lst_empty_disc {
+ .bullets_cover li button.lst_empty_disc {
 	background-position: -135px -28px;
 }
 
-#smart_editor2 .bullets_cover li button.lst_square {
+ .bullets_cover li button.lst_square {
 	background-position: -170px -28px;
 }
 
-#smart_editor2 .bullets_cover li button.lst_check_green {
+ .bullets_cover li button.lst_check_green {
 	background-position: -205px -28px;
 }
 
-#smart_editor2 .se2_text_tool .active .se2_sub_text_tool .se2_outdent,
-	#smart_editor2 .se2_text_tool .se2_outdent {
+ .se2_text_tool .active .se2_sub_text_tool .se2_outdent,
+	 .se2_text_tool .se2_outdent {
 	background-position: -387px -10px;
 }
 
-#smart_editor2 .se2_text_tool .active .se2_sub_text_tool .se2_indent,
-	#smart_editor2 .se2_text_tool .se2_indent {
+ .se2_text_tool .active .se2_sub_text_tool .se2_indent,
+	 .se2_text_tool .se2_indent {
 	background-position: -408px -10px;
 }
 
-#smart_editor2 .se2_text_tool .se2_url {
+ .se2_text_tool .se2_url {
 	background-position: -513px -10px;
 }
 
-#smart_editor2 .se2_url2 {
+ .se2_url2 {
 	width: auto;
 	padding: 11px 11px 6px;
 	color: #666;
 }
 
-#smart_editor2 .se2_url2 .textfield_cont {
+ .se2_url2 .textfield_cont {
 	margin-bottom: 10px;
 	line-height: 21px;
 }
 
-#smart_editor2 .se2_url2 label {
+ .se2_url2 label {
 	display: inline-block;
 	_width: 44px;
 	min-width: 44px;
@@ -990,7 +988,7 @@ label {
 	cursor: pointer;
 }
 
-#smart_editor2 .se2_url2 .input_ty1 {
+ .se2_url2 .input_ty1 {
 	display: inline;
 	padding-top: 0;
 	height: 21px;
@@ -1000,23 +998,23 @@ label {
 	padding: 5px 2px 0 4px;
 }
 
-#smart_editor2 .se2_url2 label {
+ .se2_url2 label {
 	font-size: 11px;
 	line-height: 14px;
 	vertical-align: middle;
 }
 
-#smart_editor2 .se2_url2 .se2_layer_confirm {
+ .se2_url2 .se2_layer_confirm {
 	position: relative;
 	text-align: right;
 	line-height: 24px;
 }
 
-#smart_editor2 .se2_url2 .se2_layer_confirm .link_check.disabled {
+ .se2_url2 .se2_layer_confirm .link_check.disabled {
 	color: #b9b9b9;
 }
 
-#smart_editor2 .se2_url2 .se2_layer_confirm .link_check {
+ .se2_url2 .se2_layer_confirm .link_check {
 	position: absolute;
 	left: 43px;
 	color: #4399e2;
@@ -1024,13 +1022,13 @@ label {
 	text-decoration: underline;
 }
 
-#smart_editor2 .se2_url2 .se2_apply, #smart_editor2 .se2_url2 .se2_cancel
+ .se2_url2 .se2_apply,  .se2_url2 .se2_cancel
 	{
 	position: static;
 	margin: 0 0 0 3px;
 }
 
-#smart_editor2 .se2_url2 .se2_apply {
+ .se2_url2 .se2_apply {
 	top: 13px;
 	right: 51px;
 	width: 41px;
@@ -1040,7 +1038,7 @@ label {
 		no-repeat;
 }
 
-#smart_editor2 .se2_url2 .se2_cancel {
+ .se2_url2 .se2_cancel {
 	top: 13px;
 	right: 9px;
 	width: 39px;
@@ -1050,11 +1048,11 @@ label {
 		-41px 0 no-repeat;
 }
 
-#smart_editor2 .se2_text_tool .se2_emoticon {
+ .se2_text_tool .se2_emoticon {
 	background-position: -534px -10px;
 }
 
-#smart_editor2 .se2_emoticon_set {
+ .se2_emoticon_set {
 	_display: inline;
 	float: left;
 	width: 307px;
@@ -1063,7 +1061,7 @@ label {
 	padding: 0 9px;
 }
 
-#smart_editor2 .se2_imo_tab {
+ .se2_imo_tab {
 	_display: inline;
 	float: left;
 	position: relative;
@@ -1072,23 +1070,23 @@ label {
 	padding: 0 0 0 1px !important;
 }
 
-#smart_editor2 .se2_imo_tab li {
+ .se2_imo_tab li {
 	position: static;
 	margin: 0 0 0 -1px;
 	padding: 0;
 }
 
-#smart_editor2 .se2_imo_tab2 .active .se2_imoticon1 {
+ .se2_imo_tab2 .active .se2_imoticon1 {
 	width: 59px;
 	background-position: 0 -578px;
 }
 
-#smart_editor2 .se2_imo_tab .active .se2_imoticon_list, #smart_editor2 .se2_imo_tab .active .se2_imoticon_list2
+ .se2_imo_tab .active .se2_imoticon_list,  .se2_imo_tab .active .se2_imoticon_list2
 	{
 	display: block;
 }
 
-#smart_editor2 .se2_imoticon_list {
+ .se2_imoticon_list {
 	float: left;
 	position: absolute;
 	top: 26px;
@@ -1101,7 +1099,7 @@ label {
 		0 -1788px no-repeat;
 }
 
-#smart_editor2 .se2_imoticon_list ul {
+ .se2_imoticon_list ul {
 	_display: inline;
 	float: left;
 	width: 285px;
@@ -1113,21 +1111,21 @@ label {
 		0 -1518px no-repeat;
 }
 
-#smart_editor2 ol, #smart_editor2 ul {
+ ol,  ul {
 	list-style: none;
 }
 
-#smart_editor2 .se2_imo_tab2 .se2_imoticon2 {
+ .se2_imo_tab2 .se2_imoticon2 {
 	width: 65px;
 	background-position: -58px -552px;
 }
 
-#smart_editor2 .se2_imo_tab .se2_imoticon_list, #smart_editor2 .se2_imo_tab .se2_imoticon_list2
+ .se2_imo_tab .se2_imoticon_list,  .se2_imo_tab .se2_imoticon_list2
 	{
 	display: none;
 }
 
-#smart_editor2 .se2_imoticon_list li {
+ .se2_imoticon_list li {
 	_display: inline;
 	float: left;
 	position: relative;
@@ -1136,12 +1134,12 @@ label {
 	margin: 0 1px 1px 0;
 }
 
-#smart_editor2 .se2_imo_tab2 .se2_imoticon3 {
+ .se2_imo_tab2 .se2_imoticon3 {
 	width: 59px;
 	background-position: -122px -552px;
 }
 
-#smart_editor2 .se2_imo_tab button {
+ .se2_imo_tab button {
 	width: 51px;
 	height: 26px;
 	background:
@@ -1149,26 +1147,26 @@ label {
 		0 -152px no-repeat;
 }
 
-#smart_editor2 .se2_imo_tab .se2_imoticon3 {
+ .se2_imo_tab .se2_imoticon3 {
 	width: 51px;
 	background-position: -105px -152px;
 }
 
-#smart_editor2 .se2_imo_tab2 .se2_imoticon4 {
+ .se2_imo_tab2 .se2_imoticon4 {
 	width: 59px;
 	background-position: -180px -552px;
 }
 
-#smart_editor2 .se2_imo_tab2 .se2_imoticon5 {
+ .se2_imo_tab2 .se2_imoticon5 {
 	width: 65px;
 	background-position: -238px -552px;
 }
 
-#smart_editor2 .se2_text_tool .se2_character {
+ .se2_text_tool .se2_character {
 	background-position: -555px -10px;
 }
 
-#smart_editor2 .se2_bx_character {
+ .se2_bx_character {
 	height: auto;
 	width: 469px;
 	margin: 0;
@@ -1178,7 +1176,7 @@ label {
 		9px -1230px no-repeat;
 }
 
-#smart_editor2 .se2_bx_character .se2_char_tab {
+ .se2_bx_character .se2_char_tab {
 	_display: inline;
 	float: left;
 	position: relative;
@@ -1187,7 +1185,7 @@ label {
 	padding: 0 0 0 1px;
 }
 
-#smart_editor2 .se2_bx_character .active .se2_char1 {
+ .se2_bx_character .active .se2_char1 {
 	width: 76px;
 	height: 26px;
 	background:
@@ -1195,11 +1193,11 @@ label {
 		0 -230px no-repeat;
 }
 
-#smart_editor2 .se2_bx_character .active .se2_s_character {
+ .se2_bx_character .active .se2_s_character {
 	display: block;
 }
 
-#smart_editor2 .se2_bx_character .se2_s_character {
+ .se2_bx_character .se2_s_character {
 	display: none;
 	position: absolute;
 	top: 26px;
@@ -1210,7 +1208,7 @@ label {
 	padding: 0;
 }
 
-#smart_editor2 .se2_bx_character .se2_s_character ul {
+ .se2_bx_character .se2_s_character ul {
 	float: left;
 	width: 422px;
 	height: 172px;
@@ -1218,7 +1216,7 @@ label {
 	padding: 9px 0 0 11px;
 }
 
-#smart_editor2 .se2_bx_character .se2_s_character li {
+ .se2_bx_character .se2_s_character li {
 	_display: inline;
 	float: left;
 	position: relative;
@@ -1228,7 +1226,7 @@ label {
 	background: #fff;
 }
 
-#smart_editor2 .se2_bx_character .se2_char2 {
+ .se2_bx_character .se2_char2 {
 	width: 86px;
 	height: 26px;
 	background:
@@ -1236,7 +1234,7 @@ label {
 		-75px -204px no-repeat;
 }
 
-#smart_editor2 .se2_bx_character .se2_char3 {
+ .se2_bx_character .se2_char3 {
 	width: 68px;
 	height: 26px;
 	background:
@@ -1244,7 +1242,7 @@ label {
 		-160px -204px no-repeat;
 }
 
-#smart_editor2 .se2_bx_character .se2_char4 {
+ .se2_bx_character .se2_char4 {
 	width: 55px;
 	height: 26px;
 	background:
@@ -1252,7 +1250,7 @@ label {
 		-227px -204px no-repeat;
 }
 
-#smart_editor2 .se2_bx_character .se2_char5 {
+ .se2_bx_character .se2_char5 {
 	width: 97px;
 	height: 26px;
 	background:
@@ -1260,7 +1258,7 @@ label {
 		-281px -204px no-repeat;
 }
 
-#smart_editor2 .se2_bx_character .se2_char6 {
+ .se2_bx_character .se2_char6 {
 	width: 66px;
 	height: 26px;
 	background:
@@ -1268,14 +1266,14 @@ label {
 		-377px -204px no-repeat;
 }
 
-#smart_editor2 .se2_bx_character .se2_recent_character {
+ .se2_bx_character .se2_recent_character {
 	clear: both;
 	position: relative;
 	padding: 4px 15px 13px 11px;
 	background-color: #fafafa;
 }
 
-#smart_editor2 .se2_bx_character .se2_recent_character .se2_s_character
+ .se2_bx_character .se2_recent_character .se2_s_character
 	{
 	position: static;
 	width: auto;
@@ -1286,7 +1284,7 @@ label {
 	background-color: #fff;
 }
 
-#smart_editor2 .se2_bx_character .se2_recent_character .se2_s_character ul
+ .se2_bx_character .se2_recent_character .se2_s_character ul
 	{
 	background-position: -14px -1276px;
 	width: auto;
@@ -1298,21 +1296,21 @@ label {
 		url(https://ssl.pstatic.net/static/pwe/nm/se2_new/ko_KR/bx_set_110302.gif);
 }
 
-#smart_editor2 .se2_apply_character {
+ .se2_apply_character {
 	padding: 0 15px 11px 11px;
 	background-color: #fafafa;
 	clear: both;
 	position: relative;
 }
 
-#smart_editor2 .se2_apply_character label {
+ .se2_apply_character label {
 	margin: 0 3px 0 0;
 	font-size: 12px;
 	color: #666;
 	letter-spacing: -1px;
 }
 
-#smart_editor2 .se2_apply_character .input_ty1 {
+ .se2_apply_character .input_ty1 {
 	margin-bottom: 0;
 	padding-top: 0;
 	height: 21px;
@@ -1326,7 +1324,7 @@ label {
 	vertical-align: middle;
 }
 
-#smart_editor2 .se2_apply_character .se2_confirm {
+ .se2_apply_character .se2_confirm {
 	width: 41px;
 	height: 24px;
 	margin-right: 3px;
@@ -1336,7 +1334,7 @@ label {
 	vertical-align: middle;
 }
 
-#smart_editor2 .se2_apply_character .se2_cancel {
+ .se2_apply_character .se2_cancel {
 	width: 39px;
 	height: 24px;
 	background:
@@ -1345,41 +1343,41 @@ label {
 	vertical-align: middle;
 }
 /* 어쩌다보니 표.. */
-#smart_editor2 .se2_text_tool .se2_table {
+ .se2_text_tool .se2_table {
 	background-position: -576px -10px;
 }
 
-#smart_editor2 .generate_table .se2_table_set {
+ .generate_table .se2_table_set {
 	padding: 11px 11px 23px;
 	margin: 0;
 	width: auto;
 }
 
-#smart_editor2 .se2_table_set {
+ .se2_table_set {
 	position: relative;
 	width: 166px;
 	margin: 3px 11px 0;
 	padding: 8px 0 0;
 }
 
-#smart_editor2 .generate_table .se2_tit {
+ .generate_table .se2_tit {
 	display: block;
 	line-height: 23px;
 	margin-bottom: 9px;
 }
 
-#smart_editor2 .generate_table .se2_tit .cnt {
+ .generate_table .se2_tit .cnt {
 	font-weight: 700;
 	color: #00b938;
 	font-style: normal;
 }
 
-#smart_editor2 .generate_table .grid_cover {
+ .generate_table .grid_cover {
 	position: relative;
 	zoom: 1;
 }
 
-#smart_editor2 .generate_table .generate_grid {
+ .generate_table .generate_grid {
 	border: 0;
 	border-collapse: collapse;
 	background-color: transparent;
@@ -1393,7 +1391,7 @@ caption {
 	text-align: -webkit-center;
 }
 
-#smart_editor2 .generate_table .generate_grid td {
+ .generate_table .generate_grid td {
 	border: 1px solid #c7c7c7;
 	width: 15px;
 	height: 15px;
@@ -1402,7 +1400,7 @@ caption {
 	font-size: 0;
 }
 
-#smart_editor2 .generate_table .generate_grid_selection {
+ .generate_table .generate_grid_selection {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -1412,26 +1410,26 @@ caption {
 	z-index: 10;
 }
 
-#smart_editor2 .generate_table .btn_table_set {
+ .generate_table .btn_table_set {
 	position: absolute;
 	right: 11px;
 	top: 11px;
 }
 
-#smart_editor2 .generate_table .btn_table_set .utx_inrbtn {
+ .generate_table .btn_table_set .utx_inrbtn {
 	letter-spacing: 0;
 }
 
-#smart_editor2 fieldset, #smart_editor2 img {
+ fieldset,  img {
 	border: 0;
 }
 
-#smart_editor2 .se2_table_set .se2_cell_num {
+ .se2_table_set .se2_cell_num {
 	float: left;
 	width: 73px;
 }
 
-#smart_editor2 .se2_table_set .se2_cell_num dt {
+ .se2_table_set .se2_cell_num dt {
 	float: left;
 	clear: both;
 	width: 17px;
@@ -1440,14 +1438,14 @@ caption {
 	padding: 0;
 }
 
-#smart_editor2 .se2_table_set .se2_cell_num dt label {
+ .se2_table_set .se2_cell_num dt label {
 	display: block;
 	margin: 5px 0 0;
 	font-size: 11px;
 	color: #666;
 }
 
-#smart_editor2 .se2_table_set .se2_cell_num dd {
+ .se2_table_set .se2_cell_num dd {
 	float: left;
 	position: relative;
 	width: 54px;
@@ -1456,7 +1454,7 @@ caption {
 	padding: 0;
 }
 
-#smart_editor2 .se2_table_set .se2_cell_num .input_ty2 {
+ .se2_table_set .se2_cell_num .input_ty2 {
 	display: block;
 	width: 32px;
 	height: 16px;
@@ -1470,7 +1468,7 @@ caption {
 	*direction: rtl;
 }
 
-#smart_editor2 .se2_table_set .se2_add {
+ .se2_table_set .se2_add {
 	position: absolute;
 	top: 2px;
 	right: 3px;
@@ -1481,7 +1479,7 @@ caption {
 		-86px -54px no-repeat;
 }
 
-#smart_editor2 .se2_table_set .se2_pre_table {
+ .se2_table_set .se2_pre_table {
 	float: right;
 	width: 91px;
 	height: 43px;
@@ -1489,16 +1487,16 @@ caption {
 	border-spacing: 1px;
 }
 
-#smart_editor2 .se2_table_set .se2_pre_table tr {
+ .se2_table_set .se2_pre_table tr {
 	background: #fff;
 }
 
-#smart_editor2 .se2_table_set .se2_pre_table td {
+ .se2_table_set .se2_pre_table td {
 	font-size: 0;
 	line-height: 0;
 }
 
-#smart_editor2 .se2_table_set .se2_t_proper1 {
+ .se2_table_set .se2_t_proper1 {
 	float: left;
 	width: 166px;
 	margin: 7px 0 0;
@@ -1508,12 +1506,12 @@ caption {
 		repeat-x;
 }
 
-#smart_editor2 .se2_table_set .se2_t_proper1 dt {
+ .se2_table_set .se2_t_proper1 dt {
 	width: 166px;
 	margin: 0 0 6px;
 }
 
-#smart_editor2 .se2_table_set .se2_t_proper1 dt input {
+ .se2_table_set .se2_t_proper1 dt input {
 	width: 15px;
 	height: 15px;
 	margin: -1px 3px 1px 0;
@@ -1521,7 +1519,7 @@ caption {
 	vertical-align: middle;
 }
 
-#smart_editor2 .se2_table_set .se2_t_proper1 dt label {
+ .se2_table_set .se2_t_proper1 dt label {
 	font-weight: 700;
 	font-size: 11px;
 	color: #666;
@@ -1529,11 +1527,11 @@ caption {
 	vertical-align: middle;
 }
 
-#smart_editor2 .se2_table_set .se2_t_proper1 dd {
+ .se2_table_set .se2_t_proper1 dd {
 	width: 166px;
 }
 
-#smart_editor2 .se2_table_set .se2_t_proper1_1 {
+ .se2_table_set .se2_t_proper1_1 {
 	float: left;
 	position: relative;
 	z-index: 59;
@@ -1541,7 +1539,7 @@ caption {
 	margin: 1px 0 0;
 }
 
-#smart_editor2 .se2_table_set .se2_t_proper1_1 dt {
+ .se2_table_set .se2_t_proper1_1 dt {
 	_display: inline;
 	float: left;
 	clear: both;
@@ -1550,7 +1548,7 @@ caption {
 	margin: 1px 0 0 18px;
 }
 
-#smart_editor2 .se2_table_set .se2_t_proper1_1 dt label {
+ .se2_table_set .se2_t_proper1_1 dt label {
 	display: block;
 	margin: 4px 0 0;
 	font-weight: 400;
@@ -1559,14 +1557,14 @@ caption {
 	letter-spacing: -1px;
 }
 
-#smart_editor2 .se2_table_set .se2_t_proper1_1 dd {
+ .se2_table_set .se2_t_proper1_1 dd {
 	float: left;
 	position: relative;
 	width: 82px;
 	height: 23px;
 }
 
-#smart_editor2 .se2_select_ty1 {
+ .se2_select_ty1 {
 	position: relative;
 	width: 80px;
 	height: 18px;
@@ -1577,7 +1575,7 @@ caption {
 	text-align: left;
 }
 
-#smart_editor2 .se2_select_ty1 span {
+ .se2_select_ty1 span {
 	float: left;
 	width: 54px;
 	height: 18px;
@@ -1587,7 +1585,7 @@ caption {
 	color: #666;
 }
 
-#smart_editor2 .se2_layer_b_style {
+ .se2_layer_b_style {
 	position: absolute;
 	top: 20px;
 	right: 0;
@@ -1598,7 +1596,7 @@ caption {
 	background: #fff;
 }
 
-#smart_editor2 .se2_select_ty1 .se2_view_more {
+ .se2_select_ty1 .se2_view_more {
 	position: absolute;
 	top: 1px;
 	right: 1px;
@@ -1609,20 +1607,20 @@ caption {
 		-112px -54px no-repeat;
 }
 
-#smart_editor2 .se2_layer_b_style ul {
+ .se2_layer_b_style ul {
 	width: 80px;
 	margin: 0;
 	padding: 1px 0 0;
 }
 
-#smart_editor2 .se2_layer_b_style li {
+ .se2_layer_b_style li {
 	width: 80px;
 	height: 18px;
 	margin: 0;
 	padding: 0;
 }
 
-#smart_editor2 .se2_layer_b_style .se2_b_style1 span {
+ .se2_layer_b_style .se2_b_style1 span {
 	margin: 3px 0 0 4px;
 	font-size: 11px;
 	line-height: 14px;
@@ -1630,7 +1628,7 @@ caption {
 	letter-spacing: -1px;
 }
 
-#smart_editor2 .se2_layer_b_style button span {
+ .se2_layer_b_style button span {
 	left: 0;
 	display: block;
 	visibility: visible;
@@ -1643,34 +1641,34 @@ caption {
 	text-align: left;
 }
 
-#smart_editor2 .se2_layer_b_style button {
+ .se2_layer_b_style button {
 	width: 80px;
 	height: 18px;
 	background: 0 0;
 }
 
-#smart_editor2 .se2_table_set .se2_t_proper1_2 {
+ .se2_table_set .se2_t_proper1_2 {
 	z-index: 54;
 	margin: 0;
 }
 
-#smart_editor2 .se2_table_set .se2_t_proper1_3 {
+ .se2_table_set .se2_t_proper1_3 {
 	z-index: 53;
 	margin: 0;
 }
 
-#smart_editor2 .se2_table_set .se2_t_proper1_4 {
+ .se2_table_set .se2_t_proper1_4 {
 	z-index: 52;
 	margin: 0;
 }
 
-#smart_editor2 .se2_layer_b_style .se2_b_style2 span {
+ .se2_layer_b_style .se2_b_style2 span {
 	background:
 		url(https://ssl.pstatic.net/static/pwe/nm/se2_new/bg_set.gif) 0 -50px
 		repeat-x;
 }
 
-#smart_editor2 .se2_layer_b_style button span span {
+ .se2_layer_b_style button span span {
 	visibility: hidden;
 	overflow: hidden;
 	position: absolute;
@@ -1680,37 +1678,37 @@ caption {
 	height: 0;
 }
 
-#smart_editor2 .se2_layer_b_style .se2_b_style3 span {
+ .se2_layer_b_style .se2_b_style3 span {
 	background:
 		url(https://ssl.pstatic.net/static/pwe/nm/se2_new/bg_set.gif) 0 -68px
 		repeat-x;
 }
 
-#smart_editor2 .se2_layer_b_style .se2_b_style4 span {
+ .se2_layer_b_style .se2_b_style4 span {
 	background:
 		url(https://ssl.pstatic.net/static/pwe/nm/se2_new/bg_set.gif) 0 -86px
 		repeat-x;
 }
 
-#smart_editor2 .se2_layer_b_style .se2_b_style5 span {
+ .se2_layer_b_style .se2_b_style5 span {
 	background:
 		url(https://ssl.pstatic.net/static/pwe/nm/se2_new/bg_set.gif) 0 -103px
 		repeat-x;
 }
 
-#smart_editor2 .se2_layer_b_style .se2_b_style6 span {
+ .se2_layer_b_style .se2_b_style6 span {
 	background:
 		url(https://ssl.pstatic.net/static/pwe/nm/se2_new/bg_set.gif) 0 -121px
 		repeat-x;
 }
 
-#smart_editor2 .se2_layer_b_style .se2_b_style7 span {
+ .se2_layer_b_style .se2_b_style7 span {
 	background:
 		url(https://ssl.pstatic.net/static/pwe/nm/se2_new/bg_set.gif) 0 -139px
 		repeat-x;
 }
 
-#smart_editor2 .se2_table_set .se2_t_proper1_1 .input_ty1 {
+ .se2_table_set .se2_t_proper1_1 .input_ty1 {
 	width: 72px;
 	height: 16px;
 	*margin: -1px 0 0 0;
@@ -1720,17 +1718,17 @@ caption {
 	color: #666;
 }
 
-#smart_editor2 .se2_table_set .se2_t_proper1_1 .se2_add {
+ .se2_table_set .se2_t_proper1_1 .se2_add {
 	top: 2px;
 	right: 2px;
 }
 
-#smart_editor2 .se2_table_set .se2_t_proper1_1 .se2_del {
+ .se2_table_set .se2_t_proper1_1 .se2_del {
 	top: 10px;
 	right: 2px;
 }
 
-#smart_editor2 .se2_table_set .se2_t_proper1_1 .input_ty3 {
+ .se2_table_set .se2_t_proper1_1 .input_ty3 {
 	float: left;
 	width: 49px;
 	height: 16px;
@@ -1742,14 +1740,14 @@ caption {
 	color: #666;
 }
 
-#smart_editor2 .se2_pre_color {
+ .se2_pre_color {
 	float: left;
 	width: 18px;
 	height: 18px;
 	border: 1px solid #c7c7c7;
 }
 
-#smart_editor2 .se2_pre_color button {
+ .se2_pre_color button {
 	float: left;
 	width: 14px;
 	height: 14px;
@@ -1757,7 +1755,7 @@ caption {
 	padding: 0;
 }
 
-#smart_editor2 .se2_pre_color button span {
+ .se2_pre_color button span {
 	overflow: hidden;
 	position: absolute;
 	top: -10000px;
@@ -1767,11 +1765,11 @@ caption {
 	height: 0;
 }
 
-#smart_editor2 .se2_table_set .se2_b_t_b1 {
+ .se2_table_set .se2_b_t_b1 {
 	border-top: 1px solid #b1b1b1;
 }
 
-#smart_editor2 .se2_table_set .se2_t_proper2 {
+ .se2_table_set .se2_t_proper2 {
 	float: left;
 	position: relative;
 	z-index: 50;
@@ -1779,14 +1777,14 @@ caption {
 	margin: 2px 0 0;
 }
 
-#smart_editor2 .se2_table_set .se2_t_proper2 dt {
+ .se2_table_set .se2_t_proper2 dt {
 	float: left;
 	width: 84px;
 	height: 33px;
 	margin: 4px 0 0;
 }
 
-#smart_editor2 .se2_table_set .se2_t_proper2 dt input {
+ .se2_table_set .se2_t_proper2 dt input {
 	width: 15px;
 	height: 15px;
 	margin: -1px 3px 1px 0;
@@ -1794,7 +1792,7 @@ caption {
 	vertical-align: middle;
 }
 
-#smart_editor2 .se2_table_set .se2_t_proper2 dt label {
+ .se2_table_set .se2_t_proper2 dt label {
 	font-weight: 700;
 	font-size: 11px;
 	color: #666;
@@ -1802,13 +1800,13 @@ caption {
 	vertical-align: middle;
 }
 
-#smart_editor2 .se2_table_set .se2_t_proper2 dd {
+ .se2_table_set .se2_t_proper2 dd {
 	float: left;
 	width: 66px;
 	height: 33px;
 }
 
-#smart_editor2 .se2_select_ty2 {
+ .se2_select_ty2 {
 	position: relative;
 	width: 65px;
 	height: 31px;
@@ -1819,11 +1817,11 @@ caption {
 	text-align: left;
 }
 
-#smart_editor2 .se2_select_ty2 .se2_t_style1 {
+ .se2_select_ty2 .se2_t_style1 {
 	background-position: 0 -410px;
 }
 
-#smart_editor2 .se2_select_ty2 span {
+ .se2_select_ty2 span {
 	float: left;
 	width: 45px;
 	height: 25px;
@@ -1833,7 +1831,7 @@ caption {
 		repeat-x;
 }
 
-#smart_editor2 .se2_select_ty2 .se2_view_more {
+ .se2_select_ty2 .se2_view_more {
 	position: absolute;
 	top: 1px;
 	right: 1px;
@@ -1845,11 +1843,11 @@ caption {
 		-353px -48px no-repeat !important;
 }
 
-#smart_editor2 .se2_select_ty2 .se2_view_more span {
+ .se2_select_ty2 .se2_view_more span {
 	display: none;
 }
 
-#smart_editor2 .se2_layer_t_style {
+ .se2_layer_t_style {
 	position: absolute;
 	top: 33px;
 	right: 15px;
@@ -1859,7 +1857,7 @@ caption {
 	background: #fff;
 }
 
-#smart_editor2 .se2_layer_t_style ul {
+ .se2_layer_t_style ul {
 	width: 204px;
 	height: 126px;
 	margin: 1px 2px;
@@ -1867,7 +1865,7 @@ caption {
 	background: #fff;
 }
 
-#smart_editor2 .se2_layer_t_style li {
+ .se2_layer_t_style li {
 	_display: inline;
 	float: left;
 	width: 45px;
@@ -1877,11 +1875,11 @@ caption {
 	border: 1px solid #fff;
 }
 
-#smart_editor2 .se2_layer_t_style .se2_t_style1 {
+ .se2_layer_t_style .se2_t_style1 {
 	background-position: 0 -410px !important;
 }
 
-#smart_editor2 .se2_layer_t_style button {
+ .se2_layer_t_style button {
 	width: 45px;
 	height: 25px;
 	background:
@@ -1889,67 +1887,67 @@ caption {
 		repeat-x !important;
 }
 
-#smart_editor2 .se2_layer_t_style .se2_t_style2 {
+ .se2_layer_t_style .se2_t_style2 {
 	background-position: -46px -410px !important;
 }
 
-#smart_editor2 .se2_layer_t_style .se2_t_style3 {
+ .se2_layer_t_style .se2_t_style3 {
 	background-position: -92px -410px !important;
 }
 
-#smart_editor2 .se2_layer_t_style .se2_t_style4 {
+ .se2_layer_t_style .se2_t_style4 {
 	background-position: -138px -410px !important;
 }
 
-#smart_editor2 .se2_layer_t_style .se2_t_style5 {
+ .se2_layer_t_style .se2_t_style5 {
 	background-position: -184px -410px !important;
 }
 
-#smart_editor2 .se2_layer_t_style .se2_t_style6 {
+ .se2_layer_t_style .se2_t_style6 {
 	background-position: -230px -410px !important;
 }
 
-#smart_editor2 .se2_layer_t_style .se2_t_style7 {
+ .se2_layer_t_style .se2_t_style7 {
 	background-position: -276px -410px !important;
 }
 
-#smart_editor2 .se2_layer_t_style .se2_t_style8 {
+ .se2_layer_t_style .se2_t_style8 {
 	background-position: -322px -410px !important;
 }
 
-#smart_editor2 .se2_layer_t_style .se2_t_style9 {
+ .se2_layer_t_style .se2_t_style9 {
 	background-position: 0 -436px !important;
 }
 
-#smart_editor2 .se2_layer_t_style .se2_t_style10 {
+ .se2_layer_t_style .se2_t_style10 {
 	background-position: -46px -436px !important;
 }
 
-#smart_editor2 .se2_layer_t_style .se2_t_style11 {
+ .se2_layer_t_style .se2_t_style11 {
 	background-position: -92px -436px !important;
 }
 
-#smart_editor2 .se2_layer_t_style .se2_t_style12 {
+ .se2_layer_t_style .se2_t_style12 {
 	background-position: -138px -436px !important;
 }
 
-#smart_editor2 .se2_layer_t_style .se2_t_style13 {
+ .se2_layer_t_style .se2_t_style13 {
 	background-position: -184px -436px !important;
 }
 
-#smart_editor2 .se2_layer_t_style .se2_t_style14 {
+ .se2_layer_t_style .se2_t_style14 {
 	background-position: -230px -436px !important;
 }
 
-#smart_editor2 .se2_layer_t_style .se2_t_style15 {
+ .se2_layer_t_style .se2_t_style15 {
 	background-position: -276px -436px !important;
 }
 
-#smart_editor2 .se2_layer_t_style .se2_t_style16 {
+ .se2_layer_t_style .se2_t_style16 {
 	background-position: -322px -436px !important;
 }
 
-#smart_editor2 .se2_table_set .se2_btn_area {
+ .se2_table_set .se2_btn_area {
 	float: left;
 	width: 166px;
 	margin: 6px 0 0;
@@ -1960,7 +1958,7 @@ caption {
 	text-align: center;
 }
 
-#smart_editor2 .se2_btn_area {
+ .se2_btn_area {
 	_display: inline;
 	float: left;
 	clear: both;
@@ -1973,7 +1971,7 @@ caption {
 	text-align: center;
 }
 
-#smart_editor2 .se2_table_set .se2_t_dim3 {
+ .se2_table_set .se2_t_dim3 {
 	clear: both;
 	position: absolute;
 	top: 192px;
@@ -1986,7 +1984,7 @@ caption {
 	filter: alpha(opacity = 50);
 }
 
-#smart_editor2 .se2_table_set button.se2_apply {
+ .se2_table_set button.se2_apply {
 	width: 41px;
 	height: 24px;
 	margin-right: 3px;
@@ -1995,7 +1993,7 @@ caption {
 		no-repeat;
 }
 
-#smart_editor2 .se2_table_set button.se2_cancel {
+ .se2_table_set button.se2_cancel {
 	width: 39px;
 	height: 24px;
 	background:
@@ -2003,18 +2001,18 @@ caption {
 		-41px 0 no-repeat;
 }
 
-#smart_editor2 .se2_text_tool .se2_find {
+ .se2_text_tool .se2_find {
 	background-position: -597px -10px;
 }
 
-#smart_editor2 .se2_bx_find_revise {
+ .se2_bx_find_revise {
 	position: relative;
 	width: 255px;
 	margin: 0;
 	padding: 0;
 }
 
-#smart_editor2 .se2_bx_find_revise .se2_close {
+ .se2_bx_find_revise .se2_close {
 	position: absolute;
 	top: 5px;
 	right: 8px;
@@ -2025,7 +2023,7 @@ caption {
 		-151px -1px no-repeat;
 }
 
-#smart_editor2 .se2_bx_find_revise h3 {
+ .se2_bx_find_revise h3 {
 	margin: 0;
 	padding: 10px 0 13px 10px;
 	background:
@@ -2036,13 +2034,13 @@ caption {
 	letter-spacing: -1px;
 }
 
-#smart_editor2 .se2_bx_find_revise ul {
+ .se2_bx_find_revise ul {
 	position: relative;
 	margin: 8px 0 0;
 	padding: 0 0 0 12px;
 }
 
-#smart_editor2 .se2_bx_find_revise .active .se2_tabfind {
+ .se2_bx_find_revise .active .se2_tabfind {
 	width: 117px;
 	height: 26px;
 	background:
@@ -2050,7 +2048,7 @@ caption {
 		0 -126px no-repeat;
 }
 
-#smart_editor2 .se2_bx_find_revise ul li {
+ .se2_bx_find_revise ul li {
 	_display: inline;
 	float: left;
 	position: static;
@@ -2058,7 +2056,7 @@ caption {
 	padding: 0;
 }
 
-#smart_editor2 .se2_bx_find_revise .se2_tabrevise {
+ .se2_bx_find_revise .se2_tabrevise {
 	width: 117px;
 	height: 26px;
 	background:
@@ -2066,7 +2064,7 @@ caption {
 		-116px -100px no-repeat;
 }
 
-#smart_editor2 .se2_bx_find_revise .se2_in_bx_find dl {
+ .se2_bx_find_revise .se2_in_bx_find dl {
 	_display: inline;
 	float: left;
 	width: 223px;
@@ -2077,7 +2075,7 @@ caption {
 		-289px -1518px no-repeat;
 }
 
-#smart_editor2 .se2_bx_find_revise dt {
+ .se2_bx_find_revise dt {
 	_display: inline;
 	float: left;
 	clear: both;
@@ -2085,7 +2083,7 @@ caption {
 	margin: 1px 0 2px;
 }
 
-#smart_editor2 .se2_bx_find_revise label {
+ .se2_bx_find_revise label {
 	float: left;
 	padding: 5px 0 0;
 	font-size: 11px;
@@ -2093,12 +2091,12 @@ caption {
 	letter-spacing: -1px;
 }
 
-#smart_editor2 .se2_bx_find_revise dd {
+ .se2_bx_find_revise dd {
 	float: left;
 	margin: 0 0 2px;
 }
 
-#smart_editor2 .se2_bx_find_revise input {
+ .se2_bx_find_revise input {
 	float: left;
 	width: 155px;
 	height: 12px;
@@ -2108,7 +2106,7 @@ caption {
 	color: #666;
 }
 
-#smart_editor2 .se2_bx_find_revise .se2_find_btns {
+ .se2_bx_find_revise .se2_find_btns {
 	float: left;
 	clear: both;
 	width: 255px;
@@ -2116,7 +2114,7 @@ caption {
 	text-align: center;
 }
 
-#smart_editor2 .se2_bx_find_revise .se2_find_next {
+ .se2_bx_find_revise .se2_find_next {
 	width: 65px;
 	height: 24px;
 	margin: 0 3px 0 0;
@@ -2125,7 +2123,7 @@ caption {
 		-180px -48px no-repeat;
 }
 
-#smart_editor2 .se2_bx_find_revise .se2_cancel {
+ .se2_bx_find_revise .se2_cancel {
 	width: 39px;
 	height: 24px;
 	background:
@@ -2133,7 +2131,7 @@ caption {
 		-41px 0 no-repeat;
 }
 
-#smart_editor2 .se2_bx_find_revise .se2_in_bx_revise dl {
+ .se2_bx_find_revise .se2_in_bx_revise dl {
 	_display: inline;
 	float: left;
 	width: 223px;
@@ -2144,7 +2142,7 @@ caption {
 		-289px -1619px no-repeat;
 }
 
-#smart_editor2 .se2_bx_find_revise .se2_find_next2 {
+ .se2_bx_find_revise .se2_find_next2 {
 	width: 61px;
 	height: 24px;
 	margin: 0 3px 0 0;
@@ -2153,7 +2151,7 @@ caption {
 		-180px -24px no-repeat;
 }
 
-#smart_editor2 .se2_bx_find_revise .se2_revise1 {
+ .se2_bx_find_revise .se2_revise1 {
 	width: 54px;
 	height: 24px;
 	margin: 0 3px 0 0;
