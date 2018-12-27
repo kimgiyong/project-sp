@@ -1,12 +1,17 @@
 @charset "UTF-8";
+
+#kindParents{
+	position: relative;
+}
 #noticeKind{    
-	margin: -100px 1530px;
     border-radius: 10px;
     overflow: hidden;
     border: 1px solid black;
     width: 150;
     position: fixed;
-     background: #31242f;
+	margin-left:1530px;
+	top: auto;
+    background: #31242f;
 }
 #noticeKind li{
     width: 150px;
@@ -28,6 +33,10 @@
 #notices{
     width: 73%;
     border-collapse: collapse;
+    border-radius:13px;
+    overflow: hidden;
+    border: 1px solid black;
+    margin-bottom: 45px;
 }
 #notices tr td,th{
 	border-bottom:1px solid #222;
@@ -36,14 +45,19 @@
 	height:40px;
 }
 .noticeOne:nth-child(2n-1) th{          
-	background: #eae3df;
+	background: rgba(57,139,147,0.05);
 }
 .noticeOne:nth-child(2n) th{          
-	background: #eaeaf2;
+	background: rgba(57,139,147,0.2);
 }
 .category tr{    
-	height: 40px;
-    background: #3d2e2d;
+	height: 60px;
+   background-color: #327a81;
+   color: white;
+   font-size: 1.5em;
+   padding: 1rem;
+   text-align: center;
+   text-transform: uppercase;
 }
 .category tr th,td{
 	color:white;
@@ -63,10 +77,35 @@
 	resize:none;
 	background: none;
 	padding:15px 20px;
+	border: none;
 }
 .answerList{
-	height:330px;
-	overflow:auto;
+	height:300px;
+	margin-left: 30px;
+	overflow-y: scroll;
+}
+.style-7::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+.style-7::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.style-7::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-image: -webkit-gradient(linear,
+									   left bottom,
+									   left top,
+									   color-stop(0.44, rgb(157,239,247)),
+									   color-stop(0.72, rgb(83,203,223)),
+									   color-stop(0.86, rgb(57,139,147)));
 }
 .answerList li{
 	width:90%;
@@ -79,6 +118,8 @@
 	height:80px;
 	resize:none;
     background: white; 
+    border-radius: 6px;
+    border: 1px solid #ddd;
 }
 .answerList .credat{
 	float:right;
@@ -86,7 +127,7 @@
 .goReply{   
 	width:98%;
 	height:40px;
-	background: #3d2e2d;
+	background: rgb(47,119,127);
 	color:white;	
 	margin-top:10px;
 	margin-bottom:10px;
@@ -95,7 +136,7 @@
 	line-height:40px;
 }
 .goReply:hover{   
-    background: #5d4e4d;
+    background: rgba(47,119,127,0.88);
     cursor:pointer;
 }
 .goReply a{
@@ -105,6 +146,7 @@
 }
 .detail{
 	border:0.1px solid black;
+	background: rgba(50,141,158,0.06);
 }
 .detail textarea{
     font-size:18px;

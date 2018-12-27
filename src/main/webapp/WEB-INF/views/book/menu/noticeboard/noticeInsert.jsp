@@ -37,7 +37,7 @@
 				<textarea placeholder="내용을 입력해 주십시오."></textarea>
 			</div>
 			<div>
-				<div class="goReply"><a href="/uri/book/menu/noticeboard/noticeReply?id=1">답글 작성하러 가기</a></div>
+				<div class="goReply" onclick="addNotice()"><a href="#">답글 작성하러 가기</a></div>
 			</div>
 		</div>
 </div>
@@ -47,5 +47,8 @@
 detextname.textContent = "게시물 작성";
 callback.textContent = "돌아가기";
 callback.addEventListener("click", goback);
+function addNotice(){
+	location.href="/uri/book/menu/noticeboard/noticeReply?id=1";
+}
 </script>
 </html>
