@@ -52,12 +52,12 @@
 }
 .category tr{    
 	height: 60px;
-   background-color: #327a81;
-   color: white;
-   font-size: 1.5em;
-   padding: 1rem;
-   text-align: center;
-   text-transform: uppercase;
+   	background-color: #327a81;
+   	color: white;
+   	font-size: 1.5em;
+   	padding: 1rem;
+   	text-align: center;
+   	text-transform: uppercase;
 }
 .category tr th,td{
 	color:white;
