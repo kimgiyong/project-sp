@@ -6,8 +6,6 @@
 <meta charset="utf-8">
 <title>이용안내</title>
 <link rel="stylesheet" type="text/css"
-	href="${rootPath}/resources/css/menuHead.css" />
-<link rel="stylesheet" type="text/css"
 	href="${rootPath}/resources/css/menuCss/infoUse.css" />
 </head>
 <body>

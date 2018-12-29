@@ -93,9 +93,9 @@
 		</li>
 		<li class="mainMenu"><a href="#">좋은 나눔</a>
 			<ul class="subMenuBox">
-				<li class="subMenu"><a href="#">책 속의 한 문장</a></li>
-				<li class="subMenu"><a href="#">독후감 자랑</a></li>
-				<li class="subMenu"><a href="#">나는 이책을 봤다</a></li>
+				<li class="subMenu"><a href="/uri/book/menu/share/sentence">책 속의 한 문장</a></li>
+				<li class="subMenu"><a href="/uri/book/menu/share/report">독후감 자랑</a></li>
+				<li class="subMenu"><a href="/uri/book/menu/share/boast">나는 이책을 봤다</a></li>
 			</ul>
 		</li>
 		<li class="mainMenu"><a href="#">좋은 소개</a>

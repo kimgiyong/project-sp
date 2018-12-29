@@ -1,0 +1,247 @@
+@charset "UTF-8";
+
+.oneinfo {
+	font-family: 'Poor Story', 'Gugi', 'Gamja Flower', cursive;
+	font-size: 30px;
+	color: #7c5752;
+	font-weight: bold;
+	margin-left: 200px;
+	margin-bottom: 50px;
+}
+
+.oneinfoline {
+	color: #429b42;
+}
+
+#noticeKind li {
+	width: 150px;
+	height: 47px;
+	background: #31242f;
+	list-style-type: none;
+	display: inline-block;
+	margin-right: -5px;
+	text-align: center;
+	line-height: 47px;
+}
+
+#noticeKind>li:hover {
+	background: rgba(255, 255, 255, 0.1);
+	cursor: pointer;
+}
+
+#noticeKind li a {
+	color: white;
+}
+
+#notices {
+	width: 80%;
+	border-collapse: collapse;
+	border-radius: 13px;
+	overflow: hidden;
+	border: 1px solid black;
+	margin-bottom: 45px;
+}
+
+#notices tr td, th {
+	border-bottom: 2px solid #968e81;
+}
+
+.noticeOne th {
+	height: 40px;
+}
+
+.noticeOne:nth-child(2n-1) th {
+	background: #d7cfb0;
+}
+
+.noticeOne:nth-child(2n) th {
+	background: #ece9db;
+}
+
+.category tr {
+	height: 60px;
+	background-color: #865c4d;
+	font-size: 1.5em;
+	padding: 1rem;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 1rem;
+}
+
+.category tr th, .category td {
+	color: #ede3c5;
+	font-family: 'Poor Story', 'Gugi', 'Gamja Flower', cursive;
+}
+
+.positionTopic {
+	height: 30px;
+}
+
+.positionTopic:hover {
+	cursor: pointer;
+	color: #774644;
+}
+
+.notice tr {
+	height: 30px;
+}
+
+.contentsD textarea {
+	width: 100%;
+	height: 220px;
+	resize: none;
+	background: none;
+	padding: 15px 20px;
+	border: none;
+}
+
+.answerList li {
+	width: 90%;
+	padding: 9px 20px;
+}
+
+.answerList .contentsR {
+	font-size: 15px;
+	margin-top: 15px;
+	width: 100%;
+	height: auto;
+	resize: none;
+	background: white;
+	border-radius: 6px;
+	border: 1px solid #ddd;
+}
+
+.answerList .credat {
+	float: right;
+}
+
+.goReply {
+	width: 98%;
+	height: 40px;
+	background: #fffae6;
+	color: white;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	text-align: center;
+	line-height: 40px;
+}
+
+.goReply:hover {
+	background: rgba(47, 119, 127, 0.88);
+	cursor: pointer;
+}
+
+.goReply a {
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+}
+
+.detail {
+	border: 0.1px solid black;
+	background: #fffbe8;
+}
+
+.detail textarea {
+	font-size: 18px;
+}
+
+#page {
+	text-align: center;
+}
+
+#nowP {
+	font-weight: bold;
+}
+
+.pBtn {
+	margin: 0 3px 0 3px;
+}
+
+.pBtn, .pBtn2 {
+	font-size: 20px;
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+}
+
+.pBtn:hover, .pBtn2:hover {
+	color: #923d63;
+}
+
+/* 답변 작성 */
+#reply {
+	text-align: center;
+}
+
+#sendRbtn {
+	width: 80px;
+	height: 40px;
+	background: #e4b35f;
+	color: #56442e;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 100%;
+	line-height: 40px;
+	font-size: 20px;
+	border: 0;
+}
+
+#sendRbtn:hover {
+	background: #835a16;
+	color: #d8c9b6;
+	cursor: pointer;
+}
+
+#contentsR {
+	font-size: 18px;
+	width: 100%;
+	resize: none;
+	padding: 18px;
+	line-height: 26px;
+	height: 110px;
+}
+
+/* 답변 리스트 */
+#answers {
+	position: relative;
+	height: 400px;
+	overflow: auto;
+}
+
+#answerList {
+	height: 400px;
+	position: absolute;
+	bottom: 0;
+	padding: 22px;
+	width:100%;
+}
+
+#answerList div {
+	margin-top: 10px;
+	width: 88%;
+}
+
+#answerList .credat {
+	float: right;
+}
+
+#answerList div textarea {
+	width: 100%;
+	font-size: 18px;
+	margin-top: 15px;
+	resize: none;
+	margin-bottom: 25px;
+	padding: 12px;
+	height: auto;
+	background: white;
+	border-radius: 6px;
+	border: 1px solid #ddd;
+}
+
+.replier {
+	font-size: 20px;
+	font-weight: 900;
+	margin-bottom: 10px;
+}
