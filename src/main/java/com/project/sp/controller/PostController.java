@@ -34,7 +34,7 @@ public class PostController {
 	@GetMapping(value="/postCode")
 	public String postSelectListCode(@ModelAttribute PostVO post,HttpServletRequest request) {
 		if(post.getPageS()!=null) {
-			int pageSize = ps.postSelectUserSize(post.getUserNum());
+			int pageSize = ps.postSelectListCodeSize(post);
 			int pageNO = post.getPageS();
 			if(pageNO>=pageSize) {
 				pageNO = pageSize ;
@@ -46,9 +46,9 @@ public class PostController {
 			pages.makePaging(pageSize, pageNO);
 			request.setAttribute("page", pages);
 			post.setPageS(pages.getPageStart());
-			List<PostVO> posts = ps.postSelectUser(post);
+			List<PostVO> posts = ps.postSelectListCode(post);
 			request.setAttribute("posts", posts);
-			return "uri/book/update/homeMypage?dif=1&";
+			return "book/menu/noticeboard/noticeList";
 		}else {
 			return "book/homePage";
 		}

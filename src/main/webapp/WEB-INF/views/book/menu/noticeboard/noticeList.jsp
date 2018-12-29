@@ -24,47 +24,39 @@
 		<table id=notices>
 			<thead class="category">
 				<tr>
-					<th>책코드</th>
+					<th>코드</th>
 					<th>회원명</th>
-					<th>질문</th>
+					<th>제목</th>
 				</tr>
 			</thead>
 			<tbody class="noticeOne">
-				<tr class="positionTopic">
-					<th class="bookCode">001252</th>
-					<th class="member">회원명님</th>
-					<th class="summary">회원이 질문의 대략적인 내용을 적어두는 자리입니다.</th>
-				</tr>
-				<tr class="detail">
-					<td colspan="3" class="contentsD"><textarea
-							disabled="disabled">db에서 내용 받아 올꺼다</textarea></td>
-				</tr>
-				<tr class="detail">
-					<td colspan="3">
-						<div>
-							<ul class="answerList style-7"> 
-								<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
-									<textarea class="contentsR" disabled="disabled"></textarea></li>
-								<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
-									<textarea class="contentsR" disabled="disabled"></textarea></li>
-								<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
-									<textarea class="contentsR" disabled="disabled"></textarea></li>
-								<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
-									<textarea class="contentsR" disabled="disabled"></textarea></li>
-								<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
-									<textarea class="contentsR" disabled="disabled"></textarea></li>
-								<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
-									<textarea class="contentsR" disabled="disabled"></textarea></li>
-								<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
-									<textarea class="contentsR" disabled="disabled"></textarea></li>
-							</ul>	
-						</div>
-						<hr>
-						<div class="goReply" onclick="goReply()">
-							<a>답글 작성하러 가기</a>
-						</div>
-					</td>
-				</tr>
+				<c:forEach var="list" items="${posts}" varStatus="sta">
+					<tr class="positionTopic">
+						<th class="postCode">${list.postCode}</th>
+						<th class="userName">${list.userName}</th>
+						<th class="postTitle">${list.postTitle}</th>
+					</tr>
+					<tr class="detail">
+						<td colspan="3" class="contentsD"><textarea
+								disabled="disabled">${list.postText}</textarea></td>
+					</tr>
+					<tr class="detail">
+						<td colspan="3">
+							<div>
+								<ul class="answerList style-7"> 
+									<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+										<textarea class="contentsR" disabled="disabled"></textarea></li>
+									<li><span class="replier">답변자님</span><span class="credat">20xx-xx-xx</span><br>
+										<textarea class="contentsR" disabled="disabled"></textarea></li>
+								</ul>	
+							</div>
+							<hr>
+							<div class="goReply" onclick="goReply()">
+								<a>답글 작성하러 가기</a>
+							</div>
+						</td>
+					</tr>
+				</c:forEach>
 			</tbody>
 			
 		</table>
@@ -121,6 +113,9 @@
 	})
 	function goReply() {
 		location.href = "/uri/book/menu/noticeboard/noticeReply?id=1";
+	}
+	function postComent(){
+		
 	}
 </script>
 </html>

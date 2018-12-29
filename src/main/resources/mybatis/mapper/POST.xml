@@ -11,14 +11,24 @@
 			<if test="postText!=null">or postText = #{postText}</if>
 		</where>
 	</select>
-	<select id="postSelectListCode" resultType="post" parameterType="String">
+	<select id="postSelectListCode" resultType="post" parameterType="post">
 		select * from postgtbl
-		where postCode like concat(#{postCode},'%')
+		<where>
+			<if test="postCode!=null">or postCode like concat(#{postCode},'%')</if>
+			<if test="postTitle!=null">or postTitle like concat('%',#{postTitle},'%')</if>
+			<if test="postText!=null">or postText like concat('%',#{postText},'%')</if>
+			<if test="userName!=null">or userName like concat('%',#{userName},'%')</if>
+		</where>
 		limit #{pageS}, 10
 	</select>
-	<select id="postSelectListCodeSize" resultType="int" parameterType="String">
+	<select id="postSelectListCodeSize" resultType="int" parameterType="post">
 		select count(*) from postgtbl
-		where postCode like concat(#{postCode},'%')
+		<where>
+			<if test="postCode!=null">or postCode like concat(#{postCode},'%')</if>
+			<if test="postTitle!=null">or postTitle like concat('%',#{postTitle},'%')</if>
+			<if test="postText!=null">or postText like concat('%',#{postText},'%')</if>
+			<if test="userName!=null">or userName like concat('%',#{userName},'%')</if>
+		</where>
 	</select>
 	<select id="postSelect" resultType="post" parameterType="String">
 		select * from posttbl

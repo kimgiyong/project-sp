@@ -30,8 +30,8 @@ public class PostDAOImpl implements PostDAO {
 	}
 
 	@Override
-	public int postSelectListCodeSize(String postCode) {
-		int postSize = ss.selectOne("com.project.sp.POST.postSelectListCodeSize",postCode);
+	public int postSelectListCodeSize(PostVO post) {
+		int postSize = ss.selectOne("com.project.sp.POST.postSelectListCodeSize",post);
 		int pageSize = postSize / 10;
 		if(postSize%10>0) {
 			pageSize++;

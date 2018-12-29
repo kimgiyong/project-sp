@@ -8,7 +8,7 @@ public interface PostService {
 
 	public List<PostVO> postSelectList(PostVO post);
 	public List<PostVO> postSelectListCode(PostVO post);
-	public int postSelectListCodeSize(String postCode);
+	public int postSelectListCodeSize(PostVO post);
 	public PostVO postSelect(String postCode);
 	public List<PostVO> postSelectUser(PostVO post);
 	public int postSelectUserSize(int userNum);

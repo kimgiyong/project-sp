@@ -26,8 +26,8 @@ public class PostServiceImpl implements PostService {
 	}
 
 	@Override
-	public int postSelectListCodeSize(String postCode) {
-		return pd.postSelectListCodeSize(postCode);
+	public int postSelectListCodeSize(PostVO post) {
+		return pd.postSelectListCodeSize(post);
 	}
 
 	@Override
